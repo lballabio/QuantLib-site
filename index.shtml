@@ -27,11 +27,11 @@ href= "http://www.gnu.org/philosophy/free-sw.html">free</a>/<a href=
 trading, and risk management in real-life.</p> <p>QuantLib is written in
 C++ with a clean object model, and is then exported to different languages
 such as C#, Objective Caml, Java, Perl, Python, GNU R, Ruby, and Scheme.
-The <a href= "http://www.quantlibaddin.org">QuantLibAddin</a>/<a
-href= "http://www.quantlibxl.org">QuantLibXL</a> project uses <a
-href= "http://www.objecthandler.org">ObjectHandler</a> to export an
-object-oriented QuantLib interface to a variety of end-user platforms
-including Microsoft Excel and OpenOffice.org Calc.  Bindings to
+The <a href= "http://www.quantlib.org/reposit">reposit</a> project facilitates
+deployment of object libraries to end user platforms and is used to generate <a
+href= "http://www.quantlibxl.org">QuantLibXL</a>, an Excel addin for QuantLib,
+and <a href= "http://www.quantlibaddin.org">QuantLibAddin</a>, QuantLib addins
+for other platforms such as LibreOffice Calc.  Bindings to
 other languages and porting to Gnumeric, Matlab/Octave, S-PLUS/<a
 href= "http://dirk.eddelbuettel.com/code/rquantlib.html">R</a>,
 <a href= "http://www.nielses.dk/quantlib/mma/">Mathematica</a>,
