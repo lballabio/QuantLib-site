@@ -13,7 +13,3 @@ Disallow: /notfound.shtml
 Disallow: /books.shtml
 Disallow: /cvs.shtml
 Disallow: /developerFAQ.shtml
-Disallow: *.inc
-Disallow: *.css
-Disallow: *.py
-Disallow: *_config.xml
