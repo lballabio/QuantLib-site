@@ -52,6 +52,10 @@ at a 100% Java port. At this time, it provides about 65% of QuantLib
 the <a href="https://github.com/enthought/pyql">PyQL</a> project by
 Didrik Pinte and Patrick Henaff.</p>
 
+<p><a href="https://github.com/pazzo83/QuantLib.jl">QuantLib.jl</a> is
+a port of QuantLib to the Julia language. The project is in its
+initial stages and welcomes contributions.</p>
+
 <p><a href="https://code.google.com/p/qldds/">QLDDS</a> is a project
 that allows the functionality of the QuantLibAddin for C++ to be
 distributed via OpenDDS across multiple computers running different
