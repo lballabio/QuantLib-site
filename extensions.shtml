@@ -32,6 +32,8 @@ procedural interface to a number of platforms including Microsoft
 Excel (see the <a href="http://quantlibxl.org">QuantLibXL</a> site)
 and OpenOffice.org Calc.</p>
 
+<p>A modified QuantLib C++ library enabling adjoint automatic differentiation (AAD) is available from <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
+
 <p><a href="http://www.deriscope.com/index.html">Deriscope</a> is
 another project that aims at exporting QuantLib functionality to
 Excel.</p>
