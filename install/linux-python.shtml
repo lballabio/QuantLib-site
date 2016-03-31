@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<!--#include virtual="/qlmeta.inc"-->
+<meta name="author" content="Luigi Ballabio">
+<meta name="copyright" content= "Luigi Ballabio (c) 2016">
+<meta name="description"
+      content="QuantLib-Python Installation on Linux">
+<link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
+<title>QuantLib-Python installation on Linux</title>
+</head>
+<body>
+<div id="container">
+<!--#include virtual="/header.inc"-->
+<div id="menu">
+<!--#include virtual="/usermenu.inc"-->
+</div>
+<div id="content">
+
+<h1 class="center">QuantLib-Python installation on Linux</h1>
+<h4 class="center">Luigi Ballabio</h4>
+
+<h2>Prerequisites</h2>
+
+<p>The following assumes that you already installed
+QuantLib. Instructions for that are available
+at <a href="http://quantlib.org/install/linux.shtml">http://quantlib.org/install/linux.shtml</a>.</p>
+
+<h2>QuantLib-Python Installation</h2>
+
+<h3>Installation from a released version</h3>
+
+<p>You can download released QuantLib-SWIG versions from the SourceForge download page 
+  at <a href="http://sourceforge.net/projects/quantlib/files/">http://sourceforge.net/projects/quantlib/files/</a>; look for the files under the <code>other languages</code> folder in any of the versioned folders under <code>QuantLib</code>.</p>
+
+<p>Once you have the tarball, extract it by executing:</p>
+<pre>
+tar xzf QuantLib-SWIG-1.7.tar.gz
+</pre>
+<p>(1.7 is the most recent version at the time of this writing; you
+might have downloaded another one.) This creates a
+folder <code>QuantLib-SWIG-1.7</code>; enter it and configure QuantLib by
+executing:</p>
+<pre>
+  cd QuantLib-SWIG-1.7
+  ./configure
+</pre>
+
+<p>After configuration, you can just run</p>
+<pre>
+  make -C Python
+  sudo make -C Python install
+</pre>
+<p>Contrary to popular belief, working from a released tarball doesn't
+require you to have SWIG installed.</p>
+
+<p>There are a couple of caveats to the above. The first is that
+the <code>./configure</code> command will need to
+invoke <code>quantlib-config</code> (which was installed with
+QuantLib) to find out what flags should be passed to the compiler and
+linker; they will also include the additional include directories you
+might have specified when you built QuantLib, so you'll be covered
+even if you have, say, Boost in a non-standard place. This means
+that <code>quantlib-config</code> must be in your path.</p>
+
+<p>The second is that, unfortunately, at this time <code>make
+install</code> ignores any prefix you might pass
+to <code>./configure</code> and always installs to the default
+location, which requires you to use <code>sudo</code> as I wrote
+above. If you don't have admin rights, you'll have to look into
+<code>Python/Makefile</code> and pass your prefix
+to <code>setup.py.</code></p>
+
+<p>Of course, you'll also need the Python development files installed
+(that is, <code>python.h</code> and so on). They might be available by
+default; but if not, you'll have to figure out how to get them. On
+Ubuntu, for instance, you would install them with:</p>
+<pre>
+  sudo apt-get install python-dev
+</pre>
+<p>Similar packages should be available for most other
+distributions.</p>
+
+<p>Once you're done, you can try to run a few examples to check your
+installation. To do this, you can simply execute:</p>
+<pre>
+  make -C Python check
+</pre>
+
+
+<h3>Installation from a git repository</h3>
+
+<p>If you want to compile from a checkout of a git repository (such as
+the official one
+at <a href="https://github.com/lballabio/quantlib-swig">https://github.com/lballabio/quantlib-swig</a>,
+or a fork of it that you might have created) you'll need an additional
+step at the beginning of the process. Before running
+the <code>./configure</code> script, you'll have to create it by
+executing</p>
+<pre>
+  ./autogen.sh
+</pre>
+<p>To do this, you'll need automake, autoconf and libtool. Again,
+they're packaged for most Linux distributions; on Ubuntu, you would
+get them by running</p>
+<pre>
+  sudo apt-get install automake autoconf libtool
+</pre>
+<p>After the execution of <code>./autogen.sh</code>, the installation
+proceeds as in the previous section. Note, though, that in this case
+you'll need SWIG available; you can download and install it
+from <a href="http://swig.org">http://swig.org</a> or, again, get it
+packaged for your distribution.</p>
+</div>
+
+<div class="footer">
+<!--#include virtual="/footer.inc"-->
+</div>
+
+</div>
+
+</body>
+</html>
