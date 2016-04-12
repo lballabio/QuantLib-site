@@ -88,7 +88,15 @@ and the libraries in <code>/home/foo/lib</code>, execute:</p>
 <pre>
   sudo make install
 </pre>
-<p>installs it (if you specified a location with <code>--prefix</code> that doesn't need admin permissions, you won't need to use <code>sudo</code> before <code>make install</code>).</p>
+<p>installs it (if you specified a location with <code>--prefix</code> that doesn't need admin permissions, you won't need to use <code>sudo</code> before <code>make install</code>). Depending on your system, you might also need to run</p>
+<pre>
+  sudo ldconfig
+</pre>
+<p>to notify the dynamic linker that a new shared library is available
+(the above works with the default prefix; if you chose another one,
+you'll need to add the location of the library
+to <code>/etc/ld.so.conf</code> before
+running <code>ldconfig</code>).</p>
 
 <p>Once you're done, you can try to compile and run an example to check your
 installation. If you installed everything in the default location, you
