@@ -1,6 +1,6 @@
 <!-- Comment out the whole thing to disable it -->
 <div class="banner">
 <h3 class="bannertext">
-QuantLib User Meeting 2015: <a href="/qlum15.shtml">slides from the
-presentations are available.</a></h3>
+Presentations from the QuantLib User Meeting 2016 in London <a href="/qlum16london.shtml">are available.</a></h3>
 </div>
+

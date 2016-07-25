@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<!--#include virtual="qlmeta.inc"-->
+<meta name="author" content="StatPro Italia srl">
+<meta name="copyright" content="StatPro Italia srl (c) 2015">
+<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
+<title>QuantLib User Meeting 2016</title>
+</head>
+<body>
+<div id="container">
+<!--#include virtual="header.inc"-->
+<div id="menu">
+<!--#include virtual="usermenu.inc"-->
+</div>
+<div id="content">
+
+<h1 class="center" id="qlws14">QuantLib User Meeting 2016</h1>
+
+<p>The QuantLib User Meeting 2016 was held in London on
+July 12th, thanks to the sponsorship of
+<a href="https://www.quaternion.com/">Quaternion</a>.</p>
+
+<p>The slides for most of the the talks are available by clicking on
+their title.</p>
+
+<table>
+  <tr><td>Ferdinando Ametrano and Luigi Ballabio,
+          <i><a href="https://speakerdeck.com/nando1970/the-abcd-of-interest-rate-basis-spreads">
+          The abcd of Interest Rate Basis Spreads</a></i></td></tr>
+  <tr><td>Peter Caspers, Niall O'Sullivan and Roland Lichters,
+          <i><a href="/slides/qlum16l/openriskengine.pdf">
+          Open Risk Engine</a></i></td></tr>
+  <tr><td>Eric Ehlers,
+          <i><a href="/slides/qlum16l/ehlers.pdf">
+          Reposit 1.8 and the Future of Spreadsheet Addins</a></i></td></tr>
+  <tr><td>Sebastian Schlenkrich,
+          <i><a href="/slides/qlum16l/schlenkrich.pdf">
+          Multi-Curve Convexity</a></i></td></tr>
+  <tr><td>Alexander Sokol,
+          <i><a href="/slides/qlum16l/sokol.pdf">
+          QuantLibAdjoint News</a></i></td></tr>
+  <tr><td>Daniel Aziz,
+          <i>A sound modelling and backtesting framework for
+             forecasting initial margin requirements</i>
+          (based on <a href="http://ssrn.com/abstract=2716279">
+          http://ssrn.com/abstract=2716279</a>)</td></tr>
+  <tr><td>Andres Hernandez,
+          <i><a href="/slides/qlum16l/hernandez.pdf">
+          Calibration using Neural Networks</a></i></td></tr>
+</table>
+
+</div>
+
+<div id="menuafter">
+<!--#include virtual="usermenu.inc"-->
+</div>
+
+<div class="footer">
+<!--#include virtual="footer.inc"-->
+</div>
+
+</div>
+
+</body>
+</html>
