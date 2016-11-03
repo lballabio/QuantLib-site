@@ -5,9 +5,9 @@
 <meta name="author" content="Dominik Holenstein">
 <meta name="copyright" content=
 "Dominik Holenstein (c) 2011">
-<meta name="description" content="QuantLib Installation in Visual C++ 2010">
+<meta name="description" content="QuantLib installation in Visual C++ 2010 and later">
 <link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
-<title>QuantLib Installation in Visual C++ 2010</title>
+<title>QuantLib installation in Visual C++ 2010 and later</title>
 </head>
 <body>
 <div id="container">
@@ -17,7 +17,7 @@
 </div>
 <div id="content">
 
-<h1 class="center">QuantLib Installation in VC++ 2010</h1>
+<h1 class="center">QuantLib installation in VC++ 2010 and later</h1>
 <h4 class="center">Dominik Holenstein</h4>
 
 <h6 class="center">Based on the VC++ 2008 instructions by Dimitri Reiswich</h4>
