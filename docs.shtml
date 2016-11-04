@@ -88,6 +88,18 @@ available for purchase separately or as part of their subscription
 service.</li>
 </ul>
 
+<h2 class="center">Talks</h2>
+<ul>
+<li><strong>Introduction to QuantLib</strong>
+is <a href="http://bit.ly/2fjfmiU">a talk by Robert Hardy</a> for Skills Matter
+that introduces QuantLib and QuantLibXL and gives a few examples of
+their use.</li>
+<li><strong>Introduction to QuantLib and Using QuantLib
+Programmatically</strong> is <a href="http://bit.ly/2fiVzhc">a talk by
+Bojan Nikolic</a> for Skills Matter that shows examples of using QuantLib
+from other languages.</li>
+</ul>
+
 <h2 class="center">Blogs</h2>
 <ul>
 <li>Useful QuantLib-related posts appear in a number of blogs:<br>
