@@ -119,10 +119,15 @@ from other languages.</li>
 
 <h2 class="center" id="qlws13">Conference proceedings</h2>
 <ul>
-<li>The <strong id="qlum16l"><a href="/qlum16london.shtml">QuantLib
-User Meeting 2016</a></strong> was held in London on July 12th, 2016,
+<li>The <strong id="qlum16l">QuantLib User Meetings 2016</strong> were
+held in <a href="/qlum16london.shtml">London on July 12th, 2016</a>,
 thanks to the sponsorship
-of <a href="https://www.quaternion.com/">Quaternion</a>.</li>
+of <a href="https://www.quaternion.com/">Quaternion</a>, and in
+<a href="/qlum16dus.shtml">D&uuml;sseldorf on December 7th and 8th,
+2016</a>, thanks to the sponsorship of
+<a href="http://www.ikb.de/">IKB</a>,
+<a href="http://www.quaternionrisk.com/">Quaternion</a> and
+<a href="http://www.d-fine.com/">d-fine</a>.</li>
 <li>The <strong id="qlum15"><a href="/qlum15.shtml">QuantLib User
 Meeting 2015</a></strong> was held in D&uuml;sseldorf on November 31st
 and December 1st, 2015, thanks to the sponsorship of
@@ -131,13 +136,13 @@ and <a href="http://www.compatibl.com/">CompatibL</a>.</li>
 <li>The <strong id="qlws14"><a href="/qlws14.shtml">QuantLib User
 Meeting 2014</a></strong> was held in D&uuml;sseldorf on December 4th
 and 5th, 2014, thanks to the sponsorship of
-<a href="http://www.ikb.de/">IKB</a>;</li>
+<a href="http://www.ikb.de/">IKB</a>.</li>
 <li>The <strong id="qlws13"><a href="/qlws13.shtml">QuantLib User
 Meeting 2013</a></strong> was held in D&uuml;sseldorf on November 13th
 and 14th, 2013, thanks to the sponsorship of
 <a href="http://www.ikb.de/">IKB</a>,
 <a href="http://www.quaternionrisk.com/">Quaternion</a> and
-<a href="http://www.d-fine.com/">d-fine</a>;</li>
+<a href="http://www.d-fine.com/">d-fine</a>.</li>
 <li>The <strong><a href="/qlforum11.shtml">first QuantLib
 forum</a></strong> was held in London on January 18th, 2011, thanks to
 the sponsorship of <a href="http://www.statpro.com/">StatPro</a>.</li>
