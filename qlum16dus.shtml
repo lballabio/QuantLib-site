@@ -31,33 +31,41 @@ their title.</p>
 <h3>Wednesday, December 7th</h3>
 <table>
   <tr><td>Sebastian Schlenkrich,
-          <i>Quasi-Gaussian Models</i>.</td></tr>
-  <tr><td>Georg Sch&ouml;chtel, <i>QuantLib(XL) for Model
-          Validation</i>.</td></tr>
+      <i><a href="/slides/qlum16d/schlenkrich.pdf">Quasi-Gaussian
+      Model in QuantLib</a></i>.</td></tr>
+  <tr><td>Georg Sch&ouml;chtel,
+      <i><a href="/slides/qlum16d/schoechtel.pdf">QuantLib(XL) for
+      Model Validation</a></i>.</td></tr>
   <tr><td>Andreas Pfadler,
-      <i>Igniting QuantLib on a Zeppelin</i>.</td></tr>
+      <i><a href="/slides/qlum16d/pfadler.pdf">Igniting QuantLib on a
+      Zeppelin</a></i>.</td></tr>
   <tr><td>Nicholas Bertocchi,
       <i><a href="https://speakerdeck.com/nando1970/advanced-eonia-curve-calibration">Advanced
       EONIA Curve Calibration</a></i>. Paper available
       on <a href="https://ssrn.com/abstract=2881445">SSRN</a>.</td></tr>
   <tr><td>Eric Ehlers,
-      <i>Reposit 1.10: Status Update Heston</i>.</td></tr>
+      <i><a href="/slides/qlum16d/ehlers.pdf">Reposit 1.10: Status
+      Update</a></i>.</td></tr>
 </table>
 
 <h3>Thursday, December 8th</h3>
 <table>
   <tr><td>Martin Dietrich and Pascal Heider,
-      <i>Market Models vs Replication Strategies in Incomplete
-      Commodity Markets</i>.</td></tr>
+      <i><a href="/slides/qlum16d/dietrich.pdf">Market Models vs
+      Replication Strategies in Incomplete Commodity
+      Markets</a></i>.</td></tr>
   <tr><td>Klaus Spanderen,
-      <i>Collocating Local Volatility Model</i>.</td></tr>
+      <i><a href="/slides/qlum16d/spanderen.pdf">Collocating Local
+      Volatility Model</a></i>.</td></tr>
   <tr><td>Peter Caspers,
-      <i>Open Source Risk Engine (ORE)</i>.</td></tr>
+      <i><a href="/slides/qlum16d/caspers.pdf">Open Source Risk Engine
+      (ORE)</a></i>.</td></tr>
   <tr><td>Roland Lichters,
       <i><a href="/slides/qlum16d/lichters.pdf">ORE Applied: Dynamic
       Initial Margin and MVA</a></i>.</td></tr>
   <tr><td>Oleksandr Khomenko,
-      <i>Solvency II Regulation: How QuantLib Can Help</i>.</td></tr>
+      <i><a href="/slides/qlum16d/khomenko.pdf">Solvency II
+      Regulation: How QuantLib Can Help</a></i>.</td></tr>
 </table>
 
 </div>
