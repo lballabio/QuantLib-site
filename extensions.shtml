@@ -58,6 +58,10 @@ Didrik Pinte and Patrick Henaff.</p>
 a port of QuantLib to the Julia language. The project is in its
 initial stages and welcomes contributions.</p>
 
+<p>Bindings for Node.js are available from
+the <a href="https://github.com/quantlibnode/quantlibnode">quantlibnode</a>
+project.</p>
+
 <p><a href="https://code.google.com/p/qldds/">QLDDS</a> is a project
 that allows the functionality of the QuantLibAddin for C++ to be
 distributed via OpenDDS across multiple computers running different
