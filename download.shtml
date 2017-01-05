@@ -18,14 +18,16 @@
 <div id="content">
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.9 (November 8th, 2016).</p>
+<p>The latest QuantLib release is version 1.9.1 (January 5th, 2017).</p>
 <p>Source packages for <b>all platforms</b> are available from the SourceForge
-<a href= "http://sourceforge.net/project/showfiles.php?group_id=12740">download
-page</a> in a number of different formats.  Compiling QuantLib requires a
-working <a href="http://www.boost.org">Boost</a> installation; Boost 1.43 or
-later is needed. Advanced users may want to <a
-href="reference/config.html">configure the library</a> with non-default
-settings.</p>
+<a href=
+"http://sourceforge.net/project/showfiles.php?group_id=12740">download
+page</a> in a number of different formats.  Compiling QuantLib
+requires a working <a href="http://www.boost.org">Boost</a>
+installation; Boost 1.43 or later is required, but a more recent
+version is suggested. Advanced users may want
+to <a href="reference/config.html">configure the library</a> with
+non-default settings.</p>
 <p><b>Debian users</b> can find the latest version of the different QuantLib
 packages in the "unstable" (a.k.a. "Sid") distribution; see the <a href=
 "http://packages.debian.org/cgi-bin/search_packages.pl?keywords=quantlib&amp;searchon=names&amp;subword=1&amp;version=unstable&amp;release=all">
