@@ -30,7 +30,9 @@ href="http://users.telenet.be/johan.witters/website/skwash.com/get/get3.html">he
 <p><a href="http://quantlibaddin.org">QuantLibAddin</a> exports a
 procedural interface to a number of platforms including Microsoft
 Excel (see the <a href="http://quantlibxl.org">QuantLibXL</a> site)
-and OpenOffice.org Calc.</p>
+and OpenOffice/LibreOffice Calc.
+The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
+QuantLib Addin</a> project also exports QuantLib to Calc.</p>
 
 <p>A modified QuantLib C++ library enabling adjoint automatic differentiation (AAD) is available from <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
 
