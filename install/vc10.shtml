@@ -116,9 +116,15 @@ the left pane and add the paths for the Boost directories
 in <i>Include Directories</i> and <i>Library Directories</i> in the
 right pane. If you installed Boost in <tt>C:\Program
 Files\boost\boost_1_47</tt>, you'll have to add <tt>C:\Program
-Files\boost\boost_1_47</tt> to the include directories
-and <tt>C:\Program Files\boost\boost_1_47\lib</tt> to the library
-directories.  Click the OK button to set your changes.</p>
+Files\boost\boost_1_47</tt> to the include directories.  In earlier
+Boost version, the folder to add to the library directories was
+called <tt>C:\Program Files\boost\boost_1_47\lib</tt>.  In later
+versions, the folder has a name such
+as <tt>C:\Program Files\boost\boost_1_63_0\lib32-msvc-10.0</tt>
+or <tt>C:\Program Files\boost\boost_1_63_0\lib64-msvc-12.0</tt> which includes
+compiler and build information; if you installed multiple ones, choose
+the one corresponding to your configuration. Click the OK button to
+set your changes.</p>
 
 <p class="center"><img src="pics/vc10/ql04.png" alt="Directories
 Dialog"></p>

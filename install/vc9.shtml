@@ -80,10 +80,16 @@ choose <i>Library files</i>.
 
 <p class="center"><img src="pics/vc9/qlA4.png" alt="Library dirs"></p>
 
-<p>Include the Boost library folder, in our
-case <tt>C:\Boost\boost_1_39\lib</tt>. Click <i>OK</i>. You're done.
-In case you run into problems afterwards, the Appendix shows how to
-build a test program to check that Boost is correctly installed.</p>
+<p>Include the Boost library folder.  In earlier Boost versions, as in
+our case, it was called <tt>C:\Boost\boost_1_39\lib</tt>. In later
+versions, the folder has a name such
+as <tt>C:\Boost\boost_1_63_0\lib32-msvc-9.0</tt>
+or <tt>C:\Boost\boost_1_63_0\lib64-msvc-9.0</tt> which includes
+compiler and build information; if you installed multiple ones, choose
+the one corresponding to your configuration. Click <i>OK</i>. You're
+done.  In case you run into problems afterwards, the Appendix shows
+how to build a test program to check that Boost is correctly
+installed.</p>
 
 <p class="center"><img src="pics/vc9/qlA5.png" alt="Boost library dir"></p>
 
