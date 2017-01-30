@@ -46,7 +46,9 @@ by executing:</p>
   cd QuantLib-SWIG-1.8
   ./configure CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6'
 </pre>
-(On Mac OS X 10.8 and earlier, the <tt>CXXFLAGS</tt> might not be needed.)
+(On Mac OS X 10.8 and earlier, the <tt>CXXFLAGS</tt> might not be
+needed; on Mac OS X 10.11 or later, you might
+need <tt>-mmacosx-version-min=10.9</tt> instead.)
 
 <p>After configuration, you can run</p>
 <pre>
