@@ -24,7 +24,8 @@
 
 <p>The following assumes that you already installed
 QuantLib. Instructions for that are available
-at <a href="http://quantlib.org/install/linux.shtml">http://quantlib.org/install/linux.shtml</a>.</p>
+at <a href="http://quantlib.org/install/linux.shtml">http://quantlib.org/install/linux.shtml</a>;
+please make sure that you performed all listed steps.</p>
 
 <h2>QuantLib-Python Installation</h2>
 
@@ -46,13 +47,13 @@ executing:</p>
   ./configure
 </pre>
 
-<p>After configuration, you can just run</p>
+<p>Contrary to popular belief, working from a released tarball doesn't
+require you to have SWIG installed.  After configuration, you can just
+run</p>
 <pre>
   make -C Python
   sudo make -C Python install
 </pre>
-<p>Contrary to popular belief, working from a released tarball doesn't
-require you to have SWIG installed.</p>
 
 <p>There are a couple of caveats to the above. The first is that
 the <code>./configure</code> command will need to
@@ -110,7 +111,11 @@ get them by running</p>
 proceeds as in the previous section. Note, though, that in this case
 you'll need SWIG available; you can download and install it
 from <a href="http://swig.org">http://swig.org</a> or, again, get it
-packaged for your distribution.</p>
+packaged for your distribution. On Ubuntu, for instance, the
+corresponding command would be</p>
+<pre>
+  sudo apt-get install swig
+</pre>
 </div>
 
 <div class="footer">
