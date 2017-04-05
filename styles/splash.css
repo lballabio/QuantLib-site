@@ -1,10 +1,13 @@
 
 #menu {
     float: none;
+    background-color: #fff6bb;
     width: 100%;
     margin: 0;
     padding-right: 1em;
     line-height: 140%;
+    border: 1px solid gray;
+    border-radius: 0.3em
 }
 
 div.categorygroup {
@@ -14,8 +17,7 @@ div.categorygroup {
 div.category {
     float: left;
     width: 31%;
-    background-color: #ffeeaa;
-    border: 1px solid gray;
+    background-color: #fff6bb;
     margin-bottom: 1em;
     margin-left: 1em;
 }
@@ -40,6 +42,7 @@ div.sponsor {
     background-color: #ffffff;
     text-align: center;
     padding: 0;
+    margin-top: 1em;
     margin-left: 1em;
 }
 
@@ -73,9 +76,7 @@ div.category {
 }
 
 div.sponsor {
-    float: none;
-    width: 90%;
-    margin-bottom: 1em;
+    display: none;
 }
 
 div.banner {

@@ -17,6 +17,7 @@ finance</title>
 <!--#include virtual="banner.inc"-->
 <div id="menu">
 <!--#include virtual="usermenu.inc"-->
+<!--#include virtual="sponsors.inc"-->
 </div>
 <div id="content">
 

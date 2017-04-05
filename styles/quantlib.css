@@ -39,11 +39,14 @@ div.social {
 
 #menu {
     float: right;
+    background-color: #fff6bb;
     width: 16em;
     margin: 0;
     margin-bottom: 1em;
     padding-right: 1em;
     line-height: 140%;
+    border: 1px solid gray;
+    border-radius: 0.3em
 }
 
 #menuafter {
@@ -54,8 +57,9 @@ div.categorygroup {
 }
 
 div.category {
-    background-color: #ffeeaa;
-    border: 1px solid gray;
+    background-color: #fff6bb;
+    /* border: 1px solid gray; */
+    /* border-radius: 0.3em */
     margin-bottom: 1em;
 }
 
