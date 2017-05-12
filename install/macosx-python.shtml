@@ -5,9 +5,9 @@
 <meta name="author" content="Luigi Ballabio">
 <meta name="copyright" content= "Luigi Ballabio (c) 2016">
 <meta name="description"
-      content="QuantLib-Python Installation on Linux">
+      content="QuantLib-Python Installation on Mac OS X">
 <link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
-<title>QuantLib-Python installation on Linux</title>
+<title>QuantLib-Python installation on Mac OS X</title>
 </head>
 <body>
 <div id="container">
@@ -24,7 +24,9 @@
 
 <p>The following assumes that you already installed
 QuantLib. Instructions for that are available
-at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>.</p>
+at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>. In
+particular, check that you have provided the required options and
+environment variables to <tt>./configure</tt>.</p>
 
 <h2>QuantLib-Python Installation</h2>
 
@@ -42,21 +44,32 @@ might have downloaded another one, but take care to use one compatible
 with the version of QuantLib you installed.) This creates a
 folder <code>QuantLib-SWIG-1.8</code>; enter it and configure QuantLib
 by executing:</p>
+<p><strong>On Mac OS X 10.11 (Sierra) and later,</strong>
+<pre>
+  cd QuantLib-SWIG-1.8
+  ./configure CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9'
+</pre>
+</p>
+<p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (El Capitan),</strong>
 <pre>
   cd QuantLib-SWIG-1.8
   ./configure CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6'
 </pre>
-(On Mac OS X 10.8 and earlier, the <tt>CXXFLAGS</tt> might not be
-needed; on Mac OS X 10.11 or later, you might
-need <tt>-mmacosx-version-min=10.9</tt> instead.)
+</p>
+<p><strong>On earlier systems,</strong>
+<pre>
+  cd QuantLib-SWIG-1.8
+  ./configure CXXFLAGS='-O2'
+</pre>
+</p>
 
-<p>After configuration, you can run</p>
+<p>Contrary to popular belief, working from a released
+tarball <strong>doesn't require you to have SWIG
+installed</strong>.  After configuration, you can run</p>
 <pre>
   make -C Python
   sudo make -C Python install
 </pre>
-<p>Contrary to popular belief, working from a released tarball doesn't
-require you to have SWIG installed.</p>
 
 <p>There are a couple of caveats to the above. The first is that
 the <code>./configure</code> command will need to
@@ -66,8 +79,8 @@ linker; they will also include the additional include directories you
 might have specified when you built QuantLib, so you'll be covered
 even if you have, say, Boost in a non-standard place. This means
 that <code>quantlib-config</code> must be in your path. If you
-installed QuantLib in /opt/local like MacPorts or in /usr/local like
-Homebrew, you should be already set up.</p>
+installed QuantLib in /usr/local like Homebrew or in /opt/local like
+MacPorts, you should be already set up.</p>
 
 <p>The second is that, unfortunately, at this time <code>make
 install</code> ignores any prefix you might pass
@@ -104,12 +117,12 @@ executing</p>
   ./autogen.sh
 </pre>
 <p>To do this, you'll need automake, autoconf and libtool. They can be
-installed using either MacPorts or Homebrew.</p>
+installed using either Homebrew or MacPorts.</p>
 <p>After the execution of <code>./autogen.sh</code>, the installation
 proceeds as in the previous section. Note, though, that in this case
 you'll need SWIG available; you can download and install it
 from <a href="http://swig.org">http://swig.org</a> or, again, get it
-packaged.</p>
+packaged from Homebrew or MacPorts.</p>
 </div>
 
 <div class="footer">
