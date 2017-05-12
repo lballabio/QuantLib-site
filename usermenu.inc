@@ -29,9 +29,7 @@ href="/faq.shtml">FAQ</a> and check if it was already answered.</p>
 <div class="categorygroup">
 <div class="category">
 <h3 class="categorytitle">Found a bug?</h3>
-<p class=categorysummary>If you have a patch, open a pull request on <a href="https://github.com/lballabio/quantlib/pulls">GitHub</a> or post it to our <a href=
-"http://sourceforge.net/tracker/?group_id=12740&amp;atid=312740">patch manager</a>.  Otherwise, report the bug on our <a href=
-"http://sourceforge.net/tracker/?func=add&amp;group_id=12740&amp;atid=112740">issue tracker</a>.</p>
+<p class=categorysummary>Open an issue on <a href="https://github.com/lballabio/QuantLib/issues">GitHub</a>; if you have a patch, <a href="https://github.com/lballabio/quantlib/pulls">open a pull request</a> instead.</p>
 </div>
 
 <div class="category">
