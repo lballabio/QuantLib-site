@@ -29,11 +29,9 @@ for <a href="/install/vc9.shtml">Microsoft Visual C++ 2008 and earlier</a>,
 <h2 class="center">QuantLib-Python Installation</h2>
 
 <p>Installation instructions are available
-for <a href="/install/linux-python.shtml">Linux/Unix</a>
-and <a href="/install/macosx-python.shtml">Mac OS X</a> on this site,
-and
-for <a href="https://vineetv.wordpress.com/2015/07/07/installing-quantlib-python-windows/">Windows</a>
-on an external blog.</p>
+for <a href="/install/windows-python.shtml">Windows</a>,
+<a href="/install/macosx-python.shtml">Mac OS X</a> and
+<a href="/install/linux-python.shtml">Linux/Unix</a>.</p>
 
 </div>
 
