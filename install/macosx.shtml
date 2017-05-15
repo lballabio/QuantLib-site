@@ -48,7 +48,7 @@ cd QuantLib-1.8
 </pre>
 </p>
 
-<p><strong>On Mac OS X 10.11 (Sierra) and later,</strong> you'll
+<p><strong>On Mac OS X 10.11 (El Capitan) and later,</strong> you'll
 need to pass additional environment variables to <tt>./configure</tt>
 (thanks to Albert Azout for pointing it out). Run:
 <pre>
@@ -62,9 +62,8 @@ continue on the next line.  You might also discard the backslash and
 write the whole command on a single line.) If your Boost installation
 is not in <tt>/usr/local</tt>, change the paths above accordingly.
 </p>
-<p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (El
-Capitan),</strong> you'll need to pass different environment
-variables. Run:
+<p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
+you'll need to pass different environment variables. Run:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
             --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
