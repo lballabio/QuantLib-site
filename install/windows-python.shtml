@@ -53,10 +53,10 @@ additional configurations described in how-to posts across the
 web. The Visual Studio versions used to compile each Python version,
 and thus also recommended for compiling additional modules, are Visual
 Studio 9 (2008) for Python 2.7 and 3.0 to 3.2; Visual Studio 10 (2010)
-for Python 3.3 to 3.5; and Visual Studio 14 (2015) for Python 3.6.  Of
-course, you'll need QuantLib compiled with the same Visual Studio
-version; you'll also need it compiled as a 32-bit or 64-bit binary to
-match your Python installation.</p>
+for Python 3.3 and 3.4; and Visual Studio 14 (2015) for Python 3.5 and
+later.  Of course, you'll need QuantLib compiled with the same Visual
+Studio version; you'll also need it compiled as a 32-bit or 64-bit
+binary to match your Python installation.</p>
 
 <p>To compile the Python module, open a command prompt, and enter the
 Python folder inside the folder you unzipped. Next, set the
