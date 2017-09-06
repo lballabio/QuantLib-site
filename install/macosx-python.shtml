@@ -22,13 +22,29 @@
 
 <h2>Prerequisites</h2>
 
-<p>The following assumes that you already installed
-QuantLib. Instructions for that are available
+<p>The following assumes that you already installed QuantLib (but
+first, you might consider installing from PyPI; read
+below). Instructions for that are available
 at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>. In
 particular, check that you have provided the required options and
 environment variables to <tt>./configure</tt>.</p>
 
 <h2>QuantLib-Python Installation</h2>
+
+<h3>Installation from PyPI</h3>
+
+<p>If you don't need to modify the wrappers, you might want to try
+installing a precompiled binary version.  The availability of binaries
+  depend on your operating system; to try to install them, run:</p>
+<pre>
+  pip install QuantLib-Python
+</pre>
+<p>(note that the <code>pip</code> executable might be
+called <code>pip2</code> or <code>pip3</code> on your system).  If a
+binary package is available for your system, it will be installed and
+you will be able to leave this page and use it right away; if not,
+you'll have to compile it yourself as described in the next
+section.</p>
 
 <h3>Installation from a released version</h3>
 
@@ -71,23 +87,36 @@ installed</strong>.  After configuration, you can run</p>
   sudo make -C Python install
 </pre>
 
-<p>There are a couple of caveats to the above. The first is that
-the <code>./configure</code> command will need to
+<p>There are a few caveats to the above. <strong>The first</strong> is
+that the <code>./configure</code> command will need to
 invoke <code>quantlib-config</code> (which was installed with
 QuantLib) to find out what flags should be passed to the compiler and
 linker; they will also include the additional include directories you
 might have specified when you built QuantLib, so you'll be covered
 even if you have, say, Boost in a non-standard place. This means
 that <code>quantlib-config</code> must be in your path. If you
-installed QuantLib in /usr/local like Homebrew or in /opt/local like
-MacPorts, you should be already set up.</p>
+installed QuantLib in <code>/usr/local</code> like Homebrew or
+in <code>/opt/local</code> like MacPorts, you should be already set
+up.</p>
 
-<p>The second is that, unfortunately, at this time <code>make
-install</code> ignores any prefix you might pass
+<p><strong>The second</strong> is that the call
+to <code>./configure</code> as written above will find the system
+installation of Python.  If you want to use a different one (for
+instance because you installed Python 3, or you want to use an
+Anaconda installation) you must pass the location of your chosen
+Python interpreter to <code>./configure</code>; for instance, if you
+have Python 3 installed as <code>/usr/local/bin/python3</code>, you'll
+have to run:</p>
+<pre>
+  ./configure PYTHON=/usr/local/bin/python3 CXXFLAGS=...
+</pre>
+
+<p><strong>The third</strong> is that, unfortunately, at this
+time <code>make install</code> ignores any prefix you might pass
 to <code>./configure</code> and always installs to the default
-location, which requires you to use <code>sudo</code> as I wrote
-above. If you don't have admin rights, or if you want to install to a
-different location (for instance, an Anaconda virtualenv) you can run:
+location, which usually requires you to use <code>sudo</code> as I
+wrote above. If you don't have admin rights, or if you want to install
+to a different location, you can run:
 <pre>
   cd Python
   python setup.py install --prefix=/your/desired/location

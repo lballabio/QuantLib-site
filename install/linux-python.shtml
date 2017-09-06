@@ -55,8 +55,8 @@ run</p>
   sudo make -C Python install
 </pre>
 
-<p>There are a couple of caveats to the above. The first is that
-the <code>./configure</code> command will need to
+<p>There are a few of caveats to the above. <strong>The first</strong>
+is that the <code>./configure</code> command will need to
 invoke <code>quantlib-config</code> (which was installed with
 QuantLib) to find out what flags should be passed to the compiler and
 linker; they will also include the additional include directories you
@@ -64,8 +64,20 @@ might have specified when you built QuantLib, so you'll be covered
 even if you have, say, Boost in a non-standard place. This means
 that <code>quantlib-config</code> must be in your path.</p>
 
-<p>The second is that, unfortunately, at this time <code>make
-install</code> ignores any prefix you might pass
+<p><strong>The second</strong> is that the call
+to <code>./configure</code> as written above will find the system
+installation of Python.  If you want to use a different one (for
+instance because you installed Python 3, or you want to use an
+Anaconda installation) you must pass the location of your chosen
+Python interpreter to <code>./configure</code>; for instance, if you
+have Python 3 installed as <code>/usr/local/bin/python3</code>, you'll
+have to run:</p>
+<pre>
+  ./configure PYTHON=/usr/local/bin/python3
+</pre>
+
+<p><strong>The third</strong> is that, unfortunately, at this
+time <code>make install</code> ignores any prefix you might pass
 to <code>./configure</code> and always installs to the default
 location, which requires you to use <code>sudo</code> as I wrote
 above. If you don't have admin rights, you'll have to look into

@@ -22,14 +22,29 @@
 
 <h2>Prerequisites</h2>
 
-<p>The following assumes that you already installed
-QuantLib. Instructions for that are available
+<p>The following assumes that you already installed QuantLib (but
+first, you might consider installing from PyPI; read
+below). Instructions for that are available
 at <a href="http://quantlib.org/install/vc9.shtml">http://quantlib.org/install/vc9.shtml</a>
 for Visual Studio 9 (2008) and
 at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>
-for Visual Studio 10 (2010) and later.</p>
+for Visual Studio 10 (2010) and later.  Note that QuantLib must be
+compiled in Release mode.</p>
 
 <h2>QuantLib-Python Installation</h2>
+
+<h3>Installation from PyPI</h3>
+
+<p>If you don't need to modify the wrappers, you might want to try
+installing a precompiled binary version.  The availability of binaries
+  depend on your operating system; to try to install them, run:</p>
+<pre>
+  pip install QuantLib-Python
+</pre>
+<p>If a binary package is available for your system, it will be
+installed and you will be able to leave this page and use it right
+away; if not, you'll have to compile it yourself as described in the
+next section.</p>
 
 <h3>Installation from a released version</h3>
 
@@ -75,7 +90,8 @@ Once you've done this, you can run the actual build command, which is:
 <pre>
   python setup.py build
 </pre>
-The script will find the compiler and build the module.
+The script will find the compiler and build the module.  Again, this
+requires a specific version of Visual Studio as mentioned above.
 </p>
 
 <p class="center"><img src="pics/pywin/cmd.png" alt="Command prompt"></p>
