@@ -23,6 +23,7 @@ to remove all references to this address.
 </div>
 <div id="menu">
 <!--#include virtual="usermenu.inc"-->
+<div class="categorygroup"/>
 </div>
 
 <div class="footer">

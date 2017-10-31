@@ -23,6 +23,7 @@ your favorite engine).
 </div>
 <div id="menu">
 <!--#include virtual="usermenu.inc"-->
+<div class="categorygroup"/>
 </div>
 
 <div class="footer">
