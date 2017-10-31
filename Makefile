@@ -5,10 +5,10 @@ TIDYOPTS = -q -m
 
 INCLUDES = qlmeta.inc qlheader.inc qlfooter.inc
 FILES    = index.shtml books.shtml cvs.shtml docs.shtml download.shtml \
-           developerFAQ.shtml extensions.shtml license.shtml \
+           extensions.shtml faq.shtml license.shtml \
            mailinglists.shtml marketconventions.shtml quep.shtml style.shtml
 
-.PHONY: all check install faq
+.PHONY: all check install
 
 all:
 	@echo "Available targets:"
@@ -23,9 +23,4 @@ install:
 	scp ${FILES} ${SFUSER}@${SITE}
 	scp images/*.gif images/*.jpg images/*.png ${SFUSER}@${SITE}/images
 	scp styles/*.css ${SFUSER}@${SITE}/styles
-
-faq: faq.shtml
-
-faq.shtml: faq.dat faqheader.html faqfooter.html
-	makefaq.py -o faq.shtml
 

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<!--#include virtual="qlmeta.inc"-->
+<meta name="author" content="StatPro Italia srl">
+<meta name="copyright" content="StatPro Italia srl (c) 2004">
+<meta name="description" content="QuantLib FAQ">
+<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
+<title>QuantLib Frequently-Asked Questions</title>
+</head>
+<body>
+<div id="container">
+<!--#include virtual="header.inc"-->
+<div id="menu">
+<!--#include virtual="usermenu.inc"-->
+</div>
+<div id="content">
+
+<h1 class="center">Frequently-Asked Questions</h1>
+
+<ul>
+<li><a href="#General questions1">How should I ask for help or report
+    a bug?</a></li>
+<li><a href="#General questions0">Is it OK to email a QuantLib
+    developer to ask questions, or seek help, or report a bug?</a></li>
+<li><a href="#Contributing to the project0">I'm interested in
+    getting involved with the project. What should I do?</a></li>
+<li><a href="#Building QuantLib1">I'm having trouble building
+    QuantLib.</a></li>
+<li><a href="#QuantLib extensions0">I'm having trouble building/using
+    QuantLibXL or QuantLibAddin.</a></li>
+<li><a href="#QuantLib features0">Why is feature X missing from
+    QuantLib? It would be a very useful one.</a></li>
+<li><a href="#QuantLib extensions1">Does QuantLib support &lt;insert
+    favorite language/platform here&gt;?</a></li>
+<li><a href="#QuantLib extensions2">Does QuantLib support FpML?
+    Serialization?</a></li>
+</ul>
+
+<dl>
+<dt><b><a name="General questions1">How should I ask for help or
+      report a bug?</a></b></dt>
+<dd>You can write to a QuantLib mailing list and describe your
+  problem.  If it is a compilation problem, please provide info about
+  your operating system, compiler and Boost version as well as details
+  on the error.  If the test suite fails, please report the output
+  obtained by executing it with the following command line options:
+  <pre>
+    --log_level=messages --build_info=yes --result_code=no --report_level=short
+  </pre>
+  If you built the library successfully but you're getting weird
+  results when using it, try to provide steps to reproduce the
+  problem.<br><br>
+
+  A note on posting.  If you're starting a new topic, please use
+  whatever command your mail client provides to start a new message;
+  do not reply to another unrelated post (or worse, a digest) and
+  change the subject. Replying can cause your message to appear in the
+  wrong thread in the mailing list archive and in mail clients that
+  support threads.  This brings inconvenience on a number of
+  people&mdash;possibly including you, as your message might be
+  overlooked by people not interested in the original topic.<br><br>
+</dd>
+
+<dt><b><a name="General questions0">Is it OK to email a QuantLib
+   developer directly to ask questions, or seek help, or report a
+   bug?</a></b></dt>
+<dd>You can do it, but it will fail to carry the sense of urgency you
+  might have hoped to convey&mdash;and the developer is likely to
+  answer you "please, post your question on the mailing list"
+  anyway. They might even refer you to this FAQ entry.<br><br>
+
+  There are a number of reasons for this. Messages on the list are
+  stored, and thus benefit the whole project: the next user with your
+  problem will be able to find the answer by searching the archives.
+  Since the developers can volunteer only a limited time, they will
+  employ it to help as many people as possible.  This means giving
+  priority to questions on the list (which help all the subscriber)
+  rather than private emails (which only help the sender).<br><br>
+</dd>
+
+<dt><b><a name="Contributing to the project0">I'm interested in
+      getting involved with the project. What should I do?</a></b></dt>
+<dd>Please read
+  our <a href="http://quantlib.org/newdeveloper.shtml">developer
+  introduction</a>. It lists a few ways in which you can help the
+  project.<br><br></dd>
+
+<dt><b><a name="Building QuantLib1">I'm having trouble building
+      QuantLib.</a></b></dt>
+<dd>Step-by-step instructions for building the library on different
+  platforms are
+  available <a href="http://quantlib.org/install.shtml">here</a>; make
+  sure you're following them.  If you still can't build the library,
+  report the problem on the QuantLib mailing list.<br><br></dd>
+
+<dt><b><a name="QuantLib extensions0">I'm having trouble
+      building/using QuantLibXL or QuantLibAddin.</a></b></dt>
+<dd>The QuantLibAddin project has its own FAQ; you can find it
+   at <a href="http://www.quantlibaddin.org/faq.html">this
+   link</a>.<br><br></dd>
+
+<dt><b><a name="QuantLib features0">Why is feature X missing from
+      QuantLib? It would be a very useful one.</a></b></dt>
+<dd>Most likely, the developers didn't have a need for it or the time
+  to develop it.  If you're willing to give it a go, see above for
+  instructions on how to contribute.  If you don't or can't, try
+  requesting it on the mailing list.  This might give other developers
+  a clue about its usefulness.<br><br></dd>
+
+<dt><b><a name="QuantLib extensions1">Does QuantLib support
+      &lt;insert favorite language/platform here&gt;?</a></b></dt>
+<dd>Not directly. Bindings for a few languages are available, though;
+   see the <a href="http://quantlib.org/extensions.shtml">extensions
+   page</a>.<br><br></dd>
+
+<dt><b><a name="QuantLib extensions2">Does QuantLib support FpML?
+      Serialization?</a></b></dt>
+<dd>No, and it probably won't.  The subject has been discussed in the
+  mailing lists years ago, but it never got any traction&mdash;and it
+  might be better tackled as an external project.<br><br></dd>
+</dl>
+
+</div>
+
+<div id="menuafter">
+<!--#include virtual="usermenu.inc"-->
+</div>
+
+<div class="footer">
+<!--#include virtual="footer.inc"-->
+</div>
+
+</div>
+
+</body>
+</html>
