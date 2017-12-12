@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<head>
+<!--#include virtual="qlmeta.inc"-->
+<meta name="author" content="StatPro Italia srl">
+<meta name="copyright" content="StatPro Italia srl (c) 2017">
+<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
+<title>QuantLib User Meeting 2017</title>
+</head>
+<body>
+<div id="container">
+<!--#include virtual="header.inc"-->
+<div id="menu">
+<!--#include virtual="usermenu.inc"-->
+</div>
+<div id="content">
+
+<h1 class="center">QuantLib User Meeting 2017</h1>
+
+<p>The QuantLib User Meeting 2017 was held in D&uuml;sseldorf on
+November 30th, thanks to the sponsorship of
+<a href="http://www.ikb.de/">IKB</a>,
+<a href="http://www.quaternionrisk.com/">Quaternion</a> and
+<a href="http://www.d-fine.com/">d-fine</a>.</p>
+
+<p>The slides for the talks are available by clicking on
+their title.</p>
+
+<table>
+  <tr><td>Luigi Ballabio,
+          <i><a href="https://youtu.be/hft9yh3gftM">
+          How is QuantLib doing?</a></i></td></tr>
+  <tr><td>Sebastian Schlenkrich,
+          <i><a href="/slides/qlum17/schlenkrich.pdf">
+          Structured Payoff Scripting in QuantLib</i></td></tr>
+  <tr><td>Roland Lichters,
+          <i><a href="/slides/qlum17/lichters.pdf">
+          Open Source Risk Engine: Update and Outlook</a></i></td></tr>
+  <tr><td>Peter Caspers,
+          <i><a href="/slides/qlum17/caspers.pdf">
+          Cash Settled Swaption Pricing</a></i></td></tr>
+  <tr><td>Bernd Lewerenz,
+          <i><a href="/slides/qlum17/lewerenz.pdf">
+          Uncertain Volatility Model: solving the Black Scholes
+          Barenblatt Equation with the method of
+          lines</a></i></td></tr>
+  <tr><td>Werner Ku&uuml;rzinger,
+          <i><a href="/slides/qlum17/kuerzinger.pdf">
+          Aspects of Pricing Irregular Swaptions with
+          QuantLib</a></i></td></tr>
+  <tr><td>Andres Hernandez,
+          <i><a href="/slides/qlum17/hernandez.pdf">
+           Model Calibration with Neural Networks</a></i></td></tr>
+  <tr><td>Ioannis Rigopoulos,
+          <i><a href="/slides/qlum17/rigopoulos.pdf">
+          Deriscope: The Object Oriented way to access QuantLib in
+          Excel</a></i></td></tr>
+  <tr><td>Vasily Nekrasov,
+          <i><a href="/slides/qlum17/nekrasov.pdf">
+          Popularizing QuantLib among students: past experience and
+          future perspectives</a></i></td></tr>
+</table>
+
+</div>
+
+<div id="menuafter">
+<!--#include virtual="usermenu.inc"-->
+</div>
+
+<div class="footer">
+<!--#include virtual="footer.inc"-->
+</div>
+
+</div>
+
+</body>
+</html>
