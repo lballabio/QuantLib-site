@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="qlmeta.inc"-->
-<meta name="author" content="Ferdinando Ametrano">
-<meta name="copyright" content=
-"Ferdinando Ametrano (c) 2000, 2001, 2002, 2003">
-<meta name="description" content="QuantLib Download Page">
-<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
-<title>QuantLib Download Page</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="header.inc"-->
-<div id="menu">
-<!--#include virtual="usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib Download Page
+---
 
 <h1 class="center">Download QuantLib</h1>
 <p>The latest QuantLib release is version 1.12 (February 1st, 2018).</p>
@@ -39,17 +25,3 @@ package the library; check your sources.  Users not wanting to wait
 for the library to be packaged may acquire QuantLib from the
 SourceForge link above.</p>
 
-</div>
-
-<div id="menuafter">
-<!--#include virtual="usermenu.inc"-->
-</div>
-
-<div class="footer">
-<!--#include virtual="footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

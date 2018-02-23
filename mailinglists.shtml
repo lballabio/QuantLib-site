@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="qlmeta.inc"-->
-<meta name="author" content="Ferdinando Ametrano">
-<meta name="copyright" content=
-"Ferdinando Ametrano (c) 2000, 2001, 2002, 2003">
-<meta name="description" content="QuantLib Mailing Lists">
-<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
-<title>QuantLib Mailing Lists</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="header.inc"-->
-<div id="menu">
-<!--#include virtual="usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib Mailing Lists
+---
 
 <h1 class="center">Mailing Lists</h1>
 <p>Choose a list to browse, search, and post messages.</p> <ol>
@@ -67,17 +53,3 @@ Also available
 at <a href="http://quantlib.10058.n7.nabble.com/quantlib-jobs-f13623.html">Nabble.com</a>.</li>
 </ol>
 
-</div>
-
-<div id="menuafter">
-<!--#include virtual="usermenu.inc"-->
-</div>
-
-<div class="footer">
-<!--#include virtual="footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

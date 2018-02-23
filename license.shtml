@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="qlmeta.inc"-->
-<meta name="author" content="Ferdinando Ametrano">
-<meta name="copyright" content=
-"Ferdinando Ametrano (c) 2000, 2001, 2002, 2003">
-<meta name="description" content="QuantLib license">
-<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
-<title>QuantLib License</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="header.inc"-->
-<div id="menu">
-<!--#include virtual="usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib License
+---
 
 <h1 class="center">QuantLib License</h1>
 <p>QuantLib is <a href=
@@ -44,14 +30,14 @@ QuantLib is
     Copyright (C) 2003, 2004, 2005, 2006, 2007 StatPro Italia srl
     Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007 Ferdinando Ametrano
 
-    Copyright (C) 2001, 2002, 2003 Nicolas Di Césaré
+    Copyright (C) 2001, 2002, 2003 Nicolas Di C&eacute;sar&eacute;
     Copyright (C) 2001, 2002, 2003 Sadruddin Rejeb
 
     Copyright (C) 2002, 2003, 2004 Decillion Pty(Ltd)
 
     Copyright (C) 2003, 2004, 2007 Neil Firth
     Copyright (C) 2003, 2004 Roman Gitlin
-    Copyright (C) 2003 Niels Elken Sønderby
+    Copyright (C) 2003 Niels Elken Sonderby
     Copyright (C) 2003 Kawanishi Tomoya
 
     Copyright (C) 2004 FIMAT Group
@@ -84,11 +70,11 @@ QuantLib is
     Copyright (C) 2006 Roland Lichters
     Copyright (C) 2006, 2007 Katiuscia Manzoni
     Copyright (C) 2006, 2007 Mario Pucci
-    Copyright (C) 2006 François du Vignaud
+    Copyright (C) 2006 Francois du Vignaud
 
     Copyright (C) 2007 Affine Group Limited
 
-QuantLib includes code taken from Peter Jäckel's book "Monte Carlo
+QuantLib includes code taken from Peter J&auml;ckel's book "Monte Carlo
 Methods in Finance".
 
 QuantLib includes software developed by the University of Chicago,
@@ -122,17 +108,3 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </pre>
 
-</div>
-
-<div id="menuafter">
-<!--#include virtual="usermenu.inc"-->
-</div>
-
-<div class="footer">
-<!--#include virtual="footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

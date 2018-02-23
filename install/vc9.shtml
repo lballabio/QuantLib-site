@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="/qlmeta.inc"-->
-<meta name="author" content="Dimitri Reiswich">
-<meta name="copyright" content=
-"Dimitri Reiswich (c) 2009">
-<meta name="description" content="QuantLib Installation in Visual C++ 2008">
-<link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
-<title>QuantLib Installation in Visual C++ 2008</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="/header.inc"-->
-<div id="menu">
-<!--#include virtual="/usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib Installation in Visual C++ 2008
+---
 
 <h1 class="center">QuantLib Installation in VC++ 2008</h1>
 <h4 class="center">Dimitri Reiswich</h4>
@@ -339,13 +325,3 @@ int _tmain(int argc, _TCHAR* argv[])
 0.4
 </pre>
 
-</div>
-
-<div class="footer">
-<!--#include virtual="/footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

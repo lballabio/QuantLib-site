@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="/qlmeta.inc"-->
-<meta name="author" content="Luigi Ballabio">
-<meta name="copyright" content= "Luigi Ballabio (c) 2016">
-<meta name="description"
-      content="QuantLib-Python Installation on Windows">
-<link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
-<title>QuantLib-Python installation on Windows</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="/header.inc"-->
-<div id="menu">
-<!--#include virtual="/usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib-Python Installation on Windows
+---
 
 <h1 class="center">QuantLib-Python installation on Windows</h1>
 <h4 class="center">Luigi Ballabio</h4>
@@ -122,13 +108,4 @@ your path, run:
 </pre>
 from the Python directory in which you'll build the module. The rest
 of the installation goes as above.</p>
-</div>
 
-<div class="footer">
-<!--#include virtual="/footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

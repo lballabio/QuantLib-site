@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="/qlmeta.inc"-->
-<meta name="author" content="Jack Harvard">
-<meta name="copyright" content=
-"Jack Harvard (c) 2010">
-<meta name="description" content="QuantLib Installation on Mac OS X">
-<link rel="stylesheet" href="/styles/nosplash.css" type="text/css">
-<title>QuantLib installation on Mac OS X</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="/header.inc"-->
-<div id="menu">
-<!--#include virtual="/usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib Installation on Mac OS X
+---
 
 <h1 class="center">QuantLib installation on Mac OS X</h1>
 <h4 class="center">Jack Harvard</h4>
@@ -124,13 +110,3 @@ export DYLD_LIBRARY_PATH=/usr/local/lib
 When this is done, restart the terminal.  After this, no include (-I)
 or link (-L) directory needs to be specified when compiling with g++.</p>
 
-</div>
-
-<div class="footer">
-<!--#include virtual="/footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>

@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang="en">
-<head>
-<!--#include virtual="qlmeta.inc"-->
-<meta name="author" content="Ferdinando Ametrano">
-<meta name="copyright" content=
-"Ferdinando Ametrano (c) 2000, 2001, 2002, 2003">
-<meta name="description" content="QuantLib extensions">
-<link rel="stylesheet" href="./styles/nosplash.css" type="text/css">
-<title>QuantLib in other languages</title>
-</head>
-<body>
-<div id="container">
-<!--#include virtual="header.inc"-->
-<div id="menu">
-<!--#include virtual="usermenu.inc"-->
-</div>
-<div id="content">
+---
+layout: default
+title: QuantLib in other languages
+---
 
 <h1 class="center">Other languages and platforms</h1>
 <p>QuantLib is <a href="download.shtml">available</a> as a C#, Guile,
@@ -101,16 +87,3 @@ the <a href="http://www.dsource.org/projects/quantlibd/">QuantLibD</a>
 project is a port of QuantLib in the D programming language.  The
 project is looking for developers.</p>
 
-</div>
-<div id="menuafter">
-<!--#include virtual="usermenu.inc"-->
-</div>
-
-<div class="footer">
-<!--#include virtual="footer.inc"-->
-</div>
-
-</div>
-
-</body>
-</html>
