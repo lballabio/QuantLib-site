@@ -1,0 +1,4 @@
+<map id="gensrc.patterns.exceptions.PatternException" name="gensrc.patterns.exceptions.PatternException">
+<area shape="rect" id="node3" href="$classgensrc_1_1patterns_1_1exceptions_1_1_singleton_call_exception.html" title="gensrc.patterns.exceptions.\lSingletonCallException" alt="" coords="421,5,603,47"/>
+<area shape="rect" id="node4" href="$classgensrc_1_1patterns_1_1exceptions_1_1_singleton_override_new_exception.html" title="gensrc.patterns.exceptions.\lSingletonOverrideNewException" alt="" coords="407,71,617,112"/>
+</map>

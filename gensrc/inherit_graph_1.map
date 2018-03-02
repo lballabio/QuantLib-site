@@ -1,0 +1,18 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classgensrc_1_1addins_1_1addinlist_1_1_addin_list.html" title="gensrc.addins.addinlist.\lAddinList" alt="" coords="151,5,309,47"/>
+<area shape="rect" id="node3" href="$classgensrc_1_1categories_1_1categorylist_1_1_category_list.html" title="gensrc.categories.categorylist.\lCategoryList" alt="" coords="130,71,330,112"/>
+<area shape="rect" id="node4" href="$classgensrc_1_1enumerations_1_1enumerationlist_1_1_enumeration_list.html" title="gensrc.enumerations.enumerationlist.\lEnumerationList" alt="" coords="111,136,349,177"/>
+<area shape="rect" id="node5" href="$classgensrc_1_1functions_1_1behavior_1_1_behavior_member.html" title="gensrc.functions.behavior.\lBehaviorMember" alt="" coords="143,201,317,243"/>
+<area shape="rect" id="node6" href="$classgensrc_1_1functions_1_1behavior_1_1_behavior_procedure.html" title="gensrc.functions.behavior.\lBehaviorProcedure" alt="" coords="143,267,317,308"/>
+<area shape="rect" id="node7" href="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_loop.html" title="gensrc.functions.behaviorloop.\lBehaviorLoop" alt="" coords="131,332,329,373"/>
+<area shape="rect" id="node11" href="$classgensrc_1_1patterns_1_1singleton_1_1_singleton.html" title="gensrc.patterns.singleton.\lSingleton" alt="" coords="144,397,316,439"/>
+<area shape="rect" id="node12" href="$classgensrc_1_1serialization_1_1serializable_1_1_serializable.html" title="gensrc.serialization.serializable.\lSerializable" alt="" coords="127,463,333,504"/>
+<area shape="rect" id="node13" href="$classgensrc_1_1serialization_1_1serializer_1_1_serializer.html" title="gensrc.serialization.serializer.\lSerializer" alt="" coords="133,528,327,569"/>
+<area shape="rect" id="node15" href="$classgensrc_1_1types_1_1fulltype_1_1_full_type.html" title="gensrc.types.fulltype.FullType" alt="" coords="131,594,329,621"/>
+<area shape="rect" id="node16" href="$classgensrc_1_1types_1_1typelist_1_1_type_list.html" title="gensrc.types.typelist.TypeList" alt="" coords="131,645,329,671"/>
+<area shape="rect" id="node17" href="$classgensrc_1_1utilities_1_1outputfile_1_1_output_file.html" title="gensrc.utilities.outputfile.\lOutputFile" alt="" coords="147,696,313,737"/>
+<area shape="rect" id="node8" href="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_member_loop.html" title="gensrc.functions.behaviorloop.\lBehaviorMemberLoop" alt="" coords="397,300,596,341"/>
+<area shape="rect" id="node10" href="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_procedure_loop.html" title="gensrc.functions.behaviorloop.\lBehaviorProcedureLoop" alt="" coords="397,365,596,407"/>
+<area shape="rect" id="node9" href="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_enumeration_loop.html" title="gensrc.functions.behaviorloop.\lBehaviorEnumerationLoop" alt="" coords="644,300,843,341"/>
+<area shape="rect" id="node14" href="$classgensrc_1_1serialization_1_1xmlreader_1_1_xml_reader.html" title="gensrc.serialization.xmlreader.\lXmlReader" alt="" coords="397,528,596,569"/>
+</map>
