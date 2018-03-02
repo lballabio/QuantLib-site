@@ -1,9 +1,0 @@
-<map id="QuantLibAddin::Bond" name="QuantLibAddin::Bond">
-<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_cms_rate_bond.html" title="QuantLibAddin::CmsRateBond" alt="" coords="671,5,873,32"/>
-<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_fixed_rate_bond.html" title="QuantLibAddin::FixedRateBond" alt="" coords="669,56,875,83"/>
-<area shape="rect" id="node7" href="$class_quant_lib_addin_1_1_floating_rate_bond.html" title="QuantLibAddin::FloatingRateBond" alt="" coords="663,107,881,133"/>
-<area shape="rect" id="node9" href="$class_quant_lib_addin_1_1_zero_coupon_bond.html" title="QuantLibAddin::ZeroCouponBond" alt="" coords="664,157,880,184"/>
-<area shape="rect" id="node2" href="$class_quant_lib_addin_1_1_instrument.html" title="QuantLibAddin::Instrument" alt="" coords="244,81,421,108"/>
-<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_b_t_p.html" title="QuantLibAddin::BTP" alt="" coords="940,56,1081,83"/>
-<area shape="rect" id="node8" href="$class_quant_lib_addin_1_1_c_c_t_e_u.html" title="QuantLibAddin::CCTEU" alt="" coords="929,107,1092,133"/>
-</map>

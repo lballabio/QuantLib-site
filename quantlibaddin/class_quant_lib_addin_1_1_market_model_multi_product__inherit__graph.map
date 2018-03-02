@@ -1,5 +1,0 @@
-<map id="QuantLibAddin::MarketModelMultiProduct" name="QuantLibAddin::MarketModelMultiProduct">
-<area shape="rect" id="node3" href="$class_quant_lib_addin_1_1_multi_step_ratchet.html" title="QuantLibAddin::MultiStep\lRatchet" alt="" coords="574,5,745,47"/>
-<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_one_step_forwards.html" title="QuantLibAddin::OneStepForwards" alt="" coords="549,71,769,98"/>
-<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_one_step_optionlets.html" title="QuantLibAddin::OneStepOptionlets" alt="" coords="547,122,772,149"/>
-</map>

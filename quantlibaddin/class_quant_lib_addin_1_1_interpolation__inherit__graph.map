@@ -1,8 +1,0 @@
-<map id="QuantLibAddin::Interpolation" name="QuantLibAddin::Interpolation">
-<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_abcd_interpolation.html" title="QuantLibAddin::AbcdInterpolation" alt="" coords="715,5,931,32"/>
-<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_cubic_interpolation.html" title="QuantLibAddin::CubicInterpolation" alt="" coords="713,56,933,83"/>
-<area shape="rect" id="node7" href="$class_quant_lib_addin_1_1_generic_interp.html" title="QuantLibAddin::GenericInterp" alt="" coords="727,107,920,133"/>
-<area shape="rect" id="node8" href="$class_quant_lib_addin_1_1_mixed_linear_cubic_interpolation.html" title="QuantLibAddin::MixedLinear\lCubicInterpolation" alt="" coords="731,158,916,199"/>
-<area shape="rect" id="node9" href="$class_quant_lib_addin_1_1_s_a_b_r_interpolation.html" title="QuantLibAddin::SABRInterpolation" alt="" coords="712,224,935,251"/>
-<area shape="rect" id="node2" href="$class_quant_lib_addin_1_1_extrapolator.html" title="QuantLibAddin::Extrapolator" alt="" coords="244,81,429,108"/>
-</map>
