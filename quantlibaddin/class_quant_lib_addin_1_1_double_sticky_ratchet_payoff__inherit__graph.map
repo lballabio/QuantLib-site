@@ -1,0 +1,8 @@
+<map id="QuantLibAddin::DoubleStickyRatchetPayoff" name="QuantLibAddin::DoubleStickyRatchetPayoff">
+<area shape="rect" id="node3" href="$class_quant_lib_addin_1_1_ratchet_max_payoff.html" title="QuantLibAddin::RatchetMax\lPayoff" alt="" coords="361,5,547,47"/>
+<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_ratchet_min_payoff.html" title="QuantLibAddin::RatchetMin\lPayoff" alt="" coords="363,71,545,112"/>
+<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_ratchet_payoff.html" title="QuantLibAddin::RatchetPayoff" alt="" coords="355,137,553,163"/>
+<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_sticky_max_payoff.html" title="QuantLibAddin::StickyMax\lPayoff" alt="" coords="365,188,543,229"/>
+<area shape="rect" id="node7" href="$class_quant_lib_addin_1_1_sticky_min_payoff.html" title="QuantLibAddin::StickyMin\lPayoff" alt="" coords="367,253,541,295"/>
+<area shape="rect" id="node8" href="$class_quant_lib_addin_1_1_sticky_payoff.html" title="QuantLibAddin::StickyPayoff" alt="" coords="359,319,549,346"/>
+</map>

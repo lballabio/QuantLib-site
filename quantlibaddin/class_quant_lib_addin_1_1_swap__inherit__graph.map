@@ -1,0 +1,6 @@
+<map id="QuantLibAddin::Swap" name="QuantLibAddin::Swap">
+<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_asset_swap.html" title="QuantLibAddin::AssetSwap" alt="" coords="667,5,850,32"/>
+<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_overnight_indexed_swap.html" title="QuantLibAddin::Overnight\lIndexedSwap" alt="" coords="673,57,844,98"/>
+<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_vanilla_swap.html" title="QuantLibAddin::VanillaSwap" alt="" coords="665,123,852,149"/>
+<area shape="rect" id="node2" href="$class_quant_lib_addin_1_1_instrument.html" title="QuantLibAddin::Instrument" alt="" coords="244,64,421,91"/>
+</map>
