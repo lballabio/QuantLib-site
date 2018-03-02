@@ -1,0 +1,42 @@
+<map id="ohdefines.hpp" name="ohdefines.hpp">
+<area shape="rect" id="node2" href="$auto__link_8hpp_source.html" title="auto_link.hpp" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$enumregistry_8hpp.html" title="EnumRegistry Classes &#45; Concrete implementations of class Registry. " alt="" coords="336,229,459,256"/>
+<area shape="rect" id="node5" href="$objecthandler_8hpp_source.html" title="objecthandler.hpp" alt="" coords="602,603,726,629"/>
+<area shape="rect" id="node8" href="$registry_8hpp.html" title="Class Registry &#45; A registry of enumerated types and classes. " alt="" coords="419,155,509,181"/>
+<area shape="rect" id="node9" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="738,80,841,107"/>
+<area shape="rect" id="node12" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="635,304,717,331"/>
+<area shape="rect" id="node18" href="$repository_8hpp.html" title="Class Repository &#45; Maintain a store of Objects. " alt="" coords="1056,528,1160,555"/>
+<area shape="rect" id="node23" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="561,379,717,405"/>
+<area shape="rect" id="node25" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="1175,155,1270,181"/>
+<area shape="rect" id="node30" href="$scalartooper_8hpp.html" title="Conversion function scalarToOper &#45; convert an Excel OPER to a scalar value. " alt="" coords="1583,528,1702,555"/>
+<area shape="rect" id="node33" href="$convert__oper_8hpp.html" title="Class ConvertOper &#45; Perform datatype conversions of OPERs. " alt="" coords="1349,229,1472,256"/>
+<area shape="rect" id="node36" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="837,155,925,181"/>
+<area shape="rect" id="node37" href="$singleton_8hpp.html" title="basic support for the singleton pattern " alt="" coords="233,155,332,181"/>
+<area shape="rect" id="node40" href="$validations_8hpp.html" title="Miscellaneous validation routines. " alt="" coords="1823,80,1932,107"/>
+<area shape="rect" id="node41" href="$xlutilities_8hpp.html" title="General utility functions for the Excel platform. " alt="" coords="1644,229,1743,256"/>
+<area shape="rect" id="node4" href="$typefactory_8hpp.html" title="Class RegistryManager &#45; Manage access to an Enumeration Registry. " alt="" coords="341,304,453,331"/>
+<area shape="rect" id="node6" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="1098,752,1233,779"/>
+<area shape="rect" id="node7" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="1531,827,1602,853"/>
+<area shape="rect" id="node10" href="$coerce_8hpp.html" title="Class Coerce &#45; Support for automatic conversion of datatypes. " alt="" coords="1250,453,1337,480"/>
+<area shape="rect" id="node24" href="$observable_8hpp.html" title="observer/observable pattern " alt="" coords="843,379,954,405"/>
+<area shape="rect" id="node11" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="1465,677,1525,704"/>
+<area shape="rect" id="node13" href="$group_8hpp.html" title="class Group &#45; A collection of Objects " alt="" coords="953,528,1031,555"/>
+<area shape="rect" id="node15" href="$libraryobject_8hpp.html" title="A customization of the Object class, suitable for most applications. " alt="" coords="509,453,627,480"/>
+<area shape="rect" id="node16" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="776,453,904,480"/>
+<area shape="rect" id="node22" href="$range_8hpp.html" title="class Range &#45; Container for a matrix of doubles " alt="" coords="355,379,434,405"/>
+<area shape="rect" id="node14" href="$getobjectvector_8hpp.html" title="Helper functions to facilitate retrieval of Object lists. " alt="" coords="889,603,1025,629"/>
+<area shape="rect" id="node17" href="$processor_8hpp.html" title="Class Processor &#45; Restore an Object&#39;s state after deserialization. " alt="" coords="773,528,877,555"/>
+<area shape="rect" id="node20" href="$objectwrapperxl_8hpp.html" title="Class ObjectWrapperXL &#45; Customization of the ObjectWrapper class for the Excel platform. " alt="" coords="1184,528,1323,555"/>
+<area shape="rect" id="node19" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class. " alt="" coords="1049,603,1164,629"/>
+<area shape="rect" id="node21" href="$callingrange_8hpp.html" title="Class CallingRange &#45; Processing for the host cell of an Object. " alt="" coords="1239,603,1355,629"/>
+<area shape="rect" id="node26" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="945,229,1058,256"/>
+<area shape="rect" id="node27" href="$vo__group_8hpp_source.html" title="vo_group.hpp" alt="" coords="1069,304,1169,331"/>
+<area shape="rect" id="node29" href="$vo__range_8hpp_source.html" title="vo_range.hpp" alt="" coords="945,304,1045,331"/>
+<area shape="rect" id="node28" href="$vo__all_8hpp_source.html" title="vo_all.hpp" alt="" coords="1081,379,1162,405"/>
+<area shape="rect" id="node31" href="$matrixtooper_8hpp.html" title="Conversion function matrixToOper &#45; Convert matrix to Excel OPER. " alt="" coords="1583,603,1702,629"/>
+<area shape="rect" id="node32" href="$vectortooper_8hpp.html" title="Conversion function vectorToOper &#45; Convert STL vector to Excel OPER. " alt="" coords="1726,603,1845,629"/>
+<area shape="rect" id="node34" href="$opertomatrix_8hpp.html" title="Conversion function operToMatrix &#45; convert an OPER to a matrix. " alt="" coords="1361,453,1479,480"/>
+<area shape="rect" id="node35" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector. " alt="" coords="1450,304,1569,331"/>
+<area shape="rect" id="node38" href="$logger_8hpp.html" title="Logger class wrapper for logging framework. " alt="" coords="229,229,312,256"/>
+<area shape="rect" id="node39" href="$configuration_8hpp.html" title="Class Configuration &#45; Global configuration information. " alt="" coords="293,677,414,704"/>
+</map>

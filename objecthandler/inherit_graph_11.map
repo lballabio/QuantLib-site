@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_object_handler_1_1_object.html" title="Interface for Objects to be stored in the ObjectHandler Repository. " alt="" coords="5,64,156,91"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_group.html" title="A collection of Objects. " alt="" coords="225,5,373,32"/>
+<area shape="rect" id="node3" href="$class_object_handler_1_1_library_object.html" title="Customizes the Object class for most typical uses. " alt="" coords="204,57,395,98"/>
+<area shape="rect" id="node4" href="$class_object_handler_1_1_range.html" title="Container for a matrix of doubles. " alt="" coords="224,123,375,149"/>
+</map>
