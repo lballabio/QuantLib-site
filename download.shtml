@@ -5,16 +5,17 @@ title: QuantLib Download Page
 
 <h1 class="center">Download QuantLib</h1>
 <p>The latest QuantLib release is version 1.12 (February 1st, 2018).</p>
-<p>Source packages for <b>all platforms</b> are available from the SourceForge
-<a href=
-"http://sourceforge.net/project/showfiles.php?group_id=12740">download
-page</a> in a number of different formats.  Compiling QuantLib
+<p>Source packages for <b>all platforms</b>
+are <a href="https://bintray.com/quantlib/releases">available from
+Bintray</a> in different formats.  Compiling QuantLib
 requires a working <a href="http://www.boost.org">Boost</a>
 installation; Boost 1.43 or later is required, but a more recent
 version is suggested. Advanced users may want
 to <a href="reference/config.html">configure the library</a> with
 non-default settings.</p>
-<p><b>Debian users</b> can find the latest version of the different
+<p>There are no official binary packages, but volunteers provide them
+for a number of platforms.  <b>Mac OS X users</b> can use Homebrew.
+<b>Debian users</b> can find the latest version of the different
 QuantLib packages in the "unstable" (a.k.a. "Sid") distribution; see
 the <a href=
 "http://packages.debian.org/cgi-bin/search_packages.pl?keywords=quantlib&amp;searchon=names&amp;subword=1&amp;version=unstable&amp;release=all">
@@ -23,5 +24,4 @@ can use <a href="https://launchpad.net/~edd/+archive/ubuntu/misc">Dirk
 Eddelbuettel's PPA</a>.  <b>Other Linux distributions</b> might also
 package the library; check your sources.  Users not wanting to wait
 for the library to be packaged may acquire QuantLib from the
-SourceForge link above.</p>
-
+download link above.</p>
