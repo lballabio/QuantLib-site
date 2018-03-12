@@ -35,8 +35,8 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://quantlib.org/google54d6132de7fee8b3.html</loc>
-  <lastmod>2010-05-03T09:09:21Z</lastmod>
+  <loc>http://quantlib.org/git.shtml</loc>
+  <lastmod>2013-06-05T12:00:00Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -45,13 +45,38 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://quantlib.org/install/vc9.shtml</loc>
-  <lastmod>2009-09-03T17:55:00Z</lastmod>
+  <loc>http://quantlib.org/install/linux-python.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/install/linux.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/install/macosx-python.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
   <loc>http://quantlib.org/install/macosx.shtml</loc>
   <lastmod>2010-09-28T14:02:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/install/vc10.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/install/vc9.shtml</loc>
+  <lastmod>2009-09-03T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/install/windows-python.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
   <priority>0.5000</priority>
  </url>
  <url>
@@ -145,8 +170,38 @@
   <priority>0.5000</priority>
  </url>
  <url>
-  <loc>http://quantlib.org/git.shtml</loc>
-  <lastmod>2013-06-05T12:00:00Z</lastmod>
+  <loc>http://quantlib.org/qlforum11.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlws13.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlws14.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlum15.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlum16dus.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlum16london.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
+  <priority>0.5000</priority>
+ </url>
+ <url>
+  <loc>http://quantlib.org/qlum17.shtml</loc>
+  <lastmod>2018-03-11T17:55:00Z</lastmod>
   <priority>0.5000</priority>
  </url>
 </urlset>
