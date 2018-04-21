@@ -24,3 +24,7 @@ url: "http://quantlib.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+# Examples sometimes start with a leading underscore.
+include:
+- _*-example.html
