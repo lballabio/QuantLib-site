@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a></li>  </ul>
@@ -87,23 +98,23 @@ $(function() {
 <div class="center"><img src="class_quant_lib_1_1_ibor_index__inherit__graph.png" border="0" usemap="#_ibor_index_inherit__map" alt="Inheritance graph"/></div>
 <map name="_ibor_index_inherit__map" id="_ibor_index_inherit__map">
 <area shape="rect" id="node5" href="class_quant_lib_1_1_bbsw.html" title="Bbsw index " alt="" coords="473,5,527,31"/>
-<area shape="rect" id="node7" href="class_quant_lib_1_1_bkbm.html" title="Bkbm index " alt="" coords="472,55,528,80"/>
-<area shape="rect" id="node8" href="class_quant_lib_1_1_cdor.html" title="CDOR rate " alt="" coords="475,104,525,129"/>
-<area shape="rect" id="node9" href="class_quant_lib_1_1_daily_tenor_e_u_r_libor.html" title="base class for the one day deposit ICE EUR LIBOR indexes " alt="" coords="429,153,571,179"/>
-<area shape="rect" id="node10" href="class_quant_lib_1_1_daily_tenor_libor.html" title="base class for all O/N&#45;S/N BBA LIBOR indexes but the EUR ones " alt="" coords="443,203,557,228"/>
-<area shape="rect" id="node11" href="class_quant_lib_1_1_euribor.html" title="Euribor index " alt="" coords="468,252,532,277"/>
-<area shape="rect" id="node12" href="class_quant_lib_1_1_euribor365.html" title="Actual/365 Euribor index. " alt="" coords="457,301,543,327"/>
-<area shape="rect" id="node13" href="class_quant_lib_1_1_e_u_r_libor.html" title="base class for all ICE EUR LIBOR indexes but the O/N " alt="" coords="460,351,540,376"/>
-<area shape="rect" id="node14" href="class_quant_lib_1_1_jibar.html" title="JIBAR rate " alt="" coords="475,400,525,425"/>
-<area shape="rect" id="node15" href="class_quant_lib_1_1_libor.html" title="base class for all ICE LIBOR indexes but the EUR, O/N, and S/N ones " alt="" coords="475,449,526,475"/>
-<area shape="rect" id="node16" href="class_quant_lib_1_1_proxy_ibor.html" title="IborIndex calculated as proxy of some other IborIndex. " alt="" coords="461,499,539,524"/>
-<area shape="rect" id="node17" href="class_quant_lib_1_1_tibor.html" title="JPY TIBOR index " alt="" coords="474,548,526,573"/>
-<area shape="rect" id="node18" href="class_quant_lib_1_1_t_r_libor.html" title="TRY LIBOR rate " alt="" coords="466,597,534,623"/>
-<area shape="rect" id="node19" href="class_quant_lib_1_1_zibor.html" title="CHF ZIBOR rate " alt="" coords="474,647,526,672"/>
-<area shape="rect" id="node2" href="class_quant_lib_1_1_interest_rate_index.html" title="base class for interest rate indexes " alt="" coords="129,327,256,352"/>
-<area shape="rect" id="node3" href="class_quant_lib_1_1_index.html" title="purely virtual base class for indexes " alt="" coords="16,301,70,327"/>
-<area shape="rect" id="node4" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes. " alt="" coords="5,351,81,376"/>
-<area shape="rect" id="node6" href="class_quant_lib_1_1_bbsw1_m.html" title="1&#45;month Bbsw index " alt="" coords="619,5,692,31"/>
+<area shape="rect" id="node6" href="class_quant_lib_1_1_bkbm.html" title="Bkbm index " alt="" coords="472,55,528,80"/>
+<area shape="rect" id="node7" href="class_quant_lib_1_1_cdor.html" title="CDOR rate " alt="" coords="475,104,525,129"/>
+<area shape="rect" id="node8" href="class_quant_lib_1_1_daily_tenor_e_u_r_libor.html" title="base class for the one day deposit ICE EUR LIBOR indexes " alt="" coords="429,153,571,179"/>
+<area shape="rect" id="node9" href="class_quant_lib_1_1_daily_tenor_libor.html" title="base class for all O/N&#45;S/N BBA LIBOR indexes but the EUR ones " alt="" coords="443,203,557,228"/>
+<area shape="rect" id="node10" href="class_quant_lib_1_1_euribor.html" title="Euribor index " alt="" coords="468,252,532,277"/>
+<area shape="rect" id="node11" href="class_quant_lib_1_1_euribor365.html" title="Actual/365 Euribor index. " alt="" coords="457,301,543,327"/>
+<area shape="rect" id="node12" href="class_quant_lib_1_1_e_u_r_libor.html" title="base class for all ICE EUR LIBOR indexes but the O/N " alt="" coords="460,351,540,376"/>
+<area shape="rect" id="node13" href="class_quant_lib_1_1_jibar.html" title="JIBAR rate " alt="" coords="475,400,525,425"/>
+<area shape="rect" id="node14" href="class_quant_lib_1_1_libor.html" title="base class for all ICE LIBOR indexes but the EUR, O/N, and S/N ones " alt="" coords="475,449,526,475"/>
+<area shape="rect" id="node15" href="class_quant_lib_1_1_mosprime.html" title="MOSPRIME rate " alt="" coords="460,499,540,524"/>
+<area shape="rect" id="node16" href="class_quant_lib_1_1_pribor.html" title="PRIBOR rate " alt="" coords="472,548,529,573"/>
+<area shape="rect" id="node17" href="class_quant_lib_1_1_proxy_ibor.html" title="IborIndex calculated as proxy of some other IborIndex. " alt="" coords="461,597,539,623"/>
+<area shape="rect" id="node18" href="class_quant_lib_1_1_robor.html" title="ROBOR rate " alt="" coords="471,647,529,672"/>
+<area shape="rect" id="node19" href="class_quant_lib_1_1_tibor.html" title="JPY TIBOR index " alt="" coords="474,696,526,721"/>
+<area shape="rect" id="node2" href="class_quant_lib_1_1_interest_rate_index.html" title="base class for interest rate indexes " alt="" coords="129,351,256,376"/>
+<area shape="rect" id="node3" href="class_quant_lib_1_1_index.html" title="purely virtual base class for indexes " alt="" coords="16,325,70,351"/>
+<area shape="rect" id="node4" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes. " alt="" coords="5,375,81,400"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">

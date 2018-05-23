@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></li>  </ul>
@@ -229,6 +240,9 @@ const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>ren
 reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>rend</b> ()</td></tr>
 <tr class="separator:a0fbb8610a84453a7e3c76e2045d59cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Utilities</div></td></tr>
+<tr class="memitem:a9c1a90eb50cd6d194af30bd757e08e5d"><td class="memItemLeft" align="right" valign="top"><a id="a9c1a90eb50cd6d194af30bd757e08e5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> n)</td></tr>
+<tr class="separator:a9c1a90eb50cd6d194af30bd757e08e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bd3fbcf442f94a2998d325cb7a8b24b"><td class="memItemLeft" align="right" valign="top"><a id="a5bd3fbcf442f94a2998d325cb7a8b24b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;)</td></tr>
 <tr class="separator:a5bd3fbcf442f94a2998d325cb7a8b24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +302,8 @@ Related Functions</h2></td></tr>
 <div class="textblock"><p>1-D array used in linear algebra. </p>
 <p>This class implements the concept of vector as used in linear algebra. As such, it is <b>not</b> meant to be used as a container - <code>std::vector</code> should be used instead.</p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000034">Tests:</a></b></dt><dd>construction of arrays is checked in a number of cases </dd></dl>
-</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_gaussian1d_models_8cpp-example.html#_a5">Gaussian1dModels.cpp</a>, and <a class="el" href="_global_optimizer_8cpp-example.html#_a2">GlobalOptimizer.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Friends And Related Function Documentation</h2>
 <a id="afd78eeec99ca45607a2c64520a45633c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd78eeec99ca45607a2c64520a45633c">&#9670;&nbsp;</a></span>DotProduct()</h2>
 

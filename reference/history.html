@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,28 +51,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Version history </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.12.1 - April 16th, 2018</b></p>
-<p><a class="el" href="namespace_quant_lib.html">QuantLib</a> 1.12.1 is a bug-fix release for version 1.12.</p>
+<div class="textblock"><p><b>Release 1.13 - May 2018</b></p>
+<p>PORTABILITY</p><ul>
+<li>In April 2018, Microsoft ended its support for Microsoft Visual C++ 2008. This release still includes a solution file for VC++ 2008, but we won't support it further or take bug reports for it. The next release will only contain project files for Visual C++ 2010 and later.</li>
+<li>Fixed build on Solaris 12.5 in C++11 mode (thanks to Nick Glass).</li>
+</ul>
+<p>INSTRUMENTS AND PRICING ENGINES</p><ul>
+<li>Fix CDS calculation when the start date falls during the week-end (thanks to Guillaume Horel).</li>
+<li>Allow construction of a <code>ForwardRateAgreement</code> instance even if the interest-rate curve is not yet linked (thanks to Tom Anderson).</li>
+</ul>
+<p>CASH FLOWS AND INTEREST RATES</p><ul>
+<li>Added Mosprime, Pribor, Robor and Wibor indices (thanks to Matthias Lungwitz).</li>
+<li>Improved performance of Black pricer for LIBOR coupons (thanks to Peter Caspers).</li>
+<li>Fixed experimental quanto coupon pricer (thanks to Peter Caspers).</li>
+<li>Revised experimental CMS-spread coupon pricer (thanks to Peter Caspers).</li>
+</ul>
+<p>MODELS</p><ul>
+<li>Improvements for the experimental generalized Hull-White model (thanks to Roy Zywina).</li>
+<li>Fixed drift in GSR process (thanks to Peter Caspers for the fix and to Seung Beom Bang for the heads up).</li>
+<li>Fixed an out-of-bound access in the TwoFactorModel::ShortRateDynamics::process method (thanks to Weston Steimel).</li>
+</ul>
+<p>FINITE DIFFERENCES</p><ul>
+<li>Improved Black-Scholes mesher for low volatilities and high discrete dividends (thanks to Klaus Spanderen).</li>
+<li>Added method-of-lines scheme (thanks to Klaus Spanderen).</li>
+</ul>
+<p>DATE/TIME</p><ul>
+<li>Schedule::until can now be used with schedules built from vectors of dates (thanks to GitHub user Grant6899).</li>
+<li>Added Good Friday to the list of Hungarian and Czech holidays (thanks to Matthias Lungwitz).</li>
+<li>Updated the list of Turkish holidays after 2014 (thanks to Matthias Lungwitz).</li>
+</ul>
+<p>MATH</p><ul>
+<li>Added convenience operators to initialize array and matrices (thanks to Peter Caspers).</li>
+</ul>
+<p>TEST SUITE</p><ul>
+<li>Added test case for CIR++ model (thanks to Klaus Spanderen).</li>
+</ul>
+<p>Thanks go also to Jose Aparicio, Roland Kapl and GitHub user lab4quant for smaller fixes and enhancements.</p>
+<p><b>Release 1.12.1 - April 16th, 2018</b></p>
+<p>QuantLib 1.12.1 is a bug-fix release for version 1.12.</p>
 <p>It fixes an error that would occur during initialization of the test suite when using the newly released Boost 1.67.0. Thanks to Klaus Spanderen for the prompt fix.</p>
 <p>The library code is unchanged from version 1.12.</p>
 <p><b>Release 1.12 - February 1st, 2018</b></p>
 <p>PORTABILITY</p><ul>
 <li>As announced in the previous release, support for the Dev-C++ IDE was removed.</li>
-<li>In April 2018, Microsoft will end its support for Microsoft Visual C++ 2008. Therefore, this is the last version of <a class="el" href="namespace_quant_lib.html">QuantLib</a> to support it with maintained project files. The next release will only contain project files for Visual C++ 2010 and later.</li>
+<li>In April 2018, Microsoft will end its support for Microsoft Visual C++ 2008. Therefore, this is the last version of <a class="el" href="namespace_quant_lib.html">QuantLib</a> to support it with maintained project files.</li>
 <li>It is now possible to build a usable library with CMake on Windows (thanks to Javier G. Sogo).</li>
 <li>Fix autotools build outside the source tree (thanks to Joshua Ulrich).</li>
 </ul>

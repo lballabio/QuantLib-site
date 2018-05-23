@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_monte_carlo_model.html">MonteCarloModel</a></li>  </ul>
@@ -111,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77cd545c02ed7037a3e8d582ca1069c3"><td class="memItemLeft" align="right" valign="top"><a id="a77cd545c02ed7037a3e8d582ca1069c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addSamples</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> samples)</td></tr>
 <tr class="separator:a77cd545c02ed7037a3e8d582ca1069c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46357db2ce864a72eb3177eba96185b7"><td class="memItemLeft" align="right" valign="top"><a id="a46357db2ce864a72eb3177eba96185b7"></a>
-const <a class="el" href="class_quant_lib_1_1_generic_risk_statistics.html">stats_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sampleAccumulator</b> (void) const</td></tr>
-<tr class="separator:a46357db2ce864a72eb3177eba96185b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3987b984568bbd782506434a2027b1b4"><td class="memItemLeft" align="right" valign="top"><a id="a3987b984568bbd782506434a2027b1b4"></a>
+const <a class="el" href="class_quant_lib_1_1_generic_risk_statistics.html">stats_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sampleAccumulator</b> () const</td></tr>
+<tr class="separator:a3987b984568bbd782506434a2027b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;template&lt; class &gt; class MC, class RNG, class S = Statistics&gt;<br />

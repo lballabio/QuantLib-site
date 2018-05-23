@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,15 +51,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
@@ -120,6 +131,9 @@ $(function() {
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>forwardRate_
+: <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#a4f2b17fe2dbe0ad6d82e5390ac162403">ForwardRateAgreement</a>
+</li>
 <li>functionEvaluation_
 : <a class="el" href="class_quant_lib_1_1_problem.html#a733c93ead43e5991f400c80708e828f7">Problem</a>
 </li>
@@ -237,6 +251,9 @@ $(function() {
 </li>
 <li>solution_
 : <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html#aa0b993e23f5b95d9594323745aadd2be">FittedBondDiscountCurve::FittingMethod</a>
+</li>
+<li>strikeForwardRate_
+: <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#a1d09c6bb42f2e1ad73823bfa1ad6f5b3">ForwardRateAgreement</a>
 </li>
 <li>succeed_
 : <a class="el" href="class_quant_lib_1_1_line_search.html#a1bdb6aaa82b6a980db5312bcc3c86c3a">LineSearch</a>

@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,21 +51,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="headertitle">
 <div class="title">Examples</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock">Here is a list of all examples:</div><ul>
+<li><a class="el" href="_basket_losses_8cpp-example.html">BasketLosses.cpp</a></li>
+
 <li><a class="el" href="_bermudan_swaption_8cpp-example.html">BermudanSwaption.cpp</a></li>
 
 <li><a class="el" href="_bonds_8cpp-example.html">Bonds.cpp</a></li>
@@ -76,6 +89,8 @@ $(function() {
 
 <li><a class="el" href="_convertible_bonds_8cpp-example.html">ConvertibleBonds.cpp</a></li>
 
+<li><a class="el" href="_c_v_a_i_r_s_8cpp-example.html">CVAIRS.cpp</a></li>
+
 <li><a class="el" href="_discrete_hedging_8cpp-example.html">DiscreteHedging.cpp</a></li>
 
 <li><a class="el" href="_equity_option_8cpp-example.html">EquityOption.cpp</a></li>
@@ -84,13 +99,21 @@ $(function() {
 
 <li><a class="el" href="_f_r_a_8cpp-example.html">FRA.cpp</a></li>
 
+<li><a class="el" href="_gaussian1d_models_8cpp-example.html">Gaussian1dModels.cpp</a></li>
+
+<li><a class="el" href="_global_optimizer_8cpp-example.html">GlobalOptimizer.cpp</a></li>
+
+<li><a class="el" href="_latent_model_8cpp-example.html">LatentModel.cpp</a></li>
+
+<li><a class="el" href="_market_models_8cpp-example.html">MarketModels.cpp</a></li>
+
+<li><a class="el" href="_multidim_integral_8cpp-example.html">MultidimIntegral.cpp</a></li>
+
 <li><a class="el" href="_replication_8cpp-example.html">Replication.cpp</a></li>
 
 <li><a class="el" href="_repo_8cpp-example.html">Repo.cpp</a></li>
 
 <li><a class="el" href="swapvaluation_8cpp-example.html">swapvaluation.cpp</a></li>
-
-<li><a class="el" href="tracing_example_8cpp-example.html">tracing_example.cpp</a></li>
 
 </ul>
 </div><!-- contents -->

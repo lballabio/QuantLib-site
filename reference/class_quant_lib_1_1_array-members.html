@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></li>  </ul>
@@ -131,13 +142,14 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>rbegin</b>() (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>rend</b>() const (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>rend</b>() (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>reverse_iterator</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#acce0ab2cacc475b2434f24c65c91685a">size</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>size_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#a9b5fa34ccfc6f716a2c99dc37f6fe658">Sqrt</a>(const Array &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>swap</b>(Array &amp;) (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#a8ef3e86157636ff80b3a8557835d8a1b">swap</a>(Array &amp;, Array &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>value_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>resize</b>(Size n) (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>reverse_iterator</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#acce0ab2cacc475b2434f24c65c91685a">size</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>size_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#a9b5fa34ccfc6f716a2c99dc37f6fe658">Sqrt</a>(const Array &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>swap</b>(Array &amp;) (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html#a8ef3e86157636ff80b3a8557835d8a1b">swap</a>(Array &amp;, Array &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"><span class="mlabel">related</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>value_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_array.html">Array</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_array.html">Array</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

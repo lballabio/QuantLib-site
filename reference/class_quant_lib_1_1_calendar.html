@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a></li>  </ul>
@@ -161,7 +172,7 @@ static std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</
 <p>The Bridge pattern is used to provide the base behavior of the calendar, namely, to determine whether a date is a business day.</p>
 <p>A calendar should be defined for specific exchange holiday schedule or for general country holiday schedule. Legacy city holiday schedule calendars will be moved to the exchange/country convention.</p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000160">Tests:</a></b></dt><dd>the methods for adding and removing holidays are tested by inspecting the calendar before and after their invocation. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#_a7">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#_a1">Bonds.cpp</a>, <a class="el" href="_callable_bonds_8cpp-example.html#_a12">CallableBonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#_a1">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#_a6">ConvertibleBonds.cpp</a>, <a class="el" href="_discrete_hedging_8cpp-example.html#_a13">DiscreteHedging.cpp</a>, <a class="el" href="_equity_option_8cpp-example.html#_a1">EquityOption.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#_a14">FittedBondCurve.cpp</a>, <a class="el" href="_f_r_a_8cpp-example.html#_a4">FRA.cpp</a>, <a class="el" href="_repo_8cpp-example.html#_a8">Repo.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#_a1">swapvaluation.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_basket_losses_8cpp-example.html#_a1">BasketLosses.cpp</a>, <a class="el" href="_bermudan_swaption_8cpp-example.html#_a7">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#_a1">Bonds.cpp</a>, <a class="el" href="_callable_bonds_8cpp-example.html#_a12">CallableBonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#_a1">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#_a6">ConvertibleBonds.cpp</a>, <a class="el" href="_c_v_a_i_r_s_8cpp-example.html#_a1">CVAIRS.cpp</a>, <a class="el" href="_discrete_hedging_8cpp-example.html#_a13">DiscreteHedging.cpp</a>, <a class="el" href="_equity_option_8cpp-example.html#_a1">EquityOption.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#_a14">FittedBondCurve.cpp</a>, <a class="el" href="_f_r_a_8cpp-example.html#_a4">FRA.cpp</a>, <a class="el" href="_latent_model_8cpp-example.html#_a1">LatentModel.cpp</a>, <a class="el" href="_repo_8cpp-example.html#_a8">Repo.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#_a1">swapvaluation.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af5714af8cb45a29153e0fd53ee5e7241"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5714af8cb45a29153e0fd53ee5e7241">&#9670;&nbsp;</a></span>Calendar()</h2>
@@ -198,7 +209,7 @@ static std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</
 </div><div class="memdoc">
 
 <p>Returns the name of the calendar. </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000160">Warning:</a></b></dt><dd>This method is used for output and comparison between calendars. It is <b>not</b> meant to be used for writing switch-on-type code. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000164">Warning:</a></b></dt><dd>This method is used for output and comparison between calendars. It is <b>not</b> meant to be used for writing switch-on-type code. </dd></dl>
 
 </div>
 </div>
@@ -342,7 +353,7 @@ static std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</
       </table>
 </div><div class="memdoc">
 <p>Adjusts a non-business day to the appropriate near business day with respect to the given convention. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bonds_8cpp-example.html#a4">Bonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#a4">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#a9">ConvertibleBonds.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#a17">FittedBondCurve.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#a4">swapvaluation.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_basket_losses_8cpp-example.html#a4">BasketLosses.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#a4">Bonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#a4">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#a9">ConvertibleBonds.cpp</a>, <a class="el" href="_c_v_a_i_r_s_8cpp-example.html#a4">CVAIRS.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#a17">FittedBondCurve.cpp</a>, <a class="el" href="_latent_model_8cpp-example.html#a4">LatentModel.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#a4">swapvaluation.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -390,7 +401,7 @@ static std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</
       </table>
 </div><div class="memdoc">
 <p>Advances the given date of the given number of business days and returns the result. </p><dl class="section note"><dt>Note</dt><dd>The input date is not modified. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#a24">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#a6">Bonds.cpp</a>, <a class="el" href="_callable_bonds_8cpp-example.html#a16">CallableBonds.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#a13">ConvertibleBonds.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#a19">FittedBondCurve.cpp</a>, <a class="el" href="_f_r_a_8cpp-example.html#a5">FRA.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#a5">swapvaluation.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#a24">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#a6">Bonds.cpp</a>, <a class="el" href="_callable_bonds_8cpp-example.html#a16">CallableBonds.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#a13">ConvertibleBonds.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#a19">FittedBondCurve.cpp</a>, <a class="el" href="_f_r_a_8cpp-example.html#a5">FRA.cpp</a>, <a class="el" href="_gaussian1d_models_8cpp-example.html#a14">Gaussian1dModels.cpp</a>, <a class="el" href="_latent_model_8cpp-example.html#a15">LatentModel.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#a5">swapvaluation.cpp</a>.</dd>
 </dl>
 </div>
 </div>

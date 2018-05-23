@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html">FittedBondDiscountCurve</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html">FittingMethod</a></li>  </ul>
@@ -187,7 +198,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FittedBondDiscountCu
 <p>This base class provides the specific methodology/strategy used to construct a <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html" title="Discount curve fitted to a set of fixed-coupon bonds. ">FittedBondDiscountCurve</a>. Derived classes need only define the virtual function <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html#ad0fd1b5e219977a0da00786e9077ca0a" title="discount function called by FittedBondDiscountCurve ">discountFunction()</a> based on the particular fitting method to be implemented, as well as <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html#a154fc82502dc7257b459b1f13e2bc6b6" title="total number of coefficients to fit/solve for ">size()</a>, the number of variables to be solved for/optimized. The generic fitting methodology implemented here can be termed nonlinear, in contrast to (typically faster, computationally) linear fitting method.</p>
 <p>Optional parameters for <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html" title="Base fitting method used to construct a fitted bond discount curve. ">FittingMethod</a> include an <a class="el" href="class_quant_lib_1_1_array.html" title="1-D array used in linear algebra. ">Array</a> of weights, which will be used as weights to each bond. If not given or empty, then the bonds will be weighted by inverse duration</p>
 <p>An optional <a class="el" href="class_quant_lib_1_1_array.html" title="1-D array used in linear algebra. ">Array</a> may be provided as an L2 regularizor in this case a L2 (gaussian) penalty is applied to each parameter starting from the initial guess. This is the same as giving a Gaussian prior on the parameters</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000151">Warning:</a></b></dt><dd>some parameters to the <a class="el" href="class_quant_lib_1_1_simplex.html" title="Multi-dimensional simplex class. ">Simplex</a> optimization method may need to be tweaked internally to the class, depending on the fitting method used, in order to get proper/reasonable/faster convergence. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000155">Warning:</a></b></dt><dd>some parameters to the <a class="el" href="class_quant_lib_1_1_simplex.html" title="Multi-dimensional simplex class. ">Simplex</a> optimization method may need to be tweaked internally to the class, depending on the fitting method used, in order to get proper/reasonable/faster convergence. </dd></dl>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a36b574df786ec85edcb9ae49b1c8f85d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36b574df786ec85edcb9ae49b1c8f85d">&#9670;&nbsp;</a></span>guessSolution_</h2>

@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_generalized_hull_white.html">GeneralizedHullWhite</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_generalized_hull_white_1_1_dynamics.html">Dynamics</a></li>  </ul>
@@ -88,9 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a007a2e1b524bd7656fd5528934b497f7"><td class="memItemLeft" align="right" valign="top"><a id="a007a2e1b524bd7656fd5528934b497f7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Dynamics</b> (const <a class="el" href="class_quant_lib_1_1_parameter.html">Parameter</a> &amp;fitting, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> sigma)</td></tr>
 <tr class="separator:a007a2e1b524bd7656fd5528934b497f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade63b1c6612f82651859bd36308bc437"><td class="memItemLeft" align="right" valign="top"><a id="ade63b1c6612f82651859bd36308bc437"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>variable</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> r=0.01) const</td></tr>
-<tr class="separator:ade63b1c6612f82651859bd36308bc437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f39c63a6c9a8918feafa713c610c86"><td class="memItemLeft" align="right" valign="top"><a id="a16f39c63a6c9a8918feafa713c610c86"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>variable</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> r) const</td></tr>
+<tr class="separator:a16f39c63a6c9a8918feafa713c610c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1863f46430e668bfc47943686c8e78e8"><td class="memItemLeft" align="right" valign="top"><a id="a1863f46430e668bfc47943686c8e78e8"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shortRate</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x) const</td></tr>
 <tr class="separator:a1863f46430e668bfc47943686c8e78e8"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></li>  </ul>
@@ -87,8 +98,9 @@ $(function() {
 <div class="center"><img src="class_quant_lib_1_1_forward__inherit__graph.png" border="0" usemap="#_forward_inherit__map" alt="Inheritance graph"/></div>
 <map name="_forward_inherit__map" id="_forward_inherit__map">
 <area shape="rect" id="node4" href="class_quant_lib_1_1_fixed_rate_bond_forward.html" title="Forward contract on a fixed&#45;rate bond " alt="" coords="5,225,167,251"/>
-<area shape="rect" id="node2" href="class_quant_lib_1_1_instrument.html" title="Abstract instrument class. " alt="" coords="44,79,129,104"/>
-<area shape="rect" id="node3" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching. " alt="" coords="42,5,130,31"/>
+<area shape="rect" id="node5" href="class_quant_lib_1_1_forward_rate_agreement.html" title="Forward rate agreement (FRA) class " alt="" coords="191,225,355,251"/>
+<area shape="rect" id="node2" href="class_quant_lib_1_1_instrument.html" title="Abstract instrument class. " alt="" coords="138,79,222,104"/>
+<area shape="rect" id="node3" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching. " alt="" coords="136,5,224,31"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -291,7 +303,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <p><a class="el" href="class_quant_lib_1_1_forward.html#a789981beda42e02c2698dee83d077a1d" title="NPV of income/dividends/storage-costs etc. of underlying instrument. ">spotIncome()</a> refers generically to the present value of coupons, dividends or storage costs.</p>
 <p>discountCurve_ is the curve used to discount forward contract cash flows back to the evaluation day, as well as to obtain forward values for spot values/prices.</p>
 <p>incomeDiscountCurve_, which for generality is not automatically set to the discountCurve_, is the curve used to discount future income/dividends/storage-costs etc back to the evaluation date.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000065">Warning:</a></b></dt><dd>This class still needs to be rigorously tested</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000069">Warning:</a></b></dt><dd>This class still needs to be rigorously tested</dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9ff92ce10912675f05fbda79f9673c58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ff92ce10912675f05fbda79f9673c58">&#9670;&nbsp;</a></span>forwardValue()</h2>
@@ -393,6 +405,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>In case a pricing engine is <b>not</b> used, this method must be overridden to perform the actual calculations and set any needed results. In case a pricing engine is used, the default implementation can be used. </p>
 
 <p>Reimplemented from <a class="el" href="class_quant_lib_1_1_instrument.html#a33f04fb3ac37abe7c9c6032cff611745">Instrument</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#a33f04fb3ac37abe7c9c6032cff611745">ForwardRateAgreement</a>.</p>
 
 </div>
 </div>

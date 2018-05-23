@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_credit_default_swap.html">CreditDefaultSwap</a></li>  </ul>
@@ -353,8 +364,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Credit default swap. </p>
 <dl class="section note"><dt>Note</dt><dd>This instrument currently assumes that the issuer did not default until today's date.</dd></dl>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000061">Warning:</a></b></dt><dd>if <code>Settings::includeReferenceDateCashFlows()</code> is set to <code>true</code>, payments occurring at the settlement date of the swap might be included in the NPV and therefore affect the fair-spread calculation. This might not be what you want.</dd></dl>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000062">Warning:</a></b></dt><dd>conventionalSpread (and impliedHazardRate) by default use the mid-point engine, which is not ISDA conform.</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000065">Warning:</a></b></dt><dd>if <code>Settings::includeReferenceDateCashFlows()</code> is set to <code>true</code>, payments occurring at the settlement date of the swap might be included in the NPV and therefore affect the fair-spread calculation. This might not be what you want.</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000066">Warning:</a></b></dt><dd>conventionalSpread (and impliedHazardRate) by default use the mid-point engine, which is not ISDA conform.</dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_c_d_s_8cpp-example.html#_a25">CDS.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac4bc309da842b718e6d4f057be93a680"></a>

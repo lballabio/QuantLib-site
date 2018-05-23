@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
@@ -141,7 +152,7 @@ $(function() {
     Copyright (C) 2010 Robert Philipp
     Copyright (C) 2010 Alessandro Roveda
     Copyright (C) 2010 SunTrust Bank</pre><pre>    Copyright (C) 2011, 2013, 2014 Fabien Le Floc'h</pre><pre>    Copyright (C) 2012, 2013 Grzegorz Andruszkiewicz
-    Copyright (C) 2012, 2013, 2014, 2015, 2016, 2017 Peter Caspers
+    Copyright (C) 2012, 2013, 2014, 2015, 2016, 2017, 2018 Peter Caspers
     Copyright (C) 2012 Mateusz Kapturski
     Copyright (C) 2012 Simon Shakeshaft
     Copyright (C) 2012 Édouard Tallent
@@ -165,7 +176,9 @@ $(function() {
     Copyright (C) 2017 Paul Giltinan
     Copyright (C) 2017 Werner Kuerzinger
     Copyright (C) 2017 Oleg Kulkov
-    Copyright (C) 2017 Joseph Jeisman</pre><pre>    Copyright (C) 2018 Roy Zywina</pre><pre><a class="el" href="namespace_quant_lib.html">QuantLib</a> includes code taken from Peter Jäckel's book "Monte Carlo
+    Copyright (C) 2017 Joseph Jeisman</pre><pre>    Copyright (C) 2018 Tom Anderson
+    Copyright (C) 2018 Matthias Lungwitz
+    Copyright (C) 2018 Roy Zywina</pre><pre><a class="el" href="namespace_quant_lib.html">QuantLib</a> includes code taken from Peter Jäckel's book "Monte Carlo
 Methods in Finance".</pre><pre><a class="el" href="namespace_quant_lib.html">QuantLib</a> includes software developed by the University of Chicago,
 as Operator of Argonne National Laboratory.</pre><pre><a class="el" href="namespace_quant_lib.html">QuantLib</a> includes a set of numbers provided by Stephen Joe and Frances
 Kuo under a BSD-style license.</pre><pre>Redistribution and use in source and binary forms, with or without

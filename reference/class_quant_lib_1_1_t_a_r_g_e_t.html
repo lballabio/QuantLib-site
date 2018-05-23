@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_t_a_r_g_e_t.html">TARGET</a></li>  </ul>
@@ -163,7 +174,7 @@ Day of Goodwill, December 26th (since 2000) </li>
 December 31st (1998, 1999, and 2001) </li>
 </ul>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000165">Tests:</a></b></dt><dd>the correctness of the returned results is tested against a list of known holidays. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#_a8">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#_a2">Bonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#_a2">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#_a7">ConvertibleBonds.cpp</a>, <a class="el" href="_discrete_hedging_8cpp-example.html#_a14">DiscreteHedging.cpp</a>, <a class="el" href="_equity_option_8cpp-example.html#_a2">EquityOption.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#_a15">FittedBondCurve.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#_a2">swapvaluation.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_basket_losses_8cpp-example.html#_a2">BasketLosses.cpp</a>, <a class="el" href="_bermudan_swaption_8cpp-example.html#_a8">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#_a2">Bonds.cpp</a>, <a class="el" href="_c_d_s_8cpp-example.html#_a2">CDS.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#_a7">ConvertibleBonds.cpp</a>, <a class="el" href="_c_v_a_i_r_s_8cpp-example.html#_a2">CVAIRS.cpp</a>, <a class="el" href="_discrete_hedging_8cpp-example.html#_a14">DiscreteHedging.cpp</a>, <a class="el" href="_equity_option_8cpp-example.html#_a2">EquityOption.cpp</a>, <a class="el" href="_fitted_bond_curve_8cpp-example.html#_a15">FittedBondCurve.cpp</a>, <a class="el" href="_gaussian1d_models_8cpp-example.html#_a11">Gaussian1dModels.cpp</a>, <a class="el" href="_latent_model_8cpp-example.html#_a2">LatentModel.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#_a2">swapvaluation.cpp</a>.</dd>
 </dl></div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

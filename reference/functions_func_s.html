@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,21 +51,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="contents">
 &#160;
 
 <h3><a id="index_s"></a>- s -</h3><ul>
 <li>sampleAccumulator()
-: <a class="el" href="class_quant_lib_1_1_mc_simulation.html#a4814e7dcd6876b8375eb43755898ac10">McSimulation&lt; MC, RNG, S &gt;</a>
+: <a class="el" href="class_quant_lib_1_1_mc_simulation.html#abf7622f9bc94fbb40425a63aea8bac43">McSimulation&lt; MC, RNG, S &gt;</a>
 </li>
 <li>samples()
 : <a class="el" href="class_quant_lib_1_1_general_statistics.html#a03dada9122edc892727a207cbbe93427">GeneralStatistics</a>
@@ -138,6 +149,9 @@ $(function() {
 <li>settledLoss()
 : <a class="el" href="class_quant_lib_1_1_basket.html#af6e2cc79301ee0ee44869a12a0daba66">Basket</a>
 </li>
+<li>settlementDate()
+: <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#ac64e9810c0bd1cbee8425476db0bb58d">ForwardRateAgreement</a>
+</li>
 <li>settlementDays()
 : <a class="el" href="class_quant_lib_1_1_drift_term_structure.html#a32e050c75a34ceee6f0633bdb799a080">DriftTermStructure</a>
 , <a class="el" href="class_quant_lib_1_1_forward_spreaded_term_structure.html#a32e050c75a34ceee6f0633bdb799a080">ForwardSpreadedTermStructure</a>
@@ -208,6 +222,7 @@ $(function() {
 <li>setupExpired()
 : <a class="el" href="class_quant_lib_1_1_bond.html#aef24082dd24f1330f587e552a7dc4f69">Bond</a>
 , <a class="el" href="class_quant_lib_1_1_credit_default_swap.html#aef24082dd24f1330f587e552a7dc4f69">CreditDefaultSwap</a>
+, <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#aef24082dd24f1330f587e552a7dc4f69">ForwardRateAgreement</a>
 , <a class="el" href="class_quant_lib_1_1_instrument.html#aef24082dd24f1330f587e552a7dc4f69">Instrument</a>
 , <a class="el" href="class_quant_lib_1_1_multi_asset_option.html#aef24082dd24f1330f587e552a7dc4f69">MultiAssetOption</a>
 , <a class="el" href="class_quant_lib_1_1_one_asset_option.html#aef24082dd24f1330f587e552a7dc4f69">OneAssetOption</a>
@@ -254,7 +269,7 @@ $(function() {
 : <a class="el" href="class_quant_lib_1_1_simplex.html#ae15567fc9f817266ba4916db54df9013">Simplex</a>
 </li>
 <li>SimulatedAnnealing()
-: <a class="el" href="class_quant_lib_1_1_simulated_annealing.html#a813f5d07e6abd98966b1c123fb46529a">SimulatedAnnealing&lt; RNG &gt;</a>
+: <a class="el" href="class_quant_lib_1_1_simulated_annealing.html#a2a19201b49b575c39dcaee99b4912433">SimulatedAnnealing&lt; RNG &gt;</a>
 </li>
 <li>size()
 : <a class="el" href="class_quant_lib_1_1_array.html#acce0ab2cacc475b2434f24c65c91685a">Array</a>
@@ -283,7 +298,7 @@ $(function() {
 <li>smileSection()
 : <a class="el" href="class_quant_lib_1_1_black_vol_surface.html#a766e0a76b3127836d43243f9dfcbf760">BlackVolSurface</a>
 , <a class="el" href="class_quant_lib_1_1_optionlet_volatility_structure.html#ab956b9f68f2458d7afc58961b441929a">OptionletVolatilityStructure</a>
-, <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a0614df6cc812a13e5d35869f4896b5c7">SwaptionVolatilityStructure</a>
+, <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a8ce4ecc66dd3ad1eae55c21fd08c61de">SwaptionVolatilityStructure</a>
 </li>
 <li>smileSectionImpl()
 : <a class="el" href="class_quant_lib_1_1_callable_bond_constant_volatility.html#a6acb6ef6b610ec353400977c0deba08a">CallableBondConstantVolatility</a>
@@ -299,10 +314,10 @@ $(function() {
 : <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html#aedced5fbd645e696bc1d5c352ec8ded6">FittedBondDiscountCurve::FittingMethod</a>
 </li>
 <li>solve()
-: <a class="el" href="class_quant_lib_1_1_solver1_d.html#aa98085e4d63f246d604efeedb279fc36">Solver1D&lt; Impl &gt;</a>
+: <a class="el" href="class_quant_lib_1_1_solver1_d.html#a706af4c4d308b619825b6ee05b21e678">Solver1D&lt; Impl &gt;</a>
 </li>
 <li>solveFor()
-: <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html#a6b8a97cd76d7fc5e57cbc36a7a3ebe98">TridiagonalOperator</a>
+: <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html#a4a4ba36a92d1d38ecd212d3e6ffdcc86">TridiagonalOperator</a>
 </li>
 <li>SOR()
 : <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html#a4142de67725f0d8da55dcd0cea16d32c">TridiagonalOperator</a>
@@ -327,10 +342,12 @@ $(function() {
 <li>spotIncome()
 : <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#af17ea9c23961db17b0c901c96854c839">FixedRateBondForward</a>
 , <a class="el" href="class_quant_lib_1_1_forward.html#a789981beda42e02c2698dee83d077a1d">Forward</a>
+, <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#af17ea9c23961db17b0c901c96854c839">ForwardRateAgreement</a>
 </li>
 <li>spotValue()
 : <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a2bb5d56364044aa5899a663ba84e92a3">FixedRateBondForward</a>
 , <a class="el" href="class_quant_lib_1_1_forward.html#a0304e7ed8b1277b01dd0a094102ddbce">Forward</a>
+, <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#a2bb5d56364044aa5899a663ba84e92a3">ForwardRateAgreement</a>
 </li>
 <li>spread()
 : <a class="el" href="class_quant_lib_1_1_c_p_i_coupon.html#ab3eab65b85572d780e7d4e743e374fe7">CPICoupon</a>
@@ -394,13 +411,13 @@ $(function() {
 , <a class="el" href="class_quant_lib_1_1_matrix.html#a9df8756a7a5832acb371e2a6aaa9a89b">Matrix</a>
 </li>
 <li>Swap()
-: <a class="el" href="class_quant_lib_1_1_swap.html#aa7e28d70b1366663707f7554205b887b">Swap</a>
+: <a class="el" href="class_quant_lib_1_1_swap.html#a428a8c0a5cb2912604b351462b52e228">Swap</a>
 </li>
 <li>swapLength()
-: <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">SwaptionVolatilityStructure</a>
+: <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a12b5788be62f9f06f1a7412787aa3361">SwaptionVolatilityStructure</a>
 </li>
 <li>SwaptionVolatilityMatrix()
-: <a class="el" href="class_quant_lib_1_1_swaption_volatility_matrix.html#ab241c431af406e7ffecebda3cc177d6c">SwaptionVolatilityMatrix</a>
+: <a class="el" href="class_quant_lib_1_1_swaption_volatility_matrix.html#a3e9b37a728f63ff94fc60e975a67fd73">SwaptionVolatilityMatrix</a>
 </li>
 <li>SwaptionVolatilityStructure()
 : <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a93f2c97ee14dd4339867869e2ad3649f">SwaptionVolatilityStructure</a>

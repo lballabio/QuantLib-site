@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,15 +51,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
@@ -96,7 +107,7 @@ Macros</h2></td></tr>
 <tr class="separator:ga7d82587448e3f5531f79cfb215b905af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>For debugging purposes, macros can be used to output information about the code being executed. </p>
+<p>For debugging purposes, macros can be used to output information about the code being executed. Instrumenting code as in: </p><div class="fragment"><div class="line"><span class="keyword">namespace </span>Foo {</div><div class="line"></div><div class="line">    <span class="keywordtype">int</span> bar(<span class="keywordtype">int</span> i) {</div><div class="line">        <a class="code" href="group__debug_macros.html#ga903ea9f035842ee3560fd787c84887d7" title="output tracing information ">QL_TRACE_ENTER_FUNCTION</a>;</div><div class="line">        <a class="code" href="group__debug_macros.html#ga7d82587448e3f5531f79cfb215b905af" title="output tracing information ">QL_TRACE_VARIABLE</a>(i);</div><div class="line"></div><div class="line">        <span class="keywordflow">if</span> (i == 42) {</div><div class="line">            <a class="code" href="group__debug_macros.html#ga4b80d6b6b9d0d17493ac81428934f1c0" title="output tracing information ">QL_TRACE_LOCATION</a>;</div><div class="line">            <a class="code" href="group__debug_macros.html#ga456b5371fdc64479d393a04b505df5d0" title="output tracing information ">QL_TRACE</a>(<span class="stringliteral">&quot;Right answer, but no question&quot;</span>);</div><div class="line">        } <span class="keywordflow">else</span> {</div><div class="line">            <a class="code" href="group__debug_macros.html#ga4b80d6b6b9d0d17493ac81428934f1c0" title="output tracing information ">QL_TRACE_LOCATION</a>;</div><div class="line">            <a class="code" href="group__debug_macros.html#ga456b5371fdc64479d393a04b505df5d0" title="output tracing information ">QL_TRACE</a>(<span class="stringliteral">&quot;Wrong answer&quot;</span>);</div><div class="line">            i *= 2;</div><div class="line">        }</div><div class="line"></div><div class="line">        <a class="code" href="group__debug_macros.html#ga7d82587448e3f5531f79cfb215b905af" title="output tracing information ">QL_TRACE_VARIABLE</a>(i);</div><div class="line">        <a class="code" href="group__debug_macros.html#ga33c013fea8c974f6781441deaa3ea53b" title="output tracing information ">QL_TRACE_EXIT_FUNCTION</a>;</div><div class="line">        <span class="keywordflow">return</span> i;</div><div class="line">    }</div><div class="line"></div><div class="line">}</div></div><!-- fragment --><p> will output a trace like the following when the code is run: </p><div class="fragment"><div class="line">trace[3]: Entering <span class="keywordtype">int</span> Foo::bar(<span class="keywordtype">int</span>)</div><div class="line">trace[3]: i = 21</div><div class="line">trace[3]: At line 16 in tracing_example.cpp</div><div class="line">trace[3]: Wrong answer</div><div class="line">trace[3]: i = 42</div><div class="line">trace[3]: Exiting <span class="keywordtype">int</span> Foo::bar(<span class="keywordtype">int</span>)</div></div><!-- fragment --><p> (the actual output will depend on the compiler and the file names). A word of warning must be added: adding so much tracing to your code might degrade its readability. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga69b168aeab2ef4ff9033469b8214a279"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga69b168aeab2ef4ff9033469b8214a279">&#9670;&nbsp;</a></span>QL_TRACE_ENABLE</h2>
@@ -112,8 +123,7 @@ Macros</h2></td></tr>
 
 <p>enable tracing </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga69b168aeab2ef4ff9033469b8214a279" title="enable tracing ">QL_TRACE_ENABLE</a>;</div></div><!-- fragment --><p> can be used to enable tracing. Such statement might be ignored; refer to QL_TRACE for details. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a5">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a id="ga7d42ce8732ee6ca70a9c15a56f0049e1"></a>
@@ -172,8 +182,7 @@ Macros</h2></td></tr>
 
 <p>output tracing information </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga456b5371fdc64479d393a04b505df5d0" title="output tracing information ">QL_TRACE</a>(message);</div></div><!-- fragment --><p> can be used to output a trace of the code being executed. If tracing was disabled during configuration, such statements are removed by the preprocessor for maximum performance; if it was enabled, whether and where the message is output depends on the current settings. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a3">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a id="ga903ea9f035842ee3560fd787c84887d7"></a>
@@ -190,8 +199,7 @@ Macros</h2></td></tr>
 
 <p>output tracing information </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga903ea9f035842ee3560fd787c84887d7" title="output tracing information ">QL_TRACE_ENTER_FUNCTION</a>;</div></div><!-- fragment --><p> can be used at the beginning of a function to trace the fact that the program execution is entering such function. It should be paired with a corresponding QL_TRACE_EXIT_FUNCTION macro. Such statement might be ignored; refer to QL_TRACE for details. Also, function information might not be available depending on the compiler. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a0">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a id="ga33c013fea8c974f6781441deaa3ea53b"></a>
@@ -208,8 +216,7 @@ Macros</h2></td></tr>
 
 <p>output tracing information </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga33c013fea8c974f6781441deaa3ea53b" title="output tracing information ">QL_TRACE_EXIT_FUNCTION</a>;</div></div><!-- fragment --><p> can be used before returning from a function to trace the fact that the program execution is exiting such function. It should be paired with a corresponding QL_TRACE_ENTER_FUNCTION macro. Such statement might be ignored; refer to QL_TRACE for details. Also, function information might not be available depending on the compiler. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a4">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a id="ga4b80d6b6b9d0d17493ac81428934f1c0"></a>
@@ -226,8 +233,7 @@ Macros</h2></td></tr>
 
 <p>output tracing information </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga4b80d6b6b9d0d17493ac81428934f1c0" title="output tracing information ">QL_TRACE_LOCATION</a>;</div></div><!-- fragment --><p> can be used to trace the current file and line. Such statement might be ignored; refer to QL_TRACE for details. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a2">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a id="ga7d82587448e3f5531f79cfb215b905af"></a>
@@ -248,8 +254,7 @@ Macros</h2></td></tr>
 
 <p>output tracing information </p>
 <p>The statement </p><div class="fragment"><div class="line"><a class="code" href="group__debug_macros.html#ga7d82587448e3f5531f79cfb215b905af" title="output tracing information ">QL_TRACE_VARIABLE</a>(variable);</div></div><!-- fragment --><p> can be used to trace the current value of a variable. Such statement might be ignored; refer to QL_TRACE for details. Also, the variable type must allow sending it to an output stream. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="tracing_example_8cpp-example.html#a1">tracing_example.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 </div><!-- contents -->

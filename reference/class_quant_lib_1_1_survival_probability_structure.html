@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_survival_probability_structure.html">SurvivalProbabilityStructure</a></li>  </ul>
@@ -305,7 +316,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b></td></tr
 
 <p>instantaneous default density at a given time </p>
 <p>implemented in terms of the survival probability \( S(t) \) as \( p(t) = -\frac{d}{dt} S(t). \)</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000134">Warning:</a></b></dt><dd>This implementation uses numerical differentiation, which might be inefficient and inaccurate. Derived classes should override it if a more efficient implementation is available. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000138">Warning:</a></b></dt><dd>This implementation uses numerical differentiation, which might be inefficient and inaccurate. Derived classes should override it if a more efficient implementation is available. </dd></dl>
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html#a6fa52b63cbf5503d39b7ce7cb66b741e">DefaultProbabilityTermStructure</a>.</p>
 

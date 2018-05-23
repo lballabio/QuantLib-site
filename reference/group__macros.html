@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,15 +51,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
@@ -79,15 +90,15 @@ Modules</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gaab875de7b9fdb0458463f0e661b31151"><td class="memItemLeft" align="right" valign="top"><a id="gaab875de7b9fdb0458463f0e661b31151"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#gaab875de7b9fdb0458463f0e661b31151">QL_VERSION</a>&#160;&#160;&#160;&quot;1.12.1&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#gaab875de7b9fdb0458463f0e661b31151">QL_VERSION</a>&#160;&#160;&#160;&quot;1.13&quot;</td></tr>
 <tr class="memdesc:gaab875de7b9fdb0458463f0e661b31151"><td class="mdescLeft">&#160;</td><td class="mdescRight">version string <br /></td></tr>
 <tr class="separator:gaab875de7b9fdb0458463f0e661b31151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabad58a5fe5235ef402aad82e6a7a166d"><td class="memItemLeft" align="right" valign="top"><a id="gabad58a5fe5235ef402aad82e6a7a166d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#gabad58a5fe5235ef402aad82e6a7a166d">QL_HEX_VERSION</a>&#160;&#160;&#160;0x011201f0</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#gabad58a5fe5235ef402aad82e6a7a166d">QL_HEX_VERSION</a>&#160;&#160;&#160;0x011300f0</td></tr>
 <tr class="memdesc:gabad58a5fe5235ef402aad82e6a7a166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">version hexadecimal number <br /></td></tr>
 <tr class="separator:gabad58a5fe5235ef402aad82e6a7a166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a6c910e40a554b9a198326dc1eb8f90"><td class="memItemLeft" align="right" valign="top"><a id="ga8a6c910e40a554b9a198326dc1eb8f90"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#ga8a6c910e40a554b9a198326dc1eb8f90">QL_LIB_VERSION</a>&#160;&#160;&#160;&quot;1_12_1&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#ga8a6c910e40a554b9a198326dc1eb8f90">QL_LIB_VERSION</a>&#160;&#160;&#160;&quot;1_13&quot;</td></tr>
 <tr class="memdesc:ga8a6c910e40a554b9a198326dc1eb8f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">version string for output lib name <br /></td></tr>
 <tr class="separator:ga8a6c910e40a554b9a198326dc1eb8f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

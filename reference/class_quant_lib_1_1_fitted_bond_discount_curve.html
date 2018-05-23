@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html">FittedBondDiscountCurve</a></li>  </ul>
@@ -301,8 +312,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <div class="textblock"><p><a class="el" href="struct_quant_lib_1_1_discount.html" title="Discount-curve traits. ">Discount</a> curve fitted to a set of fixed-coupon bonds. </p>
 <p>This class fits a discount function \( d(t) \) over a set of bonds, using a user defined fitting method. The discount function is fit in such a way so that all cashflows of all input bonds, when discounted using \( d(t) \), will reproduce the set of input bond prices in an optimized sense. Minimized price errors are weighted by the inverse of their respective bond duration.</p>
 <p>The <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html" title="Discount curve fitted to a set of fixed-coupon bonds. ">FittedBondDiscountCurve</a> class acts as a generic wrapper, while its inner class <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html" title="Base fitting method used to construct a fitted bond discount curve. ">FittingMethod</a> provides the implementation details. Developers thus need only derive new fitting methods from the latter.</p>
-<p><b> Example: </b> <a class="el" href="_fitted_bond_curve_8cpp-example.html">compares various bond discount curve fitting methodologies </a></p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000150">Warning:</a></b></dt><dd>The method can be slow if there are many bonds to fit. Speed also depends on the particular choice of fitting method chosen and its convergence properties under optimization. See also todo list for BondDiscountCurveFittingMethod.</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000154">Warning:</a></b></dt><dd>The method can be slow if there are many bonds to fit. Speed also depends on the particular choice of fitting method chosen and its convergence properties under optimization. See also todo list for BondDiscountCurveFittingMethod.</dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_fitted_bond_curve_8cpp-example.html#_a25">FittedBondCurve.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac5c54df7ed3b930268c8d7752c101725"></a>

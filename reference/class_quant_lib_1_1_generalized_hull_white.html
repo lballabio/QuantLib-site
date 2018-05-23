@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_generalized_hull_white.html">GeneralizedHullWhite</a></li>  </ul>
@@ -68,7 +79,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_generalized_hull_white-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -106,12 +116,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e57a6f3715ce8ba3ef0a45999e0dfda"><td class="memItemLeft" align="right" valign="top"><a id="a3e57a6f3715ce8ba3ef0a45999e0dfda"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GeneralizedHullWhite</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;yieldtermStructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;speedstructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;volstructure, const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;f=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;(), const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;fInverse=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;())</td></tr>
-<tr class="separator:a3e57a6f3715ce8ba3ef0a45999e0dfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b7784cd42544726cdabcb2ee90aa39"><td class="memItemLeft" align="right" valign="top"><a id="a58b7784cd42544726cdabcb2ee90aa39"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GeneralizedHullWhite</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;yieldtermStructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;speedstructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;volstructure, const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;speed, const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;vol, const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;f=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;(), const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;fInverse=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;())</td></tr>
 <tr class="separator:a58b7784cd42544726cdabcb2ee90aa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6e80697883a36826c7cc090236b713"><td class="memTemplParams" colspan="2"><a id="add6e80697883a36826c7cc090236b713"></a>
+template&lt;class SpeedInterpolationTraits , class VolInterpolationTraits &gt; </td></tr>
+<tr class="memitem:add6e80697883a36826c7cc090236b713"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GeneralizedHullWhite</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;yieldtermStructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;speedstructure, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;volstructure, const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;speed, const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;vol, const SpeedInterpolationTraits &amp;speedtraits, const VolInterpolationTraits &amp;voltraits, const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;f=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;(), const boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt; &amp;fInverse=boost::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)&gt;())</td></tr>
+<tr class="separator:add6e80697883a36826c7cc090236b713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a6559a2ca29a95f75d995892b78cbca"><td class="memItemLeft" align="right" valign="top"><a id="a8a6559a2ca29a95f75d995892b78cbca"></a>
 boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">ShortRateDynamics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_generalized_hull_white.html#a8a6559a2ca29a95f75d995892b78cbca">dynamics</a> () const</td></tr>
 <tr class="memdesc:a8a6559a2ca29a95f75d995892b78cbca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the short-rate dynamics <br /></td></tr>
@@ -126,8 +137,13 @@ boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_lattice.html">Latt
 boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">ShortRateDynamics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HWdynamics</b> () const</td></tr>
 <tr class="separator:a3bb952cb7e47aad61cbe6db60feb61b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa464aed598619815346c0d08cf2c7ccd"><td class="memItemLeft" align="right" valign="top"><a id="aa464aed598619815346c0d08cf2c7ccd"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>discountBondOption</b> (Option::Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> strike, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> maturity, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> bondMaturity) const</td></tr>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_generalized_hull_white.html#aa464aed598619815346c0d08cf2c7ccd">discountBondOption</a> (Option::Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> strike, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> maturity, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> bondMaturity) const</td></tr>
+<tr class="memdesc:aa464aed598619815346c0d08cf2c7ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only valid under Hull-White model. <br /></td></tr>
 <tr class="separator:aa464aed598619815346c0d08cf2c7ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965265df155bbc95c0d0e0b4c0eac511"><td class="memItemLeft" align="right" valign="top"><a id="a965265df155bbc95c0d0e0b4c0eac511"></a>
+std::vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_generalized_hull_white.html#a965265df155bbc95c0d0e0b4c0eac511">fixedReversion</a> () const</td></tr>
+<tr class="memdesc:a965265df155bbc95c0d0e0b4c0eac511"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector to pass to 'calibrate' to fit only volatility <br /></td></tr>
+<tr class="separator:a965265df155bbc95c0d0e0b4c0eac511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_one_factor_affine_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_one_factor_affine_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_one_factor_affine_model.html">OneFactorAffineModel</a></td></tr>
 <tr class="memitem:a7ba76488a8dafa032560538843a5737f inherit pub_methods_class_quant_lib_1_1_one_factor_affine_model"><td class="memItemLeft" align="right" valign="top"><a id="a7ba76488a8dafa032560538843a5737f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OneFactorAffineModel</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nArguments)</td></tr>
@@ -227,12 +243,6 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>termStructure</b> () const</td></tr>
 <tr class="separator:a8a05762901cb5fa1d585c21609d460f5 inherit pub_methods_class_quant_lib_1_1_term_structure_consistent_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af554e020436a6a21568f1149d61e2f54"><td class="memItemLeft" align="right" valign="top"><a id="af554e020436a6a21568f1149d61e2f54"></a>
-static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convexityBias</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> futurePrice, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> sigma, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
-<tr class="separator:af554e020436a6a21568f1149d61e2f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a962375e1380660f0a2fe72e737e3950b"><td class="memItemLeft" align="right" valign="top"><a id="a962375e1380660f0a2fe72e737e3950b"></a>
@@ -244,12 +254,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4d8a7e8e132cf1dd8d1d9eac02f2bfae"><td class="memItemLeft" align="right" valign="top"><a id="a4d8a7e8e132cf1dd8d1d9eac02f2bfae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>generateArguments</b> ()</td></tr>
 <tr class="separator:a4d8a7e8e132cf1dd8d1d9eac02f2bfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc348b40097f738841cc2b04eccb9ee3"><td class="memItemLeft" align="right" valign="top"><a id="acc348b40097f738841cc2b04eccb9ee3"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>A</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T) const</td></tr>
-<tr class="separator:acc348b40097f738841cc2b04eccb9ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af180314a3071f54e4512a3f665cb1c9c"><td class="memItemLeft" align="right" valign="top"><a id="af180314a3071f54e4512a3f665cb1c9c"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>B</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T) const</td></tr>
-<tr class="separator:af180314a3071f54e4512a3f665cb1c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf84988e03484bf38109ad3abd565a4c"><td class="memItemLeft" align="right" valign="top"><a id="abf84988e03484bf38109ad3abd565a4c"></a>
+virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>A</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T) const</td></tr>
+<tr class="separator:abf84988e03484bf38109ad3abd565a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac418cd274327445c1f93af4c8dc1b1e0"><td class="memItemLeft" align="right" valign="top"><a id="ac418cd274327445c1f93af4c8dc1b1e0"></a>
+virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>B</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T) const</td></tr>
+<tr class="separator:ac418cd274327445c1f93af4c8dc1b1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a676f0ea2a4d6e5d0192f78630fc7c"><td class="memItemLeft" align="right" valign="top"><a id="a03a676f0ea2a4d6e5d0192f78630fc7c"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>V</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> T) const</td></tr>
+<tr class="separator:a03a676f0ea2a4d6e5d0192f78630fc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

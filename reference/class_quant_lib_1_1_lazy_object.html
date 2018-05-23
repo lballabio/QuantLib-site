@@ -11,8 +11,8 @@
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link rel="search" href="search_opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="QuantLib"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.12.1</div>
+   <div id="projectnumber">Reference manual - version 1.13</div>
    </div>
   </td>
  </tr>
@@ -51,14 +51,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,true,'search.php','Search');
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
 <div id="nav-path" class="navpath">
   <ul>
 <li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></li>  </ul>
@@ -258,7 +269,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>This method causes the object to forward all notifications, even when not calculated. The default behavior is to forward the first notification received, and discard the others until recalculated; the rationale is that observers were already notified, and don't need further notification until they recalculate, at which point this object would be recalculated too. After recalculation, this object would again forward the first notification received.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000095">Warning:</a></b></dt><dd>Forwarding all notifications will cause a performance hit, and should be used only when discarding notifications cause an incorrect behavior. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000099">Warning:</a></b></dt><dd>Forwarding all notifications will cause a performance hit, and should be used only when discarding notifications cause an incorrect behavior. </dd></dl>
 
 </div>
 </div>
@@ -285,8 +296,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </table>
 </div><div class="memdoc">
 <p>This method performs all needed calculations by calling the <em><b>performCalculations</b></em> method.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000096">Warning:</a></b></dt><dd>Objects cache the results of the previous calculation. Such results will be returned upon later invocations of <em><b>calculate</b></em>. When the results depend on arguments which could change between invocations, the lazy object must register itself as observer of such objects for the calculations to be performed again when they change.</dd></dl>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000097">Warning:</a></b></dt><dd>Should this method be redefined in derived classes, <a class="el" href="class_quant_lib_1_1_lazy_object.html#a082ff96da379d5e17436372ccb3c0972">LazyObject::calculate()</a> should be called in the overriding method. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000100">Warning:</a></b></dt><dd>Objects cache the results of the previous calculation. Such results will be returned upon later invocations of <em><b>calculate</b></em>. When the results depend on arguments which could change between invocations, the lazy object must register itself as observer of such objects for the calculations to be performed again when they change.</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000101">Warning:</a></b></dt><dd>Should this method be redefined in derived classes, <a class="el" href="class_quant_lib_1_1_lazy_object.html#a082ff96da379d5e17436372ccb3c0972">LazyObject::calculate()</a> should be called in the overriding method. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_quant_lib_1_1_instrument.html#a082ff96da379d5e17436372ccb3c0972">Instrument</a>.</p>
 
@@ -316,7 +327,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>This method must implement any calculations which must be (re)done in order to calculate the desired results. </p>
 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_markov_functional.html#a33f04fb3ac37abe7c9c6032cff611745">MarkovFunctional</a>, <a class="el" href="class_quant_lib_1_1_gaussian1d_model.html#a33f04fb3ac37abe7c9c6032cff611745">Gaussian1dModel</a>, <a class="el" href="class_quant_lib_1_1_gsr.html#a33f04fb3ac37abe7c9c6032cff611745">Gsr</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a33f04fb3ac37abe7c9c6032cff611745">FixedRateBondForward</a>, <a class="el" href="class_quant_lib_1_1_forward.html#a33f04fb3ac37abe7c9c6032cff611745">Forward</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; derivedRandomLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; RandomDefaultLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; RandomLossLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_swaption_volatility_matrix.html#a33f04fb3ac37abe7c9c6032cff611745">SwaptionVolatilityMatrix</a>, <a class="el" href="class_quant_lib_1_1_instrument.html#a33f04fb3ac37abe7c9c6032cff611745">Instrument</a>, <a class="el" href="class_quant_lib_1_1_andreasen_huge_volatility_interpl.html#a33f04fb3ac37abe7c9c6032cff611745">AndreasenHugeVolatilityInterpl</a>, <a class="el" href="class_quant_lib_1_1_cap_floor_term_vol_curve.html#a33f04fb3ac37abe7c9c6032cff611745">CapFloorTermVolCurve</a>, <a class="el" href="class_quant_lib_1_1_cap_floor_term_vol_surface.html#a33f04fb3ac37abe7c9c6032cff611745">CapFloorTermVolSurface</a>, <a class="el" href="class_quant_lib_1_1_swaption_volatility_cube.html#a33f04fb3ac37abe7c9c6032cff611745">SwaptionVolatilityCube</a>, <a class="el" href="class_quant_lib_1_1_risky_bond.html#a33f04fb3ac37abe7c9c6032cff611745">RiskyBond</a>, <a class="el" href="class_quant_lib_1_1_abcd_atm_vol_curve.html#a33f04fb3ac37abe7c9c6032cff611745">AbcdAtmVolCurve</a>, <a class="el" href="class_quant_lib_1_1_convertible_bond.html#a33f04fb3ac37abe7c9c6032cff611745">ConvertibleBond</a>, <a class="el" href="class_quant_lib_1_1_optionlet_stripper1.html#a33f04fb3ac37abe7c9c6032cff611745">OptionletStripper1</a>, <a class="el" href="class_quant_lib_1_1_composite_instrument.html#a33f04fb3ac37abe7c9c6032cff611745">CompositeInstrument</a>, <a class="el" href="class_quant_lib_1_1_energy_vanilla_swap.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyVanillaSwap</a>, <a class="el" href="class_quant_lib_1_1_energy_basis_swap.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyBasisSwap</a>, <a class="el" href="class_quant_lib_1_1_heston_s_l_v_m_c_model.html#a33f04fb3ac37abe7c9c6032cff611745">HestonSLVMCModel</a>, <a class="el" href="class_quant_lib_1_1_stripped_optionlet_adapter.html#a33f04fb3ac37abe7c9c6032cff611745">StrippedOptionletAdapter</a>, <a class="el" href="class_quant_lib_1_1_heston_model_helper.html#a33f04fb3ac37abe7c9c6032cff611745">HestonModelHelper</a>, <a class="el" href="class_quant_lib_1_1_calibration_helper.html#a33f04fb3ac37abe7c9c6032cff611745">CalibrationHelper</a>, <a class="el" href="class_quant_lib_1_1_optionlet_stripper2.html#a33f04fb3ac37abe7c9c6032cff611745">OptionletStripper2</a>, <a class="el" href="class_quant_lib_1_1_forward_swap_quote.html#a33f04fb3ac37abe7c9c6032cff611745">ForwardSwapQuote</a>, <a class="el" href="class_quant_lib_1_1_eurodollar_futures_implied_std_dev_quote.html#a33f04fb3ac37abe7c9c6032cff611745">EurodollarFuturesImpliedStdDevQuote</a>, <a class="el" href="class_quant_lib_1_1_implied_std_dev_quote.html#a33f04fb3ac37abe7c9c6032cff611745">ImpliedStdDevQuote</a>, <a class="el" href="class_quant_lib_1_1_energy_future.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyFuture</a>, and <a class="el" href="class_quant_lib_1_1_stock.html#a33f04fb3ac37abe7c9c6032cff611745">Stock</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_markov_functional.html#a33f04fb3ac37abe7c9c6032cff611745">MarkovFunctional</a>, <a class="el" href="class_quant_lib_1_1_gaussian1d_model.html#a33f04fb3ac37abe7c9c6032cff611745">Gaussian1dModel</a>, <a class="el" href="class_quant_lib_1_1_gsr.html#a33f04fb3ac37abe7c9c6032cff611745">Gsr</a>, <a class="el" href="class_quant_lib_1_1_forward.html#a33f04fb3ac37abe7c9c6032cff611745">Forward</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; derivedRandomLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a33f04fb3ac37abe7c9c6032cff611745">FixedRateBondForward</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; RandomDefaultLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_random_l_m.html#a33f04fb3ac37abe7c9c6032cff611745">RandomLM&lt; RandomLossLM, copulaPolicy, USNG &gt;</a>, <a class="el" href="class_quant_lib_1_1_swaption_volatility_matrix.html#a33f04fb3ac37abe7c9c6032cff611745">SwaptionVolatilityMatrix</a>, <a class="el" href="class_quant_lib_1_1_forward_rate_agreement.html#a33f04fb3ac37abe7c9c6032cff611745">ForwardRateAgreement</a>, <a class="el" href="class_quant_lib_1_1_instrument.html#a33f04fb3ac37abe7c9c6032cff611745">Instrument</a>, <a class="el" href="class_quant_lib_1_1_andreasen_huge_volatility_interpl.html#a33f04fb3ac37abe7c9c6032cff611745">AndreasenHugeVolatilityInterpl</a>, <a class="el" href="class_quant_lib_1_1_cap_floor_term_vol_curve.html#a33f04fb3ac37abe7c9c6032cff611745">CapFloorTermVolCurve</a>, <a class="el" href="class_quant_lib_1_1_cap_floor_term_vol_surface.html#a33f04fb3ac37abe7c9c6032cff611745">CapFloorTermVolSurface</a>, <a class="el" href="class_quant_lib_1_1_swaption_volatility_cube.html#a33f04fb3ac37abe7c9c6032cff611745">SwaptionVolatilityCube</a>, <a class="el" href="class_quant_lib_1_1_risky_bond.html#a33f04fb3ac37abe7c9c6032cff611745">RiskyBond</a>, <a class="el" href="class_quant_lib_1_1_abcd_atm_vol_curve.html#a33f04fb3ac37abe7c9c6032cff611745">AbcdAtmVolCurve</a>, <a class="el" href="class_quant_lib_1_1_convertible_bond.html#a33f04fb3ac37abe7c9c6032cff611745">ConvertibleBond</a>, <a class="el" href="class_quant_lib_1_1_optionlet_stripper1.html#a33f04fb3ac37abe7c9c6032cff611745">OptionletStripper1</a>, <a class="el" href="class_quant_lib_1_1_composite_instrument.html#a33f04fb3ac37abe7c9c6032cff611745">CompositeInstrument</a>, <a class="el" href="class_quant_lib_1_1_energy_vanilla_swap.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyVanillaSwap</a>, <a class="el" href="class_quant_lib_1_1_energy_basis_swap.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyBasisSwap</a>, <a class="el" href="class_quant_lib_1_1_heston_s_l_v_m_c_model.html#a33f04fb3ac37abe7c9c6032cff611745">HestonSLVMCModel</a>, <a class="el" href="class_quant_lib_1_1_stripped_optionlet_adapter.html#a33f04fb3ac37abe7c9c6032cff611745">StrippedOptionletAdapter</a>, <a class="el" href="class_quant_lib_1_1_heston_model_helper.html#a33f04fb3ac37abe7c9c6032cff611745">HestonModelHelper</a>, <a class="el" href="class_quant_lib_1_1_calibration_helper.html#a33f04fb3ac37abe7c9c6032cff611745">CalibrationHelper</a>, <a class="el" href="class_quant_lib_1_1_optionlet_stripper2.html#a33f04fb3ac37abe7c9c6032cff611745">OptionletStripper2</a>, <a class="el" href="class_quant_lib_1_1_forward_swap_quote.html#a33f04fb3ac37abe7c9c6032cff611745">ForwardSwapQuote</a>, <a class="el" href="class_quant_lib_1_1_eurodollar_futures_implied_std_dev_quote.html#a33f04fb3ac37abe7c9c6032cff611745">EurodollarFuturesImpliedStdDevQuote</a>, <a class="el" href="class_quant_lib_1_1_implied_std_dev_quote.html#a33f04fb3ac37abe7c9c6032cff611745">ImpliedStdDevQuote</a>, <a class="el" href="class_quant_lib_1_1_energy_future.html#a33f04fb3ac37abe7c9c6032cff611745">EnergyFuture</a>, and <a class="el" href="class_quant_lib_1_1_stock.html#a33f04fb3ac37abe7c9c6032cff611745">Stock</a>.</p>
 
 </div>
 </div>
