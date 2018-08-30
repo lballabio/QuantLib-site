@@ -1,7 +1,0 @@
-<map id="typefactory.hpp" name="typefactory.hpp">
-<area shape="rect" id="node2" href="$enumregistry_8hpp.html" title="EnumRegistry Classes &#45; Concrete implementations of class Registry. " alt="" coords="229,87,452,114"/>
-<area shape="rect" id="node10" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="564,244,685,271"/>
-<area shape="rect" id="node3" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="151,319,272,345"/>
-<area shape="rect" id="node7" href="$singleton_8hpp.html" title="basic support for the singleton pattern " alt="" coords="151,169,269,196"/>
-<area shape="rect" id="node9" href="$registry_8hpp.html" title="Class Registry &#45; A registry of enumerated types and classes. " alt="" coords="293,169,484,196"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="gensrc.configuration.exceptions.ConfigurationException" name="gensrc.configuration.exceptions.ConfigurationException">
-<area shape="rect" id="node3" href="$classgensrc_1_1configuration_1_1exceptions_1_1_invalid_core_path_exception.html" title="gensrc.configuration.exceptions.\lInvalidCorePathException" alt="" coords="435,5,645,47"/>
-<area shape="rect" id="node4" href="$classgensrc_1_1configuration_1_1exceptions_1_1_invalid_relative_path_exception.html" title="gensrc.configuration.exceptions.\lInvalidRelativePathException" alt="" coords="435,71,645,112"/>
-</map>
