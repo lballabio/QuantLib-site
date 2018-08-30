@@ -74,8 +74,8 @@ you want; in the following, we'll assume that the QuantLib directory
 is <tt>C:\Program Files\QuantLib</tt>.</p>
 
 <p>4. Open the QuantLib folder, then open the Visual Studio solution
-called <tt>QuantLib_vc10.sln</tt> by double
-clicking. Choose <i>Release</i> from the configuration menu in the
+called <tt>QuantLib.sln</tt> by double clicking
+it. Choose <i>Release</i> from the configuration menu in the
 toolbar.</p>
 
 <p>5. Open the Property Manager by clicking on <i>View/Property
