@@ -83,17 +83,13 @@ installed.</p>
 <h2>QuantLib Installation</h2>
 
 <p>If you haven't downloaded QuantLib yet, go to its download page on
-SourceForge, located
-at <a href="http://sourceforge.net/projects/quantlib/files/">http://sourceforge.net/projects/quantlib/files/.</a></p>
-
-<p>Open the QuantLib tree, find the latest version (at the time of
-this writing, 0.9.7; this might have changed when you read this) and
-download the zip archive to your local drive. This is illustrated in
-the screenshot below. Create a <tt>C:\QuantLib</tt> folder (or any
-folder you want) and unzip the file in there, which will result in
+Bintray, located
+at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>. Find
+the latest version (at the time of this writing, 0.9.7; this will have
+changed when you read this) and download the zip archive to your local
+drive.  Create a <tt>C:\QuantLib</tt> folder (or any folder you want)
+and unzip the file in there, which will result in
 a <tt>C:\QuantLib\QuantLib-0.9.7</tt> folder.</p>
-
-<p class="center"><img src="pics/vc9/ql1.png" alt="download QuantLib"></p>
 
 <p>Enter the folder and open the Visual Studio solution
 called <tt>QuantLib_vc9.sln</tt> by double clicking (use the solution
