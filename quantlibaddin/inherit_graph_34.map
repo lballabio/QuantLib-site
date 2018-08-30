@@ -1,0 +1,16 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_quant_lib_addin_1_1_handle.html" title="QuantLibAddin::Handle" alt="" coords="147,108,303,135"/>
+<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_random_sequence_generator.html" title="QuantLibAddin::RandomSequence\lGenerator" alt="" coords="113,246,336,287"/>
+<area shape="rect" id="node3" href="$class_quant_lib_addin_1_1_relinkable_handle.html" title="QuantLibAddin::Relinkable\lHandle" alt="" coords="402,13,578,54"/>
+<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_relinkable_handle_impl.html" title="QuantLibAddin::Relinkable\lHandleImpl\&lt; ObjectClass,\l LibraryClass \&gt;" alt="" coords="675,5,851,61"/>
+<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_low_discrepancy_sequence_generator.html" title="QuantLibAddin::LowDiscrepancy\lSequenceGenerator\&lt; QuantLib\l::FaureRsg \&gt;" alt="" coords="384,79,596,135"/>
+<area shape="rect" id="node8" href="$class_quant_lib_addin_1_1_low_discrepancy_sequence_generator.html" title="QuantLibAddin::LowDiscrepancy\lSequenceGenerator\&lt; QuantLib\l::HaltonRsg \&gt;" alt="" coords="384,159,596,215"/>
+<area shape="rect" id="node10" href="$class_quant_lib_addin_1_1_low_discrepancy_sequence_generator.html" title="QuantLibAddin::LowDiscrepancy\lSequenceGenerator\&lt; QuantLib\l::SobolRsg \&gt;" alt="" coords="384,239,596,295"/>
+<area shape="rect" id="node12" href="$class_quant_lib_addin_1_1_pseudo_random_sequence_generator.html" title="QuantLibAddin::PseudoRandom\lSequenceGenerator\&lt; QuantLib\l::MersenneTwisterUniformRng \&gt;" alt="" coords="384,319,596,375"/>
+<area shape="rect" id="node14" href="$class_quant_lib_addin_1_1_low_discrepancy_sequence_generator.html" title="QuantLibAddin::LowDiscrepancy\lSequenceGenerator\&lt; URSG \&gt;" alt="" coords="384,399,596,441"/>
+<area shape="rect" id="node15" href="$class_quant_lib_addin_1_1_pseudo_random_sequence_generator.html" title="QuantLibAddin::PseudoRandom\lSequenceGenerator\&lt; URNG \&gt;" alt="" coords="386,465,594,506"/>
+<area shape="rect" id="node7" href="$class_quant_lib_addin_1_1_faure_rsg.html" title="QuantLibAddin::FaureRsg" alt="" coords="677,93,849,120"/>
+<area shape="rect" id="node9" href="$class_quant_lib_addin_1_1_halton_rsg.html" title="QuantLibAddin::HaltonRsg" alt="" coords="675,173,852,200"/>
+<area shape="rect" id="node11" href="$class_quant_lib_addin_1_1_sobol_rsg.html" title="QuantLibAddin::SobolRsg" alt="" coords="677,253,849,280"/>
+<area shape="rect" id="node13" href="$class_quant_lib_addin_1_1_mersenne_twister_rsg.html" title="QuantLibAddin::MersenneTwisterRsg" alt="" coords="644,333,883,360"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="opertomatrix.hpp" name="opertomatrix.hpp">
+<area shape="rect" id="node2" href="$convert__oper_8hpp.html" title="Class ConvertOper &#45; Perform datatype conversions of OPERs. " alt="" coords="1138,80,1289,107"/>
+<area shape="rect" id="node3" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="818,319,939,345"/>
+<area shape="rect" id="node8" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="687,155,799,181"/>
+<area shape="rect" id="node19" href="$xloper_8hpp.html" title="Class Xloper &#45; Perform RAII for Excel&#39;s XLOPER datatype. " alt="" coords="1251,155,1362,181"/>
+<area shape="rect" id="node9" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="1003,237,1125,263"/>
+<area shape="rect" id="node18" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="739,237,928,263"/>
+</map>

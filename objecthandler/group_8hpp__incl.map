@@ -1,0 +1,9 @@
+<map id="group.hpp" name="group.hpp">
+<area shape="rect" id="node2" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="1263,80,1363,107"/>
+<area shape="rect" id="node3" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="1243,393,1365,420"/>
+<area shape="rect" id="node7" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="1020,155,1151,181"/>
+<area shape="rect" id="node14" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="1045,311,1166,338"/>
+<area shape="rect" id="node13" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="711,229,823,256"/>
+<area shape="rect" id="node22" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="1228,229,1335,256"/>
+<area shape="rect" id="node21" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="628,311,817,338"/>
+</map>

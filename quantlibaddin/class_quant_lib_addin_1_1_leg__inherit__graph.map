@@ -1,0 +1,10 @@
+<map id="QuantLibAddin::Leg" name="QuantLibAddin::Leg">
+<area shape="rect" id="node3" href="$class_quant_lib_addin_1_1_cms_leg.html" title="QuantLibAddin::CmsLeg" alt="" coords="455,5,619,32"/>
+<area shape="rect" id="node4" href="$class_quant_lib_addin_1_1_cms_zero_leg.html" title="QuantLibAddin::CmsZeroLeg" alt="" coords="442,56,633,83"/>
+<area shape="rect" id="node5" href="$class_quant_lib_addin_1_1_digital_cms_leg.html" title="QuantLibAddin::DigitalCmsLeg" alt="" coords="437,107,638,133"/>
+<area shape="rect" id="node6" href="$class_quant_lib_addin_1_1_digital_ibor_leg.html" title="QuantLibAddin::DigitalIborLeg" alt="" coords="440,157,635,184"/>
+<area shape="rect" id="node7" href="$class_quant_lib_addin_1_1_fixed_rate_leg.html" title="QuantLibAddin::FixedRateLeg" alt="" coords="439,208,635,235"/>
+<area shape="rect" id="node8" href="$class_quant_lib_addin_1_1_ibor_leg.html" title="QuantLibAddin::IborLeg" alt="" coords="458,259,617,285"/>
+<area shape="rect" id="node9" href="$class_quant_lib_addin_1_1_multi_phase_leg.html" title="QuantLibAddin::MultiPhaseLeg" alt="" coords="437,309,638,336"/>
+<area shape="rect" id="node10" href="$class_quant_lib_addin_1_1_range_accrual_leg.html" title="QuantLibAddin::RangeAccrualLeg" alt="" coords="428,360,647,387"/>
+</map>
