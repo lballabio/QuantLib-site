@@ -35,8 +35,8 @@ non-standard location; take a note of it, as you'll need it later.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>You can download released QuantLib versions from the SourceForge download page 
-at <a href="http://sourceforge.net/projects/quantlib/files/">http://sourceforge.net/projects/quantlib/files/</a>.</p>
+<p>You can download released QuantLib versions from Bintray
+at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.</p>
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
 tar xzf QuantLib-1.4.1.tar.gz

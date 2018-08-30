@@ -17,8 +17,8 @@ please make sure that you performed all listed steps.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>You can download released QuantLib-SWIG versions from the SourceForge download page 
-  at <a href="http://sourceforge.net/projects/quantlib/files/">http://sourceforge.net/projects/quantlib/files/</a>; look for the files under the <code>other languages</code> folder in any of the versioned folders under <code>QuantLib</code>.</p>
+<p>You can download released QuantLib-SWIG versions from Bintray
+at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
 
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>

@@ -64,23 +64,18 @@ settings. Go to <i>Tools/Settings</i> and make sure "Expert Settings"
 is checked.</p>
 
 <p>2. If you haven't downloaded QuantLib yet, go to its download page
-on SourceForge, located
-at <a href="http://sourceforge.net/projects/quantlib/files/QuantLib">
-http://sourceforge.net/projects/quantlib/files/QuantLib</a></p>
+on Bintray, located
+at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.</p>
 
-<p>3. Open the QuantLib tree, find the latest version (at the time of
-this writing the current version is 1.1, but this might have changed
-when you read this) and download the zip archive to your local
-drive. This is illustrated in the screenshot below. Unzip the file
-wherever you want; in the following, we'll assume that the QuantLib
-directory is <tt>C:\Program Files\QuantLib</tt>.</p>
-
-<p class="center"><img src="pics/vc10/ql02.png" alt="Download
-QuantLib"></p>
+<p>3. Find the latest version (at the time of this writing the current
+version is 1.1, but this will have changed when you read this) and
+download the zip archive to your local drive. Unzip the file wherever
+you want; in the following, we'll assume that the QuantLib directory
+is <tt>C:\Program Files\QuantLib</tt>.</p>
 
 <p>4. Open the QuantLib folder, then open the Visual Studio solution
-called <tt>QuantLib_vc10.sln</tt> by double
-clicking. Choose <i>Release</i> from the configuration menu in the
+called <tt>QuantLib.sln</tt> by double clicking
+it. Choose <i>Release</i> from the configuration menu in the
 toolbar.</p>
 
 <p>5. Open the Property Manager by clicking on <i>View/Property
