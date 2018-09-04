@@ -33,6 +33,20 @@ non-standard location; take a note of it, as you'll need it later.</p>
 
 <h2>QuantLib Installation</h2>
 
+<h3>Installation from package repositories</h3>
+
+<p>If you don't need to modify the library, you might want to skip the
+compilation and install a precompiled binary version; unofficial RPM
+and DEB packages should be available for your distribution through the
+usual channels.  Note that the default version on Debian and Ubuntu
+distributions might be lagging behind; to get a recent one, use the
+"unstable" (a.k.a. "Sid") distribution on Debian
+or <a href="https://launchpad.net/~edd/+archive/ubuntu/misc">Dirk
+Eddelbuettel's PPA</a> on Ubuntu.</p>
+
+<p>If you want to modify the library, instead, you'll have to compile
+it yourself as described in the next section.</p>
+
 <h3>Installation from a released version</h3>
 
 <p>You can download released QuantLib versions from Bintray

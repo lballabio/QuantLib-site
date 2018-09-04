@@ -21,6 +21,20 @@ which installs in /opt/local instead.</p>
 
 <h2>QuantLib Installation</h2>
 
+<h3>Installation from Homebrew</h3>
+
+<p>If you don't need to modify the library, you might want to skip the
+compilation and install a precompiled binary version.  Unofficial
+binaries are available from Homebrew; run</p>
+<pre>
+  brew install quantlib
+</pre>
+<p>to install it.  If you want to modify the library,
+instead, you'll have to compile it yourself as described in the next
+section.</p>
+
+<h3>Installation from a released version</h3>
+
 <p>Download QuantLib from its download page on Bintray, located
 at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.
 You want to download the tar.gz package (at the time of this writing,
