@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: ForwardSwapQuote Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -106,9 +106,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2554b9dd0051ff3515a9960c1dcac0f9"><td class="memItemLeft" align="right" valign="top"><a id="a2554b9dd0051ff3515a9960c1dcac0f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardSwapQuote</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt; &amp;swapIndex, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;spread, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;fwdStart)</td></tr>
-<tr class="separator:a2554b9dd0051ff3515a9960c1dcac0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778572aed86fce469f3e8b5620284234"><td class="memItemLeft" align="right" valign="top"><a id="a778572aed86fce469f3e8b5620284234"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ForwardSwapQuote</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt; &amp;swapIndex, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;spread, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;fwdStart)</td></tr>
+<tr class="separator:a778572aed86fce469f3e8b5620284234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd81bf738560d0d3f8a0d084b448b19d"><td class="memItemLeft" align="right" valign="top"><a id="acd81bf738560d0d3f8a0d084b448b19d"></a>
 const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>valueDate</b> () const</td></tr>
 <tr class="separator:acd81bf738560d0d3f8a0d084b448b19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,14 +154,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,9 +181,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>initializeDates</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3a0b946fc98b025f246b77d6c2751f41"><td class="memItemLeft" align="right" valign="top"><a id="a3a0b946fc98b025f246b77d6c2751f41"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swapIndex_</b></td></tr>
-<tr class="separator:a3a0b946fc98b025f246b77d6c2751f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b222ee02ce17cbf62a49576e58fa76b"><td class="memItemLeft" align="right" valign="top"><a id="a6b222ee02ce17cbf62a49576e58fa76b"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swapIndex_</b></td></tr>
+<tr class="separator:a6b222ee02ce17cbf62a49576e58fa76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5caa3200880208842845075caebdb6e1"><td class="memItemLeft" align="right" valign="top"><a id="a5caa3200880208842845075caebdb6e1"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>spread_</b></td></tr>
 <tr class="separator:a5caa3200880208842845075caebdb6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,9 +202,9 @@ boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">S
 <tr class="memitem:a0f3d454856e688ed07ac415619cd9fda"><td class="memItemLeft" align="right" valign="top"><a id="a0f3d454856e688ed07ac415619cd9fda"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fixingDate_</b></td></tr>
 <tr class="separator:a0f3d454856e688ed07ac415619cd9fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ea77a274fa82ee6a3adfd66f3a8e6f"><td class="memItemLeft" align="right" valign="top"><a id="a32ea77a274fa82ee6a3adfd66f3a8e6f"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swap_</b></td></tr>
-<tr class="separator:a32ea77a274fa82ee6a3adfd66f3a8e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a00ace0f869d5a3ba423cab7da999e0"><td class="memItemLeft" align="right" valign="top"><a id="a3a00ace0f869d5a3ba423cab7da999e0"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swap_</b></td></tr>
+<tr class="separator:a3a00ace0f869d5a3ba423cab7da999e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087ee1198578dd5bffa6aa070d95551d"><td class="memItemLeft" align="right" valign="top"><a id="a087ee1198578dd5bffa6aa070d95551d"></a>
 <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>result_</b></td></tr>
 <tr class="separator:a087ee1198578dd5bffa6aa070d95551d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,9 +222,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>

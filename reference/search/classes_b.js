@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['lagrangeinterpolation',['LagrangeInterpolation',['../class_quant_lib_1_1_lagrange_interpolation.html',1,'QuantLib']]],
   ['lastfixingquote',['LastFixingQuote',['../class_quant_lib_1_1_last_fixing_quote.html',1,'QuantLib']]],
   ['latentmodel',['LatentModel',['../class_quant_lib_1_1_latent_model.html',1,'QuantLib']]],
   ['latentmodel_3c_20copulapolicy_20_3e',['LatentModel&lt; copulaPolicy &gt;',['../class_quant_lib_1_1_latent_model.html',1,'QuantLib']]],

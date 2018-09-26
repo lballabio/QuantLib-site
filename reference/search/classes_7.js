@@ -32,6 +32,7 @@ var searchData=
   ['handle_3c_20quantlib_3a_3aextendedornsteinuhlenbeckprocess_20_3e',['Handle&lt; QuantLib::ExtendedOrnsteinUhlenbeckProcess &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
   ['handle_3c_20quantlib_3a_3aextouwithjumpsprocess_20_3e',['Handle&lt; QuantLib::ExtOUWithJumpsProcess &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
   ['handle_3c_20quantlib_3a_3ag2_20_3e',['Handle&lt; QuantLib::G2 &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
+  ['handle_3c_20quantlib_3a_3agaussian1dmodel_20_3e',['Handle&lt; QuantLib::Gaussian1dModel &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
   ['handle_3c_20quantlib_3a_3ageneralizedblackscholesprocess_20_3e',['Handle&lt; QuantLib::GeneralizedBlackScholesProcess &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
   ['handle_3c_20quantlib_3a_3ahestonmodel_20_3e',['Handle&lt; QuantLib::HestonModel &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],
   ['handle_3c_20quantlib_3a_3ahestonprocess_20_3e',['Handle&lt; QuantLib::HestonProcess &gt;',['../class_quant_lib_1_1_handle.html',1,'QuantLib']]],

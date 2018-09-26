@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: ModifiedCraigSneydScheme Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -111,9 +111,9 @@ typedef <a class="el" href="class_quant_lib_1_1_step_condition.html">traits::con
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4957fffe74c9ea9a41146ec2a98f3cfc"><td class="memItemLeft" align="right" valign="top"><a id="a4957fffe74c9ea9a41146ec2a98f3cfc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ModifiedCraigSneydScheme</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> theta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mu, const boost::shared_ptr&lt; FdmLinearOpComposite &gt; &amp;map, const bc_set &amp;bcSet=bc_set())</td></tr>
-<tr class="separator:a4957fffe74c9ea9a41146ec2a98f3cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ae89769a14523b8bec4ba315e75a850"><td class="memItemLeft" align="right" valign="top"><a id="a4ae89769a14523b8bec4ba315e75a850"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ModifiedCraigSneydScheme</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> theta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mu, const ext::shared_ptr&lt; FdmLinearOpComposite &gt; &amp;map, const bc_set &amp;bcSet=bc_set())</td></tr>
+<tr class="separator:a4ae89769a14523b8bec4ba315e75a850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae31015dcf2ddc4f248be2533b0bbbd95"><td class="memItemLeft" align="right" valign="top"><a id="ae31015dcf2ddc4f248be2533b0bbbd95"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>step</b> (array_type &amp;a, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t)</td></tr>
 <tr class="separator:ae31015dcf2ddc4f248be2533b0bbbd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,9 +132,9 @@ const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">
 <tr class="memitem:a4f72ee8e7b9ca115f61ebd6c7fa65251"><td class="memItemLeft" align="right" valign="top"><a id="a4f72ee8e7b9ca115f61ebd6c7fa65251"></a>
 const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mu_</b></td></tr>
 <tr class="separator:a4f72ee8e7b9ca115f61ebd6c7fa65251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8681b206f9c37fafb238e976f1cde4fe"><td class="memItemLeft" align="right" valign="top"><a id="a8681b206f9c37fafb238e976f1cde4fe"></a>
-const boost::shared_ptr&lt; FdmLinearOpComposite &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map_</b></td></tr>
-<tr class="separator:a8681b206f9c37fafb238e976f1cde4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878b461aff8dc45699a13ef5204d312f"><td class="memItemLeft" align="right" valign="top"><a id="a878b461aff8dc45699a13ef5204d312f"></a>
+const ext::shared_ptr&lt; FdmLinearOpComposite &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map_</b></td></tr>
+<tr class="separator:a878b461aff8dc45699a13ef5204d312f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7779defaf47ce1426ef82f0610dd45b2"><td class="memItemLeft" align="right" valign="top"><a id="a7779defaf47ce1426ef82f0610dd45b2"></a>
 const BoundaryConditionSchemeHelper&#160;</td><td class="memItemRight" valign="bottom"><b>bcSet_</b></td></tr>
 <tr class="separator:a7779defaf47ce1426ef82f0610dd45b2"><td class="memSeparator" colspan="2">&#160;</td></tr>

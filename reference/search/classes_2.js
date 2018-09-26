@@ -5,7 +5,7 @@ var searchData=
   ['cadliboron',['CADLiborON',['../class_quant_lib_1_1_c_a_d_libor_o_n.html',1,'QuantLib']]],
   ['calendar',['Calendar',['../class_quant_lib_1_1_calendar.html',1,'QuantLib']]],
   ['calibratedmodel',['CalibratedModel',['../class_quant_lib_1_1_calibrated_model.html',1,'QuantLib']]],
-  ['calibrationhelper',['CalibrationHelper',['../class_quant_lib_1_1_calibration_helper.html',1,'QuantLib']]],
+  ['calibrationhelperbase',['CalibrationHelperBase',['../class_quant_lib_1_1_calibration_helper_base.html',1,'QuantLib']]],
   ['callability',['Callability',['../class_quant_lib_1_1_callability.html',1,'QuantLib']]],
   ['callablebond',['CallableBond',['../class_quant_lib_1_1_callable_bond.html',1,'QuantLib']]],
   ['callablebondconstantvolatility',['CallableBondConstantVolatility',['../class_quant_lib_1_1_callable_bond_constant_volatility.html',1,'QuantLib']]],

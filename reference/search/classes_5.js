@@ -52,6 +52,7 @@ var searchData=
   ['fixedratebondhelper',['FixedRateBondHelper',['../class_quant_lib_1_1_fixed_rate_bond_helper.html',1,'QuantLib']]],
   ['fixedratecoupon',['FixedRateCoupon',['../class_quant_lib_1_1_fixed_rate_coupon.html',1,'QuantLib']]],
   ['fixedrateleg',['FixedRateLeg',['../class_quant_lib_1_1_fixed_rate_leg.html',1,'QuantLib']]],
+  ['flatextrapolator2d',['FlatExtrapolator2D',['../class_quant_lib_1_1_flat_extrapolator2_d.html',1,'QuantLib']]],
   ['flatforward',['FlatForward',['../class_quant_lib_1_1_flat_forward.html',1,'QuantLib']]],
   ['flathazardrate',['FlatHazardRate',['../class_quant_lib_1_1_flat_hazard_rate.html',1,'QuantLib']]],
   ['floatfloatswap',['FloatFloatSwap',['../class_quant_lib_1_1_float_float_swap.html',1,'QuantLib']]],

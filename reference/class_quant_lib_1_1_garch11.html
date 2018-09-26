@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Garch11 Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -175,19 +175,19 @@ static <a class="el" href="class_quant_lib_1_1_time_series.html">time_series</a>
 template&lt;typename InputIterator &gt; </td></tr>
 <tr class="memitem:aa4539daab05ad1a3be8a519eb34f8b89"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_r2</b> (InputIterator begin, InputIterator end, std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2)</td></tr>
 <tr class="separator:aa4539daab05ad1a3be8a519eb34f8b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0179d70c00d0430c382379224003faa7"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a0179d70c00d0430c382379224003faa7">calibrate_r2</a> (<a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode, const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a0179d70c00d0430c382379224003faa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a5c00bafd2b62206fac4e7de5d821c"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a86a5c00bafd2b62206fac4e7de5d821c">calibrate_r2</a> (<a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode, const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a86a5c00bafd2b62206fac4e7de5d821c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8286070c72531323b2cbc08d3d412e0a"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a8286070c72531323b2cbc08d3d412e0a">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a8286070c72531323b2cbc08d3d412e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6024bc3e5898e2811503f68ab09467e3"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a6024bc3e5898e2811503f68ab09467e3">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a6024bc3e5898e2811503f68ab09467e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a77f4e5096dce1b4f0d44c0d6a1b421"><td class="memItemLeft" align="right" valign="top">static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a8a77f4e5096dce1b4f0d44c0d6a1b421">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraints, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a8a77f4e5096dce1b4f0d44c0d6a1b421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a182a69dc4e3d61dfd381145c839c1cf5"><td class="memItemLeft" align="right" valign="top"><a id="a182a69dc4e3d61dfd381145c839c1cf5"></a>
-static boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate_r2</b> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraints, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
-<tr class="separator:a182a69dc4e3d61dfd381145c839c1cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e98743190bc2ac238f2a92b3777d61a"><td class="memItemLeft" align="right" valign="top">static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a2e98743190bc2ac238f2a92b3777d61a">calibrate_r2</a> (<a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode, const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:a2e98743190bc2ac238f2a92b3777d61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa81b8640629ef504b321e56e1d87cb9f"><td class="memItemLeft" align="right" valign="top">static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#aa81b8640629ef504b321e56e1d87cb9f">calibrate_r2</a> (<a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a> mode, const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:aa81b8640629ef504b321e56e1d87cb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d857233a3a66b5fa9fe5bad2de6554"><td class="memItemLeft" align="right" valign="top">static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a69d857233a3a66b5fa9fe5bad2de6554">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:a69d857233a3a66b5fa9fe5bad2de6554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78b0b9c977ca9dbacd8ec8f7882b345e"><td class="memItemLeft" align="right" valign="top">static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a78b0b9c977ca9dbacd8ec8f7882b345e">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:a78b0b9c977ca9dbacd8ec8f7882b345e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b43495b138a0b9b09d648720898e253"><td class="memItemLeft" align="right" valign="top">static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_garch11.html#a1b43495b138a0b9b09d648720898e253">calibrate_r2</a> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mean_r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraints, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:a1b43495b138a0b9b09d648720898e253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2354f6a7526dc43cd00ad6c91ade4e7"><td class="memItemLeft" align="right" valign="top"><a id="ab2354f6a7526dc43cd00ad6c91ade4e7"></a>
+static ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_problem.html">Problem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate_r2</b> (const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;r2, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraints, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;endCriteria, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;initialGuess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;omega)</td></tr>
+<tr class="separator:ab2354f6a7526dc43cd00ad6c91ade4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3ebefaec1393854c9dd1e4a32673af3"><td class="memTemplParams" colspan="2"><a id="ab3ebefaec1393854c9dd1e4a32673af3"></a>
 template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:ab3ebefaec1393854c9dd1e4a32673af3"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>costFunction</b> (InputIterator begin, InputIterator end, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> beta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> omega)</td></tr>
@@ -222,8 +222,8 @@ template&lt;class InputIterator &gt; </td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0179d70c00d0430c382379224003faa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0179d70c00d0430c382379224003faa7">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[1/5]</span></h2>
+<a id="a2e98743190bc2ac238f2a92b3777d61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e98743190bc2ac238f2a92b3777d61a">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,7 +232,7 @@ template&lt;class InputIterator &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
+          <td class="memname">static ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
@@ -283,8 +283,8 @@ template&lt;class InputIterator &gt; </td></tr>
 
 </div>
 </div>
-<a id="a86a5c00bafd2b62206fac4e7de5d821c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86a5c00bafd2b62206fac4e7de5d821c">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[2/5]</span></h2>
+<a id="aa81b8640629ef504b321e56e1d87cb9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa81b8640629ef504b321e56e1d87cb9f">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +293,7 @@ template&lt;class InputIterator &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
+          <td class="memname">static ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911">Mode</a>&#160;</td>
           <td class="paramname"><em>mode</em>, </td>
@@ -356,8 +356,8 @@ template&lt;class InputIterator &gt; </td></tr>
 
 </div>
 </div>
-<a id="a8286070c72531323b2cbc08d3d412e0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8286070c72531323b2cbc08d3d412e0a">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[3/5]</span></h2>
+<a id="a69d857233a3a66b5fa9fe5bad2de6554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d857233a3a66b5fa9fe5bad2de6554">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[3/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,7 +366,7 @@ template&lt;class InputIterator &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
+          <td class="memname">static ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>r2</em>, </td>
@@ -429,8 +429,8 @@ template&lt;class InputIterator &gt; </td></tr>
 
 </div>
 </div>
-<a id="a6024bc3e5898e2811503f68ab09467e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6024bc3e5898e2811503f68ab09467e3">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[4/5]</span></h2>
+<a id="a78b0b9c977ca9dbacd8ec8f7882b345e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78b0b9c977ca9dbacd8ec8f7882b345e">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[4/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +439,7 @@ template&lt;class InputIterator &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
+          <td class="memname">static ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>r2</em>, </td>
@@ -496,8 +496,8 @@ template&lt;class InputIterator &gt; </td></tr>
 
 </div>
 </div>
-<a id="a8a77f4e5096dce1b4f0d44c0d6a1b421"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a77f4e5096dce1b4f0d44c0d6a1b421">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[5/5]</span></h2>
+<a id="a1b43495b138a0b9b09d648720898e253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b43495b138a0b9b09d648720898e253">&#9670;&nbsp;</a></span>calibrate_r2() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +506,7 @@ template&lt;class InputIterator &gt; </td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static boost::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
+          <td class="memname">static ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_problem.html">Problem</a>&gt; calibrate_r2 </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>r2</em>, </td>

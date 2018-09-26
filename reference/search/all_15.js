@@ -8,7 +8,7 @@ var searchData=
   ['unadjusted',['Unadjusted',['../group__datetime.html#ggaff46c5ae9385d20709bedade86edd368a5fb8b90b7fdf1a3a228fbbc083e64547',1,'QuantLib']]],
   ['underlyingincome_5f',['underlyingIncome_',['../class_quant_lib_1_1_forward.html#ade985afc594074c269371cc442f3c9b2',1,'QuantLib::Forward']]],
   ['underlyingspotvalue_5f',['underlyingSpotValue_',['../class_quant_lib_1_1_forward.html#a1269c585e5e0bd28fb36d1fde51ddfc3',1,'QuantLib::Forward']]],
-  ['underlyingswap',['underlyingSwap',['../class_quant_lib_1_1_swap_index.html#ac33929734ebcde40f111bbbfb3fd979e',1,'QuantLib::SwapIndex::underlyingSwap()'],['../class_quant_lib_1_1_overnight_indexed_swap_index.html#a0407e0350dc143dfee6f82f0eaf26769',1,'QuantLib::OvernightIndexedSwapIndex::underlyingSwap()']]],
+  ['underlyingswap',['underlyingSwap',['../class_quant_lib_1_1_swap_index.html#aba8a8c8457fa467d0cd5305ec739fb10',1,'QuantLib::SwapIndex::underlyingSwap()'],['../class_quant_lib_1_1_overnight_indexed_swap_index.html#aa77127cf18e3617d2b844cfefcdae502',1,'QuantLib::OvernightIndexedSwapIndex::underlyingSwap()']]],
   ['unfreeze',['unfreeze',['../class_quant_lib_1_1_lazy_object.html#a26c02da24a82bc72024a8e8d48af0fca',1,'QuantLib::LazyObject']]],
   ['unitdisplacedblackyoyinflationcouponpricer',['UnitDisplacedBlackYoYInflationCouponPricer',['../class_quant_lib_1_1_unit_displaced_black_yo_y_inflation_coupon_pricer.html',1,'QuantLib']]],
   ['unitedkingdom',['UnitedKingdom',['../class_quant_lib_1_1_united_kingdom.html',1,'QuantLib']]],

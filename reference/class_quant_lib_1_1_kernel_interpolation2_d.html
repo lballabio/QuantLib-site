@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: KernelInterpolation2D Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -80,7 +80,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_kernel_interpolation2_d-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">KernelInterpolation2D Class Reference</div>  </div>
+<div class="title">KernelInterpolation2D Class Reference<div class="ingroups"><a class="el" href="group__math.html">Math tools</a> &raquo; <a class="el" href="group__interpolations.html">1-D Interpolations and corresponding traits</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -170,13 +170,14 @@ typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkRange</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> y, bool extrapolate) const</td></tr>
 <tr class="separator:a42512873887568f105d9fa283e3ec794 inherit pro_methods_class_quant_lib_1_1_interpolation2_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_quant_lib_1_1_interpolation2_d"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_quant_lib_1_1_interpolation2_d')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_quant_lib_1_1_interpolation2_d.html">Interpolation2D</a></td></tr>
-<tr class="memitem:aa593fa134416a954928e323a5175af7d inherit pro_attribs_class_quant_lib_1_1_interpolation2_d"><td class="memItemLeft" align="right" valign="top"><a id="aa593fa134416a954928e323a5175af7d"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_interpolation2_d_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
-<tr class="separator:aa593fa134416a954928e323a5175af7d inherit pro_attribs_class_quant_lib_1_1_interpolation2_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29a938cdc70db8abcde7a84fe62f9b4 inherit pro_attribs_class_quant_lib_1_1_interpolation2_d"><td class="memItemLeft" align="right" valign="top"><a id="ac29a938cdc70db8abcde7a84fe62f9b4"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_interpolation2_d_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
+<tr class="separator:ac29a938cdc70db8abcde7a84fe62f9b4 inherit pro_attribs_class_quant_lib_1_1_interpolation2_d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the 2D kernel interpolation approach, which can be found in "Foreign Exchange Risk" by Hakala, Wystup page 256.</p>
-<p>The kernel in the implementation is kept general, although a Gaussian is considered in the cited text. </p>
+<p>The kernel in the implementation is kept general, although a Gaussian is considered in the cited text.</p>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000093">Warning:</a></b></dt><dd>See the <a class="el" href="class_quant_lib_1_1_interpolation.html" title="base class for 1-D interpolations. ">Interpolation</a> class for information about the required lifetime of the underlying data. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91807fcf1f8570d6866c877e67959de6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91807fcf1f8570d6866c877e67959de6">&#9670;&nbsp;</a></span>KernelInterpolation2D()</h2>

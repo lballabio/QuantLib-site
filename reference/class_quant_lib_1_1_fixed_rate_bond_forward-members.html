@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Member List</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>errorEstimate_</b> (defined in <a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#a7992b88ae5ce8f95759515943d0311da">fetchResults</a>(const PricingEngine::results *) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>fixedCouponBond_</b> (defined in <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a0d85f16ee4f4bed9faec5733b908b2d6">FixedRateBondForward</a>(const Date &amp;valueDate, const Date &amp;maturityDate, Position::Type type, Real strike, Natural settlementDays, const DayCounter &amp;dayCounter, const Calendar &amp;calendar, BusinessDayConvention businessDayConvention, const boost::shared_ptr&lt; FixedRateBond &gt; &amp;fixedCouponBond, const Handle&lt; YieldTermStructure &gt; &amp;discountCurve=Handle&lt; YieldTermStructure &gt;(), const Handle&lt; YieldTermStructure &gt; &amp;incomeDiscountCurve=Handle&lt; YieldTermStructure &gt;())</td><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Forward</b>(const DayCounter &amp;dayCounter, const Calendar &amp;calendar, BusinessDayConvention businessDayConvention, Natural settlementDays, const boost::shared_ptr&lt; Payoff &gt; &amp;payoff, const Date &amp;valueDate, const Date &amp;maturityDate, const Handle&lt; YieldTermStructure &gt; &amp;discountCurve=Handle&lt; YieldTermStructure &gt;()) (defined in <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a0e25f54d5931b5a521d0b8e77658a88b">FixedRateBondForward</a>(const Date &amp;valueDate, const Date &amp;maturityDate, Position::Type type, Real strike, Natural settlementDays, const DayCounter &amp;dayCounter, const Calendar &amp;calendar, BusinessDayConvention businessDayConvention, const ext::shared_ptr&lt; FixedRateBond &gt; &amp;fixedCouponBond, const Handle&lt; YieldTermStructure &gt; &amp;discountCurve=Handle&lt; YieldTermStructure &gt;(), const Handle&lt; YieldTermStructure &gt; &amp;incomeDiscountCurve=Handle&lt; YieldTermStructure &gt;())</td><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Forward</b>(const DayCounter &amp;dayCounter, const Calendar &amp;calendar, BusinessDayConvention businessDayConvention, Natural settlementDays, const ext::shared_ptr&lt; Payoff &gt; &amp;payoff, const Date &amp;valueDate, const Date &amp;maturityDate, const Handle&lt; YieldTermStructure &gt; &amp;discountCurve=Handle&lt; YieldTermStructure &gt;()) (defined in <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a665b769ab708840b202708bcda610fa6">forwardPrice</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html#a9ff92ce10912675f05fbda79f9673c58">forwardValue</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html#abd8698b462ce90fe56b15ce7a0192d3e">freeze</a>()</td><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td><td class="entry"></td></tr>
@@ -130,11 +130,11 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>payoff_</b> (defined in <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html#a33f04fb3ac37abe7c9c6032cff611745">performCalculations</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html#a467a786be42a2165aa15a26709674547">recalculate</a>()</td><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>registerWith</b>(const boost::shared_ptr&lt; Observable &gt; &amp;) (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a>(const boost::shared_ptr&lt; Observer &gt; &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>registerWith</b>(const ext::shared_ptr&lt; Observable &gt; &amp;) (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a>(const ext::shared_ptr&lt; Observer &gt; &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#a2fe6eb89d1300cf2da682cfb38736d12">result</a>(const std::string &amp;tag) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#af259149d11ddda95328d6a41be778078">setPricingEngine</a>(const boost::shared_ptr&lt; PricingEngine &gt; &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#ae58e4c75062c7f3f4dedbd744f9a379f">setPricingEngine</a>(const ext::shared_ptr&lt; PricingEngine &gt; &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>settlementDate</b>() const (defined in <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>settlementDays_</b> (defined in <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#aedcb8928d5516b30b46f0234d20c9539">setupArguments</a>(PricingEngine::arguments *) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -144,7 +144,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html#ade985afc594074c269371cc442f3c9b2">underlyingIncome_</a></td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html#a1269c585e5e0bd28fb36d1fde51ddfc3">underlyingSpotValue_</a></td><td class="entry"><a class="el" href="class_quant_lib_1_1_forward.html">Forward</a></td><td class="entry"><span class="mlabel">mutable</span><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html#a26c02da24a82bc72024a8e8d48af0fca">unfreeze</a>()</td><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>unregisterWith</b>(const boost::shared_ptr&lt; Observable &gt; &amp;) (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>unregisterWith</b>(const ext::shared_ptr&lt; Observable &gt; &amp;) (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>unregisterWithAll</b>() (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html#ac5c54df7ed3b930268c8d7752c101725">update</a>()</td><td class="entry"><a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html#adc5022826bcf557dcfd50578fc6f2cfb">valuationDate</a>() const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td><td class="entry"></td></tr>

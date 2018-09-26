@@ -2,7 +2,7 @@ var searchData=
 [
   ['gamma',['gamma',['../class_quant_lib_1_1_black_calculator.html#a3c6ebfe899117a8e20368fa39104bf07',1,'QuantLib::BlackCalculator::gamma()'],['../class_quant_lib_1_1_black_scholes_calculator.html#aaed679bde0c499002fce41342891b61d',1,'QuantLib::BlackScholesCalculator::gamma()']]],
   ['gammaforward',['gammaForward',['../class_quant_lib_1_1_black_calculator.html#a6949781d9c6ffe5419b5e463622430c6',1,'QuantLib::BlackCalculator']]],
-  ['gaussian1djamshidianswaptionengine',['Gaussian1dJamshidianSwaptionEngine',['../class_quant_lib_1_1_gaussian1d_jamshidian_swaption_engine.html#ab94ea8f6c2dad6c38c02980bea89d0a9',1,'QuantLib::Gaussian1dJamshidianSwaptionEngine']]],
+  ['gaussian1djamshidianswaptionengine',['Gaussian1dJamshidianSwaptionEngine',['../class_quant_lib_1_1_gaussian1d_jamshidian_swaption_engine.html#ac0cd3307c271fcdd8f53760f5f7631de',1,'QuantLib::Gaussian1dJamshidianSwaptionEngine']]],
   ['gaussianaverageshortfall',['gaussianAverageShortfall',['../class_quant_lib_1_1_generic_gaussian_statistics.html#a05b16aa6633d6898465c5e5bcb9e0f2b',1,'QuantLib::GenericGaussianStatistics']]],
   ['gaussiandownsidedeviation',['gaussianDownsideDeviation',['../class_quant_lib_1_1_generic_gaussian_statistics.html#a108479854e702c6c7334a85f79a98664',1,'QuantLib::GenericGaussianStatistics']]],
   ['gaussiandownsidevariance',['gaussianDownsideVariance',['../class_quant_lib_1_1_generic_gaussian_statistics.html#a0bc688597d3cd9a356031bc0eecdc0ba',1,'QuantLib::GenericGaussianStatistics']]],

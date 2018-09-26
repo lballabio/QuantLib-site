@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Interpolation2D Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -99,11 +99,13 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_interpolation2_d__inherit__graph.png" border="0" usemap="#_interpolation2_d_inherit__map" alt="Inheritance graph"/></div>
 <map name="_interpolation2_d_inherit__map" id="_interpolation2_d_inherit__map">
-<area shape="rect" id="node3" href="class_quant_lib_1_1_bicubic_spline.html" title="bicubic&#45;spline interpolation between discrete points " alt="" coords="5,152,107,177"/>
-<area shape="rect" id="node4" href="class_quant_lib_1_1_bilinear_interpolation.html" title="bilinear interpolation between discrete points " alt="" coords="130,152,270,177"/>
-<area shape="rect" id="node5" href="class_quant_lib_1_1_kernel_interpolation2_d.html" title="KernelInterpolation2D" alt="" coords="294,152,445,177"/>
-<area shape="rect" id="node6" href="class_quant_lib_1_1_polynomial2_d_spline.html" title="polynomial2D&#45;spline interpolation between discrete points " alt="" coords="468,152,609,177"/>
-<area shape="rect" id="node2" href="class_quant_lib_1_1_extrapolator.html" title="base class for classes possibly allowing extrapolation " alt="" coords="237,5,331,31"/>
+<area shape="rect" id="node3" href="class_quant_lib_1_1_backwardflat_linear_interpolation.html" title="BackwardflatLinearInterpolation" alt="" coords="306,5,514,31"/>
+<area shape="rect" id="node4" href="class_quant_lib_1_1_bicubic_spline.html" title="bicubic&#45;spline interpolation between discrete points " alt="" coords="360,55,461,80"/>
+<area shape="rect" id="node5" href="class_quant_lib_1_1_bilinear_interpolation.html" title="bilinear interpolation between discrete points " alt="" coords="341,104,480,129"/>
+<area shape="rect" id="node6" href="class_quant_lib_1_1_flat_extrapolator2_d.html" title="FlatExtrapolator2D" alt="" coords="344,153,477,179"/>
+<area shape="rect" id="node7" href="class_quant_lib_1_1_kernel_interpolation2_d.html" title="KernelInterpolation2D" alt="" coords="335,203,486,228"/>
+<area shape="rect" id="node8" href="class_quant_lib_1_1_polynomial2_d_spline.html" title="polynomial2D&#45;spline interpolation between discrete points " alt="" coords="340,252,481,277"/>
+<area shape="rect" id="node2" href="class_quant_lib_1_1_extrapolator.html" title="base class for classes possibly allowing extrapolation " alt="" coords="5,129,99,155"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -188,13 +190,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkRange</b> (<a cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aa593fa134416a954928e323a5175af7d"><td class="memItemLeft" align="right" valign="top"><a id="aa593fa134416a954928e323a5175af7d"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_interpolation2_d_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
-<tr class="separator:aa593fa134416a954928e323a5175af7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memItemLeft" align="right" valign="top"><a id="ac29a938cdc70db8abcde7a84fe62f9b4"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_interpolation2_d_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
+<tr class="separator:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>base class for 2-D interpolations. </p>
-<p>Classes derived from this class will provide interpolated values from two sequences of length \( N \) and \( M \), representing the discretized values of the \( x \) and \( y \) variables, and a \( N \times M \) matrix representing the tabulated function values. </p>
+<p>Classes derived from this class will provide interpolated values from two sequences of length \( N \) and \( M \), representing the discretized values of the \( x \) and \( y \) variables, and a \( N \times M \) matrix representing the tabulated function values.</p>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000091">Warning:</a></b></dt><dd>See the <a class="el" href="class_quant_lib_1_1_interpolation.html" title="base class for 1-D interpolations. ">Interpolation</a> class for information about the required lifetime of the underlying data. </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

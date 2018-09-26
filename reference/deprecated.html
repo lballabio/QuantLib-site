@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Deprecated Features</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -77,20 +77,24 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_deprecated000011"></a>Class <a class="el" href="class_quant_lib_1_1_actual365_no_leap.html">Actual365NoLeap</a>  </dt>
+<dt><a class="anchor" id="_deprecated000010"></a>Class <a class="el" href="class_quant_lib_1_1_actual365_no_leap.html">Actual365NoLeap</a>  </dt>
 <dd>Use Actual365Fixed(Actual365Fixed::NoLeap). Deprecated in version 1.11.  </dd>
-<dt><a class="anchor" id="_deprecated000008"></a>Member <a class="el" href="class_quant_lib_1_1_general_linear_least_squares.html#a474f3c461232987a7f848de8d0f9dde5">GeneralLinearLeastSquares::calculate</a>  (xIterator xBegin, xIterator xEnd, yIterator yBegin, yIterator yEnd, vIterator vBegin, vIterator vEnd)</dt>
-<dd>Use the overload taking 5 parameters. Deprecated in version 1.10.  </dd>
-<dt><a class="anchor" id="_deprecated000010"></a>Member <a class="el" href="namespace_quant_lib.html#ac5a18096c45590ad8cebe128061bc2e2">QuantLib::CapFloorMatrix</a>  </dt>
-<dd>No longer used. Deprecated in version 1.10.  </dd>
-<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="namespace_quant_lib.html#a12f25da1bc5f3488082dab4a89f33d23">QuantLib::ChiSquareDistribution</a>  </dt>
+<dt><a class="anchor" id="_deprecated000007"></a>Member <a class="el" href="class_quant_lib_1_1_b_s_m_operator.html#a50a2e761eee8b28ea3e0916db8647257">BSMOperator::BSMOperator</a>  (const <a class="el" href="class_quant_lib_1_1_array.html" title="1-D array used in linear algebra. ">Array</a> &amp;grid, const ext::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;, Time residualTime)</dt>
+<dd>Use one of the other overloads. </dd>
+<dt><a class="anchor" id="_deprecated000008"></a>Class <a class="el" href="class_quant_lib_1_1_operator_factory.html">OperatorFactory</a>  </dt>
+<dd>Instantiate operators directly. </dd>
+<dt><a class="anchor" id="_deprecated000009"></a>Member <a class="el" href="namespace_quant_lib.html#acc6859b3f791ddd32156c96ba18cf0bb">QuantLib::CalibrationHelper</a>  </dt>
+<dd>Use <a class="el" href="class_quant_lib_1_1_black_calibration_helper.html" title="liquid Black76 market instrument used during calibration ">BlackCalibrationHelper</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000002"></a>Member <a class="el" href="namespace_quant_lib.html#a12f25da1bc5f3488082dab4a89f33d23">QuantLib::ChiSquareDistribution</a>  </dt>
 <dd>Use CumulativeChiSquareDistribution instead. Deprecated in version 1.12.  </dd>
-<dt><a class="anchor" id="_deprecated000007"></a>Member <a class="el" href="namespace_quant_lib.html#a06b5c0b2ebe20d03cb12ff6d1b08b25a">QuantLib::GammaDistribution</a>  </dt>
+<dt><a class="anchor" id="_deprecated000005"></a>Member <a class="el" href="namespace_quant_lib.html#a06b5c0b2ebe20d03cb12ff6d1b08b25a">QuantLib::GammaDistribution</a>  </dt>
 <dd>Use CumulativeGammaDistribution instead. Deprecated in version 1.12.  </dd>
-<dt><a class="anchor" id="_deprecated000006"></a>Member <a class="el" href="namespace_quant_lib.html#a177021c3d531b0f388a8610a47edcfaa">QuantLib::InverseNonCentralChiSquareDistribution</a>  </dt>
+<dt><a class="anchor" id="_deprecated000004"></a>Member <a class="el" href="namespace_quant_lib.html#a177021c3d531b0f388a8610a47edcfaa">QuantLib::InverseNonCentralChiSquareDistribution</a>  </dt>
 <dd>Use InverseNonCentralCumulativeChiSquareDistribution instead. Deprecated in version 1.12.  </dd>
-<dt><a class="anchor" id="_deprecated000005"></a>Member <a class="el" href="namespace_quant_lib.html#a6d50aa42b239d5798e7bbcab079af8af">QuantLib::NonCentralChiSquareDistribution</a>  </dt>
-<dd>Use NonCentralCumulativeChiSquareDistribution instead. Deprecated in version 1.12. </dd>
+<dt><a class="anchor" id="_deprecated000003"></a>Member <a class="el" href="namespace_quant_lib.html#a6d50aa42b239d5798e7bbcab079af8af">QuantLib::NonCentralChiSquareDistribution</a>  </dt>
+<dd>Use NonCentralCumulativeChiSquareDistribution instead. Deprecated in version 1.12.  </dd>
+<dt><a class="anchor" id="_deprecated000001"></a>Class <a class="el" href="class_quant_lib_1_1_test_curve.html">TestCurve</a>  </dt>
+<dd>Deprecated in version 1.14 </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

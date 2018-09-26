@@ -2,6 +2,7 @@ var searchData=
 [
   ['l2',['l2',['../class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html#ada1bb5606c43594043a800f3fba3be1c',1,'QuantLib::FittedBondDiscountCurve::FittingMethod']]],
   ['lagrange',['Lagrange',['../class_quant_lib_1_1_cubic_interpolation.html#af3393571fa8a8daa4ee5c06613b26555a1e1c27164b52b5cdf7df7f110dbb0fd3',1,'QuantLib::CubicInterpolation']]],
+  ['lagrangeinterpolation',['LagrangeInterpolation',['../class_quant_lib_1_1_lagrange_interpolation.html',1,'QuantLib']]],
   ['laplaceinterpolation',['laplaceInterpolation',['../namespace_quant_lib.html#a8a5a1be983c64b32111b4f2f8ee4d0d4',1,'QuantLib']]],
   ['last',['Last',['../namespace_quant_lib.html#a482277e66af02c7d65679d7485095573ac2a3856002491cf465725e8d1108f796',1,'QuantLib']]],
   ['lastdate',['lastDate',['../class_quant_lib_1_1_time_series.html#ab0c5a5ba32a3adc8a129ae8b6faf38f2',1,'QuantLib::TimeSeries']]],
@@ -30,7 +31,7 @@ var searchData=
   ['leastsquarefunction',['LeastSquareFunction',['../class_quant_lib_1_1_least_square_function.html',1,'LeastSquareFunction'],['../class_quant_lib_1_1_least_square_function.html#a91ae7b7c34f4f00ae7272c5e5cbf8ead',1,'QuantLib::LeastSquareFunction::LeastSquareFunction()']]],
   ['leastsquareproblem',['LeastSquareProblem',['../class_quant_lib_1_1_least_square_problem.html',1,'QuantLib']]],
   ['lecuyeruniformrng',['LecuyerUniformRng',['../class_quant_lib_1_1_lecuyer_uniform_rng.html',1,'LecuyerUniformRng'],['../class_quant_lib_1_1_lecuyer_uniform_rng.html#a148a11db369ad4f65dee641ecb0f8215',1,'QuantLib::LecuyerUniformRng::LecuyerUniformRng()']]],
-  ['leg',['Leg',['../namespace_quant_lib.html#a1d16a4a9842369c3a13c094b15f99a4a',1,'QuantLib']]],
+  ['leg',['Leg',['../namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b',1,'QuantLib']]],
   ['leisenreimer',['LeisenReimer',['../class_quant_lib_1_1_leisen_reimer.html',1,'QuantLib']]],
   ['levenbergmarquardt',['LevenbergMarquardt',['../class_quant_lib_1_1_levenberg_marquardt.html',1,'QuantLib']]],
   ['leveragefactor',['leverageFactor',['../class_quant_lib_1_1_synthetic_c_d_o.html#aea2e32b67375d01be5d0bcd129bc9067',1,'QuantLib::SyntheticCDO']]],

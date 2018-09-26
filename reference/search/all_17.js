@@ -10,6 +10,6 @@ var searchData=
   ['what',['what',['../class_quant_lib_1_1_error.html#a79009ed133fa02b942ddce8f0b987f3e',1,'QuantLib::Error']]],
   ['where_20to_20get_20quantlib',['Where to get QuantLib',['../where.html',1,'']]],
   ['wibor',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
-  ['writerextensibleoption',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a6aab4e77770a4ef1fb69319013a4cefd',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]],
+  ['writerextensibleoption',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a0c63fe59ce86a205ff031e5749106acd',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]],
   ['wulinyongdoublebarrierengine',['WulinYongDoubleBarrierEngine',['../class_quant_lib_1_1_wulin_yong_double_barrier_engine.html',1,'QuantLib']]]
 ];

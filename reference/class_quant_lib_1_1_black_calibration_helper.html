@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
-<title>QuantLib: CalibrationHelper Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>QuantLib: BlackCalibrationHelper Class Reference</title>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_calibration_helper.html">CalibrationHelper</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html">BlackCalibrationHelper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,29 +80,30 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="class_quant_lib_1_1_calibration_helper-members.html">List of all members</a>  </div>
+<a href="class_quant_lib_1_1_black_calibration_helper-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">CalibrationHelper Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">BlackCalibrationHelper Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>liquid market instrument used during calibration  
- <a href="class_quant_lib_1_1_calibration_helper.html#details">More...</a></p>
+<p>liquid Black76 market instrument used during calibration  
+ <a href="class_quant_lib_1_1_black_calibration_helper.html#details">More...</a></p>
 
 <p><code>#include &lt;ql/models/calibrationhelper.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for CalibrationHelper:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for BlackCalibrationHelper:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_lib_1_1_calibration_helper__inherit__graph.png" border="0" usemap="#_calibration_helper_inherit__map" alt="Inheritance graph"/></div>
-<map name="_calibration_helper_inherit__map" id="_calibration_helper_inherit__map">
-<area shape="rect" id="node5" href="class_quant_lib_1_1_cap_helper.html" title="calibration helper for ATM cap " alt="" coords="5,225,90,251"/>
-<area shape="rect" id="node6" href="class_quant_lib_1_1_heston_model_helper.html" title="calibration helper for Heston model " alt="" coords="114,225,253,251"/>
-<area shape="rect" id="node7" href="class_quant_lib_1_1_swaption_helper.html" title="calibration helper for ATM swaption " alt="" coords="277,225,392,251"/>
-<area shape="rect" id="node2" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching. " alt="" coords="140,79,228,104"/>
-<area shape="rect" id="node3" href="class_quant_lib_1_1_observable.html" title="Object that notifies its changes to a set of observers. " alt="" coords="86,5,175,31"/>
-<area shape="rect" id="node4" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes. " alt="" coords="199,5,275,31"/>
+<div class="center"><img src="class_quant_lib_1_1_black_calibration_helper__inherit__graph.png" border="0" usemap="#_black_calibration_helper_inherit__map" alt="Inheritance graph"/></div>
+<map name="_black_calibration_helper_inherit__map" id="_black_calibration_helper_inherit__map">
+<area shape="rect" id="node6" href="class_quant_lib_1_1_cap_helper.html" title="calibration helper for ATM cap " alt="" coords="5,225,90,251"/>
+<area shape="rect" id="node7" href="class_quant_lib_1_1_heston_model_helper.html" title="calibration helper for Heston model " alt="" coords="114,225,253,251"/>
+<area shape="rect" id="node8" href="class_quant_lib_1_1_swaption_helper.html" title="calibration helper for ATM swaption " alt="" coords="277,225,392,251"/>
+<area shape="rect" id="node2" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching. " alt="" coords="68,79,156,104"/>
+<area shape="rect" id="node3" href="class_quant_lib_1_1_observable.html" title="Object that notifies its changes to a set of observers. " alt="" coords="14,5,103,31"/>
+<area shape="rect" id="node4" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes. " alt="" coords="127,5,203,31"/>
+<area shape="rect" id="node5" href="class_quant_lib_1_1_calibration_helper_base.html" title="abstract base class for calibration helpers " alt="" coords="180,79,335,104"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -114,54 +115,54 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a34370195c7123743b79df0fbedd9e033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abfed7116096d3c434f2c371e043ddb9e"><td class="memItemLeft" align="right" valign="top"><a id="abfed7116096d3c434f2c371e043ddb9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CalibrationHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;<a class="el" href="class_quant_lib_1_1_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a>, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;termStructure, CalibrationErrorType calibrationErrorType=RelativePriceError, const VolatilityType type=ShiftedLognormal, const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> shift=0.0)</td></tr>
-<tr class="separator:abfed7116096d3c434f2c371e043ddb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33f04fb3ac37abe7c9c6032cff611745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#a33f04fb3ac37abe7c9c6032cff611745">performCalculations</a> () const</td></tr>
+<tr class="memitem:a4b70427b9bf8250844438e6de281da86"><td class="memItemLeft" align="right" valign="top"><a id="a4b70427b9bf8250844438e6de281da86"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BlackCalibrationHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;<a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a>, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;termStructure, CalibrationErrorType calibrationErrorType=RelativePriceError, const VolatilityType type=ShiftedLognormal, const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> shift=0.0)</td></tr>
+<tr class="separator:a4b70427b9bf8250844438e6de281da86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f04fb3ac37abe7c9c6032cff611745"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a33f04fb3ac37abe7c9c6032cff611745">performCalculations</a> () const</td></tr>
 <tr class="separator:a33f04fb3ac37abe7c9c6032cff611745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a6d295d2edaaac74e994185745a6c5"><td class="memItemLeft" align="right" valign="top"><a id="a62a6d295d2edaaac74e994185745a6c5"></a>
-<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a> () const</td></tr>
+<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a> () const</td></tr>
 <tr class="memdesc:a62a6d295d2edaaac74e994185745a6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the volatility <a class="el" href="class_quant_lib_1_1_handle.html" title="Shared handle to an observable. ">Handle</a> <br /></td></tr>
 <tr class="separator:a62a6d295d2edaaac74e994185745a6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95b24d256542f56472b2b4c63cde369"><td class="memItemLeft" align="right" valign="top"><a id="ab95b24d256542f56472b2b4c63cde369"></a>
-VolatilityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#ab95b24d256542f56472b2b4c63cde369">volatilityType</a> () const</td></tr>
+VolatilityType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#ab95b24d256542f56472b2b4c63cde369">volatilityType</a> () const</td></tr>
 <tr class="memdesc:ab95b24d256542f56472b2b4c63cde369"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the volatility type <br /></td></tr>
 <tr class="separator:ab95b24d256542f56472b2b4c63cde369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84707afd5daad554c881113bb5992ee8"><td class="memItemLeft" align="right" valign="top"><a id="a84707afd5daad554c881113bb5992ee8"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#a84707afd5daad554c881113bb5992ee8">marketValue</a> () const</td></tr>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a84707afd5daad554c881113bb5992ee8">marketValue</a> () const</td></tr>
 <tr class="memdesc:a84707afd5daad554c881113bb5992ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the actual price of the instrument (from volatility) <br /></td></tr>
 <tr class="separator:a84707afd5daad554c881113bb5992ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573ec85444166decbaa5888155b9fa39"><td class="memItemLeft" align="right" valign="top"><a id="a573ec85444166decbaa5888155b9fa39"></a>
-virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#a573ec85444166decbaa5888155b9fa39">modelValue</a> () const =0</td></tr>
+virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a573ec85444166decbaa5888155b9fa39">modelValue</a> () const =0</td></tr>
 <tr class="memdesc:a573ec85444166decbaa5888155b9fa39"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the price of the instrument according to the model <br /></td></tr>
 <tr class="separator:a573ec85444166decbaa5888155b9fa39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e6e106b8ad56b7bf89a48b8a004857"><td class="memItemLeft" align="right" valign="top"><a id="ac9e6e106b8ad56b7bf89a48b8a004857"></a>
-virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#ac9e6e106b8ad56b7bf89a48b8a004857">calibrationError</a> ()</td></tr>
-<tr class="memdesc:ac9e6e106b8ad56b7bf89a48b8a004857"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the error resulting from the model valuation <br /></td></tr>
-<tr class="separator:ac9e6e106b8ad56b7bf89a48b8a004857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6339c67e58080554016f3288898f488d"><td class="memItemLeft" align="right" valign="top"><a id="a6339c67e58080554016f3288898f488d"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a6339c67e58080554016f3288898f488d">calibrationError</a> ()</td></tr>
+<tr class="memdesc:a6339c67e58080554016f3288898f488d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the error resulting from the model valuation <br /></td></tr>
+<tr class="separator:a6339c67e58080554016f3288898f488d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06c670b250bcd21e9787ebc007093545"><td class="memItemLeft" align="right" valign="top"><a id="a06c670b250bcd21e9787ebc007093545"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addTimesTo</b> (std::list&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt; &amp;times) const =0</td></tr>
 <tr class="separator:a06c670b250bcd21e9787ebc007093545"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3acf1af4dcbe47c632e7a6f372638ada"><td class="memItemLeft" align="right" valign="top"><a id="a3acf1af4dcbe47c632e7a6f372638ada"></a>
-<a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#a3acf1af4dcbe47c632e7a6f372638ada">impliedVolatility</a> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> targetValue, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxEvaluations, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> minVol, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> maxVol) const</td></tr>
+<a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a3acf1af4dcbe47c632e7a6f372638ada">impliedVolatility</a> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> targetValue, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxEvaluations, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> minVol, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> maxVol) const</td></tr>
 <tr class="memdesc:a3acf1af4dcbe47c632e7a6f372638ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black volatility implied by the model. <br /></td></tr>
 <tr class="separator:a3acf1af4dcbe47c632e7a6f372638ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae916246904fe19039c315903020642ff"><td class="memItemLeft" align="right" valign="top"><a id="ae916246904fe19039c315903020642ff"></a>
-virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibration_helper.html#ae916246904fe19039c315903020642ff">blackPrice</a> (<a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> <a class="el" href="class_quant_lib_1_1_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a>) const =0</td></tr>
+virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#ae916246904fe19039c315903020642ff">blackPrice</a> (<a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> <a class="el" href="class_quant_lib_1_1_black_calibration_helper.html#a62a6d295d2edaaac74e994185745a6c5">volatility</a>) const =0</td></tr>
 <tr class="memdesc:ae916246904fe19039c315903020642ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black or Bachelier price given a volatility. <br /></td></tr>
 <tr class="separator:ae916246904fe19039c315903020642ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef2cc90f16cf902829ac616f7b5278c"><td class="memItemLeft" align="right" valign="top"><a id="a5ef2cc90f16cf902829ac616f7b5278c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPricingEngine</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt; &amp;engine)</td></tr>
-<tr class="separator:a5ef2cc90f16cf902829ac616f7b5278c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf652d86369175fb89a7f4719a9d0c80"><td class="memItemLeft" align="right" valign="top"><a id="aaf652d86369175fb89a7f4719a9d0c80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPricingEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt; &amp;engine)</td></tr>
+<tr class="separator:aaf652d86369175fb89a7f4719a9d0c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_lazy_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_lazy_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td></tr>
 <tr class="memitem:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
 <tr class="separator:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,14 +189,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPricingEngine</b> 
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,9 +214,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:accfb2e6f0d4ec3fb0789e250aa3295ca"><td class="memItemLeft" align="right" valign="top"><a id="accfb2e6f0d4ec3fb0789e250aa3295ca"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>termStructure_</b></td></tr>
 <tr class="separator:accfb2e6f0d4ec3fb0789e250aa3295ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8a3d48bdab47e807560f973bfa1569"><td class="memItemLeft" align="right" valign="top"><a id="aec8a3d48bdab47e807560f973bfa1569"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>engine_</b></td></tr>
-<tr class="separator:aec8a3d48bdab47e807560f973bfa1569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d7ce6401763605e75b3714481c1057"><td class="memItemLeft" align="right" valign="top"><a id="aa9d7ce6401763605e75b3714481c1057"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>engine_</b></td></tr>
+<tr class="separator:aa9d7ce6401763605e75b3714481c1057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7a35418d73094c674732ff122cfd59d"><td class="memItemLeft" align="right" valign="top"><a id="aa7a35418d73094c674732ff122cfd59d"></a>
 const VolatilityType&#160;</td><td class="memItemRight" valign="bottom"><b>volatilityType_</b></td></tr>
 <tr class="separator:aa7a35418d73094c674732ff122cfd59d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a082ff96da379d5e17436372ccb3c0972 inherit pro_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>liquid market instrument used during calibration </p>
+<div class="textblock"><p>liquid Black76 market instrument used during calibration </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a33f04fb3ac37abe7c9c6032cff611745"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33f04fb3ac37abe7c9c6032cff611745">&#9670;&nbsp;</a></span>performCalculations()</h2>

@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: IborIndex Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -90,33 +90,10 @@ $(function() {
  <a href="class_quant_lib_1_1_ibor_index.html#details">More...</a></p>
 
 <p><code>#include &lt;ql/indexes/iborindex.hpp&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for IborIndex:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_lib_1_1_ibor_index__inherit__graph.png" border="0" usemap="#_ibor_index_inherit__map" alt="Inheritance graph"/></div>
-<map name="_ibor_index_inherit__map" id="_ibor_index_inherit__map">
-<area shape="rect" id="node5" href="class_quant_lib_1_1_bbsw.html" title="Bbsw index " alt="" coords="473,5,527,31"/>
-<area shape="rect" id="node6" href="class_quant_lib_1_1_bkbm.html" title="Bkbm index " alt="" coords="472,55,528,80"/>
-<area shape="rect" id="node7" href="class_quant_lib_1_1_cdor.html" title="CDOR rate " alt="" coords="475,104,525,129"/>
-<area shape="rect" id="node8" href="class_quant_lib_1_1_daily_tenor_e_u_r_libor.html" title="base class for the one day deposit ICE EUR LIBOR indexes " alt="" coords="429,153,571,179"/>
-<area shape="rect" id="node9" href="class_quant_lib_1_1_daily_tenor_libor.html" title="base class for all O/N&#45;S/N BBA LIBOR indexes but the EUR ones " alt="" coords="443,203,557,228"/>
-<area shape="rect" id="node10" href="class_quant_lib_1_1_euribor.html" title="Euribor index " alt="" coords="468,252,532,277"/>
-<area shape="rect" id="node11" href="class_quant_lib_1_1_euribor365.html" title="Actual/365 Euribor index. " alt="" coords="457,301,543,327"/>
-<area shape="rect" id="node12" href="class_quant_lib_1_1_e_u_r_libor.html" title="base class for all ICE EUR LIBOR indexes but the O/N " alt="" coords="460,351,540,376"/>
-<area shape="rect" id="node13" href="class_quant_lib_1_1_jibar.html" title="JIBAR rate " alt="" coords="475,400,525,425"/>
-<area shape="rect" id="node14" href="class_quant_lib_1_1_libor.html" title="base class for all ICE LIBOR indexes but the EUR, O/N, and S/N ones " alt="" coords="475,449,526,475"/>
-<area shape="rect" id="node15" href="class_quant_lib_1_1_mosprime.html" title="MOSPRIME rate " alt="" coords="460,499,540,524"/>
-<area shape="rect" id="node16" href="class_quant_lib_1_1_pribor.html" title="PRIBOR rate " alt="" coords="472,548,529,573"/>
-<area shape="rect" id="node17" href="class_quant_lib_1_1_proxy_ibor.html" title="IborIndex calculated as proxy of some other IborIndex. " alt="" coords="461,597,539,623"/>
-<area shape="rect" id="node18" href="class_quant_lib_1_1_robor.html" title="ROBOR rate " alt="" coords="471,647,529,672"/>
-<area shape="rect" id="node19" href="class_quant_lib_1_1_tibor.html" title="JPY TIBOR index " alt="" coords="474,696,526,721"/>
-<area shape="rect" id="node2" href="class_quant_lib_1_1_interest_rate_index.html" title="base class for interest rate indexes " alt="" coords="129,351,256,376"/>
-<area shape="rect" id="node3" href="class_quant_lib_1_1_index.html" title="purely virtual base class for indexes " alt="" coords="16,325,70,351"/>
-<area shape="rect" id="node4" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes. " alt="" coords="5,375,81,400"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+
+<p>Inherits <a class="el" href="class_quant_lib_1_1_interest_rate_index.html">InterestRateIndex</a>.</p>
+
+<p>Inherited by <a class="el" href="class_quant_lib_1_1_bbsw.html">Bbsw</a>, <a class="el" href="class_quant_lib_1_1_bibor.html">Bibor</a>, <a class="el" href="class_quant_lib_1_1_bkbm.html">Bkbm</a>, <a class="el" href="class_quant_lib_1_1_cdor.html">Cdor</a>, <a class="el" href="class_quant_lib_1_1_daily_tenor_e_u_r_libor.html">DailyTenorEURLibor</a>, <a class="el" href="class_quant_lib_1_1_daily_tenor_libor.html">DailyTenorLibor</a>, <a class="el" href="class_quant_lib_1_1_euribor.html">Euribor</a>, <a class="el" href="class_quant_lib_1_1_euribor365.html">Euribor365</a>, <a class="el" href="class_quant_lib_1_1_e_u_r_libor.html">EURLibor</a>, <a class="el" href="class_quant_lib_1_1_jibar.html">Jibar</a>, <a class="el" href="class_quant_lib_1_1_libor.html">Libor</a>, <a class="el" href="class_quant_lib_1_1_mosprime.html">Mosprime</a>, OvernightIndex, <a class="el" href="class_quant_lib_1_1_pribor.html">Pribor</a>, <a class="el" href="class_quant_lib_1_1_proxy_ibor.html">ProxyIbor</a>, <a class="el" href="class_quant_lib_1_1_robor.html">Robor</a>, Shibor, <a class="el" href="class_quant_lib_1_1_t_h_b_f_i_x.html">THBFIX</a>, <a class="el" href="class_quant_lib_1_1_tibor.html">Tibor</a>, <a class="el" href="class_quant_lib_1_1_t_r_libor.html">TRLibor</a>, <a class="el" href="class_quant_lib_1_1_wibor.html">Wibor</a>, and <a class="el" href="class_quant_lib_1_1_zibor.html">Zibor</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -143,10 +120,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>endOfMonth</b> () con
 <tr class="memdesc:a57dc9ad6cf9fb60c930694af17304ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the curve used to forecast fixings <br /></td></tr>
 <tr class="separator:a57dc9ad6cf9fb60c930694af17304ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Other methods</div></td></tr>
-<tr class="memitem:a8be8ba914f8020b7c975409f217a81ba"><td class="memItemLeft" align="right" valign="top"><a id="a8be8ba914f8020b7c975409f217a81ba"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_ibor_index.html#a8be8ba914f8020b7c975409f217a81ba">clone</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;forwarding) const</td></tr>
-<tr class="memdesc:a8be8ba914f8020b7c975409f217a81ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a copy of itself linked to a different forwarding curve <br /></td></tr>
-<tr class="separator:a8be8ba914f8020b7c975409f217a81ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6a85aa33971cb1def6f0f658ae738d"><td class="memItemLeft" align="right" valign="top"><a id="a4e6a85aa33971cb1def6f0f658ae738d"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_ibor_index.html#a4e6a85aa33971cb1def6f0f658ae738d">clone</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;forwarding) const</td></tr>
+<tr class="memdesc:a4e6a85aa33971cb1def6f0f658ae738d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a copy of itself linked to a different forwarding curve <br /></td></tr>
+<tr class="separator:a4e6a85aa33971cb1def6f0f658ae738d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_interest_rate_index"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_interest_rate_index')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_interest_rate_index.html">InterestRateIndex</a></td></tr>
 <tr class="memitem:aeb7d1f996a04d11f4ac16b353657e930 inherit pub_methods_class_quant_lib_1_1_interest_rate_index"><td class="memItemLeft" align="right" valign="top"><a id="aeb7d1f996a04d11f4ac16b353657e930"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>InterestRateIndex</b> (const std::string &amp;familyName, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;tenor, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> &amp;currency, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;<a class="el" href="class_quant_lib_1_1_interest_rate_index.html#a50b393670cb5180b20b27beed91eb2bd">fixingCalendar</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter)</td></tr>
@@ -228,14 +205,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,9 +259,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>IborCoupon</b></td><
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>

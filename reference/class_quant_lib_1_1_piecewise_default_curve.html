@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: PiecewiseDefaultCurve&lt; Traits, Interpolator, Bootstrap &gt; Class Template Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -111,9 +111,9 @@ typedef Traits&#160;</td><td class="memItemRight" valign="bottom"><b>traits_type
 typedef Interpolator&#160;</td><td class="memItemRight" valign="bottom"><b>interpolator_type</b></td></tr>
 <tr class="separator:a89a0f20565fc38a4735f79b7c6deeed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,27 +121,27 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors</div></td></tr>
-<tr class="memitem:ae88bdedd1988e3787e9d978aebef9714"><td class="memItemLeft" align="right" valign="top"><a id="ae88bdedd1988e3787e9d978aebef9714"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;jumps=std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt;(), const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;jumpDates=std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-12, const Interpolator &amp;i=Interpolator())</td></tr>
-<tr class="separator:ae88bdedd1988e3787e9d978aebef9714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9197b8671844a2e853c84372c9f23dd"><td class="memItemLeft" align="right" valign="top"><a id="af9197b8671844a2e853c84372c9f23dd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const Interpolator &amp;i=Interpolator())</td></tr>
-<tr class="separator:af9197b8671844a2e853c84372c9f23dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8362a0a7d6e1086edfa05d5c1f341f56"><td class="memItemLeft" align="right" valign="top"><a id="a8362a0a7d6e1086edfa05d5c1f341f56"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const Interpolator &amp;i)</td></tr>
-<tr class="separator:a8362a0a7d6e1086edfa05d5c1f341f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6f78e9689f729dcfb0b926c570d9e40"><td class="memItemLeft" align="right" valign="top"><a id="aa6f78e9689f729dcfb0b926c570d9e40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;jumps=std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt;(), const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;jumpDates=std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-12, const Interpolator &amp;i=Interpolator())</td></tr>
-<tr class="separator:aa6f78e9689f729dcfb0b926c570d9e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e33eab94376aaba73208040750687ed"><td class="memItemLeft" align="right" valign="top"><a id="a1e33eab94376aaba73208040750687ed"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const Interpolator &amp;i=Interpolator())</td></tr>
-<tr class="separator:a1e33eab94376aaba73208040750687ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f330e931eed76bab8d012839e5b421c"><td class="memItemLeft" align="right" valign="top"><a id="a8f330e931eed76bab8d012839e5b421c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const Interpolator &amp;i)</td></tr>
-<tr class="separator:a8f330e931eed76bab8d012839e5b421c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14af8c23a71ae1943df281311c634240"><td class="memItemLeft" align="right" valign="top"><a id="a14af8c23a71ae1943df281311c634240"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; boost::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_affine_model.html">OneFactorAffineModel</a> &gt; model, const Interpolator &amp;i=Interpolator())</td></tr>
-<tr class="separator:a14af8c23a71ae1943df281311c634240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ea1da1ce159e694bdc435d04ea3a083"><td class="memItemLeft" align="right" valign="top"><a id="a7ea1da1ce159e694bdc435d04ea3a083"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;jumps=std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt;(), const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;jumpDates=std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-12, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="separator:a7ea1da1ce159e694bdc435d04ea3a083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ada25156f4c72ecd986006844014b4"><td class="memItemLeft" align="right" valign="top"><a id="a91ada25156f4c72ecd986006844014b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="separator:a91ada25156f4c72ecd986006844014b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f3aca832da8b03a487cde844124e52b"><td class="memItemLeft" align="right" valign="top"><a id="a8f3aca832da8b03a487cde844124e52b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const Interpolator &amp;i)</td></tr>
+<tr class="separator:a8f3aca832da8b03a487cde844124e52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba723c3f803670c85d26fe39ce9f80c"><td class="memItemLeft" align="right" valign="top"><a id="a0ba723c3f803670c85d26fe39ce9f80c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;jumps=std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt;(), const std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt; &amp;jumpDates=std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-12, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="separator:a0ba723c3f803670c85d26fe39ce9f80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8689da59842c910f1c57ee9f5871857c"><td class="memItemLeft" align="right" valign="top"><a id="a8689da59842c910f1c57ee9f5871857c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="separator:a8689da59842c910f1c57ee9f5871857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bda0cb060dcec38d22035320d7b190d"><td class="memItemLeft" align="right" valign="top"><a id="a5bda0cb060dcec38d22035320d7b190d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> settlementDays, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, const Interpolator &amp;i)</td></tr>
+<tr class="separator:a5bda0cb060dcec38d22035320d7b190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc55e9eec4b3c52b3e6ef2123f66849"><td class="memItemLeft" align="right" valign="top"><a id="a6cc55e9eec4b3c52b3e6ef2123f66849"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseDefaultCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;referenceDate, const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;instruments, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_affine_model.html">OneFactorAffineModel</a> &gt; model, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="separator:a6cc55e9eec4b3c52b3e6ef2123f66849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">TermStructure interface</div></td></tr>
 <tr class="memitem:a6fa1d746e67f372c6e09e4ec9ad8973b"><td class="memItemLeft" align="right" valign="top"><a id="a6fa1d746e67f372c6e09e4ec9ad8973b"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>maxDate</b> () const</td></tr>
@@ -186,14 +186,14 @@ std::vector&lt; std::pair&lt; <a class="el" href="class_quant_lib_1_1_date.html"
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,8 +232,8 @@ class QuantLib::PiecewiseDefaultCurve&lt; Traits, Interpolator, Bootstrap &gt;</
 <p>Piecewise default-probability term structure. </p>
 <p>This term structure is bootstrapped on a number of credit instruments which are passed as a vector of handles to DefaultProbabilityHelper instances. Their maturities mark the boundaries of the interpolated segments.</p>
 <p>Each segment is determined sequentially starting from the earliest period to the latest and is chosen so that the instrument whose maturity marks the end of such segment is correctly repriced on the curve.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000137">Warning:</a></b></dt><dd>The bootstrapping algorithm will raise an exception if any two instruments have the same maturity date. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_c_d_s_8cpp-example.html#_a14">CDS.cpp</a>.</dd>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000156">Warning:</a></b></dt><dd>The bootstrapping algorithm will raise an exception if any two instruments have the same maturity date. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="_c_d_s_8cpp-example.html#_a13">CDS.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac5c54df7ed3b930268c8d7752c101725"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>

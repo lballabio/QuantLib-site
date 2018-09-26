@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Version history</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -76,7 +76,50 @@ $(function() {
 <div class="title">Version history </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.13 - May 2018</b></p>
+<div class="textblock"><p><b>Release 1.14 - October 2018</b></p>
+<p>PORTABILITY</p><ul>
+<li>In April 2018, Microsoft ended its support for Microsoft Visual C++ 2008. As previously announced, this release drops support for it.</li>
+<li>Fixed generation of RPM from QuantLib.spec (thanks to Simon Rees).</li>
+<li>Avoided uses of some features removed in C++17 so that the library can be compiled under the latest standard if needed.</li>
+<li><code>boost::shared_ptr</code> and a few related classes and functions were imported into the new namespace <code>QuantLib::ext</code>. This allows them to be conditionally replaced with their <code>std::</code> versions (see the "opt-in features" section below). The default is still to use the boost implementation. Client code using the <code>boost</code> namespace explicitly doesn't need to be updated.</li>
+<li>Fixed build and tests on FreeBSD-11 (thanks to Klaus Spanderen and to Mikhail Teterin for the heads-up).</li>
+<li>Fixed tests with the <code>-ffast-math</code> compilation flag enabled (thanks to Klaus Spanderen and to Jon Davies for the heads-up).</li>
+</ul>
+<p>INSTRUMENTS AND PRICING ENGINES</p><ul>
+<li>Add different settlement methods for swaptions (thanks to Peter Caspers).</li>
+<li>Take into account distinct day-count conventions for different curves in the analytic barrier-option engine (thanks to GitHub user cosplay-raven).</li>
+<li>Extract the correct constant coefficients to use in finite-difference vanilla-option engine when using a time-dependent Black-Scholes process (thanks to GitHub user Grant6899 for the analysis).</li>
+</ul>
+<p>CASH FLOWS AND INTEREST RATES</p><ul>
+<li>Added Bibor and THBFIX indices (thanks to Matthias Lungwitz).</li>
+</ul>
+<p>MODELS</p><ul>
+<li>Added a hook for using a custom smile model in the Markov functional model (thanks to Peter Caspers).</li>
+<li>Added a base class CalibrationHelperBase to the hierarchy of calibration helpers in order to allow for helpers not using the Black model.</li>
+<li>Return underlying dynamics from Black-Karasinski model (thanks to Fanis Antoniou).</li>
+</ul>
+<p>FINITE DIFFERENCES</p><ul>
+<li>Added higher-order spatial operators (thanks to Klaus Spanderen).</li>
+<li>Added TR-BDF2 finite-difference scheme (thanks to Klaus Spanderen).</li>
+</ul>
+<p>TERM STRUCTURES</p><ul>
+<li>Allow swap helpers to specify end-of-month convention (thanks to Matthias Lungwitz).</li>
+</ul>
+<p>DATE/TIME</p><ul>
+<li>Prevented division by zero in Actual/365 Canadian day counter (thanks to Ioannis Rigopoulos for the heads-up).</li>
+<li>Added Children's Day to the list of Romanian holidays (thanks to Matthias Lungwitz).</li>
+<li>Added new calendar for Thailand (thanks to Matthias Lungwitz).</li>
+<li>Added 30/360 German day counter (thanks to Peter Caspers and Alexey Indiryakov).</li>
+</ul>
+<p>MATH</p><ul>
+<li>Fixed bug in convex-monotone interpolation (thanks to Peter Caspers for the fix and to Tom Anderson for finding the bug).</li>
+</ul>
+<p>NEW OPT-IN FEATURES</p><ul>
+<li>It is now possible to use <code>std::shared_ptr</code> and its related classes instead of <code>boost::shared_ptr</code>. Note that, unlike its boost counterpart, <code>std::shared_ptr</code> doesn't check for null pointers before access; this can lead to crashes. The feature can be enabled by uncommenting the <code>QL_USE_STD_SHARED_PTR</code> macro in <code>ql/userconfig.hpp</code> on Visual C++ or by passing the <code>--enable-std-pointers</code> to <code>./configure</code> on other systems. This requires using at least the C++11 standard during compilation.</li>
+<li>It is now possible to use <code>std::unique_ptr</code> instead of <code>std::auto_ptr</code>; this makes it possible to compile the library in strict C++17 mode and to avoid deprecation warnings in C++11 and C++14 mode. The feature can be enabled by uncommenting the <code>QL_USE_STD_UNIQUE_PTR</code> macro in <code>ql/userconfig.hpp</code> on Visual C++ or by passing the <code>--enable-std-unique-ptr</code> to <code>./configure</code> on other systems.</li>
+</ul>
+<p>Thanks go also to Sam Danbury, Barry Devlin, Roland Kapl, and GitHub user todatamining for smaller fixes, enhancements, and bug reports.</p>
+<p><b>Release 1.13 - May 24th, 2018</b></p>
 <p>PORTABILITY</p><ul>
 <li>In April 2018, Microsoft ended its support for Microsoft Visual C++ 2008. This release still includes a solution file for VC++ 2008, but we won't support it further or take bug reports for it. The next release will only contain project files for Visual C++ 2010 and later.</li>
 <li>Fixed build on Solaris 12.5 in C++11 mode (thanks to Nick Glass).</li>

@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: HybridHestonHullWhiteProcess Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -110,18 +110,18 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:a36f45ac51e3e98d35c68ca85b7573e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4106f129fd99c7dea6394064986f8ca"><td class="memItemLeft" align="right" valign="top"><a id="aa4106f129fd99c7dea6394064986f8ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HybridHestonHullWhiteProcess</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt; &amp;hestonProcess, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt; &amp;hullWhiteProcess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> corrEquityShortRate, Discretization <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a>=BSMHullWhite)</td></tr>
-<tr class="separator:aa4106f129fd99c7dea6394064986f8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3022d3bb80dbd8456cb0c374e70657c"><td class="memItemLeft" align="right" valign="top"><a id="ab3022d3bb80dbd8456cb0c374e70657c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>HybridHestonHullWhiteProcess</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt; &amp;hestonProcess, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt; &amp;hullWhiteProcess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> corrEquityShortRate, Discretization <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a>=BSMHullWhite)</td></tr>
+<tr class="separator:ab3022d3bb80dbd8456cb0c374e70657c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce0ab2cacc475b2434f24c65c91685a"><td class="memItemLeft" align="right" valign="top"><a id="acce0ab2cacc475b2434f24c65c91685a"></a>
 <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#acce0ab2cacc475b2434f24c65c91685a">size</a> () const</td></tr>
 <tr class="memdesc:acce0ab2cacc475b2434f24c65c91685a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of dimensions of the stochastic process <br /></td></tr>
@@ -145,12 +145,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abab5eeb93fb77ec609711c393145b9ed"><td class="memItemLeft" align="right" valign="top"><a id="abab5eeb93fb77ec609711c393145b9ed"></a>
 <a class="el" href="group__types.html#ga642a971a0bcbbd2fb26c35e1a06e5761">DiscountFactor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numeraire</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const</td></tr>
 <tr class="separator:abab5eeb93fb77ec609711c393145b9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d58b9963c99d9e0faee75e1a1f98f0f"><td class="memItemLeft" align="right" valign="top"><a id="a7d58b9963c99d9e0faee75e1a1f98f0f"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hestonProcess</b> () const</td></tr>
-<tr class="separator:a7d58b9963c99d9e0faee75e1a1f98f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df4b21fe514eced5fe4ee7a1113f8ed"><td class="memItemLeft" align="right" valign="top"><a id="a4df4b21fe514eced5fe4ee7a1113f8ed"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteProcess</b> () const</td></tr>
-<tr class="separator:a4df4b21fe514eced5fe4ee7a1113f8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641203d988869e380d12b95b2003ef57"><td class="memItemLeft" align="right" valign="top"><a id="a641203d988869e380d12b95b2003ef57"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hestonProcess</b> () const</td></tr>
+<tr class="separator:a641203d988869e380d12b95b2003ef57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c99cb045a3a95474e797a9935063a95"><td class="memItemLeft" align="right" valign="top"><a id="a2c99cb045a3a95474e797a9935063a95"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteProcess</b> () const</td></tr>
+<tr class="separator:a2c99cb045a3a95474e797a9935063a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace9cc3ca85a0208ec49c3d6792b477b5"><td class="memItemLeft" align="right" valign="top"><a id="ace9cc3ca85a0208ec49c3d6792b477b5"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>eta</b> () const</td></tr>
 <tr class="separator:ace9cc3ca85a0208ec49c3d6792b477b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,14 +181,14 @@ virtual <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,15 +205,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ae8bb58e3a17f4d3275aa2256ed59e71e"><td class="memItemLeft" align="right" valign="top"><a id="ae8bb58e3a17f4d3275aa2256ed59e71e"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hestonProcess_</b></td></tr>
-<tr class="separator:ae8bb58e3a17f4d3275aa2256ed59e71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d6418509dc4bf69a8a5a8cce5d3b1c4"><td class="memItemLeft" align="right" valign="top"><a id="a7d6418509dc4bf69a8a5a8cce5d3b1c4"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteProcess_</b></td></tr>
-<tr class="separator:a7d6418509dc4bf69a8a5a8cce5d3b1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2816eae6f6b4127fbf7b92bbc85099fa"><td class="memItemLeft" align="right" valign="top"><a id="a2816eae6f6b4127fbf7b92bbc85099fa"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white.html">HullWhite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteModel_</b></td></tr>
-<tr class="separator:a2816eae6f6b4127fbf7b92bbc85099fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f6f2ffc85cd81d5a4d273dedf6b4cf"><td class="memItemLeft" align="right" valign="top"><a id="ae0f6f2ffc85cd81d5a4d273dedf6b4cf"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_process.html">HestonProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hestonProcess_</b></td></tr>
+<tr class="separator:ae0f6f2ffc85cd81d5a4d273dedf6b4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29e19ba996119f12aff28750177895b"><td class="memItemLeft" align="right" valign="top"><a id="af29e19ba996119f12aff28750177895b"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white_forward_process.html">HullWhiteForwardProcess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteProcess_</b></td></tr>
+<tr class="separator:af29e19ba996119f12aff28750177895b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab958feaf116d5555317575b7fd13ddd1"><td class="memItemLeft" align="right" valign="top"><a id="ab958feaf116d5555317575b7fd13ddd1"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_hull_white.html">HullWhite</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>hullWhiteModel_</b></td></tr>
+<tr class="separator:ab958feaf116d5555317575b7fd13ddd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07da734fcac172a3a7f03a79b23d6282"><td class="memItemLeft" align="right" valign="top"><a id="a07da734fcac172a3a7f03a79b23d6282"></a>
 const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>corrEquityShortRate_</b></td></tr>
 <tr class="separator:a07da734fcac172a3a7f03a79b23d6282"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,16 +230,16 @@ const <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">
 <a class="el" href="group__types.html#ga642a971a0bcbbd2fb26c35e1a06e5761">DiscountFactor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>endDiscount_</b></td></tr>
 <tr class="separator:a45cd34204ac2aa3c508a521d3f5c2530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_quant_lib_1_1_stochastic_process"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_quant_lib_1_1_stochastic_process')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_quant_lib_1_1_stochastic_process.html">StochasticProcess</a></td></tr>
-<tr class="memitem:aea3658beebc66268a48cf5273cce6abd inherit pro_attribs_class_quant_lib_1_1_stochastic_process"><td class="memItemLeft" align="right" valign="top"><a id="aea3658beebc66268a48cf5273cce6abd"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>discretization_</b></td></tr>
-<tr class="separator:aea3658beebc66268a48cf5273cce6abd inherit pro_attribs_class_quant_lib_1_1_stochastic_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a940500df8f947d270aaab06f53371 inherit pro_attribs_class_quant_lib_1_1_stochastic_process"><td class="memItemLeft" align="right" valign="top"><a id="a51a940500df8f947d270aaab06f53371"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>discretization_</b></td></tr>
+<tr class="separator:a51a940500df8f947d270aaab06f53371 inherit pro_attribs_class_quant_lib_1_1_stochastic_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_stochastic_process"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_stochastic_process')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_stochastic_process.html">StochasticProcess</a></td></tr>
-<tr class="memitem:a2bcd53302e27b1c9273e17c82516184d inherit pro_methods_class_quant_lib_1_1_stochastic_process"><td class="memItemLeft" align="right" valign="top"><a id="a2bcd53302e27b1c9273e17c82516184d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2bcd53302e27b1c9273e17c82516184d inherit pro_methods_class_quant_lib_1_1_stochastic_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84749d046d61db59992e49b8a7940bc5 inherit pro_methods_class_quant_lib_1_1_stochastic_process"><td class="memItemLeft" align="right" valign="top"><a id="a84749d046d61db59992e49b8a7940bc5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt; &amp;)</td></tr>
+<tr class="separator:a84749d046d61db59992e49b8a7940bc5 inherit pro_methods_class_quant_lib_1_1_stochastic_process"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Hybrid Heston Hull-White stochastic process. </p>

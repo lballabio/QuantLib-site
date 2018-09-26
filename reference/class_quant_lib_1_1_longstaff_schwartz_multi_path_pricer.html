@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: LongstaffSchwartzMultiPathPricer Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -103,9 +103,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca0fe661d96748ce87b97822e680c25b"><td class="memItemLeft" align="right" valign="top"><a id="aca0fe661d96748ce87b97822e680c25b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzMultiPathPricer</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt; &amp;, const std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &amp;, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>, LsmBasisSystem::PolynomType)</td></tr>
-<tr class="separator:aca0fe661d96748ce87b97822e680c25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5b3b4571bdd27223a1de9ecfa0ac1f"><td class="memItemLeft" align="right" valign="top"><a id="a6a5b3b4571bdd27223a1de9ecfa0ac1f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzMultiPathPricer</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt; &amp;, const std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &amp;, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>, LsmBasisSystem::PolynomType)</td></tr>
+<tr class="separator:a6a5b3b4571bdd27223a1de9ecfa0ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdc4aa372630db744c7e8935aec2550c"><td class="memItemLeft" align="right" valign="top"><a id="abdc4aa372630db744c7e8935aec2550c"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="class_quant_lib_1_1_multi_path.html">MultiPath</a> &amp;multiPath) const</td></tr>
 <tr class="separator:abdc4aa372630db744c7e8935aec2550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,9 +124,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2bf0af9827386f85f987316431e81711"><td class="memItemLeft" align="right" valign="top"><a id="a2bf0af9827386f85f987316431e81711"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationPhase_</b></td></tr>
 <tr class="separator:a2bf0af9827386f85f987316431e81711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0be5ed298260798b537947c3401ba5"><td class="memItemLeft" align="right" valign="top"><a id="a8e0be5ed298260798b537947c3401ba5"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>payoff_</b></td></tr>
-<tr class="separator:a8e0be5ed298260798b537947c3401ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a643f0781f1089ba9e767cc109a637e11"><td class="memItemLeft" align="right" valign="top"><a id="a643f0781f1089ba9e767cc109a637e11"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>payoff_</b></td></tr>
+<tr class="separator:a643f0781f1089ba9e767cc109a637e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41a0f0d111413d6b14e5ee6c0b49bc04"><td class="memItemLeft" align="right" valign="top"><a id="a41a0f0d111413d6b14e5ee6c0b49bc04"></a>
 boost::scoped_array&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>coeff_</b></td></tr>
 <tr class="separator:a41a0f0d111413d6b14e5ee6c0b49bc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,6 +148,16 @@ std::vector&lt; PathInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"
 <tr class="memitem:a35c1271728ff0408d42092f1d8ef3a0e"><td class="memItemLeft" align="right" valign="top"><a id="a35c1271728ff0408d42092f1d8ef3a0e"></a>
 const std::vector&lt; boost::function1&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>, <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>v_</b></td></tr>
 <tr class="separator:a35c1271728ff0408d42092f1d8ef3a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_path_pricer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_path_pricer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_path_pricer.html">PathPricer&lt; MultiPath &gt;</a></td></tr>
+<tr class="memitem:a7524e06c7157318afe5e1473a52f704c inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memItemLeft" align="right" valign="top"><a id="a7524e06c7157318afe5e1473a52f704c"></a>
+typedef <a class="el" href="class_quant_lib_1_1_multi_path.html">MultiPath</a>&#160;</td><td class="memItemRight" valign="bottom"><b>argument_type</b></td></tr>
+<tr class="separator:a7524e06c7157318afe5e1473a52f704c inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5891901c77cb22bf37f2309008560f inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memItemLeft" align="right" valign="top"><a id="acd5891901c77cb22bf37f2309008560f"></a>
+typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>result_type</b></td></tr>
+<tr class="separator:acd5891901c77cb22bf37f2309008560f inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Longstaff-Schwarz path pricer for early exercise options. </p>

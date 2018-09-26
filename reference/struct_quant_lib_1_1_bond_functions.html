@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: BondFunctions Struct Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -214,12 +214,12 @@ static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78"
 static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yieldValueBasisPoint</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a00e708b10c9cf504733f04135698f485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Z-spread functions</div></td></tr>
-<tr class="memitem:a725beac891a4a6c1400fc439575f0d05"><td class="memItemLeft" align="right" valign="top"><a id="a725beac891a4a6c1400fc439575f0d05"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discount, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> zSpread, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
-<tr class="separator:a725beac891a4a6c1400fc439575f0d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a972943b86726e6ae40becf565b0fc08a"><td class="memItemLeft" align="right" valign="top"><a id="a972943b86726e6ae40becf565b0fc08a"></a>
-static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zSpread</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)</td></tr>
-<tr class="separator:a972943b86726e6ae40becf565b0fc08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4abf524ff6366dde6fbd3d8d25d466f"><td class="memItemLeft" align="right" valign="top"><a id="aa4abf524ff6366dde6fbd3d8d25d466f"></a>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discount, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> zSpread, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+<tr class="separator:aa4abf524ff6366dde6fbd3d8d25d466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c4cd03c7bdadaff911f3eab6348b4d"><td class="memItemLeft" align="right" valign="top"><a id="af8c4cd03c7bdadaff911f3eab6348b4d"></a>
+static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zSpread</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)</td></tr>
+<tr class="separator:af8c4cd03c7bdadaff911f3eab6348b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class. ">Bond</a> adapters of <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions ">CashFlows</a> functions. </p>

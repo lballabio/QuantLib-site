@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Settings Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -165,7 +165,7 @@ static <a class="el" href="class_quant_lib_1_1_settings.html">Settings</a> &amp;
 </div><div class="memdoc">
 
 <p>the date at which pricing is to be performed. </p>
-<p>Client code can inspect the evaluation date, as in: </p><div class="fragment"><div class="line">Date d = <a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>();</div></div><!-- fragment --><p> where today's date is returned if the evaluation date is set to the null date (its default value;) can set it to a new value, as in: </p><div class="fragment"><div class="line"><a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>() = d;</div></div><!-- fragment --><p> and can register with it, as in: </p><div class="fragment"><div class="line">registerWith(<a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>());</div></div><!-- fragment --><p> to be notified when it is set to a new value. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000132">Warning:</a></b></dt><dd>a notification is not sent when the evaluation date changes for natural causes&mdash;i.e., a date was not explicitly set (which results in today's date being used for pricing) and the current date changes as the clock strikes midnight. </dd></dl>
+<p>Client code can inspect the evaluation date, as in: </p><div class="fragment"><div class="line">Date d = <a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>();</div></div><!-- fragment --><p> where today's date is returned if the evaluation date is set to the null date (its default value;) can set it to a new value, as in: </p><div class="fragment"><div class="line"><a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>() = d;</div></div><!-- fragment --><p> and can register with it, as in: </p><div class="fragment"><div class="line">registerWith(<a class="code" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance ">Settings::instance</a>().<a class="code" href="class_quant_lib_1_1_settings.html#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed. ">evaluationDate</a>());</div></div><!-- fragment --><p> to be notified when it is set to a new value. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000151">Warning:</a></b></dt><dd>a notification is not sent when the evaluation date changes for natural causes&mdash;i.e., a date was not explicitly set (which results in today's date being used for pricing) and the current date changes as the clock strikes midnight. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#a10">BermudanSwaption.cpp</a>, <a class="el" href="_bonds_8cpp-example.html#a8">Bonds.cpp</a>, <a class="el" href="_convertible_bonds_8cpp-example.html#a12">ConvertibleBonds.cpp</a>, <a class="el" href="_equity_option_8cpp-example.html#a5">EquityOption.cpp</a>, <a class="el" href="_gaussian1d_models_8cpp-example.html#a8">Gaussian1dModels.cpp</a>, <a class="el" href="_replication_8cpp-example.html#a3">Replication.cpp</a>, and <a class="el" href="swapvaluation_8cpp-example.html#a7">swapvaluation.cpp</a>.</dd>
 </dl>
 </div>

@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Lattice Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -218,7 +218,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Roll back an asset until the given time, but do not perform the final adjustment.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000098">Warning:</a></b></dt><dd>In version 0.3.7 and earlier, this method was called rollAlmostBack method and performed pre-adjustment. This is no longer true; when migrating your code, you'll have to replace calls such as: </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000117">Warning:</a></b></dt><dd>In version 0.3.7 and earlier, this method was called rollAlmostBack method and performed pre-adjustment. This is no longer true; when migrating your code, you'll have to replace calls such as: </dd></dl>
 <div class="fragment"><div class="line">method-&gt;rollAlmostBack(asset,t);</div></div><!-- fragment --><p> with the two statements: </p><div class="fragment"><div class="line">method-&gt;partialRollback(asset,t);</div><div class="line">asset-&gt;preAdjustValues();</div></div><!-- fragment --> 
 <p>Implemented in <a class="el" href="class_quant_lib_1_1_tree_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TreeLattice&lt; Impl &gt;</a>, <a class="el" href="class_quant_lib_1_1_tree_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TreeLattice&lt; OneFactorModel::ShortRateTree &gt;</a>, <a class="el" href="class_quant_lib_1_1_tree_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TreeLattice&lt; TwoFactorModel::ShortRateTree &gt;</a>, <a class="el" href="class_quant_lib_1_1_tree_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TreeLattice&lt; BlackScholesLattice&lt; T &gt; &gt;</a>, and <a class="el" href="class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TsiveriotisFernandesLattice&lt; T &gt;</a>.</p>
 

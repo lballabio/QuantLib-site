@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: CoxIngersollRoss Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -118,14 +118,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55c7d62e9c0192c65b9499f4398feabe"><td class="memItemLeft" align="right" valign="top"><a id="a55c7d62e9c0192c65b9499f4398feabe"></a>
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>discountBondOption</b> (Option::Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> strike, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> maturity, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> bondMaturity) const</td></tr>
 <tr class="separator:a55c7d62e9c0192c65b9499f4398feabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28c796f4ada7dda841d0cfef5d58e41f"><td class="memItemLeft" align="right" valign="top"><a id="a28c796f4ada7dda841d0cfef5d58e41f"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">ShortRateDynamics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cox_ingersoll_ross.html#a28c796f4ada7dda841d0cfef5d58e41f">dynamics</a> () const</td></tr>
-<tr class="memdesc:a28c796f4ada7dda841d0cfef5d58e41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the short-rate dynamics <br /></td></tr>
-<tr class="separator:a28c796f4ada7dda841d0cfef5d58e41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e1fb1794dfe96353eb8aa455c0fcbd9"><td class="memItemLeft" align="right" valign="top"><a id="a0e1fb1794dfe96353eb8aa455c0fcbd9"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_lattice.html">Lattice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cox_ingersoll_ross.html#a0e1fb1794dfe96353eb8aa455c0fcbd9">tree</a> (const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;grid) const</td></tr>
-<tr class="memdesc:a0e1fb1794dfe96353eb8aa455c0fcbd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return by default a trinomial recombining tree. <br /></td></tr>
-<tr class="separator:a0e1fb1794dfe96353eb8aa455c0fcbd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a721e1a47454c194bc847ad7c9ceddb68"><td class="memItemLeft" align="right" valign="top"><a id="a721e1a47454c194bc847ad7c9ceddb68"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">ShortRateDynamics</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cox_ingersoll_ross.html#a721e1a47454c194bc847ad7c9ceddb68">dynamics</a> () const</td></tr>
+<tr class="memdesc:a721e1a47454c194bc847ad7c9ceddb68"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the short-rate dynamics <br /></td></tr>
+<tr class="separator:a721e1a47454c194bc847ad7c9ceddb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb779c340f1abe6ecd52a7788d85eb38"><td class="memItemLeft" align="right" valign="top"><a id="adb779c340f1abe6ecd52a7788d85eb38"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_lattice.html">Lattice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cox_ingersoll_ross.html#adb779c340f1abe6ecd52a7788d85eb38">tree</a> (const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;grid) const</td></tr>
+<tr class="memdesc:adb779c340f1abe6ecd52a7788d85eb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return by default a trinomial recombining tree. <br /></td></tr>
+<tr class="separator:adb779c340f1abe6ecd52a7788d85eb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_one_factor_affine_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_one_factor_affine_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_one_factor_affine_model.html">OneFactorAffineModel</a></td></tr>
 <tr class="memitem:a7ba76488a8dafa032560538843a5737f inherit pub_methods_class_quant_lib_1_1_one_factor_affine_model"><td class="memItemLeft" align="right" valign="top"><a id="a7ba76488a8dafa032560538843a5737f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>OneFactorAffineModel</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nArguments)</td></tr>
@@ -154,15 +154,21 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="separator:ab43067bd779206b1a734151bd62e9c5f inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibrated_model.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
 <tr class="separator:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad98d12006266c591b0fa20190fef5ad8 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibrated_model.html#ad98d12006266c591b0fa20190fef5ad8">calibrate</a> (const std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calibration_helper.html">CalibrationHelper</a> &gt; &gt; &amp;, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#a689f17edf70f02c42a061798e1344cc6">endCriteria</a>, const <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraint=<a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a>(), const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;weights=std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), const std::vector&lt; bool &gt; &amp;fixParameters=std::vector&lt; bool &gt;())</td></tr>
-<tr class="memdesc:ad98d12006266c591b0fa20190fef5ad8 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibrate to a set of market instruments (usually caps/swaptions)  <a href="class_quant_lib_1_1_calibrated_model.html#ad98d12006266c591b0fa20190fef5ad8">More...</a><br /></td></tr>
-<tr class="separator:ad98d12006266c591b0fa20190fef5ad8 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56059971ed8cca14f10cad597049e48 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="ab56059971ed8cca14f10cad597049e48"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#ac8c77215168957e035ff1f8eba542910">params</a>, const std::vector&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calibration_helper.html">CalibrationHelper</a> &gt; &gt; &amp;)</td></tr>
-<tr class="separator:ab56059971ed8cca14f10cad597049e48 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa72c77f24fab12494eed9affc5b1e28 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="aaa72c77f24fab12494eed9affc5b1e28"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>constraint</b> () const</td></tr>
-<tr class="separator:aaa72c77f24fab12494eed9affc5b1e28 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370d656a9d51f7bc85a16f8a1e6c38c3 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibrated_model.html#a370d656a9d51f7bc85a16f8a1e6c38c3">calibrate</a> (const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calibration_helper_base.html">CalibrationHelperBase</a> &gt; &gt; &amp;, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#a689f17edf70f02c42a061798e1344cc6">endCriteria</a>, const <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraint=<a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a>(), const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;weights=std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), const std::vector&lt; bool &gt; &amp;fixParameters=std::vector&lt; bool &gt;())</td></tr>
+<tr class="memdesc:a370d656a9d51f7bc85a16f8a1e6c38c3 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calibrate to a set of market instruments (usually caps/swaptions)  <a href="class_quant_lib_1_1_calibrated_model.html#a370d656a9d51f7bc85a16f8a1e6c38c3">More...</a><br /></td></tr>
+<tr class="separator:a370d656a9d51f7bc85a16f8a1e6c38c3 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fdd3fb169ce787a1785f9ae46ab166 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="ab8fdd3fb169ce787a1785f9ae46ab166"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate</b> (const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_black_calibration_helper.html">BlackCalibrationHelper</a> &gt; &gt; &amp;, <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &amp;method, const <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#a689f17edf70f02c42a061798e1344cc6">endCriteria</a>, const <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &amp;constraint=<a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a>(), const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;weights=std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), const std::vector&lt; bool &gt; &amp;fixParameters=std::vector&lt; bool &gt;())</td></tr>
+<tr class="separator:ab8fdd3fb169ce787a1785f9ae46ab166 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27143e23871a2ca744bcfd6efa4a6591 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a27143e23871a2ca744bcfd6efa4a6591"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#ac8c77215168957e035ff1f8eba542910">params</a>, const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calibration_helper_base.html">CalibrationHelperBase</a> &gt; &gt; &amp;)</td></tr>
+<tr class="separator:a27143e23871a2ca744bcfd6efa4a6591 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0beae28f659fcbbda251f89ad84c69a0 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a0beae28f659fcbbda251f89ad84c69a0"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;<a class="el" href="class_quant_lib_1_1_calibrated_model.html#ac8c77215168957e035ff1f8eba542910">params</a>, const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_black_calibration_helper.html">BlackCalibrationHelper</a> &gt; &gt; &amp;)</td></tr>
+<tr class="separator:a0beae28f659fcbbda251f89ad84c69a0 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b542f77b9f84eeb36ac1ea3ca7f2d5f inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a9b542f77b9f84eeb36ac1ea3ca7f2d5f"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>constraint</b> () const</td></tr>
+<tr class="separator:a9b542f77b9f84eeb36ac1ea3ca7f2d5f inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a689f17edf70f02c42a061798e1344cc6 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a689f17edf70f02c42a061798e1344cc6"></a>
 EndCriteria::Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calibrated_model.html#a689f17edf70f02c42a061798e1344cc6">endCriteria</a> () const</td></tr>
 <tr class="memdesc:a689f17edf70f02c42a061798e1344cc6 inherit pub_methods_class_quant_lib_1_1_calibrated_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns end criteria result. <br /></td></tr>
@@ -188,14 +194,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setParams</b>
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,9 +248,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>generateArgum
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,9 +258,9 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a8d6cb3b36a2e282c440aad042035196a inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a8d6cb3b36a2e282c440aad042035196a"></a>
 std::vector&lt; <a class="el" href="class_quant_lib_1_1_parameter.html">Parameter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>arguments_</b></td></tr>
 <tr class="separator:a8d6cb3b36a2e282c440aad042035196a inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ca439e5825287fbaa19c875d832021 inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="ae5ca439e5825287fbaa19c875d832021"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>constraint_</b></td></tr>
-<tr class="separator:ae5ca439e5825287fbaa19c875d832021 inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885de9b9a245ad01bbf33f95d0d111da inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a885de9b9a245ad01bbf33f95d0d111da"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_constraint.html">Constraint</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>constraint_</b></td></tr>
+<tr class="separator:a885de9b9a245ad01bbf33f95d0d111da inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8705485af58de6eb300e980a627a0be0 inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memItemLeft" align="right" valign="top"><a id="a8705485af58de6eb300e980a627a0be0"></a>
 EndCriteria::Type&#160;</td><td class="memItemRight" valign="bottom"><b>shortRateEndCriteria_</b></td></tr>
 <tr class="separator:a8705485af58de6eb300e980a627a0be0 inherit pro_attribs_class_quant_lib_1_1_calibrated_model"><td class="memSeparator" colspan="2">&#160;</td></tr>

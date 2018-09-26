@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: LongstaffSchwartzPathPricer&lt; PathType &gt; Class Template Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -107,12 +107,19 @@ Public Types</h2></td></tr>
 <tr class="memitem:a8f1d307035ca52ae82e4c13aa0cfe635"><td class="memItemLeft" align="right" valign="top"><a id="a8f1d307035ca52ae82e4c13aa0cfe635"></a>
 typedef EarlyExerciseTraits&lt; PathType &gt;::StateType&#160;</td><td class="memItemRight" valign="bottom"><b>StateType</b></td></tr>
 <tr class="separator:a8f1d307035ca52ae82e4c13aa0cfe635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_path_pricer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_path_pricer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_path_pricer.html">PathPricer&lt; PathType &gt;</a></td></tr>
+<tr class="memitem:a7524e06c7157318afe5e1473a52f704c inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memItemLeft" align="right" valign="top"><a id="a7524e06c7157318afe5e1473a52f704c"></a>
+typedef PathType&#160;</td><td class="memItemRight" valign="bottom"><b>argument_type</b></td></tr>
+<tr class="separator:a7524e06c7157318afe5e1473a52f704c inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd5891901c77cb22bf37f2309008560f inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memItemLeft" align="right" valign="top"><a id="acd5891901c77cb22bf37f2309008560f"></a>
+typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>result_type</b></td></tr>
+<tr class="separator:acd5891901c77cb22bf37f2309008560f inherit pub_types_class_quant_lib_1_1_path_pricer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a916ae89df9f44e1ffcc92c261a602c5d"><td class="memItemLeft" align="right" valign="top"><a id="a916ae89df9f44e1ffcc92c261a602c5d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzPathPricer</b> (const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;times, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_early_exercise_path_pricer.html">EarlyExercisePathPricer</a>&lt; PathType &gt; &gt; &amp;, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;termStructure)</td></tr>
-<tr class="separator:a916ae89df9f44e1ffcc92c261a602c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a17f6614727bfb869e04c364041e3f"><td class="memItemLeft" align="right" valign="top"><a id="ae5a17f6614727bfb869e04c364041e3f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzPathPricer</b> (const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;times, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_early_exercise_path_pricer.html">EarlyExercisePathPricer</a>&lt; PathType &gt; &gt; &amp;, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;termStructure)</td></tr>
+<tr class="separator:ae5a17f6614727bfb869e04c364041e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d986e84c3ae96f51a2b56e875639224"><td class="memItemLeft" align="right" valign="top"><a id="a8d986e84c3ae96f51a2b56e875639224"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const PathType &amp;path) const</td></tr>
 <tr class="separator:a8d986e84c3ae96f51a2b56e875639224"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +141,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a2bf0af9827386f85f987316431e81711"><td class="memItemLeft" align="right" valign="top"><a id="a2bf0af9827386f85f987316431e81711"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationPhase_</b></td></tr>
 <tr class="separator:a2bf0af9827386f85f987316431e81711"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6fc85412d430df60e5a9a6f75adb0b"><td class="memItemLeft" align="right" valign="top"><a id="aae6fc85412d430df60e5a9a6f75adb0b"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_early_exercise_path_pricer.html">EarlyExercisePathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathPricer_</b></td></tr>
-<tr class="separator:aae6fc85412d430df60e5a9a6f75adb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9fc37a8630e0be2cca58b6c52d81ac8"><td class="memItemLeft" align="right" valign="top"><a id="ab9fc37a8630e0be2cca58b6c52d81ac8"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_early_exercise_path_pricer.html">EarlyExercisePathPricer</a>&lt; PathType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathPricer_</b></td></tr>
+<tr class="separator:ab9fc37a8630e0be2cca58b6c52d81ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c81bc92325f00abb4f6d70c67859c4f"><td class="memItemLeft" align="right" valign="top"><a id="a7c81bc92325f00abb4f6d70c67859c4f"></a>
 <a class="el" href="class_quant_lib_1_1_incremental_statistics.html">QuantLib::IncrementalStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>exerciseProbability_</b></td></tr>
 <tr class="separator:a7c81bc92325f00abb4f6d70c67859c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +170,7 @@ class QuantLib::LongstaffSchwartzPathPricer&lt; PathType &gt;</h3>
 <p>Longstaff-Schwarz path pricer for early exercise options. </p>
 <p>References:</p>
 <p>Francis Longstaff, Eduardo Schwartz, 2001. Valuing American Options by Simulation: A Simple Least-Squares Approach, The Review of Financial Studies, Volume 14, No. 1, 113-147</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000086">Tests:</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in web/literature </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000085">Tests:</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in web/literature </dd></dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

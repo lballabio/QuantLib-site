@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: GeneralLinearLeastSquares Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -123,10 +123,6 @@ const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;&#160;<
 <tr class="memitem:a563eb1b917bdfeb60bbbcb2775da3166"><td class="memItemLeft" align="right" valign="top"><a id="a563eb1b917bdfeb60bbbcb2775da3166"></a>
 <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dim</b> () const</td></tr>
 <tr class="separator:a563eb1b917bdfeb60bbbcb2775da3166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13bcd4ee54fd33c40be510f75949508a"><td class="memTemplParams" colspan="2"><a id="a13bcd4ee54fd33c40be510f75949508a"></a>
-template&lt;class xIterator , class yIterator , class vIterator &gt; </td></tr>
-<tr class="memitem:a13bcd4ee54fd33c40be510f75949508a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>calculate</b> (xIterator xBegin, xIterator xEnd, yIterator yBegin, yIterator yEnd, vIterator vBegin, vIterator)</td></tr>
-<tr class="separator:a13bcd4ee54fd33c40be510f75949508a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -134,9 +130,6 @@ Protected Member Functions</h2></td></tr>
 template&lt;class xIterator , class yIterator , class vIterator &gt; </td></tr>
 <tr class="memitem:ac5d7d30b2efeed6bce9f18011ae7b899"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>calculate</b> (xIterator xBegin, xIterator xEnd, yIterator yBegin, yIterator yEnd, vIterator vBegin)</td></tr>
 <tr class="separator:ac5d7d30b2efeed6bce9f18011ae7b899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474f3c461232987a7f848de8d0f9dde5"><td class="memTemplParams" colspan="2">template&lt;class xIterator , class yIterator , class vIterator &gt; </td></tr>
-<tr class="memitem:a474f3c461232987a7f848de8d0f9dde5"><td class="memTemplItemLeft" align="right" valign="top">QL_DEPRECATED void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_general_linear_least_squares.html#a474f3c461232987a7f848de8d0f9dde5">calculate</a> (xIterator xBegin, xIterator xEnd, yIterator yBegin, yIterator yEnd, vIterator vBegin, vIterator vEnd)</td></tr>
-<tr class="separator:a474f3c461232987a7f848de8d0f9dde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -157,69 +150,7 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>general linear least squares regression </p>
 <p>References: "Numerical Recipes in C", 2nd edition, Press, Teukolsky, Vetterling, Flannery,</p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000043">Tests:</a></b></dt><dd>the correctness of the returned values is tested by checking their properties. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a474f3c461232987a7f848de8d0f9dde5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474f3c461232987a7f848de8d0f9dde5">&#9670;&nbsp;</a></span>calculate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED void calculate </td>
-          <td>(</td>
-          <td class="paramtype">xIterator&#160;</td>
-          <td class="paramname"><em>xBegin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">xIterator&#160;</td>
-          <td class="paramname"><em>xEnd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">yIterator&#160;</td>
-          <td class="paramname"><em>yBegin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">yIterator&#160;</td>
-          <td class="paramname"><em>yEnd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vIterator&#160;</td>
-          <td class="paramname"><em>vBegin</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vIterator&#160;</td>
-          <td class="paramname"><em>vEnd</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>Use the overload taking 5 parameters. Deprecated in version 1.10. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: SwaptionVolatilityStructure Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -198,30 +198,30 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a08722dfbab277442a44f1979f6e6b3d3">shift</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extrapolate=false) const</td></tr>
 <tr class="memdesc:a08722dfbab277442a44f1979f6e6b3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the shift for a given option time and swap length <br /></td></tr>
 <tr class="separator:a08722dfbab277442a44f1979f6e6b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0614df6cc812a13e5d35869f4896b5c7"><td class="memItemLeft" align="right" valign="top"><a id="a0614df6cc812a13e5d35869f4896b5c7"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a0614df6cc812a13e5d35869f4896b5c7">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;optionTenor, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
-<tr class="memdesc:a0614df6cc812a13e5d35869f4896b5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option tenor and swap tenor <br /></td></tr>
-<tr class="separator:a0614df6cc812a13e5d35869f4896b5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce4ecc66dd3ad1eae55c21fd08c61de"><td class="memItemLeft" align="right" valign="top"><a id="a8ce4ecc66dd3ad1eae55c21fd08c61de"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a8ce4ecc66dd3ad1eae55c21fd08c61de">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
-<tr class="memdesc:a8ce4ecc66dd3ad1eae55c21fd08c61de"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option date and swap tenor <br /></td></tr>
-<tr class="separator:a8ce4ecc66dd3ad1eae55c21fd08c61de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94932a823f56946c90d7914b7226e0a4"><td class="memItemLeft" align="right" valign="top"><a id="a94932a823f56946c90d7914b7226e0a4"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a94932a823f56946c90d7914b7226e0a4">smileSection</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
-<tr class="memdesc:a94932a823f56946c90d7914b7226e0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option time and swap tenor <br /></td></tr>
-<tr class="separator:a94932a823f56946c90d7914b7226e0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c6943c83b7da85419220c60558e3c8"><td class="memItemLeft" align="right" valign="top"><a id="ab3c6943c83b7da85419220c60558e3c8"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#ab3c6943c83b7da85419220c60558e3c8">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;optionTenor, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
-<tr class="memdesc:ab3c6943c83b7da85419220c60558e3c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option tenor and swap length <br /></td></tr>
-<tr class="separator:ab3c6943c83b7da85419220c60558e3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f88f465f3c884bbff99660119632be6"><td class="memItemLeft" align="right" valign="top"><a id="a4f88f465f3c884bbff99660119632be6"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a4f88f465f3c884bbff99660119632be6">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
-<tr class="memdesc:a4f88f465f3c884bbff99660119632be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option date and swap length <br /></td></tr>
-<tr class="separator:a4f88f465f3c884bbff99660119632be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2c1a8d993d6969ded575c7a144e8005"><td class="memItemLeft" align="right" valign="top"><a id="ad2c1a8d993d6969ded575c7a144e8005"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#ad2c1a8d993d6969ded575c7a144e8005">smileSection</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
-<tr class="memdesc:ad2c1a8d993d6969ded575c7a144e8005"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option time and swap length <br /></td></tr>
-<tr class="separator:ad2c1a8d993d6969ded575c7a144e8005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ffc7fffe4acc4f27b0e9f9340b0b73"><td class="memItemLeft" align="right" valign="top"><a id="a14ffc7fffe4acc4f27b0e9f9340b0b73"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a14ffc7fffe4acc4f27b0e9f9340b0b73">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;optionTenor, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
+<tr class="memdesc:a14ffc7fffe4acc4f27b0e9f9340b0b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option tenor and swap tenor <br /></td></tr>
+<tr class="separator:a14ffc7fffe4acc4f27b0e9f9340b0b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5105181de08c568d18d0460ec88586e0"><td class="memItemLeft" align="right" valign="top"><a id="a5105181de08c568d18d0460ec88586e0"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a5105181de08c568d18d0460ec88586e0">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
+<tr class="memdesc:a5105181de08c568d18d0460ec88586e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option date and swap tenor <br /></td></tr>
+<tr class="separator:a5105181de08c568d18d0460ec88586e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18696f5b19d42dea1612eadeb219cce"><td class="memItemLeft" align="right" valign="top"><a id="ae18696f5b19d42dea1612eadeb219cce"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#ae18696f5b19d42dea1612eadeb219cce">smileSection</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, bool extr=false) const</td></tr>
+<tr class="memdesc:ae18696f5b19d42dea1612eadeb219cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option time and swap tenor <br /></td></tr>
+<tr class="separator:ae18696f5b19d42dea1612eadeb219cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5541e4ab3e6316cec506022e8edcaf4b"><td class="memItemLeft" align="right" valign="top"><a id="a5541e4ab3e6316cec506022e8edcaf4b"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a5541e4ab3e6316cec506022e8edcaf4b">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;optionTenor, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
+<tr class="memdesc:a5541e4ab3e6316cec506022e8edcaf4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option tenor and swap length <br /></td></tr>
+<tr class="separator:a5541e4ab3e6316cec506022e8edcaf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85665154301fce1c80e1814902fc390d"><td class="memItemLeft" align="right" valign="top"><a id="a85665154301fce1c80e1814902fc390d"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a85665154301fce1c80e1814902fc390d">smileSection</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
+<tr class="memdesc:a85665154301fce1c80e1814902fc390d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option date and swap length <br /></td></tr>
+<tr class="separator:a85665154301fce1c80e1814902fc390d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf59a269c13d29d5b588dcdf247c973"><td class="memItemLeft" align="right" valign="top"><a id="a4bf59a269c13d29d5b588dcdf247c973"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a4bf59a269c13d29d5b588dcdf247c973">smileSection</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>, bool extr=false) const</td></tr>
+<tr class="memdesc:a4bf59a269c13d29d5b588dcdf247c973"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the smile for a given option time and swap length <br /></td></tr>
+<tr class="separator:a4bf59a269c13d29d5b588dcdf247c973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Limits</div></td></tr>
 <tr class="memitem:a95eb3bcb1f89026d83f78dd535d803a0"><td class="memItemLeft" align="right" valign="top"><a id="a95eb3bcb1f89026d83f78dd535d803a0"></a>
 virtual const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a95eb3bcb1f89026d83f78dd535d803a0">maxSwapTenor</a> () const =0</td></tr>
@@ -312,14 +312,14 @@ virtual <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,12 +349,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7085f5612141937892c048040540d3fb"><td class="memItemLeft" align="right" valign="top"><a id="a7085f5612141937892c048040540d3fb"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smileSectionImpl</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor) const</td></tr>
-<tr class="separator:a7085f5612141937892c048040540d3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada274395a1ed407f27941a47104f0829"><td class="memItemLeft" align="right" valign="top"><a id="ada274395a1ed407f27941a47104f0829"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smileSectionImpl</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>) const =0</td></tr>
-<tr class="separator:ada274395a1ed407f27941a47104f0829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61db428f2cf205c2e5b71534d6c08eb1"><td class="memItemLeft" align="right" valign="top"><a id="a61db428f2cf205c2e5b71534d6c08eb1"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smileSectionImpl</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor) const</td></tr>
+<tr class="separator:a61db428f2cf205c2e5b71534d6c08eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba8c385743933f855c34c5697ad6150"><td class="memItemLeft" align="right" valign="top"><a id="a8ba8c385743933f855c34c5697ad6150"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_smile_section.html">SmileSection</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>smileSectionImpl</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> optionTime, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html#a79f138ac8de07dd9c5e7cd8f95e2c8f5">swapLength</a>) const =0</td></tr>
+<tr class="separator:a8ba8c385743933f855c34c5697ad6150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaede09b4f3fd74a34b942c520ccf061"><td class="memItemLeft" align="right" valign="top"><a id="abaede09b4f3fd74a34b942c520ccf061"></a>
 virtual <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a>&#160;</td><td class="memItemRight" valign="bottom"><b>volatilityImpl</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;optionDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapTenor, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> strike) const</td></tr>
 <tr class="separator:abaede09b4f3fd74a34b942c520ccf061"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,9 +391,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -437,7 +437,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b></td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000150">Warning:</a></b></dt><dd>term structures initialized by means of this constructor must manage their own reference date by overriding the <a class="el" href="class_quant_lib_1_1_term_structure.html#acd49fd0f9bfecc09e0d3461f16ec5d79" title="the date at which discount = 1.0 and/or variance = 0.0 ">referenceDate()</a> method. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000169">Warning:</a></b></dt><dd>term structures initialized by means of this constructor must manage their own reference date by overriding the <a class="el" href="class_quant_lib_1_1_term_structure.html#acd49fd0f9bfecc09e0d3461f16ec5d79" title="the date at which discount = 1.0 and/or variance = 0.0 ">referenceDate()</a> method. </dd></dl>
 
 </div>
 </div>

@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: MakeCapFloor Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -91,15 +91,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab701fbc7fe43af2644d4d2eb35bf76c0"><td class="memItemLeft" align="right" valign="top"><a id="ab701fbc7fe43af2644d4d2eb35bf76c0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCapFloor</b> (CapFloor::Type capFloorType, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;capFloorTenor, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> strike=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> &gt;(), const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;forwardStart=0 *Days)</td></tr>
-<tr class="separator:ab701fbc7fe43af2644d4d2eb35bf76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd40f0c06303c6a3cd943f38d56a46f"><td class="memItemLeft" align="right" valign="top"><a id="abbd40f0c06303c6a3cd943f38d56a46f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCapFloor</b> (CapFloor::Type capFloorType, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;capFloorTenor, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> strike=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> &gt;(), const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;forwardStart=0 *Days)</td></tr>
+<tr class="separator:abbd40f0c06303c6a3cd943f38d56a46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846d669de5e6ac823a1230e5fd9b96aa"><td class="memItemLeft" align="right" valign="top"><a id="a846d669de5e6ac823a1230e5fd9b96aa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator CapFloor</b> () const</td></tr>
 <tr class="separator:a846d669de5e6ac823a1230e5fd9b96aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a363110df2bc1608bb6482c3fc81adb82"><td class="memItemLeft" align="right" valign="top"><a id="a363110df2bc1608bb6482c3fc81adb82"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>operator boost::shared_ptr&lt; CapFloor &gt;</b> () const</td></tr>
-<tr class="separator:a363110df2bc1608bb6482c3fc81adb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9037112d90b327a215d6fa6675c5568"><td class="memItemLeft" align="right" valign="top"><a id="ad9037112d90b327a215d6fa6675c5568"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator ext::shared_ptr&lt; CapFloor &gt;</b> () const</td></tr>
+<tr class="separator:ad9037112d90b327a215d6fa6675c5568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49da727eac49aa25b7049d97f450add8"><td class="memItemLeft" align="right" valign="top"><a id="a49da727eac49aa25b7049d97f450add8"></a>
 <a class="el" href="class_quant_lib_1_1_make_cap_floor.html">MakeCapFloor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withNominal</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> n)</td></tr>
 <tr class="separator:a49da727eac49aa25b7049d97f450add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="class_quant_lib_1_1_make_cap_floor.html">MakeCapFloor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_make_cap_floor.html#a0cf891fc8ae3104c048a54e50b329e41">asOptionlet</a> (bool b=true)</td></tr>
 <tr class="memdesc:a0cf891fc8ae3104c048a54e50b329e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">only get last coupon <br /></td></tr>
 <tr class="separator:a0cf891fc8ae3104c048a54e50b329e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13eea987eb1967c837d05e392bfe34b1"><td class="memItemLeft" align="right" valign="top"><a id="a13eea987eb1967c837d05e392bfe34b1"></a>
-<a class="el" href="class_quant_lib_1_1_make_cap_floor.html">MakeCapFloor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withPricingEngine</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt; &amp;engine)</td></tr>
-<tr class="separator:a13eea987eb1967c837d05e392bfe34b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5142bf7998ae31166f9e7b2e062014d"><td class="memItemLeft" align="right" valign="top"><a id="af5142bf7998ae31166f9e7b2e062014d"></a>
+<a class="el" href="class_quant_lib_1_1_make_cap_floor.html">MakeCapFloor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withPricingEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt; &amp;engine)</td></tr>
+<tr class="separator:af5142bf7998ae31166f9e7b2e062014d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>helper class </p>

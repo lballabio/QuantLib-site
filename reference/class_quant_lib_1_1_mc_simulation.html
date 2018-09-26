@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: McSimulation&lt; MC, RNG, S &gt; Class Template Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -148,24 +148,24 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab494776b2804de3802deefd3b35e2503"><td class="memItemLeft" align="right" valign="top"><a id="ab494776b2804de3802deefd3b35e2503"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>McSimulation</b> (bool antitheticVariate, bool controlVariate)</td></tr>
 <tr class="separator:ab494776b2804de3802deefd3b35e2503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a365db6627d7db47cf842a9f816ab299b"><td class="memItemLeft" align="right" valign="top"><a id="a365db6627d7db47cf842a9f816ab299b"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_pricer.html">path_pricer_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathPricer</b> () const =0</td></tr>
-<tr class="separator:a365db6627d7db47cf842a9f816ab299b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a014c4e8a7f294e9c447b3a7dec739596"><td class="memItemLeft" align="right" valign="top"><a id="a014c4e8a7f294e9c447b3a7dec739596"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_multi_path_generator.html">path_generator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathGenerator</b> () const =0</td></tr>
-<tr class="separator:a014c4e8a7f294e9c447b3a7dec739596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061f7d2ee81dfc1fa0b3f6554f55bff6"><td class="memItemLeft" align="right" valign="top"><a id="a061f7d2ee81dfc1fa0b3f6554f55bff6"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_pricer.html">path_pricer_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathPricer</b> () const =0</td></tr>
+<tr class="separator:a061f7d2ee81dfc1fa0b3f6554f55bff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54cbb740e741d61d5075716a14cf2ac"><td class="memItemLeft" align="right" valign="top"><a id="ab54cbb740e741d61d5075716a14cf2ac"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_multi_path_generator.html">path_generator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pathGenerator</b> () const =0</td></tr>
+<tr class="separator:ab54cbb740e741d61d5075716a14cf2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae51c5540a0f80f270a0f9a66eb6df3"><td class="memItemLeft" align="right" valign="top"><a id="a6ae51c5540a0f80f270a0f9a66eb6df3"></a>
 virtual <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>timeGrid</b> () const =0</td></tr>
 <tr class="separator:a6ae51c5540a0f80f270a0f9a66eb6df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716177334611bbf47c511d20d64db66e"><td class="memItemLeft" align="right" valign="top"><a id="a716177334611bbf47c511d20d64db66e"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_pricer.html">path_pricer_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPathPricer</b> () const</td></tr>
-<tr class="separator:a716177334611bbf47c511d20d64db66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac012893a7f6181e406a841655e600a17"><td class="memItemLeft" align="right" valign="top"><a id="ac012893a7f6181e406a841655e600a17"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_multi_path_generator.html">path_generator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPathGenerator</b> () const</td></tr>
-<tr class="separator:ac012893a7f6181e406a841655e600a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff747be777ea28ada3ca195a485eb437"><td class="memItemLeft" align="right" valign="top"><a id="aff747be777ea28ada3ca195a485eb437"></a>
-virtual boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPricingEngine</b> () const</td></tr>
-<tr class="separator:aff747be777ea28ada3ca195a485eb437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0baeac19d70cdc5bb45fba69e952650"><td class="memItemLeft" align="right" valign="top"><a id="ab0baeac19d70cdc5bb45fba69e952650"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_pricer.html">path_pricer_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPathPricer</b> () const</td></tr>
+<tr class="separator:ab0baeac19d70cdc5bb45fba69e952650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f272afb2a75b9cb82976068659645d"><td class="memItemLeft" align="right" valign="top"><a id="a79f272afb2a75b9cb82976068659645d"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_multi_path_generator.html">path_generator_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPathGenerator</b> () const</td></tr>
+<tr class="separator:a79f272afb2a75b9cb82976068659645d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441d284ba060bff72096605cf8d2bbd8"><td class="memItemLeft" align="right" valign="top"><a id="a441d284ba060bff72096605cf8d2bbd8"></a>
+virtual ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_pricing_engine.html">PricingEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controlPricingEngine</b> () const</td></tr>
+<tr class="separator:a441d284ba060bff72096605cf8d2bbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea677195f04cb07a45b762a6fb0b16e"><td class="memItemLeft" align="right" valign="top"><a id="a1ea677195f04cb07a45b762a6fb0b16e"></a>
 virtual result_type&#160;</td><td class="memItemRight" valign="bottom"><b>controlVariateValue</b> () const</td></tr>
 <tr class="separator:a1ea677195f04cb07a45b762a6fb0b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,9 +182,9 @@ static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78"
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a578bfc5052dad419af0dafb920aff02d"><td class="memItemLeft" align="right" valign="top"><a id="a578bfc5052dad419af0dafb920aff02d"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_monte_carlo_model.html">MonteCarloModel</a>&lt; MC, RNG, S &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mcModel_</b></td></tr>
-<tr class="separator:a578bfc5052dad419af0dafb920aff02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c688be78662f3ff27e1f0cc6d96c86"><td class="memItemLeft" align="right" valign="top"><a id="ac5c688be78662f3ff27e1f0cc6d96c86"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_monte_carlo_model.html">MonteCarloModel</a>&lt; MC, RNG, S &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mcModel_</b></td></tr>
+<tr class="separator:ac5c688be78662f3ff27e1f0cc6d96c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f79786890b8283d011bf31f3b325311"><td class="memItemLeft" align="right" valign="top"><a id="a3f79786890b8283d011bf31f3b325311"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>antitheticVariate_</b></td></tr>
 <tr class="separator:a3f79786890b8283d011bf31f3b325311"><td class="memSeparator" colspan="2">&#160;</td></tr>

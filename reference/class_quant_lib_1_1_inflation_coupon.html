@@ -1,12 +1,12 @@
-<!-- HTML header for doxygen 1.8.9.1-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: InflationCoupon Class Reference</title>
-<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -18,7 +18,7 @@
     extensions: ["tex2jax.js"],
     jax: ["input/TeX","output/HTML-CSS"],
 });
-</script><script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="quantlibextra.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -28,11 +28,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td style="padding-left: 0.5em;">
+  <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.13</div>
+   <div id="projectnumber">Reference manual - version 1.14</div>
    </div>
   </td>
  </tr>
@@ -108,15 +108,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57138fd3b7b24c37868e803cbf06cae5"><td class="memItemLeft" align="right" valign="top"><a id="a57138fd3b7b24c37868e803cbf06cae5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InflationCoupon</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;paymentDate, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;startDate, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;endDate, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a3827f28c6ec62cd6e7ce8d6065c0f09b">fixingDays</a>, const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt; &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#ac2eba8a9b9fcde8ef7c77c46509ecb21">index</a>, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a889297000bf532621599d453601070ff">observationLag</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#ad49654ea33055b03f8666910acc13880">dayCounter</a>, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refPeriodStart=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refPeriodEnd=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;<a class="el" href="class_quant_lib_1_1_coupon.html#a3bd5302408bcc9757bf3d6d8e5a009aa">exCouponDate</a>=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
-<tr class="separator:a57138fd3b7b24c37868e803cbf06cae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7966ebd166412b5df373c165c0521e4"><td class="memItemLeft" align="right" valign="top"><a id="ae7966ebd166412b5df373c165c0521e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPricer</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ae7966ebd166412b5df373c165c0521e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea426503509fd9172a7f9e733eb88b07"><td class="memItemLeft" align="right" valign="top"><a id="aea426503509fd9172a7f9e733eb88b07"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pricer</b> () const</td></tr>
-<tr class="separator:aea426503509fd9172a7f9e733eb88b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bbc1ada8798f389fde6b2cfc8946d39"><td class="memItemLeft" align="right" valign="top"><a id="a4bbc1ada8798f389fde6b2cfc8946d39"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>InflationCoupon</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;paymentDate, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;startDate, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;endDate, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a3827f28c6ec62cd6e7ce8d6065c0f09b">fixingDays</a>, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt; &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a18911a65e2ba3b23c1b2eec7d026a327">index</a>, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a889297000bf532621599d453601070ff">observationLag</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;<a class="el" href="class_quant_lib_1_1_inflation_coupon.html#ad49654ea33055b03f8666910acc13880">dayCounter</a>, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refPeriodStart=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refPeriodEnd=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;<a class="el" href="class_quant_lib_1_1_coupon.html#a3bd5302408bcc9757bf3d6d8e5a009aa">exCouponDate</a>=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+<tr class="separator:a4bbc1ada8798f389fde6b2cfc8946d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf8c924df621d6637f9563e7cf710bd7"><td class="memItemLeft" align="right" valign="top"><a id="aaf8c924df621d6637f9563e7cf710bd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPricer</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt; &amp;)</td></tr>
+<tr class="separator:aaf8c924df621d6637f9563e7cf710bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da518220f3215735edfaa98b4a7d6ad"><td class="memItemLeft" align="right" valign="top"><a id="a6da518220f3215735edfaa98b4a7d6ad"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pricer</b> () const</td></tr>
+<tr class="separator:a6da518220f3215735edfaa98b4a7d6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">CashFlow interface</div></td></tr>
 <tr class="memitem:aebd2894f0f18274fd9a79140833c5e96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#aebd2894f0f18274fd9a79140833c5e96">amount</a> () const</td></tr>
 <tr class="memdesc:aebd2894f0f18274fd9a79140833c5e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the amount of the cash flow  <a href="#aebd2894f0f18274fd9a79140833c5e96">More...</a><br /></td></tr>
@@ -138,10 +138,10 @@ boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_p
 <tr class="memdesc:a86180f4ed67efd8668e1c750fa14bc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">accrued rate <br /></td></tr>
 <tr class="separator:a86180f4ed67efd8668e1c750fa14bc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Inspectors</div></td></tr>
-<tr class="memitem:ac2eba8a9b9fcde8ef7c77c46509ecb21"><td class="memItemLeft" align="right" valign="top"><a id="ac2eba8a9b9fcde8ef7c77c46509ecb21"></a>
-const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#ac2eba8a9b9fcde8ef7c77c46509ecb21">index</a> () const</td></tr>
-<tr class="memdesc:ac2eba8a9b9fcde8ef7c77c46509ecb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">yoy inflation index <br /></td></tr>
-<tr class="separator:ac2eba8a9b9fcde8ef7c77c46509ecb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18911a65e2ba3b23c1b2eec7d026a327"><td class="memItemLeft" align="right" valign="top"><a id="a18911a65e2ba3b23c1b2eec7d026a327"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a18911a65e2ba3b23c1b2eec7d026a327">index</a> () const</td></tr>
+<tr class="memdesc:a18911a65e2ba3b23c1b2eec7d026a327"><td class="mdescLeft">&#160;</td><td class="mdescRight">yoy inflation index <br /></td></tr>
+<tr class="separator:a18911a65e2ba3b23c1b2eec7d026a327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a889297000bf532621599d453601070ff"><td class="memItemLeft" align="right" valign="top"><a id="a889297000bf532621599d453601070ff"></a>
 <a class="el" href="class_quant_lib_1_1_period.html">Period</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a889297000bf532621599d453601070ff">observationLag</a> () const</td></tr>
 <tr class="memdesc:a889297000bf532621599d453601070ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">how the coupon observes the index <br /></td></tr>
@@ -234,14 +234,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a6810b3645967da11d5f5d4804d37bacc"></a>
 <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
 <tr class="separator:a6810b3645967da11d5f5d4804d37bacc inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a2917c4e3998749881d313a96797fa076"></a>
-std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a2917c4e3998749881d313a96797fa076 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#ab3e455d3b5f44da503e1aa42d3dac33e">registerWithObservables</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
-<tr class="separator:ab3e455d3b5f44da503e1aa42d3dac33e inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a61253fab60176cbcfce16537442d0b4b"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
-<tr class="separator:a61253fab60176cbcfce16537442d0b4b inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="aa6ade205ed506bf712da2704f80a73a0"></a>
+std::pair&lt; iterator, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>registerWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:aa6ade205ed506bf712da2704f80a73a0 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &gt; &amp;)</td></tr>
+<tr class="separator:a51d57eb97a3a57312a47bda29235f182 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7359ad0f73a54dba555be24855804"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWith</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4ce7359ad0f73a54dba555be24855804 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a0c19cb502f3b720b99b176ea6cc7e319"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b> ()</td></tr>
 <tr class="separator:a0c19cb502f3b720b99b176ea6cc7e319 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,19 +250,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2b4b570d07423b337eb38eac657a209f"><td class="memItemLeft" align="right" valign="top"><a id="a2b4b570d07423b337eb38eac657a209f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a2b4b570d07423b337eb38eac657a209f">checkPricerImpl</a> (const boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt; &amp;) const =0</td></tr>
-<tr class="memdesc:a2b4b570d07423b337eb38eac657a209f"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes sure you were given the correct type of pricer <br /></td></tr>
-<tr class="separator:a2b4b570d07423b337eb38eac657a209f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32b1a703f414cbfad56cc3dd48475b4"><td class="memItemLeft" align="right" valign="top"><a id="aa32b1a703f414cbfad56cc3dd48475b4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon.html#aa32b1a703f414cbfad56cc3dd48475b4">checkPricerImpl</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt; &amp;) const =0</td></tr>
+<tr class="memdesc:aa32b1a703f414cbfad56cc3dd48475b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes sure you were given the correct type of pricer <br /></td></tr>
+<tr class="separator:aa32b1a703f414cbfad56cc3dd48475b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af669c144e6d793893c272d9df70f0161"><td class="memItemLeft" align="right" valign="top"><a id="af669c144e6d793893c272d9df70f0161"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pricer_</b></td></tr>
-<tr class="separator:af669c144e6d793893c272d9df70f0161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dabefe30fd424f8dc8ed563a9c1ce5f"><td class="memItemLeft" align="right" valign="top"><a id="a6dabefe30fd424f8dc8ed563a9c1ce5f"></a>
-boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>index_</b></td></tr>
-<tr class="separator:a6dabefe30fd424f8dc8ed563a9c1ce5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d94b7e1e6800db27e9767bf70a38718"><td class="memItemLeft" align="right" valign="top"><a id="a3d94b7e1e6800db27e9767bf70a38718"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html">InflationCouponPricer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pricer_</b></td></tr>
+<tr class="separator:a3d94b7e1e6800db27e9767bf70a38718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f558fede74e66b088b087d054816c76"><td class="memItemLeft" align="right" valign="top"><a id="a3f558fede74e66b088b087d054816c76"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>index_</b></td></tr>
+<tr class="separator:a3f558fede74e66b088b087d054816c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0b22e1c17db6dd8f558f4dfc8dfff6"><td class="memItemLeft" align="right" valign="top"><a id="a2f0b22e1c17db6dd8f558f4dfc8dfff6"></a>
 <a class="el" href="class_quant_lib_1_1_period.html">Period</a>&#160;</td><td class="memItemRight" valign="bottom"><b>observationLag_</b></td></tr>
 <tr class="separator:a2f0b22e1c17db6dd8f558f4dfc8dfff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,9 +301,9 @@ boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_inflation_index.ht
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a827382c9f9c221878e2bae9f2477ae4d"></a>
-typedef std::set&lt; boost::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a827382c9f9c221878e2bae9f2477ae4d inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a9e197e6698a9650af1d0fffad6fba3d0"></a>
+typedef std::set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a9e197e6698a9650af1d0fffad6fba3d0 inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
 typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 <tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
