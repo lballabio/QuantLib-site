@@ -142,11 +142,18 @@ the sponsorship of <a href="http://www.statpro.com/">StatPro</a>.</li>
 
 <h2 class="center">Papers</h2>
 <ul>
+<li><strong>Software Interoperability in Computational Finance, Part II: Applications to Derivatives Pricing in QuantLib, C++11, and C#</strong>
+[<a href="https://doi.org/10.1002/wilm.10708">abstract/download</a>]<br>
+Mikael Katajam&auml;ki, Daniel J. Duffy<br>
+<i>Wilmott Magazine</i>, September 2018</li>
+<li><strong>Software Interoperability in Computational Finance, Part I: Foundations for Applications Using C++11 and C# in the .NET Framework</strong>
+[<a href="https://doi.org/10.1002/wilm.10692">abstract/download</a>]<br>
+Daniel J. Duffy, Mikael Katajam&auml;ki<br>
+<i>Wilmott Magazine</i>, July 2018</li>
 <li><strong>Farmer's CMS Spread Option Formula for Negative Rates</strong>
 [<a href="http://ssrn.com/abstract=2686998">abstract/download</a>]<br>
 Peter Caspers (2015)</li>
-<li><strong>Derivatives Pricing using QuantLib: An Introduction</strong>
-[<a href="https://vineetv.wordpress.com/2015/04/03/wp-derivatives-pricing-using-quantlib/">abstract/download</a>]<br>
+<li><strong>Derivatives Pricing using QuantLib: An Introduction</strong><br>
 Jayanth R. Varma, Vineet Virmani (2015)</li>
 <li><strong>Implementation of the ZABR Model</strong>
 [<a href="http://ssrn.com/abstract=2692048">abstract/download</a>]<br>
@@ -173,9 +180,9 @@ Interest Rates</i></a>, Fabio Mercurio, ed., Risk Books, Incisive
 Media, 2009.</li>
 <li><strong>Smooth Simultaneous Calibration of the LMM to Caplets and Coterminal Swaptions</strong>
 [<a href= "http://ssrn.com/abstract=1092665">abstract/download</a>]<br>
-Ferdinando Ametrano, Mark S. Joshi (2008)</li>
-<li><strong>Why Use QuantLib?</strong> [<a href=
-"http://www.quantlib.co.uk/publications/quantlib.pdf">PDF</a>]<br>
+Ferdinando Ametrano, Mark S. Joshi<br>
+<i>Quantitative Finance</i>, vol. 11 (4), pp.547-558, 2008</li>
+<li><strong>Why Use QuantLib?</strong><br>
 Firth, N.P. (2004)</li>
 </ul>
 
