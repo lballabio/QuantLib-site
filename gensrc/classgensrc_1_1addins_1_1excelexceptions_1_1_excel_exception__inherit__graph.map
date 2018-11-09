@@ -1,6 +1,0 @@
-<map id="gensrc.addins.excelexceptions.ExcelException" name="gensrc.addins.excelexceptions.ExcelException">
-<area shape="rect" id="node3" href="$classgensrc_1_1addins_1_1excelexceptions_1_1_excel_cell_name_exception.html" title="gensrc.addins.excelexceptions.\lExcelCellNameException" alt="" coords="433,5,638,47"/>
-<area shape="rect" id="node4" href="$classgensrc_1_1addins_1_1excelexceptions_1_1_excel_parameter_count_exception.html" title="gensrc.addins.excelexceptions.\lExcelParameterCountException" alt="" coords="431,71,639,112"/>
-<area shape="rect" id="node5" href="$classgensrc_1_1addins_1_1excelexceptions_1_1_excel_parameter_length_exception.html" title="gensrc.addins.excelexceptions.\lExcelParameterLengthException" alt="" coords="429,136,641,177"/>
-<area shape="rect" id="node6" href="$classgensrc_1_1addins_1_1excelexceptions_1_1_excel_string_length_exception.html" title="gensrc.addins.excelexceptions.\lExcelStringLengthException" alt="" coords="433,201,638,243"/>
-</map>

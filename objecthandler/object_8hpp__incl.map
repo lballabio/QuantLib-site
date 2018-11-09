@@ -1,8 +1,0 @@
-<map id="object.hpp" name="object.hpp">
-<area shape="rect" id="node2" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="596,319,717,345"/>
-<area shape="rect" id="node6" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="673,80,803,107"/>
-<area shape="rect" id="node13" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="1253,237,1375,263"/>
-<area shape="rect" id="node12" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="682,155,794,181"/>
-<area shape="rect" id="node21" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="986,155,1093,181"/>
-<area shape="rect" id="node20" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="463,237,653,263"/>
-</map>
