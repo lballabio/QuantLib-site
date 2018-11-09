@@ -1,0 +1,10 @@
+<map id="vectortooper.hpp" name="vectortooper.hpp">
+<area shape="rect" id="node2" href="$ohxldefines_8hpp_source.html" title="ohxl/ohxldefines.hpp" alt="" coords="1265,155,1406,181"/>
+<area shape="rect" id="node3" href="$scalartooper_8hpp.html" title="Conversion function scalarToOper &#45; convert an Excel OPER to a scalar value. " alt="" coords="1077,80,1297,107"/>
+<area shape="rect" id="node20" href="$functioncall_8hpp.html" title="Class FunctionCall &#45; Handle state related to the function in progress. " alt="" coords="1373,80,1514,107"/>
+<area shape="rect" id="node4" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="983,319,1104,345"/>
+<area shape="rect" id="node10" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="597,155,709,181"/>
+<area shape="rect" id="node11" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="71,237,192,263"/>
+<area shape="rect" id="node19" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="817,237,1006,263"/>
+<area shape="rect" id="node21" href="$xloper_8hpp.html" title="Class Xloper &#45; Perform RAII for Excel&#39;s XLOPER datatype. " alt="" coords="1481,155,1592,181"/>
+</map>

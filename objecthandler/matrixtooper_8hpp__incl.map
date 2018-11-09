@@ -1,0 +1,7 @@
+<map id="matrixtooper.hpp" name="matrixtooper.hpp">
+<area shape="rect" id="node2" href="$scalartooper_8hpp.html" title="Conversion function scalarToOper &#45; convert an Excel OPER to a scalar value. " alt="" coords="583,80,803,107"/>
+<area shape="rect" id="node3" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="681,319,803,345"/>
+<area shape="rect" id="node9" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="637,155,749,181"/>
+<area shape="rect" id="node10" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="436,237,557,263"/>
+<area shape="rect" id="node18" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="222,237,411,263"/>
+</map>

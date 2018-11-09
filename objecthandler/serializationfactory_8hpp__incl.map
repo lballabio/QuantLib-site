@@ -1,0 +1,9 @@
+<map id="serializationfactory.hpp" name="serializationfactory.hpp">
+<area shape="rect" id="node2" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="151,393,272,420"/>
+<area shape="rect" id="node6" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="404,80,504,107"/>
+<area shape="rect" id="node7" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="929,155,1059,181"/>
+<area shape="rect" id="node14" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="425,311,547,338"/>
+<area shape="rect" id="node13" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="997,229,1109,256"/>
+<area shape="rect" id="node22" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="491,229,598,256"/>
+<area shape="rect" id="node21" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="1009,311,1198,338"/>
+</map>

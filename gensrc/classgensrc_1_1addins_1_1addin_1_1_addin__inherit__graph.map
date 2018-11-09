@@ -1,0 +1,12 @@
+<map id="gensrc.addins.addin.Addin" name="gensrc.addins.addin.Addin">
+<area shape="rect" id="node3" href="$classgensrc_1_1addins_1_1c_1_1_c_addin.html" title="gensrc.addins.c.CAddin" alt="" coords="391,5,552,32"/>
+<area shape="rect" id="node4" href="$classgensrc_1_1addins_1_1calc_1_1_calc_addin.html" title="gensrc.addins.calc.CalcAddin" alt="" coords="374,56,569,83"/>
+<area shape="rect" id="node5" href="$classgensrc_1_1addins_1_1cpp_1_1_cpp_addin.html" title="gensrc.addins.cpp.CppAddin" alt="" coords="377,107,566,133"/>
+<area shape="rect" id="node6" href="$classgensrc_1_1addins_1_1doxygen_1_1_doxygen.html" title="gensrc.addins.doxygen.Doxygen" alt="" coords="365,157,577,184"/>
+<area shape="rect" id="node7" href="$classgensrc_1_1addins_1_1enumerations_1_1_enumerations.html" title="gensrc.addins.enumerations.\lEnumerations" alt="" coords="377,209,566,250"/>
+<area shape="rect" id="node8" href="$classgensrc_1_1addins_1_1excel_1_1_excel_addin.html" title="gensrc.addins.excel.Excel\lAddin" alt="" coords="384,274,559,315"/>
+<area shape="rect" id="node9" href="$classgensrc_1_1addins_1_1guile_1_1_guile_addin.html" title="gensrc.addins.guile.Guile\lAddin" alt="" coords="387,339,555,381"/>
+<area shape="rect" id="node10" href="$classgensrc_1_1addins_1_1loop_1_1_loop.html" title="gensrc.addins.loop.Loop" alt="" coords="390,405,553,432"/>
+<area shape="rect" id="node11" href="$classgensrc_1_1addins_1_1serialization_1_1_serialization.html" title="gensrc.addins.serialization.\lSerialization" alt="" coords="381,457,561,498"/>
+<area shape="rect" id="node12" href="$classgensrc_1_1addins_1_1valueobjects_1_1_value_objects.html" title="gensrc.addins.valueobjects.\lValueObjects" alt="" coords="379,522,563,563"/>
+</map>
