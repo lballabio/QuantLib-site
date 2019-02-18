@@ -10,7 +10,7 @@ var searchData=
   ['underlyingspotvalue_5f',['underlyingSpotValue_',['../class_quant_lib_1_1_forward.html#a1269c585e5e0bd28fb36d1fde51ddfc3',1,'QuantLib::Forward']]],
   ['underlyingswap',['underlyingSwap',['../class_quant_lib_1_1_swap_index.html#aba8a8c8457fa467d0cd5305ec739fb10',1,'QuantLib::SwapIndex::underlyingSwap()'],['../class_quant_lib_1_1_overnight_indexed_swap_index.html#aa77127cf18e3617d2b844cfefcdae502',1,'QuantLib::OvernightIndexedSwapIndex::underlyingSwap()']]],
   ['unfreeze',['unfreeze',['../class_quant_lib_1_1_lazy_object.html#a26c02da24a82bc72024a8e8d48af0fca',1,'QuantLib::LazyObject']]],
-  ['unitdisplacedblackyoyinflationcouponpricer',['UnitDisplacedBlackYoYInflationCouponPricer',['../class_quant_lib_1_1_unit_displaced_black_yo_y_inflation_coupon_pricer.html',1,'QuantLib']]],
+  ['unitdisplacedblackyoyinflationcouponpricer',['UnitDisplacedBlackYoYInflationCouponPricer',['../class_quant_lib_1_1_unit_displaced_black_yo_y_inflation_coupon_pricer.html',1,'UnitDisplacedBlackYoYInflationCouponPricer'],['../class_quant_lib_1_1_unit_displaced_black_yo_y_inflation_coupon_pricer.html#af3eebba4dc17a693304e67fa7b14a360',1,'QuantLib::UnitDisplacedBlackYoYInflationCouponPricer::UnitDisplacedBlackYoYInflationCouponPricer()']]],
   ['unitedkingdom',['UnitedKingdom',['../class_quant_lib_1_1_united_kingdom.html',1,'QuantLib']]],
   ['unitedstates',['UnitedStates',['../class_quant_lib_1_1_united_states.html',1,'QuantLib']]],
   ['unitofmeasure',['UnitOfMeasure',['../class_quant_lib_1_1_unit_of_measure.html',1,'UnitOfMeasure'],['../class_quant_lib_1_1_unit_of_measure.html#a0d331fdab7998ace4c8dd0db6e6bd2df',1,'QuantLib::UnitOfMeasure::UnitOfMeasure()']]],

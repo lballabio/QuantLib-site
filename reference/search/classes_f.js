@@ -2,6 +2,7 @@ var searchData=
 [
   ['pagodaoption',['PagodaOption',['../class_quant_lib_1_1_pagoda_option.html',1,'QuantLib']]],
   ['parameter',['Parameter',['../class_quant_lib_1_1_parameter.html',1,'QuantLib']]],
+  ['particleswarmoptimization',['ParticleSwarmOptimization',['../class_quant_lib_1_1_particle_swarm_optimization.html',1,'QuantLib']]],
   ['pascaltriangle',['PascalTriangle',['../class_quant_lib_1_1_pascal_triangle.html',1,'QuantLib']]],
   ['path',['Path',['../class_quant_lib_1_1_path.html',1,'QuantLib']]],
   ['pathgenerator',['PathGenerator',['../class_quant_lib_1_1_path_generator.html',1,'QuantLib']]],

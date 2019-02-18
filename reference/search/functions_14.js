@@ -2,6 +2,7 @@ var searchData=
 [
   ['underlyingswap',['underlyingSwap',['../class_quant_lib_1_1_swap_index.html#aba8a8c8457fa467d0cd5305ec739fb10',1,'QuantLib::SwapIndex::underlyingSwap()'],['../class_quant_lib_1_1_overnight_indexed_swap_index.html#aa77127cf18e3617d2b844cfefcdae502',1,'QuantLib::OvernightIndexedSwapIndex::underlyingSwap()']]],
   ['unfreeze',['unfreeze',['../class_quant_lib_1_1_lazy_object.html#a26c02da24a82bc72024a8e8d48af0fca',1,'QuantLib::LazyObject']]],
+  ['unitdisplacedblackyoyinflationcouponpricer',['UnitDisplacedBlackYoYInflationCouponPricer',['../class_quant_lib_1_1_unit_displaced_black_yo_y_inflation_coupon_pricer.html#af3eebba4dc17a693304e67fa7b14a360',1,'QuantLib::UnitDisplacedBlackYoYInflationCouponPricer']]],
   ['unitofmeasure',['UnitOfMeasure',['../class_quant_lib_1_1_unit_of_measure.html#a0d331fdab7998ace4c8dd0db6e6bd2df',1,'QuantLib::UnitOfMeasure']]],
   ['unittype',['unitType',['../class_quant_lib_1_1_unit_of_measure.html#ab2e591b61b7204d648b40ce3cf5550eb',1,'QuantLib::UnitOfMeasure']]],
   ['until',['until',['../class_quant_lib_1_1_schedule.html#af8b4f25a7d38cc0c976b70d8012cc490',1,'QuantLib::Schedule']]],

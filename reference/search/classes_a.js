@@ -7,6 +7,7 @@ var searchData=
   ['kirkengine',['KirkEngine',['../class_quant_lib_1_1_kirk_engine.html',1,'QuantLib']]],
   ['kirkspreadoptionengine',['KirkSpreadOptionEngine',['../class_quant_lib_1_1_kirk_spread_option_engine.html',1,'QuantLib']]],
   ['klugeextouprocess',['KlugeExtOUProcess',['../class_quant_lib_1_1_kluge_ext_o_u_process.html',1,'QuantLib']]],
+  ['kneighbors',['KNeighbors',['../class_quant_lib_1_1_k_neighbors.html',1,'QuantLib']]],
   ['knuthuniformrng',['KnuthUniformRng',['../class_quant_lib_1_1_knuth_uniform_rng.html',1,'QuantLib']]],
   ['krwcurrency',['KRWCurrency',['../class_quant_lib_1_1_k_r_w_currency.html',1,'QuantLib']]],
   ['kwdcurrency',['KWDCurrency',['../class_quant_lib_1_1_k_w_d_currency.html',1,'QuantLib']]]

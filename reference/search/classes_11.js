@@ -9,6 +9,7 @@ var searchData=
   ['randomlosslm',['RandomLossLM',['../class_quant_lib_1_1_random_loss_l_m.html',1,'QuantLib']]],
   ['randomsequencegenerator',['RandomSequenceGenerator',['../class_quant_lib_1_1_random_sequence_generator.html',1,'QuantLib']]],
   ['randomsequencegenerator_3c_20quantlib_3a_3amersennetwisteruniformrng_20_3e',['RandomSequenceGenerator&lt; QuantLib::MersenneTwisterUniformRng &gt;',['../class_quant_lib_1_1_random_sequence_generator.html',1,'QuantLib']]],
+  ['randomwalk',['RandomWalk',['../class_quant_lib_1_1_firefly_algorithm_1_1_random_walk.html',1,'QuantLib::FireflyAlgorithm']]],
   ['rangeaccrualleg',['RangeAccrualLeg',['../class_quant_lib_1_1_range_accrual_leg.html',1,'QuantLib']]],
   ['ranlux3uniformrng',['Ranlux3UniformRng',['../class_quant_lib_1_1_ranlux3_uniform_rng.html',1,'QuantLib']]],
   ['ratchetmaxpayoff',['RatchetMaxPayoff',['../class_quant_lib_1_1_ratchet_max_payoff.html',1,'QuantLib']]],

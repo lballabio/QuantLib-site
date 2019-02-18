@@ -31,5 +31,6 @@ var searchData=
   ['overnightindexedcoupon',['OvernightIndexedCoupon',['../class_quant_lib_1_1_overnight_indexed_coupon.html',1,'QuantLib']]],
   ['overnightindexedswap',['OvernightIndexedSwap',['../class_quant_lib_1_1_overnight_indexed_swap.html',1,'QuantLib']]],
   ['overnightindexedswapindex',['OvernightIndexedSwapIndex',['../class_quant_lib_1_1_overnight_indexed_swap_index.html',1,'QuantLib']]],
+  ['overnightindexfutureratehelper',['OvernightIndexFutureRateHelper',['../class_quant_lib_1_1_overnight_index_future_rate_helper.html',1,'QuantLib']]],
   ['overnightleg',['OvernightLeg',['../class_quant_lib_1_1_overnight_leg.html',1,'QuantLib']]]
 ];

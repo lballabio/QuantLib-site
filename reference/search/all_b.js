@@ -9,6 +9,7 @@ var searchData=
   ['kirkengine',['KirkEngine',['../class_quant_lib_1_1_kirk_engine.html',1,'QuantLib']]],
   ['kirkspreadoptionengine',['KirkSpreadOptionEngine',['../class_quant_lib_1_1_kirk_spread_option_engine.html',1,'QuantLib']]],
   ['klugeextouprocess',['KlugeExtOUProcess',['../class_quant_lib_1_1_kluge_ext_o_u_process.html',1,'QuantLib']]],
+  ['kneighbors',['KNeighbors',['../class_quant_lib_1_1_k_neighbors.html',1,'QuantLib']]],
   ['knuthuniformrng',['KnuthUniformRng',['../class_quant_lib_1_1_knuth_uniform_rng.html',1,'KnuthUniformRng'],['../class_quant_lib_1_1_knuth_uniform_rng.html#ab59db514c5c64ebd20105fd6eba4e0a2',1,'QuantLib::KnuthUniformRng::KnuthUniformRng()']]],
   ['koki',['KOKI',['../struct_quant_lib_1_1_double_barrier.html#a1d1cfd8ffb84e947f82999c682b666a7ac501a0f43102ee2d10a190016b618d1e',1,'QuantLib::DoubleBarrier']]],
   ['kruger',['Kruger',['../class_quant_lib_1_1_cubic_interpolation.html#aeccb633d9226f37b800589483ea2f0f6a065fa14c1b83af108fdae0c713695951',1,'QuantLib::CubicInterpolation']]],
