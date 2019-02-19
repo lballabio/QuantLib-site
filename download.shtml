@@ -4,12 +4,12 @@ title: QuantLib Download Page
 ---
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.14 (October 1st, 2018).</p>
+<p>The latest QuantLib release is version 1.15 (February 19th, 2019).</p>
 <p>Source packages for <b>all platforms</b>
 are <a href="https://bintray.com/quantlib/releases">available from
 Bintray</a> in different formats.  Compiling QuantLib
 requires a working <a href="http://www.boost.org">Boost</a>
-installation; Boost 1.43 or later is required, but a more recent
+installation; Boost 1.48 or later is required, but a more recent
 version is suggested. Advanced users may want
 to <a href="reference/config.html">configure the library</a> with
 non-default settings.</p>
