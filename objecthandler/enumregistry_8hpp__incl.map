@@ -1,6 +1,6 @@
 <map id="enumregistry.hpp" name="enumregistry.hpp">
 <area shape="rect" id="node2" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="151,229,272,256"/>
-<area shape="rect" id="node6" href="$singleton_8hpp.html" title="basic support for the singleton pattern " alt="" coords="183,80,301,107"/>
-<area shape="rect" id="node8" href="$registry_8hpp.html" title="Class Registry &#45; A registry of enumerated types and classes. " alt="" coords="387,80,577,107"/>
-<area shape="rect" id="node9" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="421,155,543,181"/>
+<area shape="rect" id="node6" href="$singleton_8hpp.html" title="basic support for the singleton pattern " alt="" coords="179,80,297,107"/>
+<area shape="rect" id="node8" href="$registry_8hpp.html" title="Class Registry &#45; A registry of enumerated types and classes. " alt="" coords="383,80,573,107"/>
+<area shape="rect" id="node9" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="417,155,539,181"/>
 </map>

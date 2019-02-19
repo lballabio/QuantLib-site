@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.13.0</div>
+            <div id="version">Version 1.14.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -50,7 +50,7 @@
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
 <div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+<a class="imglink" href="http://sourceforge.net"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -127,29 +127,29 @@ Overview</h1>
 2.2 Download</h2>
 <h3><a class="anchor" id="build_cpp_win_directories"></a>
 2.2.1 Directories</h3>
-<p>The Visual C++ project files for QuantLibAddin rely on relative pathnames to refer to the prerequisite projects QuantLib, log4cxx, gensrc, and ObjectHandler. In order for this to work, these projects must reside side by side in the directory tree, and the name of each project's parent directory must not include the version number (e.g. <code>QuantLib</code> not <code>QuantLib-1.13.0</code>).</p>
-<p>By default the installer for each project uncompresses the source code to <code>C:\build_ql_1_13_0</code> (with the exception of the zip file for QuantLib, where you must manually specify the target directory, removing the <code>1.13.0</code> suffix from the directory name). For purposes of this tutorial we assume the packages have been installed in this way: </p><pre class="fragment">C:\build_ql_1_13_0\gensrc
-C:\build_ql_1_13_0\log4cxx
-C:\build_ql_1_13_0\ObjectHandler
-C:\build_ql_1_13_0\QuantLib
-C:\build_ql_1_13_0\QuantLibAddin
+<p>The Visual C++ project files for QuantLibAddin rely on relative pathnames to refer to the prerequisite projects QuantLib, log4cxx, gensrc, and ObjectHandler. In order for this to work, these projects must reside side by side in the directory tree, and the name of each project's parent directory must not include the version number (e.g. <code>QuantLib</code> not <code>QuantLib-1.14.0</code>).</p>
+<p>By default the installer for each project uncompresses the source code to <code>C:\build_ql_1_14_0</code> (with the exception of the zip file for QuantLib, where you must manually specify the target directory, removing the <code>1.14.0</code> suffix from the directory name). For purposes of this tutorial we assume the packages have been installed in this way: </p><pre class="fragment">C:\build_ql_1_14_0\gensrc
+C:\build_ql_1_14_0\log4cxx
+C:\build_ql_1_14_0\ObjectHandler
+C:\build_ql_1_14_0\QuantLib
+C:\build_ql_1_14_0\QuantLibAddin
 </pre><h3><a class="anchor" id="build_cpp_win_uncompress"></a>
 2.2.2 Uncompress the Source Code</h3>
 <p>Go to the <a href="https://bintray.com/quantlib/releases/QuantLibXL/1.13#files">QuantLib downloads page</a>.</p>
-<p>Download <code>log4cxx-0.10.0f6.zip</code> and uncompress the package to <code>C:\build_ql_1_13_0\log4cxx</code>.</p>
-<p>Download <code>gensrc-1.13.0.zip</code> and uncompress the package to <code>C:\build_ql_1_13_0\gensrc</code>.</p>
-<p>Download <code>ObjectHandler-1.13.0.zip</code> and uncompress the package to <code>C:\build_ql_1_13_0\ObjectHandler</code>.</p>
-<p>Download <code>QuantLib-1.13.0.zip</code> and uncompress the package to <code>C:\build_ql_1_13_0\QuantLib</code>.</p>
-<p>Download <code>QuantLibAddin-1.13.0.zip</code> and uncompress the package to <code>C:\build_ql_1_13_0\QuantLibAddin</code>.</p>
+<p>Download <code>log4cxx-0.10.0f6.zip</code> and uncompress the package to <code>C:\build_ql_1_14_0\log4cxx</code>.</p>
+<p>Download <code>gensrc-1.14.0.zip</code> and uncompress the package to <code>C:\build_ql_1_14_0\gensrc</code>.</p>
+<p>Download <code>ObjectHandler-1.14.0.zip</code> and uncompress the package to <code>C:\build_ql_1_14_0\ObjectHandler</code>.</p>
+<p>Download <code>QuantLib-1.14.0.zip</code> and uncompress the package to <code>C:\build_ql_1_14_0\QuantLib</code>.</p>
+<p>Download <code>QuantLibAddin-1.14.0.zip</code> and uncompress the package to <code>C:\build_ql_1_14_0\QuantLibAddin</code>.</p>
 <h2><a class="anchor" id="build_cpp_win_build"></a>
 2.3 Build</h2>
 <p>Open solution <code>QuantLibAddin\QuantLibAddin_vc?.sln</code>, choose configuration <code>Release (static runtime)</code>, and execute menu item <code>Build | Build Solution</code>.</p>
 <h2><a class="anchor" id="build_cpp_win_test"></a>
 2.4 Test</h2>
-<p>Open a DOS prompt in directory </p><pre class="fragment">C:\build_ql_1_13_0\QuantLibAddin\Clients\Cpp\bin
+<p>Open a DOS prompt in directory </p><pre class="fragment">C:\build_ql_1_14_0\QuantLibAddin\Clients\Cpp\bin
 </pre><p>Execute the example program. The output should appear similar to the following: </p><pre class="fragment">Begin example program.
-QuantLibAddin version = 1.13.0
-ObjectHandler version = 1.13.0
+QuantLibAddin version = 1.14.0
+ObjectHandler version = 1.14.0
 option PV = 3.84431
 End example program.
 </pre><h2><a class="anchor" id="build_cpp_win_usage"></a>
@@ -161,7 +161,7 @@ End example program.
 2.5.2 Link</h3>
 <p>Your project's link to the QuantLibAddin library is established automatically by the directive </p><pre class="fragment">#pragma comment(lib, QLADDIN_LIB_NAME)
 </pre><p> in file <code>qlo/autolink.hpp</code></p>
-<p>The name of the library depends on your compiler and configuration. For example, if you're using VC8, configuration Release (static runtime), the library is called </p><pre class="fragment">QuantLibAddin\lib\QuantLibObjects-vc80-mt-s-1.13.0.lib
+<p>The name of the library depends on your compiler and configuration. For example, if you're using VC8, configuration Release (static runtime), the library is called </p><pre class="fragment">QuantLibAddin\lib\QuantLibObjects-vc80-mt-s-1.14.0.lib
 </pre><h1><a class="anchor" id="build_cpp_auto"></a>
 3 Autoconf</h1>
 <h2><a class="anchor" id="build_cpp_auto_download"></a>
@@ -174,12 +174,12 @@ End example program.
 </pre><h3><a class="anchor" id="build_cpp_auto_uncompress"></a>
 3.2.2 Uncompress the Source Code</h3>
 <p>Go to the <a href="https://bintray.com/quantlib/releases/QuantLib/1.13#files">QuantLib downloads page</a>.</p>
-<p>Download <code>QuantLib-1.13.0.tgz</code> and uncompress the package to <code>/home/erik/build/QuantLib-1.13.0</code>.</p>
+<p>Download <code>QuantLib-1.14.0.tgz</code> and uncompress the package to <code>/home/erik/build/QuantLib-1.14.0</code>.</p>
 <p>Go to the <a href="https://bintray.com/quantlib/releases/QuantLibXL/1.13#files">QuantLibXL downloads page</a>.</p>
 <p>Download <code>log4cxx-0.10.0f6.tar.gz</code> and uncompress the package to <code>/home/erik/build/log4cxx-0.10.0</code>.</p>
-<p>Download <code>gensrc-1.13.0.tgz</code> and uncompress the package to <code>/home/erik/build/gensrc-1.13.0</code>.</p>
-<p>Download <code>ObjectHandler-1.13.0.tgz</code> and uncompress the package to <code>/home/erik/build/ObjectHandler-1.13.0</code>.</p>
-<p>Download <code>QuantLibAddin-1.13.0.tgz</code> and uncompress the package to <code>/home/erik/build/QuantLibAddin-1.13.0</code>.</p>
+<p>Download <code>gensrc-1.14.0.tgz</code> and uncompress the package to <code>/home/erik/build/gensrc-1.14.0</code>.</p>
+<p>Download <code>ObjectHandler-1.14.0.tgz</code> and uncompress the package to <code>/home/erik/build/ObjectHandler-1.14.0</code>.</p>
+<p>Download <code>QuantLibAddin-1.14.0.tgz</code> and uncompress the package to <code>/home/erik/build/QuantLibAddin-1.14.0</code>.</p>
 <h2><a class="anchor" id="build_cpp_auto_build"></a>
 3.3 Build</h2>
 <h3><a class="anchor" id="build_cpp_auto_log4cxx"></a>
@@ -214,38 +214,34 @@ make install
 </pre><h3><a class="anchor" id="build_cpp_auto_oh"></a>
 3.3.2 Build ObjectHandler</h3>
 <p>If you don't need logging, pass in the argument <code>&ndash;without-log4cxx</code> to <code>configure</code>.</p>
-<pre class="fragment">cd /home/erik/build/ObjectHandler-1.13.0
-./configure --with-gensrc=/home/erik/build/gensrc-1.13.0 \
+<pre class="fragment">cd /home/erik/build/ObjectHandler-1.14.0
+./configure --with-gensrc=/home/erik/build/gensrc-1.14.0 \
     --prefix=/home/erik/install \
     CPPFLAGS=-I/home/erik/install/include \
     LDFLAGS=-L/home/erik/install/lib
 make install
 </pre><h3><a class="anchor" id="build_cpp_auto_ql"></a>
 3.3.3 Build QuantLib</h3>
-<table border="1" bgcolor="lightsteelblue" width="100%">
-<tr>
-<td>You need to apply <a href="https://github.com/eehlers/quantlib/commit/d1ff14e99b8d4c559bad0d7b3e99cd9b2fde0f84">this patch</a> to your copy of the QuantLib source code.  </td></tr>
-</table>
-<pre class="fragment">cd /home/erik/build/QuantLib-1.13.0
+<pre class="fragment">cd /home/erik/build/QuantLib-1.14.0
 ./configure --prefix=/home/erik/install
 make install
 </pre><h3><a class="anchor" id="build_cpp_auto_qla"></a>
 3.3.4 Build QuantLibAddin</h3>
-<pre class="fragment">cd /home/erik/build/QuantLibAddin-1.13.0
+<pre class="fragment">cd /home/erik/build/QuantLibAddin-1.14.0
 ./configure --prefix=/home/erik/install --enable-addin-cpp \
-    --with-gensrc=/home/erik/build/gensrc-1.13.0 \
-    --with-oh=/home/erik/build/ObjectHandler-1.13.0 \
+    --with-gensrc=/home/erik/build/gensrc-1.14.0 \
+    --with-oh=/home/erik/build/ObjectHandler-1.14.0 \
     CPPFLAGS=-I/home/erik/install/include \
     LDFLAGS=-L/home/erik/install/lib
 make install
 </pre><h2><a class="anchor" id="build_cpp_auto_test"></a>
 3.4 Test</h2>
-<pre class="fragment">cd /home/erik/build/QuantLibAddin-1.13.0/Clients/Cpp
+<pre class="fragment">cd /home/erik/build/QuantLibAddin-1.14.0/Clients/Cpp
 ./QLADemo
 </pre><p>This should generate output similar to the following:</p>
 <pre class="fragment">Begin example program.
-QuantLibAddin version = 1.13.0
-ObjectHandler version = 1.13.0
+QuantLibAddin version = 1.14.0
+ObjectHandler version = 1.14.0
 option PV = 3.84431
 End example program.
 </pre><h2><a class="anchor" id="build_cpp_auto_usage"></a>

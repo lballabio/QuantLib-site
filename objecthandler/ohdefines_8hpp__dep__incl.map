@@ -15,9 +15,9 @@
 <area shape="rect" id="node40" href="$validations_8hpp.html" title="Miscellaneous validation routines. " alt="" coords="1823,80,1932,107"/>
 <area shape="rect" id="node41" href="$xlutilities_8hpp.html" title="General utility functions for the Excel platform. " alt="" coords="1644,229,1743,256"/>
 <area shape="rect" id="node4" href="$typefactory_8hpp.html" title="Class RegistryManager &#45; Manage access to an Enumeration Registry. " alt="" coords="341,304,453,331"/>
-<area shape="rect" id="node6" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="1098,752,1233,779"/>
-<area shape="rect" id="node7" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="1531,827,1602,853"/>
-<area shape="rect" id="node10" href="$coerce_8hpp.html" title="Class Coerce &#45; Support for automatic conversion of datatypes. " alt="" coords="1250,453,1337,480"/>
+<area shape="rect" id="node6" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="1109,752,1243,779"/>
+<area shape="rect" id="node7" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="1506,827,1577,853"/>
+<area shape="rect" id="node10" href="$coerce_8hpp.html" title="Class Coerce &#45; Support for automatic conversion of datatypes. " alt="" coords="1251,453,1338,480"/>
 <area shape="rect" id="node24" href="$observable_8hpp.html" title="observer/observable pattern " alt="" coords="843,379,954,405"/>
 <area shape="rect" id="node11" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="1465,677,1525,704"/>
 <area shape="rect" id="node13" href="$group_8hpp.html" title="class Group &#45; A collection of Objects " alt="" coords="953,528,1031,555"/>
@@ -35,8 +35,8 @@
 <area shape="rect" id="node28" href="$vo__all_8hpp_source.html" title="vo_all.hpp" alt="" coords="1081,379,1162,405"/>
 <area shape="rect" id="node31" href="$matrixtooper_8hpp.html" title="Conversion function matrixToOper &#45; Convert matrix to Excel OPER. " alt="" coords="1583,603,1702,629"/>
 <area shape="rect" id="node32" href="$vectortooper_8hpp.html" title="Conversion function vectorToOper &#45; Convert STL vector to Excel OPER. " alt="" coords="1726,603,1845,629"/>
-<area shape="rect" id="node34" href="$opertomatrix_8hpp.html" title="Conversion function operToMatrix &#45; convert an OPER to a matrix. " alt="" coords="1361,453,1479,480"/>
+<area shape="rect" id="node34" href="$opertomatrix_8hpp.html" title="Conversion function operToMatrix &#45; convert an OPER to a matrix. " alt="" coords="1362,453,1481,480"/>
 <area shape="rect" id="node35" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector. " alt="" coords="1450,304,1569,331"/>
 <area shape="rect" id="node38" href="$logger_8hpp.html" title="Logger class wrapper for logging framework. " alt="" coords="229,229,312,256"/>
-<area shape="rect" id="node39" href="$configuration_8hpp.html" title="Class Configuration &#45; Global configuration information. " alt="" coords="293,677,414,704"/>
+<area shape="rect" id="node39" href="$configuration_8hpp.html" title="Class Configuration &#45; Global configuration information. " alt="" coords="294,677,415,704"/>
 </map>

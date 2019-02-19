@@ -3,7 +3,7 @@
 <area shape="rect" id="node7" href="$objecthandler_8hpp_source.html" title="objecthandler.hpp" alt="" coords="496,304,620,331"/>
 <area shape="rect" id="node8" href="$libraryobject_8hpp.html" title="A customization of the Object class, suitable for most applications. " alt="" coords="673,155,790,181"/>
 <area shape="rect" id="node9" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="289,155,417,181"/>
-<area shape="rect" id="node15" href="$range_8hpp.html" title="class Range &#45; Container for a matrix of doubles " alt="" coords="756,80,835,107"/>
+<area shape="rect" id="node15" href="$range_8hpp.html" title="class Range &#45; Container for a matrix of doubles " alt="" coords="779,80,857,107"/>
 <area shape="rect" id="node16" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="391,80,547,107"/>
 <area shape="rect" id="node3" href="$getobjectvector_8hpp.html" title="Helper functions to facilitate retrieval of Object lists. " alt="" coords="335,304,471,331"/>
 <area shape="rect" id="node4" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="352,379,412,405"/>

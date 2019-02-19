@@ -1,6 +1,6 @@
 <map id="xlutilities.hpp" name="xlutilities.hpp">
-<area shape="rect" id="node2" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector. " alt="" coords="17,80,136,107"/>
+<area shape="rect" id="node2" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector. " alt="" coords="20,80,139,107"/>
 <area shape="rect" id="node5" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="89,304,160,331"/>
-<area shape="rect" id="node3" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="44,155,104,181"/>
+<area shape="rect" id="node3" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="45,155,105,181"/>
 <area shape="rect" id="node4" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="5,229,140,256"/>
 </map>

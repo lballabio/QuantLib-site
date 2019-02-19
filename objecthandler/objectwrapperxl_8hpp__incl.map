@@ -1,12 +1,12 @@
 <map id="objectwrapperxl.hpp" name="objectwrapperxl.hpp">
-<area shape="rect" id="node2" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="415,80,561,107"/>
-<area shape="rect" id="node4" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="438,229,538,256"/>
-<area shape="rect" id="node24" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="329,379,436,405"/>
-<area shape="rect" id="node28" href="$observable_8hpp.html" title="observer/observable pattern " alt="" coords="563,229,691,256"/>
-<area shape="rect" id="node29" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="793,155,967,181"/>
+<area shape="rect" id="node2" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="416,80,563,107"/>
+<area shape="rect" id="node4" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="439,229,539,256"/>
+<area shape="rect" id="node24" href="$utilities_8hpp.html" title="ObjectHandler utilities. " alt="" coords="328,379,435,405"/>
+<area shape="rect" id="node28" href="$observable_8hpp.html" title="observer/observable pattern " alt="" coords="564,229,692,256"/>
+<area shape="rect" id="node29" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="794,155,969,181"/>
 <area shape="rect" id="node5" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="329,543,450,569"/>
-<area shape="rect" id="node9" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="824,304,955,331"/>
+<area shape="rect" id="node9" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="825,304,956,331"/>
 <area shape="rect" id="node16" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="478,461,599,487"/>
-<area shape="rect" id="node15" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="951,379,1063,405"/>
+<area shape="rect" id="node15" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="952,379,1064,405"/>
 <area shape="rect" id="node23" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="909,461,1099,487"/>
 </map>

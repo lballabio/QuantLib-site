@@ -1,7 +1,7 @@
 <map id="convert_oper.hpp" name="convert_oper.hpp">
 <area shape="rect" id="node2" href="$ohdefines_8hpp.html" title="Preprocessor directives for ObjectHandler compilation. " alt="" coords="151,244,272,271"/>
 <area shape="rect" id="node7" href="$property_8hpp.html" title="Class property_t &#45; A class to represent any of a selection of native C++ datatypes. " alt="" coords="546,80,658,107"/>
-<area shape="rect" id="node18" href="$xloper_8hpp.html" title="Class Xloper &#45; Perform RAII for Excel&#39;s XLOPER datatype. " alt="" coords="344,80,455,107"/>
+<area shape="rect" id="node18" href="$xloper_8hpp.html" title="Class Xloper &#45; Perform RAII for Excel&#39;s XLOPER datatype. " alt="" coords="339,80,449,107"/>
 <area shape="rect" id="node8" href="$exception_8hpp.html" title="Class Exception &#45; A simple Exception class for ObjectHandler. " alt="" coords="319,162,440,189"/>
 <area shape="rect" id="node17" href="$convert2_8hpp.html" title="Generic conversion functions &#45; used to convert from property_t or OPER to an C++ data type..." alt="" coords="1198,162,1387,189"/>
 </map>

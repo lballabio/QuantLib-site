@@ -1,22 +1,22 @@
 <map id="utilities.hpp" name="utilities.hpp">
 <area shape="rect" id="node2" href="$objecthandler_8hpp_source.html" title="objecthandler.hpp" alt="" coords="486,453,610,480"/>
-<area shape="rect" id="node5" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="175,304,303,331"/>
-<area shape="rect" id="node13" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="373,80,486,107"/>
-<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="227,603,362,629"/>
-<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="259,677,330,704"/>
-<area shape="rect" id="node6" href="$processor_8hpp.html" title="Class Processor &#45; Restore an Object&#39;s state after deserialization. " alt="" coords="407,379,511,405"/>
-<area shape="rect" id="node7" href="$repository_8hpp.html" title="Class Repository &#45; Maintain a store of Objects. " alt="" coords="175,379,279,405"/>
-<area shape="rect" id="node11" href="$objectwrapperxl_8hpp.html" title="Class ObjectWrapperXL &#45; Customization of the ObjectWrapper class for the Excel platform. " alt="" coords="12,379,151,405"/>
-<area shape="rect" id="node8" href="$getobjectvector_8hpp.html" title="Helper functions to facilitate retrieval of Object lists. " alt="" coords="303,453,439,480"/>
-<area shape="rect" id="node10" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class. " alt="" coords="164,453,279,480"/>
+<area shape="rect" id="node5" href="$objectwrapper_8hpp.html" title="Class ObjectWrapper &#45; Ensure that Object references are up to date. " alt="" coords="174,304,302,331"/>
+<area shape="rect" id="node13" href="$valueobject_8hpp.html" title="Class ValueObject &#45; Captures the inputs to an Object. " alt="" coords="372,80,486,107"/>
+<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler " alt="" coords="207,603,342,629"/>
+<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value. " alt="" coords="239,677,310,704"/>
+<area shape="rect" id="node6" href="$processor_8hpp.html" title="Class Processor &#45; Restore an Object&#39;s state after deserialization. " alt="" coords="406,379,510,405"/>
+<area shape="rect" id="node7" href="$repository_8hpp.html" title="Class Repository &#45; Maintain a store of Objects. " alt="" coords="174,379,278,405"/>
+<area shape="rect" id="node11" href="$objectwrapperxl_8hpp.html" title="Class ObjectWrapperXL &#45; Customization of the ObjectWrapper class for the Excel platform. " alt="" coords="12,379,150,405"/>
+<area shape="rect" id="node8" href="$getobjectvector_8hpp.html" title="Helper functions to facilitate retrieval of Object lists. " alt="" coords="302,453,438,480"/>
+<area shape="rect" id="node10" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class. " alt="" coords="164,453,278,480"/>
 <area shape="rect" id="node9" href="$all_8hpp.html" title="#includes for all Excel conversion functions " alt="" coords="319,528,379,555"/>
 <area shape="rect" id="node12" href="$callingrange_8hpp.html" title="Class CallingRange &#45; Processing for the host cell of an Object. " alt="" coords="23,453,139,480"/>
 <area shape="rect" id="node14" href="$object_8hpp.html" title="Class Object &#45; Define interface for Objects to be stored in the Repository. " alt="" coords="445,155,528,181"/>
-<area shape="rect" id="node18" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="589,229,745,256"/>
+<area shape="rect" id="node18" href="$serializationfactory_8hpp.html" title="Class SerializationFactory &#45; A Singleton wrapping the boost::serialization interface. " alt="" coords="588,229,744,256"/>
 <area shape="rect" id="node19" href="$vo__group_8hpp_source.html" title="vo_group.hpp" alt="" coords="198,155,298,181"/>
 <area shape="rect" id="node21" href="$vo__range_8hpp_source.html" title="vo_range.hpp" alt="" coords="322,155,422,181"/>
 <area shape="rect" id="node15" href="$group_8hpp.html" title="class Group &#45; A collection of Objects " alt="" coords="303,379,382,405"/>
-<area shape="rect" id="node16" href="$libraryobject_8hpp.html" title="A customization of the Object class, suitable for most applications. " alt="" coords="391,304,508,331"/>
-<area shape="rect" id="node17" href="$range_8hpp.html" title="class Range &#45; Container for a matrix of doubles " alt="" coords="533,304,611,331"/>
+<area shape="rect" id="node16" href="$libraryobject_8hpp.html" title="A customization of the Object class, suitable for most applications. " alt="" coords="390,304,508,331"/>
+<area shape="rect" id="node17" href="$range_8hpp.html" title="class Range &#45; Container for a matrix of doubles " alt="" coords="532,304,611,331"/>
 <area shape="rect" id="node20" href="$vo__all_8hpp_source.html" title="vo_all.hpp" alt="" coords="198,229,279,256"/>
 </map>
