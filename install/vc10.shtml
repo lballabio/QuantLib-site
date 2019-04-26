@@ -1,24 +1,24 @@
 ---
 layout: default
-title: QuantLib Installation in Visual C++ 2010 and later
+title: QuantLib Installation in Visual C++
 ---
 
-<h1 class="center">QuantLib installation in VC++ 2010 and later</h1>
+<h1 class="center">QuantLib installation in VC++</h1>
 <h4 class="center">Dominik Holenstein</h4>
 
 <h6 class="center">Based on the VC++ 2008 instructions by Dimitri Reiswich</h4>
 
-<p>These are step-by-step instructions to install QuantLib and Boost on the
-Microsoft Visual C++ 2010 IDE (you can download the free Express edition 
-at <a href="http://www.microsoft.com/express/vc/">http://www.microsoft.com/express/vc/</a>.)
-I tried to include almost every step in the installation
+<p>These are step-by-step instructions to install QuantLib and Boost
+on the Microsoft Visual C++ 2010 IDE.  They work on later versions of
+Visual C++ as well (you can download the latest free Community edition
+<a href="https://visualstudio.microsoft.com/downloads/">on the
+Microsoft web site</a>).  Earlier versions of the compiler are no
+longer supported by QuantLib.</p>
+
+<p>I tried to include almost every step in the installation
 procedure. Something that is obvious to one person might not be
 obvious to someone else. The only thing that I assume you have on
 your computer is the Visual C++ 2010 IDE (VC10).</p>
-
-<p>These instructions are for MS Visual C++ 2010 and later. If you have
-earlier versions of this IDE (2008, 2005...) then have a look
-at <a href="vc9.shtml">this page</a>.</p>
 
 <p>Before using QuantLib you need to install the Boost library on your
 computer. Detailed instructions follow in the next section.</p>
