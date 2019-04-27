@@ -41,58 +41,50 @@ version (for instance, <tt>C:\Boost\boost_1_55_0</tt>).</p>
 
 <h2>Boost and QuantLib Installation</h2>
 
-<p>If you go to the <i>Tools/Options</i> page in VC10 to set the necessary VC++ directories, you get this confusing screen:</p>
+<p>Here are the steps to make the installed Boost libraries available to QuantLib:</p>
 
-<p class="center"><img src="pics/vc10/ql01.png" alt="VC options"></p>
-
-<p>VC++ Directories are no longer supported in VC10 through
-the <i>Tools/Options</i> page. Instead, VC10 introduces the user
-settings file <tt>Microsoft.cpp.&lt;Platform&gt;.users.props</tt> to control
-global settings including the global search path. These files are
-located in
-the <tt>$(USERPROFILE)\appdata\local\microsoft\msbuild\v4.0</tt>
-directory.</p>
-
-<p>These changes require a different workflow regarding the
-installation of QuantLib in connection with Boost compared to VC9 and
-older.</p>
-
-<p>Here are the steps to change the settings file accordingly:</p>
-
-<p>1. Open VC10 and make sure you have activated the expert
+<p><b>1.</b> Open VC10 and make sure you have activated the expert
 settings. Go to <i>Tools/Settings</i> and make sure "Expert Settings"
-is checked.</p>
+is checked.  This might not be necessary in recent Visual C++ versions.</p>
 
-<p>2. If you haven't downloaded QuantLib yet, go to its download page
+<p><b>2.</b> If you haven't downloaded QuantLib yet, go to its download page
 on Bintray, located
 at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.</p>
 
-<p>3. Find the latest version (at the time of this writing the current
+<p><b>3.</b> Find the latest version (at the time of this writing the current
 version is 1.1, but this will have changed when you read this) and
 download the zip archive to your local drive. Unzip the file wherever
 you want; in the following, we'll assume that the QuantLib directory
 is <tt>C:\Program Files\QuantLib</tt>.</p>
 
-<p>4. Open the QuantLib folder, then open the Visual Studio solution
+<p><b>4.</b> Open the QuantLib folder, then open the Visual Studio solution
 called <tt>QuantLib.sln</tt> by double clicking
 it. Choose <i>Release</i> from the configuration menu in the
 toolbar.</p>
 
-<p>5. Open the Property Manager by clicking on <i>View/Property
+<p><b>5.</b> Open the Property Manager by clicking on <i>View/Property
 Manager</i> and activate it.  Expand the project node of QuantLib in
 the Property Manager and then the <i>Configuration/Platform</i> nodes
-(see screenshot below). You will see
-a <tt>Microsoft.cpp.&lt;Platform&gt;.users</tt> file for
-each <i>Configuration/Platform</i> folder. These are the files for the
-global settings, similar to the old <i>Tools/Options/VC++
-Directories</i> settings.  Select any of them (or multi-select them
+(see screenshot below).</p>
+
+<p>Earlier Visual C++ versions used
+<tt>Microsoft.cpp.&lt;Platform&gt;.users</tt> files for global
+settings.  However, these files are now deprecated and, depending on
+your Visual C++ version, might no longer be available.  If that is the
+case, or if you want to follow Microsoft's advice anyway, create a new
+property page as described
+at <a href="https://docs.microsoft.com/en-us/cpp/build/create-reusable-property-configurations?view=vs-2019">this
+link</a>, add it to all projects in the solution, and use that instead
+of the <tt>.users</tt> files.</p>
+
+<p>Select any of the new or global pages (or multi-select them
 all), right-click, and select <i>Properties</i> to bring up the
 property page window.</p>
 
 <p class="center"><img src="pics/vc10/ql03.png" alt="Property
 Pages"></p>
 
-<p>6. In the property page window, click on <i>VC++ Directories</i> on
+<p><b>6.</b> In the property page window, click on <i>VC++ Directories</i> on
 the left pane and add the paths for the Boost directories
 in <i>Include Directories</i> and <i>Library Directories</i> in the
 right pane. If you installed Boost in <tt>C:\Program
@@ -110,7 +102,7 @@ set your changes.</p>
 <p class="center"><img src="pics/vc10/ql04.png" alt="Directories
 Dialog"></p>
 
-<p>7. Switch back to the <i>Solutions Explorer</i>, right-click on the
+<p><b>7.</b> Switch back to the <i>Solutions Explorer</i>, right-click on the
 solution icon and choose <i>Build Solution</i> to build all
 projects. Besides QuantLib, this will build the examples and run the
 test suite. The process takes a while (it took 1h and 7 minutes to
