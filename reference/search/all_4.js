@@ -69,7 +69,7 @@ var searchData=
   ['digitalcmsleg',['DigitalCmsLeg',['../class_quant_lib_1_1_digital_cms_leg.html',1,'QuantLib']]],
   ['digitalcmsspreadcoupon',['DigitalCmsSpreadCoupon',['../class_quant_lib_1_1_digital_cms_spread_coupon.html',1,'QuantLib']]],
   ['digitalcmsspreadleg',['DigitalCmsSpreadLeg',['../class_quant_lib_1_1_digital_cms_spread_leg.html',1,'QuantLib']]],
-  ['digitalcoupon',['DigitalCoupon',['../class_quant_lib_1_1_digital_coupon.html',1,'DigitalCoupon'],['../class_quant_lib_1_1_digital_coupon.html#a1f29ffe6864497a7b95d4f6a3f445b23',1,'QuantLib::DigitalCoupon::DigitalCoupon()']]],
+  ['digitalcoupon',['DigitalCoupon',['../class_quant_lib_1_1_digital_coupon.html',1,'DigitalCoupon'],['../class_quant_lib_1_1_digital_coupon.html#af1ae803ab6181ba898f1fa0e6d29d529',1,'QuantLib::DigitalCoupon::DigitalCoupon()']]],
   ['digitaliborcoupon',['DigitalIborCoupon',['../class_quant_lib_1_1_digital_ibor_coupon.html',1,'QuantLib']]],
   ['digitaliborleg',['DigitalIborLeg',['../class_quant_lib_1_1_digital_ibor_leg.html',1,'QuantLib']]],
   ['direct',['Direct',['../class_quant_lib_1_1_exchange_rate.html#a1d1cfd8ffb84e947f82999c682b666a7a5c694b75a28b59072272191aeb5f30a4',1,'QuantLib::ExchangeRate']]],

@@ -6,7 +6,6 @@ var searchData=
   ['g2swaptionengine',['G2SwaptionEngine',['../class_quant_lib_1_1_g2_swaption_engine.html',1,'QuantLib']]],
   ['galamboscopula',['GalambosCopula',['../class_quant_lib_1_1_galambos_copula.html',1,'QuantLib']]],
   ['gamma',['gamma',['../class_quant_lib_1_1_black_calculator.html#a3c6ebfe899117a8e20368fa39104bf07',1,'QuantLib::BlackCalculator::gamma()'],['../class_quant_lib_1_1_black_scholes_calculator.html#aaed679bde0c499002fce41342891b61d',1,'QuantLib::BlackScholesCalculator::gamma()']]],
-  ['gammadistribution',['GammaDistribution',['../namespace_quant_lib.html#a06b5c0b2ebe20d03cb12ff6d1b08b25a',1,'QuantLib']]],
   ['gammaforward',['gammaForward',['../class_quant_lib_1_1_black_calculator.html#a6949781d9c6ffe5419b5e463622430c6',1,'QuantLib::BlackCalculator']]],
   ['gammafunction',['GammaFunction',['../class_quant_lib_1_1_gamma_function.html',1,'QuantLib']]],
   ['gammaguess',['GammaGuess',['../class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911a91fb57d67f647bb42a1b78895ab7a218',1,'QuantLib::Garch11']]],

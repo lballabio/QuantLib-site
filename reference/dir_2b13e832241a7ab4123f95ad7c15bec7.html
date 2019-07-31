@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.15</div>
+   <div id="projectnumber">Reference manual - version 1.16</div>
    </div>
   </td>
  </tr>
@@ -83,6 +83,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:bsmrndcalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>bsmrndcalculator.hpp</b></td></tr>
+<tr class="memdesc:bsmrndcalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">risk neutral terminal density calculator for the Black-Scholes-Merton model with constant volatility <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cevrndcalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>cevrndcalculator.hpp</b></td></tr>
+<tr class="memdesc:cevrndcalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">risk neutral density calculator for the constant elasticity of variance (CEV) model <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fdmaffinemodelswapinnervalue_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmaffinemodelswapinnervalue.hpp</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fdmaffinemodeltermstructure_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmaffinemodeltermstructure.hpp</b></td></tr>
@@ -91,6 +97,9 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fdmdirichletboundary_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmdirichletboundary.hpp</b></td></tr>
 <tr class="memdesc:fdmdirichletboundary_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dirichlet boundary conditions for differential operators. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:fdmdiscountdirichletboundary_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmdiscountdirichletboundary.hpp</b></td></tr>
+<tr class="memdesc:fdmdiscountdirichletboundary_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">discounted value on Dirichlet boundary conditions <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fdmdividendhandler_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmdividendhandler.hpp</b></td></tr>
 <tr class="memdesc:fdmdividendhandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">dividend handler for fdm method for one equity direction <br /></td></tr>
@@ -109,6 +118,18 @@ Files</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:fdmtimedepdirichletboundary_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>fdmtimedepdirichletboundary.hpp</b></td></tr>
 <tr class="memdesc:fdmtimedepdirichletboundary_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">time dependent Dirichlet boundary conditions <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gbsmrndcalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>gbsmrndcalculator.hpp</b></td></tr>
+<tr class="memdesc:gbsmrndcalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">risk neutral terminal density calculator for the Black-Scholes-Merton model with strike dependent volatility <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hestonrndcalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>hestonrndcalculator.hpp</b></td></tr>
+<tr class="memdesc:hestonrndcalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">risk neutral terminal density calculator for the Heston stochastic volatility model <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:localvolrndcalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>localvolrndcalculator.hpp</b></td></tr>
+<tr class="memdesc:localvolrndcalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">local volatility risk neutral terminal density calculation <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:riskneutraldensitycalculator_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><b>riskneutraldensitycalculator.hpp</b></td></tr>
+<tr class="memdesc:riskneutraldensitycalculator_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface for a single asset risk neutral terminal density calculation <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

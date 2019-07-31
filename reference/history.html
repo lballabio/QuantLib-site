@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.15</div>
+   <div id="projectnumber">Reference manual - version 1.16</div>
    </div>
   </td>
  </tr>
@@ -76,7 +76,39 @@ $(function() {
 <div class="title">Version history </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.15 - February 2019</b></p>
+<div class="textblock"><p><b>Release 1.16 - August 2019</b></p>
+<p>PORTABILITY</p><ul>
+<li>Added support for Visual Studio 2019 (thanks to Paul Giltinan).</li>
+</ul>
+<p>CONFIGURATION</p><ul>
+<li>As announced in past release, the compile-time switch to force non-negative rates was removed.</li>
+</ul>
+<p>PRICING ENGINES</p><ul>
+<li>Added constant elasticity of variance (CEV) pricing engines for vanilla options. Analytic, FD and SABR engines are available (thanks to Klaus Spanderen).</li>
+<li>Added quanto pricing functionality to a couple of FD engines for DividendVanillaOption (thanks to Klaus Spanderen).</li>
+</ul>
+<p>CASH FLOWS</p><ul>
+<li>Digital coupons can now optionally return the value of the naked option (thanks to Peter Caspers).</li>
+</ul>
+<p>DATE/TIME</p><ul>
+<li>Updated Taiwan holidays for 2019 (thanks to Hank Liu).</li>
+<li>Added two newly announced holidays to Chinese calendar (thanks to Cheng Li).</li>
+<li>Updated Japan calendar (thanks to Eisuke Tani).</li>
+<li>Fixed New Year's day adjustment for Canadian calendar (thanks to Roy Zywina).</li>
+<li>Added a couple of exceptions for UK bank holidays (thanks to GitHub user Vililikku for the heads-up).</li>
+<li>Added French calendar (thanks to GitHub user NJeanray).</li>
+<li>Added public methods to expose a calendar's added and removed holidays (thanks to Francois Botha).</li>
+<li>Allow the stub date of a schedule to equal the maturity.</li>
+</ul>
+<p>DEPRECATED FEATURES</p><ul>
+<li>Deprecated a constructor of the SwaptionVolatilityMatrix class that didn't take a calendar.</li>
+<li>Removed typedefs GammaDistribution, ChiSquareDistribution, NonCentralChiSquareDistribution and InverseNonCentralChiSquareDistribution, deprecated in version 1.12. Use CumulativeGammaDistribution, CumulativeChiSquareDistribution, NonCentralCumulativeChiSquareDistribution and InverseNonCentralCumulativeChiSquareDistribution instead.</li>
+<li>Removed Actual365NoLeap class, deprecated in version 1.11. It was folded into Actual365Fixed.</li>
+</ul>
+<p>TERM STRUCTURES</p><ul>
+<li>Take payment days into account when calculating the nodes of a bootstrapped curve based on overnight swaps.</li>
+</ul>
+<p><b>Release 1.15 - February 19th, 2019</b></p>
 <p>PORTABILITY</p><ul>
 <li>This release drops support for Boost version 1.43 to 1.47; the minimum required version is now Boost 1.48, released in 2011.</li>
 <li>Added a <code>.clang-format</code> file to the repository. The format is not going to be enforced, but the style file is provided as a convenience in case you want to format new code according to the conventions of the library.</li>

@@ -9,7 +9,6 @@ var searchData=
   ['accountingengine',['AccountingEngine',['../class_quant_lib_1_1_accounting_engine.html',1,'QuantLib']]],
   ['actual360',['Actual360',['../class_quant_lib_1_1_actual360.html',1,'QuantLib']]],
   ['actual365fixed',['Actual365Fixed',['../class_quant_lib_1_1_actual365_fixed.html',1,'QuantLib']]],
-  ['actual365noleap',['Actual365NoLeap',['../class_quant_lib_1_1_actual365_no_leap.html',1,'QuantLib']]],
   ['actualactual',['ActualActual',['../class_quant_lib_1_1_actual_actual.html',1,'QuantLib']]],
   ['acyclicvisitor',['AcyclicVisitor',['../class_quant_lib_1_1_acyclic_visitor.html',1,'QuantLib']]],
   ['adaptiveinertia',['AdaptiveInertia',['../class_quant_lib_1_1_adaptive_inertia.html',1,'QuantLib']]],

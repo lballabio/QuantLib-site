@@ -32,7 +32,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.15</div>
+   <div id="projectnumber">Reference manual - version 1.16</div>
    </div>
   </td>
  </tr>
@@ -83,7 +83,6 @@ $(function() {
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ERROR_FUNCTIONS</span></div></div><!-- fragment --><p>If defined, function information is added to the error messages thrown by the library. Undefined by default.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ERROR_LINES</span></div></div><!-- fragment --><p> If defined, file and line information is added to the error messages thrown by the library. Undefined by default.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ENABLE_TRACING</span></div></div><!-- fragment --><p>If enabled, tracing messages might be emitted by the library depending on run-time settings. Enabling this option can degrade performance. Undefined by default.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#define QL_NEGATIVE_RATES</span></div></div><!-- fragment --><p> If defined (the default), negative yield rates are allowed in a few places where they used to be forbidden.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_EXTRA_SAFETY_CHECKS</span></div></div><!-- fragment --><p> If defined, extra run-time checks are added to a few functions. This can prevent their inlining and degrade performance. Undefined by default.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_USE_INDEXED_COUPON</span></div></div><!-- fragment --><p> If defined, indexed coupons (see the documentation) are used in floating legs. If undefined (the default), par coupons are used.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ENABLE_SESSIONS</span></div></div><!-- fragment --><p> If defined, singletons will return different instances for different sessions. You will have to provide and link with the library a sessionId() function in namespace <a class="el" href="namespace_quant_lib.html">QuantLib</a>, returning a different session id for each session. Undefined by default.</p>

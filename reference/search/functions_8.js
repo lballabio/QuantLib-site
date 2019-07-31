@@ -45,7 +45,6 @@ var searchData=
   ['inversecumulativez',['inverseCumulativeZ',['../struct_quant_lib_1_1_gaussian_copula_policy.html#acd5b1879390c62bbddd5f61deb20b49e',1,'QuantLib::GaussianCopulaPolicy::inverseCumulativeZ()'],['../class_quant_lib_1_1_latent_model.html#acd5b1879390c62bbddd5f61deb20b49e',1,'QuantLib::LatentModel::inverseCumulativeZ()'],['../class_quant_lib_1_1_t_copula_policy.html#acd5b1879390c62bbddd5f61deb20b49e',1,'QuantLib::TCopulaPolicy::inverseCumulativeZ()']]],
   ['isasxcode',['isASXcode',['../struct_quant_lib_1_1_a_s_x.html#a3e29d8d76fa693dc2256fe047926aaaa',1,'QuantLib::ASX']]],
   ['isasxdate',['isASXdate',['../struct_quant_lib_1_1_a_s_x.html#ad12bcf9de313bb23703f630aaf520e05',1,'QuantLib::ASX']]],
-  ['isbusinessday',['isBusinessDay',['../class_quant_lib_1_1_calendar.html#a64b5cd5a1f5471543bdf78a67749d615',1,'QuantLib::Calendar']]],
   ['isconsistent',['isConsistent',['../class_quant_lib_1_1_seasonality.html#a32d31854a0596d482c100c6c63448213',1,'QuantLib::Seasonality::isConsistent()'],['../class_quant_lib_1_1_multiplicative_price_seasonality.html#a32d31854a0596d482c100c6c63448213',1,'QuantLib::MultiplicativePriceSeasonality::isConsistent()']]],
   ['isdacdsengine',['IsdaCdsEngine',['../class_quant_lib_1_1_isda_cds_engine.html#ab02b657e51fc69d9a131e52bc94dd01a',1,'QuantLib::IsdaCdsEngine']]],
   ['isecbcode',['isECBcode',['../struct_quant_lib_1_1_e_c_b.html#a9fa5fcc17cb504aa3fb5cb54c58d2479',1,'QuantLib::ECB']]],
