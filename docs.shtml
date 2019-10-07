@@ -18,8 +18,10 @@ site</a>.
 <h2 class="center">Books</h2>
 <ul>
 <li>Luigi Ballabio, <strong>Implementing QuantLib</strong><br>
-Available as an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>.
-Drafts are also posted on <a href="http://implementingquantlib.com/">the
+Available as an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
+(also in a <a href=" https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
+by Ruilong Xu).<br>
+Drafts were posted on <a href="http://implementingquantlib.com/">the
 accompanying blog</a>.
 </li>
 <li>Goutham Balaraman and Luigi Ballabio, <strong>QuantLib Python Cookbook</strong><br>
@@ -100,6 +102,7 @@ from other languages.</li>
 <strong>Matthias Groncki's</strong> <a href="https://ipythonquant.wordpress.com/">blog</a>.<br>
 <strong>Goutham Balaraman's</strong> <a href="http://gouthamanbalaraman.com/blog/quantlib-python-tutorials-with-examples.html">blog</a>.<br>
 <strong>Mikael Katajam&auml;ki's</strong> <a href="http://mikejuniperhill.blogspot.com/search/label/Quantlib%20library">blog</a>.<br>
+<strong>Suhas Ghorpadkar's</strong> <a href="http://suhasghorp.com/?s=quantlib&submit=Search">blog</a>.<br>
 </li>
 </ul>
 
