@@ -1,0 +1,29 @@
+digraph "gensrc.addins.addin.Addin"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="gensrc.addins.addin.Addin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Serializable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gensrc.addins.c.CAddin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1c_1_1_c_addin.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="gensrc.addins.calc.CalcAddin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1calc_1_1_calc_addin.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gensrc.addins.cpp.CppAddin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1cpp_1_1_cpp_addin.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gensrc.addins.doxygen.Doxygen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1doxygen_1_1_doxygen.html"];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="gensrc.addins.enumerations.\lEnumerations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1enumerations_1_1_enumerations.html"];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="gensrc.addins.excel.Excel\lAddin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1excel_1_1_excel_addin.html"];
+  Node0 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="gensrc.addins.guile.Guile\lAddin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1guile_1_1_guile_addin.html"];
+  Node0 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="gensrc.addins.loop.Loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1loop_1_1_loop.html"];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="gensrc.addins.serialization.\lSerialization",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1serialization_1_1_serialization.html"];
+  Node0 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="gensrc.addins.valueobjects.\lValueObjects",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1valueobjects_1_1_value_objects.html"];
+}

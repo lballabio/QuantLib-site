@@ -1,0 +1,30 @@
+digraph "xloper.hpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="xloper.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="convert_oper.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$convert__oper_8hpp.html",tooltip="Class ConvertOper - Perform datatype conversions of OPERs. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="opertomatrix.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$opertomatrix_8hpp.html",tooltip="Conversion function operToMatrix - convert an OPER to a matrix. "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="all.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$all_8hpp.html",tooltip="#includes for all Excel conversion functions "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="objecthandlerxl.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$objecthandlerxl_8hpp.html",tooltip="#includes for all functionality in ObjectHandler "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="loop.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$loop_8hpp.html",tooltip="Support for Excel functions which loop on an input value. "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="opertovector.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$opertovector_8hpp.html",tooltip="Conversion function operToVector - convert an OPER to a std::vector. "];
+  Node8 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="functioncall.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$functioncall_8hpp.html",tooltip="Class FunctionCall - Handle state related to the function in progress. "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="callingrange.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$callingrange_8hpp.html",tooltip="Class CallingRange - Processing for the host cell of an Object. "];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="vectortooper.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$vectortooper_8hpp.html",tooltip="Conversion function vectorToOper - Convert STL vector to Excel OPER. "];
+  Node11 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="repositoryxl.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$repositoryxl_8hpp.html",tooltip="Class RepositoryXL - Excel-specific enhancements to the Repository class. "];
+  Node12 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

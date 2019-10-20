@@ -1,0 +1,39 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node51 [label="object",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node51 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="gensrc.addins.addinlist.\lAddinList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1addins_1_1addinlist_1_1_addin_list.html"];
+  Node51 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="gensrc.categories.categorylist.\lCategoryList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1categories_1_1categorylist_1_1_category_list.html"];
+  Node51 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="gensrc.enumerations.enumerationlist.\lEnumerationList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1enumerations_1_1enumerationlist_1_1_enumeration_list.html"];
+  Node51 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="gensrc.functions.behavior.\lBehaviorMember",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behavior_1_1_behavior_member.html"];
+  Node51 -> Node56 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="gensrc.functions.behavior.\lBehaviorProcedure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behavior_1_1_behavior_procedure.html"];
+  Node51 -> Node57 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node57 [label="gensrc.functions.behaviorloop.\lBehaviorLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_loop.html"];
+  Node57 -> Node58 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node58 [label="gensrc.functions.behaviorloop.\lBehaviorMemberLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_member_loop.html"];
+  Node58 -> Node59 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node59 [label="gensrc.functions.behaviorloop.\lBehaviorEnumerationLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_enumeration_loop.html"];
+  Node57 -> Node60 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node60 [label="gensrc.functions.behaviorloop.\lBehaviorProcedureLoop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1functions_1_1behaviorloop_1_1_behavior_procedure_loop.html"];
+  Node51 -> Node61 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node61 [label="gensrc.patterns.singleton.\lSingleton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1patterns_1_1singleton_1_1_singleton.html"];
+  Node51 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="gensrc.serialization.serializable.\lSerializable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1serialization_1_1serializable_1_1_serializable.html"];
+  Node51 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="gensrc.serialization.serializer.\lSerializer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1serialization_1_1serializer_1_1_serializer.html"];
+  Node63 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="gensrc.serialization.xmlreader.\lXmlReader",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1serialization_1_1xmlreader_1_1_xml_reader.html"];
+  Node51 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="gensrc.types.fulltype.FullType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1types_1_1fulltype_1_1_full_type.html"];
+  Node51 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="gensrc.types.typelist.TypeList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1types_1_1typelist_1_1_type_list.html"];
+  Node51 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="gensrc.utilities.outputfile.\lOutputFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1utilities_1_1outputfile_1_1_output_file.html"];
+}

@@ -1,0 +1,9 @@
+digraph "valueobjects" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_da96989858fc03e8e84f2ef05cb69165 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="oh" fontname="Helvetica", fontsize="10", URL="dir_da96989858fc03e8e84f2ef05cb69165.html"]
+  dir_8e8628b8d10346fd3ad83d62f90c0bb9 [shape=box, label="valueobjects", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_8e8628b8d10346fd3ad83d62f90c0bb9.html"];
+  }
+}

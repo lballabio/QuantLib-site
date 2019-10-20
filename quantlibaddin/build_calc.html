@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.14.0</div>
+            <div id="version">Version 1.16.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -50,7 +50,7 @@
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
 <div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -66,7 +66,7 @@
 <div class="contents">
 <div class="textblock"><div align="center"><small><a href="tutorials.html">back to tutorials index</a></small></div><table border="1" bgcolor="lightsteelblue">
 <tr>
-<td><b>NB:</b> For the current release of QuantLibAddin 1.14.0, the LibreOffice build has not been updated. The documentation on this page is out of date and relates to an older build of the LibreOffice addin. <a href="#" onclick="location.href='mai'+'lto:'+'qua'+'nt'+'lib'+'-u'+'ser'+'s@'+'lis'+'ts'+'.sf'+'.n'+'et'; return false;">quant<span style="display: none;">.nosp@m.</span>lib-<span style="display: none;">.nosp@m.</span>users<span style="display: none;">.nosp@m.</span>@lis<span style="display: none;">.nosp@m.</span>ts.sf<span style="display: none;">.nosp@m.</span>.net</a>.  </td></tr>
+<td><b>NB:</b> For the current release of QuantLibAddin 1.16.0, the LibreOffice build has not been updated. The documentation on this page is out of date and relates to an older build of the LibreOffice addin. <a href="#" onclick="location.href='mai'+'lto:'+'qua'+'nt'+'lib'+'-u'+'ser'+'s@'+'lis'+'ts'+'.sf'+'.n'+'et'; return false;">quant<span style="display: none;">.nosp@m.</span>lib-<span style="display: none;">.nosp@m.</span>users<span style="display: none;">.nosp@m.</span>@lis<span style="display: none;">.nosp@m.</span>ts.sf<span style="display: none;">.nosp@m.</span>.net</a>.  </td></tr>
 </table>
 <h1><a class="anchor" id="build_calc_overview"></a>
 Overview</h1>
@@ -79,7 +79,7 @@ Project Status</h1>
 Compiling QuantLibAddin for OpenOffice.org Calc</h1>
 <h2><a class="anchor" id="Prerequisites"></a>
 Prerequisites</h2>
-<p>Before compiling an Addin for OOo Calc you'll need to install the <a href="http://download.openoffice.org/2.4.0/sdk.html">OpenOffice.org Software Development Kit (OOo SDK)</a>. Make sure you get the version of the OOo SDK that corresponds to the version of OOo which you have installed. QuantLibAddin 1.14.0 has been tested against OOo/OOo SDK version 2.4.0.</p>
+<p>Before compiling an Addin for OOo Calc you'll need to install the <a href="http://download.openoffice.org/2.4.0/sdk.html">OpenOffice.org Software Development Kit (OOo SDK)</a>. Make sure you get the version of the OOo SDK that corresponds to the version of OOo which you have installed. QuantLibAddin 1.16.0 has been tested against OOo/OOo SDK version 2.4.0.</p>
 <h2><a class="anchor" id="build_calc_env"></a>
 Environment Variables</h2>
 <p>After installing the above, ensure that the following environment variables are set:</p>
@@ -105,16 +105,16 @@ Build</h2>
 <li><b>idlc</b> - Run OOo utility <b>idlc</b> to compile the idl (interface definition language) file QuantLibAddinCalc.idl into urd (UNO reflection data) file QuantLibAddinCalc.urd. The urd file comprises binary descriptions of the types in the Addin. </li>
 <li><b>regmerge</b> - Run OOo utility <b>regmerge</b> to merge the urd file into rdb (registry database) file QuantLibAddinCalc.rdb. The rdb is used by OOo at runtime to infer the functionality available in the Addin. </li>
 <li><b>cppumaker</b> - Run OOo utility <b>cppumaker</b> to generate the source code corresponding to the definitions in the rdb. </li>
-<li><b>compile</b> - Compile the Addin, including the source generated above, plus the function implementation source code supplied for the Addin. The Addin is compiled into a shared library, i.e. <b>QuantLibAddinCalc-vc71-mt-1_14_0.dll</b> (Windows) or <b>libQuantLibAddinCalc-1.14.0.so</b> (Linux). </li>
+<li><b>compile</b> - Compile the Addin, including the source generated above, plus the function implementation source code supplied for the Addin. The Addin is compiled into a shared library, i.e. <b>QuantLibAddinCalc-vc71-mt-1_16_0.dll</b> (Windows) or <b>libQuantLibAddinCalc-1.16.0.so</b> (Linux). </li>
 <li><b>install</b> - Copy the Addin's shared library and registry database to the OOo program directory.</li>
 </ul>
 <p>One further step is required, the name of the registry database must be added to an OOo ini file in order to inform OOo of the location of the Addin. This step is not automated by the build process and must be performed manually:</p>
 <ul>
 <li>Go to the OOo program directory </li>
 <li>In a text editor, open the unorc file (<code>unorc</code> on Linux, <code>unorc.ini</code> on Windows) </li>
-<li>On the line for UNO_SERVICES, append the text <pre class="fragment">ORIGIN/QuantLibAddinCalc-vc71-mt-1_14_0.rdb
+<li>On the line for UNO_SERVICES, append the text <pre class="fragment">ORIGIN/QuantLibAddinCalc-vc71-mt-1_16_0.rdb
 </pre> </li>
-<li>On the line for UNO_TYPES, append the text <pre class="fragment">$ORIGIN/QuantLibAddinCalc-vc71-mt-1_14_0.rdb
+<li>On the line for UNO_TYPES, append the text <pre class="fragment">$ORIGIN/QuantLibAddinCalc-vc71-mt-1_16_0.rdb
 </pre></li>
 </ul>
 <p>Once everything is in place, launch OOo Calc and hit <code>Ctrl-F2</code> to bring up the list of available functions, if all has gone well the QuantLibAddin functions should appear. The example workbook is </p><pre class="fragment">QuantLibAddin\Clients\Calc\Option.ods

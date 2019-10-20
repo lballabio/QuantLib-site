@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.14.0</div>
+            <div id="version">Version 1.16.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -45,7 +45,7 @@
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
 <div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -72,6 +72,7 @@ Function List</h1>
 <a class="el" href="func_schedule.html#qlScheduleEndDate">qlScheduleEndDate</a> ()<br />
 <a class="el" href="func_schedule.html#qlScheduleEndOfMonth">qlScheduleEndOfMonth</a> ()<br />
 <a class="el" href="func_schedule.html#qlScheduleFromDateVector">qlScheduleFromDateVector</a> ()<br />
+<a class="el" href="func_schedule.html#qlScheduleFullInterfaceFromDateVector">qlScheduleFullInterfaceFromDateVector</a> ()<br />
 <a class="el" href="func_schedule.html#qlScheduleIsRegular">qlScheduleIsRegular</a> ()<br />
 <a class="el" href="func_schedule.html#qlScheduleNextDate">qlScheduleNextDate</a> ()<br />
 <a class="el" href="func_schedule.html#qlSchedulePreviousDate">qlSchedulePreviousDate</a> ()<br />
@@ -181,6 +182,27 @@ Function Documentation</h1>
   <table class="params">
     <tr><td class="paramname">ObjectId</td><td>id of object to be created </td></tr>
     <tr><td class="paramname">EffectiveDate</td><td>date vector. Default value = QuantLib::Date(). </td></tr>
+    <tr><td class="paramname">Permanent</td><td>object permanent/nonpermanent </td></tr>
+    <tr><td class="paramname">Trigger</td><td>dependency tracking trigger </td></tr>
+    <tr><td class="paramname">Overwrite</td><td>overwrite flag</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="anchor" id="qlScheduleFullInterfaceFromDateVector"></a><b>qlScheduleFullInterfaceFromDateVector</b> </p><div class="fragment"><div class="line"><span class="keywordtype">string</span> returnValue</div><div class="line"></div><div class="line">qlScheduleFullInterfaceFromDateVector(</div><div class="line">        <span class="keywordtype">string</span> ObjectId</div><div class="line">        vector&lt;long&gt; Dates</div><div class="line">        vector&lt;bool&gt; IsRegular</div><div class="line">        <span class="keywordtype">string</span> Tenor</div><div class="line">        <span class="keywordtype">string</span> Calendar</div><div class="line">        <span class="keywordtype">string</span> Convention</div><div class="line">        <span class="keywordtype">string</span> TermDateConv</div><div class="line">        <span class="keywordtype">string</span> GenRule</div><div class="line">        <span class="keywordtype">bool</span> EndOfMonth</div><div class="line">        <span class="keywordtype">bool</span> Permanent</div><div class="line">        any Trigger</div><div class="line">        <span class="keywordtype">bool</span> Overwrite)</div></div><!-- fragment --> <dl class="section user"><dt>Description:</dt><dd></dd></dl>
+<p>Construct an object of class Schedule and return its id</p>
+<dl class="section user"><dt>Supported Platforms:</dt><dd></dd></dl>
+<p>C++, Calc, Excel</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ObjectId</td><td>id of object to be created </td></tr>
+    <tr><td class="paramname">Dates</td><td>date vector. Default value = QuantLib::Date(). </td></tr>
+    <tr><td class="paramname">IsRegular</td><td>boolean vector. Default value = true. </td></tr>
+    <tr><td class="paramname">Tenor</td><td>tenor (e.g. 2D for two days , 3W for three weeks, 6M for six months, 1Y for one year). </td></tr>
+    <tr><td class="paramname">Calendar</td><td>holiday calendar (e.g. TARGET). Default value = NullCalendar. </td></tr>
+    <tr><td class="paramname">Convention</td><td>accrual dates business day convention. Default value = Unadjusted. </td></tr>
+    <tr><td class="paramname">TermDateConv</td><td>termination date business day convention. Default value = Unadjusted. </td></tr>
+    <tr><td class="paramname">GenRule</td><td>Date generation rule (Backward, Forward, ThirdWednesday, Twentieth, TwentiethIMM, Zero). Default value = Backward. </td></tr>
+    <tr><td class="paramname">EndOfMonth</td><td>end of month convention. Ignored for Tenor below 1M. Default value = false. </td></tr>
     <tr><td class="paramname">Permanent</td><td>object permanent/nonpermanent </td></tr>
     <tr><td class="paramname">Trigger</td><td>dependency tracking trigger </td></tr>
     <tr><td class="paramname">Overwrite</td><td>overwrite flag</td></tr>

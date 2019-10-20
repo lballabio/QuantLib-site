@@ -1,0 +1,33 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node246 [label="DefaultLossModel",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node246 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="QuantLibAddin::BaseCorrelation\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_base_correlation_loss_model.html"];
+  Node246 -> Node248 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node248 [label="QuantLibAddin::GaussianBinomial\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_gaussian_binomial_loss_model.html"];
+  Node246 -> Node249 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node249 [label="QuantLibAddin::GaussianLHPLoss\lModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_gaussian_l_h_p_loss_model.html"];
+  Node246 -> Node250 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node250 [label="QuantLibAddin::GaussianRandom\lDefaultLM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_gaussian_random_default_l_m.html"];
+  Node246 -> Node251 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node251 [label="QuantLibAddin::GaussianRandom\lLossLM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_gaussian_random_loss_l_m.html"];
+  Node246 -> Node252 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node252 [label="QuantLibAddin::IHGaussPool\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_i_h_gauss_pool_loss_model.html"];
+  Node246 -> Node253 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node253 [label="QuantLibAddin::IHStudent\lPoolLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_i_h_student_pool_loss_model.html"];
+  Node246 -> Node254 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node254 [label="QuantLibAddin::Recursive\lGaussLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_recursive_gauss_loss_model.html"];
+  Node246 -> Node255 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node255 [label="QuantLibAddin::SaddlePoint\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_saddle_point_loss_model.html"];
+  Node246 -> Node256 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node256 [label="QuantLibAddin::TBinomial\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_t_binomial_loss_model.html"];
+  Node246 -> Node257 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node257 [label="QuantLibAddin::TRandomDefaultLM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_t_random_default_l_m.html"];
+  Node246 -> Node258 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node258 [label="QuantLibAddin::TRandomLossLM",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_t_random_loss_l_m.html"];
+  Node246 -> Node259 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node259 [label="QuantLibAddin::TSaddlePoint\lLossModel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_t_saddle_point_loss_model.html"];
+}

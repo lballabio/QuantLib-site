@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.14.0</div>
+            <div id="version">Version 1.16.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -50,7 +50,7 @@
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
 <div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -77,11 +77,15 @@
 Inheritance diagram for QuantLibAddin::Schedule:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_quant_lib_addin_1_1_schedule__inherit__graph.png" border="0" usemap="#_quant_lib_addin_1_1_schedule_inherit__map" alt="Inheritance graph"/></div>
+<map name="_quant_lib_addin_1_1_schedule_inherit__map" id="_quant_lib_addin_1_1_schedule_inherit__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for QuantLibAddin::Schedule:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_quant_lib_addin_1_1_schedule__coll__graph.png" border="0" usemap="#_quant_lib_addin_1_1_schedule_coll__map" alt="Collaboration graph"/></div>
+<map name="_quant_lib_addin_1_1_schedule_coll__map" id="_quant_lib_addin_1_1_schedule_coll__map">
+</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -90,12 +94,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acb1a01cad585b24f6d2db56ba603f7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a111fef5d281facf90357f2c60a67db2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_addin_1_1_schedule.html#a111fef5d281facf90357f2c60a67db2a">Schedule</a> (const boost::shared_ptr&lt; ObjectHandler::ValueObject &gt; &amp;properties, const std::vector&lt; QuantLib::Date &gt; &amp;dates, bool permanent)</td></tr>
 <tr class="separator:a111fef5d281facf90357f2c60a67db2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1796a872609a0b61a164cfe4b37f90fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_addin_1_1_schedule.html#a1796a872609a0b61a164cfe4b37f90fc">Schedule</a> (const boost::shared_ptr&lt; ObjectHandler::ValueObject &gt; &amp;properties, const std::vector&lt; QuantLib::Date &gt; &amp;dates, const std::vector&lt; bool &gt; &amp;isRegular, const QuantLib::Period &amp;tenor, const QuantLib::Calendar &amp;calendar, QuantLib::BusinessDayConvention convention, QuantLib::BusinessDayConvention terminationDateConvention, QuantLib::DateGeneration::Rule rule, bool endOfMonth, bool permanent)</td></tr>
+<tr class="separator:a1796a872609a0b61a164cfe4b37f90fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94df6391d1687db99c3a8cb5c3ff005e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_addin_1_1_schedule.html#a94df6391d1687db99c3a8cb5c3ff005e">Schedule</a> (const boost::shared_ptr&lt; ObjectHandler::ValueObject &gt; &amp;properties, const boost::shared_ptr&lt; QuantLib::Schedule &gt; &amp;originalSchedule, const QuantLib::Date &amp;truncationDate, bool permanent)</td></tr>
 <tr class="separator:a94df6391d1687db99c3a8cb5c3ff005e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acb1a01cad585b24f6d2db56ba603f7d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb1a01cad585b24f6d2db56ba603f7d7">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acb1a01cad585b24f6d2db56ba603f7d7">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +189,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a111fef5d281facf90357f2c60a67db2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a111fef5d281facf90357f2c60a67db2a">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a111fef5d281facf90357f2c60a67db2a">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,8 +222,84 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1796a872609a0b61a164cfe4b37f90fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1796a872609a0b61a164cfe4b37f90fc">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuantLibAddin::Schedule::Schedule </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; ObjectHandler::ValueObject &gt; &amp;&#160;</td>
+          <td class="paramname"><em>properties</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; QuantLib::Date &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; bool &gt; &amp;&#160;</td>
+          <td class="paramname"><em>isRegular</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QuantLib::Period &amp;&#160;</td>
+          <td class="paramname"><em>tenor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QuantLib::Calendar &amp;&#160;</td>
+          <td class="paramname"><em>calendar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QuantLib::BusinessDayConvention&#160;</td>
+          <td class="paramname"><em>convention</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QuantLib::BusinessDayConvention&#160;</td>
+          <td class="paramname"><em>terminationDateConvention</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QuantLib::DateGeneration::Rule&#160;</td>
+          <td class="paramname"><em>rule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>endOfMonth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>permanent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a94df6391d1687db99c3a8cb5c3ff005e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94df6391d1687db99c3a8cb5c3ff005e">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a94df6391d1687db99c3a8cb5c3ff005e">&#9670;&nbsp;</a></span>Schedule() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

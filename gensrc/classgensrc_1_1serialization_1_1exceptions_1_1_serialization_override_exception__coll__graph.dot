@@ -1,0 +1,12 @@
+digraph "gensrc.serialization.exceptions.SerializationOverrideException"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="gensrc.serialization.exceptions.\lSerializationOverrideException",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="gensrc.serialization.exceptions.\lSerializationException",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_exception.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GensrcException",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" OVERRIDE_ERROR" ,fontname="Helvetica"];
+  Node6 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.14.0</div>
+            <div id="version">Version 1.16.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -50,7 +50,7 @@
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
 <div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="images/sflogo.png" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
+<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -64,7 +64,15 @@
 <div class="title">Version History </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.14.0 - November 2018</b></p>
+<div class="textblock"><p><b>Release 1.16.0 - October 2019</b></p>
+<ul>
+<li>Replaced deprecated Actual365NoLeap() with Actual365Fixed(Actual365Fixed::NoLeap) (thanks to Francois Botha)</li>
+<li>Implemented qlScheduleFullInterfaceFromDateVector in order to create schedule with full interface from date vector (thanks to Francois Botha)</li>
+<li>Extended OISRateHelper with payment lag parameter (thanks to BN Algorithms Ltd)</li>
+<li>Extended qlMakeOIS with payment lag parameter (thanks to BN Algorithms Ltd)</li>
+<li>Corrected InterestRateDerivatives example spreadsheet (thanks to BN Algorithms Ltd)</li>
+</ul>
+<p><b>Release 1.14.0 - November 2018</b></p>
 <ul>
 <li>Replaced references to deprecated class CalibrationHelper with references to new class BlackCalibrationHelper.</li>
 </ul>

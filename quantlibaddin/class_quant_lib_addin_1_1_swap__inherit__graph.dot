@@ -1,0 +1,17 @@
+digraph "QuantLibAddin::Swap"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="QuantLibAddin::Swap",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="QuantLibAddin::Instrument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_instrument.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ObjectHandler::LibraryObject\l\< QuantLib::Instrument \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="QuantLibAddin::AssetSwap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_asset_swap.html"];
+  Node0 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="QuantLibAddin::Overnight\lIndexedSwap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_overnight_indexed_swap.html"];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="QuantLibAddin::VanillaSwap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_quant_lib_addin_1_1_vanilla_swap.html"];
+}

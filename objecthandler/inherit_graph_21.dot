@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="ObjectHandler::RegistryManager\l\< T, RegistryClass \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_object_handler_1_1_registry_manager.html",tooltip="Manage access to an Enumeration Registry. "];
+}

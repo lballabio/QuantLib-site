@@ -1,0 +1,14 @@
+digraph "enumregistry.hpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node14 [label="enumregistry.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="typefactory.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typefactory_8hpp.html",tooltip="Class RegistryManager - Manage access to an Enumeration Registry. "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="objecthandler.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$objecthandler_8hpp_source.html"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="objecthandlerxl.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$objecthandlerxl_8hpp.html",tooltip="#includes for all functionality in ObjectHandler "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="loop.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$loop_8hpp.html",tooltip="Support for Excel functions which loop on an input value. "];
+}
