@@ -4,10 +4,9 @@ title: QuantLib in other languages
 ---
 
 <h1 class="center">Other languages and platforms</h1>
-<p>QuantLib is <a href="download.shtml">available</a> as a C#, Guile,
-Java, MzScheme, Perl, Python, and Ruby module by means of <a
-href="http://swig.org/">SWIG</a>. Experimental bindings to
-GNU R and Objective Caml are also available; feedback is welcome.<br>
+<p>QuantLib is <a href="download.shtml">available</a> as a C#,
+Java, Python, R and Ruby module by means of <a
+href="http://swig.org/">SWIG</a>.<br>
 
 <p><a href="http://quantlibaddin.org">QuantLibAddin</a> exports a
 procedural interface to a number of platforms including Microsoft
@@ -16,13 +15,15 @@ and OpenOffice/LibreOffice Calc.
 The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
 QuantLib Addin</a> project also exports QuantLib to Calc.</p>
 
-<p>A modified QuantLib C++ library enabling adjoint automatic differentiation (AAD) is available from <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
+<p>A modified QuantLib C++ library enabling adjoint automatic
+differentiation (AAD) is available
+from <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
 
 <p><a href="http://www.deriscope.com/index.html">Deriscope</a> is
 another project that aims at exporting QuantLib functionality to
 Excel.</p>
 
-<p>GNU R support is provided by means of <a href=
+<p>Idiomatic GNU R support is provided by means of <a href=
 "http://dirk.eddelbuettel.com/code/rquantlib.html">RQuantLib</a> by
 Dirk Eddelbuettel.</p>
 
