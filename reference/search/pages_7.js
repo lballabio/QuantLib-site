@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['user_20configuration',['User configuration',['../config.html',1,'']]],
-  ['usage',['Usage',['../usage.html',1,'']]]
+  ['user_20configuration_5390',['User configuration',['../config.html',1,'']]],
+  ['usage_5391',['Usage',['../usage.html',1,'']]]
 ];
