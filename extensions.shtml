@@ -48,7 +48,8 @@ initial stages and welcomes contributions.</p>
 
 <p>Bindings for Node.js are available from
 the <a href="https://github.com/quantlibnode/quantlibnode">quantlibnode</a>
-project.</p>
+project. Another (closed-source) JavaScript implementation is available
+as <a href="https://quantlib.js.org/">quantlib.js</a>.</p>
 
 <p><a href="https://code.google.com/p/qldds/">QLDDS</a> is a project
 that allows the functionality of the QuantLibAddin for C++ to be
@@ -78,10 +79,6 @@ unrelated Mathematica extension wrapping QuantLib functionality can be
 found at the <a href=
 "http://www.weber-und-partner.com/QuantLib/mma/">Weber und Partner</a>
 site.</p>
-
-<p>A few QuantLib functions have been ported to the Symphony
-grid-computing platform. Details are
-available <a href="http://www.ceri.uniroma1.it/ceri/zirilli/w5/">here</a>.</p>
 
 <p>Finally,
 the <a href="http://www.dsource.org/projects/quantlibd/">QuantLibD</a>
