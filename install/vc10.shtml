@@ -63,9 +63,10 @@ it. Choose <i>Release</i> from the configuration menu in the
 toolbar.</p>
 
 <p><b>5.</b> Open the Property Manager by clicking on <i>View/Property
-Manager</i> and activate it.  Expand the project node of QuantLib in
-the Property Manager and then the <i>Configuration/Platform</i> nodes
-(see screenshot below).</p>
+Manager</i> (or <i>View/Other Windows/Property Manager</i>, depending
+on your version of Visual Studio) and activate it.  Expand the project
+node of QuantLib in the Property Manager and then
+the <i>Configuration/Platform</i> nodes (see screenshot below).</p>
 
 <p>Earlier Visual C++ versions used
 <tt>Microsoft.cpp.&lt;Platform&gt;.users</tt> files for global
