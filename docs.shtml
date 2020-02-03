@@ -5,15 +5,19 @@ title: QuantLib Documentation
 
 <h1 class="center">Official QuantLib Documentation</h1>
 <ul>
-<li><strong>QuantLib reference manual</strong> [<a href=
-"reference/">HTML</a>]<br>
-The reference manual is also available for offline reading from
-our <a href= "https://bintray.com/quantlib/releases/QuantLib">download
-site</a>.
+<li>The <strong>QuantLib reference manual</strong> [<a href=
+"reference/">HTML</a>] is available on this site.
 </li>
 </ul>
 
 <h1 class="center">Other information</h1>
+
+<h2 class="center">Reference</h2>
+<ul>
+<li>David Duarte provides a reference to the QuantLib-Python module
+at <a href="https://quantlib-python-docs.readthedocs.io/">https://quantlib-python-docs.readthedocs.io/</a>.
+It's a work in progress: contributions are welcome through pull requests.</li>
+</ul>
 
 <h2 class="center">Books</h2>
 <ul>
