@@ -4,7 +4,7 @@ title: QuantLib Download Page
 ---
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.17 (December 3rd, 2019).</p>
+<p>The latest QuantLib release is version 1.18 (March 23rd, 2020).</p>
 <p>Source packages for <b>all platforms</b>
 are <a href="https://bintray.com/quantlib/releases">available from
 Bintray</a> in different formats.  Compiling QuantLib
