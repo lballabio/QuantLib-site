@@ -4,6 +4,9 @@ title: QuantLib in other languages
 ---
 
 <h1 class="center">Other languages and platforms</h1>
+
+<h2 class="center">Official wrappers</h2>
+
 <p>QuantLib is <a href="download.shtml">available</a> as a C#,
 Java, Python, R and Ruby module by means of <a
 href="http://swig.org/">SWIG</a>.<br>
@@ -11,21 +14,25 @@ href="http://swig.org/">SWIG</a>.<br>
 <p><a href="http://quantlibaddin.org">QuantLibAddin</a> exports a
 procedural interface to a number of platforms including Microsoft
 Excel (see the <a href="http://quantlibxl.org">QuantLibXL</a> site)
-and OpenOffice/LibreOffice Calc.
-The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
-QuantLib Addin</a> project also exports QuantLib to Calc.</p>
+and OpenOffice/LibreOffice Calc.</p>
+
+<h2 class="center">External projects</h2>
 
 <p>A modified QuantLib C++ library enabling adjoint automatic
-differentiation (AAD) is available
-from <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
+differentiation (AAD) is available from CompatibL
+at <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
 
-<p><a href="http://www.deriscope.com/index.html">Deriscope</a> is
-another project that aims at exporting QuantLib functionality to
-Excel.</p>
+<p>The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
+QuantLib Addin</a> project, based on QuantLibAddin, exports QuantLib
+to Calc.</p>
 
 <p>Idiomatic GNU R support is provided by means of <a href=
 "http://dirk.eddelbuettel.com/code/rquantlib.html">RQuantLib</a> by
 Dirk Eddelbuettel.</p>
+
+<p><a href="http://www.deriscope.com/index.html">Deriscope</a> is
+another project that aims at exporting QuantLib functionality to
+Excel.</p>
 
 <p>An initial web API for QuantLib (also usable from Google Sheets) is
 available from <a href="https://quantra.io/">quantra.io</a>.</p>
@@ -34,9 +41,8 @@ available from <a href="https://quantra.io/">quantra.io</a>.</p>
 as <a href="https://github.com/amaggiulli/qlnet">QLNet</a> and is
 looking for developers.</p>
 
-<p>The <a href="http://www.jquantlib.org/">JQuantLib</a> project aims
-at a 100% Java port. At this time, it provides about 65% of QuantLib
-0.9.7.</p>
+<p>The <a href="http://www.jquantlib.org/">JQuantLib</a> project is a
+Java port.</p>
 
 <p>An alternative set of Python wrappers is provided in
 the <a href="https://github.com/enthought/pyql">PyQL</a> project by
@@ -45,6 +51,9 @@ Didrik Pinte and Patrick Henaff.</p>
 <p><a href="https://github.com/pazzo83/QuantLib.jl">QuantLib.jl</a> is
 a port of QuantLib to the Julia language. The project is in its
 initial stages and welcomes contributions.</p>
+
+<p>An initial port to Rust is available
+from <a href="https://github.com/piquette/quantlib">https://github.com/piquette/quantlib</a>.</p>
 
 <p>Bindings for Node.js are available from
 the <a href="https://github.com/quantlibnode/quantlibnode">quantlibnode</a>
@@ -55,11 +64,6 @@ as <a href="https://quantlib.js.org/">quantlib.js</a>.</p>
 that allows the functionality of the QuantLibAddin for C++ to be
 distributed via OpenDDS across multiple computers running different
 operating systems.</p>
-
-<p>QuantLib was integrated
-into <a href="http://www.ceemple.com/">Ceemple</a>, a solution
-enabling rapid C++ based technical computing via an optimizing
-Just-In-Time compiler.</p>
 
 <p>Other projects aim at ports in a functional language.
 <a href="http://sourceforge.net/projects/quanthas/">QuantHas</a>
