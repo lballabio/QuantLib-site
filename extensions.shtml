@@ -58,7 +58,7 @@ from <a href="https://github.com/piquette/quantlib">https://github.com/piquette/
 <p>Bindings for Node.js are available from
 the <a href="https://github.com/quantlibnode/quantlibnode">quantlibnode</a>
 project. Another (closed-source) JavaScript implementation is available
-as <a href="https://x.cjbd.org/">quantlib.js</a>.</p>
+as <a href="https://quantlib.js.org/">quantlib.js</a>.</p>
 
 <p><a href="https://code.google.com/p/qldds/">QLDDS</a> is a project
 that allows the functionality of the QuantLibAddin for C++ to be
