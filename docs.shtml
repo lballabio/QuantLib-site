@@ -22,11 +22,12 @@ It's a work in progress: contributions are welcome through pull requests.</li>
 <h2 class="center">Books</h2>
 <ul>
 <li>Luigi Ballabio, <strong>Implementing QuantLib</strong><br>
-Available as an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
-(also in a <a href=" https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
-by Ruilong Xu).<br>
-Drafts were posted on <a href="http://implementingquantlib.com/">the
-accompanying blog</a>.
+  Available as a paperback from <a href="https://getbook.at/implementingquantlib">Amazon</a>
+  or an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
+  (also in a <a href=" https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
+  by Ruilong Xu and a <a href="https://leanpub.com/implementingquantlib-jp">Japanese one</a>
+  by Aki Sakashita).<br>
+  Drafts were posted on <a href="http://implementingquantlib.com/">the accompanying blog</a>.
 </li>
 <li>Goutham Balaraman and Luigi Ballabio, <strong>QuantLib Python Cookbook</strong><br>
 Available as an ebook from <a href="https://leanpub.com/quantlibpythoncookbook/">Leanpub</a>.
@@ -50,9 +51,8 @@ during a course he taught, along with the corresponding code:<br>
 [<a href="slides/dima-code.zip">ZIP</a>]<br>
 </li>
 <li><strong>Marco Marchioro</strong> has made available the slides for
-his derivatives class at Milan University, in which he uses QuantLibXL
-for teaching.  They can be downloaded from the <em>Advanced
-Derivatives</em> page on his
+his derivatives class at Milan University, in which he used QuantLibXL
+for teaching.  They can be found from the <em>QuantLib</em> page on his
 site, <a href="http://www.marchioro.org/">http://www.marchioro.org/</a>,
 along with the corresponding spreadsheets and additional material.
 </li>
