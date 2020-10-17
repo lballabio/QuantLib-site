@@ -58,6 +58,23 @@ along with the corresponding spreadsheets and additional material.
 </li>
 </ul>
 
+<h2 class="center">Talks</h2>
+<ul>
+<li><strong>Introduction to QuantLib</strong>
+is <a href="http://bit.ly/2fjfmiU">a talk by Robert Hardy</a> for Skills Matter
+that introduces QuantLib and QuantLibXL and gives a few examples of
+their use.</li>
+<li><strong>Introduction to QuantLib and Using QuantLib
+Programmatically</strong> is <a href="http://bit.ly/2fiVzhc">a talk by
+Bojan Nikolic</a> for Skills Matter that shows examples of using QuantLib
+from other languages.</li>
+<li><strong>A Short Introduction to QuantLib</strong>
+is <a href="https://thalesians.com/aiovg_videos/luigi-ballabio-a-short-introduction-to-quantlib/">a
+talk by Luigi Ballabio</a> for the Thalesians in which he describes
+the core design of QuantLib through a few live examples of its usage.
+</li>
+</ul>
+
 <h2 class="center">Videos</h2>
 <ul>
 <li><strong>The QuantLib Notebooks</strong>
@@ -73,23 +90,6 @@ the library.</li>
 different <a href="https://www.youtube.com/playlist?list=PLvXg_ZPrPUfqSFEsI9baI8vP2agnLHCwD">series
 of screencasts</a>, also called <strong>Introduction to
 QuantLib</strong>, is published by Carol Zheng.</li>
-<li><strong>A Look at QuantLib Usage and Development</strong> is the
-recording of <a href="http://quantshub.com/qhworkshopview/63">a
-one-day workshop</a> given by Luigi Ballabio for Quants Hub. It is
-available for purchase separately or as part of their subscription
-service.</li>
-</ul>
-
-<h2 class="center">Talks</h2>
-<ul>
-<li><strong>Introduction to QuantLib</strong>
-is <a href="http://bit.ly/2fjfmiU">a talk by Robert Hardy</a> for Skills Matter
-that introduces QuantLib and QuantLibXL and gives a few examples of
-their use.</li>
-<li><strong>Introduction to QuantLib and Using QuantLib
-Programmatically</strong> is <a href="http://bit.ly/2fiVzhc">a talk by
-Bojan Nikolic</a> for Skills Matter that shows examples of using QuantLib
-from other languages.</li>
 </ul>
 
 <h2 class="center">Blogs</h2>
