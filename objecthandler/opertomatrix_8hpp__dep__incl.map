@@ -1,0 +1,6 @@
+<map id="opertomatrix.hpp" name="opertomatrix.hpp">
+<area shape="rect" id="node1" title="Conversion function operToMatrix &#45; convert an OPER to a matrix." alt="" coords="13,5,148,32"/>
+<area shape="rect" id="node2" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="47,80,114,107"/>
+<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="41,229,120,256"/>
+</map>

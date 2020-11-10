@@ -1,0 +1,6 @@
+<map id="ObjectHandler::Object" name="ObjectHandler::Object">
+<area shape="rect" id="node1" title="Interface for Objects to be stored in the ObjectHandler Repository." alt="" coords="5,64,171,91"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_group.html" title="A collection of Objects." alt="" coords="243,5,405,32"/>
+<area shape="rect" id="node3" href="$class_object_handler_1_1_library_object.html" title="Customizes the Object class for most typical uses." alt="" coords="219,57,429,98"/>
+<area shape="rect" id="node4" href="$class_object_handler_1_1_range.html" title="Container for a matrix of doubles." alt="" coords="242,123,406,149"/>
+</map>

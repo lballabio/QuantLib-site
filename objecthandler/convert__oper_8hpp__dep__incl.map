@@ -1,0 +1,8 @@
+<map id="convert_oper.hpp" name="convert_oper.hpp">
+<area shape="rect" id="node1" title="Class ConvertOper &#45; Perform datatype conversions of OPERs." alt="" coords="84,5,219,32"/>
+<area shape="rect" id="node2" href="$opertomatrix_8hpp.html" title="Conversion function operToMatrix &#45; convert an OPER to a matrix." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node6" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector." alt="" coords="164,80,296,107"/>
+<area shape="rect" id="node3" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="118,155,185,181"/>
+<area shape="rect" id="node4" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="76,229,227,256"/>
+<area shape="rect" id="node5" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="112,304,191,331"/>
+</map>

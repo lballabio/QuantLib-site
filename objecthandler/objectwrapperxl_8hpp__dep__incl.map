@@ -1,0 +1,7 @@
+<map id="objectwrapperxl.hpp" name="objectwrapperxl.hpp">
+<area shape="rect" id="node1" title="Class ObjectWrapperXL &#45; Customization of the ObjectWrapper class for the Excel platform." alt="" coords="96,5,251,32"/>
+<area shape="rect" id="node2" href="$callingrange_8hpp.html" title="Class CallingRange &#45; Processing for the host cell of an Object." alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="149,155,299,181"/>
+<area shape="rect" id="node5" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class." alt="" coords="211,80,339,107"/>
+<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="185,229,263,256"/>
+</map>

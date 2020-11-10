@@ -1,0 +1,3 @@
+<map id="ObjectHandler::SerializationFactory" name="ObjectHandler::SerializationFactory">
+<area shape="rect" id="node1" title="A Singleton wrapping the boost::serialization interface." alt="" coords="5,5,209,47"/>
+</map>

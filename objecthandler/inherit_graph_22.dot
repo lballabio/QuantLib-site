@@ -1,9 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="ObjectHandler::Repository",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_object_handler_1_1_repository.html",tooltip="Maintain a store of Objects. "];
-  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 [label="ObjectHandler::RepositoryXL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_object_handler_1_1_repository_x_l.html",tooltip="Excel-specific enhancements to the Repository class. "];
-}

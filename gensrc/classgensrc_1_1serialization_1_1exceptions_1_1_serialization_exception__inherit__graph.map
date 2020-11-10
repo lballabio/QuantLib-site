@@ -1,0 +1,11 @@
+<map id="gensrc.serialization.exceptions.SerializationException" name="gensrc.serialization.exceptions.SerializationException">
+<area shape="rect" id="node1" title=" " alt="" coords="264,201,492,243"/>
+<area shape="rect" id="node3" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_convert_boolean_exception.html" title=" " alt="" coords="540,5,811,47"/>
+<area shape="rect" id="node4" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_creator_exception.html" title=" " alt="" coords="561,71,789,112"/>
+<area shape="rect" id="node5" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_dict_exception.html" title=" " alt="" coords="561,136,789,177"/>
+<area shape="rect" id="node6" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_duplicate_key_exception.html" title=" " alt="" coords="549,201,802,243"/>
+<area shape="rect" id="node7" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_element_missing_exception.html" title=" " alt="" coords="540,267,811,308"/>
+<area shape="rect" id="node8" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_override_exception.html" title=" " alt="" coords="561,332,789,373"/>
+<area shape="rect" id="node9" href="$classgensrc_1_1serialization_1_1exceptions_1_1_serialization_parse_exception.html" title=" " alt="" coords="561,397,789,439"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,209,216,235"/>
+</map>

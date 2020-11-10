@@ -1,0 +1,13 @@
+<map id="xloper.hpp" name="xloper.hpp">
+<area shape="rect" id="node1" title="Class Xloper &#45; Perform RAII for Excel&#39;s XLOPER datatype." alt="" coords="314,5,405,32"/>
+<area shape="rect" id="node2" href="$convert__oper_8hpp.html" title="Class ConvertOper &#45; Perform datatype conversions of OPERs." alt="" coords="163,80,297,107"/>
+<area shape="rect" id="node8" href="$functioncall_8hpp.html" title="Class FunctionCall &#45; Handle state related to the function in progress." alt="" coords="427,80,553,107"/>
+<area shape="rect" id="node3" href="$opertomatrix_8hpp.html" title="Conversion function operToMatrix &#45; convert an OPER to a matrix." alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node7" href="$opertovector_8hpp.html" title="Conversion function operToVector &#45; convert an OPER to a std::vector." alt="" coords="164,155,296,181"/>
+<area shape="rect" id="node4" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="241,229,307,256"/>
+<area shape="rect" id="node5" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="364,304,515,331"/>
+<area shape="rect" id="node6" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="400,379,479,405"/>
+<area shape="rect" id="node9" href="$callingrange_8hpp.html" title="Class CallingRange &#45; Processing for the host cell of an Object." alt="" coords="578,155,709,181"/>
+<area shape="rect" id="node10" href="$vectortooper_8hpp.html" title="Conversion function vectorToOper &#45; Convert STL vector to Excel OPER." alt="" coords="320,155,452,181"/>
+<area shape="rect" id="node11" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class." alt="" coords="375,229,503,256"/>
+</map>

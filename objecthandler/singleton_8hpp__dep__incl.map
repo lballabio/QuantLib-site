@@ -1,0 +1,10 @@
+<map id="singleton.hpp" name="singleton.hpp">
+<area shape="rect" id="node1" title="basic support for the singleton pattern" alt="" coords="155,5,265,32"/>
+<area shape="rect" id="node2" href="$enumregistry_8hpp.html" title="EnumRegistry Classes &#45; Concrete implementations of class Registry." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node7" href="$logger_8hpp.html" title="Logger class wrapper for logging framework." alt="" coords="165,80,255,107"/>
+<area shape="rect" id="node8" href="$configuration_8hpp.html" title="Class Configuration &#45; Global configuration information." alt="" coords="208,155,343,181"/>
+<area shape="rect" id="node3" href="$typefactory_8hpp.html" title="Class RegistryManager &#45; Manage access to an Enumeration Registry." alt="" coords="45,155,167,181"/>
+<area shape="rect" id="node4" href="$objecthandler_8hpp_source.html" title=" " alt="" coords="59,229,198,256"/>
+<area shape="rect" id="node5" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="107,304,257,331"/>
+<area shape="rect" id="node6" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="143,379,221,405"/>
+</map>

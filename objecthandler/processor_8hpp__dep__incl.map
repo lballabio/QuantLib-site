@@ -1,0 +1,6 @@
+<map id="processor.hpp" name="processor.hpp">
+<area shape="rect" id="node1" title="Class Processor &#45; Restore an Object&#39;s state after deserialization." alt="" coords="25,5,137,32"/>
+<area shape="rect" id="node2" href="$objecthandler_8hpp_source.html" title=" " alt="" coords="11,80,150,107"/>
+<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="41,229,120,256"/>
+</map>

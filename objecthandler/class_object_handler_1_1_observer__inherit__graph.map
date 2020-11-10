@@ -1,0 +1,5 @@
+<map id="ObjectHandler::Observer" name="ObjectHandler::Observer">
+<area shape="rect" id="node1" title="Object that gets notified when a given observable changes." alt="" coords="32,5,215,32"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_object_wrapper.html" title="Container to ensure that Object references are updated." alt="" coords="13,80,233,107"/>
+<area shape="rect" id="node3" href="$class_object_handler_1_1_object_wrapper_x_l.html" title="Customization of the ObjectWrapper class for the Excel platform." alt="" coords="5,155,241,181"/>
+</map>

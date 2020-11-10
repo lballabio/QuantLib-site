@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_object_handler_1_1_processor.html" title="Restore the state of an Object after deserialization." alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_default_processor.html" title="Default behavior for post serialization processing of an Object." alt="" coords="240,5,475,32"/>
+</map>

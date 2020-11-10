@@ -1,0 +1,9 @@
+<map id="repository.hpp" name="repository.hpp">
+<area shape="rect" id="node1" title="Class Repository &#45; Maintain a store of Objects." alt="" coords="143,5,258,32"/>
+<area shape="rect" id="node2" href="$getobjectvector_8hpp.html" title="Helper functions to facilitate retrieval of Object lists." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node6" href="$objecthandler_8hpp_source.html" title=" " alt="" coords="131,155,270,181"/>
+<area shape="rect" id="node7" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class." alt="" coords="241,80,369,107"/>
+<area shape="rect" id="node3" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="41,155,107,181"/>
+<area shape="rect" id="node4" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="125,229,276,256"/>
+<area shape="rect" id="node5" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="161,304,240,331"/>
+</map>

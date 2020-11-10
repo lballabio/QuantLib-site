@@ -1,0 +1,9 @@
+<map id="functioncall.hpp" name="functioncall.hpp">
+<area shape="rect" id="node1" title="Class FunctionCall &#45; Handle state related to the function in progress." alt="" coords="215,5,342,32"/>
+<area shape="rect" id="node2" href="$callingrange_8hpp.html" title="Class CallingRange &#45; Processing for the host cell of an Object." alt="" coords="5,80,136,107"/>
+<area shape="rect" id="node3" href="$vectortooper_8hpp.html" title="Conversion function vectorToOper &#45; Convert STL vector to Excel OPER." alt="" coords="161,80,293,107"/>
+<area shape="rect" id="node5" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="255,229,406,256"/>
+<area shape="rect" id="node7" href="$repositoryxl_8hpp.html" title="Class RepositoryXL &#45; Excel&#45;specific enhancements to the Repository class." alt="" coords="368,155,496,181"/>
+<area shape="rect" id="node4" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="211,155,277,181"/>
+<area shape="rect" id="node6" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="291,304,370,331"/>
+</map>

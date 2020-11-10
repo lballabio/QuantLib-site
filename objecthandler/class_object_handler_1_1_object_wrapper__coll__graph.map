@@ -1,0 +1,5 @@
+<map id="ObjectHandler::ObjectWrapper" name="ObjectHandler::ObjectWrapper">
+<area shape="rect" id="node1" title="Container to ensure that Object references are updated." alt="" coords="93,80,313,107"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_observer.html" title="Object that gets notified when a given observable changes." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node3" href="$class_object_handler_1_1_observable.html" title="Object that notifies its changes to a set of observers." alt="" coords="213,5,410,32"/>
+</map>

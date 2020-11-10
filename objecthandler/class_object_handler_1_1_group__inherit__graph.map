@@ -1,0 +1,4 @@
+<map id="ObjectHandler::Group" name="ObjectHandler::Group">
+<area shape="rect" id="node1" title="A collection of Objects." alt="" coords="7,80,169,107"/>
+<area shape="rect" id="node2" href="$class_object_handler_1_1_object.html" title="Interface for Objects to be stored in the ObjectHandler Repository." alt="" coords="5,5,171,32"/>
+</map>

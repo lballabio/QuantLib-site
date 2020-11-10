@@ -1,0 +1,8 @@
+<map id="scalartooper.hpp" name="scalartooper.hpp">
+<area shape="rect" id="node1" title="Conversion function scalarToOper &#45; convert an Excel OPER to a scalar value." alt="" coords="24,5,154,32"/>
+<area shape="rect" id="node2" href="$all_8hpp.html" title="#includes for all Excel conversion functions" alt="" coords="56,155,122,181"/>
+<area shape="rect" id="node5" href="$matrixtooper_8hpp.html" title="Conversion function matrixToOper &#45; Convert matrix to Excel OPER." alt="" coords="22,80,156,107"/>
+<area shape="rect" id="node6" href="$vectortooper_8hpp.html" title="Conversion function vectorToOper &#45; Convert STL vector to Excel OPER." alt="" coords="180,80,312,107"/>
+<area shape="rect" id="node3" href="$objecthandlerxl_8hpp.html" title="#includes for all functionality in ObjectHandler" alt="" coords="14,229,164,256"/>
+<area shape="rect" id="node4" href="$loop_8hpp.html" title="Support for Excel functions which loop on an input value." alt="" coords="50,304,128,331"/>
+</map>
