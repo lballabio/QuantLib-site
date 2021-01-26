@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.20.0</div>
+            <div id="version">Version 1.21.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -49,8 +49,6 @@
 <div class="logo">
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
-<div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -589,6 +587,8 @@ QuantLib::Compounding</h2>
 <tr>
 <td>Compounded</td><td>QuantLib::Compounded </td></tr>
 <tr>
+<td>CompoundedThenSimple</td><td>QuantLib::CompoundedThenSimple </td></tr>
+<tr>
 <td>Continuous</td><td>QuantLib::Continuous </td></tr>
 <tr>
 <td>Simple</td><td>QuantLib::Simple </td></tr>
@@ -829,7 +829,11 @@ QuantLib::DayCounter</h2>
 <tr>
 <td>A/365 (Fixed)</td><td>QuantLib::Actual365Fixed() </td></tr>
 <tr>
+<td>A/365 (NL)</td><td>QuantLib::Actual365Fixed(QuantLib::Actual365Fixed::NoLeap) </td></tr>
+<tr>
 <td>A/365F</td><td>QuantLib::Actual365Fixed() </td></tr>
+<tr>
+<td>A/365NL</td><td>QuantLib::Actual365Fixed(QuantLib::Actual365Fixed::NoLeap) </td></tr>
 <tr>
 <td>Act/360</td><td>QuantLib::Actual360() </td></tr>
 <tr>
@@ -848,6 +852,8 @@ QuantLib::DayCounter</h2>
 <td>Actual/365 (Fixed)</td><td>QuantLib::Actual365Fixed() </td></tr>
 <tr>
 <td>Actual/365 (JGB)</td><td>QuantLib::Actual365Fixed(QuantLib::Actual365Fixed::NoLeap) </td></tr>
+<tr>
+<td>Actual/365 (NL)</td><td>QuantLib::Actual365Fixed(QuantLib::Actual365Fixed::NoLeap) </td></tr>
 <tr>
 <td>Actual/365 (No Leap)</td><td>QuantLib::Actual365Fixed(QuantLib::Actual365Fixed::NoLeap) </td></tr>
 <tr>

@@ -1,4 +1,7 @@
 <map id="gensrc.patterns.singleton.Singleton" name="gensrc.patterns.singleton.Singleton">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,196,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="69,5,132,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="41,169,232,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,87,68,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="92,87,181,114"/>
+<area shape="rect" id="node4" href="$classgensrc_1_1patterns_1_1singleton_1_1_meta_singleton.html" title=" " alt="" coords="205,80,396,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="275,5,326,32"/>
 </map>

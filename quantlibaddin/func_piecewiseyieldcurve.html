@@ -23,7 +23,7 @@
         </div>
         <div id='content'>
             <div id='col-left'>
-            <div id="version">Version 1.20.0</div>
+            <div id="version">Version 1.21.0</div>
                 <div id='sidebar'>
 <ul>
 <li class="menuheader"><a href="index.html">Home</a></li>
@@ -49,8 +49,6 @@
 <div class="logo">
 <div class="vspace"></div>
 <a href="http://www.reposit.be" id="reposit_logo"></a>
-<div class="vspace"></div>
-<a class="imglink" href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=12470&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo"/></a>
 <div class="vspace"></div>
 </div>
             </div>
@@ -98,7 +96,7 @@ Function Documentation</h1>
 </div><!-- fragment --> <dl class="section user"><dt>Description:</dt><dd></dd></dl>
 <p>Construct an object of class PiecewiseYieldCurve and return its id</p>
 <dl class="section user"><dt>Supported Platforms:</dt><dd></dd></dl>
-<p>C++, Calc, Excel</p>
+<p>Excel, Calc, C++</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ObjectId</td><td>id of object to be created </td></tr>
@@ -109,7 +107,7 @@ Function Documentation</h1>
     <tr><td class="paramname">Jumps</td><td>Jump quotes vector. </td></tr>
     <tr><td class="paramname">JumpDates</td><td>Jump dates vector. </td></tr>
     <tr><td class="paramname">Accuracy</td><td>Bootstrapping accuracy. Default value = 1.0e-12. </td></tr>
-    <tr><td class="paramname">TraitsID</td><td>Discount, ZeroRate, or ForwardRate. Default value = Discount. </td></tr>
+    <tr><td class="paramname">TraitsID</td><td>Discount, ZeroYield, or ForwardRate. Default value = Discount. </td></tr>
     <tr><td class="paramname">InterpolatorID</td><td>BackwardFlat, ForwardFlat, Linear, LogLinear, CubicSpline, or LogCubic. Default value = LogLinear. </td></tr>
     <tr><td class="paramname">Permanent</td><td>object permanent/nonpermanent </td></tr>
     <tr><td class="paramname">Trigger</td><td>dependency tracking trigger </td></tr>
@@ -202,7 +200,7 @@ Function Documentation</h1>
 </div><!-- fragment --> <dl class="section user"><dt>Description:</dt><dd></dd></dl>
 <p>Construct an object of class PiecewiseYieldCurve and return its id</p>
 <dl class="section user"><dt>Supported Platforms:</dt><dd></dd></dl>
-<p>C++, Calc, Excel</p>
+<p>Excel, Calc, C++</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ObjectId</td><td>id of object to be created </td></tr>
@@ -213,7 +211,7 @@ Function Documentation</h1>
     <tr><td class="paramname">Jumps</td><td>Jump quotes vector. </td></tr>
     <tr><td class="paramname">JumpDates</td><td>Jump dates vector. </td></tr>
     <tr><td class="paramname">Accuracy</td><td>Bootstrapping accuracy. Default value = 1.0e-12. </td></tr>
-    <tr><td class="paramname">TraitsID</td><td>Discount, ZeroRate, or ForwardRate. Default value = Discount. </td></tr>
+    <tr><td class="paramname">TraitsID</td><td>Discount, ZeroYield, or ForwardRate. Default value = Discount. </td></tr>
     <tr><td class="paramname">InterpolatorID</td><td>BackwardFlat, ForwardFlat, Linear, LogLinear, CubicSpline, or LogCubic. Default value = LogLinear. </td></tr>
     <tr><td class="paramname">MixedInterpolationBehavior</td><td>ShareRanges to join two different interpolations over all the pillars, SplitRanges otherwise. Default value = ShareRanges. </td></tr>
     <tr><td class="paramname">PillarsBeforeChange</td><td>Number of pillars before the interpolation change. </td></tr>
