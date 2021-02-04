@@ -35,8 +35,8 @@ section.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>Download QuantLib from its download page on Bintray, located
-at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.
+<p>Download QuantLib from its download page on GitHub, located
+at <a href="https://github.com/lballabio/QuantLib/releases">https://github.com/lballabio/QuantLib/releases</a>.
 You want to download the tar.gz package (at the time of this writing,
 1.8 is the latest version) and extract it by running
 <pre>

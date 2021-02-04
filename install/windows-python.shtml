@@ -11,11 +11,8 @@ title: QuantLib-Python Installation on Windows
 <p>The following assumes that you already installed QuantLib (but
 first, you might consider installing from PyPI; read
 below). Instructions for that are available
-at <a href="http://quantlib.org/install/vc9.shtml">http://quantlib.org/install/vc9.shtml</a>
-for Visual Studio 9 (2008) and
-at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>
-for Visual Studio 10 (2010) and later.  Note that QuantLib must be
-compiled in Release mode.</p>
+at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>.
+Note that QuantLib must be compiled in Release mode.</p>
 
 <h2>QuantLib-Python Installation</h2>
 
@@ -34,8 +31,8 @@ next section.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>You can download released QuantLib-SWIG versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
+<p>You can download released QuantLib-SWIG versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the zip file, extract it to obtain a folder with a
 name like <code>QuantLib-SWIG-1.9</code> (1.9 is the most recent

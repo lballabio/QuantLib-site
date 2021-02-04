@@ -6,8 +6,10 @@ title: QuantLib Download Page
 <h1 class="center">Download QuantLib</h1>
 <p>The latest QuantLib release is version 1.21 (January 20th, 2021).</p>
 <p>Source packages for <b>all platforms</b>
-are <a href="https://bintray.com/quantlib/releases">available from
-Bintray</a> in different formats.  Compiling QuantLib
+are available from GitHub in both zip and tar.gz format
+for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
+and <a href="https://github.com/lballabio/QuantLib-SWIG/releases/latest">QuantLib-SWIG</a>.
+Compiling QuantLib
 requires a working <a href="http://www.boost.org">Boost</a>
 installation; Boost 1.48 or later is required, but a more recent
 version is suggested. Advanced users may want

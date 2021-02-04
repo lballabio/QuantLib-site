@@ -49,8 +49,8 @@ it yourself as described in the next section.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>You can download released QuantLib versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.</p>
+<p>You can download released QuantLib versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib/releases">https://github.com/lballabio/QuantLib/releases</a>.</p>
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
 tar xzf QuantLib-1.4.1.tar.gz

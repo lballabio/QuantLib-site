@@ -82,9 +82,8 @@ installed.</p>
 
 <h2>QuantLib Installation</h2>
 
-<p>If you haven't downloaded QuantLib yet, go to its download page on
-Bintray, located
-at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>. Find
+<p>If you haven't downloaded QuantLib yet, go to its release page, located
+at <a href="https://github.com/lballabio/QuantLib/releases">https://github.com/lballabio/QuantLib/releases</a>. Find
 the latest version (at the time of this writing, 0.9.7; this will have
 changed when you read this) and download the zip archive to your local
 drive.  Create a <tt>C:\QuantLib</tt> folder (or any folder you want)

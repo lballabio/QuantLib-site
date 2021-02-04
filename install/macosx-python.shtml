@@ -34,8 +34,8 @@ section.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>You can download released QuantLib-SWIG versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
+<p>You can download released QuantLib-SWIG versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
