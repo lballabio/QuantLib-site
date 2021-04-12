@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -98,12 +98,10 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a55f022485ff175b831875b9a8b39a600"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_error.html#a55f022485ff175b831875b9a8b39a600">Error</a> (const std::string &amp;file, long line, const std::string &amp;functionName, const std::string &amp;message=&quot;&quot;)</td></tr>
 <tr class="separator:a55f022485ff175b831875b9a8b39a600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e90ca50dff9f67db785f712731faa43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_error.html#a9e90ca50dff9f67db785f712731faa43">~Error</a> ()  throw ()</td></tr>
-<tr class="separator:a9e90ca50dff9f67db785f712731faa43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79009ed133fa02b942ddce8f0b987f3e"><td class="memItemLeft" align="right" valign="top"><a id="a79009ed133fa02b942ddce8f0b987f3e"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_error.html#a79009ed133fa02b942ddce8f0b987f3e">what</a> () const  throw ()</td></tr>
-<tr class="memdesc:a79009ed133fa02b942ddce8f0b987f3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the error message. <br /></td></tr>
-<tr class="separator:a79009ed133fa02b942ddce8f0b987f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822451c3c846baa5a91974fa42979245"><td class="memItemLeft" align="right" valign="top"><a id="a822451c3c846baa5a91974fa42979245"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_error.html#a822451c3c846baa5a91974fa42979245">what</a> () const QL_NOEXCEPT override</td></tr>
+<tr class="memdesc:a822451c3c846baa5a91974fa42979245"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the error message. <br /></td></tr>
+<tr class="separator:a822451c3c846baa5a91974fa42979245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base error class. </p>
@@ -148,30 +146,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
       </table>
 </div><div class="memdoc">
 <p>The explicit use of this constructor is not advised. Use the QL_FAIL macro instead. </p>
-
-</div>
-</div>
-<a id="a9e90ca50dff9f67db785f712731faa43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e90ca50dff9f67db785f712731faa43">&#9670;&nbsp;</a></span>~Error()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">~<a class="el" href="class_quant_lib_1_1_error.html">Error</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td align="right">throw </td><td>(</td><td colspan="2"></td>
-        </tr>
-        <tr>
-          <td align="right"></td><td>)</td><td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>the automatically generated destructor would not have the throw specifier. </p>
 
 </div>
 </div>

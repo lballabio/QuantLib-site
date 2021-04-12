@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lattice_20methods_5422',['Lattice methods',['../group__lattices.html',1,'']]]
+  ['lattice_20methods_5429',['Lattice methods',['../group__lattices.html',1,'']]]
 ];

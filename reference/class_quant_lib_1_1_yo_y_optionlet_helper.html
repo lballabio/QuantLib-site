@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -106,19 +106,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9e9225cda06bf4dbac599bab73cd1976"><td class="memItemLeft" align="right" valign="top"><a id="a9e9225cda06bf4dbac599bab73cd1976"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>YoYOptionletHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;price, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> notional, YoYInflationCapFloor::Type capFloorType, <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;lag, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;yoyDayCounter, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;paymentCalendar, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; &amp;index, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> strike, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> n, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_cap_floor_engine.html">YoYInflationCapFloorEngine</a> &gt; &amp;pricer)</td></tr>
-<tr class="separator:a9e9225cda06bf4dbac599bab73cd1976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464b4c5152e08c1ba4be3b8c3822aef6"><td class="memItemLeft" align="right" valign="top"><a id="a464b4c5152e08c1ba4be3b8c3822aef6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTermStructure</b> (<a class="el" href="class_quant_lib_1_1_yo_y_optionlet_volatility_surface.html">YoYOptionletVolatilitySurface</a> *)</td></tr>
-<tr class="separator:a464b4c5152e08c1ba4be3b8c3822aef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a528f192004b60d122f4eacc673a80a8b"><td class="memItemLeft" align="right" valign="top"><a id="a528f192004b60d122f4eacc673a80a8b"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedQuote</b> () const</td></tr>
-<tr class="separator:a528f192004b60d122f4eacc673a80a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae91ce105dea9667989086249dd961df9"><td class="memItemLeft" align="right" valign="top"><a id="ae91ce105dea9667989086249dd961df9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>YoYOptionletHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;price, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> notional, YoYInflationCapFloor::Type capFloorType, <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;lag, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> yoyDayCounter, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> paymentCalendar, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; index, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> strike, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> n, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_cap_floor_engine.html">YoYInflationCapFloorEngine</a> &gt; pricer)</td></tr>
+<tr class="separator:ae91ce105dea9667989086249dd961df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bc9d8da63639e34a11c9a7feffd9bb"><td class="memItemLeft" align="right" valign="top"><a id="a34bc9d8da63639e34a11c9a7feffd9bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTermStructure</b> (<a class="el" href="class_quant_lib_1_1_yo_y_optionlet_volatility_surface.html">YoYOptionletVolatilitySurface</a> *) override</td></tr>
+<tr class="separator:a34bc9d8da63639e34a11c9a7feffd9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top"><a id="ab5f37fe136acee4d7bfd196bcf8bb315"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedQuote</b> () const override</td></tr>
+<tr class="separator:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_bootstrap_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_bootstrap_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper&lt; YoYOptionletVolatilitySurface &gt;</a></td></tr>
-<tr class="memitem:a1299b8acb0c37531455f26756650dcdd inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a1299b8acb0c37531455f26756650dcdd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote)</td></tr>
-<tr class="separator:a1299b8acb0c37531455f26756650dcdd inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edd818cd1b993f75b4f4f9be6e7d95a inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a8edd818cd1b993f75b4f4f9be6e7d95a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; quote)</td></tr>
+<tr class="separator:a8edd818cd1b993f75b4f4f9be6e7d95a inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e2d8f3f54ffbebf7627f11beb8b0dd2 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7e2d8f3f54ffbebf7627f11beb8b0dd2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> quote)</td></tr>
 <tr class="separator:a7e2d8f3f54ffbebf7627f11beb8b0dd2 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,8 +148,8 @@ virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><t
 <tr class="memitem:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#a7a0400995f63278e99cf2afec5ccdc6d">latestDate</a> () const</td></tr>
 <tr class="memdesc:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">latest date  <a href="class_quant_lib_1_1_bootstrap_helper.html#a7a0400995f63278e99cf2afec5ccdc6d">More...</a><br /></td></tr>
 <tr class="separator:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7eaf2f5dccce1c7781b54d64ba4a07 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a1d7eaf2f5dccce1c7781b54d64ba4a07"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;)</td></tr>
 <tr class="separator:a1d7eaf2f5dccce1c7781b54d64ba4a07 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -118,27 +118,27 @@ std::vector&lt; <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413
 <tr class="separator:a6309f18a293d773bfaae0765eee4655b inherit pub_methods_class_quant_lib_1_1_market_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">MarketModel interface</h2></td></tr>
-<tr class="memitem:abe4250547c1a9a1c32e1fe09f2c054ad"><td class="memItemLeft" align="right" valign="top"><a id="abe4250547c1a9a1c32e1fe09f2c054ad"></a>
-const std::vector&lt; <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>initialRates</b> () const</td></tr>
-<tr class="separator:abe4250547c1a9a1c32e1fe09f2c054ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf3644f30aa430cf19718186afc5cc5"><td class="memItemLeft" align="right" valign="top"><a id="aaaf3644f30aa430cf19718186afc5cc5"></a>
-const std::vector&lt; <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>displacements</b> () const</td></tr>
-<tr class="separator:aaaf3644f30aa430cf19718186afc5cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d9ba7619a08e47149e4e83edad1f517"><td class="memItemLeft" align="right" valign="top"><a id="a7d9ba7619a08e47149e4e83edad1f517"></a>
-const <a class="el" href="class_quant_lib_1_1_evolution_description.html">EvolutionDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>evolution</b> () const</td></tr>
-<tr class="separator:a7d9ba7619a08e47149e4e83edad1f517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f7fca17f1af46f16730a2f1dbdd7f29"><td class="memItemLeft" align="right" valign="top"><a id="a1f7fca17f1af46f16730a2f1dbdd7f29"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfRates</b> () const</td></tr>
-<tr class="separator:a1f7fca17f1af46f16730a2f1dbdd7f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa885c06de2eea0c5caa8a1a317861d"><td class="memItemLeft" align="right" valign="top"><a id="a5aa885c06de2eea0c5caa8a1a317861d"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfFactors</b> () const</td></tr>
-<tr class="separator:a5aa885c06de2eea0c5caa8a1a317861d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d1cf8d9e7aa612c66fee3a68fac3066"><td class="memItemLeft" align="right" valign="top"><a id="a9d1cf8d9e7aa612c66fee3a68fac3066"></a>
-<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfSteps</b> () const</td></tr>
-<tr class="separator:a9d1cf8d9e7aa612c66fee3a68fac3066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c2eed4ce4b9bef5aeae2184e86e638d"><td class="memItemLeft" align="right" valign="top"><a id="a2c2eed4ce4b9bef5aeae2184e86e638d"></a>
-const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pseudoRoot</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> i) const</td></tr>
-<tr class="separator:a2c2eed4ce4b9bef5aeae2184e86e638d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285363685b50fe77abe43a894429adb1"><td class="memItemLeft" align="right" valign="top"><a id="a285363685b50fe77abe43a894429adb1"></a>
+const std::vector&lt; <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>initialRates</b> () const override</td></tr>
+<tr class="separator:a285363685b50fe77abe43a894429adb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a34a8c69fbc9444f8aeba4c104b857"><td class="memItemLeft" align="right" valign="top"><a id="a14a34a8c69fbc9444f8aeba4c104b857"></a>
+const std::vector&lt; <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>displacements</b> () const override</td></tr>
+<tr class="separator:a14a34a8c69fbc9444f8aeba4c104b857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed01b196c210ab280774504bb77b357"><td class="memItemLeft" align="right" valign="top"><a id="a8ed01b196c210ab280774504bb77b357"></a>
+const <a class="el" href="class_quant_lib_1_1_evolution_description.html">EvolutionDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>evolution</b> () const override</td></tr>
+<tr class="separator:a8ed01b196c210ab280774504bb77b357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe6d51234daf4c86e55061066c844aff"><td class="memItemLeft" align="right" valign="top"><a id="abe6d51234daf4c86e55061066c844aff"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfRates</b> () const override</td></tr>
+<tr class="separator:abe6d51234daf4c86e55061066c844aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22fe266a821b2efdf285ab822af8ea9"><td class="memItemLeft" align="right" valign="top"><a id="ab22fe266a821b2efdf285ab822af8ea9"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfFactors</b> () const override</td></tr>
+<tr class="separator:ab22fe266a821b2efdf285ab822af8ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8715a756e532028cd7f4a9cdf67e85c"><td class="memItemLeft" align="right" valign="top"><a id="ac8715a756e532028cd7f4a9cdf67e85c"></a>
+<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>numberOfSteps</b> () const override</td></tr>
+<tr class="separator:ac8715a756e532028cd7f4a9cdf67e85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626eb62fda9901067e31f43b7766253c"><td class="memItemLeft" align="right" valign="top"><a id="a626eb62fda9901067e31f43b7766253c"></a>
+const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pseudoRoot</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> i) const override</td></tr>
+<tr class="separator:a626eb62fda9901067e31f43b7766253c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abcd-interpolated volatility structure </p>

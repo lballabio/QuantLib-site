@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -230,6 +230,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_range_accrual_leg.html">RangeAccrualLeg</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class building a sequence of range-accrual floating-rate coupons  <a href="class_quant_lib_1_1_range_accrual_leg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_quant_lib_1_1_rate_averaging.html">RateAveraging</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">rate averaging method  <a href="struct_quant_lib_1_1_rate_averaging.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_quant_lib_1_1_replication.html">Replication</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital option replication strategy.  <a href="struct_quant_lib_1_1_replication.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +244,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_amortizing_payment.html">AmortizingPayment</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amortizing payment.  <a href="class_quant_lib_1_1_amortizing_payment.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_sub_periods_coupon.html">SubPeriodsCoupon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">sub-periods coupon  <a href="class_quant_lib_1_1_sub_periods_coupon.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_sub_periods_leg.html">SubPeriodsLeg</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class building a sequence of overnight coupons  <a href="class_quant_lib_1_1_sub_periods_leg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_time_basket.html">TimeBasket</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribution over a number of dates.  <a href="class_quant_lib_1_1_time_basket.html#details">More...</a><br /></td></tr>
@@ -952,12 +961,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_analytic_heston_forward_european_engine.html">AnalyticHestonForwardEuropeanEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analytic Heston engine incl. stochastic interest rates.  <a href="class_quant_lib_1_1_analytic_heston_forward_european_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_overnight_index_future_rate_helper.html">OvernightIndexFutureRateHelper</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RateHelper for bootstrapping over overnight compounding futures.  <a href="class_quant_lib_1_1_overnight_index_future_rate_helper.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_sofr_future_rate_helper.html">SofrFutureRateHelper</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RateHelper for bootstrapping over CME SOFR futures.  <a href="class_quant_lib_1_1_sofr_future_rate_helper.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_delta_calculator.html">BlackDeltaCalculator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black delta calculator class.  <a href="class_quant_lib_1_1_black_delta_calculator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1241,6 +1244,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_irregular_swaption.html">IrregularSwaption</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Irregular Swaption class.  <a href="class_quant_lib_1_1_irregular_swaption.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cross_currency_basis_swap_rate_helper.html">CrossCurrencyBasisSwapRateHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate helper for bootstrapping over XCCY basis swap rates.  <a href="class_quant_lib_1_1_cross_currency_basis_swap_rate_helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_multi_curve_sensitivities.html">MultiCurveSensitivities</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multi curve sensitivities.  <a href="class_quant_lib_1_1_multi_curve_sensitivities.html#details">More...</a><br /></td></tr>
@@ -1965,6 +1971,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_overnight_indexed_swap.html">OvernightIndexedSwap</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overnight indexed swap: fix vs compounded overnight rate.  <a href="class_quant_lib_1_1_overnight_indexed_swap.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_overnight_index_future.html">OvernightIndexFuture</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_null_payoff.html">NullPayoff</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy payoff class.  <a href="class_quant_lib_1_1_null_payoff.html#details">More...</a><br /></td></tr>
@@ -3415,22 +3423,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_exponential_fitting_heston_engine.html">ExponentialFittingHestonEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">analytic Heston-model engine based on  <a href="class_quant_lib_1_1_exponential_fitting_heston_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_american_engine.html">FDAmericanEngine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences pricing engine for American one asset options.  <a href="class_quant_lib_1_1_f_d_american_engine.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_fd_bates_vanilla_engine.html">FdBatesVanillaEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial Integro FiniteDifferences Bates Vanilla <a class="el" href="class_quant_lib_1_1_option.html" title="base option class">Option</a> engine.  <a href="class_quant_lib_1_1_fd_bates_vanilla_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_bermudan_engine.html">FDBermudanEngine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences Bermudan engine.  <a href="class_quant_lib_1_1_f_d_bermudan_engine.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_american_engine.html">FDDividendAmericanEngine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences pricing engine for dividend American options.  <a href="class_quant_lib_1_1_f_d_dividend_american_engine.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_american_engine_merton73.html">FDDividendAmericanEngineMerton73</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences pricing engine for dividend American options.  <a href="class_quant_lib_1_1_f_d_dividend_american_engine_merton73.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_american_engine_shift_scale.html">FDDividendAmericanEngineShiftScale</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_american_condition.html">FDAmericanCondition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_engine_base.html">FDDividendEngineBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for dividend engines.  <a href="class_quant_lib_1_1_f_d_dividend_engine_base.html#details">More...</a><br /></td></tr>
@@ -3441,19 +3437,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_engine_shift_scale.html">FDDividendEngineShiftScale</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences engine for dividend options using shifted dividends.  <a href="class_quant_lib_1_1_f_d_dividend_engine_shift_scale.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_european_engine.html">FDDividendEuropeanEngine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences pricing engine for dividend European options.  <a href="class_quant_lib_1_1_f_d_dividend_european_engine.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_european_engine_merton73.html">FDDividendEuropeanEngineMerton73</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences pricing engine for dividend European options.  <a href="class_quant_lib_1_1_f_d_dividend_european_engine_merton73.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_european_engine_shift_scale.html">FDDividendEuropeanEngineShiftScale</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_shout_engine.html">FDDividendShoutEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-differences shout engine with dividends.  <a href="class_quant_lib_1_1_f_d_dividend_shout_engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_european_engine.html">FDEuropeanEngine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pricing engine for European options using finite-differences.  <a href="class_quant_lib_1_1_f_d_european_engine.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_shout_engine_merton73.html">FDDividendShoutEngineMerton73</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_f_d_dividend_shout_engine_shift_scale.html">FDDividendShoutEngineShiftScale</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html">FdHestonHullWhiteVanillaEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finite-Differences Heston Hull-White Vanilla <a class="el" href="class_quant_lib_1_1_option.html" title="base option class">Option</a> engine.  <a href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html#details">More...</a><br /></td></tr>
@@ -3924,6 +3913,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_dated_o_i_s_rate_helper.html">DatedOISRateHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate helper for bootstrapping over Overnight Indexed <a class="el" href="class_quant_lib_1_1_swap.html" title="Interest rate swap.">Swap</a> rates.  <a href="class_quant_lib_1_1_dated_o_i_s_rate_helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_overnight_index_future_rate_helper.html">OvernightIndexFutureRateHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RateHelper for bootstrapping over overnight compounding futures.  <a href="class_quant_lib_1_1_overnight_index_future_rate_helper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_sofr_future_rate_helper.html">SofrFutureRateHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RateHelper for bootstrapping over CME SOFR futures.  <a href="class_quant_lib_1_1_sofr_future_rate_helper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_piecewise_yield_curve.html">PiecewiseYieldCurve</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise yield term structure.  <a href="class_quant_lib_1_1_piecewise_yield_curve.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4166,9 +4161,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_clone.html">Clone</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">cloning proxy to an underlying object  <a href="class_quant_lib_1_1_clone.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic disposable object with move semantics  <a href="class_quant_lib_1_1_disposable.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_null.html">Null</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">template class providing a null value for a given type.  <a href="class_quant_lib_1_1_null.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4356,10 +4348,6 @@ typedef <a class="el" href="class_quant_lib_1_1_finite_difference_model.html">Fi
 typedef <a class="el" href="class_quant_lib_1_1_step_condition.html">StepCondition</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a1a481730b77798735b31d2a815a5d242">StandardStepCondition</a></td></tr>
 <tr class="memdesc:a1a481730b77798735b31d2a815a5d242"><td class="mdescLeft">&#160;</td><td class="mdescRight">default choice for step condition <br /></td></tr>
 <tr class="separator:a1a481730b77798735b31d2a815a5d242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2342f59174f2223a9889acf4a86496a"><td class="memItemLeft" align="right" valign="top">
-typedef PdeOperator&lt; PdeShortRate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__findiff.html#gab2342f59174f2223a9889acf4a86496a">OneFactorOperator</a></td></tr>
-<tr class="memdesc:gab2342f59174f2223a9889acf4a86496a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest-rate single factor model differential operator. <br /></td></tr>
-<tr class="separator:gab2342f59174f2223a9889acf4a86496a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af65ec01663fda53dbb56c42eef0ed03f"><td class="memItemLeft" align="right" valign="top"><a id="af65ec01663fda53dbb56c42eef0ed03f"></a>
 typedef OperatorTraits&lt; FdmLinearOp &gt;::bc_set&#160;</td><td class="memItemRight" valign="bottom"><b>FdmBoundaryConditionSet</b></td></tr>
 <tr class="separator:af65ec01663fda53dbb56c42eef0ed03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4463,6 +4451,10 @@ typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__types.html#gad9817a6a21dfcb91429f0152c99d6313">Probability</a></td></tr>
 <tr class="memdesc:gad9817a6a21dfcb91429f0152c99d6313"><td class="mdescLeft">&#160;</td><td class="mdescRight">probability <br /></td></tr>
 <tr class="separator:gad9817a6a21dfcb91429f0152c99d6313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab56fb6f79c404afbf5fedf756b41bc1"><td class="memTemplParams" colspan="2"><a id="aab56fb6f79c404afbf5fedf756b41bc1"></a>
+template&lt;class T &gt; </td></tr>
+<tr class="memitem:aab56fb6f79c404afbf5fedf756b41bc1"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Disposable</b> = T</td></tr>
+<tr class="separator:aab56fb6f79c404afbf5fedf756b41bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -4756,17 +4748,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 std::map&lt; <a class="el" href="namespace_quant_lib.html#a67b45b4a8252bded773b222c6f9428dc">Seniority</a>, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#aed9f887c5bc09921236a10f1f80b534c">makeIsdaConvMap</a> ()</td></tr>
 <tr class="memdesc:aed9f887c5bc09921236a10f1f80b534c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for conventional recoveries. Returns the ISDA. <br /></td></tr>
 <tr class="separator:aed9f887c5bc09921236a10f1f80b534c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c6d0c0a6fcc70c64c86255afe13f35c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a4c6d0c0a6fcc70c64c86255afe13f35c">Expm</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;M, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> t=1.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tol=<a class="el" href="group__limit_macros.html#ga4f2e6bcf6b19224bce1a5a6234286c17">QL_EPSILON</a>)</td></tr>
+<tr class="memitem:a4c6d0c0a6fcc70c64c86255afe13f35c"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a4c6d0c0a6fcc70c64c86255afe13f35c">Expm</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;M, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> t=1.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tol=<a class="el" href="group__limit_macros.html#ga4f2e6bcf6b19224bce1a5a6234286c17">QL_EPSILON</a>)</td></tr>
 <tr class="memdesc:a4c6d0c0a6fcc70c64c86255afe13f35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">matrix exponential based on the ordinary differential equations method  <a href="namespace_quant_lib.html#a4c6d0c0a6fcc70c64c86255afe13f35c">More...</a><br /></td></tr>
 <tr class="separator:a4c6d0c0a6fcc70c64c86255afe13f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5a1be983c64b32111b4f2f8ee4d0d4"><td class="memTemplParams" colspan="2">template&lt;class M &gt; </td></tr>
 <tr class="memitem:a8a5a1be983c64b32111b4f2f8ee4d0d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a8a5a1be983c64b32111b4f2f8ee4d0d4">laplaceInterpolation</a> (M &amp;A, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> relTol=1E-6)</td></tr>
 <tr class="separator:a8a5a1be983c64b32111b4f2f8ee4d0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca8a871fe11f3ba77903c4a4393db874"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#aca8a871fe11f3ba77903c4a4393db874">moorePenroseInverse</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;A, const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tol=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
+<tr class="memitem:aca8a871fe11f3ba77903c4a4393db874"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#aca8a871fe11f3ba77903c4a4393db874">moorePenroseInverse</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;A, const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tol=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
 <tr class="separator:aca8a871fe11f3ba77903c4a4393db874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bda7aff07baeb1e8b129d7e54d45fde"><td class="memItemLeft" align="right" valign="top"><a id="a5bda7aff07baeb1e8b129d7e54d45fde"></a>
 template&lt;&gt; </td></tr>
-<tr class="memitem:a5bda7aff07baeb1e8b129d7e54d45fde"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">detail::DispArray</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GaussianQuadMultidimIntegrator::integrate&lt; detail::DispArray &gt;</b> (const ext::function&lt; <a class="el" href="class_quant_lib_1_1_disposable.html">detail::DispArray</a>(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;f) const</td></tr>
+<tr class="memitem:a5bda7aff07baeb1e8b129d7e54d45fde"><td class="memTemplItemLeft" align="right" valign="top">detail::DispArray&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GaussianQuadMultidimIntegrator::integrate&lt; detail::DispArray &gt;</b> (const ext::function&lt; detail::DispArray(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;f) const</td></tr>
 <tr class="separator:a5bda7aff07baeb1e8b129d7e54d45fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c277356fbdba31d3a62c61e8a3ce0dc"><td class="memItemLeft" align="right" valign="top"><a id="a0c277356fbdba31d3a62c61e8a3ce0dc"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a0c277356fbdba31d3a62c61e8a3ce0dc">aggregateNPV</a> (const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a> &gt; &gt; &amp;, const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;quantities)</td></tr>
@@ -4800,13 +4792,13 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, IrregularSettlement::Type type)</td></tr>
 <tr class="separator:a62e40cab6bf8b813444de7bbae5174a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9819c1d1ae8a19bb5559b5016a5cf4fb"><td class="memItemLeft" align="right" valign="top"><a id="a9819c1d1ae8a19bb5559b5016a5cf4fb"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CenteredGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> center, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> dx, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CenteredGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> center, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> dx, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
 <tr class="separator:a9819c1d1ae8a19bb5559b5016a5cf4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42c055a6911937cd2b6dc45c5f8a7eae"><td class="memItemLeft" align="right" valign="top"><a id="a42c055a6911937cd2b6dc45c5f8a7eae"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BoundedGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMin, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMax, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BoundedGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMin, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMax, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
 <tr class="separator:a42c055a6911937cd2b6dc45c5f8a7eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8594f6f46d6f988298f7eace850f7af5"><td class="memItemLeft" align="right" valign="top"><a id="a8594f6f46d6f988298f7eace850f7af5"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BoundedLogGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMin, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMax, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>BoundedLogGrid</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMin, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> xMax, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> steps)</td></tr>
 <tr class="separator:a8594f6f46d6f988298f7eace850f7af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ea9474bc15c22d49a3b155d4d537c1"><td class="memItemLeft" align="right" valign="top"><a id="a11ea9474bc15c22d49a3b155d4d537c1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="class_quant_lib_1_1_region.html">Region</a> &amp;r1, const <a class="el" href="class_quant_lib_1_1_region.html">Region</a> &amp;r2)</td></tr>
@@ -4850,61 +4842,61 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Norm2</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:a4fe258b9e084694e3f45a68a86aa38e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bc193a0a7934c850a590464435bd00"><td class="memItemLeft" align="right" valign="top"><a id="a27bc193a0a7934c850a590464435bd00"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:a27bc193a0a7934c850a590464435bd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36c7bedba2826fbb285afe7afd62e7f"><td class="memItemLeft" align="right" valign="top"><a id="aa36c7bedba2826fbb285afe7afd62e7f"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:aa36c7bedba2826fbb285afe7afd62e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69abc01e590be04e599e53733b1ff22b"><td class="memItemLeft" align="right" valign="top"><a id="a69abc01e590be04e599e53733b1ff22b"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a69abc01e590be04e599e53733b1ff22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dba37f9f657d6f71b8008191884ab2b"><td class="memItemLeft" align="right" valign="top"><a id="a5dba37f9f657d6f71b8008191884ab2b"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:a5dba37f9f657d6f71b8008191884ab2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797f6f417fcd10569c80c58d5141b8ef"><td class="memItemLeft" align="right" valign="top"><a id="a797f6f417fcd10569c80c58d5141b8ef"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a797f6f417fcd10569c80c58d5141b8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7b652fa52e824011a5c830f485c571f"><td class="memItemLeft" align="right" valign="top"><a id="ae7b652fa52e824011a5c830f485c571f"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:ae7b652fa52e824011a5c830f485c571f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31519b77bb025ced1193e96a60e069bf"><td class="memItemLeft" align="right" valign="top"><a id="a31519b77bb025ced1193e96a60e069bf"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:a31519b77bb025ced1193e96a60e069bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65a59f9f633290c844fae0bd784bea86"><td class="memItemLeft" align="right" valign="top"><a id="a65a59f9f633290c844fae0bd784bea86"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a65a59f9f633290c844fae0bd784bea86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025cef0f9493fc764779f6c45bb922d8"><td class="memItemLeft" align="right" valign="top"><a id="a025cef0f9493fc764779f6c45bb922d8"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a025cef0f9493fc764779f6c45bb922d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700384a6c737cb091091b0cd71120bd8"><td class="memItemLeft" align="right" valign="top"><a id="a700384a6c737cb091091b0cd71120bd8"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:a700384a6c737cb091091b0cd71120bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ef156b2081b9dfed1f6e6a71deba94b"><td class="memItemLeft" align="right" valign="top"><a id="a7ef156b2081b9dfed1f6e6a71deba94b"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a7ef156b2081b9dfed1f6e6a71deba94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae60472691007c1ebf27688d35a1858f6"><td class="memItemLeft" align="right" valign="top"><a id="ae60472691007c1ebf27688d35a1858f6"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:ae60472691007c1ebf27688d35a1858f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c251a6f52ac0158a127c8f266345c7"><td class="memItemLeft" align="right" valign="top"><a id="a28c251a6f52ac0158a127c8f266345c7"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:a28c251a6f52ac0158a127c8f266345c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9452fa33e978f361dae0cd5b0b6a8aab"><td class="memItemLeft" align="right" valign="top"><a id="a9452fa33e978f361dae0cd5b0b6a8aab"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a9452fa33e978f361dae0cd5b0b6a8aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa832e718f849db61b1db197032fa83ba"><td class="memItemLeft" align="right" valign="top"><a id="aa832e718f849db61b1db197032fa83ba"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Abs</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Abs</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:aa832e718f849db61b1db197032fa83ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5f224800bb3100aace9495d5009a56"><td class="memItemLeft" align="right" valign="top"><a id="adf5f224800bb3100aace9495d5009a56"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Sqrt</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Sqrt</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:adf5f224800bb3100aace9495d5009a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a763751705904ff1e5b320575e89f6d85"><td class="memItemLeft" align="right" valign="top"><a id="a763751705904ff1e5b320575e89f6d85"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:a763751705904ff1e5b320575e89f6d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdcc152d5180cc78a3609d81f2467434"><td class="memItemLeft" align="right" valign="top"><a id="acdcc152d5180cc78a3609d81f2467434"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Exp</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Exp</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:acdcc152d5180cc78a3609d81f2467434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd62701779dfed6aca3d3b84864fe444"><td class="memItemLeft" align="right" valign="top"><a id="abd62701779dfed6aca3d3b84864fe444"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Pow</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> alpha)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Pow</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> alpha)</td></tr>
 <tr class="separator:abd62701779dfed6aca3d3b84864fe444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac659821443d7196fa1a4abd73e9e6301"><td class="memItemLeft" align="right" valign="top"><a id="ac659821443d7196fa1a4abd73e9e6301"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v, <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;w)</td></tr>
@@ -4981,38 +4973,38 @@ template&lt;class F , class G , class H &gt; </td></tr>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>incompleteGammaFunctionContinuedFractionRepr</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-13, <a class="el" href="group__types.html#gab9c87440c314438e51a899a03d2442d0">Integer</a> maxIteration=100)</td></tr>
 <tr class="separator:afbd5a95f12e00d286c422149497ce59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4795fccd3a35c83e7213993ef758c872"><td class="memItemLeft" align="right" valign="top"><a id="a4795fccd3a35c83e7213993ef758c872"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
 <tr class="separator:a4795fccd3a35c83e7213993ef758c872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a122f161cce61b72997be297343660527"><td class="memItemLeft" align="right" valign="top"><a id="a122f161cce61b72997be297343660527"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
 <tr class="separator:a122f161cce61b72997be297343660527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad343646ac78dedbe1cdf20976d034d9f"><td class="memItemLeft" align="right" valign="top"><a id="ad343646ac78dedbe1cdf20976d034d9f"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
 <tr class="separator:ad343646ac78dedbe1cdf20976d034d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241d8adaf4094a95b53d2f0792adfc08"><td class="memItemLeft" align="right" valign="top"><a id="a241d8adaf4094a95b53d2f0792adfc08"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a241d8adaf4094a95b53d2f0792adfc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7511f132c9eb9db8163d4f91fbe5a94b"><td class="memItemLeft" align="right" valign="top"><a id="a7511f132c9eb9db8163d4f91fbe5a94b"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
 <tr class="separator:a7511f132c9eb9db8163d4f91fbe5a94b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d667e0a2f2213d526b14942aff896ca"><td class="memItemLeft" align="right" valign="top"><a id="a1d667e0a2f2213d526b14942aff896ca"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a1d667e0a2f2213d526b14942aff896ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada6fff687e5cd30b30ea0755d085db64"><td class="memItemLeft" align="right" valign="top"><a id="ada6fff687e5cd30b30ea0755d085db64"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v)</td></tr>
 <tr class="separator:ada6fff687e5cd30b30ea0755d085db64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef66496624bbbfcf6a09cb66102eaca"><td class="memItemLeft" align="right" valign="top"><a id="aeef66496624bbbfcf6a09cb66102eaca"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
 <tr class="separator:aeef66496624bbbfcf6a09cb66102eaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d79a4e7c13ea3387784f61efccf111"><td class="memItemLeft" align="right" valign="top"><a id="a35d79a4e7c13ea3387784f61efccf111"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>transpose</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>transpose</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a35d79a4e7c13ea3387784f61efccf111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac047ee92a9bb7e6e61c21625a98323d2"><td class="memItemLeft" align="right" valign="top"><a id="ac047ee92a9bb7e6e61c21625a98323d2"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outerProduct</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outerProduct</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:ac047ee92a9bb7e6e61c21625a98323d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bfc50a4883ab76b8fa9c57d3464260a"><td class="memTemplParams" colspan="2"><a id="a0bfc50a4883ab76b8fa9c57d3464260a"></a>
 template&lt;class Iterator1 , class Iterator2 &gt; </td></tr>
-<tr class="memitem:a0bfc50a4883ab76b8fa9c57d3464260a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>outerProduct</b> (Iterator1 v1begin, Iterator1 v1end, Iterator2 v2begin, Iterator2 v2end)</td></tr>
+<tr class="memitem:a0bfc50a4883ab76b8fa9c57d3464260a"><td class="memTemplItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>outerProduct</b> (Iterator1 v1begin, Iterator1 v1end, Iterator2 v2begin, Iterator2 v2end)</td></tr>
 <tr class="separator:a0bfc50a4883ab76b8fa9c57d3464260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31629ab8c0b598cd97ad710605e91502"><td class="memItemLeft" align="right" valign="top"><a id="a31629ab8c0b598cd97ad710605e91502"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m1, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m2)</td></tr>
@@ -5020,38 +5012,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 <tr class="memitem:a8612e22f3d4c81b19bd350e5bc331b75"><td class="memItemLeft" align="right" valign="top"><a id="a8612e22f3d4c81b19bd350e5bc331b75"></a>
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:a8612e22f3d4c81b19bd350e5bc331b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69fa3a3441bfaf12a2fcaec7c1e86eaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a69fa3a3441bfaf12a2fcaec7c1e86eaa">factorReduction</a> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> mtrx, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIters=25)</td></tr>
+<tr class="memitem:a69fa3a3441bfaf12a2fcaec7c1e86eaa"><td class="memItemLeft" align="right" valign="top">Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a69fa3a3441bfaf12a2fcaec7c1e86eaa">factorReduction</a> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> mtrx, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIters=25)</td></tr>
 <tr class="separator:a69fa3a3441bfaf12a2fcaec7c1e86eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58b333f8bf3456b41910e27408364cb8"><td class="memTemplParams" colspan="2">template&lt;class DataIterator &gt; </td></tr>
-<tr class="memitem:a58b333f8bf3456b41910e27408364cb8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a58b333f8bf3456b41910e27408364cb8">getCovariance</a> (DataIterator stdDevBegin, DataIterator stdDevEnd, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;corr, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tolerance=1.0e-12)</td></tr>
+<tr class="memitem:a58b333f8bf3456b41910e27408364cb8"><td class="memTemplItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a58b333f8bf3456b41910e27408364cb8">getCovariance</a> (DataIterator stdDevBegin, DataIterator stdDevEnd, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;corr, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tolerance=1.0e-12)</td></tr>
 <tr class="memdesc:a58b333f8bf3456b41910e27408364cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculation of covariance from correlation and standard deviations.  <a href="namespace_quant_lib.html#a58b333f8bf3456b41910e27408364cb8">More...</a><br /></td></tr>
 <tr class="separator:a58b333f8bf3456b41910e27408364cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd7ed79d89776220b85b18ca4811d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a4bd7ed79d89776220b85b18ca4811d0c">qrDecomposition</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;A, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;q, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;r, bool pivot=true)</td></tr>
+<tr class="memitem:a4bd7ed79d89776220b85b18ca4811d0c"><td class="memItemLeft" align="right" valign="top">Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a4bd7ed79d89776220b85b18ca4811d0c">qrDecomposition</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;A, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;q, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;r, bool pivot=true)</td></tr>
 <tr class="memdesc:a4bd7ed79d89776220b85b18ca4811d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">QR decompoisition.  <a href="namespace_quant_lib.html#a4bd7ed79d89776220b85b18ca4811d0c">More...</a><br /></td></tr>
 <tr class="separator:a4bd7ed79d89776220b85b18ca4811d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cce3d14729eaee0d0b19c7eaa6e2d44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a6cce3d14729eaee0d0b19c7eaa6e2d44">qrSolve</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;b, bool pivot=true, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;d=<a class="el" href="class_quant_lib_1_1_array.html">Array</a>())</td></tr>
+<tr class="memitem:a6cce3d14729eaee0d0b19c7eaa6e2d44"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a6cce3d14729eaee0d0b19c7eaa6e2d44">qrSolve</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;a, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;b, bool pivot=true, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;d=<a class="el" href="class_quant_lib_1_1_array.html">Array</a>())</td></tr>
 <tr class="memdesc:a6cce3d14729eaee0d0b19c7eaa6e2d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">QR Solve.  <a href="namespace_quant_lib.html#a6cce3d14729eaee0d0b19c7eaa6e2d44">More...</a><br /></td></tr>
 <tr class="separator:a6cce3d14729eaee0d0b19c7eaa6e2d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93815c1c29ab54eb3715c1605f54785e"><td class="memItemLeft" align="right" valign="top"><a id="a93815c1c29ab54eb3715c1605f54785e"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prod</b> (const SparseMatrix &amp;A, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prod</b> (const SparseMatrix &amp;A, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x)</td></tr>
 <tr class="separator:a93815c1c29ab54eb3715c1605f54785e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52def572a89962ab3a038f28841ec103"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a52def572a89962ab3a038f28841ec103">triangularAnglesParametrization</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;angles, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
+<tr class="memitem:a52def572a89962ab3a038f28841ec103"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a52def572a89962ab3a038f28841ec103">triangularAnglesParametrization</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;angles, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
 <tr class="memdesc:a52def572a89962ab3a038f28841ec103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Triangular Angles Parametrized correlation matrix.  <a href="namespace_quant_lib.html#a52def572a89962ab3a038f28841ec103">More...</a><br /></td></tr>
 <tr class="separator:a52def572a89962ab3a038f28841ec103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71e0a1765dd8fee1c47cc07c328c7667"><td class="memItemLeft" align="right" valign="top"><a id="a71e0a1765dd8fee1c47cc07c328c7667"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lmmTriangularAnglesParametrization</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;angles, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lmmTriangularAnglesParametrization</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;angles, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
 <tr class="separator:a71e0a1765dd8fee1c47cc07c328c7667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c7a0e86180b23b11334280c8827f1b"><td class="memItemLeft" align="right" valign="top"><a id="af7c7a0e86180b23b11334280c8827f1b"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangularAnglesParametrizationUnconstrained</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangularAnglesParametrizationUnconstrained</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
 <tr class="separator:af7c7a0e86180b23b11334280c8827f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af68d0c0545d43454de7e6d75db483d01"><td class="memItemLeft" align="right" valign="top"><a id="af68d0c0545d43454de7e6d75db483d01"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lmmTriangularAnglesParametrizationUnconstrained</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lmmTriangularAnglesParametrizationUnconstrained</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> matrixSize, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> rank)</td></tr>
 <tr class="separator:af68d0c0545d43454de7e6d75db483d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d593feec2a416a13f0189ea5f82d61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#af4d593feec2a416a13f0189ea5f82d61">triangularAnglesParametrizationRankThree</a> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> t0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> epsilon, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nbRows)</td></tr>
+<tr class="memitem:af4d593feec2a416a13f0189ea5f82d61"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#af4d593feec2a416a13f0189ea5f82d61">triangularAnglesParametrizationRankThree</a> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> alpha, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> t0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> epsilon, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nbRows)</td></tr>
 <tr class="memdesc:af4d593feec2a416a13f0189ea5f82d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rank reduced Triangular Angles Parametrized correlation matrix.  <a href="namespace_quant_lib.html#af4d593feec2a416a13f0189ea5f82d61">More...</a><br /></td></tr>
 <tr class="separator:af4d593feec2a416a13f0189ea5f82d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3e6cd87a2b02e247439c4c83b93ac2"><td class="memItemLeft" align="right" valign="top"><a id="a8c3e6cd87a2b02e247439c4c83b93ac2"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangularAnglesParametrizationRankThreeVectorial</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;parameters, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nbRows)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>triangularAnglesParametrizationRankThreeVectorial</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;parameters, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> nbRows)</td></tr>
 <tr class="separator:a8c3e6cd87a2b02e247439c4c83b93ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbd52636909eeafc8685330236ab1dd"><td class="memItemLeft" align="right" valign="top"><a id="abdbd52636909eeafc8685330236ab1dd"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>modifiedBesselFunction_i</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nu, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
@@ -5093,25 +5085,25 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;, <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;)</td></tr>
 <tr class="separator:aac7bd2e64e70b6c01edb411256cef4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf217b009df4a448e2d77b058e02e65c"><td class="memItemLeft" align="right" valign="top"><a id="adf217b009df4a448e2d77b058e02e65c"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
 <tr class="separator:adf217b009df4a448e2d77b058e02e65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab831fc5e26d3477b3703e44b76869f76"><td class="memItemLeft" align="right" valign="top"><a id="ab831fc5e26d3477b3703e44b76869f76"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
 <tr class="separator:ab831fc5e26d3477b3703e44b76869f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f807546589b2b384cf4d2aea8c6cc56"><td class="memItemLeft" align="right" valign="top"><a id="a2f807546589b2b384cf4d2aea8c6cc56"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D1, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D1, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D2)</td></tr>
 <tr class="separator:a2f807546589b2b384cf4d2aea8c6cc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532e654068bce9d383abe4bec1541d73"><td class="memItemLeft" align="right" valign="top"><a id="a532e654068bce9d383abe4bec1541d73"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D1, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D1, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D2)</td></tr>
 <tr class="separator:a532e654068bce9d383abe4bec1541d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a470ae0e95a553b9a32797992dcae5f"><td class="memItemLeft" align="right" valign="top"><a id="a3a470ae0e95a553b9a32797992dcae5f"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a, const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D)</td></tr>
 <tr class="separator:a3a470ae0e95a553b9a32797992dcae5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c360e785b7704c8c22db8cee784f17"><td class="memItemLeft" align="right" valign="top"><a id="a39c360e785b7704c8c22db8cee784f17"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:a39c360e785b7704c8c22db8cee784f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af22da181be56bbe4737e47172c4dcda7"><td class="memItemLeft" align="right" valign="top"><a id="af22da181be56bbe4737e47172c4dcda7"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_tridiagonal_operator.html">TridiagonalOperator</a> &amp;D, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> a)</td></tr>
 <tr class="separator:af22da181be56bbe4737e47172c4dcda7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1eb8f30fb584a6d2b39c7ea348e2a48e"><td class="memItemLeft" align="right" valign="top"><a id="a1eb8f30fb584a6d2b39c7ea348e2a48e"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a1eb8f30fb584a6d2b39c7ea348e2a48e">genericLongstaffSchwartzRegression</a> (std::vector&lt; std::vector&lt; NodeData &gt; &gt; &amp;simulationData, std::vector&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt; &amp;basisCoefficients)</td></tr>
@@ -5124,7 +5116,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 <tr class="memitem:affdf0ca758e1c79f6139e953e7e7f0be"><td class="memItemLeft" align="right" valign="top"><a id="affdf0ca758e1c79f6139e953e7e7f0be"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>collectNodeData</b> (<a class="el" href="class_quant_lib_1_1_market_model_evolver.html">MarketModelEvolver</a> &amp;evolver, <a class="el" href="class_quant_lib_1_1_market_model_multi_product.html">MarketModelMultiProduct</a> &amp;product, MarketModelNodeDataProvider &amp;dataProvider, MarketModelExerciseValue &amp;rebate, MarketModelExerciseValue &amp;control, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> numberOfPaths, std::vector&lt; std::vector&lt; NodeData &gt; &gt; &amp;collectedData)</td></tr>
 <tr class="separator:affdf0ca758e1c79f6139e953e7e7f0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3d0d604273fcf7f1b46fc0121f6366b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#ae3d0d604273fcf7f1b46fc0121f6366b">exponentialCorrelations</a> (const std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt; &amp;rateTimes, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> longTermCorr=0.5, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> beta=0.2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> gamma=1.0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t=0.0)</td></tr>
+<tr class="memitem:ae3d0d604273fcf7f1b46fc0121f6366b"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#ae3d0d604273fcf7f1b46fc0121f6366b">exponentialCorrelations</a> (const std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt; &amp;rateTimes, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> longTermCorr=0.5, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> beta=0.2, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> gamma=1.0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t=0.0)</td></tr>
 <tr class="separator:ae3d0d604273fcf7f1b46fc0121f6366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09635f01bfb706577443271944ee7024"><td class="memItemLeft" align="right" valign="top"><a id="a09635f01bfb706577443271944ee7024"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forwardsFromDiscountRatios</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> firstValidIndex, const std::vector&lt; <a class="el" href="group__types.html#ga642a971a0bcbbd2fb26c35e1a06e5761">DiscountFactor</a> &gt; &amp;ds, const std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt; &amp;taus, std::vector&lt; <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> &gt; &amp;fwds)</td></tr>
@@ -5428,10 +5420,11 @@ template&lt;class T &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:affa840b594bad2615a1da7160c6ab5c1"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef <a class="el" href="class_quant_lib_1_1_curve_dependent_step_condition.html">CurveDependentStepCondition</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#affa840b594bad2615a1da7160c6ab5c1">StandardCurveDependentStepCondition</a></td></tr>
-<tr class="separator:affa840b594bad2615a1da7160c6ab5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd7aed6c494490524554c595400db80b"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef FdmOrnsteinUhlenbeckOp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#abd7aed6c494490524554c595400db80b">FdmOrnsteinUhlenbackOp</a></td></tr>
-<tr class="separator:abd7aed6c494490524554c595400db80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b0fa3f5af20bdd1f1b043850f88b259"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED_DISABLE_WARNING QL_DEPRECATED typedef <a class="el" href="class_quant_lib_1_1_curve_dependent_step_condition.html">CurveDependentStepCondition</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#a3b0fa3f5af20bdd1f1b043850f88b259">StandardCurveDependentStepCondition</a></td></tr>
+<tr class="separator:a3b0fa3f5af20bdd1f1b043850f88b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef PdeOperator&lt; PdeShortRate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__findiff.html#gafaafa0ee0f55f9e687e3f1eef5f48cba">OneFactorOperator</a></td></tr>
+<tr class="memdesc:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest-rate single factor model differential operator.  <a href="group__findiff.html#gafaafa0ee0f55f9e687e3f1eef5f48cba">More...</a><br /></td></tr>
+<tr class="separator:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae43f029a393703f19733851757f06ee5"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef <a class="el" href="class_quant_lib_1_1_calibration_helper.html">CalibrationHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_quant_lib.html#ae43f029a393703f19733851757f06ee5">CalibrationHelperBase</a></td></tr>
 <tr class="separator:ae43f029a393703f19733851757f06ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -5732,7 +5725,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::Expm </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::Expm </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>M</em>, </td>
@@ -5799,7 +5792,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::moorePenroseInverse </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::moorePenroseInverse </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -6684,7 +6677,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; QuantLib::factorReduction </td>
+          <td class="memname">Disposable&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; QuantLib::factorReduction </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&#160;</td>
           <td class="paramname"><em>mtrx</em>, </td>
@@ -6716,7 +6709,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::getCovariance </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::getCovariance </td>
           <td>(</td>
           <td class="paramtype">DataIterator&#160;</td>
           <td class="paramname"><em>stdDevBegin</em>, </td>
@@ -6762,7 +6755,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;std::vector&lt;<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&gt; &gt; QuantLib::qrDecomposition </td>
+          <td class="memname">Disposable&lt;std::vector&lt;<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&gt; &gt; QuantLib::qrDecomposition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
@@ -6808,7 +6801,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; QuantLib::qrSolve </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; QuantLib::qrSolve </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>a</em>, </td>
@@ -6856,7 +6849,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::triangularAnglesParametrization </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::triangularAnglesParametrization </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;&#160;</td>
           <td class="paramname"><em>angles</em>, </td>
@@ -6898,7 +6891,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::triangularAnglesParametrizationRankThree </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::triangularAnglesParametrizationRankThree </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
@@ -6946,7 +6939,7 @@ The size of the output sequence must be maxLag + 1 </dd></dl>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::exponentialCorrelations </td>
+          <td class="memname">Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; QuantLib::exponentialCorrelations </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rateTimes</em>, </td>
@@ -8721,33 +8714,18 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="affa840b594bad2615a1da7160c6ab5c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa840b594bad2615a1da7160c6ab5c1">&#9670;&nbsp;</a></span>StandardCurveDependentStepCondition</h2>
+<a id="a3b0fa3f5af20bdd1f1b043850f88b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b0fa3f5af20bdd1f1b043850f88b259">&#9670;&nbsp;</a></span>StandardCurveDependentStepCondition</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QL_DEPRECATED typedef <a class="el" href="class_quant_lib_1_1_curve_dependent_step_condition.html">CurveDependentStepCondition</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; StandardCurveDependentStepCondition</td>
+          <td class="memname">QL_DEPRECATED_DISABLE_WARNING QL_DEPRECATED typedef <a class="el" href="class_quant_lib_1_1_curve_dependent_step_condition.html">CurveDependentStepCondition</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; StandardCurveDependentStepCondition</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Inherit from StandardStepCondition directly. Deprecated in version 1.19. </dd></dl>
-
-</div>
-</div>
-<a id="abd7aed6c494490524554c595400db80b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd7aed6c494490524554c595400db80b">&#9670;&nbsp;</a></span>FdmOrnsteinUhlenbackOp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED typedef FdmOrnsteinUhlenbeckOp FdmOrnsteinUhlenbackOp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000010">Deprecated:</a></b></dt><dd>Renamed to FdmOrnsteinUhlenbeckOp. Deprecated in version 1.17. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Inherit from StandardStepCondition directly. Deprecated in version 1.19. </dd></dl>
 
 </div>
 </div>
@@ -8762,7 +8740,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated:</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_calibration_helper.html" title="abstract base class for calibration helpers">CalibrationHelper</a>. Deprecated in version 1.18. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_calibration_helper.html" title="abstract base class for calibration helpers">CalibrationHelper</a>. Deprecated in version 1.18. </dd></dl>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -95,9 +95,9 @@ $(function() {
 <tr class="separator:a49f065301f9b99a2074f66750dd07e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f5008b4a95000f0c54d25a5a3f956d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_counterparty_adj_swap_engine.html#ae3f5008b4a95000f0c54d25a5a3f956d">CounterpartyAdjSwapEngine</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discountCurve, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;blackVol, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt; &amp;ctptyDTS, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> ctptyRecoveryRate, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt; &amp;invstDTS=<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> invstRecoveryRate=0.999)</td></tr>
 <tr class="separator:ae3f5008b4a95000f0c54d25a5a3f956d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082ff96da379d5e17436372ccb3c0972"><td class="memItemLeft" align="right" valign="top"><a id="a082ff96da379d5e17436372ccb3c0972"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () const</td></tr>
-<tr class="separator:a082ff96da379d5e17436372ccb3c0972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memItemLeft" align="right" valign="top"><a id="a61eb1a24e5329ccc296715a40dc3a19a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () const override</td></tr>
+<tr class="separator:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bilateral (CVA and DVA) default adjusted vanilla swap pricing engine. Collateral is not considered. No wrong way risk is considered (rates and counterparty default are uncorrelated). Based on: Sorensen, E.H. and Bollier, T.F., Pricing swap default risk. Financial Analysts Journal, 1994, 50, 23–33 Also see sect. II-5 in: Risk Neutral Pricing of Counterparty Risk D. Brigo, M. Masetti, 2004 or in sections 3 and 4 of "A Formula for Interest Rate Swaps 

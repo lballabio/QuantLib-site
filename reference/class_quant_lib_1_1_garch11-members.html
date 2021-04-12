@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -87,9 +87,9 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>alpha</b>() const (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html#a46c8a310cf4c094f8c80e1cb8dc1f911aa589ac13a4e8bbc06aa805d42edb339a">BestOfTwo</a> enum value</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>beta</b>() const (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>calculate</b>(const time_series &amp;quoteSeries) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>calculate</b>(const time_series &amp;quoteSeries) override (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>calculate</b>(const time_series &amp;quoteSeries, Real alpha, Real beta, Real omega) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>calibrate</b>(const time_series &amp;quoteSeries) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>calibrate</b>(const time_series &amp;quoteSeries) override (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>calibrate</b>(const time_series &amp;quoteSeries, OptimizationMethod &amp;method, const EndCriteria &amp;endCriteria) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>calibrate</b>(const time_series &amp;quoteSeries, OptimizationMethod &amp;method, const EndCriteria &amp;endCriteria, const Array &amp;initialGuess) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>calibrate</b>(ForwardIterator begin, ForwardIterator end) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
@@ -117,7 +117,7 @@ $(function() {
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>omega</b>() const (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>time_series</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>to_r2</b>(InputIterator begin, InputIterator end, std::vector&lt; Volatility &gt; &amp;r2) (defined in <a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_garch11.html">Garch11</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~VolatilityCompositor</b>() (defined in <b>VolatilityCompositor</b>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_volatility_compositor.html">VolatilityCompositor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~VolatilityCompositor</b>()=default (defined in <b>VolatilityCompositor</b>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_volatility_compositor.html">VolatilityCompositor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a654f321ade79b21c5c21bd0c4cce9038"><td class="memItemLeft" align="right" valign="top"><a id="a654f321ade79b21c5c21bd0c4cce9038"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GlobalBootstrap</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
 <tr class="separator:a654f321ade79b21c5c21bd0c4cce9038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7e401a57b0630538aa4446abe4145c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_global_bootstrap.html#a9f7e401a57b0630538aa4446abe4145c">GlobalBootstrap</a> (const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;additionalHelpers, const boost::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; &amp;additionalDates, const boost::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt; &amp;additionalErrors, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
-<tr class="separator:a9f7e401a57b0630538aa4446abe4145c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ff27849b435d84fed11920c050dbed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_global_bootstrap.html#a37ff27849b435d84fed11920c050dbed">GlobalBootstrap</a> (std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; additionalHelpers, ext::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; additionalDates, ext::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt; additionalErrors, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
+<tr class="separator:a37ff27849b435d84fed11920c050dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021df2c056ab8a1b4e018a6b312d585b"><td class="memItemLeft" align="right" valign="top"><a id="a021df2c056ab8a1b4e018a6b312d585b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> (<a class="el" href="class_quant_lib_1_1_curve.html">Curve</a> *ts)</td></tr>
 <tr class="separator:a021df2c056ab8a1b4e018a6b312d585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,8 +110,8 @@ class QuantLib::GlobalBootstrap&lt; Curve &gt;</h3>
 
 <p>Global boostrapper, with additional restrictions. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9f7e401a57b0630538aa4446abe4145c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f7e401a57b0630538aa4446abe4145c">&#9670;&nbsp;</a></span>GlobalBootstrap()</h2>
+<a id="a37ff27849b435d84fed11920c050dbed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ff27849b435d84fed11920c050dbed">&#9670;&nbsp;</a></span>GlobalBootstrap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,19 +119,19 @@ class QuantLib::GlobalBootstrap&lt; Curve &gt;</h3>
         <tr>
           <td class="memname"><a class="el" href="class_quant_lib_1_1_global_bootstrap.html">GlobalBootstrap</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt;&#160;</td>
           <td class="paramname"><em>additionalHelpers</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; &amp;&#160;</td>
+          <td class="paramtype">ext::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt;&#160;</td>
           <td class="paramname"><em>additionalDates</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const boost::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt; &amp;&#160;</td>
+          <td class="paramtype">ext::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt;&#160;</td>
           <td class="paramname"><em>additionalErrors</em>, </td>
         </tr>
         <tr>

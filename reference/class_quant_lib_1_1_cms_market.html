@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -105,9 +105,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afbfa6f0aa6368ef8b678525bd43c2bd7"><td class="memItemLeft" align="right" valign="top"><a id="afbfa6f0aa6368ef8b678525bd43c2bd7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CmsMarket</b> (const std::vector&lt; <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &gt; &amp;swapLengths, const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt; &gt; &amp;swapIndexes, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, const std::vector&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &gt; &amp;bidAskSpreads, const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_cms_coupon_pricer.html">CmsCouponPricer</a> &gt; &gt; &amp;pricers, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discountingTS)</td></tr>
-<tr class="separator:afbfa6f0aa6368ef8b678525bd43c2bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39a88743968618c752d0064b031274a"><td class="memItemLeft" align="right" valign="top"><a id="ac39a88743968618c752d0064b031274a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CmsMarket</b> (std::vector&lt; <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &gt; swapLengths, std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_swap_index.html">SwapIndex</a> &gt; &gt; swapIndexes, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; iborIndex, const std::vector&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &gt; &amp;bidAskSpreads, const std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_cms_coupon_pricer.html">CmsCouponPricer</a> &gt; &gt; &amp;pricers, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; discountingTS)</td></tr>
+<tr class="separator:ac39a88743968618c752d0064b031274a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_lazy_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_lazy_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td></tr>
 <tr class="memitem:a467a786be42a2165aa15a26709674547 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#a467a786be42a2165aa15a26709674547">recalculate</a> ()</td></tr>
 <tr class="separator:a467a786be42a2165aa15a26709674547 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +147,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="separator:a3d53f9669c128dadc74a5d044a7c8e68 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">LazyObject interface</h2></td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cms_market.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cms_market.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b98266617e9e11d3e99e165fe9978e"><td class="memItemLeft" align="right" valign="top"><a id="ab7b98266617e9e11d3e99e165fe9978e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reprice</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_swaption_volatility_structure.html">SwaptionVolatilityStructure</a> &gt; &amp;volStructure, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> meanReversion)</td></tr>
 <tr class="separator:ab7b98266617e9e11d3e99e165fe9978e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,13 +177,13 @@ const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>weightedFwdNpvError</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
 <tr class="separator:ae2722911ca9e8c3b8f54f22d49db2dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa92e7b6511287b481070207a69299b7e"><td class="memItemLeft" align="right" valign="top"><a id="aa92e7b6511287b481070207a69299b7e"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedSpreadErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedSpreadErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
 <tr class="separator:aa92e7b6511287b481070207a69299b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a189b98a59a9ebcd052bfea71a1a0eba1"><td class="memItemLeft" align="right" valign="top"><a id="a189b98a59a9ebcd052bfea71a1a0eba1"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedSpotNpvErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedSpotNpvErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
 <tr class="separator:a189b98a59a9ebcd052bfea71a1a0eba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a532de711ecb4a2410414fbd80b869b68"><td class="memItemLeft" align="right" valign="top"><a id="a532de711ecb4a2410414fbd80b869b68"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedFwdNpvErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weightedFwdNpvErrors</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;weights)</td></tr>
 <tr class="separator:a532de711ecb4a2410414fbd80b869b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -200,20 +200,20 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="separator:a082ff96da379d5e17436372ccb3c0972 inherit pro_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_quant_lib_1_1_lazy_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_quant_lib_1_1_lazy_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td></tr>
 <tr class="memitem:abcf8c3b096b3eea8688019abe7180471 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="abcf8c3b096b3eea8688019abe7180471"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_</b> = false</td></tr>
 <tr class="separator:abcf8c3b096b3eea8688019abe7180471 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e3e9b2ee0ed5ab8aa688b9422d8138 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="a72e3e9b2ee0ed5ab8aa688b9422d8138"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>frozen_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>frozen_</b> = false</td></tr>
 <tr class="separator:a72e3e9b2ee0ed5ab8aa688b9422d8138 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b368dcda2c9e791f5a8fc63de3c510 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="a52b368dcda2c9e791f5a8fc63de3c510"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = false</td></tr>
 <tr class="separator:a52b368dcda2c9e791f5a8fc63de3c510 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>set of CMS quotes </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,13 +230,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>This method must be implemented in derived classes. An instance of Observer does not call this method directly: instead, it will be called by the observables the instance registered with when they need to notify any changes. </p>
 
-<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_lazy_object.html#ac5c54df7ed3b930268c8d7752c101725">LazyObject</a>.</p>
+<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_lazy_object.html#a44137bb65de2396875934e48a6ee5099">LazyObject</a>.</p>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -77,7 +77,52 @@ $(function() {
 <div class="title">Version history </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.21 - January 2021</b></p>
+<div class="textblock"><p><b>Release 1.22 - April 2021</b></p>
+<p>PORTABILITY</p><ul>
+<li>As previously announced, this release drops support for Visual C++ 2012. VC++ 2013 or later is now required.</li>
+<li>The <code>Date</code> and <code>Array</code> classes are now visualized more clearly in the Visual Studio debugger (thanks to Francois Botha).</li>
+</ul>
+<p>LANGUAGE STANDARD</p><ul>
+<li><a class="el" href="namespace_quant_lib.html">QuantLib</a> now uses the C++11 standard and no longer compiles in C++03 mode. As before, it can be compiled with later versions of the standard. For details on the C++11 features used, see the pull requests marked "C++11 modernization" at the above link; for information on possible problems, see <a href="https://www.implementingquantlib.com/2021/02/leaving-03-for-real.html">https://www.implementingquantlib.com/2021/02/leaving-03-for-real.html</a>.</li>
+</ul>
+<p>CASHFLOWS</p><ul>
+<li>Revised and tested the <code>SubPeriodCoupon</code> class (thanks to Marcin Rybacki). The class was moved out of the <code>ql/experimental</code> folder and its interface can now be considered stable.</li>
+<li>Add simple averaging to overnight-index coupons in addition to the existing compound averaging (thanks to Marcin Rybacki).</li>
+<li>Fixed accrual calculation for inflation coupon when trading ex-coupon (thanks to GitHub user <code>bachhani</code>).</li>
+</ul>
+<p>CURRENCIES</p><ul>
+<li>Added the Nigerian Naira (thanks to Bryte Morio).</li>
+</ul>
+<p>DATE/TIME</p><ul>
+<li>Fixed actual/actual (ISMA) day counter calculation for long/short final periods (thanks to Francois Botha).</li>
+<li>Updated a couple of changed rules for New Zealand calendar (thanks to Paul Giltinan).</li>
+</ul>
+<p>INDEXES</p><ul>
+<li>Added <code>hasHistoricalFixing</code> inspector to <code>Index</code> class to check if the fixing for a given past date is available (thanks to Ralf Konrad).</li>
+</ul>
+<p>INSTRUMENTS</p><ul>
+<li>Added new-style finite-difference engine for shout options (thanks to Klaus Spanderen). In the case of dividend shout options, an escrowed dividend model is used.</li>
+<li>Revised the <code>OvernightIndexFutures</code> class. The class was moved out of the <code>ql/experimental</code> folder and its interface can now be considered stable.</li>
+<li>Added an overloaded constructor for Asian options that takes all past fixings and thus allows to reprice them correctly when the evaluation date changes (thanks to Jack Gillett).</li>
+<li>Added support for seasoned geometric Asian options to the Heston engine (thanks to Jack Gillett).</li>
+</ul>
+<p>PATTERNS</p><ul>
+<li>Faster implementation of the <code>Observable</code> class in the thread-safe case (thanks to Klaus Spanderen).</li>
+</ul>
+<p>TERM STRUCTURES</p><ul>
+<li>Added experimental rate helper for constant-notional cross-currency basis swaps (thanks to Marcin Rybacki).</li>
+<li>Added volatility type and displacements to year-on-year inflation volatility surfaces (thanks to Peter Caspers).</li>
+</ul>
+<p>DEPRECATED FEATURES</p><ul>
+<li>Removed features deprecated in version 1.17: the <code>Callability::Type</code> typedef (now <code>Bond::Price</code>), the <code>FdmOrnsteinUhlenbackOp</code> typedef (now correctly spelled as <code>FdmOrnsteinUhlenbeckOp</code>, and a number of old-style finite-difference engines (<code>FDAmericanEngine</code>, <code>FDBermudanEngine</code>, <code>FDDividendAmericanEngine</code> and its variants, <code>FDDividendEuropeanEngine</code> and its variants, and <code>FDEuropeanEngine</code>) all replaced by the <code>FdBlackScholesVanillaEngine</code> class.</li>
+<li>Deprecated the old-style finite difference engines for shout options; they are now replaced by the new <code>FDDividendShoutEngine</code> class.</li>
+<li>Deprecated a few unused parts of the old-style finite-differences framework: the <code>AmericanCondition</code> class, the <code>OneFactorOperator</code> typedef, and the <code>FDAmericanCondition</code> class.</li>
+</ul>
+<p>TEST SUITE</p><ul>
+<li>Reduced the run time for the longest-running test cases.</li>
+</ul>
+<p>Thanks go also to Francis Duffy and Cay Oest for smaller fixes, enhancements and bug reports.</p>
+<p><b>Release 1.21 - January 20th, 2021</b></p>
 <p>PORTABILITY</p><ul>
 <li>As previously announced, this is the last release to support Visual C++ 2012. Starting from next release, VC++ 2013 or later will be required in order to enable use of C++11 features.</li>
 </ul>

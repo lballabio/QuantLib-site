@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -145,26 +145,26 @@ virtual <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77
 <tr class="memdesc:a33d9dda89ba7db93ae8b7d8c64122597"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of independent factors of the process <br /></td></tr>
 <tr class="separator:a33d9dda89ba7db93ae8b7d8c64122597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d85d7308543378898341eb84a6b258"><td class="memItemLeft" align="right" valign="top"><a id="a23d85d7308543378898341eb84a6b258"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a23d85d7308543378898341eb84a6b258">initialValues</a> () const =0</td></tr>
+virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a23d85d7308543378898341eb84a6b258">initialValues</a> () const =0</td></tr>
 <tr class="memdesc:a23d85d7308543378898341eb84a6b258"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the initial values of the state variables <br /></td></tr>
 <tr class="separator:a23d85d7308543378898341eb84a6b258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add74d4d9a1354fee6d3df7662b14e7e1"><td class="memItemLeft" align="right" valign="top"><a id="add74d4d9a1354fee6d3df7662b14e7e1"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#add74d4d9a1354fee6d3df7662b14e7e1">drift</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const =0</td></tr>
+virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#add74d4d9a1354fee6d3df7662b14e7e1">drift</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const =0</td></tr>
 <tr class="memdesc:add74d4d9a1354fee6d3df7662b14e7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the drift part of the equation, i.e., \( \mu(t, \mathrm{x}_t) \) <br /></td></tr>
 <tr class="separator:add74d4d9a1354fee6d3df7662b14e7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8562aad455e247b42d47aab2b18f205a"><td class="memItemLeft" align="right" valign="top"><a id="a8562aad455e247b42d47aab2b18f205a"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a8562aad455e247b42d47aab2b18f205a">diffusion</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const =0</td></tr>
+virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a8562aad455e247b42d47aab2b18f205a">diffusion</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const =0</td></tr>
 <tr class="memdesc:a8562aad455e247b42d47aab2b18f205a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the diffusion part of the equation, i.e. \( \sigma(t, \mathrm{x}_t) \) <br /></td></tr>
 <tr class="separator:a8562aad455e247b42d47aab2b18f205a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff82c7ea229ea678252bca22f1ee455"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a5ff82c7ea229ea678252bca22f1ee455">expectation</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
+<tr class="memitem:a5ff82c7ea229ea678252bca22f1ee455"><td class="memItemLeft" align="right" valign="top">virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a5ff82c7ea229ea678252bca22f1ee455">expectation</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
 <tr class="separator:a5ff82c7ea229ea678252bca22f1ee455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d143e05259160f677407c6cb3b7d8b4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a1d143e05259160f677407c6cb3b7d8b4">stdDeviation</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
+<tr class="memitem:a1d143e05259160f677407c6cb3b7d8b4"><td class="memItemLeft" align="right" valign="top">virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a1d143e05259160f677407c6cb3b7d8b4">stdDeviation</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
 <tr class="separator:a1d143e05259160f677407c6cb3b7d8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d7d88e8f05305804aed59a6521f8a36"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a7d7d88e8f05305804aed59a6521f8a36">covariance</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
+<tr class="memitem:a7d7d88e8f05305804aed59a6521f8a36"><td class="memItemLeft" align="right" valign="top">virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a7d7d88e8f05305804aed59a6521f8a36">covariance</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt) const</td></tr>
 <tr class="separator:a7d7d88e8f05305804aed59a6521f8a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37b5aebef2d35194c059d21a9a793b9c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a37b5aebef2d35194c059d21a9a793b9c">evolve</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;dw) const</td></tr>
+<tr class="memitem:a37b5aebef2d35194c059d21a9a793b9c"><td class="memItemLeft" align="right" valign="top">virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a37b5aebef2d35194c059d21a9a793b9c">evolve</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> dt, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;dw) const</td></tr>
 <tr class="separator:a37b5aebef2d35194c059d21a9a793b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8f5deb5ff248f45bb56c4054f000ec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a2f8f5deb5ff248f45bb56c4054f000ec">apply</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;dx) const</td></tr>
+<tr class="memitem:a2f8f5deb5ff248f45bb56c4054f000ec"><td class="memItemLeft" align="right" valign="top">virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a2f8f5deb5ff248f45bb56c4054f000ec">apply</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x0, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;dx) const</td></tr>
 <tr class="separator:a2f8f5deb5ff248f45bb56c4054f000ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">utilities</div></td></tr>
 <tr class="memitem:a077542ff55ad755add55e8e5e8172cca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a077542ff55ad755add55e8e5e8172cca">time</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;) const</td></tr>
@@ -202,14 +202,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="memitem:a51a940500df8f947d270aaab06f53371"><td class="memItemLeft" align="right" valign="top"><a id="a51a940500df8f947d270aaab06f53371"></a>
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>discretization_</b></td></tr>
 <tr class="separator:a51a940500df8f947d270aaab06f53371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbd1bbfbbd50f17d99fa61f74dc16437"><td class="memItemLeft" align="right" valign="top"><a id="afbd1bbfbbd50f17d99fa61f74dc16437"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> ()</td></tr>
-<tr class="separator:afbd1bbfbbd50f17d99fa61f74dc16437"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84749d046d61db59992e49b8a7940bc5"><td class="memItemLeft" align="right" valign="top"><a id="a84749d046d61db59992e49b8a7940bc5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt; &amp;)</td></tr>
-<tr class="separator:a84749d046d61db59992e49b8a7940bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_stochastic_process.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5bd09e183ab18ac57d1c26638ab9ac2"><td class="memItemLeft" align="right" valign="top"><a id="ac5bd09e183ab18ac57d1c26638ab9ac2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> ()=default</td></tr>
+<tr class="separator:ac5bd09e183ab18ac57d1c26638ab9ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9090816645490b98335a3e377850514"><td class="memItemLeft" align="right" valign="top"><a id="ad9090816645490b98335a3e377850514"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StochasticProcess</b> (ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_process_1_1discretization.html">discretization</a> &gt;)</td></tr>
+<tr class="separator:ad9090816645490b98335a3e377850514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -237,7 +237,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; expectation </td>
+          <td class="memname">virtual Disposable&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; expectation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
@@ -268,7 +268,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>returns the expectation \( E(\mathrm{x}_{t_0 + \Delta t} | \mathrm{x}_{t_0} = \mathrm{x}_0) \) of the process after a time interval \( \Delta t \) according to the given discretization. This method can be overridden in derived classes which want to hard-code a particular discretization. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a51943d498d07fcfacfd0290f810c5b36">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#a51943d498d07fcfacfd0290f810c5b36">G2ForwardProcess</a>, and <a class="el" href="class_quant_lib_1_1_g2_process.html#a51943d498d07fcfacfd0290f810c5b36">G2Process</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#aeb72a5b2c3678da9924b5e81be886ad2">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#aeb72a5b2c3678da9924b5e81be886ad2">G2ForwardProcess</a>, and <a class="el" href="class_quant_lib_1_1_g2_process.html#aeb72a5b2c3678da9924b5e81be886ad2">G2Process</a>.</p>
 
 </div>
 </div>
@@ -282,7 +282,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; stdDeviation </td>
+          <td class="memname">virtual Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; stdDeviation </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
@@ -313,7 +313,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>returns the standard deviation \( S(\mathrm{x}_{t_0 + \Delta t} | \mathrm{x}_{t_0} = \mathrm{x}_0) \) of the process after a time interval \( \Delta t \) according to the given discretization. This method can be overridden in derived classes which want to hard-code a particular discretization. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a20608f1018c118acbc8b4a6419cef517">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#a20608f1018c118acbc8b4a6419cef517">G2ForwardProcess</a>, and <a class="el" href="class_quant_lib_1_1_g2_process.html#a20608f1018c118acbc8b4a6419cef517">G2Process</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a03a722829e121fadb7a9f4fda750583c">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#a03a722829e121fadb7a9f4fda750583c">G2ForwardProcess</a>, and <a class="el" href="class_quant_lib_1_1_g2_process.html#a03a722829e121fadb7a9f4fda750583c">G2Process</a>.</p>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; covariance </td>
+          <td class="memname">virtual Disposable&lt;<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a>&gt; covariance </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
@@ -358,7 +358,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>returns the covariance \( V(\mathrm{x}_{t_0 + \Delta t} | \mathrm{x}_{t_0} = \mathrm{x}_0) \) of the process after a time interval \( \Delta t \) according to the given discretization. This method can be overridden in derived classes which want to hard-code a particular discretization. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a86fdc03d99e5766f1e0908205b80148a">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#a86fdc03d99e5766f1e0908205b80148a">G2ForwardProcess</a>, <a class="el" href="class_quant_lib_1_1_g2_process.html#a86fdc03d99e5766f1e0908205b80148a">G2Process</a>, and <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#a86fdc03d99e5766f1e0908205b80148a">LiborForwardModelProcess</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a8f933d671b0319a4b14964c8b1ba51cd">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_g2_forward_process.html#a8f933d671b0319a4b14964c8b1ba51cd">G2ForwardProcess</a>, <a class="el" href="class_quant_lib_1_1_g2_process.html#a8f933d671b0319a4b14964c8b1ba51cd">G2Process</a>, and <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#a8f933d671b0319a4b14964c8b1ba51cd">LiborForwardModelProcess</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; evolve </td>
+          <td class="memname">virtual Disposable&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; evolve </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td>
           <td class="paramname"><em>t0</em>, </td>
@@ -412,7 +412,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </p>
 <p> where \( E \) is the expectation and \( S \) the standard deviation. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#af32a2b7d3aa8ec2addf422ed1b15a525">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">GJRGARCHProcess</a>, <a class="el" href="class_quant_lib_1_1_bates_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">BatesProcess</a>, <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">LiborForwardModelProcess</a>, <a class="el" href="class_quant_lib_1_1_kluge_ext_o_u_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">KlugeExtOUProcess</a>, and <a class="el" href="class_quant_lib_1_1_ext_o_u_with_jumps_process.html#af32a2b7d3aa8ec2addf422ed1b15a525">ExtOUWithJumpsProcess</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a6aa944df899294611beca9d3e19d2151">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#a6aa944df899294611beca9d3e19d2151">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#a6aa944df899294611beca9d3e19d2151">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#a6aa944df899294611beca9d3e19d2151">GJRGARCHProcess</a>, <a class="el" href="class_quant_lib_1_1_bates_process.html#a6aa944df899294611beca9d3e19d2151">BatesProcess</a>, <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#a6aa944df899294611beca9d3e19d2151">LiborForwardModelProcess</a>, <a class="el" href="class_quant_lib_1_1_kluge_ext_o_u_process.html#a6aa944df899294611beca9d3e19d2151">KlugeExtOUProcess</a>, and <a class="el" href="class_quant_lib_1_1_ext_o_u_with_jumps_process.html#a6aa944df899294611beca9d3e19d2151">ExtOUWithJumpsProcess</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; apply </td>
+          <td class="memname">virtual Disposable&lt;<a class="el" href="class_quant_lib_1_1_array.html">Array</a>&gt; apply </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;&#160;</td>
           <td class="paramname"><em>x0</em>, </td>
@@ -451,7 +451,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>applies a change to the asset value. By default, it returns \( \mathrm{x} + \Delta \mathrm{x} \). </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#ad16a97eee0ebc79cbf0c11c69d46b490">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#ad16a97eee0ebc79cbf0c11c69d46b490">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#ad16a97eee0ebc79cbf0c11c69d46b490">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#ad16a97eee0ebc79cbf0c11c69d46b490">GJRGARCHProcess</a>, and <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#ad16a97eee0ebc79cbf0c11c69d46b490">LiborForwardModelProcess</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a82dda5b491bfa30c104070d907fea1f4">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#a82dda5b491bfa30c104070d907fea1f4">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#a82dda5b491bfa30c104070d907fea1f4">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#a82dda5b491bfa30c104070d907fea1f4">GJRGARCHProcess</a>, and <a class="el" href="class_quant_lib_1_1_libor_forward_model_process.html#a82dda5b491bfa30c104070d907fea1f4">LiborForwardModelProcess</a>.</p>
 
 </div>
 </div>
@@ -481,12 +481,12 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>returns the time value corresponding to the given date in the reference system of the stochastic process.</p>
 <dl class="section note"><dt>Note</dt><dd>As a number of processes might not need this functionality, a default implementation is given which raises an exception. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#ace68932e4777e1d7e93035883dd77488">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_gsr_process.html#a9616e98344f1aaf32238783d4d9a1e8e">GsrProcess</a>, <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#ab2e3e42e764f5a50686da1cb9ea153be">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_merton76_process.html#ab2e3e42e764f5a50686da1cb9ea153be">Merton76Process</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#ab2e3e42e764f5a50686da1cb9ea153be">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#ab2e3e42e764f5a50686da1cb9ea153be">GJRGARCHProcess</a>, and <a class="el" href="class_quant_lib_1_1_generalized_black_scholes_process.html#ab2e3e42e764f5a50686da1cb9ea153be">GeneralizedBlackScholesProcess</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_hybrid_heston_hull_white_process.html#a63e279f8d9de429a57ce4fb6c7467bf3">HybridHestonHullWhiteProcess</a>, <a class="el" href="class_quant_lib_1_1_gsr_process.html#aa46d1d0c1fad5d35ba5d2ddf26e51af2">GsrProcess</a>, <a class="el" href="class_quant_lib_1_1_stochastic_process_array.html#a5dda233204adae17efb4fe8b75d2bce4">StochasticProcessArray</a>, <a class="el" href="class_quant_lib_1_1_merton76_process.html#a5dda233204adae17efb4fe8b75d2bce4">Merton76Process</a>, <a class="el" href="class_quant_lib_1_1_heston_process.html#a5dda233204adae17efb4fe8b75d2bce4">HestonProcess</a>, <a class="el" href="class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html#a5dda233204adae17efb4fe8b75d2bce4">GJRGARCHProcess</a>, and <a class="el" href="class_quant_lib_1_1_generalized_black_scholes_process.html#a5dda233204adae17efb4fe8b75d2bce4">GeneralizedBlackScholesProcess</a>.</p>
 
 </div>
 </div>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +503,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

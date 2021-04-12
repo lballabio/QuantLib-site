@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QuantLib: FDDividendEuropeanEngine&lt; Scheme &gt; Class Template Reference</title>
+<title>QuantLib: ArrayProxy Class Reference</title>
 <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -73,38 +73,73 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_f_d_dividend_european_engine.html">FDDividendEuropeanEngine</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><b>initializers</b></li><li class="navelem"><a class="el" href="class_quant_lib_1_1initializers_1_1_array_proxy.html">ArrayProxy</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="class_quant_lib_1_1_f_d_dividend_european_engine-members.html">List of all members</a>  </div>
+<a href="#friends">Friends</a> &#124;
+<a href="class_quant_lib_1_1initializers_1_1_array_proxy-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FDDividendEuropeanEngine&lt; Scheme &gt; Class Template Reference</div>  </div>
+<div class="title">ArrayProxy Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Finite-differences pricing engine for dividend European options.  
- <a href="class_quant_lib_1_1_f_d_dividend_european_engine.html#details">More...</a></p>
-
-<p><code>#include &lt;ql/pricingengines/vanilla/fddividendeuropeanengine.hpp&gt;</code></p>
-
-<p>Inherits FDEngineAdapter&lt; base, engine &gt;.</p>
+<p><code>#include &lt;ql/math/initializers.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb9fdf30221d3234f2fa65067e728d61"><td class="memItemLeft" align="right" valign="top"><a id="adb9fdf30221d3234f2fa65067e728d61"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FDDividendEuropeanEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_generalized_black_scholes_process.html">GeneralizedBlackScholesProcess</a> &gt; &amp;process, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> timeSteps=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> gridPoints=100, bool timeDependent=false)</td></tr>
-<tr class="separator:adb9fdf30221d3234f2fa65067e728d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1b16ebdb843b05d01d7ac508595b023"><td class="memItemLeft" align="right" valign="top"><a id="aa1b16ebdb843b05d01d7ac508595b023"></a>
+<a class="el" href="class_quant_lib_1_1initializers_1_1_array_proxy.html">ArrayProxy</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator,</b> (const <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> x)</td></tr>
+<tr class="separator:aa1b16ebdb843b05d01d7ac508595b023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a3dab9843cbc93dbe829f5b501298bed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1initializers_1_1_array_proxy.html">ArrayProxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1initializers_1_1_array_proxy.html#a3dab9843cbc93dbe829f5b501298bed5">operator&lt;&lt;</a> (<a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)</td></tr>
+<tr class="separator:a3dab9843cbc93dbe829f5b501298bed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;template&lt; class &gt; class Scheme = CrankNicolson&gt;<br />
-class QuantLib::FDDividendEuropeanEngine&lt; Scheme &gt;</h3>
+<div class="textblock"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use initializer lists instead. Deprecated in version 1.22. </dd></dl>
+</div><h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a3dab9843cbc93dbe829f5b501298bed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dab9843cbc93dbe829f5b501298bed5">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
 
-<p>Finite-differences pricing engine for dividend European options. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use FdBlackScholesVanillaEngine instead. Deprecated in version 1.17. </dd></dl>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quant_lib_1_1initializers_1_1_array_proxy.html">ArrayProxy</a> operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000009">Deprecated:</a></b></dt><dd>Use initializer lists instead. Deprecated in version 1.22. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

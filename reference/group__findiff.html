@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -75,7 +75,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">Finite-differences framework</div>  </div>
 </div><!--header-->
@@ -143,10 +144,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga99062cef45cec7825cfdf7b0f8e1344c"><td class="memItemLeft" align="right" valign="top">typedef PdeOperator&lt; PdeBSM &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__findiff.html#ga99062cef45cec7825cfdf7b0f8e1344c">BSMTermOperator</a></td></tr>
 <tr class="memdesc:ga99062cef45cec7825cfdf7b0f8e1344c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black-Scholes-Merton differential operator.  <a href="group__findiff.html#ga99062cef45cec7825cfdf7b0f8e1344c">More...</a><br /></td></tr>
 <tr class="separator:ga99062cef45cec7825cfdf7b0f8e1344c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2342f59174f2223a9889acf4a86496a"><td class="memItemLeft" align="right" valign="top"><a id="gab2342f59174f2223a9889acf4a86496a"></a>
-typedef PdeOperator&lt; PdeShortRate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__findiff.html#gab2342f59174f2223a9889acf4a86496a">OneFactorOperator</a></td></tr>
-<tr class="memdesc:gab2342f59174f2223a9889acf4a86496a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest-rate single factor model differential operator. <br /></td></tr>
-<tr class="separator:gab2342f59174f2223a9889acf4a86496a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef PdeOperator&lt; PdeShortRate &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__findiff.html#gafaafa0ee0f55f9e687e3f1eef5f48cba">OneFactorOperator</a></td></tr>
+<tr class="memdesc:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interest-rate single factor model differential operator.  <a href="group__findiff.html#gafaafa0ee0f55f9e687e3f1eef5f48cba">More...</a><br /></td></tr>
+<tr class="separator:gafaafa0ee0f55f9e687e3f1eef5f48cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This framework (corresponding to the ql/FiniteDifferences directory) contains basic building blocks for the numerical solution of partial differential equations by means of finite-difference methods. </p>
@@ -165,6 +168,24 @@ typedef PdeOperator&lt; PdeShortRate &gt;&#160;</td><td class="memItemRight" val
 
 <p>Black-Scholes-Merton differential operator. </p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000085">Tests:</a></b></dt><dd>coefficients are tested against constant BSM operator </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gafaafa0ee0f55f9e687e3f1eef5f48cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafaafa0ee0f55f9e687e3f1eef5f48cba">&#9670;&nbsp;</a></span>OneFactorOperator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QL_DEPRECATED typedef PdeOperator&lt;PdeShortRate&gt; OneFactorOperator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interest-rate single factor model differential operator. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use the new finite-differences framework instead. Deprecated in version 1.22. </dd></dl>
 
 </div>
 </div>

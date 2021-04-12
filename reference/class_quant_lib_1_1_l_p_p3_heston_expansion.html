@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -103,9 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26c3a4ad758b83e51ea5931ec422f068"><td class="memItemLeft" align="right" valign="top"><a id="a26c3a4ad758b83e51ea5931ec422f068"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LPP3HestonExpansion</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> kappa, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> theta, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> sigma, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> v0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> rho, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> term)</td></tr>
 <tr class="separator:a26c3a4ad758b83e51ea5931ec422f068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addd03f31b75397118cb4e51f04a4f88f"><td class="memItemLeft" align="right" valign="top"><a id="addd03f31b75397118cb4e51f04a4f88f"></a>
-virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedVolatility</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> strike, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> forward) const</td></tr>
-<tr class="separator:addd03f31b75397118cb4e51f04a4f88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707cf89011b07364b8bff98763f21f8c"><td class="memItemLeft" align="right" valign="top"><a id="a707cf89011b07364b8bff98763f21f8c"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedVolatility</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> strike, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> forward) const override</td></tr>
+<tr class="separator:a707cf89011b07364b8bff98763f21f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Lorig Pagliarani Pascucci expansion of order-3 for the Heston model. During calibration, it can be initialized once per expiry, and called many times with different strikes. The formula is also available in the Mathematica notebook from the authors at <a href="http://explicitsolutions.wordpress.com/">http://explicitsolutions.wordpress.com/</a> </p>
