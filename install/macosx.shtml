@@ -85,7 +85,8 @@ change the paths above accordingly.
 <p><strong>Also, if you only intend to build the QuantLib Python
 module</strong>, you might want to pass the <tt>--disable-shared</tt>
 option to <tt>./configure</tt> to only build a static library and
-avoid problems with dynamic loading.</p>
+avoid problems with dynamic loading.  (A user reported problems
+with this; if you experience them, remove the flag and recompile.)</p>
 
 <p>Finally, run:</p>
 <pre>
