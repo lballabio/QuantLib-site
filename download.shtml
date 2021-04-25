@@ -16,7 +16,7 @@ version is suggested. Advanced users may want
 to <a href="reference/config.html">configure the library</a> with
 non-default settings.</p>
 <p>There are no official binary packages, but volunteers provide them
-for a number of platforms.  <b>Mac OS X users</b> can use Homebrew.
+for a number of platforms.  <b>macOS users</b> can use Homebrew or MacPorts.
 <b>Debian users</b> can find the latest version of the different
 QuantLib packages in the "unstable" (a.k.a. "Sid") distribution; see
 the <a href=
