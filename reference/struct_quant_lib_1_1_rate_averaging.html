@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QuantLib: Member List</title>
+<title>QuantLib: RateAveraging Struct Reference</title>
 <link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -73,20 +73,55 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_f_d_american_engine.html">FDAmericanEngine</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="struct_quant_lib_1_1_rate_averaging.html">RateAveraging</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="struct_quant_lib_1_1_rate_averaging-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">FDAmericanEngine&lt; Scheme &gt; Member List</div>  </div>
+<div class="title">RateAveraging Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="class_quant_lib_1_1_f_d_american_engine.html">FDAmericanEngine&lt; Scheme &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>FDAmericanEngine</b>(const ext::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;process, Size timeSteps=100, Size gridPoints=100, bool timeDependent=false) (defined in <a class="el" href="class_quant_lib_1_1_f_d_american_engine.html">FDAmericanEngine&lt; Scheme &gt;</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_f_d_american_engine.html">FDAmericanEngine&lt; Scheme &gt;</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>FDEngineAdapter</b>(const ext::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;process, Size timeSteps=100, Size gridPoints=100, bool timeDependent=false) (defined in <b>FDEngineAdapter&lt; base, engine &gt;</b>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_f_d_engine_adapter.html">FDEngineAdapter&lt; base, engine &gt;</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>rate averaging method  
+ <a href="struct_quant_lib_1_1_rate_averaging.html#details">More...</a></p>
+
+<p><code>#include &lt;ql/cashflows/rateaveraging.hpp&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_quant_lib_1_1_rate_averaging.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <a class="el" href="struct_quant_lib_1_1_rate_averaging.html#a1d1cfd8ffb84e947f82999c682b666a7aebfbf7dc5cde0772efb1aa49712bd76b">Simple</a>
+, <a class="el" href="struct_quant_lib_1_1_rate_averaging.html#a1d1cfd8ffb84e947f82999c682b666a7a044dd0abbe13404b773041d998f909b9">Compound</a>
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>rate averaging method </p>
+<p>It allows to configure how interest is accrued in multi-fixing coupons or futures. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1cfd8ffb84e947f82999c682b666a7">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="struct_quant_lib_1_1_rate_averaging.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1d1cfd8ffb84e947f82999c682b666a7aebfbf7dc5cde0772efb1aa49712bd76b"></a>Simple&#160;</td><td class="fielddoc"><p>Under the simple convention the amount of interest is calculated by applying the sub-rate to the principal, and the payment due at the end of the period is the sum of those amounts. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a1d1cfd8ffb84e947f82999c682b666a7a044dd0abbe13404b773041d998f909b9"></a>Compound&#160;</td><td class="fielddoc"><p>Under the compound convention, the additional amount of interest owed each period is calculated by applying the rate both to the principal and the accumulated unpaid interest. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

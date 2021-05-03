@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -107,17 +107,17 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87ec5853160ede59fed59d938453dff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_isda_cds_engine.html#a87ec5853160ede59fed59d938453dff7">IsdaCdsEngine</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt; &amp;probability, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> recoveryRate, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discountCurve, const boost::optional&lt; bool &gt; &amp;includeSettlementDateFlows=boost::none, <a class="el" href="class_quant_lib_1_1_isda_cds_engine.html#a3ca95a9bd2310b8a8d386f73229933c4">NumericalFix</a> numericalFix=Taylor, AccrualBias accrualBias=HalfDayBias, ForwardsInCouponPeriod forwardsInCouponPeriod=Piecewise)</td></tr>
-<tr class="separator:a87ec5853160ede59fed59d938453dff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94918694702a83723449414070a3929"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_isda_cds_engine.html#ad94918694702a83723449414070a3929">IsdaCdsEngine</a> (<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt; probability, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> recoveryRate, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; discountCurve, const boost::optional&lt; bool &gt; &amp;includeSettlementDateFlows=boost::none, <a class="el" href="class_quant_lib_1_1_isda_cds_engine.html#a3ca95a9bd2310b8a8d386f73229933c4">NumericalFix</a> numericalFix=Taylor, AccrualBias accrualBias=HalfDayBias, ForwardsInCouponPeriod forwardsInCouponPeriod=Piecewise)</td></tr>
+<tr class="separator:ad94918694702a83723449414070a3929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36c43a8e9d5542a4e51b220bd5ee989f"><td class="memItemLeft" align="right" valign="top"><a id="a36c43a8e9d5542a4e51b220bd5ee989f"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>isdaRateCurve</b> () const</td></tr>
 <tr class="separator:a36c43a8e9d5542a4e51b220bd5ee989f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d074d7a600b353b32719330b0a16e0"><td class="memItemLeft" align="right" valign="top"><a id="a14d074d7a600b353b32719330b0a16e0"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>isdaCreditCurve</b> () const</td></tr>
 <tr class="separator:a14d074d7a600b353b32719330b0a16e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082ff96da379d5e17436372ccb3c0972"><td class="memItemLeft" align="right" valign="top"><a id="a082ff96da379d5e17436372ccb3c0972"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () const</td></tr>
-<tr class="separator:a082ff96da379d5e17436372ccb3c0972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memItemLeft" align="right" valign="top"><a id="a61eb1a24e5329ccc296715a40dc3a19a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () const override</td></tr>
+<tr class="separator:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>References:</p>
@@ -144,8 +144,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () cons
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a87ec5853160ede59fed59d938453dff7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87ec5853160ede59fed59d938453dff7">&#9670;&nbsp;</a></span>IsdaCdsEngine()</h2>
+<a id="ad94918694702a83723449414070a3929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94918694702a83723449414070a3929">&#9670;&nbsp;</a></span>IsdaCdsEngine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +153,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () cons
         <tr>
           <td class="memname"><a class="el" href="class_quant_lib_1_1_isda_cds_engine.html">IsdaCdsEngine</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html">DefaultProbabilityTermStructure</a> &gt;&#160;</td>
           <td class="paramname"><em>probability</em>, </td>
         </tr>
         <tr>
@@ -165,7 +165,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () cons
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td>
           <td class="paramname"><em>discountCurve</em>, </td>
         </tr>
         <tr>

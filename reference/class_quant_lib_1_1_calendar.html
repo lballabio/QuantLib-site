@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -161,8 +161,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5714af8cb45a29153e0fd53ee5e7241"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#af5714af8cb45a29153e0fd53ee5e7241">Calendar</a> ()</td></tr>
-<tr class="separator:af5714af8cb45a29153e0fd53ee5e7241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d66ba30abf9db537021e09494ae428c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a0d66ba30abf9db537021e09494ae428c">Calendar</a> ()=default</td></tr>
+<tr class="separator:a0d66ba30abf9db537021e09494ae428c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -234,11 +234,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBusinessDay</b> (co
 <p>A calendar should be defined for specific exchange holiday schedule or for general country holiday schedule. Legacy city holiday schedule calendars will be moved to the exchange/country convention.</p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000162">Tests:</a></b></dt><dd>the methods for adding and removing holidays are tested by inspecting the calendar before and after their invocation. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af5714af8cb45a29153e0fd53ee5e7241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5714af8cb45a29153e0fd53ee5e7241">&#9670;&nbsp;</a></span>Calendar()</h2>
+<a id="a0d66ba30abf9db537021e09494ae428c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d66ba30abf9db537021e09494ae428c">&#9670;&nbsp;</a></span>Calendar()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> </td>
@@ -247,6 +250,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBusinessDay</b> (co
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>The default constructor returns a calendar with a null implementation, which is therefore unusable except as a placeholder. </p>
 

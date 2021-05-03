@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -111,9 +111,9 @@ virtual <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39
 <tr class="separator:afb15d9d72f3e1ffe21f4689dc411fde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d31854a0596d482c100c6c63448213"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_seasonality.html#a32d31854a0596d482c100c6c63448213">isConsistent</a> (const <a class="el" href="class_quant_lib_1_1_inflation_term_structure.html">InflationTermStructure</a> &amp;iTS) const</td></tr>
 <tr class="separator:a32d31854a0596d482c100c6c63448213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a047e624db01a253658360c259176e7bf"><td class="memItemLeft" align="right" valign="top"><a id="a047e624db01a253658360c259176e7bf"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Seasonality</b> ()</td></tr>
-<tr class="separator:a047e624db01a253658360c259176e7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7824e058f7229690ec162d2c898f35b3"><td class="memItemLeft" align="right" valign="top"><a id="a7824e058f7229690ec162d2c898f35b3"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Seasonality</b> ()=default</td></tr>
+<tr class="separator:a7824e058f7229690ec162d2c898f35b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A transformation of an existing inflation swap rate. </p>
@@ -146,7 +146,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Seasonality</b> (
 </div><div class="memdoc">
 <p>It is possible for multi-year seasonalities to be inconsistent with the inflation term structure they are given to. This method enables testing - but programmers are not required to implement it. E.g. for price seasonality the corrections at whole years after the inflation curve base date should be the same or else there can be an inconsistency with quoted instruments. Alternatively, the seasonality can be set <em>before</em> the inflation curve is bootstrapped. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_multiplicative_price_seasonality.html#a32d31854a0596d482c100c6c63448213">MultiplicativePriceSeasonality</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_multiplicative_price_seasonality.html#aecbe3d76675a14124e7c530c17eaa8c6">MultiplicativePriceSeasonality</a>.</p>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -105,12 +105,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6a5b3b4571bdd27223a1de9ecfa0ac1f"><td class="memItemLeft" align="right" valign="top"><a id="a6a5b3b4571bdd27223a1de9ecfa0ac1f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzMultiPathPricer</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt; &amp;, const std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &amp;, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>, LsmBasisSystem::PolynomType)</td></tr>
-<tr class="separator:a6a5b3b4571bdd27223a1de9ecfa0ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdc4aa372630db744c7e8935aec2550c"><td class="memItemLeft" align="right" valign="top"><a id="abdc4aa372630db744c7e8935aec2550c"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="class_quant_lib_1_1_multi_path.html">MultiPath</a> &amp;multiPath) const</td></tr>
-<tr class="separator:abdc4aa372630db744c7e8935aec2550c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81359929ce7c61cfb1e168b4f37535f"><td class="memItemLeft" align="right" valign="top"><a id="ab81359929ce7c61cfb1e168b4f37535f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LongstaffSchwartzMultiPathPricer</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt; &amp;, const std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt; &amp;, std::vector&lt; <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &gt;, <a class="el" href="class_quant_lib_1_1_array.html">Array</a>, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>, LsmBasisSystem::PolynomType)</td></tr>
+<tr class="separator:ab81359929ce7c61cfb1e168b4f37535f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a111f47d0a649a505caf0740e57d11"><td class="memItemLeft" align="right" valign="top"><a id="ac1a111f47d0a649a505caf0740e57d11"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="class_quant_lib_1_1_multi_path.html">MultiPath</a> &amp;multiPath) const override</td></tr>
+<tr class="separator:ac1a111f47d0a649a505caf0740e57d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8946c11a6ad8cd19bc92048019269157"><td class="memItemLeft" align="right" valign="top"><a id="a8946c11a6ad8cd19bc92048019269157"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>calibrate</b> ()</td></tr>
 <tr class="separator:a8946c11a6ad8cd19bc92048019269157"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,12 +129,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationPhase_</b>
 <tr class="memitem:a643f0781f1089ba9e767cc109a637e11"><td class="memItemLeft" align="right" valign="top"><a id="a643f0781f1089ba9e767cc109a637e11"></a>
 const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_path_payoff.html">PathPayoff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>payoff_</b></td></tr>
 <tr class="separator:a643f0781f1089ba9e767cc109a637e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41a0f0d111413d6b14e5ee6c0b49bc04"><td class="memItemLeft" align="right" valign="top"><a id="a41a0f0d111413d6b14e5ee6c0b49bc04"></a>
-boost::scoped_array&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>coeff_</b></td></tr>
-<tr class="separator:a41a0f0d111413d6b14e5ee6c0b49bc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c83a74c28f6f43adf7181d43e4f4639"><td class="memItemLeft" align="right" valign="top"><a id="a4c83a74c28f6f43adf7181d43e4f4639"></a>
-boost::scoped_array&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lowerBounds_</b></td></tr>
-<tr class="separator:a4c83a74c28f6f43adf7181d43e4f4639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a81b4954a5ed02f4158e3de17c04435"><td class="memItemLeft" align="right" valign="top"><a id="a0a81b4954a5ed02f4158e3de17c04435"></a>
+std::unique_ptr&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>coeff_</b></td></tr>
+<tr class="separator:a0a81b4954a5ed02f4158e3de17c04435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37921da92bb71cc253192fc7a1c22bfd"><td class="memItemLeft" align="right" valign="top"><a id="a37921da92bb71cc253192fc7a1c22bfd"></a>
+std::unique_ptr&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lowerBounds_</b></td></tr>
+<tr class="separator:a37921da92bb71cc253192fc7a1c22bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ad858ee0c5b623439a83a0d8a7fc16"><td class="memItemLeft" align="right" valign="top"><a id="a31ad858ee0c5b623439a83a0d8a7fc16"></a>
 const std::vector&lt; <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timePositions_</b></td></tr>
 <tr class="separator:a31ad858ee0c5b623439a83a0d8a7fc16"><td class="memSeparator" colspan="2">&#160;</td></tr>

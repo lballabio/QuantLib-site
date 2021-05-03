@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -86,10 +86,10 @@ $(function() {
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Dynamics</b>(Real a, Real b, Real sigma, Real r0) (defined in <a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html#a5a9404ed5bf426e14c92f48328c85d1b">process</a>()</td><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html#a9dbc206e0d7b3e75778308986bf15b02">shortRate</a>(Time, Real x) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>ShortRateDynamics</b>(const ext::shared_ptr&lt; StochasticProcess1D &gt; &amp;process) (defined in <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html#a60a311583ec80e34c921811428c9a208">variable</a>(Time, Rate r) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~ShortRateDynamics</b>() (defined in <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html#a27a3175f2087284f272ecaf5b8738630">shortRate</a>(Time, Real x) const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>ShortRateDynamics</b>(ext::shared_ptr&lt; StochasticProcess1D &gt; process) (defined in <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html#afe67ad995b83ae4e7f91bdb49926384d">variable</a>(Time, Rate r) const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_vasicek_1_1_dynamics.html">Vasicek::Dynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>~ShortRateDynamics</b>()=default (defined in <a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_one_factor_model_1_1_short_rate_dynamics.html">OneFactorModel::ShortRateDynamics</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

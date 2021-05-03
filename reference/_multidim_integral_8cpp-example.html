@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a> {</div>
 <div class="line"> </div>
-<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> {}; }</div>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -109,8 +109,8 @@ $(function() {
 <div class="line"><span class="keyword">struct </span>integrand {</div>
 <div class="line">    <a name="a0"></a><a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> operator()(<span class="keyword">const</span> std::vector&lt;Real&gt;&amp; arg)<span class="keyword"> const </span>{</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> sum = 1.;</div>
-<div class="line">        <span class="keywordflow">for</span>(<a name="a1"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i=0; i&lt;arg.size(); i++) </div>
-<div class="line">            sum *= std::exp(-arg[i]*arg[i]) * std::cos(arg[i]);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i : arg)</div>
+<div class="line">            sum *= std::exp(-i * i) * std::cos(i);</div>
 <div class="line">        <span class="keywordflow">return</span> sum;</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><span class="comment">    dimension 3 you might need to modify the points in the integral to retain a </span></div>
 <div class="line"><span class="comment">    sensible computing time.</span></div>
 <div class="line"><span class="comment">    */</span></div>
-<div class="line">    <a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> dimension = 3;</div>
+<div class="line">    <a name="a1"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> dimension = 3;</div>
 <div class="line">    <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> exactSol = std::pow(std::exp(-.25) * </div>
 <div class="line">        std::sqrt(M_PI), <span class="keyword">static_cast&lt;</span><a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a><span class="keyword">&gt;</span>(dimension));</div>
 <div class="line"> </div>

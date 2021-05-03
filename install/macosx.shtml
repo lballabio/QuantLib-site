@@ -35,16 +35,16 @@ section.</p>
 
 <h3>Installation from a released version</h3>
 
-<p>Download QuantLib from its download page on Bintray, located
-at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.
+<p>Download QuantLib from its download page on GitHub, located
+at <a href="https://github.com/lballabio/QuantLib/releases">https://github.com/lballabio/QuantLib/releases</a>.
 You want to download the tar.gz package (at the time of this writing,
-1.8 is the latest version) and extract it by running
+1.22 is the latest version) and extract it by running
 <pre>
-tar xzvf QuantLib-1.8.tar.gz
+tar xzvf QuantLib-1.22.tar.gz
 </pre>
 in Terminal.  To install QuantLib, enter the folder you just created:
 <pre>
-cd QuantLib-1.8
+cd QuantLib-1.22
 </pre>
 </p>
 
@@ -54,28 +54,30 @@ need to pass additional environment variables to <tt>./configure</tt>
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
             --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
-            CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9' \
+            CXXFLAGS='-O2 -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.9' \
             LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
 </pre>
 (mind the backslash on the end of the lines; it tells the terminal to
 continue on the next line.  You might also discard the backslash and
 write the whole command on a single line.) If your Boost installation
 is not in <tt>/usr/local</tt>, change the paths above accordingly.
-</p>
+For versions of QuantLib before 1.22, the <tt>-std=c++11</tt> is not
+necessary but it will work anyway.</p>
 <p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
 you'll need to pass different environment variables. Run:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
             --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
-            CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6' \
+            CXXFLAGS='-O2 -std=c++11 -stdlib=libstdc++ -mmacosx-version-min=10.6' \
             LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
 </pre>
 </p>
 <p><strong>On earlier systems,</strong> it's not necessary to pass
-environment variables, so the command can be simplified to:
+most environment variables, so the command can be simplified to:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/
+            --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
+            CXXFLAGS='-O2 -std=c++11'
 </pre>
 Again, if your Boost installation is not in <tt>/usr/local</tt>,
 change the paths above accordingly.
@@ -83,7 +85,8 @@ change the paths above accordingly.
 <p><strong>Also, if you only intend to build the QuantLib Python
 module</strong>, you might want to pass the <tt>--disable-shared</tt>
 option to <tt>./configure</tt> to only build a static library and
-avoid problems with dynamic loading.</p>
+avoid problems with dynamic loading.  (A user reported problems
+with this; if you experience them, remove the flag and recompile.)</p>
 
 <p>Finally, run:</p>
 <pre>

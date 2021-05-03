@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ac23de857fba340d34e49747499aa6f79 inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute J_f, the jacobian of <br /></td></tr>
 <tr class="separator:ac23de857fba340d34e49747499aa6f79 inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49ee28675cc6062fa775b1708a2ec2dc inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="memItemLeft" align="right" valign="top"><a id="a49ee28675cc6062fa775b1708a2ec2dc"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cost_function.html#a49ee28675cc6062fa775b1708a2ec2dc">valuesAndJacobian</a> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;jac, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const</td></tr>
+virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cost_function.html#a49ee28675cc6062fa775b1708a2ec2dc">valuesAndJacobian</a> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;jac, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;x) const</td></tr>
 <tr class="memdesc:a49ee28675cc6062fa775b1708a2ec2dc inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute J_f, the jacobian of <br /></td></tr>
 <tr class="separator:a49ee28675cc6062fa775b1708a2ec2dc inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec7babe30f3cdc537fd88dff07f7b8cf inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="memItemLeft" align="right" valign="top"><a id="aec7babe30f3cdc537fd88dff07f7b8cf"></a>
@@ -132,14 +132,14 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="separator:aec7babe30f3cdc537fd88dff07f7b8cf inherit pub_methods_class_quant_lib_1_1_cost_function"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">CostFunction interface</h2></td></tr>
-<tr class="memitem:a807056f1097fdf8561eb9b73db59b956"><td class="memItemLeft" align="right" valign="top"><a id="a807056f1097fdf8561eb9b73db59b956"></a>
-virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_projected_cost_function.html#a807056f1097fdf8561eb9b73db59b956">value</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;freeParameters) const</td></tr>
-<tr class="memdesc:a807056f1097fdf8561eb9b73db59b956"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute the cost function value in x <br /></td></tr>
-<tr class="separator:a807056f1097fdf8561eb9b73db59b956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76586a39177defe2247e1b1eeb977cd1"><td class="memItemLeft" align="right" valign="top"><a id="a76586a39177defe2247e1b1eeb977cd1"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_projected_cost_function.html#a76586a39177defe2247e1b1eeb977cd1">values</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;freeParameters) const</td></tr>
-<tr class="memdesc:a76586a39177defe2247e1b1eeb977cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute the cost function values in x <br /></td></tr>
-<tr class="separator:a76586a39177defe2247e1b1eeb977cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3983dae3fe0588a8f4801803c3030bbe"><td class="memItemLeft" align="right" valign="top"><a id="a3983dae3fe0588a8f4801803c3030bbe"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_projected_cost_function.html#a3983dae3fe0588a8f4801803c3030bbe">value</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;freeParameters) const override</td></tr>
+<tr class="memdesc:a3983dae3fe0588a8f4801803c3030bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute the cost function value in x <br /></td></tr>
+<tr class="separator:a3983dae3fe0588a8f4801803c3030bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61fb73210aae739b7dbd559fa612b391"><td class="memItemLeft" align="right" valign="top"><a id="a61fb73210aae739b7dbd559fa612b391"></a>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_projected_cost_function.html#a61fb73210aae739b7dbd559fa612b391">values</a> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;freeParameters) const override</td></tr>
+<tr class="memdesc:a61fb73210aae739b7dbd559fa612b391"><td class="mdescLeft">&#160;</td><td class="mdescRight">method to overload to compute the cost function values in x <br /></td></tr>
+<tr class="separator:a61fb73210aae739b7dbd559fa612b391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Parameterized cost function. </p>

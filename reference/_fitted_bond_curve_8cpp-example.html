@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a> {</div>
-<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> {}; }</div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
@@ -151,13 +151,13 @@ $(function() {
 <div class="line">        <span class="keyword">const</span> <a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> numberOfBonds = 15;</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> cleanPrice[numberOfBonds];</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i=0; i&lt;numberOfBonds; i++) {</div>
-<div class="line">            cleanPrice[i]=100.0;</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">double</span>&amp; i : cleanPrice) {</div>
+<div class="line">            i = 100.0;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        std::vector&lt; ext::shared_ptr&lt;SimpleQuote&gt; &gt; quote;</div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i=0; i&lt;numberOfBonds; i++) {</div>
-<div class="line">            ext::shared_ptr&lt;SimpleQuote&gt; cp(<span class="keyword">new</span> SimpleQuote(cleanPrice[i]));</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i : cleanPrice) {</div>
+<div class="line">            ext::shared_ptr&lt;SimpleQuote&gt; cp(<span class="keyword">new</span> SimpleQuote(i));</div>
 <div class="line">            quote.push_back(cp);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
@@ -289,8 +289,8 @@ $(function() {
 <div class="line">                           20.0,  25.0, 30.0, 40.0, 50.0 };</div>
 <div class="line"> </div>
 <div class="line">        std::vector&lt;Time&gt; knotVector;</div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i=0; i&lt; LENGTH(knots); i++) {</div>
-<div class="line">            knotVector.push_back(knots[i]);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">double</span>&amp; knot : knots) {</div>
+<div class="line">            knotVector.push_back(knot);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        CubicBSplinesFitting cubicBSplines(knotVector, constrainAtZero);</div>

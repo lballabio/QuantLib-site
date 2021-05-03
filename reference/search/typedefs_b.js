@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['time_5270',['Time',['../group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7',1,'QuantLib']]]
+  ['volatility_5276',['Volatility',['../group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3',1,'QuantLib']]]
 ];

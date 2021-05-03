@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -102,8 +102,8 @@ typedef T&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b></
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab23fa5e29fa4062e597a71f8750e1672"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_time_series.html#ab23fa5e29fa4062e597a71f8750e1672">TimeSeries</a> ()</td></tr>
-<tr class="separator:ab23fa5e29fa4062e597a71f8750e1672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47979dfda047dd136544b0f792e0153"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_time_series.html#ac47979dfda047dd136544b0f792e0153">TimeSeries</a> ()=default</td></tr>
+<tr class="separator:ac47979dfda047dd136544b0f792e0153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ab85f64119aaa3d8c3f36cd0f4721b"><td class="memTemplParams" colspan="2">template&lt;class DateIterator , class ValueIterator &gt; </td></tr>
 <tr class="memitem:a54ab85f64119aaa3d8c3f36cd0f4721b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_time_series.html#a54ab85f64119aaa3d8c3f36cd0f4721b">TimeSeries</a> (DateIterator dBegin, DateIterator dEnd, ValueIterator vBegin)</td></tr>
 <tr class="separator:a54ab85f64119aaa3d8c3f36cd0f4721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,11 +233,14 @@ class QuantLib::TimeSeries&lt; T, Container &gt;</h3>
 <p>This class acts as a generic repository for a set of historical data. Any single datum can be accessed through its date, while sets of consecutive data can be accessed through iterators.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>The <code>Container</code> type must satisfy the requirements set by the C++ standard for associative containers. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab23fa5e29fa4062e597a71f8750e1672"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab23fa5e29fa4062e597a71f8750e1672">&#9670;&nbsp;</a></span>TimeSeries() <span class="overload">[1/3]</span></h2>
+<a id="ac47979dfda047dd136544b0f792e0153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47979dfda047dd136544b0f792e0153">&#9670;&nbsp;</a></span>TimeSeries() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_quant_lib_1_1_time_series.html">TimeSeries</a> </td>
@@ -246,6 +249,11 @@ class QuantLib::TimeSeries&lt; T, Container &gt;</h3>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Default constructor </p>
 

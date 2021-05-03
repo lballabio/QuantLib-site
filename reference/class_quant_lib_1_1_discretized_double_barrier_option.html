@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -107,16 +107,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cda02ec3ab20755e0e11bcaca079ac4"><td class="memItemLeft" align="right" valign="top"><a id="a9cda02ec3ab20755e0e11bcaca079ac4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DiscretizedDoubleBarrierOption</b> (const <a class="el" href="class_quant_lib_1_1_double_barrier_option_1_1arguments.html">DoubleBarrierOption::arguments</a> &amp;, const <a class="el" href="class_quant_lib_1_1_stochastic_process.html">StochasticProcess</a> &amp;process, const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;grid=<a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a>())</td></tr>
 <tr class="separator:a9cda02ec3ab20755e0e11bcaca079ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1142d869230e14e04fc5d755b9b15e52"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#a1142d869230e14e04fc5d755b9b15e52">reset</a> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> size)</td></tr>
-<tr class="separator:a1142d869230e14e04fc5d755b9b15e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6faa07dce269bafb47623aa26d65ecb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#ae6faa07dce269bafb47623aa26d65ecb">reset</a> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> size) override</td></tr>
+<tr class="separator:ae6faa07dce269bafb47623aa26d65ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6250cd1b83c1c62728488ac2edcf567a"><td class="memItemLeft" align="right" valign="top"><a id="a6250cd1b83c1c62728488ac2edcf567a"></a>
 const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>vanilla</b> () const</td></tr>
 <tr class="separator:a6250cd1b83c1c62728488ac2edcf567a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a396764cfa6034579249667a4d7076b"><td class="memItemLeft" align="right" valign="top"><a id="a7a396764cfa6034579249667a4d7076b"></a>
 const <a class="el" href="class_quant_lib_1_1_double_barrier_option_1_1arguments.html">DoubleBarrierOption::arguments</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>arguments</b> () const</td></tr>
 <tr class="separator:a7a396764cfa6034579249667a4d7076b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ecc69212d2f9e4a7f4c1e6d8c58bee8"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#a2ecc69212d2f9e4a7f4c1e6d8c58bee8">mandatoryTimes</a> () const</td></tr>
-<tr class="separator:a2ecc69212d2f9e4a7f4c1e6d8c58bee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23cbc5b56dffb1930bc041339cbd101"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#ac23cbc5b56dffb1930bc041339cbd101">mandatoryTimes</a> () const override</td></tr>
+<tr class="separator:ac23cbc5b56dffb1930bc041339cbd101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e038e0951019a346471bf05d7317787"><td class="memItemLeft" align="right" valign="top"><a id="a1e038e0951019a346471bf05d7317787"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkBarrier</b> (<a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;optvalues, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;grid) const</td></tr>
 <tr class="separator:a1e038e0951019a346471bf05d7317787"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +157,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>partialRollback</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a85429fd2334469ecf405ecf57a624b73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#a85429fd2334469ecf405ecf57a624b73">postAdjustValuesImpl</a> ()</td></tr>
-<tr class="separator:a85429fd2334469ecf405ecf57a624b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c085b9dc9f99f9bb3923816514d10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_double_barrier_option.html#a93c085b9dc9f99f9bb3923816514d10b">postAdjustValuesImpl</a> () override</td></tr>
+<tr class="separator:a93c085b9dc9f99f9bb3923816514d10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_discretized_asset"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_discretized_asset')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_discretized_asset.html">DiscretizedAsset</a></td></tr>
 <tr class="memitem:a339ca58dd593d1875feabf05053f1370 inherit pro_methods_class_quant_lib_1_1_discretized_asset"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_asset.html#a339ca58dd593d1875feabf05053f1370">isOnTime</a> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a> t) const</td></tr>
 <tr class="separator:a339ca58dd593d1875feabf05053f1370 inherit pro_methods_class_quant_lib_1_1_discretized_asset"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,8 +185,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Standard discretized option helper class. </p>
 <p>This class is used with the <a class="el" href="class_quant_lib_1_1_binomial_double_barrier_engine.html" title="Pricing engine for double barrier options using binomial trees.">BinomialDoubleBarrierEngine</a> to implement a standard binomial algorithm for double barrier options </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1142d869230e14e04fc5d755b9b15e52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1142d869230e14e04fc5d755b9b15e52">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="ae6faa07dce269bafb47623aa26d65ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6faa07dce269bafb47623aa26d65ecb">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +204,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -214,8 +214,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ecc69212d2f9e4a7f4c1e6d8c58bee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ecc69212d2f9e4a7f4c1e6d8c58bee8">&#9670;&nbsp;</a></span>mandatoryTimes()</h2>
+<a id="ac23cbc5b56dffb1930bc041339cbd101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23cbc5b56dffb1930bc041339cbd101">&#9670;&nbsp;</a></span>mandatoryTimes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +224,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt;<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&gt; mandatoryTimes </td>
+          <td class="memname">std::vector&lt;<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&gt; mandatoryTimes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -232,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -243,8 +243,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a85429fd2334469ecf405ecf57a624b73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85429fd2334469ecf405ecf57a624b73">&#9670;&nbsp;</a></span>postAdjustValuesImpl()</h2>
+<a id="a93c085b9dc9f99f9bb3923816514d10b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c085b9dc9f99f9bb3923816514d10b">&#9670;&nbsp;</a></span>postAdjustValuesImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +261,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

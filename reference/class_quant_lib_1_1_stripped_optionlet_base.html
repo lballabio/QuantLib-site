@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -143,8 +143,8 @@ virtual VolatilityType&#160;</td><td class="memItemRight" valign="bottom"><b>vol
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>displacement</b> () const =0</td></tr>
 <tr class="separator:a96423549f2e7a48bf8afef369cf8e0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_lazy_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_lazy_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a467a786be42a2165aa15a26709674547 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#a467a786be42a2165aa15a26709674547">recalculate</a> ()</td></tr>
 <tr class="separator:a467a786be42a2165aa15a26709674547 inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd8698b462ce90fe56b15ce7a0192d3e inherit pub_methods_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_lazy_object.html#abd8698b462ce90fe56b15ce7a0192d3e">freeze</a> ()</td></tr>
@@ -198,13 +198,13 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="separator:a572dbe926524786c64db01e31dba7ab8 inherit pro_methods_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_quant_lib_1_1_lazy_object"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_quant_lib_1_1_lazy_object')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_quant_lib_1_1_lazy_object.html">LazyObject</a></td></tr>
 <tr class="memitem:abcf8c3b096b3eea8688019abe7180471 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="abcf8c3b096b3eea8688019abe7180471"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>calculated_</b> = false</td></tr>
 <tr class="separator:abcf8c3b096b3eea8688019abe7180471 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e3e9b2ee0ed5ab8aa688b9422d8138 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="a72e3e9b2ee0ed5ab8aa688b9422d8138"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>frozen_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>frozen_</b> = false</td></tr>
 <tr class="separator:a72e3e9b2ee0ed5ab8aa688b9422d8138 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b368dcda2c9e791f5a8fc63de3c510 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memItemLeft" align="right" valign="top"><a id="a52b368dcda2c9e791f5a8fc63de3c510"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = false</td></tr>
 <tr class="separator:a52b368dcda2c9e791f5a8fc63de3c510 inherit pro_attribs_class_quant_lib_1_1_lazy_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

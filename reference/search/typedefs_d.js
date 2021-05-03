@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['x_5fiterator_5272',['x_iterator',['../class_quant_lib_1_1_lexicographical_view.html#a60ae9a6c903bfa254d23a6a144ad05ae',1,'QuantLib::LexicographicalView']]]
+  ['y_5fiterator_5278',['y_iterator',['../class_quant_lib_1_1_lexicographical_view.html#a33c972ce3c11af890f66ca3fa79e4692',1,'QuantLib::LexicographicalView']]],
+  ['year_5279',['Year',['../group__datetime.html#ga84dee895910074cbc7d936c86c1abf3d',1,'QuantLib']]]
 ];

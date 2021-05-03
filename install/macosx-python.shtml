@@ -4,79 +4,85 @@ title: QuantLib-Python Installation on Mac OS X
 ---
 
 <h1 class="center">QuantLib-Python installation on Mac OS X</h1>
-<h4 class="center">Luigi Ballabio</h4>
 
-<h2>Prerequisites</h2>
-
-<p>The following assumes that you already installed QuantLib (but
-first, you might consider installing from PyPI; read
-below). Instructions for that are available
-at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>. In
-particular, check that you have provided the required options and
-environment variables to <tt>./configure</tt>.</p>
-
-<h2>QuantLib-Python Installation</h2>
-
-<h3>Installation from PyPI</h3>
+<h2>Installation from PyPI</h2>
 
 <p>If you don't need to modify the wrappers, you might want to try
 installing a precompiled binary version.  The availability of binaries
   depend on your operating system; to try to install them, run:</p>
 <pre>
-  pip install QuantLib-Python
+  python -m pip install QuantLib
 </pre>
-<p>(note that the <code>pip</code> executable might be
-called <code>pip2</code> or <code>pip3</code> on your system).  If a
-binary package is available for your system, it will be installed and
-you will be able to leave this page and use it right away; if not,
-you'll have to compile it yourself as described in the next
-section.</p>
+<p>(If you have multiple versions of Python installed, run the above
+with the one you want to use QuantLib with.) If a binary package is
+available for your system, it will be installed and you will be able
+to leave this page and use it right away; if not, you'll have to
+compile it yourself as described in the next section.</p>
 
-<h3>Installation from a released version</h3>
+<h2>Installation from a released version</h2>
 
-<p>You can download released QuantLib-SWIG versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
+<p>The following assumes that you already installed QuantLib. Instructions for that are available
+at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>. In
+particular, check that you have provided the required options and
+environment variables to <tt>./configure</tt>.</p>
+
+<p>You can download released QuantLib-SWIG versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
-tar xzf QuantLib-SWIG-1.8.tar.gz
+tar xzf QuantLib-SWIG-1.22.tar.gz
 </pre>
-<p>(1.8 is the most recent version at the time of this writing; you
+<p>(1.22 is the most recent version at the time of this writing; you
 might have downloaded another one, but take care to use one compatible
 with the version of QuantLib you installed.) This creates a
-folder <code>QuantLib-SWIG-1.8</code>; enter it and configure QuantLib
+folder <code>QuantLib-SWIG-1.22</code>; enter it and build QuantLib
 by executing:</p>
 <p><strong>On Mac OS X 10.11 (El Capitan) and later,</strong>
 <pre>
-  cd QuantLib-SWIG-1.8
-  ./configure CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9'
+  cd QuantLib-SWIG-1.22/Python
+  export CXXFLAGS='-O2 -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.9'
+  export LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
+  python setup.py build
 </pre>
 </p>
 <p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
 <pre>
-  cd QuantLib-SWIG-1.8
-  ./configure CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6'
+  cd QuantLib-SWIG-1.22/Python
+  export CXXFLAGS='-O2 -std=c++11 -stdlib=libstdc++ -mmacosx-version-min=10.6'
+  export LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
+  python setup.py build
 </pre>
 </p>
 <p><strong>On earlier systems,</strong>
 <pre>
-  cd QuantLib-SWIG-1.8
-  ./configure CXXFLAGS='-O2'
+  cd QuantLib-SWIG-1.22/Python
+  export CXXFLAGS='-O2 -std=c++11'
+  python setup.py build
 </pre>
 </p>
 
 <p>Contrary to popular belief, working from a released
 tarball <strong>doesn't require you to have SWIG
-installed</strong>.  After configuration, you can run</p>
+installed</strong>.  After building, you can run
 <pre>
-  make -C Python
-  sudo make -C Python install
+  python setup.py install
 </pre>
-
-<p>There are a few caveats to the above. <strong>The first</strong> is
-that the <code>./configure</code> command will need to
+to perform a system installation; however, you might consider either passing an installation path, as in:
+<pre>
+  python setup.py install --prefix=/your/desired/location
+</pre>
+or building a wheel with
+<pre>
+  python setup.py bdist_wheel
+</pre>
+and use it for installation in the location you want; this will
+require the <tt>wheel</tt> package installed.</p>
+  
+<p>There are a couple of caveats to the above. <strong>The first</strong> is
+that the <code>setup.py</code> script will need to
 invoke <code>quantlib-config</code> (which was installed with
-QuantLib) to find out what flags should be passed to the compiler and
+QuantLib) to find out what other flags should be passed to the compiler and
 linker; they will also include the additional include directories you
 might have specified when you built QuantLib, so you'll be covered
 even if you have, say, Boost in a non-standard place. This means
@@ -85,57 +91,32 @@ installed QuantLib in <code>/usr/local</code> like Homebrew or
 in <code>/opt/local</code> like MacPorts, you should be already set
 up.</p>
 
-<p><strong>The second</strong> is that the call
-to <code>./configure</code> as written above will find the system
-installation of Python.  If you want to use a different one (for
-instance because you installed Python 3, or you want to use an
-Anaconda installation) you must pass the location of your chosen
-Python interpreter to <code>./configure</code>; for instance, if you
-have Python 3 installed as <code>/usr/local/bin/python3</code>, you'll
-have to run:</p>
+<p><strong>The second</strong> is that simply calling
+<code>python</code> as written above will find the system installation
+of Python.  If you want to use a different one (for instance because
+you installed multiple versions of Python, or you want to use an
+Anaconda installation) you must call your chosen Python interpreter;
+for instance, if you have Python 3.9 installed
+as <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>,
+you'll have to run:</p>
 <pre>
-  ./configure PYTHON=/usr/local/bin/python3 CXXFLAGS=...
+  CXXFLAGS='...' LDFLAGS='...' /Library/Frameworks/Python.framework/Versions/3.9/bin/python3 setup.py build
 </pre>
-
-<p><strong>The third</strong> is that, unfortunately, at this
-time <code>make install</code> ignores any prefix you might pass
-to <code>./configure</code> and always installs to the default
-location, which usually requires you to use <code>sudo</code> as I
-wrote above. If you don't have admin rights, or if you want to install
-to a different location, you can run:
-<pre>
-  cd Python
-  python setup.py install --prefix=/your/desired/location
-  cd ..
-</pre>
-replacing <tt>/your/desired/location</tt> with the actual path where
-you want to install (if the path is protected, you might still need to
-use <tt>sudo</tt> to run the command).</p>
 
 <p>Once you're done, you can try to run a few examples to check your
 installation. To do this, you can execute:</p>
 <pre>
-  make -C Python check
+  python setup.py test
 </pre>
 
 
-<h3>Installation from a git repository</h3>
+<h2>Installation from a git repository</h2>
 
 <p>If you want to compile from a checkout of a git repository (such as
 the official one
 at <a href="https://github.com/lballabio/quantlib-swig">https://github.com/lballabio/quantlib-swig</a>,
-or a fork of it that you might have created) you'll need an additional
-step at the beginning of the process. Before running
-the <code>./configure</code> script, you'll have to create it by
-executing</p>
-<pre>
-  ./autogen.sh
-</pre>
-<p>To do this, you'll need automake, autoconf and libtool. They can be
-installed using either Homebrew or MacPorts.</p>
-<p>After the execution of <code>./autogen.sh</code>, the installation
-proceeds as in the previous section. Note, though, that in this case
-you'll need SWIG available; you can download and install it
+or a fork of it that you might have created) you'll need SWIG
+available; you can download and install it
 from <a href="http://swig.org">http://swig.org</a> or, again, get it
 packaged from Homebrew or MacPorts.</p>
 

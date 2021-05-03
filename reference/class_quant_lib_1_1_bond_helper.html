@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -112,12 +112,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2164e2324bdf0754ae6c5f23559517ef"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bond_helper.html#a2164e2324bdf0754ae6c5f23559517ef">BondHelper</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;price, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt; &amp;bond, bool <a class="el" href="class_quant_lib_1_1_bond_helper.html#a742ec9ec41c6af8d71eb177ddc52369f">useCleanPrice</a>)</td></tr>
 <tr class="separator:a2164e2324bdf0754ae6c5f23559517ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RateHelper interface</div></td></tr>
-<tr class="memitem:a528f192004b60d122f4eacc673a80a8b"><td class="memItemLeft" align="right" valign="top"><a id="a528f192004b60d122f4eacc673a80a8b"></a>
-<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedQuote</b> () const</td></tr>
-<tr class="separator:a528f192004b60d122f4eacc673a80a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a128a17ae0d2d2b95a63f9c3f49d44c31"><td class="memItemLeft" align="right" valign="top"><a id="a128a17ae0d2d2b95a63f9c3f49d44c31"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTermStructure</b> (<a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> *)</td></tr>
-<tr class="separator:a128a17ae0d2d2b95a63f9c3f49d44c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top"><a id="ab5f37fe136acee4d7bfd196bcf8bb315"></a>
+<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedQuote</b> () const override</td></tr>
+<tr class="separator:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11bcb6e45e2bf87e14a6d6132d2e84bb"><td class="memItemLeft" align="right" valign="top"><a id="a11bcb6e45e2bf87e14a6d6132d2e84bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTermStructure</b> (<a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> *) override</td></tr>
+<tr class="separator:a11bcb6e45e2bf87e14a6d6132d2e84bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Additional inspectors</div></td></tr>
 <tr class="memitem:a54f82c618aad99ddee2f64c4c8426401"><td class="memItemLeft" align="right" valign="top"><a id="a54f82c618aad99ddee2f64c4c8426401"></a>
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bond</b> () const</td></tr>
@@ -128,9 +128,9 @@ ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> 
 Bond::Price::Type&#160;</td><td class="memItemRight" valign="bottom"><b>priceType</b> () const</td></tr>
 <tr class="separator:a324e2d97006dc59732b78a9b770d8615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_bootstrap_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_bootstrap_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper&lt; TS &gt;</a></td></tr>
-<tr class="memitem:a1299b8acb0c37531455f26756650dcdd inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a1299b8acb0c37531455f26756650dcdd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote)</td></tr>
-<tr class="separator:a1299b8acb0c37531455f26756650dcdd inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8edd818cd1b993f75b4f4f9be6e7d95a inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a8edd818cd1b993f75b4f4f9be6e7d95a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; quote)</td></tr>
+<tr class="separator:a8edd818cd1b993f75b4f4f9be6e7d95a inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e2d8f3f54ffbebf7627f11beb8b0dd2 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7e2d8f3f54ffbebf7627f11beb8b0dd2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> quote)</td></tr>
 <tr class="separator:a7e2d8f3f54ffbebf7627f11beb8b0dd2 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,8 +160,8 @@ virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><t
 <tr class="memitem:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#a7a0400995f63278e99cf2afec5ccdc6d">latestDate</a> () const</td></tr>
 <tr class="memdesc:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">latest date  <a href="class_quant_lib_1_1_bootstrap_helper.html#a7a0400995f63278e99cf2afec5ccdc6d">More...</a><br /></td></tr>
 <tr class="separator:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
 <tr class="memitem:af6a9d3ca0b7f388f3b7ccb1eccf11f63 inherit pub_methods_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="af6a9d3ca0b7f388f3b7ccb1eccf11f63"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Observer</b> (const <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a> &amp;)</td></tr>
@@ -201,9 +201,9 @@ ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> 
 <tr class="memitem:a0c18defc323fa8ed3cfb7e2e96816d5d"><td class="memItemLeft" align="right" valign="top"><a id="a0c18defc323fa8ed3cfb7e2e96816d5d"></a>
 Bond::Price::Type&#160;</td><td class="memItemRight" valign="bottom"><b>priceType_</b></td></tr>
 <tr class="separator:a0c18defc323fa8ed3cfb7e2e96816d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7eaf2f5dccce1c7781b54d64ba4a07"><td class="memItemLeft" align="right" valign="top"><a id="a1d7eaf2f5dccce1c7781b54d64ba4a07"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;)</td></tr>
-<tr class="separator:a1d7eaf2f5dccce1c7781b54d64ba4a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcc1b62510947fbc30b2952fff63c2d"><td class="memItemLeft" align="right" valign="top"><a id="a6fcc1b62510947fbc30b2952fff63c2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;) override</td></tr>
+<tr class="separator:a6fcc1b62510947fbc30b2952fff63c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

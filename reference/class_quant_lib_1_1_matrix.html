@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -89,17 +89,6 @@ $(function() {
  <a href="class_quant_lib_1_1_matrix.html#details">More...</a></p>
 
 <p><code>#include &lt;ql/math/matrix.hpp&gt;</code></p>
-<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for Matrix:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><img src="class_quant_lib_1_1_matrix__inherit__graph.png" border="0" usemap="#a_matrix_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_matrix_inherit__map" id="a_matrix_inherit__map">
-<area shape="rect" title="Matrix used in linear algebra." alt="" coords="51,5,110,32"/>
-<area shape="rect" href="class_quant_lib_1_1_disposable.html" title=" " alt="" coords="5,80,156,121"/>
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,15 +112,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adb458d0a51fee7c80c34482e88b84de7"><td class="memItemLeft" align="right" valign="top"><a id="adb458d0a51fee7c80c34482e88b84de7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:adb458d0a51fee7c80c34482e88b84de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18559c34691fddf02fe9024ce196cb09"><td class="memItemLeft" align="right" valign="top"><a id="a18559c34691fddf02fe9024ce196cb09"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b> (const <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; &amp;)</td></tr>
-<tr class="separator:a18559c34691fddf02fe9024ce196cb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce30d8ca2a9e4517c0de5407ac1cc1c"><td class="memItemLeft" align="right" valign="top"><a id="a4ce30d8ca2a9e4517c0de5407ac1cc1c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&amp;) QL_NOEXCEPT</td></tr>
+<tr class="separator:a4ce30d8ca2a9e4517c0de5407ac1cc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4baa2333a921d91c86b6e37269238a6"><td class="memItemLeft" align="right" valign="top"><a id="ac4baa2333a921d91c86b6e37269238a6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Matrix</b> (std::initializer_list&lt; std::initializer_list&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;&gt;)</td></tr>
+<tr class="separator:ac4baa2333a921d91c86b6e37269238a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe73cd0177a33a456bb5ab08b1855344"><td class="memItemLeft" align="right" valign="top"><a id="abe73cd0177a33a456bb5ab08b1855344"></a>
 <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:abe73cd0177a33a456bb5ab08b1855344"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81096f71e82f047e98c5117c5868f70d"><td class="memItemLeft" align="right" valign="top"><a id="a81096f71e82f047e98c5117c5868f70d"></a>
-<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; &amp;)</td></tr>
-<tr class="separator:a81096f71e82f047e98c5117c5868f70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69998d7cc5e52203aba65b16fe6a1fd1"><td class="memItemLeft" align="right" valign="top"><a id="a69998d7cc5e52203aba65b16fe6a1fd1"></a>
+<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&amp;) QL_NOEXCEPT</td></tr>
+<tr class="separator:a69998d7cc5e52203aba65b16fe6a1fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Iterator access</div></td></tr>
 <tr class="memitem:a3dece4c106f934e6135985fdad30c0c8"><td class="memItemLeft" align="right" valign="top"><a id="a3dece4c106f934e6135985fdad30c0c8"></a>
 const_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
@@ -219,7 +211,7 @@ row_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b
 row_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>)</td></tr>
 <tr class="separator:acab29082cda83fa27661e845fea8af2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29955fdae23efc58809c738645467c63"><td class="memItemLeft" align="right" valign="top"><a id="a29955fdae23efc58809c738645467c63"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>diagonal</b> () const</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>diagonal</b> () const</td></tr>
 <tr class="separator:a29955fdae23efc58809c738645467c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d034edcc5c2a6e02741b26ef10effea"><td class="memItemLeft" align="right" valign="top"><a id="a9d034edcc5c2a6e02741b26ef10effea"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> i, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> j) const</td></tr>
@@ -246,38 +238,38 @@ Related Functions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
 </td></tr>
 <tr class="memitem:ac0eba9bb1045cc58c806c4e86c246331"><td class="memItemLeft" align="right" valign="top"><a id="ac0eba9bb1045cc58c806c4e86c246331"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:ac0eba9bb1045cc58c806c4e86c246331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e487c70c0d5d812575f22581853850d"><td class="memItemLeft" align="right" valign="top"><a id="a9e487c70c0d5d812575f22581853850d"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:a9e487c70c0d5d812575f22581853850d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f8ba3054dc2cde44875bd9390459e43"><td class="memItemLeft" align="right" valign="top"><a id="a4f8ba3054dc2cde44875bd9390459e43"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)</td></tr>
 <tr class="separator:a4f8ba3054dc2cde44875bd9390459e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d84c1fcb55e2d2b09a9bcdfe073c22"><td class="memItemLeft" align="right" valign="top"><a id="ae0d84c1fcb55e2d2b09a9bcdfe073c22"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:ae0d84c1fcb55e2d2b09a9bcdfe073c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3713b783d128e8e98a66cb198797e169"><td class="memItemLeft" align="right" valign="top"><a id="a3713b783d128e8e98a66cb198797e169"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>)</td></tr>
 <tr class="separator:a3713b783d128e8e98a66cb198797e169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c828aca6d7e61c2b68a20834d2234ed"><td class="memItemLeft" align="right" valign="top"><a id="a4c828aca6d7e61c2b68a20834d2234ed"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:a4c828aca6d7e61c2b68a20834d2234ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fd624f86387e8fffe348a747a73f28d"><td class="memItemLeft" align="right" valign="top"><a id="a5fd624f86387e8fffe348a747a73f28d"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;)</td></tr>
 <tr class="separator:a5fd624f86387e8fffe348a747a73f28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f5d426bdf004ad93fa962fc7cbe385"><td class="memItemLeft" align="right" valign="top"><a id="a59f5d426bdf004ad93fa962fc7cbe385"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:a59f5d426bdf004ad93fa962fc7cbe385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b7aa0bda7534f7e2a7708a7f0be628c"><td class="memItemLeft" align="right" valign="top"><a id="a4b7aa0bda7534f7e2a7708a7f0be628c"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>transpose</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>transpose</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:a4b7aa0bda7534f7e2a7708a7f0be628c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30cc235798876a57b09e1338e8db34ea"><td class="memItemLeft" align="right" valign="top"><a id="a30cc235798876a57b09e1338e8db34ea"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outerProduct</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outerProduct</b> (const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v1, const <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &amp;v2)</td></tr>
 <tr class="separator:a30cc235798876a57b09e1338e8db34ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72610cea5fb83ff91bde7fcf8c2ee94a"><td class="memTemplParams" colspan="2"><a id="a72610cea5fb83ff91bde7fcf8c2ee94a"></a>
 template&lt;class Iterator1 , class Iterator2 &gt; </td></tr>
-<tr class="memitem:a72610cea5fb83ff91bde7fcf8c2ee94a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>outerProduct</b> (Iterator1 v1begin, Iterator1 v1end, Iterator2 v2begin, Iterator2 v2end)</td></tr>
+<tr class="memitem:a72610cea5fb83ff91bde7fcf8c2ee94a"><td class="memTemplItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>outerProduct</b> (Iterator1 v1begin, Iterator1 v1end, Iterator2 v2begin, Iterator2 v2end)</td></tr>
 <tr class="separator:a72610cea5fb83ff91bde7fcf8c2ee94a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df8756a7a5832acb371e2a6aaa9a89b"><td class="memItemLeft" align="right" valign="top"><a id="a9df8756a7a5832acb371e2a6aaa9a89b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
@@ -286,18 +278,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;, const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;)</td></tr>
 <tr class="separator:af0d6a8b04f5a8094992e498ca5a71142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeff3737ade047fc73a0a756ffab60c9c"><td class="memItemLeft" align="right" valign="top"><a id="aeff3737ade047fc73a0a756ffab60c9c"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inverse</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inverse</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:aeff3737ade047fc73a0a756ffab60c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd66b122c895badf4e5d31d7e250b100"><td class="memItemLeft" align="right" valign="top"><a id="afd66b122c895badf4e5d31d7e250b100"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>determinant</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m)</td></tr>
 <tr class="separator:afd66b122c895badf4e5d31d7e250b100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de6e7475c6b6230027341c90e8e50c3"><td class="memItemLeft" align="right" valign="top"><a id="a0de6e7475c6b6230027341c90e8e50c3"></a>
-<a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CholeskyDecomposition</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, bool flexible=false)</td></tr>
+Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CholeskyDecomposition</b> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;m, bool flexible=false)</td></tr>
 <tr class="separator:a0de6e7475c6b6230027341c90e8e50c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac6e1b8e2666440c95b38c2b672dd10f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_matrix.html#aac6e1b8e2666440c95b38c2b672dd10f">pseudoSqrt</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, SalvagingAlgorithm::Type=SalvagingAlgorithm::None)</td></tr>
+<tr class="memitem:aac6e1b8e2666440c95b38c2b672dd10f"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_matrix.html#aac6e1b8e2666440c95b38c2b672dd10f">pseudoSqrt</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, SalvagingAlgorithm::Type=SalvagingAlgorithm::None)</td></tr>
 <tr class="memdesc:aac6e1b8e2666440c95b38c2b672dd10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pseudo square root of a real symmetric matrix.  <a href="class_quant_lib_1_1_matrix.html#aac6e1b8e2666440c95b38c2b672dd10f">More...</a><br /></td></tr>
 <tr class="separator:aac6e1b8e2666440c95b38c2b672dd10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae874444cc115097ecd8c0deec4394750"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_matrix.html#ae874444cc115097ecd8c0deec4394750">rankReducedSqrt</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxRank, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> componentRetainedPercentage, SalvagingAlgorithm::Type)</td></tr>
+<tr class="memitem:ae874444cc115097ecd8c0deec4394750"><td class="memItemLeft" align="right" valign="top">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_matrix.html#ae874444cc115097ecd8c0deec4394750">rankReducedSqrt</a> (const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxRank, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> componentRetainedPercentage, SalvagingAlgorithm::Type)</td></tr>
 <tr class="memdesc:ae874444cc115097ecd8c0deec4394750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the rank-reduced pseudo square root of a real symmetric matrix.  <a href="class_quant_lib_1_1_matrix.html#ae874444cc115097ecd8c0deec4394750">More...</a><br /></td></tr>
 <tr class="separator:ae874444cc115097ecd8c0deec4394750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -433,7 +425,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; pseudoSqrt </td>
+          <td class="memname">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; pseudoSqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname">, </td>
@@ -481,7 +473,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; rankReducedSqrt </td>
+          <td class="memname">Disposable&lt; <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &gt; rankReducedSqrt </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_matrix.html">Matrix</a> &amp;&#160;</td>
           <td class="paramname">, </td>

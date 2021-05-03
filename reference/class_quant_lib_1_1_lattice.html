@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa11e1abb76c37d91d43b0e0fd132f9c4"><td class="memItemLeft" align="right" valign="top"><a id="aa11e1abb76c37d91d43b0e0fd132f9c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Lattice</b> (const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;timeGrid)</td></tr>
-<tr class="separator:aa11e1abb76c37d91d43b0e0fd132f9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea787a7e70037a45affbbf631a7881ff"><td class="memItemLeft" align="right" valign="top"><a id="aea787a7e70037a45affbbf631a7881ff"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Lattice</b> (<a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> timeGrid)</td></tr>
+<tr class="separator:aea787a7e70037a45affbbf631a7881ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Inspectors</div></td></tr>
 <tr class="memitem:ab1b4f3ee63c7fc18845e10236dd5df8d"><td class="memItemLeft" align="right" valign="top"><a id="ab1b4f3ee63c7fc18845e10236dd5df8d"></a>
 const <a class="el" href="class_quant_lib_1_1_time_grid.html">TimeGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>timeGrid</b> () const</td></tr>
@@ -135,7 +135,7 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="memdesc:a0fe7a4c02a090391b474654cf43ddb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the present value of an asset. <br /></td></tr>
 <tr class="separator:a0fe7a4c02a090391b474654cf43ddb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85dadec35b0b9775e93b8c0d826447ba"><td class="memItemLeft" align="right" valign="top"><a id="a85dadec35b0b9775e93b8c0d826447ba"></a>
-virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>grid</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>) const =0</td></tr>
+virtual Disposable&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>grid</b> (<a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>) const =0</td></tr>
 <tr class="separator:a85dadec35b0b9775e93b8c0d826447ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -176,7 +176,7 @@ virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&
 </div><div class="memdoc">
 <p>Roll back an asset until the given time, performing any needed adjustment. </p>
 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_tree_lattice.html#a76086cb813dfb54bedee9ccac8946988">TreeLattice&lt; Impl &gt;</a>, and <a class="el" href="class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html#a76086cb813dfb54bedee9ccac8946988">TsiveriotisFernandesLattice&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_tree_lattice.html#a7281e1ff3f5014fbdd522560538e0422">TreeLattice&lt; Impl &gt;</a>, and <a class="el" href="class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html#a7281e1ff3f5014fbdd522560538e0422">TsiveriotisFernandesLattice&lt; T &gt;</a>.</p>
 
 </div>
 </div>
@@ -219,7 +219,7 @@ virtual <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&
 </div><!-- fragment --><p> with the two statements: </p><div class="fragment"><div class="line">method-&gt;partialRollback(asset,t);</div>
 <div class="line">asset-&gt;preAdjustValues();</div>
 </div><!-- fragment --> 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_tree_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TreeLattice&lt; Impl &gt;</a>, and <a class="el" href="class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html#ab295d7d0092f6d1fc6a43b74f21afd2c">TsiveriotisFernandesLattice&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_tree_lattice.html#a43f93829d572548dd6213df828ea7154">TreeLattice&lt; Impl &gt;</a>, and <a class="el" href="class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html#a43f93829d572548dd6213df828ea7154">TsiveriotisFernandesLattice&lt; T &gt;</a>.</p>
 
 </div>
 </div>

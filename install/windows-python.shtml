@@ -4,38 +4,29 @@ title: QuantLib-Python Installation on Windows
 ---
 
 <h1 class="center">QuantLib-Python installation on Windows</h1>
-<h4 class="center">Luigi Ballabio</h4>
 
-<h2>Prerequisites</h2>
-
-<p>The following assumes that you already installed QuantLib (but
-first, you might consider installing from PyPI; read
-below). Instructions for that are available
-at <a href="http://quantlib.org/install/vc9.shtml">http://quantlib.org/install/vc9.shtml</a>
-for Visual Studio 9 (2008) and
-at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>
-for Visual Studio 10 (2010) and later.  Note that QuantLib must be
-compiled in Release mode.</p>
-
-<h2>QuantLib-Python Installation</h2>
-
-<h3>Installation from PyPI</h3>
+<h2>Installation from PyPI</h2>
 
 <p>If you don't need to modify the wrappers, you might want to try
 installing a precompiled binary version.  The availability of binaries
   depend on your operating system; to try to install them, run:</p>
 <pre>
-  pip install QuantLib-Python
+  pip install QuantLib
 </pre>
-<p>If a binary package is available for your system, it will be
-installed and you will be able to leave this page and use it right
-away; if not, you'll have to compile it yourself as described in the
-next section.</p>
+<p>(If you have multiple versions of Python installed, run the above
+with the one you want to use QuantLib with.) If a binary package is
+available for your system, it will be installed and you will be able
+to leave this page and use it right away; if not, you'll have to
+compile it yourself as described in the next section.</p>
 
-<h3>Installation from a released version</h3>
+<h2>Installation from a released version</h2>
 
-<p>You can download released QuantLib-SWIG versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
+<p>The following assumes that you already installed QuantLib. Instructions for that are available
+at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>.
+Note that QuantLib must be compiled in Release mode.</p>
+
+<p>You can download released QuantLib-SWIG versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the zip file, extract it to obtain a folder with a
 name like <code>QuantLib-SWIG-1.9</code> (1.9 is the most recent
@@ -93,7 +84,7 @@ Finally, the command
 </pre>
 will deploy the compiled module to your Python installation directory.</p>
 
-<h3>Installation from a git repository</h3>
+<h2>Installation from a git repository</h2>
 
 <p>If you want to compile from a checkout of a git repository (such as
 the official one

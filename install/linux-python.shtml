@@ -4,21 +4,35 @@ title: QuantLib-Python Installation on Linux
 ---
 
 <h1 class="center">QuantLib-Python installation on Linux</h1>
-<h4 class="center">Luigi Ballabio</h4>
 
-<h2>Prerequisites</h2>
+<h2>Installation from PyPI</h2>
+
+<p>If you don't need to modify the wrappers, you might want to try
+installing a precompiled binary version.  The availability of binaries
+depend on your operating system; to try to install them, first make
+sure you have the latest version of <code>pip</code> by running:</p>
+<pre>
+  python -m pip install -U pip
+</pre>
+<p>and then run:</p>
+<pre>
+  python -m pip install QuantLib
+</pre>
+<p>(If you have multiple versions of Python installed, run the above
+with the one you want to use QuantLib with.) If a binary package is
+available for your system, it will be installed and you will be able
+to leave this page and use it right away; if not, you'll have to
+compile it yourself as described in the next section.</p>
+
+<h2>Installation from a released version</h2>
 
 <p>The following assumes that you already installed
 QuantLib. Instructions for that are available
 at <a href="http://quantlib.org/install/linux.shtml">http://quantlib.org/install/linux.shtml</a>;
 please make sure that you performed all listed steps.</p>
 
-<h2>QuantLib-Python Installation</h2>
-
-<h3>Installation from a released version</h3>
-
-<p>You can download released QuantLib-SWIG versions from Bintray
-at <a href="https://bintray.com/quantlib/releases/QuantLib-SWIG">https://bintray.com/quantlib/releases/QuantLib-SWIG</a>.</p>
+<p>You can download released QuantLib-SWIG versions from GitHub
+at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
@@ -53,13 +67,13 @@ that <code>quantlib-config</code> must be in your path.</p>
 <p><strong>The second</strong> is that the call
 to <code>./configure</code> as written above will find the system
 installation of Python.  If you want to use a different one (for
-instance because you installed Python 3, or you want to use an
+instance because you installed different Python versions, or you want to use an
 Anaconda installation) you must pass the location of your chosen
 Python interpreter to <code>./configure</code>; for instance, if you
-have Python 3 installed as <code>/usr/local/bin/python3</code>, you'll
+have Python 3.9 installed as <code>/usr/local/bin/python3.9</code>, you'll
 have to run:</p>
 <pre>
-  ./configure PYTHON=/usr/local/bin/python3
+  ./configure PYTHON=/usr/local/bin/python3.9
 </pre>
 
 <p><strong>The third</strong> is that, unfortunately, at this
@@ -75,19 +89,19 @@ to <code>setup.py.</code></p>
 default; but if not, you'll have to figure out how to get them. On
 Ubuntu, for instance, you would install them with:</p>
 <pre>
-  sudo apt-get install python-dev
+  sudo apt-get install python3-dev
 </pre>
 <p>Similar packages should be available for most other
 distributions.</p>
 
 <p>Once you're done, you can try to run a few examples to check your
-installation. To do this, you can simply execute:</p>
+installation. To do this, you can execute:</p>
 <pre>
   make -C Python check
 </pre>
 
 
-<h3>Installation from a git repository</h3>
+<h2>Installation from a git repository</h2>
 
 <p>If you want to compile from a checkout of a git repository (such as
 the official one

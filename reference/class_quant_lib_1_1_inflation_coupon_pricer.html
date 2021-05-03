@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -166,8 +166,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="memitem:a292ad9c54719780e61282ddeeac02410"><td class="memItemLeft" align="right" valign="top"><a id="a292ad9c54719780e61282ddeeac02410"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>paymentDate_</b></td></tr>
 <tr class="separator:a292ad9c54719780e61282ddeeac02410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html#acd36d7881ea8503d5c5824e7a5ad6c7e">update</a> ()</td></tr>
-<tr class="separator:acd36d7881ea8503d5c5824e7a5ad6c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_coupon_pricer.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -186,8 +186,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>We add the requirement that pricers do inverseCap/Floor-lets. These are cap/floor-lets as usually defined, i.e. pay out if underlying is above/below a strike. The non-inverse (usual) versions are from a coupon point of view (a capped coupon has a maximum at the strike).</p>
 <p>We add the inverse prices so that conventional caps can be priced simply. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acd36d7881ea8503d5c5824e7a5ad6c7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd36d7881ea8503d5c5824e7a5ad6c7e">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +196,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void update </td>
+          <td class="memname">void update </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,7 +204,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

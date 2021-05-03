@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0dc1a1b53d8329e347b2c049d9efc1f"><td class="memItemLeft" align="right" valign="top"><a id="aa0dc1a1b53d8329e347b2c049d9efc1f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RandomDefaultModel</b> (const ext::shared_ptr&lt; Pool &gt; &amp;pool, const std::vector&lt; <a class="el" href="class_quant_lib_1_1_default_prob_key.html">DefaultProbKey</a> &gt; &amp;defaultKeys)</td></tr>
 <tr class="separator:aa0dc1a1b53d8329e347b2c049d9efc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_random_default_model.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_random_default_model.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab88b59bed0374edc89a9d1ea4c13ace8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_random_default_model.html#ab88b59bed0374edc89a9d1ea4c13ace8">nextSequence</a> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> tmax=<a class="el" href="group__limit_macros.html#ga31675a375a563ed7a1bba05c664489af">QL_MAX_REAL</a>)=0</td></tr>
 <tr class="separator:ab88b59bed0374edc89a9d1ea4c13ace8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20dcbdfbd0ec77afc802522bb7e379c1"><td class="memItemLeft" align="right" valign="top"><a id="a20dcbdfbd0ec77afc802522bb7e379c1"></a>
@@ -168,8 +168,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <div class="textblock"><p>Base class for random default models. </p>
 <p>Provides sequences of random default times for each name in the pool. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +186,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -221,7 +221,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 <p>Generate a sequence of random default times, one for each name in the pool, and store the result in the Pool using method setTime(name). tmax denotes the maximum relevant time- default times &gt; tmax are not computed but set to tmax + 1 instead to save coputation time. </p>
 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_gaussian_random_default_model.html#ac793b8fd2de34a6c7f3e7dce559ef39b">GaussianRandomDefaultModel</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_gaussian_random_default_model.html#ad0eb37ad928b9ae49957e9ce7fa8e895">GaussianRandomDefaultModel</a>.</p>
 
 </div>
 </div>

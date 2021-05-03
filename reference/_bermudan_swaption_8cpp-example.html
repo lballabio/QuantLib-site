@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a> {</div>
 <div class="line"> </div>
-<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> {}; }</div>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -227,11 +227,11 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        <span class="comment">// defining the swaptions to be used in model calibration</span></div>
 <div class="line">        std::vector&lt;Period&gt; swaptionMaturities;</div>
-<div class="line">        swaptionMaturities.push_back(Period(1, Years));</div>
-<div class="line">        swaptionMaturities.push_back(Period(2, Years));</div>
-<div class="line">        swaptionMaturities.push_back(Period(3, Years));</div>
-<div class="line">        swaptionMaturities.push_back(Period(4, Years));</div>
-<div class="line">        swaptionMaturities.push_back(Period(5, Years));</div>
+<div class="line">        swaptionMaturities.emplace_back(1, Years);</div>
+<div class="line">        swaptionMaturities.emplace_back(2, Years);</div>
+<div class="line">        swaptionMaturities.emplace_back(3, Years);</div>
+<div class="line">        swaptionMaturities.emplace_back(4, Years);</div>
+<div class="line">        swaptionMaturities.emplace_back(5, Years);</div>
 <div class="line"> </div>
 <div class="line">        std::vector&lt;ext::shared_ptr&lt;BlackCalibrationHelper&gt; &gt; swaptions;</div>
 <div class="line"> </div>

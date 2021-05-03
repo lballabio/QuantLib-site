@@ -47,12 +47,10 @@ version (for instance, <tt>C:\Boost\boost_1_55_0</tt>).</p>
 settings. Go to <i>Tools/Settings</i> and make sure "Expert Settings"
 is checked.  This might not be necessary in recent Visual C++ versions.</p>
 
-<p><b>2.</b> If you haven't downloaded QuantLib yet, go to its download page
-on Bintray, located
-at <a href="https://bintray.com/quantlib/releases/QuantLib">https://bintray.com/quantlib/releases/QuantLib</a>.</p>
+<p><b>2.</b> If you haven't downloaded QuantLib yet, go to
+<a href="https://github.com/lballabio/QuantLib/releases">its release page on GitHub</a>.</p>
 
-<p><b>3.</b> Find the latest version (at the time of this writing the current
-version is 1.1, but this will have changed when you read this) and
+<p><b>3.</b> Find the latest version and
 download the zip archive to your local drive. Unzip the file wherever
 you want; in the following, we'll assume that the QuantLib directory
 is <tt>C:\Program Files\QuantLib</tt>.</p>

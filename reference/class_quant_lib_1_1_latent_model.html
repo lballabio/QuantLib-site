@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -110,8 +110,8 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Latent model direct integration facility.</div></td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Latent model random factor number generator facility.</div></td></tr>
 <tr class="memitem:acce0ab2cacc475b2434f24c65c91685a"><td class="memItemLeft" align="right" valign="top"><a id="acce0ab2cacc475b2434f24c65c91685a"></a>
 <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a>&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
@@ -195,7 +195,7 @@ typedef copulaPolicyImpl&#160;</td><td class="memItemRight" valign="bottom"><b>c
 <tr class="separator:a36e205d1cabb02b58e65e4f1ee08658f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd5b1879390c62bbddd5f61deb20b49e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#acd5b1879390c62bbddd5f61deb20b49e">inverseCumulativeZ</a> (<a class="el" href="group__types.html#gad9817a6a21dfcb91429f0152c99d6313">Probability</a> p) const</td></tr>
 <tr class="separator:acd5b1879390c62bbddd5f61deb20b49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0482da26b94fcd714869c802efd590"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#a2b0482da26b94fcd714869c802efd590">allFactorCumulInverter</a> (const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;probs) const</td></tr>
+<tr class="memitem:a2b0482da26b94fcd714869c802efd590"><td class="memItemLeft" align="right" valign="top">Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#a2b0482da26b94fcd714869c802efd590">allFactorCumulInverter</a> (const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;probs) const</td></tr>
 <tr class="separator:a2b0482da26b94fcd714869c802efd590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dd0aa599a5b42688ff1ca2bd4cf9d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#a0dd0aa599a5b42688ff1ca2bd4cf9d3f">latentVarValue</a> (const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;allFactors, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> iVar) const</td></tr>
 <tr class="separator:a0dd0aa599a5b42688ff1ca2bd4cf9d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,8 +226,8 @@ copulaType&#160;</td><td class="memItemRight" valign="bottom"><b>copula_</b></td
 <tr class="separator:af660dddb75bc7b39f47bf1e38b5916bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada44c6f03858c0d5f260c1815cc22246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#ada44c6f03858c0d5f260c1815cc22246">integratedExpectedValue</a> (const ext::function&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;f) const</td></tr>
 <tr class="separator:ada44c6f03858c0d5f260c1815cc22246"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a4f1b3cf4b5973b5362998c89a82a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#ac5a4f1b3cf4b5973b5362998c89a82a3">integratedExpectedValue</a> (const ext::function&lt; <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;f) const</td></tr>
-<tr class="separator:ac5a4f1b3cf4b5973b5362998c89a82a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a949426362d456ed674b01c32d7caa"><td class="memItemLeft" align="right" valign="top">Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_latent_model.html#aa7a949426362d456ed674b01c32d7caa">integratedExpectedValueV</a> (const ext::function&lt; Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;f) const</td></tr>
+<tr class="separator:aa7a949426362d456ed674b01c32d7caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50a342d7329355d3155218ce93059fc6"><td class="memItemLeft" align="right" valign="top"><a id="a50a342d7329355d3155218ce93059fc6"></a>
 virtual const ext::shared_ptr&lt; LMIntegration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>integration</b> () const</td></tr>
 <tr class="separator:a50a342d7329355d3155218ce93059fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -454,8 +454,8 @@ class QuantLib::LatentModel&lt; copulaPolicyImpl &gt;</h3>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +472,7 @@ class QuantLib::LatentModel&lt; copulaPolicyImpl &gt;</h3>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -566,7 +566,7 @@ class QuantLib::LatentModel&lt; copulaPolicyImpl &gt;</h3>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; allFactorCumulInverter </td>
+          <td class="memname">Disposable&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; allFactorCumulInverter </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>probs</em></td><td>)</td>
@@ -609,7 +609,7 @@ class QuantLib::LatentModel&lt; copulaPolicyImpl &gt;</h3>
 </div>
 </div>
 <a id="ada44c6f03858c0d5f260c1815cc22246"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada44c6f03858c0d5f260c1815cc22246">&#9670;&nbsp;</a></span>integratedExpectedValue() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ada44c6f03858c0d5f260c1815cc22246">&#9670;&nbsp;</a></span>integratedExpectedValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -627,16 +627,16 @@ class QuantLib::LatentModel&lt; copulaPolicyImpl &gt;</h3>
 
 </div>
 </div>
-<a id="ac5a4f1b3cf4b5973b5362998c89a82a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a4f1b3cf4b5973b5362998c89a82a3">&#9670;&nbsp;</a></span>integratedExpectedValue() <span class="overload">[2/2]</span></h2>
+<a id="aa7a949426362d456ed674b01c32d7caa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7a949426362d456ed674b01c32d7caa">&#9670;&nbsp;</a></span>integratedExpectedValueV()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; integratedExpectedValue </td>
+          <td class="memname">Disposable&lt;std::vector&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt; &gt; integratedExpectedValueV </td>
           <td>(</td>
-          <td class="paramtype">const ext::function&lt; <a class="el" href="class_quant_lib_1_1_disposable.html">Disposable</a>&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;&#160;</td>
+          <td class="paramtype">const ext::function&lt; Disposable&lt; std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &gt;(const std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; &amp;v1)&gt; &amp;&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td> const</td>
         </tr>

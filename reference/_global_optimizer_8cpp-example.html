@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -84,24 +84,23 @@ $(function() {
 <div class="line"><span class="preprocessor">#ifdef BOOST_MSVC</span></div>
 <div class="line"><span class="preprocessor">#  include &lt;ql/auto_link.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#include &lt;ql/math/optimization/differentialevolution.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;ql/math/optimization/simulatedannealing.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/experimental/math/fireflyalgorithm.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/experimental/math/hybridsimulatedannealing.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/experimental/math/particleswarmoptimization.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/functional.hpp&gt;</span></div>
-<div class="line"> </div>
-<div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;ql/math/optimization/differentialevolution.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;ql/math/optimization/simulatedannealing.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/tuple.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a> {</div>
 <div class="line"> </div>
-<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> {}; }</div>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -120,9 +119,9 @@ $(function() {
 <div class="line">    <span class="comment">//Minimum is found at 0</span></div>
 <div class="line">    <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> p1 = 0.0, p2 = 0.0;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (<a name="a1"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; x.size(); i++) {</div>
-<div class="line">        p1 += x[i] * x[i];</div>
-<div class="line">        p2 += std::cos(M_TWOPI*x[i]);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i : x) {</div>
+<div class="line">        p1 += i * i;</div>
+<div class="line">        p2 += std::cos(M_TWOPI * i);</div>
 <div class="line">    }</div>
 <div class="line">    p1 = -0.2*std::sqrt(0.5*p1);</div>
 <div class="line">    p2 *= 0.5;</div>
@@ -131,7 +130,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">Disposable&lt;Array&gt; ackleyValues(<span class="keyword">const</span> Array&amp; x) {</div>
 <div class="line">    Array y(x.size());</div>
-<div class="line">    <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; x.size(); i++) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<a name="a1"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; x.size(); i++) {</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> p1 = x[i] * x[i];</div>
 <div class="line">        p1 = -0.2*std::sqrt(0.5*p1);</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> p2 = 0.5*std::cos(M_TWOPI*x[i]);</div>
@@ -167,9 +166,9 @@ $(function() {
 <div class="line"><a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> easom(<span class="keyword">const</span> Array&amp; x) {</div>
 <div class="line">    <span class="comment">//Minimum is found at f(\pi, \pi, ...)</span></div>
 <div class="line">    <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> p1 = 1.0, p2 = 0.0;</div>
-<div class="line">    <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; x.size(); i++) {</div>
-<div class="line">        p1 *= std::cos(x[i]);</div>
-<div class="line">        p2 += (x[i] - M_PI)*(x[i] - M_PI);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">double</span> i : x) {</div>
+<div class="line">        p1 *= std::cos(i);</div>
+<div class="line">        p2 += (i - M_PI) * (i - M_PI);</div>
 <div class="line">    }</div>
 <div class="line">    <span class="keywordflow">return</span> -p1*std::exp(-p2);</div>
 <div class="line">}</div>
@@ -206,17 +205,18 @@ $(function() {
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">typedef</span> ext::function&lt;<a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a>(<span class="keyword">const</span> Array&amp;)&gt; RealFunc;</div>
 <div class="line">    <span class="keyword">typedef</span> ext::function&lt;Disposable&lt;Array&gt;(<span class="keyword">const</span> Array&amp;)&gt; ArrayFunc;</div>
-<div class="line">    <span class="keyword">explicit</span> TestFunction(<span class="keyword">const</span> RealFunc &amp; f, <span class="keyword">const</span> ArrayFunc &amp; fs = ArrayFunc()) : f_(f), fs_(fs) {}</div>
-<div class="line">    <span class="keyword">explicit</span> TestFunction(<a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a>(*f)(<span class="keyword">const</span> Array&amp;), Disposable&lt;Array&gt;(*fs)(<span class="keyword">const</span> Array&amp;) = NULL) : f_(f), fs_(fs) {}</div>
-<div class="line">    <span class="keyword">virtual</span> ~TestFunction(){}</div>
-<div class="line">    <span class="keyword">virtual</span> <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> value(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const </span>{</div>
-<div class="line">        <span class="keywordflow">return</span> f_(x);</div>
-<div class="line">    }</div>
-<div class="line">    <span class="keyword">virtual</span> Disposable&lt;Array&gt; values(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const </span>{</div>
+<div class="line">    <span class="keyword">explicit</span> TestFunction(RealFunc f, ArrayFunc fs = ArrayFunc())</div>
+<div class="line">    : f_(std::move(f)), fs_(std::move(fs)) {}</div>
+<div class="line">    <span class="keyword">explicit</span> TestFunction(<a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> (*f)(<span class="keyword">const</span> Array&amp;), Disposable&lt;Array&gt; (*fs)(<span class="keyword">const</span> Array&amp;) = <span class="keyword">nullptr</span>)</div>
+<div class="line">    : f_(f), fs_(fs) {}</div>
+<div class="line">    ~TestFunction() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line">    <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> value(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> f_(x); }</div>
+<div class="line">    Disposable&lt;Array&gt; values(<span class="keyword">const</span> Array&amp; x)<span class="keyword"> const override </span>{</div>
 <div class="line">        <span class="keywordflow">if</span>(!fs_)</div>
 <div class="line">            <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Invalid function&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">return</span> fs_(x);</div>
 <div class="line">    }</div>
+<div class="line"> </div>
 <div class="line"><span class="keyword">private</span>:</div>
 <div class="line">    RealFunc f_;</div>
 <div class="line">    ArrayFunc fs_;</div>

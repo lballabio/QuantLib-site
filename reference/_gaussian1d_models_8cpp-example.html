@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespace_quant_lib.html">QuantLib</a> {</div>
 <div class="line"> </div>
-<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> 0; }</div>
+<div class="line">    ThreadKey sessionId() { <span class="keywordflow">return</span> {}; }</div>
 <div class="line"> </div>
 <div class="line">}</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
@@ -150,13 +150,12 @@ $(function() {
 <div class="line">                 <span class="stringliteral">&quot;====================&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;====================&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;==================&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line">    <span class="keywordflow">for</span> (<a name="a0"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> j = 0; j &lt; basket.size(); ++j) {</div>
-<div class="line">        ext::shared_ptr&lt;SwaptionHelper&gt; helper =</div>
-<div class="line">            ext::dynamic_pointer_cast&lt;SwaptionHelper&gt;(basket[j]);</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; j : basket) {</div>
+<div class="line">        ext::shared_ptr&lt;SwaptionHelper&gt; helper = ext::dynamic_pointer_cast&lt;SwaptionHelper&gt;(j);</div>
 <div class="line">        Date endDate = helper-&gt;underlyingSwap()-&gt;fixedSchedule().dates().back();</div>
-<div class="line">        <a name="a1"></a><a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> nominal = helper-&gt;underlyingSwap()-&gt;nominal();</div>
+<div class="line">        <a name="a0"></a><a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> nominal = helper-&gt;underlyingSwap()-&gt;nominal();</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> vol = helper-&gt;volatility()-&gt;value();</div>
-<div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> <a name="a2"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">rate</a> = helper-&gt;underlyingSwap()-&gt;fixedRate();</div>
+<div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> <a name="a1"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">rate</a> = helper-&gt;underlyingSwap()-&gt;fixedRate();</div>
 <div class="line">        Date expiry = helper-&gt;swaption()-&gt;exercise()-&gt;date(0);</div>
 <div class="line">        VanillaSwap::Type type = helper-&gt;swaption()-&gt;type();</div>
 <div class="line">        std::ostringstream expiryString, endDateString;</div>
@@ -174,7 +173,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> printModelCalibration(</div>
 <div class="line">    <span class="keyword">const</span> std::vector&lt;ext::shared_ptr&lt;BlackCalibrationHelper&gt; &gt; &amp;basket,</div>
-<div class="line">    <span class="keyword">const</span> Array &amp;<a name="a3"></a><a class="code" href="group__manips.html#gac402ef7c87f63f7c603ee87210b5750c" title="output volatilities as percentages">volatility</a>) {</div>
+<div class="line">    <span class="keyword">const</span> Array &amp;<a name="a2"></a><a class="code" href="group__manips.html#gac402ef7c87f63f7c603ee87210b5750c" title="output volatilities as percentages">volatility</a>) {</div>
 <div class="line"> </div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; std::left &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Expiry&quot;</span> &lt;&lt; std::setw(14)</div>
 <div class="line">              &lt;&lt; <span class="stringliteral">&quot;Model sigma&quot;</span> &lt;&lt; std::setw(20) &lt;&lt; <span class="stringliteral">&quot;Model price&quot;</span></div>
@@ -187,7 +186,7 @@ $(function() {
 <div class="line">                 <span class="stringliteral">&quot;====================&quot;</span></div>
 <div class="line">                 <span class="stringliteral">&quot;====================&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> j = 0; j &lt; basket.size(); ++j) {</div>
+<div class="line">    <span class="keywordflow">for</span> (<a name="a3"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> j = 0; j &lt; basket.size(); ++j) {</div>
 <div class="line">        ext::shared_ptr&lt;SwaptionHelper&gt; helper =</div>
 <div class="line">            ext::dynamic_pointer_cast&lt;SwaptionHelper&gt;(basket[j]);</div>
 <div class="line">        Date expiry = helper-&gt;swaption()-&gt;exercise()-&gt;date(0);</div>
@@ -346,8 +345,8 @@ $(function() {
 <div class="line">               <span class="stringliteral">&quot;\nthe calibrating vanilla swaptions. The result of this is as &quot;</span></div>
 <div class="line">               <span class="stringliteral">&quot;follows:&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); ++i)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngine);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngine);</div>
 <div class="line"> </div>
 <div class="line">        LevenbergMarquardt method;</div>
 <div class="line">        EndCriteria ec(1000, 10, 1E-8, 1E-8,</div>
@@ -398,10 +397,10 @@ $(function() {
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;\nLet&#39;s see how this affects the exotics npv. The &quot;</span></div>
 <div class="line">                     <span class="stringliteral">&quot;\nrecalibrated model is:&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); ++i)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngine);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngine);</div>
 <div class="line"> </div>
-<div class="line">        </div>
+<div class="line"> </div>
 <div class="line">        gsr-&gt;calibrateVolatilitiesIterative(basket, method, ec);</div>
 <div class="line">        </div>
 <div class="line"> </div>
@@ -514,10 +513,10 @@ $(function() {
 <div class="line">            &lt;&lt; <span class="stringliteral">&quot;\nThe npv of the call right is (after recalibrating the model)&quot;</span></div>
 <div class="line">            &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); i++)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngine);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngine);</div>
 <div class="line"> </div>
-<div class="line">        </div>
+<div class="line"> </div>
 <div class="line">        gsr-&gt;calibrateVolatilitiesIterative(basket, method, ec);</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> npv3 = swaption3-&gt;NPV();</div>
 <div class="line">        </div>
@@ -549,10 +548,10 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;\nThe npv becomes:&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); i++)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngine);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngine);</div>
 <div class="line"> </div>
-<div class="line">        </div>
+<div class="line"> </div>
 <div class="line">        gsr-&gt;calibrateVolatilitiesIterative(basket, method, ec);</div>
 <div class="line">        <a class="code" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78" title="real number">Real</a> npv4 = swaption3-&gt;NPV();</div>
 <div class="line">        </div>
@@ -621,8 +620,8 @@ $(function() {
 <div class="line">        </div>
 <div class="line">        basket = swaption4-&gt;calibrationBasket(swapBase, *swaptionVol,</div>
 <div class="line">                                              BasketGeneratingEngine::Naive);</div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); ++i)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngine);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngine);</div>
 <div class="line">        gsr-&gt;calibrateVolatilitiesIterative(basket, method, ec);</div>
 <div class="line">        </div>
 <div class="line"> </div>
@@ -717,10 +716,10 @@ $(function() {
 <div class="line">                     <span class="stringliteral">&quot;\ndepending on your machine, this may take a&quot;</span></div>
 <div class="line">                     <span class="stringliteral">&quot;\nwhile now...&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
-<div class="line">        <span class="keywordflow">for</span> (<a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> i = 0; i &lt; basket.size(); ++i)</div>
-<div class="line">            basket[i]-&gt;setPricingEngine(swaptionEngineMarkov);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; i : basket)</div>
+<div class="line">            i-&gt;setPricingEngine(swaptionEngineMarkov);</div>
 <div class="line"> </div>
-<div class="line">        </div>
+<div class="line"> </div>
 <div class="line">        markov-&gt;calibrate(basket, method, ec);</div>
 <div class="line">        </div>
 <div class="line"> </div>
@@ -755,7 +754,7 @@ $(function() {
 <div class="line">                  &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line">    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a name="_a9"></a><a class="code" href="class_quant_lib_1_1_error.html" title="Base error class.">QuantLib::Error</a>&amp; e) {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;terminated with a ql exception: &quot;</span> &lt;&lt; e.<a name="a10"></a><a class="code" href="class_quant_lib_1_1_error.html#a79009ed133fa02b942ddce8f0b987f3e" title="returns the error message.">what</a>()</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;terminated with a ql exception: &quot;</span> &lt;&lt; e.<a name="a10"></a><a class="code" href="class_quant_lib_1_1_error.html#a822451c3c846baa5a91974fa42979245" title="returns the error message.">what</a>()</div>
 <div class="line">                  &lt;&lt; std::endl;</div>
 <div class="line">        <span class="keywordflow">return</span> 1;</div>
 <div class="line">    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>

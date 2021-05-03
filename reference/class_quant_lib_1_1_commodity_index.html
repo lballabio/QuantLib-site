@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.21</div>
+   <div id="projectnumber">Reference manual - version 1.22</div>
    </div>
   </td>
  </tr>
@@ -104,16 +104,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a056727423c69ecb5e46719a2a38fbc7c"><td class="memItemLeft" align="right" valign="top"><a id="a056727423c69ecb5e46719a2a38fbc7c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CommodityIndex</b> (const std::string &amp;name, const <a class="el" href="class_quant_lib_1_1_commodity_type.html">CommodityType</a> &amp;commodityType, const <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> &amp;currency, const <a class="el" href="class_quant_lib_1_1_unit_of_measure.html">UnitOfMeasure</a> &amp;unitOfMeasure, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> lotQuantity, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_commodity_curve.html">CommodityCurve</a> &gt; &amp;forwardCurve, const ext::shared_ptr&lt; ExchangeContracts &gt; &amp;exchangeContracts, int nearbyOffset)</td></tr>
-<tr class="separator:a056727423c69ecb5e46719a2a38fbc7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac50a64f43ef6f6e00f19f936e5e977d9"><td class="memItemLeft" align="right" valign="top"><a id="ac50a64f43ef6f6e00f19f936e5e977d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CommodityIndex</b> (const std::string &amp;name, <a class="el" href="class_quant_lib_1_1_commodity_type.html">CommodityType</a> commodityType, <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> currency, <a class="el" href="class_quant_lib_1_1_unit_of_measure.html">UnitOfMeasure</a> unitOfMeasure, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> calendar, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> lotQuantity, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_commodity_curve.html">CommodityCurve</a> &gt; forwardCurve, ext::shared_ptr&lt; ExchangeContracts &gt; exchangeContracts, int nearbyOffset)</td></tr>
+<tr class="separator:ac50a64f43ef6f6e00f19f936e5e977d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Index interface</div></td></tr>
 <tr class="memitem:a1d89c28bd42ba9a52da008bb69367171"><td class="memItemLeft" align="right" valign="top"><a id="a1d89c28bd42ba9a52da008bb69367171"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
 <tr class="separator:a1d89c28bd42ba9a52da008bb69367171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Observer interface</div></td></tr>
-<tr class="memitem:ac5c54df7ed3b930268c8d7752c101725"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_commodity_index.html#ac5c54df7ed3b930268c8d7752c101725">update</a> ()</td></tr>
-<tr class="separator:ac5c54df7ed3b930268c8d7752c101725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_commodity_index.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
+<tr class="separator:a44137bb65de2396875934e48a6ee5099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_observable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_observable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a></td></tr>
 <tr class="memitem:a840dd96e33a304cbf681d357de7f48d0 inherit pub_methods_class_quant_lib_1_1_observable"><td class="memItemLeft" align="right" valign="top"><a id="a840dd96e33a304cbf681d357de7f48d0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Observable</b> (const <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &amp;)</td></tr>
@@ -243,8 +243,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>base class for commodity indexes </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac5c54df7ed3b930268c8d7752c101725"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5c54df7ed3b930268c8d7752c101725">&#9670;&nbsp;</a></span>update()</h2>
+<a id="a44137bb65de2396875934e48a6ee5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44137bb65de2396875934e48a6ee5099">&#9670;&nbsp;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +261,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
