@@ -9,21 +9,26 @@ title: QuantLib-Python Installation on Windows
 
 <p>If you don't need to modify the wrappers, you might want to try
 installing a precompiled binary version.  The availability of binaries
-  depend on your operating system; to try to install them, run:</p>
+  depend on your operating system; to try to install them, run:
 <pre>
-  pip install QuantLib
+  python -m pip install QuantLib
 </pre>
-<p>(If you have multiple versions of Python installed, run the above
-with the one you want to use QuantLib with.) If a binary package is
-available for your system, it will be installed and you will be able
-to leave this page and use it right away; if not, you'll have to
+with the version of Python you want to use QuantLib with.
+If a binary package is available for your system, it will be
+installed and you should be able to leave this page and use it right
+away (if, after installation, you get an error about a missing DLL
+when you try to import it, you might have to install the
+<a href="https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0">Microsoft Visual C++ Redistributable</a>).</p>
+
+<p>If the above doesn't work, you'll have to
 compile it yourself as described in the next section.</p>
 
 <h2>Installation from a released version</h2>
 
 <p>The following assumes that you already installed QuantLib. Instructions for that are available
 at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>.
-Note that QuantLib must be compiled in Release mode.</p>
+Note that QuantLib must be compiled in Release mode (choose Win32 or x64 depending on the
+version of Python you're using).</p>
 
 <p>You can download released QuantLib-SWIG versions from GitHub
 at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
