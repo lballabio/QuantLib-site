@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -332,8 +332,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The value is contingent to survival, i.e., the knockout probability is considered. To compute the npv given that the issuer has survived, divide the npv by </p><p class="formulaDsp">
-\[(1-P_{def}(T_{npv}))\]
+<p>The value is contingent to survival, i.e., the knockout probability is considered. To compute the npv given that the issuer has survived, use the riskfreeNPV().</p>
+<p>In each of the \(n\) coupon periods, we can calculate the value in the case of survival and default, assuming that the issuer can only default in the middle of a coupon period. We denote this time \(T_{i}^{mid}=\frac{T_{i-1}+T_{i}}{2}\).</p>
+<p>Given survival we receive the full cash flow (both coupons and notional). The time \(t\) value of these payments are given by </p><p class="formulaDsp">
+\[ \sum_{i=1}^{n}CF_{i}P(t,T_{i})Q(T_{i}&lt;\tau) \]
+</p>
+<p> where \(P(t,T)\) is the time \(T\) discount bond and \(Q(T&lt;\tau)\) is the time \(T\) survival probability. \(n\) is the number of coupon periods. This takes care of the payments in the case of survival.</p>
+<p>Given default we receive only a fraction of the notional at default. </p><p class="formulaDsp">
+\[ \sum_{i=1}^{n}Rec N(T_{i}^{mid}) P(t,T_{i}^{mid})Q(T_{i-1}&lt;\tau\leq T_{i}) \]
+</p>
+<p> where \(Rec\) is the recovery rate and \(N(T)\) is the time T notional. The default probability can be rewritten as </p><p class="formulaDsp">
+\[ Q(T_{i-1}&lt;\tau\leq T_{i})=Q(T_{i}&lt;\tau)-Q(T_{i-1}&lt;\tau)=(1-Q(T_{i}\geq\tau))-(1-Q(T_{i-1}\geq\tau))=Q(T_{i-1}\geq\tau)-Q(T_{i}\geq\tau) \]
 </p>
  
 </div>

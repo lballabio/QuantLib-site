@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -168,9 +168,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBusinessDay</b> (co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_class_quant_lib_1_1_calendar"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_quant_lib_1_1_calendar')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a></td></tr>
-<tr class="memitem:a0f4b0005df0243c476ffd63383cc11c8 inherit pub_static_methods_class_quant_lib_1_1_calendar"><td class="memItemLeft" align="right" valign="top">static QL_DEPRECATED std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a0f4b0005df0243c476ffd63383cc11c8">holidayList</a> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;from, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;to, bool includeWeekEnds=false)</td></tr>
-<tr class="separator:a0f4b0005df0243c476ffd63383cc11c8 inherit pub_static_methods_class_quant_lib_1_1_calendar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_quant_lib_1_1_calendar"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_quant_lib_1_1_calendar')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a></td></tr>
 <tr class="memitem:ac29a938cdc70db8abcde7a84fe62f9b4 inherit pro_attribs_class_quant_lib_1_1_calendar"><td class="memItemLeft" align="right" valign="top"><a id="ac29a938cdc70db8abcde7a84fe62f9b4"></a>
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calendar_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
@@ -187,7 +184,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>United States calendars. </p>
-<p>Public holidays (see: <a href="http://www.opm.gov/fedhol/">http://www.opm.gov/fedhol/</a>): </p><ul>
+<p>Public holidays (see <a href="https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays">https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays</a>): </p><ul>
 <li>
 Saturdays </li>
 <li>
@@ -200,6 +197,8 @@ Martin Luther King's birthday, third Monday in January (since 1983) </li>
 Presidents' Day (a.k.a. Washington's birthday), third Monday in February </li>
 <li>
 Memorial Day, last Monday in May </li>
+<li>
+Juneteenth, June 19th (moved to Monday if Sunday or Friday if Saturday) </li>
 <li>
 Independence Day, July 4th (moved to Monday if Sunday or Friday if Saturday) </li>
 <li>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -79,7 +79,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_irregular_swap-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,29 +112,15 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Results from irregular-swap calculation  <a href="class_quant_lib_1_1_irregular_swap_1_1results.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top"><a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>Receiver</b> = -1
-, <b>Payer</b> = 1
- }</td></tr>
-<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53e328847f946d26768009a22793c119"><td class="memItemLeft" align="right" valign="top"><a id="a53e328847f946d26768009a22793c119"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IrregularSwap</b> (Type type, const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;fixLeg, const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;floatLeg)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IrregularSwap</b> (<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;fixLeg, const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;floatLeg)</td></tr>
 <tr class="separator:a53e328847f946d26768009a22793c119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Inspectors</div></td></tr>
-<tr class="memitem:a3a7659f5b1d1416206c2fafc63b94856"><td class="memItemLeft" align="right" valign="top"><a id="a3a7659f5b1d1416206c2fafc63b94856"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:a3a7659f5b1d1416206c2fafc63b94856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memItemLeft" align="right" valign="top"><a id="a7eba997f6dc7f9634f41ead3e4401d70"></a>
+<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="separator:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2e65a671f5cf5339b5d951ec498c6d2"><td class="memItemLeft" align="right" valign="top"><a id="ac2e65a671f5cf5339b5d951ec498c6d2"></a>
 const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>fixedLeg</b> () const</td></tr>
 <tr class="separator:ac2e65a671f5cf5339b5d951ec498c6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,6 +261,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>Receiver</b> = -1
+, <b>Payer</b> = 1
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
+typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
 <tr class="memitem:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#ac9853d2deac18759fe4e1a4b186767d3">setupExpired</a> () const override</td></tr>
 <tr class="separator:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>

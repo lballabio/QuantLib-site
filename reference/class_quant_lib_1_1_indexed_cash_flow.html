@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -96,11 +96,12 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_indexed_cash_flow__inherit__graph.png" border="0" usemap="#a_indexed_cash_flow_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_indexed_cash_flow_inherit__map" id="a_indexed_cash_flow_inherit__map">
-<area shape="rect" title="Cash flow dependent on an index ratio." alt="" coords="33,155,160,181"/>
-<area shape="rect" href="class_quant_lib_1_1_c_p_i_cash_flow.html" title="Cash flow paying the performance of a CPI (zero inflation) index." alt="" coords="45,229,149,256"/>
-<area shape="rect" href="class_quant_lib_1_1_cash_flow.html" title="Base class for cash flows." alt="" coords="5,80,87,107"/>
-<area shape="rect" href="class_quant_lib_1_1_event.html" title="Base class for event." alt="" coords="18,5,74,32"/>
-<area shape="rect" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes." alt="" coords="111,80,186,107"/>
+<area shape="rect" title="Cash flow dependent on an index ratio." alt="" coords="70,155,197,181"/>
+<area shape="rect" href="class_quant_lib_1_1_c_p_i_cash_flow.html" title="Cash flow paying the performance of a CPI (zero inflation) index." alt="" coords="5,229,109,256"/>
+<area shape="rect" href="class_quant_lib_1_1_zero_inflation_cash_flow.html" title="Cash flow dependent on a zero inflation index ratio." alt="" coords="134,229,287,256"/>
+<area shape="rect" href="class_quant_lib_1_1_cash_flow.html" title="Base class for cash flows." alt="" coords="42,80,123,107"/>
+<area shape="rect" href="class_quant_lib_1_1_event.html" title="Base class for event." alt="" coords="55,5,111,32"/>
+<area shape="rect" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes." alt="" coords="148,80,223,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -252,6 +253,8 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <dl class="section note"><dt>Note</dt><dd>The amount is not discounted, i.e., it is the actual amount paid at the cash flow date. </dd></dl>
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_cash_flow.html#a9b47a18fd731fee50de8227ea00f85ca">CashFlow</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_zero_inflation_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">ZeroInflationCashFlow</a>.</p>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -99,17 +99,18 @@ $(function() {
 <area shape="rect" href="class_quant_lib_1_1_coupon.html" title="coupon accruing over a fixed period" alt="" coords="405,81,471,108"/>
 <area shape="rect" href="class_quant_lib_1_1_dividend.html" title="Predetermined cash flow." alt="" coords="401,208,475,235"/>
 <area shape="rect" href="class_quant_lib_1_1_indexed_cash_flow.html" title="Cash flow dependent on an index ratio." alt="" coords="375,259,501,285"/>
-<area shape="rect" href="class_quant_lib_1_1_simple_cash_flow.html" title="Predetermined cash flow." alt="" coords="377,309,499,336"/>
+<area shape="rect" href="class_quant_lib_1_1_simple_cash_flow.html" title="Predetermined cash flow." alt="" coords="377,360,499,387"/>
 <area shape="rect" href="class_quant_lib_1_1_event.html" title="Base class for event." alt="" coords="141,233,197,260"/>
 <area shape="rect" href="class_quant_lib_1_1_observable.html" title="Object that notifies its changes to a set of observers." alt="" coords="5,233,93,260"/>
-<area shape="rect" href="class_quant_lib_1_1_fixed_rate_coupon.html" title="Coupon paying a fixed interest rate" alt="" coords="557,5,683,32"/>
-<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon.html" title="base floating&#45;rate coupon class" alt="" coords="549,56,691,83"/>
-<area shape="rect" href="class_quant_lib_1_1_inflation_coupon.html" title="Base inflation&#45;coupon class." alt="" coords="563,107,677,133"/>
-<area shape="rect" href="class_quant_lib_1_1_fixed_dividend.html" title="Predetermined cash flow." alt="" coords="567,157,673,184"/>
-<area shape="rect" href="class_quant_lib_1_1_fractional_dividend.html" title="Predetermined cash flow." alt="" coords="555,208,685,235"/>
-<area shape="rect" href="class_quant_lib_1_1_c_p_i_cash_flow.html" title="Cash flow paying the performance of a CPI (zero inflation) index." alt="" coords="568,259,672,285"/>
-<area shape="rect" href="class_quant_lib_1_1_amortizing_payment.html" title="Amortizing payment." alt="" coords="552,309,688,336"/>
-<area shape="rect" href="class_quant_lib_1_1_redemption.html" title="Bond redemption." alt="" coords="574,360,666,387"/>
+<area shape="rect" href="class_quant_lib_1_1_fixed_rate_coupon.html" title="Coupon paying a fixed interest rate" alt="" coords="563,5,689,32"/>
+<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon.html" title="base floating&#45;rate coupon class" alt="" coords="555,56,697,83"/>
+<area shape="rect" href="class_quant_lib_1_1_inflation_coupon.html" title="Base inflation&#45;coupon class." alt="" coords="569,107,683,133"/>
+<area shape="rect" href="class_quant_lib_1_1_fixed_dividend.html" title="Predetermined cash flow." alt="" coords="573,157,679,184"/>
+<area shape="rect" href="class_quant_lib_1_1_fractional_dividend.html" title="Predetermined cash flow." alt="" coords="561,208,691,235"/>
+<area shape="rect" href="class_quant_lib_1_1_c_p_i_cash_flow.html" title="Cash flow paying the performance of a CPI (zero inflation) index." alt="" coords="574,259,678,285"/>
+<area shape="rect" href="class_quant_lib_1_1_zero_inflation_cash_flow.html" title="Cash flow dependent on a zero inflation index ratio." alt="" coords="549,309,703,336"/>
+<area shape="rect" href="class_quant_lib_1_1_amortizing_payment.html" title="Amortizing payment." alt="" coords="558,360,694,387"/>
+<area shape="rect" href="class_quant_lib_1_1_redemption.html" title="Bond redemption." alt="" coords="580,411,672,437"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -249,7 +250,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class=
 <p>returns the amount of the cash flow </p>
 <dl class="section note"><dt>Note</dt><dd>The amount is not discounted, i.e., it is the actual amount paid at the cash flow date. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_dividend.html#a70c7bd9b42c70c09b03573a88b6c6945">Dividend</a>, <a class="el" href="class_quant_lib_1_1_simple_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">SimpleCashFlow</a>, <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">InflationCoupon</a>, <a class="el" href="class_quant_lib_1_1_indexed_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">IndexedCashFlow</a>, <a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FloatingRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_fractional_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FractionalDividend</a>, <a class="el" href="class_quant_lib_1_1_fixed_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedDividend</a>, and <a class="el" href="class_quant_lib_1_1_c_p_i_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">CPICashFlow</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_dividend.html#a70c7bd9b42c70c09b03573a88b6c6945">Dividend</a>, <a class="el" href="class_quant_lib_1_1_zero_inflation_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">ZeroInflationCashFlow</a>, <a class="el" href="class_quant_lib_1_1_simple_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">SimpleCashFlow</a>, <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">InflationCoupon</a>, <a class="el" href="class_quant_lib_1_1_indexed_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">IndexedCashFlow</a>, <a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FloatingRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_fractional_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FractionalDividend</a>, <a class="el" href="class_quant_lib_1_1_fixed_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedDividend</a>, and <a class="el" href="class_quant_lib_1_1_c_p_i_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">CPICashFlow</a>.</p>
 
 </div>
 </div>

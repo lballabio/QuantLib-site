@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -78,6 +78,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="class_quant_lib_1_1_swap-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Swap Class Reference<div class="ingroups"><a class="el" href="group__instruments.html">Financial instruments</a></div></div>  </div>
@@ -95,7 +96,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_swap__inherit__graph.png" border="0" usemap="#a_swap_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_swap_inherit__map" id="a_swap_inherit__map">
-<area shape="rect" title="Interest rate swap." alt="" coords="273,259,328,285"/>
+<area shape="rect" title="Interest rate swap." alt="" coords="273,284,328,311"/>
 <area shape="rect" href="class_quant_lib_1_1_arithmetic_average_o_i_s.html" title="Arithemtic Average OIS: fix vs arithmetic average of overnight rate." alt="" coords="386,5,538,32"/>
 <area shape="rect" href="class_quant_lib_1_1_asset_swap.html" title="Bullet bond vs Libor swap." alt="" coords="417,56,507,83"/>
 <area shape="rect" href="class_quant_lib_1_1_b_m_a_swap.html" title="swap paying Libor against BMA coupons" alt="" coords="420,107,504,133"/>
@@ -107,11 +108,26 @@ $(function() {
 <area shape="rect" href="class_quant_lib_1_1_vanilla_swap.html" title="Plain&#45;vanilla swap: fix vs floating leg." alt="" coords="415,411,509,437"/>
 <area shape="rect" href="class_quant_lib_1_1_year_on_year_inflation_swap.html" title="Year&#45;on&#45;year inflation&#45;indexed swap." alt="" coords="377,461,547,488"/>
 <area shape="rect" href="class_quant_lib_1_1_zero_coupon_inflation_swap.html" title="Zero&#45;coupon inflation&#45;indexed swap." alt="" coords="376,512,548,539"/>
-<area shape="rect" href="class_quant_lib_1_1_instrument.html" title="Abstract instrument class." alt="" coords="141,259,225,285"/>
-<area shape="rect" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching." alt="" coords="5,259,93,285"/>
+<area shape="rect" href="class_quant_lib_1_1_zero_coupon_swap.html" title="Zero&#45;coupon interest rate swap." alt="" coords="399,563,525,589"/>
+<area shape="rect" href="class_quant_lib_1_1_instrument.html" title="Abstract instrument class." alt="" coords="141,284,225,311"/>
+<area shape="rect" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching." alt="" coords="5,284,93,311"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>Receiver</b> = -1
+, <b>Payer</b> = 1
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
+typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Observable interface</div></td></tr>
@@ -254,13 +270,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_instrument"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_instrument')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a></td></tr>
 <tr class="memitem:a61eb1a24e5329ccc296715a40dc3a19a inherit pro_methods_class_quant_lib_1_1_instrument"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_instrument.html#a61eb1a24e5329ccc296715a40dc3a19a">calculate</a> () const override</td></tr>
 <tr class="separator:a61eb1a24e5329ccc296715a40dc3a19a inherit pro_methods_class_quant_lib_1_1_instrument"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,7 +306,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interest rate swap. </p>
 <p>The cash flows belonging to the first leg are paid; the ones belonging to the second leg are received. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1cfd8ffb84e947f82999c682b666a7">&#9670;&nbsp;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In most cases, the swap has just two legs and can be defined as receiver or payer.</p>
+<p>Its type is usually defined with respect to the leg paying a fixed rate; derived swap classes will document any exceptions to the rule. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_bermudan_swaption_8cpp-example.html#a13">BermudanSwaption.cpp</a>, <a class="el" href="_gaussian1d_models_8cpp-example.html#a2">Gaussian1dModels.cpp</a>, and <a class="el" href="_multicurve_bootstrapping_8cpp-example.html#a13">MulticurveBootstrapping.cpp</a>.</dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa7e28d70b1366663707f7554205b887b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7e28d70b1366663707f7554205b887b">&#9670;&nbsp;</a></span>Swap() <span class="overload">[1/3]</span></h2>
 

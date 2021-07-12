@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -131,10 +131,12 @@ const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_pro
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Short-rate dynamics in the extended Cox-Ingersoll-Ross model. </p>
 <p>The short-rate is here </p><p class="formulaDsp">
-\[ r_t = \varphi(t) + y_t^2 \]
+\[ r(t) = \varphi(t) + y(t) \]
 </p>
-<p> where \( \varphi(t) \) is the deterministic time-dependent parameter used for term-structure fitting and \( y_t \) is the state variable, the square-root of a standard CIR process. </p>
-</div></div><!-- contents -->
+<p> where \( \varphi(t) \) is the deterministic time-dependent parameter used for term-structure fitting and \( y_t \) is a standard CIR process with dynamics </p><p class="formulaDsp">
+\[ dy(t)=k(\theta-y(t))dt+\sigma \sqrt{y(t)}dW(t) \]
+</p>
+ </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

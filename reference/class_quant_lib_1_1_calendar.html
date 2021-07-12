@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -163,27 +163,7 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d66ba30abf9db537021e09494ae428c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a0d66ba30abf9db537021e09494ae428c">Calendar</a> ()=default</td></tr>
 <tr class="separator:a0d66ba30abf9db537021e09494ae428c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memItemLeft" align="right" valign="top"><a id="ac29a938cdc70db8abcde7a84fe62f9b4"></a>
-ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calendar_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
-<tr class="separator:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="related"></a>
-Related Functions</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
-</td></tr>
-<tr class="memitem:ae9d6f7766f633f5d75cc3acd7826bc9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#ae9d6f7766f633f5d75cc3acd7826bc9f">operator==</a> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
-<tr class="separator:ae9d6f7766f633f5d75cc3acd7826bc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af842d77a8aacbc167a64749dba1a3a87"><td class="memItemLeft" align="right" valign="top"><a id="af842d77a8aacbc167a64749dba1a3a87"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
-<tr class="separator:af842d77a8aacbc167a64749dba1a3a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab055e8665c0e69976ecbe4aebd47a8f"><td class="memItemLeft" align="right" valign="top"><a id="aab055e8665c0e69976ecbe4aebd47a8f"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
-<tr class="separator:aab055e8665c0e69976ecbe4aebd47a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Calendar interface</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Calendar interface</div></td></tr>
 <tr class="memitem:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="memItemLeft" align="right" valign="top"><a id="a644718bb2fb240de962dc3c9a1fdf0dc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a644718bb2fb240de962dc3c9a1fdf0dc">empty</a> () const</td></tr>
 <tr class="memdesc:a644718bb2fb240de962dc3c9a1fdf0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the calendar is initialized. <br /></td></tr>
@@ -224,8 +204,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBusinessDay</b> (co
 <tr class="separator:ab03050d623b9622e994b44a802b62e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a232eaf85fcd84c5aaaaffff7492df251"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html#a4c0b362accace7d0490c5ededaef9a2e">Date::serial_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a232eaf85fcd84c5aaaaffff7492df251">businessDaysBetween</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;from, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;to, bool includeFirst=true, bool includeLast=false) const</td></tr>
 <tr class="separator:a232eaf85fcd84c5aaaaffff7492df251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4b0005df0243c476ffd63383cc11c8"><td class="memItemLeft" align="right" valign="top">static QL_DEPRECATED std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#a0f4b0005df0243c476ffd63383cc11c8">holidayList</a> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;calendar, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;from, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;to, bool includeWeekEnds=false)</td></tr>
-<tr class="separator:a0f4b0005df0243c476ffd63383cc11c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memItemLeft" align="right" valign="top"><a id="ac29a938cdc70db8abcde7a84fe62f9b4"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_calendar_1_1_impl.html">Impl</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>impl_</b></td></tr>
+<tr class="separator:ac29a938cdc70db8abcde7a84fe62f9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="related"></a>
+Related Functions</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>(Note that these are not member functions.) </p>
+</td></tr>
+<tr class="memitem:ae9d6f7766f633f5d75cc3acd7826bc9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_calendar.html#ae9d6f7766f633f5d75cc3acd7826bc9f">operator==</a> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
+<tr class="separator:ae9d6f7766f633f5d75cc3acd7826bc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af842d77a8aacbc167a64749dba1a3a87"><td class="memItemLeft" align="right" valign="top"><a id="af842d77a8aacbc167a64749dba1a3a87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
+<tr class="separator:af842d77a8aacbc167a64749dba1a3a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab055e8665c0e69976ecbe4aebd47a8f"><td class="memItemLeft" align="right" valign="top"><a id="aab055e8665c0e69976ecbe4aebd47a8f"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;, const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
+<tr class="separator:aab055e8665c0e69976ecbe4aebd47a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>calendar class </p>
@@ -413,58 +410,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBusinessDay</b> (co
 
 </div>
 </div>
-<a id="a0f4b0005df0243c476ffd63383cc11c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f4b0005df0243c476ffd63383cc11c8">&#9670;&nbsp;</a></span>holidayList() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static QL_DEPRECATED std::vector&lt;<a class="el" href="class_quant_lib_1_1_date.html">Date</a>&gt; holidayList </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;&#160;</td>
-          <td class="paramname"><em>calendar</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;&#160;</td>
-          <td class="paramname"><em>from</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;&#160;</td>
-          <td class="paramname"><em>to</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeWeekEnds</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the holidays between two dates.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Use the non-static overload. Deprecated in version 1.18. </dd></dl>
-
-</div>
-</div>
 <a id="a03fbf2f9a05cde4e136cf77ba34faac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03fbf2f9a05cde4e136cf77ba34faac1">&#9670;&nbsp;</a></span>holidayList() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fbf2f9a05cde4e136cf77ba34faac1">&#9670;&nbsp;</a></span>holidayList()</h2>
 
 <div class="memitem">
 <div class="memproto">

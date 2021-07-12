@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['integer_5254',['Integer',['../group__types.html#gab9c87440c314438e51a899a03d2442d0',1,'QuantLib']]]
+  ['integer_5261',['Integer',['../group__types.html#gab9c87440c314438e51a899a03d2442d0',1,'QuantLib']]]
 ];

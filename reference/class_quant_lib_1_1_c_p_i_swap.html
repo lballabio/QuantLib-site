@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -79,7 +79,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_c_p_i_swap-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,24 +112,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Results from swap calculation  <a href="class_quant_lib_1_1_c_p_i_swap_1_1results.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top"><a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>Receiver</b> = -1
-, <b>Payer</b> = 1
- }</td></tr>
-<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4903b952f92a88b4a4e7bcefe9569257"><td class="memItemLeft" align="right" valign="top"><a id="a4903b952f92a88b4a4e7bcefe9569257"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CPISwap</b> (Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, bool subtractInflationNominal, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> floatDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> floatSchedule, const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;floatRoll, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; floatIndex, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> baseCPI, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> fixedSchedule, const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;fixedRoll, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;observationLag, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_zero_inflation_index.html">ZeroInflationIndex</a> &gt; fixedIndex, CPI::InterpolationType observationInterpolation=CPI::AsIndex, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> inflationNominal=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
+<tr class="memitem:a4903b952f92a88b4a4e7bcefe9569257"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_p_i_swap.html#a4903b952f92a88b4a4e7bcefe9569257">CPISwap</a> (<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, bool subtractInflationNominal, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> floatDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> floatSchedule, const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;floatRoll, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; floatIndex, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> baseCPI, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> fixedSchedule, const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;fixedRoll, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;observationLag, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_zero_inflation_index.html">ZeroInflationIndex</a> &gt; fixedIndex, CPI::InterpolationType observationInterpolation=CPI::AsIndex, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> inflationNominal=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
 <tr class="separator:a4903b952f92a88b4a4e7bcefe9569257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a92ddb9ac9f6c1fdba6ba5e2bab8f38"><td class="memItemLeft" align="right" valign="top"><a id="a9a92ddb9ac9f6c1fdba6ba5e2bab8f38"></a>
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>floatLegNPV</b> () const</td></tr>
@@ -144,9 +128,9 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="memitem:aed9a9912bb04d6b3b6bc9f31e5fc29bf"><td class="memItemLeft" align="right" valign="top"><a id="aed9a9912bb04d6b3b6bc9f31e5fc29bf"></a>
 virtual <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fairRate</b> () const</td></tr>
 <tr class="separator:aed9a9912bb04d6b3b6bc9f31e5fc29bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa497267164c28975adc74abd242f8a15"><td class="memItemLeft" align="right" valign="top"><a id="aa497267164c28975adc74abd242f8a15"></a>
-virtual Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:aa497267164c28975adc74abd242f8a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memItemLeft" align="right" valign="top"><a id="a7eba997f6dc7f9634f41ead3e4401d70"></a>
+virtual <a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="separator:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eee3d3767fab185a6f78d6b406618f5"><td class="memItemLeft" align="right" valign="top"><a id="a8eee3d3767fab185a6f78d6b406618f5"></a>
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nominal</b> () const</td></tr>
 <tr class="separator:a8eee3d3767fab185a6f78d6b406618f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -318,6 +302,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>Receiver</b> = -1
+, <b>Payer</b> = 1
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
+typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
 <tr class="memitem:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#ac9853d2deac18759fe4e1a4b186767d3">setupExpired</a> () const override</td></tr>
 <tr class="separator:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -385,7 +381,133 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = 
 <p>Typically there are notional exchanges at the end: either inflated-notional vs notional; or just (inflated-notional - notional) vs zero. The latter is perhaphs more typical. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000064">Warning:</a></b></dt><dd>Setting subtractInflationNominal to true means that the original inflation nominal is subtracted from both nominals before they are exchanged, even if they are different.</dd></dl>
 <p>This swap can mimic a ZCIIS where [(1+q)^n - 1] is exchanged against (cpi ratio - 1), by using differnt nominals on each leg and setting subtractInflationNominal to true. ALSO - there must be just one date in each schedule.</p>
 <p>The two legs can have different schedules, fixing (days vs lag), settlement, and roll conventions. N.B. accrual adjustment periods are already in the schedules. Trade date and swap settlement date are outside the scope of the instrument. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4903b952f92a88b4a4e7bcefe9569257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4903b952f92a88b4a4e7bcefe9569257">&#9670;&nbsp;</a></span>CPISwap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quant_lib_1_1_c_p_i_swap.html">CPISwap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td>
+          <td class="paramname"><em>nominal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>subtractInflationNominal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td>
+          <td class="paramname"><em>spread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a>&#160;</td>
+          <td class="paramname"><em>floatDayCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a>&#160;</td>
+          <td class="paramname"><em>floatSchedule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;&#160;</td>
+          <td class="paramname"><em>floatRoll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a>&#160;</td>
+          <td class="paramname"><em>fixingDays</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt;&#160;</td>
+          <td class="paramname"><em>floatIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td>
+          <td class="paramname"><em>fixedRate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td>
+          <td class="paramname"><em>baseCPI</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a>&#160;</td>
+          <td class="paramname"><em>fixedDayCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a>&#160;</td>
+          <td class="paramname"><em>fixedSchedule</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedRoll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;&#160;</td>
+          <td class="paramname"><em>observationLag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_zero_inflation_index.html">ZeroInflationIndex</a> &gt;&#160;</td>
+          <td class="paramname"><em>fixedIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CPI::InterpolationType&#160;</td>
+          <td class="paramname"><em>observationInterpolation</em> = <code>CPI::AsIndex</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td>
+          <td class="paramname"><em>inflationNominal</em> = <code><a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt;&#160;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;&gt;()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In this swap, the type (Payer or Receiver) refers to the floating leg. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa9ff2e4e855a2e93ff2658d0908044d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9ff2e4e855a2e93ff2658d0908044d0">&#9670;&nbsp;</a></span>setupArguments()</h2>
 

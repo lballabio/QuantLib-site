@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -78,7 +78,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_arithmetic_average_o_i_s-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,31 +102,17 @@ $(function() {
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top"><a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>Receiver</b> = -1
-, <b>Payer</b> = 1
- }</td></tr>
-<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a016b8a95721e88dfb85f652eb75e9e4d"><td class="memItemLeft" align="right" valign="top"><a id="a016b8a95721e88dfb85f652eb75e9e4d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ArithmeticAverageOIS</b> (Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;fixedLegSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDC, ext::shared_ptr&lt; OvernightIndex &gt; overnightIndex, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;overnightLegSchedule, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread=0.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> meanReversionSpeed=0.03, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> volatility=0.00, bool byApprox=false)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ArithmeticAverageOIS</b> (<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;fixedLegSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDC, ext::shared_ptr&lt; OvernightIndex &gt; overnightIndex, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;overnightLegSchedule, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread=0.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> meanReversionSpeed=0.03, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> volatility=0.00, bool byApprox=false)</td></tr>
 <tr class="separator:a016b8a95721e88dfb85f652eb75e9e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c5776205d94313ebdb6f782ae33baa"><td class="memItemLeft" align="right" valign="top"><a id="a28c5776205d94313ebdb6f782ae33baa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ArithmeticAverageOIS</b> (Type type, std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; nominals, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;fixedLegSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDC, ext::shared_ptr&lt; OvernightIndex &gt; overnightIndex, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;overnightLegSchedule, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread=0.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> meanReversionSpeed=0.03, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> volatility=0.00, bool byApprox=false)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ArithmeticAverageOIS</b> (<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, std::vector&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt; nominals, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;fixedLegSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDC, ext::shared_ptr&lt; OvernightIndex &gt; overnightIndex, const <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> &amp;overnightLegSchedule, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread=0.0, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> meanReversionSpeed=0.03, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> volatility=0.00, bool byApprox=false)</td></tr>
 <tr class="separator:a28c5776205d94313ebdb6f782ae33baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Inspectors</div></td></tr>
 <tr class="memitem:adf4a6727c689e0038cf2cdd158d5ed2c"><td class="memItemLeft" align="right" valign="top"><a id="adf4a6727c689e0038cf2cdd158d5ed2c"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
 <tr class="separator:adf4a6727c689e0038cf2cdd158d5ed2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eee3d3767fab185a6f78d6b406618f5"><td class="memItemLeft" align="right" valign="top"><a id="a8eee3d3767fab185a6f78d6b406618f5"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nominal</b> () const</td></tr>
@@ -289,6 +274,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>Receiver</b> = -1
+, <b>Payer</b> = 1
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
+typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
 <tr class="memitem:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#ac9853d2deac18759fe4e1a4b186767d3">setupExpired</a> () const override</td></tr>
 <tr class="separator:ac9853d2deac18759fe4e1a4b186767d3 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -182,8 +182,8 @@ $(function() {
 <div class="line">        <a class="code" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368" title="Business Day conventions.">BusinessDayConvention</a> floatingLegConvention = <a name="a11"></a><a class="code" href="group__datetime.html#ggaff46c5ae9385d20709bedade86edd368a013e092c359f6031cc0563fd413ce707">ModifiedFollowing</a>;</div>
 <div class="line">        DayCounter fixedLegDayCounter = Thirty360(Thirty360::European);</div>
 <div class="line">        <a class="code" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada" title="Frequency of events.">Frequency</a> floatingLegFrequency = <a name="a12"></a><a class="code" href="group__datetime.html#gga6d41db8ba0ea90d22df35889df452adaad1a5868a1c314bb7f6ab68e2fa182b2d" title="twice a year">Semiannual</a>;</div>
-<div class="line">        VanillaSwap::Type type = VanillaSwap::Payer;</div>
-<div class="line">        <a name="a13"></a><a class="code" href="group__types.html#gaede435af51236692b1107d7639581d39" title="interest rates">Rate</a> dummyFixedRate = 0.03;</div>
+<div class="line">        <a name="a13"></a><a class="code" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Swap::Type</a> type = Swap::Payer;</div>
+<div class="line">        <a name="a14"></a><a class="code" href="group__types.html#gaede435af51236692b1107d7639581d39" title="interest rates">Rate</a> dummyFixedRate = 0.03;</div>
 <div class="line">        ext::shared_ptr&lt;IborIndex&gt; indexSixMonths(<span class="keyword">new</span></div>
 <div class="line">            Euribor6M(rhTermStructure));</div>
 <div class="line"> </div>
@@ -193,7 +193,7 @@ $(function() {
 <div class="line">                                         floatingLegConvention);</div>
 <div class="line">        Schedule fixedSchedule(startDate,maturity,Period(fixedLegFrequency),</div>
 <div class="line">                               calendar,fixedLegConvention,fixedLegConvention,</div>
-<div class="line">                               <a name="a14"></a><a class="code" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78ae204c9c3e62b1e9a6b60e40cd05256c5">DateGeneration::Forward</a>,<span class="keyword">false</span>);</div>
+<div class="line">                               <a name="a15"></a><a class="code" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78ae204c9c3e62b1e9a6b60e40cd05256c5">DateGeneration::Forward</a>,<span class="keyword">false</span>);</div>
 <div class="line">        Schedule floatSchedule(startDate,maturity,Period(floatingLegFrequency),</div>
 <div class="line">                               calendar,floatingLegConvention,floatingLegConvention,</div>
 <div class="line">                               <a class="code" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78ae204c9c3e62b1e9a6b60e40cd05256c5">DateGeneration::Forward</a>,<span class="keyword">false</span>);</div>
@@ -322,7 +322,7 @@ $(function() {
 <div class="line">        <span class="comment">// ATM Bermudan swaption pricing</span></div>
 <div class="line"> </div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;Payer bermudan swaption &quot;</span></div>
-<div class="line">                  &lt;&lt; <span class="stringliteral">&quot;struck at &quot;</span> &lt;&lt; <a name="a15"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">io::rate</a>(fixedATMRate)</div>
+<div class="line">                  &lt;&lt; <span class="stringliteral">&quot;struck at &quot;</span> &lt;&lt; <a name="a16"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">io::rate</a>(fixedATMRate)</div>
 <div class="line">                  &lt;&lt; <span class="stringliteral">&quot; (ATM)&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"> </div>
 <div class="line">        std::vector&lt;Date&gt; bermudanDates;</div>

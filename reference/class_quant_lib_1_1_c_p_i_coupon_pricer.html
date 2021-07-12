@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -105,8 +105,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a821c00e651c140148a3ed485ec95023b"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_p_i_coupon_pricer.html#a821c00e651c140148a3ed485ec95023b">CPICouponPricer</a> ()=default</td></tr>
-<tr class="separator:a821c00e651c140148a3ed485ec95023b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab811c8540b343c417598c70829bf2cca"><td class="memItemLeft" align="right" valign="top"><a id="ab811c8540b343c417598c70829bf2cca"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CPICouponPricer</b> (<a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; nominalTermStructure)</td></tr>
 <tr class="separator:ab811c8540b343c417598c70829bf2cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,34 +225,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>base pricer for capped/floored CPI coupons N.B. vol-dependent parts are a TODO </p>
 <dl class="section note"><dt>Note</dt><dd>this pricer can already do swaplets but to get volatility-dependent coupons you need to implement the descendents. </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a821c00e651c140148a3ed485ec95023b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a821c00e651c140148a3ed485ec95023b">&#9670;&nbsp;</a></span>CPICouponPricer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_c_p_i_coupon_pricer.html">CPICouponPricer</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use one of the other constructors. Deprecated in version 1.19. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa55e9453b999ff26cb7d845104bca3a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa55e9453b999ff26cb7d845104bca3a2">&#9670;&nbsp;</a></span>optionletPriceImp()</h2>
 

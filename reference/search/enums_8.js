@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pricetype_5293',['PriceType',['../namespace_quant_lib.html#a482277e66af02c7d65679d7485095573',1,'QuantLib']]]
+  ['pricetype_5300',['PriceType',['../namespace_quant_lib.html#a482277e66af02c7d65679d7485095573',1,'QuantLib']]]
 ];

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -247,9 +247,7 @@ $(function() {
 <div class="line">        DayCounter fixedLegDayCounter = ActualActual(ActualActual::ISDA);</div>
 <div class="line">        DayCounter floatingLegDayCounter = ActualActual(ActualActual::ISDA);</div>
 <div class="line"> </div>
-<div class="line">        VanillaSwap::Type swapType = </div>
-<div class="line">            <span class="comment">//VanillaSwap::Receiver ;</span></div>
-<div class="line">            VanillaSwap::Payer;</div>
+<div class="line">        Swap::Type swapType = Swap::Payer;</div>
 <div class="line">        ext::shared_ptr&lt;IborIndex&gt; yieldIndxS(</div>
 <div class="line">             <span class="keyword">new</span> Euribor3M(Handle&lt;YieldTermStructure&gt;(swapTS)));</div>
 <div class="line">        std::vector&lt;VanillaSwap&gt; riskySwaps;</div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -688,14 +688,14 @@ $(function() {
 <div class="line">        <a name="a12"></a><a class="code" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d" title="spreads on interest rates">Spread</a> spread = 0.0;</div>
 <div class="line"> </div>
 <div class="line">        <a class="code" href="group__types.html#gab9c87440c314438e51a899a03d2442d0" title="integer number">Integer</a> lengthInYears = 5;</div>
-<div class="line">        VanillaSwap::Type swapType = VanillaSwap::Payer;</div>
+<div class="line">        <a name="a13"></a><a class="code" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Swap::Type</a> swapType = Swap::Payer;</div>
 <div class="line"> </div>
 <div class="line">        Date maturity = settlementDate + lengthInYears*Years;</div>
 <div class="line">        Schedule fixedSchedule(settlementDate, maturity,</div>
 <div class="line">                               Period(fixedLegFrequency),</div>
 <div class="line">                               calendar, fixedLegConvention,</div>
 <div class="line">                               fixedLegConvention,</div>
-<div class="line">                               <a name="a13"></a><a class="code" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78ae204c9c3e62b1e9a6b60e40cd05256c5">DateGeneration::Forward</a>, <span class="keyword">false</span>);</div>
+<div class="line">                               <a name="a14"></a><a class="code" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78ae204c9c3e62b1e9a6b60e40cd05256c5">DateGeneration::Forward</a>, <span class="keyword">false</span>);</div>
 <div class="line">        Schedule floatSchedule(settlementDate, maturity,</div>
 <div class="line">                               Period(floatingLegFrequency),</div>
 <div class="line">                               calendar, floatingLegConvention,</div>
@@ -735,7 +735,7 @@ $(function() {
 <div class="line">        headers[2] = <span class="stringliteral">&quot;fair spread&quot;</span>;</div>
 <div class="line">        headers[3] = <span class="stringliteral">&quot;fair fixed rate&quot;</span>;</div>
 <div class="line">        std::string separator = <span class="stringliteral">&quot; | &quot;</span>;</div>
-<div class="line">        <a name="a14"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> width = headers[0].size() + separator.size()</div>
+<div class="line">        <a name="a15"></a><a class="code" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77" title="size of a container">Size</a> width = headers[0].size() + separator.size()</div>
 <div class="line">                   + headers[1].size() + separator.size()</div>
 <div class="line">                   + headers[2].size() + separator.size()</div>
 <div class="line">                   + headers[3].size() + separator.size() - 1;</div>
@@ -745,7 +745,7 @@ $(function() {
 <div class="line">        <span class="comment">// calculations</span></div>
 <div class="line">        std::cout &lt;&lt; dblrule &lt;&lt; std::endl;</div>
 <div class="line">        std::cout &lt;&lt;  <span class="stringliteral">&quot;5-year market swap-rate = &quot;</span></div>
-<div class="line">                  &lt;&lt; std::setprecision(2) &lt;&lt; <a name="a15"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">io::rate</a>(s5yRate-&gt;value())</div>
+<div class="line">                  &lt;&lt; std::setprecision(2) &lt;&lt; <a name="a16"></a><a class="code" href="group__manips.html#gac63ea3dad10259db3764c7d15a61cde5" title="output rates and spreads as percentages">io::rate</a>(s5yRate-&gt;value())</div>
 <div class="line">                  &lt;&lt; std::endl;</div>
 <div class="line">        std::cout &lt;&lt; dblrule &lt;&lt; std::endl;</div>
 <div class="line"> </div>

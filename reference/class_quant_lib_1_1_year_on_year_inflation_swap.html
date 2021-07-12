@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -79,7 +79,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_quant_lib_1_1_year_on_year_inflation_swap-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,24 +112,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Results from YoY swap calculation  <a href="class_quant_lib_1_1_year_on_year_inflation_swap_1_1results.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memItemLeft" align="right" valign="top"><a id="a1d1cfd8ffb84e947f82999c682b666a7"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>Receiver</b> = -1
-, <b>Payer</b> = 1
- }</td></tr>
-<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb976b0e661f1e6a76997010c576ca40"><td class="memItemLeft" align="right" valign="top"><a id="acb976b0e661f1e6a76997010c576ca40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>YearOnYearInflationSwap</b> (Type type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> fixedSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> yoySchedule, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; yoyIndex, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;observationLag, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> yoyDayCount, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> paymentCalendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention=<a class="el" href="group__datetime.html#ggaff46c5ae9385d20709bedade86edd368a013e092c359f6031cc0563fd413ce707">ModifiedFollowing</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>YearOnYearInflationSwap</b> (<a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> type, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> nominal, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> fixedSchedule, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> fixedRate, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> fixedDayCount, <a class="el" href="class_quant_lib_1_1_schedule.html">Schedule</a> yoySchedule, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; yoyIndex, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;observationLag, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> spread, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> yoyDayCount, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> paymentCalendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention=<a class="el" href="group__datetime.html#ggaff46c5ae9385d20709bedade86edd368a013e092c359f6031cc0563fd413ce707">ModifiedFollowing</a>)</td></tr>
 <tr class="separator:acb976b0e661f1e6a76997010c576ca40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3ddbeb96c14a94132a20a52a303606b"><td class="memItemLeft" align="right" valign="top"><a id="aa3ddbeb96c14a94132a20a52a303606b"></a>
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fixedLegNPV</b> () const</td></tr>
@@ -144,9 +129,9 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="memitem:af43eb079eec8ac6c29c41cc59d161f3f"><td class="memItemLeft" align="right" valign="top"><a id="af43eb079eec8ac6c29c41cc59d161f3f"></a>
 virtual <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fairSpread</b> () const</td></tr>
 <tr class="separator:af43eb079eec8ac6c29c41cc59d161f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8b171bfb3b26c9ce63ddf88a85b886a"><td class="memItemLeft" align="right" valign="top"><a id="ad8b171bfb3b26c9ce63ddf88a85b886a"></a>
-virtual Type&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
-<tr class="separator:ad8b171bfb3b26c9ce63ddf88a85b886a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memItemLeft" align="right" valign="top"><a id="a7eba997f6dc7f9634f41ead3e4401d70"></a>
+virtual <a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
+<tr class="separator:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eee3d3767fab185a6f78d6b406618f5"><td class="memItemLeft" align="right" valign="top"><a id="a8eee3d3767fab185a6f78d6b406618f5"></a>
 virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>nominal</b> () const</td></tr>
 <tr class="separator:a8eee3d3767fab185a6f78d6b406618f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +281,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
+<tr class="memitem:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Type</a> { <b>Receiver</b> = -1
+, <b>Payer</b> = 1
+ }</td></tr>
+<tr class="separator:a1d1cfd8ffb84e947f82999c682b666a7 inherit pub_types_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_quant_lib_1_1_observer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
+typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
+<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e"></a>
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_quant_lib_1_1_swap"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_quant_lib_1_1_swap')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_quant_lib_1_1_swap.html">Swap</a></td></tr>
 <tr class="memitem:a428a8c0a5cb2912604b351462b52e228 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_swap.html#a428a8c0a5cb2912604b351462b52e228">Swap</a> (<a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> legs)</td></tr>
 <tr class="separator:a428a8c0a5cb2912604b351462b52e228 inherit pro_methods_class_quant_lib_1_1_swap"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,8 +356,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b> = 
 <p>Quoted as a fixed rate \( K \). At start: </p><p class="formulaDsp">
 \[ \sum_{i=1}^{M} P_n(0,t_i) N K = \sum_{i=1}^{M} P_n(0,t_i) N \left[ \frac{I(t_i)}{I(t_i-1)} - 1 \right] \]
 </p>
-<p> where \( t_M \) is the maturity time, \( P_n(0,t) \) is the nominal discount factor at time \( t \), \( N \) is the notional, and \( I(t) \) is the inflation index value at time \( t \).</p>
-<dl class="section note"><dt>Note</dt><dd>These instruments have now been changed to follow typical <a class="el" href="class_quant_lib_1_1_vanilla_swap.html" title="Plain-vanilla swap: fix vs floating leg.">VanillaSwap</a> type design conventions w.r.t. Schedules etc. </dd></dl>
+<p> where \( t_M \) is the maturity time, \( P_n(0,t) \) is the nominal discount factor at time \( t \), \( N \) is the notional, and \( I(t) \) is the inflation index value at time \( t \). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa9ff2e4e855a2e93ff2658d0908044d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9ff2e4e855a2e93ff2658d0908044d0">&#9670;&nbsp;</a></span>setupArguments()</h2>

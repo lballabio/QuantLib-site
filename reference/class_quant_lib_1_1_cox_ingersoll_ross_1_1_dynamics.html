@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -126,10 +126,7 @@ const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_stochastic_pro
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dynamics of the short-rate under the Cox-Ingersoll-Ross model </p>
-<p>The state variable \( y_t \) will here be the square-root of the short-rate. It satisfies the following stochastic equation </p><p class="formulaDsp">
-\[ dy_t=\left[ (\frac{k\theta }{2}+\frac{\sigma ^2}{8})\frac{1}{y_t}- \frac{k}{2}y_t \right] d_t+ \frac{\sigma }{2}dW_{t} \]
-</p>
-<p>. </p>
+<p>The short-rate is simulated directly using the Quadratic Exponential discretization scheme as described in Leif Andersen, Efficient Simulation of the Heston Stochastic Volatility Model. </p>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

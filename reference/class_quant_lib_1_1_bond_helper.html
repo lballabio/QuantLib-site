@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -109,8 +109,6 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abdda03578e24734ff6c6cdd452e34a7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bond_helper.html#abdda03578e24734ff6c6cdd452e34a7c">BondHelper</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;price, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt; &amp;bond, Bond::Price::Type priceType=Bond::Price::Clean)</td></tr>
 <tr class="separator:abdda03578e24734ff6c6cdd452e34a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2164e2324bdf0754ae6c5f23559517ef"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bond_helper.html#a2164e2324bdf0754ae6c5f23559517ef">BondHelper</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;price, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt; &amp;bond, bool <a class="el" href="class_quant_lib_1_1_bond_helper.html#a742ec9ec41c6af8d71eb177ddc52369f">useCleanPrice</a>)</td></tr>
-<tr class="separator:a2164e2324bdf0754ae6c5f23559517ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RateHelper interface</div></td></tr>
 <tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top"><a id="ab5f37fe136acee4d7bfd196bcf8bb315"></a>
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedQuote</b> () const override</td></tr>
@@ -122,8 +120,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTermStructure</b> 
 <tr class="memitem:a54f82c618aad99ddee2f64c4c8426401"><td class="memItemLeft" align="right" valign="top"><a id="a54f82c618aad99ddee2f64c4c8426401"></a>
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bond</b> () const</td></tr>
 <tr class="separator:a54f82c618aad99ddee2f64c4c8426401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a742ec9ec41c6af8d71eb177ddc52369f"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bond_helper.html#a742ec9ec41c6af8d71eb177ddc52369f">useCleanPrice</a> () const</td></tr>
-<tr class="separator:a742ec9ec41c6af8d71eb177ddc52369f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324e2d97006dc59732b78a9b770d8615"><td class="memItemLeft" align="right" valign="top"><a id="a324e2d97006dc59732b78a9b770d8615"></a>
 Bond::Price::Type&#160;</td><td class="memItemRight" valign="bottom"><b>priceType</b> () const</td></tr>
 <tr class="separator:a324e2d97006dc59732b78a9b770d8615"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,7 +238,7 @@ TS *&#160;</td><td class="memItemRight" valign="bottom"><b>termStructure_</b></t
 <dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000177">Warning:</a></b></dt><dd>This class assumes that the reference date does not change between calls of setTermStructure(). </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abdda03578e24734ff6c6cdd452e34a7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdda03578e24734ff6c6cdd452e34a7c">&#9670;&nbsp;</a></span>BondHelper() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abdda03578e24734ff6c6cdd452e34a7c">&#9670;&nbsp;</a></span>BondHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,60 +269,6 @@ TS *&#160;</td><td class="memItemRight" valign="bottom"><b>termStructure_</b></t
       </table>
 </div><div class="memdoc">
 <dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000178">Warning:</a></b></dt><dd>Setting a pricing engine to the passed bond from external code will cause the bootstrap to fail or to give wrong results. It is advised to discard the bond after creating the helper, so that the helper has sole ownership of it. </dd></dl>
-
-</div>
-</div>
-<a id="a2164e2324bdf0754ae6c5f23559517ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2164e2324bdf0754ae6c5f23559517ef">&#9670;&nbsp;</a></span>BondHelper() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_bond_helper.html">BondHelper</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>price</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>bond</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>useCleanPrice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated:</a></b></dt><dd>Use the other overload instead. Deprecated in version 1.18. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a742ec9ec41c6af8d71eb177ddc52369f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a742ec9ec41c6af8d71eb177ddc52369f">&#9670;&nbsp;</a></span>useCleanPrice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool useCleanPrice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated:</a></b></dt><dd>Use the priceType() method instead. Deprecated in version 1.18. </dd></dl>
 
 </div>
 </div>

@@ -33,7 +33,7 @@
    <div id="projectname"><a href="http://quantlib.org">
        <img alt="QuantLib" src="QL-title.jpg"></a>
    <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.22</div>
+   <div id="projectnumber">Reference manual - version 1.23</div>
    </div>
   </td>
  </tr>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        std::vector&lt;Real&gt; coupons(1, 0.05);</div>
 <div class="line"> </div>
-<div class="line">        DayCounter bondDayCount = Thirty360();</div>
+<div class="line">        DayCounter bondDayCount = Thirty360(Thirty360::BondBasis);</div>
 <div class="line"> </div>
 <div class="line">        <a class="code" href="group__types.html#gab9c87440c314438e51a899a03d2442d0" title="integer number">Integer</a> callLength[] = { 2, 4 };  <span class="comment">// Call dates, years 2, 4.</span></div>
 <div class="line">        <a class="code" href="group__types.html#gab9c87440c314438e51a899a03d2442d0" title="integer number">Integer</a> putLength[] = { 3 }; <span class="comment">// Put dates year 3</span></div>
