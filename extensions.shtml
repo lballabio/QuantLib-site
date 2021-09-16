@@ -8,7 +8,7 @@ title: QuantLib in other languages
 <h2 class="center">Official wrappers</h2>
 
 <p>QuantLib is <a href="download.shtml">available</a> as a C#,
-Java, Python, R and Ruby module by means of <a
+Java, Python and R module by means of <a
 href="http://swig.org/">SWIG</a>.<br>
 
 <p><a href="http://quantlibaddin.org">QuantLibAddin</a> exports a
