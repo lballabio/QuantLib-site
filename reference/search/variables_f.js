@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['valuedate_5f_5248',['valueDate_',['../class_quant_lib_1_1_forward.html#aebe1ee9fe8c4edd97894a5caec6cf370',1,'QuantLib::Forward']]]
+  ['underlyingincome_5f_0',['underlyingIncome_',['../class_quant_lib_1_1_forward.html#ade985afc594074c269371cc442f3c9b2',1,'QuantLib::Forward']]],
+  ['underlyingspotvalue_5f_1',['underlyingSpotValue_',['../class_quant_lib_1_1_forward.html#a1269c585e5e0bd28fb36d1fde51ddfc3',1,'QuantLib::Forward']]]
 ];
