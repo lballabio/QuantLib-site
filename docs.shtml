@@ -24,7 +24,7 @@ It's a work in progress: contributions are welcome through pull requests.</li>
 <li>Luigi Ballabio, <strong>Implementing QuantLib</strong><br>
   Available as a paperback from <a href="https://getbook.at/implementingquantlib">Amazon</a>
   or an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
-  (also in a <a href=" https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
+  (also in a <a href="https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
   by Ruilong Xu and a <a href="https://leanpub.com/implementingquantlib-jp">Japanese one</a>
   by Aki Sakashita).<br>
   Drafts were posted on <a href="http://implementingquantlib.com/">the accompanying blog</a>.
@@ -109,12 +109,13 @@ QuantLib</strong>, is published by Carol Zheng.</li>
 <strong>Suhas Ghorpadkar's</strong> <a href="http://suhasghorp.com/?s=quantlib&submit=Search">blog</a>.<br>
 <strong>The Python Lab</strong> <a href="https://thepythonlab.com/tag/quantlib/">blog</a> (in Spanish).<br>
 <strong>Quant College</strong> <a href="https://quantcollege.net/tag/quantlib">blog</a> (in Japanese).<br>
+<strong>Ruilong Xu's</strong> <a href="https://www.cnblogs.com/xuruilong100/tag/QuantLib%20%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97/">blog</a> (in Chinese) and the associated <a href="https://github.com/xuruilong100/QuantLibPythonExamples">code examples</a>.<br>
 </li>
 </ul>
 
-<h2 class="center" id="qlws13">Conference proceedings</h2>
+<h2 class="center" id="qlws">Conference proceedings</h2>
 <ul>
-<li>The <strong id="qlum15"><a href="/qlum17.shtml">QuantLib User
+<li>The <strong id="qlum17"><a href="/qlum17.shtml">QuantLib User
 Meeting 2017</a></strong> was held in D&uuml;sseldorf on November
 30th, 2017, thanks to the sponsorship of
 <a href="http://www.ikb.de/">IKB</a>,
