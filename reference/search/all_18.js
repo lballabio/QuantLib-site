@@ -4,8 +4,9 @@ var searchData=
   ['x_5fiterator_1',['x_iterator',['../class_quant_lib_1_1_lexicographical_view.html#a60ae9a6c903bfa254d23a6a144ad05ae',1,'QuantLib::LexicographicalView']]],
   ['xetra_2',['Xetra',['../class_quant_lib_1_1_germany.html#abe41cfffd960e29a5d8b07be00aeda42a9a85bf5d2876a88b66d3f2439c1a6af9',1,'QuantLib::Germany']]],
   ['xm_3',['xm',['../class_quant_lib_1_1_levy_flight_distribution.html#ab24012a190d1249dfcd7f0169e309dee',1,'QuantLib::LevyFlightDistribution']]],
-  ['xprocess_4',['xProcess',['../class_quant_lib_1_1_two_factor_model_1_1_short_rate_dynamics.html#a045a8ae635761b7328f1ccfcb9774684',1,'QuantLib::TwoFactorModel::ShortRateDynamics']]],
-  ['xrpcurrency_5',['XRPCurrency',['../class_quant_lib_1_1_x_r_p_currency.html',1,'QuantLib']]],
-  ['xsize_6',['xSize',['../class_quant_lib_1_1_lexicographical_view.html#af7ed21353c396d5939946518e4bdc24d',1,'QuantLib::LexicographicalView']]],
-  ['xtd_5f_7',['xtd_',['../class_quant_lib_1_1_line_search.html#a633de5cce68edbe62dcc0104c92e69c1',1,'QuantLib::LineSearch']]]
+  ['xofcurrency_4',['XOFCurrency',['../class_quant_lib_1_1_x_o_f_currency.html',1,'QuantLib']]],
+  ['xprocess_5',['xProcess',['../class_quant_lib_1_1_two_factor_model_1_1_short_rate_dynamics.html#a045a8ae635761b7328f1ccfcb9774684',1,'QuantLib::TwoFactorModel::ShortRateDynamics']]],
+  ['xrpcurrency_6',['XRPCurrency',['../class_quant_lib_1_1_x_r_p_currency.html',1,'QuantLib']]],
+  ['xsize_7',['xSize',['../class_quant_lib_1_1_lexicographical_view.html#af7ed21353c396d5939946518e4bdc24d',1,'QuantLib::LexicographicalView']]],
+  ['xtd_5f_8',['xtd_',['../class_quant_lib_1_1_line_search.html#a633de5cce68edbe62dcc0104c92e69c1',1,'QuantLib::LineSearch']]]
 ];

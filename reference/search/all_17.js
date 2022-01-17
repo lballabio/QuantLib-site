@@ -11,5 +11,5 @@ var searchData=
   ['where_20to_20get_20quantlib_8',['Where to get QuantLib',['../where.html',1,'']]],
   ['wibor_9',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
   ['writerextensibleoption_10',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a1333483a7772877890122a3a04b25a59',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]],
-  ['wulinyongdoublebarrierengine_11',['WulinYongDoubleBarrierEngine',['../class_quant_lib_1_1_wulin_yong_double_barrier_engine.html',1,'QuantLib']]]
+  ['wulinyongdoublebarrierengine_11',['WulinYongDoubleBarrierEngine',['../namespace_quant_lib.html#a3082c8dffc39431821a6695ec0e6de06',1,'QuantLib']]]
 ];
