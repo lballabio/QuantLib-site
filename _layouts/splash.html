@@ -2,35 +2,28 @@
 <html>
   <head>
     {% include meta.html %}
-    <link rel="stylesheet" href="/styles/splash.css" type="text/css">
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   </head>
 
 
   <body>
-    <div id="container">
+    {% include header.html %}
 
-      {% include header.html %}
-      {% include banner.html %}
+    <main class="page-content">
+      <div class="wrapper">
+        <h1 class="subtitle">QuantLib: a free/open-source library for quantitative finance</h1>
 
-      <div id="menu">
-        {% include usermenu.html %}
-        {% include sponsors.html %}
+        <div class="features">
+          {% include usermenu.html %}
+        </div>
+
+        <div class="addtopspace">
+          {{ content }}
+        </div>
       </div>
+    </main>
 
-      <div id="content">
-        {{ content }}
-      </div>
-
-      <div id="menuafter">
-        {% include usermenu.html %}
-      </div>
-      <div class="footer">
-        {% include footer.html %}
-      </div>
-
-    </div>
   </body>
 
 </html>

@@ -2,33 +2,20 @@
 <html>
   <head>
     {% include meta.html %}
-    <link rel="stylesheet" href="/styles/splash.css" type="text/css">
     <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   </head>
 
 
   <body>
-    <div id="container">
+    {% include header.html %}
 
-      {% include header.html %}
-
-      <div id="content">
+    <main class="page-content">
+      <div class="wrapper">
         {{ content }}
       </div>
+    </main>
 
-      <div id="menu">
-        {% include usermenu.html %}
-        <div class="categorygroup"/>
-      </div>
-      <div id="menuafter">
-        {% include usermenu.html %}
-      </div>
-      <div class="footer">
-        {% include footer.html %}
-      </div>
-
-    </div>
   </body>
 
 </html>

@@ -14,7 +14,7 @@ title: QuantLib Documentation
 
 <h2 class="center">Reference</h2>
 <ul>
-<li>David Duarte provides a reference to the QuantLib-Python module
+<li>David Duarte provides <strong>a reference to the QuantLib-Python module</strong>
 at <a href="https://quantlib-python-docs.readthedocs.io/">https://quantlib-python-docs.readthedocs.io/</a>.
 It's a work in progress: contributions are welcome through pull requests.</li>
 </ul>

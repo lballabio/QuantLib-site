@@ -1,123 +1,391 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
 
+/**
+ * Basic styling
+ */
 body {
-    font-family: "Open Sans",trebuchet ms,luxi sans,sans-serif;
-    text-align: justify;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
     color: #000000;
-    background: #ffffff;
+    background-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: justify;
 }
 
-#header {
-    margin-left: 1em;
-    text-align: left;
-    padding-bottom: 1em;
-    border-bottom: 1px solid gray;
-    margin-bottom: 1em;
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+.highlight {
+    margin-bottom: 15px;
 }
 
-img.titleimage {
-    margin-top: 1em;
+/**
+ * `main` element
+ */
+main {
+    display: block;
+    /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-div.subtitle {
-    font-family: 'Merriweather Sans', serif;
-    font-size: 120%;
-    margin-top: 6px;
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: 14px;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: 30px;
+}
+
+li > ul,
+li > ol {
     margin-bottom: 0;
 }
 
-div.social {
-    float: right;
-    margin-top: 1em;
-    margin-right: 1em;
+/**
+ * Headings
+ */
+h1 {
+    font-weight: 700;
+    font-style: italic;
+    padding-top: 20px;
+}
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-style: italic;
 }
 
-#container {
+/**
+ * Links
+ */
+a {
+    color: #2a7ae2;
+    text-decoration: none;
+}
+a:visited {
+    color: #1756a9;
+}
+a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: #828282;
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+}
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(960px - (30px * 2));
+    max-width: calc(960px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media screen and (max-width: 960px) {
+    .wrapper {
+        max-width: -webkit-calc(960px - (30px));
+        max-width: calc(960px - (30px));
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/**
+ * Clearfix
+ */
+.wrapper:after, .footer-col-wrapper:after {
+    content: "";
+    display: table;
     clear: both;
-    width: 100%;
-    line-height: 160%;
 }
 
-#menu {
+/**
+ * Icons
+ */
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #828282;
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+
+/**
+ * Tables
+ */
+table {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    color: #3f3f3f;
+    border-collapse: collapse;
+    border: 1px solid #e8e8e8;
+}
+table tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+table th, table td {
+    padding: 10px 15px;
+}
+table th {
+    background-color: #f0f0f0;
+    border: 1px solid #dedede;
+    border-bottom-color: #c9c9c9;
+}
+table td {
+    border: 1px solid #e8e8e8;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    border-top: 5px solid #424242;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 55.95px;
+    position: relative;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 54px;
+    margin-bottom: 0;
+    float: left;
+}
+.site-title, .site-title:visited {
+    color: #424242;
+}
+
+.site-nav {
     float: right;
-    background-color: #fff6bb;
-    width: 16em;
-    margin: 0;
-    margin-bottom: 1em;
-    padding-right: 1em;
+    line-height: 54px;
+}
+.site-nav .nav-trigger {
+    display: none;
+}
+.site-nav .menu-icon {
+    display: none;
+}
+.site-nav .page-link {
+    color: #111;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+}
+.site-nav .page-link:not(:last-child) {
+    margin-right: 20px;
+}
+@media screen and (max-width: 600px) {
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #fdfdfd;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        text-align: right;
+    }
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .site-nav .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+    .site-nav .menu-icon > svg {
+        fill: #424242;
+    }
+    .site-nav input ~ .trigger {
+        clear: both;
+        display: none;
+    }
+    .site-nav input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px;
+    }
+    .site-nav .page-link:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: 30px 0;
+    line-height: 160%;
+    flex: 1;
+}
+
+.page-heading {
+    font-size: 32px;
+}
+
+.post-list-heading {
+    font-size: 28px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+}
+.post-list > li {
+    margin-bottom: 30px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #828282;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+.subtitle {
+    text-align: center;
     line-height: 140%;
+    margin-bottom: 1.0em;
+}
+
+.features {
+    float: none;
+    background-color: #fff6bb;
+    width: 100%;
+    margin: 0;
+    line-height: 160%;
     border: 1px solid gray;
     border-radius: 0.3em
 }
 
-#menuafter {
-    display: none;
+.featurerow {
+    clear: both;
 }
 
-div.categorygroup {
-}
-
-div.category {
+.feature {
+    float: left;
+    width: 31%;
     background-color: #fff6bb;
-    /* border: 1px solid gray; */
-    /* border-radius: 0.3em */
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+@media all and (max-width: 796px) {
+    .feature {
+        float: none;
+        width: 90%;
+    }
 }
 
-h3.categorytitle {
-    font-family: 'Merriweather Sans', serif;
+.featuretitle {
+    font-weight: 700;
     font-size: 120%;
+    font-style: italic;
     text-align: center;
-    margin-bottom: 0;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
 }
 
-p.categorysummary {
-    font-size: 90%;
+.featuretext {
+    font-size: 95%;
     text-align: justify;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
 
-div.sponsor {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 1em;
-}
-
-div.banner {
-    display: none;
-}
-
-#content {
-    margin-right: 18em;
-    padding: 1em;
-    vertical-align: top;
-}
-
-h1 {
-    font-family: 'Merriweather Sans', serif;
-    font-size: 200%;
-}
-
-.footer {
-    clear: both;
-    margin: 0;
-}
-
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: purple;
-}
-
-a:hover {
-    color: green;
-}
-
-a:active {
-    color: red;
-}
 
 .hide { display: none }
 
@@ -128,11 +396,6 @@ a:active {
 .center { text-align: center }
 .left { text-align: left }
 .right { text-align: right }
-
-OL.navlinklist{
-    line-height: 2.0;
-    list-style-type: decimal;
-}
 
 pre {
     margin-left: 1%;
@@ -175,4 +438,3 @@ span.googlestyle {
 .rule { margin-top: 2em }
 .recom { }
 .rationale { FONT-SIZE: 0.95em }
-
