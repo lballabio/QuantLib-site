@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: CPILeg Class Reference</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -116,12 +114,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9def2783e2936de77bf336de580e890b"><td class="memItemLeft" align="right" valign="top"><a id="a9def2783e2936de77bf336de580e890b" name="a9def2783e2936de77bf336de580e890b"></a>
 <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withPaymentCalendar</b> (const <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> &amp;)</td></tr>
 <tr class="separator:a9def2783e2936de77bf336de580e890b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba97a35c0083a686ce4ba9bd7de1237"><td class="memItemLeft" align="right" valign="top"><a id="a3ba97a35c0083a686ce4ba9bd7de1237" name="a3ba97a35c0083a686ce4ba9bd7de1237"></a>
-<a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withFixingDays</b> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays)</td></tr>
-<tr class="separator:a3ba97a35c0083a686ce4ba9bd7de1237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2f537b6d047cd593db7b29dca2d0624"><td class="memItemLeft" align="right" valign="top"><a id="ae2f537b6d047cd593db7b29dca2d0624" name="ae2f537b6d047cd593db7b29dca2d0624"></a>
-<a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withFixingDays</b> (const std::vector&lt; <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> &gt; &amp;fixingDays)</td></tr>
-<tr class="separator:ae2f537b6d047cd593db7b29dca2d0624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a242c04e40001714a3a58ce3d7558c773"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_p_i_leg.html#a242c04e40001714a3a58ce3d7558c773">withFixingDays</a> (<a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> fixingDays)</td></tr>
+<tr class="separator:a242c04e40001714a3a58ce3d7558c773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42aaab74ddab13d791a80052249fb84"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_p_i_leg.html#ad42aaab74ddab13d791a80052249fb84">withFixingDays</a> (const std::vector&lt; <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> &gt; &amp;fixingDays)</td></tr>
+<tr class="separator:ad42aaab74ddab13d791a80052249fb84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76fc29933663e5e036b069d83cd7ae4"><td class="memItemLeft" align="right" valign="top"><a id="af76fc29933663e5e036b069d83cd7ae4" name="af76fc29933663e5e036b069d83cd7ae4"></a>
 <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>withObservationInterpolation</b> (CPI::InterpolationType)</td></tr>
 <tr class="separator:af76fc29933663e5e036b069d83cd7ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +153,46 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p >Helper class building a sequence of capped/floored CPI coupons. </p>
 <p >Also allowing for the inflated notional at the end... especially if there is only one date in the schedule. If a fixedRate is zero you get a <a class="el" href="class_quant_lib_1_1_fixed_rate_coupon.html" title="Coupon paying a fixed interest rate">FixedRateCoupon</a>, otherwise you get a ZeroInflationCoupon.</p>
 <p >payoff is: spread + fixedRate x index </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a242c04e40001714a3a58ce3d7558c773" name="a242c04e40001714a3a58ce3d7558c773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a242c04e40001714a3a58ce3d7558c773">&#9670;&nbsp;</a></span>withFixingDays() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp; withFixingDays </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a>&#160;</td>
+          <td class="paramname"><em>fixingDays</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>No-op; do not use. Deprecated in version 1.26. </dd></dl>
+
+</div>
+</div>
+<a id="ad42aaab74ddab13d791a80052249fb84" name="ad42aaab74ddab13d791a80052249fb84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42aaab74ddab13d791a80052249fb84">&#9670;&nbsp;</a></span>withFixingDays() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_c_p_i_leg.html">CPILeg</a> &amp; withFixingDays </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fixingDays</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>No-op; do not use. Deprecated in version 1.26. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: DiscretizedAsset Class Reference</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -95,10 +93,10 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_discretized_asset__inherit__graph.png" border="0" usemap="#a_discretized_asset_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_discretized_asset_inherit__map" id="a_discretized_asset_inherit__map">
-<area shape="rect" title="Discretized asset class used by numerical methods." alt="" coords="5,101,127,127"/>
-<area shape="rect" href="class_quant_lib_1_1_discretized_derman_kani_double_barrier_option.html" title="Derman&#45;Kani&#45;Ergener&#45;Bardhan discretized option helper class." alt="" coords="175,5,379,47"/>
+<area shape="rect" title="Discretized asset class used by numerical methods." alt="" coords="5,101,128,127"/>
+<area shape="rect" href="class_quant_lib_1_1_discretized_derman_kani_double_barrier_option.html" title="Derman&#45;Kani&#45;Ergener&#45;Bardhan discretized option helper class." alt="" coords="176,5,377,47"/>
 <area shape="rect" href="class_quant_lib_1_1_discretized_discount_bond.html" title="Useful discretized discount bond asset." alt="" coords="191,71,362,98"/>
-<area shape="rect" href="class_quant_lib_1_1_discretized_double_barrier_option.html" title="Standard discretized option helper class." alt="" coords="191,123,362,164"/>
+<area shape="rect" href="class_quant_lib_1_1_discretized_double_barrier_option.html" title="Standard discretized option helper class." alt="" coords="193,123,360,164"/>
 <area shape="rect" href="class_quant_lib_1_1_discretized_option.html" title="Discretized option on a given asset." alt="" coords="213,189,340,215"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -140,6 +138,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>partialRollback</b> (
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Low-level interface</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p ><a class="anchor" id="amgrp7488076a19cba8b11ea501b8ea5632f5"></a>These methods (that developers should override when deriving from <a class="el" href="class_quant_lib_1_1_discretized_asset.html" title="Discretized asset class used by numerical methods.">DiscretizedAsset</a>) are to be used by numerical methods and not directly by users, with the exception of <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a3fd0b540d11b207a4dffcac657330b3d">adjustValues()</a>, <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a550c12c68b9f731f0017dd8f826c7afa">preAdjustValues()</a> and <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a5c6657e78e9d0771e7df6761853e2042">postAdjustValues()</a> that can be used together with partialRollback(). </p>
 </td></tr>
+<tr class="memitem:a64b2d1cdb66b9b110f91baa0185efa71"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discretized_asset.html#a64b2d1cdb66b9b110f91baa0185efa71">CouponAdjustment</a> { <b>pre</b>
+, <b>post</b>
+ }</td></tr>
+<tr class="separator:a64b2d1cdb66b9b110f91baa0185efa71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97b689c7df7487279f31ab5af9b3762"><td class="memItemLeft" align="right" valign="top"><a id="ae97b689c7df7487279f31ab5af9b3762" name="ae97b689c7df7487279f31ab5af9b3762"></a>
 <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>time_</b></td></tr>
 <tr class="separator:ae97b689c7df7487279f31ab5af9b3762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +173,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>partialRollback</b> (
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Discretized asset class used by numerical methods. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a64b2d1cdb66b9b110f91baa0185efa71" name="a64b2d1cdb66b9b110f91baa0185efa71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b2d1cdb66b9b110f91baa0185efa71">&#9670;&nbsp;</a></span>CouponAdjustment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a64b2d1cdb66b9b110f91baa0185efa71">CouponAdjustment</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Indicates if a coupon should be adjusted in <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a550c12c68b9f731f0017dd8f826c7afa">preAdjustValues()</a> or <a class="el" href="class_quant_lib_1_1_discretized_asset.html#a5c6657e78e9d0771e7df6761853e2042">postAdjustValues()</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a95238187618927d950bb01e363f772dd" name="a95238187618927d950bb01e363f772dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95238187618927d950bb01e363f772dd">&#9670;&nbsp;</a></span>reset()</h2>
 

@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Caveats</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -132,6 +130,8 @@ $(function() {
 <dd><a class="anchor" id="_caveats000058"></a> the theoretical price calculated from a flat term structure might differ slightly from the price calculated from the corresponding yield by means of the other overload of this function. If the price from a constant yield is desired, it is advisable to use such other overload.  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_bond.html#a85c4207ffe9e1f712dfa6f1b3a9824f6">Bond::dirtyPrice</a>  () const</dt>
 <dd><a class="anchor" id="_caveats000059"></a> the theoretical price calculated from a flat term structure might differ slightly from the price calculated from the corresponding yield by means of the other overload of this function. If the price from a constant yield is desired, it is advisable to use such other overload.  </dd>
+<dt>Class <a class="el" href="class_quant_lib_1_1_bond_forward.html">BondForward</a>  </dt>
+<dd><a class="anchor" id="_caveats000060"></a> This class still needs to be rigorously tested </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_bond_helper.html">BondHelper</a>  </dt>
 <dd><a class="anchor" id="_caveats000177"></a> This class assumes that the reference date does not change between calls of setTermStructure().  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_bond_helper.html#abdda03578e24734ff6c6cdd452e34a7c">BondHelper::BondHelper</a>  (const Handle&lt; Quote &gt; &amp;price, const ext::shared_ptr&lt; Bond &gt; &amp;bond, Bond::Price::Type priceType=Bond::Price::Clean)</dt>
@@ -155,15 +155,15 @@ $(function() {
 <dt>Class <a class="el" href="class_quant_lib_1_1_cms_spread_coupon.html">CmsSpreadCoupon</a>  </dt>
 <dd><a class="anchor" id="_caveats000012"></a> This class does not perform any date adjustment, i.e., the start and end date passed upon construction should be already rolled to a business day.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_composite_instrument.html">CompositeInstrument</a>  </dt>
-<dd><a class="anchor" id="_caveats000063"></a> Methods that drive the calculation directly (such as <a class="el" href="class_quant_lib_1_1_lazy_object.html#a467a786be42a2165aa15a26709674547">recalculate()</a>, <a class="el" href="class_quant_lib_1_1_lazy_object.html#abd8698b462ce90fe56b15ce7a0192d3e">freeze()</a> and others) might not work correctly. </dd>
+<dd><a class="anchor" id="_caveats000064"></a> Methods that drive the calculation directly (such as <a class="el" href="class_quant_lib_1_1_lazy_object.html#a467a786be42a2165aa15a26709674547">recalculate()</a>, <a class="el" href="class_quant_lib_1_1_lazy_object.html#abd8698b462ce90fe56b15ce7a0192d3e">freeze()</a> and others) might not work correctly. </dd>
 <dt>Module <a class="el" href="class_quant_lib_1_1_handle.html#amgrp559a25fdb98a7d1fd1c3771ac568d5e9">Constructors</a>  </dt>
 <dd><a class="anchor" id="_caveats000033"></a> <code>registerAsObserver</code> is left as a backdoor in case the programmer cannot guarantee that the object pointed to will remain alive for the whole lifetime of the handle&mdash;namely, it should be set to <code>false</code> when the passed shared pointer does not own the pointee (this should only happen in a controlled environment, so that the programmer is aware of it). Failure to do so can very likely result in a program crash. If the programmer does want the handle to register as observer of such a shared pointer, it is his responsibility to ensure that the handle gets destroyed before the pointed object does.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_convertible_fixed_coupon_bond.html">ConvertibleFixedCouponBond</a>  </dt>
-<dd><a class="anchor" id="_caveats000061"></a> Most methods inherited from <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> (such as yield or the yield-based dirtyPrice and cleanPrice) refer to the underlying plain-vanilla bond and do not take convertibility and callability into account.  </dd>
-<dt>Class <a class="el" href="class_quant_lib_1_1_convertible_floating_rate_bond.html">ConvertibleFloatingRateBond</a>  </dt>
 <dd><a class="anchor" id="_caveats000062"></a> Most methods inherited from <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> (such as yield or the yield-based dirtyPrice and cleanPrice) refer to the underlying plain-vanilla bond and do not take convertibility and callability into account.  </dd>
+<dt>Class <a class="el" href="class_quant_lib_1_1_convertible_floating_rate_bond.html">ConvertibleFloatingRateBond</a>  </dt>
+<dd><a class="anchor" id="_caveats000063"></a> Most methods inherited from <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> (such as yield or the yield-based dirtyPrice and cleanPrice) refer to the underlying plain-vanilla bond and do not take convertibility and callability into account.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_convertible_zero_coupon_bond.html">ConvertibleZeroCouponBond</a>  </dt>
-<dd><a class="anchor" id="_caveats000060"></a> Most methods inherited from <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> (such as yield or the yield-based dirtyPrice and cleanPrice) refer to the underlying plain-vanilla bond and do not take convertibility and callability into account.  </dd>
+<dd><a class="anchor" id="_caveats000061"></a> Most methods inherited from <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> (such as yield or the yield-based dirtyPrice and cleanPrice) refer to the underlying plain-vanilla bond and do not take convertibility and callability into account.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_convex_monotone_interpolation.html">ConvexMonotoneInterpolation&lt; I1, I2 &gt;</a>  </dt>
 <dd><a class="anchor" id="_caveats000090"></a> See the <a class="el" href="class_quant_lib_1_1_interpolation.html" title="base class for 1-D interpolations.">Interpolation</a> class for information about the required lifetime of the underlying data.  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_correlation_term_structure.html#a8d5ef360830dcbbc9c78025680d86b88">CorrelationTermStructure::CorrelationTermStructure</a>  (const <a class="el" href="class_quant_lib_1_1_calendar.html" title="calendar class">Calendar</a> &amp;cal, BusinessDayConvention bdc, const <a class="el" href="class_quant_lib_1_1_day_counter.html" title="day counter class">DayCounter</a> &amp;dc=DayCounter())</dt>
@@ -175,12 +175,12 @@ $(function() {
 <dt>Member <a class="el" href="class_quant_lib_1_1_c_p_i_coupon.html#a3aa2f4d9cf86cd8d5fdcb72d328e4dc3">CPICoupon::baseCPI</a>  () const</dt>
 <dd><a class="anchor" id="_caveats000003"></a> make sure that the interpolation used to create this is what you are using for the fixing, i.e. the observationInterpolation.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_c_p_i_swap.html">CPISwap</a>  </dt>
-<dd><a class="anchor" id="_caveats000064"></a> Setting subtractInflationNominal to true means that the original inflation nominal is subtracted from both nominals before they are exchanged, even if they are different. </dd>
+<dd><a class="anchor" id="_caveats000065"></a> Setting subtractInflationNominal to true means that the original inflation nominal is subtracted from both nominals before they are exchanged, even if they are different. </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_crank_nicolson.html">CrankNicolson&lt; Operator &gt;</a>  </dt>
 <dd><a class="anchor" id="_caveats000111"></a> The differential operator must be linear for this evolver to work. </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_credit_default_swap.html">CreditDefaultSwap</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_caveats000065"></a> if <code>Settings::includeReferenceDateCashFlows()</code> is set to <code>true</code>, payments occurring at the settlement date of the swap might be included in the NPV and therefore affect the fair-spread calculation. This might not be what you want.</p>
-<p class="enddd"><a class="anchor" id="_caveats000066"></a> conventionalSpread (and impliedHazardRate) by default use the mid-point engine, which is not ISDA conform. </p>
+<dd><p class="startdd"><a class="anchor" id="_caveats000066"></a> if <code>Settings::includeReferenceDateCashFlows()</code> is set to <code>true</code>, payments occurring at the settlement date of the swap might be included in the NPV and therefore affect the fair-spread calculation. This might not be what you want.</p>
+<p class="enddd"><a class="anchor" id="_caveats000067"></a> conventionalSpread (and impliedHazardRate) by default use the mid-point engine, which is not ISDA conform. </p>
 </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_credit_risk_plus.html">CreditRiskPlus</a>  </dt>
 <dd><a class="anchor" id="_caveats000024"></a> the input correlation matrix is not checked for positive definiteness </dd>
@@ -205,7 +205,7 @@ $(function() {
 <dt>Class <a class="el" href="class_quant_lib_1_1_discretized_option.html">DiscretizedOption</a>  </dt>
 <dd><a class="anchor" id="_caveats000006"></a> it is advised that derived classes take care of creating and initializing themselves an instance of the underlying.  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_dividend_vanilla_option.html#a6292fa744406700ef359cd76fd15765e">DividendVanillaOption::impliedVolatility</a>  (Real price, const ext::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;process, Real accuracy=1.0e-4, Size maxEvaluations=100, Volatility minVol=1.0e-7, Volatility maxVol=4.0) const</dt>
-<dd><a class="anchor" id="_caveats000070"></a> see <a class="el" href="class_quant_lib_1_1_vanilla_option.html" title="Vanilla option (no discrete dividends, no barriers) on a single asset.">VanillaOption</a> for notes on implied-volatility calculation.  </dd>
+<dd><a class="anchor" id="_caveats000071"></a> see <a class="el" href="class_quant_lib_1_1_vanilla_option.html" title="Vanilla option (no discrete dividends, no barriers) on a single asset.">VanillaOption</a> for notes on implied-volatility calculation.  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_double_barrier_option.html#a6292fa744406700ef359cd76fd15765e">DoubleBarrierOption::impliedVolatility</a>  (Real price, const ext::shared_ptr&lt; GeneralizedBlackScholesProcess &gt; &amp;process, Real accuracy=1.0e-4, Size maxEvaluations=100, Volatility minVol=1.0e-7, Volatility maxVol=4.0) const</dt>
 <dd><a class="anchor" id="_caveats000007"></a> see <a class="el" href="class_quant_lib_1_1_vanilla_option.html" title="Vanilla option (no discrete dividends, no barriers) on a single asset.">VanillaOption</a> for notes on implied-volatility calculation.  </dd>
 <dt>Member <a class="el" href="struct_quant_lib_1_1_e_c_b.html#a46fa6730251ce58e9881cd0ba426eeba">ECB::code</a>  (const <a class="el" href="class_quant_lib_1_1_date.html" title="Concrete date class.">Date</a> &amp;ecbDate)</dt>
@@ -222,16 +222,14 @@ $(function() {
 <dd><a class="anchor" id="_caveats000005"></a> if two or more exchange-rate chains are possible which allow to specify a requested rate, it is unspecified which one is returned.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_exponential_splines_fitting.html">ExponentialSplinesFitting</a>  </dt>
 <dd><a class="anchor" id="_caveats000182"></a> convergence may be slow  </dd>
-<dt>Member <a class="el" href="class_quant_lib_1_1_finite_difference_model.html#a29eb8c23b64571be731ffa8f4df2590a">FiniteDifferenceModel&lt; Evolver &gt;::rollback</a>  (array_type &amp;a, Time from, Time to, Size steps)</dt>
-<dd><a class="anchor" id="_caveats000112"></a> being this a rollback, <code>from</code> must be a later time than <code>to</code>.  </dd>
 <dt>Member <a class="el" href="class_quant_lib_1_1_finite_difference_model.html#a65ea4e753878a94e9daa438b1bd1cb75">FiniteDifferenceModel&lt; Evolver &gt;::rollback</a>  (array_type &amp;a, Time from, Time to, Size steps, const condition_type &amp;condition)</dt>
 <dd><a class="anchor" id="_caveats000113"></a> being this a rollback, <code>from</code> must be a later time than <code>to</code>.  </dd>
+<dt>Member <a class="el" href="class_quant_lib_1_1_finite_difference_model.html#a29eb8c23b64571be731ffa8f4df2590a">FiniteDifferenceModel&lt; Evolver &gt;::rollback</a>  (array_type &amp;a, Time from, Time to, Size steps)</dt>
+<dd><a class="anchor" id="_caveats000112"></a> being this a rollback, <code>from</code> must be a later time than <code>to</code>.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html">FittedBondDiscountCurve</a>  </dt>
 <dd><a class="anchor" id="_caveats000179"></a> The method can be slow if there are many bonds to fit. Speed also depends on the particular choice of fitting method chosen and its convergence properties under optimization. See also todo list for BondDiscountCurveFittingMethod. </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html">FittedBondDiscountCurve::FittingMethod</a>  </dt>
 <dd><a class="anchor" id="_caveats000180"></a> some parameters to the <a class="el" href="class_quant_lib_1_1_simplex.html" title="Multi-dimensional simplex class.">Simplex</a> optimization method may need to be tweaked internally to the class, depending on the fitting method used, in order to get proper/reasonable/faster convergence.  </dd>
-<dt>Class <a class="el" href="class_quant_lib_1_1_fixed_rate_bond_forward.html">FixedRateBondForward</a>  </dt>
-<dd><a class="anchor" id="_caveats000071"></a> This class still needs to be rigorously tested </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_flat_extrapolator2_d.html">FlatExtrapolator2D</a>  </dt>
 <dd><a class="anchor" id="_caveats000092"></a> See the <a class="el" href="class_quant_lib_1_1_interpolation.html" title="base class for 1-D interpolations.">Interpolation</a> class for information about the required lifetime of the underlying data.  </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_forward.html">Forward</a>  </dt>
@@ -406,9 +404,9 @@ $(function() {
 <dt>Member <a class="el" href="namespace_quant_lib.html#a08213dc39b37fb4f769eb6b0bc926a26">QuantLib::blackFormulaStdDevSecondDerivative</a>  (Rate strike, Rate forward, Real stdDev, Real discount, Real displacement)</dt>
 <dd><a class="anchor" id="_caveats000135"></a> instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation.  </dd>
 <dt>Member <a class="el" href="namespace_quant_lib.html#ac7d105585f943dd8bfca27d63ce2bdff">QuantLib::cdsMaturity</a>  (const <a class="el" href="class_quant_lib_1_1_date.html" title="Concrete date class.">Date</a> &amp;tradeDate, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;tenor, <a class="el" href="struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78">DateGeneration::Rule</a> rule)</dt>
-<dd><p class="startdd"><a class="anchor" id="_caveats000067"></a> An exception will be thrown if the <code>rule</code> is not <code>CDS2015</code>, <code>CDS</code> or <code>OldCDS</code>.</p>
-<p class="interdd"><a class="anchor" id="_caveats000068"></a> An exception will be thrown if the <code>rule</code> is <code>OldCDS</code> and a <code>tenor</code> of 0 months is provided. This restriction can be removed if 0M tenor was available before the CDS Big Bang 2009.</p>
-<p class="enddd"><a class="anchor" id="_caveats000069"></a> An exception will be thrown if the <code>tenor</code> is not a multiple of 3 months. For the avoidance of doubt, a <code>tenor</code> of 0 months is supported.  </p>
+<dd><p class="startdd"><a class="anchor" id="_caveats000068"></a> An exception will be thrown if the <code>rule</code> is not <code>CDS2015</code>, <code>CDS</code> or <code>OldCDS</code>.</p>
+<p class="interdd"><a class="anchor" id="_caveats000069"></a> An exception will be thrown if the <code>rule</code> is <code>OldCDS</code> and a <code>tenor</code> of 0 months is provided. This restriction can be removed if 0M tenor was available before the CDS Big Bang 2009.</p>
+<p class="enddd"><a class="anchor" id="_caveats000070"></a> An exception will be thrown if the <code>tenor</code> is not a multiple of 3 months. For the avoidance of doubt, a <code>tenor</code> of 0 months is supported.  </p>
 </dd>
 <dt>Class <a class="el" href="class_quant_lib_1_1_quanto_engine.html">QuantoEngine&lt; Instr, Engine &gt;</a>  </dt>
 <dd><a class="anchor" id="_caveats000142"></a> for the time being, this engine will only work with simple Black-Scholes processes (i.e., no Merton.) </dd>

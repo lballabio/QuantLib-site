@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: FRA.cpp</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -98,7 +96,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#define LENGTH(a) (sizeof(a)/sizeof(a[0]))</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>std;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>;</div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_quant_lib.html">QuantLib</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
@@ -235,13 +233,6 @@ $(function() {
 <div class="line">                                         settlementDate, fraInstruments,</div>
 <div class="line">                                         termStructureDayCounter));</div>
 <div class="line"> </div>
-<div class="line"> </div>
-<div class="line">        <span class="comment">// Term structures used for pricing/discounting</span></div>
-<div class="line"> </div>
-<div class="line">        RelinkableHandle&lt;YieldTermStructure&gt; discountingTermStructure;</div>
-<div class="line">        discountingTermStructure.linkTo(fraTermStructure);</div>
-<div class="line"> </div>
-<div class="line"> </div>
 <div class="line"><span class="comment">        /***********************</span></div>
 <div class="line"><span class="comment">         ***  construct FRA&#39;s ***</span></div>
 <div class="line"><span class="comment">         ***********************/</span></div>
@@ -271,8 +262,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">            ForwardRateAgreement myFRA(fraValueDate,</div>
 <div class="line">                                       fraFwdType,fraStrikeRate,</div>
-<div class="line">                                       fraNotional, euribor3m,</div>
-<div class="line">                                       discountingTermStructure);</div>
+<div class="line">                                       fraNotional, euribor3m);</div>
 <div class="line"> </div>
 <div class="line">            cout &lt;&lt; <span class="stringliteral">&quot;3m Term FRA, Months to Start: &quot;</span></div>
 <div class="line">                 &lt;&lt; monthsToStart[i]</div>
@@ -331,8 +321,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">            ForwardRateAgreement myFRA(fraValueDate,</div>
 <div class="line">                                       fraFwdType, fraStrikeRate,</div>
-<div class="line">                                       fraNotional, euribor3m,</div>
-<div class="line">                                       discountingTermStructure);</div>
+<div class="line">                                       fraNotional, euribor3m);</div>
 <div class="line"> </div>
 <div class="line">            cout &lt;&lt; <span class="stringliteral">&quot;3m Term FRA, 100 notional, Months to Start = &quot;</span></div>
 <div class="line">                 &lt;&lt; monthsToStart[i]</div>

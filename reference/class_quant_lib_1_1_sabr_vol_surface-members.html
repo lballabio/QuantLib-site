@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Member List</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -117,7 +115,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html#a09a3fee7e6a6ff57799024b142481d3c">InterestRateVolSurface</a>(ext::shared_ptr&lt; InterestRateIndex &gt;, BusinessDayConvention bdc=Following, const DayCounter &amp;dc=DayCounter())</td><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html">InterestRateVolSurface</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html#ad5dc22b05c9ae0ecc24ee731317341dc">InterestRateVolSurface</a>(ext::shared_ptr&lt; InterestRateIndex &gt;, const Date &amp;referenceDate, const Calendar &amp;cal=Calendar(), BusinessDayConvention bdc=Following, const DayCounter &amp;dc=DayCounter())</td><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html">InterestRateVolSurface</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html#af47da73f20c3bd1e5bd6577f962ff3fa">InterestRateVolSurface</a>(ext::shared_ptr&lt; InterestRateIndex &gt;, Natural settlementDays, const Calendar &amp;, BusinessDayConvention bdc=Following, const DayCounter &amp;dc=DayCounter())</td><td class="entry"><a class="el" href="class_quant_lib_1_1_interest_rate_vol_surface.html">InterestRateVolSurface</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>iterator</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>iterator</b> (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html#aa72216913cb42d4910ebcae64d655934">maxDate</a>() const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html#ada8cff07d95e752d7cf21d9bc78c1ebb">maxStrike</a>() const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html#ae51ec8c762c73723891656051fd5717a">maxTime</a>() const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -137,7 +135,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html#a51d57eb97a3a57312a47bda29235f182">registerWithObservables</a>(const ext::shared_ptr&lt; Observer &gt; &amp;)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>sabrGuesses</b>(const Date &amp;) const (defined in <a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>SabrVolSurface</b>(const ext::shared_ptr&lt; InterestRateIndex &gt; &amp;, Handle&lt; BlackAtmVolCurve &gt;, const std::vector&lt; Period &gt; &amp;optionTenors, std::vector&lt; Spread &gt; atmRateSpreads, std::vector&lt; std::vector&lt; Handle&lt; Quote &gt; &gt; &gt; volSpreads) (defined in <a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>set_type</b> typedef (defined in <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html#a460be9983010f6c71e68d745c24cb60a">QuantLib::set_type</a></td><td class="entry"><a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html#a91d05d71934f94dcd6e3a530d55000a6">settlementDays</a>() const override</td><td class="entry"><a class="el" href="class_quant_lib_1_1_sabr_vol_surface.html">SabrVolSurface</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_quant_lib_1_1_black_vol_surface.html#af883a34d2a4ccf7faa928ded3704bad3">smileSection</a>(const Period &amp;, bool extrapolate) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_black_vol_surface.html">BlackVolSurface</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_quant_lib_1_1_black_vol_surface.html#a108b85babe8ab288f4752048147e25d4">smileSection</a>(const Date &amp;, bool extrapolate) const</td><td class="entry"><a class="el" href="class_quant_lib_1_1_black_vol_surface.html">BlackVolSurface</a></td><td class="entry"></td></tr>

@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Date Class Reference</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -375,9 +373,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEndOfMonth</
 <p >Compute a hash value of <code>d</code>.</p>
 <p >This method makes <a class="el" href="class_quant_lib_1_1_date.html" title="Concrete date class.">Date</a> hashable via <code>boost::hash</code>.</p>
 <p >Example:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;boost/unordered_set.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
 <div class="line"> </div>
-<div class="line">boost::unordered_set&lt;Date&gt; set;</div>
+<div class="line">std::unordered_set&lt;Date&gt; set;</div>
 <div class="line"><a class="code hl_function" href="class_quant_lib_1_1_date.html#aff49fc2cda4491ff4457ca481bb8edf9" title="Default constructor returning a null date.">Date</a> d = <a class="code hl_function" href="class_quant_lib_1_1_date.html#aff49fc2cda4491ff4457ca481bb8edf9" title="Default constructor returning a null date.">Date</a>(1, Jan, 2020); </div>
 <div class="line"> </div>
 <div class="line">set.insert(d);</div>

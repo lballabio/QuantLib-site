@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Repo.cpp</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -95,7 +93,8 @@ $(function() {
 <div class="line"><span class="preprocessor">#if !defined(BOOST_ALL_NO_LIB) &amp;&amp; defined(BOOST_MSVC)</span></div>
 <div class="line"><span class="preprocessor">#  include &lt;ql/auto_link.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor">#include &lt;ql/instruments/fixedratebondforward.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;ql/instruments/bondforward.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;ql/instruments/bonds/fixedratebond.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/pricingengines/bond/discountingbondengine.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/termstructures/yield/flatforward.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;ql/time/schedule.hpp&gt;</span></div>
@@ -106,7 +105,7 @@ $(function() {
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>std;</div>
+<div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacestd.html" title="STL namespace.">std</a>;</div>
 <div class="line"><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_quant_lib.html">QuantLib</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#if defined(QL_ENABLE_SESSIONS)</span></div>
@@ -214,17 +213,9 @@ $(function() {
 <div class="line">                                                       repoCompoundFreq)));</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">        FixedRateBondForward bondFwd(repoSettlementDate,</div>
-<div class="line">                                     repoDeliveryDate,</div>
-<div class="line">                                     fwdType,</div>
-<div class="line">                                     dummyStrike,</div>
-<div class="line">                                     repoSettlementDays,</div>
-<div class="line">                                     repoDayCountConvention,</div>
-<div class="line">                                     bondCalendar,</div>
-<div class="line">                                     bondBusinessDayConvention,</div>
-<div class="line">                                     bond,</div>
-<div class="line">                                     repoCurve,</div>
-<div class="line">                                     repoCurve);</div>
+<div class="line">        BondForward bondFwd(repoSettlementDate, repoDeliveryDate, fwdType, dummyStrike,</div>
+<div class="line">                            repoSettlementDays, repoDayCountConvention, bondCalendar,</div>
+<div class="line">                            bondBusinessDayConvention, bond, repoCurve, repoCurve);</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Underlying bond clean price: &quot;</span></div>

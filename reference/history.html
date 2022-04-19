@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Version history</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -77,7 +75,47 @@ $(function() {
   <div class="headertitle"><div class="title">Version history </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><b>Release 1.25 - January 2022</b></p>
+<div class="textblock"><p ><b>Release 1.26 - April 2022</b></p>
+<p >PORTABILITY</p><ul>
+<li><b>End of support:</b> as announced in the notes for the previous release, this release is the last to support Visual Studio 2013.</li>
+<li><b>End of support:</b> this release is the last to support the long-deprecated configure switches <code>--enable-disposable</code> and <code>--enable-std-unique-ptr</code>. From the next release, <code>Disposable</code> will always be disabled (and eventually removed) and <code>std::unique_ptr</code> will always be used instead of <code>std::auto_ptr</code>. This has already been the default in the last few releases.</li>
+<li><b>Future end of support:</b> this release and the next will be the last to avoid C++14 syntax. This should still support most compilers released in the past several years (except for Visual Studio 2013, which we're already dropping in this release).</li>
+<li>If tagged libraries are specified, as is the default on Windows, CMake now gives the built libraries the same names as the Visual Studio solution (for instance, <code>QuantLib-x64-mt-s</code> instead of <code>QuantLib-mt-s-x64</code>) so that the pragma in <code>ql/auto_link.hpp</code> works.</li>
+<li><a class="el" href="namespace_quant_lib.html">QuantLib</a> can now also be built as a subproject in a larger CMake build (thanks to Peter Caspers).</li>
+</ul>
+<p >DATE/TIME</p><ul>
+<li>When printed, <code>Period</code> instances now display transparently what their units and length are, instead of doing more fancy formatting (e.g., "16 months" is now displayed instead of "1 year 4 months"). Also, <code>Period</code> instances that compare as equal now return the same period from their <code>normalize</code> method.</li>
+</ul>
+<p >INDEXES</p><ul>
+<li>Added Tona (Tokyo overnight average) index (thanks to Jonghee Lee).</li>
+<li>Added static <code>laggedFixing</code> method to <code>CPI</code> structure which provides interpolation of inflation index fixings.</li>
+</ul>
+<p >CASH FLOWS</p><ul>
+<li>The <code>CPICoupon</code> and <code>CPICashFlow</code> classes now take into account the correct dates and observation lag for interpolation.</li>
+</ul>
+<p >INSTRUMENTS</p><ul>
+<li>Added a <code>BondForward</code> class that generalizes the existing <code>FixedRateBondForward</code> to any kind of bond (thanks to Marcin Rybacki).</li>
+<li>Avoided unexpected jumps in callable bond OAS (thanks to Ralf Konrad).</li>
+<li>Fixed <code>TreeSwaptionEngine</code> mispricing when adjusting the instrument schedule to a near exercise date (thanks to Ralf Konrad).</li>
+<li>the <code>ForwardRateAgreement</code> class now works correctly without an explicit discount curve.</li>
+</ul>
+<p >TERM STRUCTURES</p><ul>
+<li>Dates explixitly passed to <code>InterpolatedZeroInflationCurve</code> are no longer adjusted automatically to the beginning of their inflation period.</li>
+</ul>
+<p >DEPRECATED FEATURES</p><ul>
+<li><b>Removed</b> the <code>MCDiscreteAveragingAsianEngine</code> class, deprecated in version 1.21.</li>
+<li>Deprecated the <code>LsmBasisSystem::PolynomType</code> typedef, now renamed to <code>PolynomialType</code>; <code>MakeMCAmericanEngine::withPolynomOrder</code> was also deprecated and renamed to <code>withPolynomialOrder</code>.</li>
+<li>Deprecated the <code>ZeroInflationCashFlow</code> constructor taking an unused calendar and business-day convention.</li>
+<li>Deprecated the <code>CPICoupon</code> constructor taking a number of fixing days, as well as the <code>CPICoupon::indexObservation</code>, <code>CPICoupon::adjustedFixing</code> and <code>CPICoupon::indexFixing</code> methods and the <code>CPILeg::withFixingDays</code> method.</li>
+<li>Deprecated the <code>CPICashFlow</code> constructor taking a precalculated fixing date and a frequency.</li>
+<li>Deprecated the <code>Observer::set_type</code> and <code>Observable::set_type</code> typedefs.</li>
+<li>Deprecated the unused <code>Curve</code> class.</li>
+<li>Deprecated the unused <code>LexicographicalView</code> class.</li>
+<li>Deprecated the unused <code>Composite</code> class.</li>
+<li>Deprecated the unused <code>DriftTermStructure</code> class.</li>
+</ul>
+<p >Thanks go also to Matthias Groncki, Jonathan Sweemer and Li Zhong for smaller fixes, enhancements and bug reports.</p>
+<p ><b>Release 1.25 - January 18th, 2022</b></p>
 <p >PORTABILITY</p><ul>
 <li><b>End of support:</b> this release and the next will be the last two to support Visual Studio 2013.</li>
 <li>Added a few CMake presets for building the library (thanks to Jonathan Sweemer).</li>

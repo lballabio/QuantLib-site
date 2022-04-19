@@ -6,7 +6,7 @@
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>QuantLib: Observer Class Reference</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,10 +30,8 @@ MathJax.Hub.Config({
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname"><a href="http://quantlib.org">
-       <img alt="QuantLib" src="QL-title.jpg"></a>
-   <div id="projectbrief">A free/open-source library for quantitative finance</div>
-   <div id="projectnumber">Reference manual - version 1.25</div>
+   <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
+   <div id="projectnumber">Reference manual - version 1.26</div>
    </div>
   </td>
  </tr>
@@ -79,8 +77,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_quant_lib_1_1_observer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Observer Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__patterns.html">Design patterns</a></div></div></div>
 </div><!--header-->
@@ -97,167 +95,158 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_observer__inherit__graph.png" border="0" usemap="#a_observer_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_observer_inherit__map" id="a_observer_inherit__map">
-<area shape="rect" title="Object that gets notified when a given observable changes." alt="" coords="5,4219,83,4245"/>
-<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="171,18,371,59"/>
-<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="168,123,375,165"/>
-<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="169,269,373,310"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,355,371,411"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="183,712,359,768"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="167,901,376,971"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,996,372,1052"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,1076,372,1132"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="177,1157,366,1198"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="172,1223,371,1279"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="183,1303,360,1359"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,1383,372,1439"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="185,1463,358,1519"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="179,1543,364,1599"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="170,1623,373,1679"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="150,1703,393,1759"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="158,1783,385,1839"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="157,1863,385,1934"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,1958,384,2029"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="164,2053,379,2123"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,2147,390,2218"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="145,2242,397,2313"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="157,2337,386,2393"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="149,2417,393,2473"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="131,2497,412,2553"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="156,2577,387,2633"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="156,2657,387,2713"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,2737,382,2793"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="158,2817,385,2873"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,2897,387,2953"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="168,2977,375,3033"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="183,3057,359,3113"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="164,3137,379,3193"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,3217,384,3273"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,3297,384,3353"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,3377,378,3433"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="156,3457,387,3513"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,3537,373,3593"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="163,3617,379,3673"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="151,3697,391,3753"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="163,3777,379,3833"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="177,3858,366,3899"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="162,3924,381,3980"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="151,4004,391,4060"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="150,4084,393,4140"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="172,4164,371,4220"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,4244,381,4300"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="168,4324,375,4380"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="177,4405,365,4475"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="183,4499,360,4570"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="158,4595,385,4651"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="156,4675,387,4731"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,4755,373,4811"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="176,4835,367,4877"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,4901,378,4957"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="174,4981,369,5037"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,5061,389,5117"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="141,5141,402,5197"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,5221,377,5277"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="168,5301,375,5357"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,5381,389,5437"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="175,5462,368,5533"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,5557,384,5613"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="173,5638,369,5709"/>
-<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title=" " alt="" coords="175,5733,368,5760"/>
-<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title=" " alt="" coords="169,5785,374,5826"/>
-<area shape="rect" href="class_quant_lib_1_1_base_correlation_loss_model.html" title=" " alt="" coords="168,5850,375,5891"/>
-<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title="Base helper class for bootstrapping." alt="" coords="192,5916,351,5943"/>
-<area shape="rect" href="class_quant_lib_1_1_calibrated_model.html" title="Calibrated model class." alt="" coords="212,5967,331,5993"/>
-<area shape="rect" href="class_quant_lib_1_1_claim.html" title="Claim associated to a default event." alt="" coords="243,6017,299,6044"/>
-<area shape="rect" href="class_quant_lib_1_1_commodity_index.html" title="base class for commodity indexes" alt="" coords="210,6068,333,6095"/>
-<area shape="rect" href="class_quant_lib_1_1_composite_quote.html" title="market element whose value depends on two other market element" alt="" coords="155,6119,388,6145"/>
-<area shape="rect" href="class_quant_lib_1_1_constant_recovery_model.html" title=" " alt="" coords="187,6169,355,6196"/>
-<area shape="rect" href="class_quant_lib_1_1_delta_vol_quote.html" title="Class for the quotation of delta vs vol." alt="" coords="217,6220,325,6247"/>
-<area shape="rect" href="class_quant_lib_1_1_derived_quote.html" title="market quote whose value depends on another quote" alt="" coords="165,6271,378,6297"/>
-<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon.html" title="base floating&#45;rate coupon class" alt="" coords="199,6321,343,6348"/>
-<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon_pricer.html" title="generic pricer for floating&#45;rate coupons" alt="" coords="182,6372,361,6399"/>
-<area shape="rect" href="class_quant_lib_1_1_forward_value_quote.html" title="quote for the forward value of an index" alt="" coords="201,6423,341,6449"/>
-<area shape="rect" href="class_quant_lib_1_1_futures_conv_adjustment_quote.html" title="quote for the futures&#45;convexity adjustment of an index" alt="" coords="171,6473,372,6500"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title="template base class for option pricing engines" alt="" coords="179,6525,364,6566"/>
-<area shape="rect" href="class_quant_lib_1_1_indexed_cash_flow.html" title="Cash flow dependent on an index ratio." alt="" coords="207,6591,336,6617"/>
-<area shape="rect" href="class_quant_lib_1_1_inflation_coupon.html" title="Base inflation&#45;coupon class." alt="" coords="213,6641,329,6668"/>
-<area shape="rect" href="class_quant_lib_1_1_inflation_coupon_pricer.html" title="Base inflation&#45;coupon pricer." alt="" coords="196,6692,347,6719"/>
-<area shape="rect" href="class_quant_lib_1_1_inflation_index.html" title="Base class for inflation&#45;rate indexes,." alt="" coords="221,6743,322,6769"/>
-<area shape="rect" href="class_quant_lib_1_1_interest_rate_index.html" title="base class for interest rate indexes" alt="" coords="208,6793,335,6820"/>
-<area shape="rect" href="class_quant_lib_1_1_last_fixing_quote.html" title="Quote adapter for the last fixing available of a given Index." alt="" coords="212,6844,331,6871"/>
-<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title="Generic multifactor latent variable model." alt="" coords="181,6895,362,6937"/>
-<area shape="rect" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching." alt="" coords="227,6961,316,6988"/>
-<area shape="rect" href="class_quant_lib_1_1_random_default_model.html" title="Base class for random default models." alt="" coords="196,7012,347,7039"/>
-<area shape="rect" href="class_quant_lib_1_1_smile_section.html" title="interest rate volatility smile section" alt="" coords="221,7063,321,7089"/>
-<area shape="rect" href="class_quant_lib_1_1_stochastic_process.html" title="multi&#45;dimensional stochastic process class." alt="" coords="205,7113,337,7140"/>
-<area shape="rect" href="class_quant_lib_1_1_term_structure.html" title="Basic term&#45;structure functionality." alt="" coords="219,7164,324,7191"/>
-<area shape="rect" href="class_quant_lib_1_1_year_on_year_inflation_swap_helper.html" title="Year&#45;on&#45;year inflation&#45;swap bootstrap helper." alt="" coords="496,5,709,32"/>
-<area shape="rect" href="class_quant_lib_1_1_yo_y_optionlet_helper.html" title="Year&#45;on&#45;year inflation&#45;volatility bootstrap helper." alt="" coords="533,56,672,83"/>
-<area shape="rect" href="class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html" title="Zero&#45;coupon inflation&#45;swap bootstrap helper." alt="" coords="495,107,711,133"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="513,158,692,229"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="487,253,718,323"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="504,347,701,418"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="487,442,718,513"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="520,537,685,607"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="496,632,709,688"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="496,712,709,768"/>
-<area shape="rect" href="class_quant_lib_1_1_cap_floor_1_1engine.html" title="base class for cap/floor engines" alt="" coords="571,792,634,819"/>
-<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title=" " alt="" coords="493,843,712,899"/>
-<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title=" " alt="" coords="498,923,707,979"/>
-<area shape="rect" href="class_quant_lib_1_1_analytic_heston_forward_european_engine.html" title="Analytic Heston engine incl. stochastic interest rates." alt="" coords="494,1003,711,1045"/>
-<area shape="rect" href="class_quant_lib_1_1_forward_vanilla_engine.html" title="Forward engine for vanilla options" alt="" coords="527,1069,679,1110"/>
-<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title="Monte Carlo engine for forward&#45;starting vanilla options." alt="" coords="517,1134,689,1175"/>
-<area shape="rect" href="class_quant_lib_1_1_barrier_option_1_1engine.html" title="Barrier&#45;option engine base class" alt="" coords="571,1200,634,1227"/>
-<area shape="rect" href="class_quant_lib_1_1_basket_option_1_1engine.html" title="Basket&#45;option engine base class" alt="" coords="571,1251,634,1277"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="497,1317,708,1387"/>
-<area shape="rect" href="class_quant_lib_1_1_callable_bond_1_1engine.html" title="base class for callable fixed rate bond engine" alt="" coords="571,1412,634,1439"/>
-<area shape="rect" href="class_quant_lib_1_1_cat_bond_1_1engine.html" title="base class for cat bond engine" alt="" coords="571,1477,634,1504"/>
-<area shape="rect" href="class_quant_lib_1_1_cds_option_1_1engine.html" title="base class for swaption engines" alt="" coords="571,1557,634,1584"/>
-<area shape="rect" href="class_quant_lib_1_1_cliquet_option_1_1engine.html" title="Cliquet engine base class." alt="" coords="571,1637,634,1664"/>
-<area shape="rect" href="class_quant_lib_1_1_compound_option_1_1engine.html" title="Compound&#45;option engine base class" alt="" coords="571,1797,634,1824"/>
-<area shape="rect" href="class_quant_lib_1_1_continuous_averaging_asian_option_1_1engine.html" title="Continuous&#45;averaging Asian engine base class." alt="" coords="571,1885,634,1912"/>
-<area shape="rect" href="class_quant_lib_1_1_continuous_fixed_lookback_option_1_1engine.html" title="Continuous fixed lookback engine base class" alt="" coords="571,1979,634,2005"/>
-<area shape="rect" href="class_quant_lib_1_1_continuous_floating_lookback_option_1_1engine.html" title="Continuous floating lookback engine base class" alt="" coords="571,2029,634,2056"/>
-<area shape="rect" href="class_quant_lib_1_1_continuous_partial_fixed_lookback_option_1_1engine.html" title="Continuous partial fixed lookback engine base class" alt="" coords="571,2080,634,2107"/>
-<area shape="rect" href="class_quant_lib_1_1_continuous_partial_floating_lookback_option_1_1engine.html" title="Continuous partial floating lookback engine base class" alt="" coords="571,2131,634,2157"/>
-<area shape="rect" href="class_quant_lib_1_1_discrete_averaging_asian_option_1_1engine.html" title="Discrete&#45;averaging Asian engine base class." alt="" coords="571,2181,634,2208"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="487,2233,718,2303"/>
-<area shape="rect" href="class_quant_lib_1_1_dividend_barrier_option_1_1engine.html" title="Dividend&#45;barrier&#45;option engine base class" alt="" coords="571,2328,634,2355"/>
-<area shape="rect" href="class_quant_lib_1_1_vanna_volga_barrier_engine.html" title="Vanna Volga barrier option engine." alt="" coords="515,2379,690,2405"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="487,2430,718,2501"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="487,2525,718,2595"/>
-<area shape="rect" href="class_quant_lib_1_1_dividend_vanilla_option_1_1engine.html" title="Dividend&#45;vanilla&#45;option engine base class" alt="" coords="571,2620,634,2647"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="492,2671,713,2742"/>
-<area shape="rect" href="class_quant_lib_1_1_double_barrier_option_1_1engine.html" title="Double&#45;Barrier&#45;option engine base class" alt="" coords="571,2767,634,2793"/>
-<area shape="rect" href="class_quant_lib_1_1_vanna_volga_double_barrier_engine.html" title="Vanna Volga double&#45;barrier option engine." alt="" coords="494,2818,711,2859"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="509,2884,697,2940"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="525,2965,680,3035"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="496,3060,709,3116"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="517,3141,688,3211"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="525,3235,680,3306"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="496,3331,709,3387"/>
-<area shape="rect" href="class_quant_lib_1_1_swaption_1_1engine.html" title="base class for swaption engines" alt="" coords="571,3411,634,3437"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="468,3462,737,3533"/>
-<area shape="rect" href="class_quant_lib_1_1_float_float_swaption_1_1engine.html" title="base class for cms swaption engines" alt="" coords="571,3557,634,3584"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="460,3609,745,3679"/>
-<area shape="rect" href="class_quant_lib_1_1_nonstandard_swaption_1_1engine.html" title="base class for nonstandard swaption engines" alt="" coords="571,3704,634,3731"/>
-<area shape="rect" href="class_quant_lib_1_1_hagan_irregular_swaption_engine.html" title="Pricing engine for irregular swaptions." alt="" coords="499,3755,706,3781"/>
-<area shape="rect" href="class_quant_lib_1_1_irregular_swaption_1_1engine.html" title="base class for irregular&#45;swaption engines" alt="" coords="571,3805,634,3832"/>
-<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="500,3856,705,3912"/>
-<area shape="rect" href="class_quant_lib_1_1_margrabe_option_1_1engine.html" title="Margrabe option engine base class" alt="" coords="571,3939,634,3965"/>
-<area shape="rect" href="class_quant_lib_1_1_nth_to_default_1_1engine.html" title="NTD base engine." alt="" coords="571,4179,634,4205"/>
-<area shape="rect" href="class_quant_lib_1_1_pagoda_option_1_1engine.html" title="Pagoda&#45;option engine base class" alt="" coords="571,4339,634,4365"/>
+<area shape="rect" title="Object that gets notified when a given observable changes." alt="" coords="5,4219,80,4245"/>
+<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="167,18,366,59"/>
+<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="165,123,369,165"/>
+<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="167,269,367,310"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,355,364,411"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="181,712,353,768"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,901,369,971"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,996,364,1052"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="167,1076,366,1132"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="173,1157,361,1198"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,1223,364,1279"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="179,1303,354,1359"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,1383,365,1439"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="181,1463,352,1519"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="176,1543,357,1599"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="167,1623,366,1679"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="147,1703,386,1759"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="157,1783,377,1839"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,1863,379,1934"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="156,1958,377,2029"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,2053,372,2123"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="149,2147,384,2218"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="143,2242,391,2313"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="154,2337,379,2393"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="145,2417,388,2473"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="128,2497,405,2553"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,2577,380,2633"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,2657,380,2713"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,2737,375,2793"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,2817,378,2873"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,2897,380,2953"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,2977,368,3033"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="180,3057,353,3113"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,3137,372,3193"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="157,3217,377,3273"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,3297,378,3353"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,3377,372,3433"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,3457,380,3513"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="167,3537,367,3593"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,3617,373,3673"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="149,3697,385,3753"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,3777,373,3833"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="174,3858,359,3899"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="161,3924,372,3980"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="148,4004,385,4060"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="147,4084,386,4140"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="169,4164,365,4220"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,4244,374,4300"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="166,4324,367,4380"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="174,4405,359,4475"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="179,4499,354,4570"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,4595,379,4651"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="153,4675,380,4731"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="167,4755,366,4811"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,4835,362,4877"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="159,4901,374,4957"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,4981,362,5037"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="150,5061,383,5117"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="137,5141,396,5197"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="163,5221,370,5277"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="165,5301,368,5357"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="151,5381,383,5437"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="173,5462,361,5533"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="155,5557,378,5613"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="171,5638,362,5709"/>
+<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title=" " alt="" coords="171,5733,362,5760"/>
+<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title=" " alt="" coords="166,5785,367,5826"/>
+<area shape="rect" href="class_quant_lib_1_1_base_correlation_loss_model.html" title=" " alt="" coords="165,5850,369,5891"/>
+<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title="Base helper class for bootstrapping." alt="" coords="188,5916,345,5943"/>
+<area shape="rect" href="class_quant_lib_1_1_calibrated_model.html" title="Calibrated model class." alt="" coords="209,5967,325,5993"/>
+<area shape="rect" href="class_quant_lib_1_1_claim.html" title="Claim associated to a default event." alt="" coords="239,6017,295,6044"/>
+<area shape="rect" href="class_quant_lib_1_1_commodity_index.html" title="base class for commodity indexes" alt="" coords="206,6068,327,6095"/>
+<area shape="rect" href="class_quant_lib_1_1_composite_quote.html" title="market element whose value depends on two other market element" alt="" coords="151,6119,382,6145"/>
+<area shape="rect" href="class_quant_lib_1_1_constant_recovery_model.html" title=" " alt="" coords="183,6169,350,6196"/>
+<area shape="rect" href="class_quant_lib_1_1_delta_vol_quote.html" title="Class for the quotation of delta vs vol." alt="" coords="213,6220,320,6247"/>
+<area shape="rect" href="class_quant_lib_1_1_derived_quote.html" title="market quote whose value depends on another quote" alt="" coords="161,6271,372,6297"/>
+<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon.html" title="base floating&#45;rate coupon class" alt="" coords="196,6321,337,6348"/>
+<area shape="rect" href="class_quant_lib_1_1_floating_rate_coupon_pricer.html" title="generic pricer for floating&#45;rate coupons" alt="" coords="179,6372,354,6399"/>
+<area shape="rect" href="class_quant_lib_1_1_forward_value_quote.html" title="quote for the forward value of an index" alt="" coords="199,6423,335,6449"/>
+<area shape="rect" href="class_quant_lib_1_1_futures_conv_adjustment_quote.html" title="quote for the futures&#45;convexity adjustment of an index" alt="" coords="167,6473,366,6500"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title="template base class for option pricing engines" alt="" coords="176,6525,357,6566"/>
+<area shape="rect" href="class_quant_lib_1_1_indexed_cash_flow.html" title="Cash flow dependent on an index ratio." alt="" coords="203,6591,330,6617"/>
+<area shape="rect" href="class_quant_lib_1_1_inflation_coupon.html" title="Base inflation&#45;coupon class." alt="" coords="210,6641,323,6668"/>
+<area shape="rect" href="class_quant_lib_1_1_inflation_coupon_pricer.html" title="Base inflation&#45;coupon pricer." alt="" coords="193,6692,340,6719"/>
+<area shape="rect" href="class_quant_lib_1_1_inflation_index.html" title="Base class for inflation&#45;rate indexes,." alt="" coords="217,6743,317,6769"/>
+<area shape="rect" href="class_quant_lib_1_1_interest_rate_index.html" title="base class for interest rate indexes" alt="" coords="203,6793,330,6820"/>
+<area shape="rect" href="class_quant_lib_1_1_last_fixing_quote.html" title="Quote adapter for the last fixing available of a given Index." alt="" coords="208,6844,325,6871"/>
+<area shape="rect" href="class_quant_lib_1_1_latent_model.html" title="Generic multifactor latent variable model." alt="" coords="177,6895,356,6937"/>
+<area shape="rect" href="class_quant_lib_1_1_lazy_object.html" title="Framework for calculation on demand and result caching." alt="" coords="223,6961,311,6988"/>
+<area shape="rect" href="class_quant_lib_1_1_random_default_model.html" title="Base class for random default models." alt="" coords="193,7012,341,7039"/>
+<area shape="rect" href="class_quant_lib_1_1_smile_section.html" title="interest rate volatility smile section" alt="" coords="217,7063,316,7089"/>
+<area shape="rect" href="class_quant_lib_1_1_stochastic_process.html" title="multi&#45;dimensional stochastic process class." alt="" coords="201,7113,333,7140"/>
+<area shape="rect" href="class_quant_lib_1_1_term_structure.html" title="Basic term&#45;structure functionality." alt="" coords="215,7164,319,7191"/>
+<area shape="rect" href="class_quant_lib_1_1_year_on_year_inflation_swap_helper.html" title="Year&#45;on&#45;year inflation&#45;swap bootstrap helper." alt="" coords="490,5,698,32"/>
+<area shape="rect" href="class_quant_lib_1_1_yo_y_optionlet_helper.html" title="Year&#45;on&#45;year inflation&#45;volatility bootstrap helper." alt="" coords="526,56,662,83"/>
+<area shape="rect" href="class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html" title="Zero&#45;coupon inflation&#45;swap bootstrap helper." alt="" coords="489,107,699,133"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="507,158,681,229"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="479,253,709,323"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="497,347,691,418"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="480,442,708,513"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="513,537,675,607"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="489,632,699,688"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="489,712,699,768"/>
+<area shape="rect" href="class_quant_lib_1_1_cap_floor_1_1engine.html" title="base class for cap/floor engines" alt="" coords="564,792,624,819"/>
+<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title=" " alt="" coords="487,843,701,899"/>
+<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title=" " alt="" coords="491,923,697,979"/>
+<area shape="rect" href="class_quant_lib_1_1_analytic_heston_forward_european_engine.html" title="Analytic Heston engine incl. stochastic interest rates." alt="" coords="487,1003,701,1045"/>
+<area shape="rect" href="class_quant_lib_1_1_forward_vanilla_engine.html" title="Forward engine for vanilla options" alt="" coords="521,1069,667,1110"/>
+<area shape="rect" href="class_quant_lib_1_1_m_c_forward_vanilla_engine.html" title="Monte Carlo engine for forward&#45;starting vanilla options." alt="" coords="510,1134,678,1175"/>
+<area shape="rect" href="class_quant_lib_1_1_barrier_option_1_1engine.html" title="Barrier&#45;option engine base class" alt="" coords="564,1200,624,1227"/>
+<area shape="rect" href="class_quant_lib_1_1_basket_option_1_1engine.html" title="Basket&#45;option engine base class" alt="" coords="564,1251,624,1277"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="491,1317,697,1387"/>
+<area shape="rect" href="class_quant_lib_1_1_callable_bond_1_1engine.html" title="base class for callable fixed rate bond engine" alt="" coords="564,1412,624,1439"/>
+<area shape="rect" href="class_quant_lib_1_1_cat_bond_1_1engine.html" title="base class for cat bond engine" alt="" coords="564,1477,624,1504"/>
+<area shape="rect" href="class_quant_lib_1_1_cds_option_1_1engine.html" title="base class for swaption engines" alt="" coords="564,1557,624,1584"/>
+<area shape="rect" href="class_quant_lib_1_1_cliquet_option_1_1engine.html" title="Cliquet engine base class." alt="" coords="564,1637,624,1664"/>
+<area shape="rect" href="class_quant_lib_1_1_compound_option_1_1engine.html" title="Compound&#45;option engine base class" alt="" coords="564,1797,624,1824"/>
+<area shape="rect" href="class_quant_lib_1_1_continuous_averaging_asian_option_1_1engine.html" title="Continuous&#45;averaging Asian engine base class." alt="" coords="564,1885,624,1912"/>
+<area shape="rect" href="class_quant_lib_1_1_continuous_fixed_lookback_option_1_1engine.html" title="Continuous fixed lookback engine base class" alt="" coords="564,1979,624,2005"/>
+<area shape="rect" href="class_quant_lib_1_1_continuous_floating_lookback_option_1_1engine.html" title="Continuous floating lookback engine base class" alt="" coords="564,2029,624,2056"/>
+<area shape="rect" href="class_quant_lib_1_1_continuous_partial_fixed_lookback_option_1_1engine.html" title="Continuous partial fixed lookback engine base class" alt="" coords="564,2080,624,2107"/>
+<area shape="rect" href="class_quant_lib_1_1_continuous_partial_floating_lookback_option_1_1engine.html" title="Continuous partial floating lookback engine base class" alt="" coords="564,2131,624,2157"/>
+<area shape="rect" href="class_quant_lib_1_1_discrete_averaging_asian_option_1_1engine.html" title="Discrete&#45;averaging Asian engine base class." alt="" coords="564,2181,624,2208"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="481,2233,707,2303"/>
+<area shape="rect" href="class_quant_lib_1_1_dividend_barrier_option_1_1engine.html" title="Dividend&#45;barrier&#45;option engine base class" alt="" coords="564,2328,624,2355"/>
+<area shape="rect" href="class_quant_lib_1_1_vanna_volga_barrier_engine.html" title="Vanna Volga barrier option engine." alt="" coords="509,2379,679,2405"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="481,2430,707,2501"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="481,2525,707,2595"/>
+<area shape="rect" href="class_quant_lib_1_1_dividend_vanilla_option_1_1engine.html" title="Dividend&#45;vanilla&#45;option engine base class" alt="" coords="564,2620,624,2647"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="486,2671,702,2742"/>
+<area shape="rect" href="class_quant_lib_1_1_double_barrier_option_1_1engine.html" title="Double&#45;Barrier&#45;option engine base class" alt="" coords="564,2767,624,2793"/>
+<area shape="rect" href="class_quant_lib_1_1_vanna_volga_double_barrier_engine.html" title="Vanna Volga double&#45;barrier option engine." alt="" coords="489,2818,699,2859"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="501,2884,687,2940"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="517,2965,671,3035"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="488,3060,700,3116"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="510,3141,678,3211"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="517,3235,671,3306"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="488,3331,700,3387"/>
+<area shape="rect" href="class_quant_lib_1_1_swaption_1_1engine.html" title="base class for swaption engines" alt="" coords="564,3411,624,3437"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="461,3462,727,3533"/>
+<area shape="rect" href="class_quant_lib_1_1_float_float_swaption_1_1engine.html" title="base class for cms swaption engines" alt="" coords="564,3557,624,3584"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="453,3609,735,3679"/>
+<area shape="rect" href="class_quant_lib_1_1_nonstandard_swaption_1_1engine.html" title="base class for nonstandard swaption engines" alt="" coords="564,3704,624,3731"/>
+<area shape="rect" href="class_quant_lib_1_1_hagan_irregular_swaption_engine.html" title="Pricing engine for irregular swaptions." alt="" coords="493,3755,695,3781"/>
+<area shape="rect" href="class_quant_lib_1_1_irregular_swaption_1_1engine.html" title="base class for irregular&#45;swaption engines" alt="" coords="564,3805,624,3832"/>
+<area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="493,3856,695,3912"/>
+<area shape="rect" href="class_quant_lib_1_1_margrabe_option_1_1engine.html" title="Margrabe option engine base class" alt="" coords="564,3939,624,3965"/>
+<area shape="rect" href="class_quant_lib_1_1_nth_to_default_1_1engine.html" title="NTD base engine." alt="" coords="564,4179,624,4205"/>
+<area shape="rect" href="class_quant_lib_1_1_pagoda_option_1_1engine.html" title="Pagoda&#45;option engine base class" alt="" coords="564,4339,624,4365"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a78de5f2b6bce96d718e3c18b9f52d67c"><td class="memItemLeft" align="right" valign="top"><a id="a78de5f2b6bce96d718e3c18b9f52d67c" name="a78de5f2b6bce96d718e3c18b9f52d67c"></a>
-typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>set_type</b></td></tr>
-<tr class="separator:a78de5f2b6bce96d718e3c18b9f52d67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e"><td class="memItemLeft" align="right" valign="top"><a id="ae98429250f6997df7b87f4b37454609e" name="ae98429250f6997df7b87f4b37454609e"></a>
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
-<tr class="separator:ae98429250f6997df7b87f4b37454609e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af6a9d3ca0b7f388f3b7ccb1eccf11f63"><td class="memItemLeft" align="right" valign="top"><a id="af6a9d3ca0b7f388f3b7ccb1eccf11f63" name="af6a9d3ca0b7f388f3b7ccb1eccf11f63"></a>
@@ -281,6 +270,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="separator:a99b02345a8a15d3c5ea2844a2253f510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d53f9669c128dadc74a5d044a7c8e68"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a3d53f9669c128dadc74a5d044a7c8e68">deepUpdate</a> ()</td></tr>
 <tr class="separator:a3d53f9669c128dadc74a5d044a7c8e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a460be9983010f6c71e68d745c24cb60a"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef boost::unordered_set&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observer.html#a460be9983010f6c71e68d745c24cb60a">set_type</a></td></tr>
+<tr class="separator:a460be9983010f6c71e68d745c24cb60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1c39d3d73d67cae2d3cc3eb25a6fc7"><td class="memItemLeft" align="right" valign="top"><a id="a9c1c39d3d73d67cae2d3cc3eb25a6fc7" name="a9c1c39d3d73d67cae2d3cc3eb25a6fc7"></a>
+QL_DEPRECATED_DISABLE_WARNING typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="separator:a9c1c39d3d73d67cae2d3cc3eb25a6fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Object that gets notified when a given observable changes. </p>
@@ -357,6 +354,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <p >This method allows to explicitly update the instance itself and nested observers. If notifications are disabled a call to this method ensures an update of such nested observers. It should be implemented in derived classes whenever applicable </p>
 
 <p>Reimplemented in <a class="el" href="class_quant_lib_1_1_bond.html#a492a6d8c60085fa069c57c5229489167">Bond</a>, <a class="el" href="class_quant_lib_1_1_cap_floor.html#a492a6d8c60085fa069c57c5229489167">CapFloor</a>, <a class="el" href="class_quant_lib_1_1_composite_instrument.html#a492a6d8c60085fa069c57c5229489167">CompositeInstrument</a>, <a class="el" href="class_quant_lib_1_1_swap.html#a492a6d8c60085fa069c57c5229489167">Swap</a>, and <a class="el" href="class_quant_lib_1_1_stripped_optionlet_adapter.html#a492a6d8c60085fa069c57c5229489167">StrippedOptionletAdapter</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a460be9983010f6c71e68d745c24cb60a" name="a460be9983010f6c71e68d745c24cb60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460be9983010f6c71e68d745c24cb60a">&#9670;&nbsp;</a></span>set_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QL_DEPRECATED typedef boost::unordered_set&lt;ext::shared_ptr&lt;<a class="el" href="class_quant_lib_1_1_observable.html">Observable</a>&gt; &gt; set_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>Don't use <code>set_type</code>; it's not used in the public interface anyway. Use <code>Observer::iterator</code> if you need to capture the return value from <code>registerWith</code>. Deprecated in version 1.26. </dd></dl>
 
 </div>
 </div>
