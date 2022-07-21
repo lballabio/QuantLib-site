@@ -71,9 +71,10 @@ var searchData=
   ['tsiveriotisfernandeslattice_68',['TsiveriotisFernandesLattice',['../class_quant_lib_1_1_tsiveriotis_fernandes_lattice.html',1,'QuantLib']]],
   ['ttdcurrency_69',['TTDCurrency',['../class_quant_lib_1_1_t_t_d_currency.html',1,'QuantLib']]],
   ['turkey_70',['Turkey',['../class_quant_lib_1_1_turkey.html',1,'QuantLib']]],
-  ['twdcurrency_71',['TWDCurrency',['../class_quant_lib_1_1_t_w_d_currency.html',1,'QuantLib']]],
-  ['twoassetbarrieroption_72',['TwoAssetBarrierOption',['../class_quant_lib_1_1_two_asset_barrier_option.html',1,'QuantLib']]],
-  ['twodimensionalintegral_73',['TwoDimensionalIntegral',['../class_quant_lib_1_1_two_dimensional_integral.html',1,'QuantLib']]],
-  ['twofactormodel_74',['TwoFactorModel',['../class_quant_lib_1_1_two_factor_model.html',1,'QuantLib']]],
-  ['typepayoff_75',['TypePayoff',['../class_quant_lib_1_1_type_payoff.html',1,'QuantLib']]]
+  ['turnbullwakemanasianengine_71',['TurnbullWakemanAsianEngine',['../class_quant_lib_1_1_turnbull_wakeman_asian_engine.html',1,'QuantLib']]],
+  ['twdcurrency_72',['TWDCurrency',['../class_quant_lib_1_1_t_w_d_currency.html',1,'QuantLib']]],
+  ['twoassetbarrieroption_73',['TwoAssetBarrierOption',['../class_quant_lib_1_1_two_asset_barrier_option.html',1,'QuantLib']]],
+  ['twodimensionalintegral_74',['TwoDimensionalIntegral',['../class_quant_lib_1_1_two_dimensional_integral.html',1,'QuantLib']]],
+  ['twofactormodel_75',['TwoFactorModel',['../class_quant_lib_1_1_two_factor_model.html',1,'QuantLib']]],
+  ['typepayoff_76',['TypePayoff',['../class_quant_lib_1_1_type_payoff.html',1,'QuantLib']]]
 ];

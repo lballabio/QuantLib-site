@@ -157,8 +157,10 @@ var searchData=
   ['globaltopology_154',['GlobalTopology',['../class_quant_lib_1_1_global_topology.html',1,'QuantLib']]],
   ['gmresresult_155',['GMRESResult',['../struct_quant_lib_1_1_g_m_r_e_s_result.html',1,'QuantLib']]],
   ['grdcurrency_156',['GRDCurrency',['../class_quant_lib_1_1_g_r_d_currency.html',1,'QuantLib']]],
-  ['greeks_157',['Greeks',['../class_quant_lib_1_1_greeks.html',1,'QuantLib']]],
-  ['gsr_158',['Gsr',['../class_quant_lib_1_1_gsr.html',1,'QuantLib']]],
-  ['gsrprocess_159',['GsrProcess',['../class_quant_lib_1_1_gsr_process.html',1,'QuantLib']]],
-  ['gumbelcopula_160',['GumbelCopula',['../class_quant_lib_1_1_gumbel_copula.html',1,'QuantLib']]]
+  ['greater_5for_5fequal_5fto_157',['greater_or_equal_to',['../class_quant_lib_1_1greater__or__equal__to.html',1,'QuantLib']]],
+  ['greater_5fthan_158',['greater_than',['../class_quant_lib_1_1greater__than.html',1,'QuantLib']]],
+  ['greeks_159',['Greeks',['../class_quant_lib_1_1_greeks.html',1,'QuantLib']]],
+  ['gsr_160',['Gsr',['../class_quant_lib_1_1_gsr.html',1,'QuantLib']]],
+  ['gsrprocess_161',['GsrProcess',['../class_quant_lib_1_1_gsr_process.html',1,'QuantLib']]],
+  ['gumbelcopula_162',['GumbelCopula',['../class_quant_lib_1_1_gumbel_copula.html',1,'QuantLib']]]
 ];

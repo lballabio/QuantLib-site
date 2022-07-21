@@ -12,7 +12,7 @@ var searchData=
   ['randomsequencegenerator_3c_20quantlib_3a_3amersennetwisteruniformrng_20_3e_9',['RandomSequenceGenerator&lt; QuantLib::MersenneTwisterUniformRng &gt;',['../class_quant_lib_1_1_random_sequence_generator.html',1,'QuantLib']]],
   ['randomwalk_10',['RandomWalk',['../class_quant_lib_1_1_firefly_algorithm_1_1_random_walk.html',1,'QuantLib::FireflyAlgorithm']]],
   ['rangeaccrualleg_11',['RangeAccrualLeg',['../class_quant_lib_1_1_range_accrual_leg.html',1,'QuantLib']]],
-  ['ranlux3uniformrng_12',['Ranlux3UniformRng',['../class_quant_lib_1_1_ranlux3_uniform_rng.html',1,'QuantLib']]],
+  ['ranlux64uniformrng_12',['Ranlux64UniformRng',['../class_quant_lib_1_1_ranlux64_uniform_rng.html',1,'QuantLib']]],
   ['ratchetmaxpayoff_13',['RatchetMaxPayoff',['../class_quant_lib_1_1_ratchet_max_payoff.html',1,'QuantLib']]],
   ['ratchetminpayoff_14',['RatchetMinPayoff',['../class_quant_lib_1_1_ratchet_min_payoff.html',1,'QuantLib']]],
   ['ratchetpayoff_15',['RatchetPayoff',['../class_quant_lib_1_1_ratchet_payoff.html',1,'QuantLib']]],
