@@ -75,7 +75,54 @@ $(function() {
   <div class="headertitle"><div class="title">Version history </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><b>Release 1.26 - April 2022</b></p>
+<div class="textblock"><p ><b>Release 1.27 - July 22nd, 2022</b></p>
+<p >PORTABILITY</p><ul>
+<li><b>Removed support:</b> as announced in the notes for the previous release, support for Visual Studio 2013 was dropped.</li>
+<li><b>End of support:</b> as announced in the notes for the previous release, this release will be the last to avoid C++14 syntax. Allowing the newer (but still oldish) standard should still support most compilers released in the past several years.</li>
+<li><b>Future end of support:</b> this release and the next will be the last to manage thread-local singletons via a user-provided <code>sessionId</code> function. Future releases will use the built-in language support for thread-local variables.</li>
+<li>The <code>Real</code> type is now used consistently throughout the codebase, thanks to the Xcelerit dev team. This, along with other changes, allows its default definition to <code>double</code> to be replaced with one of the available third-party AAD types.</li>
+<li>The test suite is now built using the header-only version of Boost.Test, thanks to Jonathan Sweemer. This might simplify Boost installation for some users, since in the default configuration <a class="el" href="namespace_quant_lib.html">QuantLib</a> now only needs the Boost headers.</li>
+<li>Replaced some Boost facilities with the corresponding C++11 counterparts; thanks to Klaus Spanderen and Jonathan Sweemer.</li>
+</ul>
+<p >DATE/TIME</p><ul>
+<li>Fixed the behavior of a couple of Australian holidays; thanks to Pradeep Krishnamurthy and Fredrik Gerdin Börjesson.</li>
+</ul>
+<p >INSTRUMENTS</p><ul>
+<li>Added the Turnbull-Wakeman engine for discrete Asian options; thanks to Fredrik Gerdin Börjesson for the main engine code and to Jack Gillett for the Greeks.</li>
+<li>Added more validation to barrier options; thanks to Jonathan Sweemer.</li>
+</ul>
+<p >MODELS</p><ul>
+<li>Fixed the start date of the underlying swap in swaption calibration helpers; thanks to Peter Caspers.</li>
+<li>Fixed parameter checks in SVI volatility smiles; thanks to Fredrik Gerdin Börjesson.</li>
+</ul>
+<p >PATTERNS</p><ul>
+<li>Avoid possible iterator invalidation while notifying observers; thanks to Klaus Spanderen.</li>
+</ul>
+<p >DEPRECATED FEATURES</p><ul>
+<li><b>Removed</b> the <code>--enable-disposable</code> and <code>--enable-std-unique-ptr</code> configure switches.</li>
+<li><b>Removed</b> features deprecated in version 1.22:<ul>
+<li>the unused <code>AmericanCondition</code> and <code>FDAmericanCondition</code> classes;</li>
+<li>the old-style FD shout and dividend shout engines;</li>
+<li>the unused <code>OneFactorOperator</code> class;</li>
+<li>the <code>io::to_integer</code> function;</li>
+<li>the <code>ArrayProxy</code> and <code>MatrixProxy</code> classes.</li>
+</ul>
+</li>
+<li>Deprecated the <code>QL_NOEXCEPT</code> and <code>QL_CONSTEXPR</code> macros.</li>
+<li>Deprecated the <code>QL_NULL_INTEGER</code> and <code>QL_NULL_REAL</code> macros.</li>
+<li>Deprecated some unused parts of the old-style FD framework:<ul>
+<li>the <code>PdeShortRate</code> class;</li>
+<li>the <code>ShoutCondition</code> and <code>FDShoutCondition</code> classes;</li>
+<li>the <code>FDDividendEngineBase</code>, <code>FDDividendEngineMerton73</code>, <code>FDDividendEngineShiftScale</code> and <code>FDDividendEngine</code> classes;</li>
+<li>the <code>FDStepConditionEngine</code> and <code>FDEngineAdapter</code> classes.</li>
+</ul>
+</li>
+<li>Deprecated a number of function objects in the <code>ql/math/functional.hpp</code> header.</li>
+<li>Deprecated the unused <code>MultiCurveSensitivities</code> class.</li>
+<li>Deprecated the unused <code>inner_product</code> function.</li>
+</ul>
+<p >Thanks go also to Ryan Russell for documentation fixes.</p>
+<p ><b>Release 1.26 - April 20th, 2022</b></p>
 <p >PORTABILITY</p><ul>
 <li><b>End of support:</b> as announced in the notes for the previous release, this release is the last to support Visual Studio 2013.</li>
 <li><b>End of support:</b> this release is the last to support the long-deprecated configure switches <code>--enable-disposable</code> and <code>--enable-std-unique-ptr</code>. From the next release, <code>Disposable</code> will always be disabled (and eventually removed) and <code>std::unique_ptr</code> will always be used instead of <code>std::auto_ptr</code>. This has already been the default in the last few releases.</li>
