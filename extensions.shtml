@@ -19,8 +19,15 @@ and OpenOffice/LibreOffice Calc.</p>
 <h2 class="center">External projects</h2>
 
 <p>A modified QuantLib C++ library enabling adjoint automatic
-differentiation (AAD) is available from CompatibL
-at <a href="https://github.com/compatibl/QuantLibAdjoint">https://github.com/compatibl/QuantLibAdjoint</a>.</p>
+differentiation (AAD) is available
+as <a href="https://github.com/compatibl/QuantLibAdjoint">an
+open-source project from CompatibL</a>.</p>
+
+<p>Another AAD-enabled version is offered by MatLogica and
+uses <a href="https://matlogica.com/practical-AAD-QuantLib-XVA-demo.php#quantlibModal">their
+AADC JIT compiler</a> to enable fast AAD risks and to speed up forward
+repetitive calculations by automated multithreading and
+vectorization.</p>
 
 <p>The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
 QuantLib Addin</a> project, based on QuantLibAddin, exports QuantLib
