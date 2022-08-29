@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.27</div>
+   <div id="projectnumber">Reference manual - version 1.27.1</div>
    </div>
   </td>
  </tr>
@@ -75,7 +75,10 @@ $(function() {
   <div class="headertitle"><div class="title">Version history </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><b>Release 1.27 - July 22nd, 2022</b></p>
+<div class="textblock"><p ><b>Release 1.27.1 - August 2022</b></p>
+<p ><a class="el" href="namespace_quant_lib.html">QuantLib</a> 1.27.1 is a bug-fix release.</p>
+<p >It restores the old implementation of <code>Null&lt;T&gt;</code> which was replaced in version 1.27 with a new one; the latter was reported to cause an internal compiler error under Visual C++ 2022 for some client code. The new version (which avoids some problems when replacing <code>Real</code> with some AAD-enabled types) is still available; depending on how you compile <a class="el" href="namespace_quant_lib.html">QuantLib</a>, it can be enabled through the <code>--enable-null-as-functions</code> configure flag, the cmake variable <code>QL_NULL_AS_FUNCTIONS</code>, or the define with the same name in the <code>ql/userconfig.hpp</code> header.</p>
+<p ><b>Release 1.27 - July 22nd, 2022</b></p>
 <p >PORTABILITY</p><ul>
 <li><b>Removed support:</b> as announced in the notes for the previous release, support for Visual Studio 2013 was dropped.</li>
 <li><b>End of support:</b> as announced in the notes for the previous release, this release will be the last to avoid C++14 syntax. Allowing the newer (but still oldish) standard should still support most compilers released in the past several years.</li>
