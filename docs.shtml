@@ -37,25 +37,21 @@ Available from <a href="http://www.yetanotherquant.com/">his web site</a>.
 </li>
 </ul>
 
-<h2 class="center">Slides</h2>
+<h2 class="center">Videos</h2>
 <ul>
-<li><strong>Dimitri Reiswich</strong> contributed the slides he used
-during a course he taught, along with the corresponding code:<br>
-<em>Boost introduction</em>
-[<a href="slides/dima-boost-intro.pdf">PDF</a>]<br>
-<em>QuantLib introduction, part I</em>
-[<a href="slides/dima-ql-intro-1.pdf">PDF</a>]<br>
-<em>QuantLib introduction, part II</em>
-[<a href="slides/dima-ql-intro-2.pdf">PDF</a>]<br>
-<em>code samples</em>
-[<a href="slides/dima-code.zip">ZIP</a>]<br>
-</li>
-<li><strong>Marco Marchioro</strong> has made available the slides for
-his derivatives class at Milan University, in which he used QuantLibXL
-for teaching.  They can be found from the <em>QuantLib</em> page on his
-site, <a href="http://www.marchioro.org/">http://www.marchioro.org/</a>,
-along with the corresponding spreadsheets and additional material.
-</li>
+<li><strong>The QuantLib Notebooks</strong>
+is <a href="https://www.youtube.com/playlist?list=PLu_PrO8j6XAvOAlZND9WUPwTHY_GYhJVr">a
+series of screencasts</a> by Luigi Ballabio using IPython notebooks to
+demonstrate features of the QuantLib library. It is also available
+  on <a href="https://vimeo.com/channels/qlnotebooks">Vimeo</a>.</li>
+<li><strong>Introduction to QuantLib</strong> is
+another <a href="https://www.youtube.com/user/eefelix/videos">series
+of screencasts</a> by Felix Lee, covering installation and usage of
+the library.</li>
+<li>A
+different <a href="https://www.youtube.com/playlist?list=PLvXg_ZPrPUfqSFEsI9baI8vP2agnLHCwD">series
+of screencasts</a>, also called <strong>Introduction to
+QuantLib</strong>, is published by Carol Zheng.</li>
 </ul>
 
 <h2 class="center">Talks</h2>
@@ -73,23 +69,6 @@ is <a href="https://thalesians.com/aiovg_videos/luigi-ballabio-a-short-introduct
 talk by Luigi Ballabio</a> for the Thalesians in which he describes
 the core design of QuantLib through a few live examples of its usage.
 </li>
-</ul>
-
-<h2 class="center">Videos</h2>
-<ul>
-<li><strong>The QuantLib Notebooks</strong>
-is <a href="https://www.youtube.com/playlist?list=PLu_PrO8j6XAvOAlZND9WUPwTHY_GYhJVr">a
-series of screencasts</a> by Luigi Ballabio using IPython notebooks to
-demonstrate features of the QuantLib library. It is also available
-  on <a href="https://vimeo.com/channels/qlnotebooks">Vimeo</a>.</li>
-<li><strong>Introduction to QuantLib</strong> is
-another <a href="https://www.youtube.com/user/eefelix/videos">series
-of screencasts</a> by Felix Lee, covering installation and usage of
-the library.</li>
-<li>A
-different <a href="https://www.youtube.com/playlist?list=PLvXg_ZPrPUfqSFEsI9baI8vP2agnLHCwD">series
-of screencasts</a>, also called <strong>Introduction to
-QuantLib</strong>, is published by Carol Zheng.</li>
 </ul>
 
 <h2 class="center">Blogs</h2>
@@ -199,9 +178,23 @@ Ferdinando Ametrano, Mark S. Joshi<br>
 Firth, N.P. (2004)</li>
 </ul>
 
-<h2 class="center">Press</h2>
+<h2 class="center">Slides</h2>
 <ul>
-<li><strong>Four years of open source financial models</strong> [<a href=
-"press/WilmottQuantLib.pdf">PDF</a>]<br>
-Wilmott Magazine (September 2004)</li>
+<li><strong>Dimitri Reiswich</strong> contributed the slides he used
+during a course he taught, along with the corresponding code:<br>
+<em>Boost introduction</em>
+[<a href="slides/dima-boost-intro.pdf">PDF</a>]<br>
+<em>QuantLib introduction, part I</em>
+[<a href="slides/dima-ql-intro-1.pdf">PDF</a>]<br>
+<em>QuantLib introduction, part II</em>
+[<a href="slides/dima-ql-intro-2.pdf">PDF</a>]<br>
+<em>code samples</em>
+[<a href="slides/dima-code.zip">ZIP</a>]<br>
+</li>
+<li><strong>Marco Marchioro</strong> has made available the slides for
+his derivatives class at Milan University, in which he used QuantLibXL
+for teaching.  They can be found from the <em>QuantLib</em> page on his
+site, <a href="http://www.marchioro.org/">http://www.marchioro.org/</a>,
+along with the corresponding spreadsheets and additional material.
+</li>
 </ul>
