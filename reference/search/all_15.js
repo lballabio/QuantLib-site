@@ -34,6 +34,5 @@ var searchData=
   ['user_20configuration_31',['User configuration',['../config.html',1,'']]],
   ['usingatparcoupons_32',['usingAtParCoupons',['../class_quant_lib_1_1_ibor_coupon.html#a6f1ef00c4f6f3dbf4fa36d651c2330d7',1,'QuantLib::IborCoupon::usingAtParCoupons()'],['../class_quant_lib_1_1_ibor_coupon_1_1_settings.html#a60555e6caceec97be5d68aa05e8e9f66',1,'QuantLib::IborCoupon::Settings::usingAtParCoupons()']]],
   ['usregion_33',['USRegion',['../class_quant_lib_1_1_u_s_region.html',1,'QuantLib']]],
-  ['utilities_34',['Utilities',['../group__utilities.html',1,'']]],
-  ['uyucurrency_35',['UYUCurrency',['../class_quant_lib_1_1_u_y_u_currency.html',1,'QuantLib']]]
+  ['uyucurrency_34',['UYUCurrency',['../class_quant_lib_1_1_u_y_u_currency.html',1,'QuantLib']]]
 ];
