@@ -1,0 +1,414 @@
+---
+layout: default
+title: Building QuantLib using CMake
+---
+
+<h1 class="center">Building QuantLib using CMake</h1>
+
+<h2>Contents</h2>
+
+<ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#build">Building</a></li>
+    <li><a href="#test">Running Tests and Examples</a></li>
+    <li><a href="#install">Installing</a></li>
+    <li><a href="#options">Build Options</a></li>
+    <li><a href="#extensions">Adding Extensions</a></li>
+    <li><a href="#ninja">Using Ninja</a></li>
+    </li>
+</ul>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<h3>C++ Compiler Toolset</h3>
+
+<p>You will need a C++ compiler toolset to build QuantLib.</p>
+
+<p>
+    In Linux, this is typically
+    the GNU C++ compiler along with linker and make. For example in Debian and Ubuntu,
+    these can be installed with <code>sudo apt install build-essential</code>.
+    In Fedora or RedHat, the equivalent is <code>sudo yum install gcc g++ make</code>.
+</p>
+
+<p>
+    In Windows, you can use a recent <a href="https://visualstudio.microsoft.com/downloads/">Visual Studio edition</a>
+    (available for free for individuals).
+</p>
+
+<p>
+    In MacOS, the <a href="https://mac.install.guide/commandlinetools/index.html">XCode command-line tools</a>
+    are sufficient.
+    Note that these get automatically installed with <a href="https://brew.sh/">Homebrew</a>.
+</p>
+
+<h3>Boost</h3>
+
+<p>
+    You will need the boost libraries installed before you can build QuantLib.
+    Depending on the platform and operating system, you can install them in
+    different ways. For example:
+</p>
+
+<ul>
+    <li>Ubuntu or Debian: <code>sudo apt install libboost-all-dev</code></li>
+    <li>Fedora or RedHat: <code>sudo yum install boost-devel</code></li>
+    <li>MacOS using <a href="https://brew.sh/">Homebrew</a>: <code>brew install boost</code></li>
+    <li>MacOS using <a href="https://www.macports.org/">Mac Ports</a>: <code>sudo port install boost</code></li>
+    <li>Windows using <a href="https://chocolatey.org/">Chocolatey</a>:
+        <ul>
+            <li>For Visual Studio 2022: <code>choco install boost-msvc-14.3</code></li>
+            <li>For Visual Studio 2019: <code>choco install boost-msvc-14.2</code></li>
+            <li>For Visual Studio 2017: <code>choco install boost-msvc-14.1</code></li>
+        </ul>
+    </li>
+    <li>Windows using manual installers: <a href="https://sourceforge.net/projects/boost/files/boost-binaries/">Boost
+            Binaries on SourceForge</a></li>
+</ul>
+
+
+<h3>CMake</h3>
+
+<p>
+    You will also need a recent version of CMake (minimum version 3.15.0).
+    You can also install this with your favourite package manager
+    (e.g. apt, yum, homebrew, chocolatey as above), or obtain it from
+    the <a href="https://cmake.org/download/">CMake downloads page</a>.
+</p>
+
+<p>Note that Microsoft ships Visual Studio with a suitable
+    command-line only version of CMake since Visual Studio 2019
+    (the Visual Studio 2017 CMake version is outdated).
+    It is available in the PATH from a Visual Studio command prompt
+    and can alternatively be used <a
+        href="https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170">directly from
+        the IDE</a>.</p>
+
+<h3>QuantLib Sources</h3>
+
+<p>
+    The easiest way to obtain the sources is to clone the
+    <a href="https://github.com/lballabio/QuantLib">GitHub</a> repository.
+    Alternatively you can download the latest release from
+    <a href="https://github.com/lballabio/QuantLib/releases">the releases page</a>.
+</p>
+
+<h2 id="build">Building</h2>
+
+<p>
+    CMake is a meta-build tool, i.e. it generates native build files for various targets
+    from the same set of cross-platform description file (<code>CMakeLists.txt</code>).
+    It can generate Unix Makefiles, Visual Studio projects and solutions, XCode projects,
+    and more, for a huge variety of compilers, architectures, and operating systems.
+    It works by using an out-of-source build folder, where it places the generated files.
+</p>
+
+<p>
+    Using the command-line, build files can be generated as (example for Makefiles
+    in Release mode):
+</p>
+
+<pre>
+mkdir build
+cd build
+cmake .. -G "Unix Makefiles" -D CMAKE_BUILD_TYPE=Release
+</pre>
+
+<p>The project can then be built using the native build tools,
+    for example by running <code>make</code>
+    or opening the generated Visual Studio solution.
+    The supported generators are listed in the <a
+        href="https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html">CMake Documentation</a>.</p>
+
+
+
+<p>
+    Alternatively, the <a
+        href="https://cmake.org/cmake/help/latest/guide/user-interaction/index.html#cmake-gui-tool">CMake GUI</a>
+    can be used to generate build files.
+</p>
+
+<p>
+    In Visual Studio 2019 or higher, it is more convenient to use <em>Open Folder..</em>
+    when starting the IDE and select the QuantLib folder. Then the IDE will detect
+    the CMake files and configure the project automatically.
+    For more information, please see Microsoft's <a
+        href="https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio">CMake project
+        documentation</a>.
+</p>
+
+<p>
+    Similarly, <a href="https://code.visualstudio.com/">Visual Studio Code</a> with the
+    <a href="https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/README.md">CMake Tools extension</a>
+    can be used on all platforms.
+</p>
+
+<h2 id="test">Running Tests and Examples</h2>
+
+<p>
+    QuantLib builds all unit tests into a single executable called <code>quantlib-test-suite</code>.
+    It is located in the <code>test-suite</code> directory relative to the build folder
+    and can be run as:
+</p>
+
+<pre>
+./quantlib-test-suite --log_level=message
+</pre>
+
+<p>(Use <code>--help</code> to see all available command-line options.)</p>
+
+<p>
+    The examples can be found in the <code>Examples</code> folder inside the build tree
+    and executed directly.
+</p>
+
+
+<h2 id="install">Installing</h2>
+
+<p>
+    The final build artifacts (the library, headers, etc.) can be installed into a
+    directory outside of the build tree for use from other projects.
+    This separates the build by-products from the final results and also allows packaging
+    of the binaries.
+</p>
+
+<p>
+    In CMake, you can select the installation prefix using the <code>CMAKE_INSTALL_PREFIX</code>
+    variable. That is, configuring the project using:
+</p>
+
+<pre>
+cmake .. -DCMAKE_INSTALL_PREFIX=/path/to/install/dir
+</pre>
+
+<p>
+    would install the binaries into the given folder. CMake generates a build target
+    named <code>install</code> (or <code>INSTALL</code> in Visual Studio projects)
+    which accomplishes the task when built.
+    For example for a Makefiles generator, run:
+</p>
+
+<pre>
+make install
+</pre>
+
+<h2 id="options">Build Options</h2>
+
+<p>
+    QuantLib exposes a number of CMake options to configure the build.
+    These are the CMake equivalents of the configuration flags described
+    <a href="/reference/config.html">in the reference documentation</a>,
+    which give a more detailed description of their effect.
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Option</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><code>QL_BUILD_BENCHMARK</code></td>
+            <td>Build benchmark</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_BUILD_EXAMPLES</code></td>
+            <td>Build examples</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_BUILD_TEST_SUITE</code></td>
+            <td>Build test suite</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ENABLE_OPENMP</code></td>
+            <td>Detect and use OpenMP</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ENABLE_PARALLEL_UNIT_TEST_RUNNER</code></td>
+            <td>Enable the parallel unit test runner</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ENABLE_SESSIONS</code></td>
+            <td>Singletons return different instances for different sessions</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ENABLE_THREAD_SAFE_OBSERVER_PATTERN</code></td>
+            <td>Enable the thread-safe observer pattern</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ENABLE_TRACING</code></td>
+            <td>Tracing messages should be allowed</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ERROR_FUNCTIONS</code></td>
+            <td>Error messages should include current function information</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_ERROR_LINES</code></td>
+            <td>Error messages should include file and line information</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_EXTRA_SAFETY_CHECKS</code></td>
+            <td>Extra safety checks should be performed</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_HIGH_RESOLUTION_DATE</code></td>
+            <td>Enable date resolution down to microseconds</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_NULL_AS_FUNCTIONS</code></td>
+            <td>Enable the implementation of Null as template functions</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_INSTALL_BENCHMARK</code></td>
+            <td>Install benchmark</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_INSTALL_EXAMPLES</code></td>
+            <td>Install examples</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_INSTALL_TEST_SUITE</code></td>
+            <td>Install test suite</td>
+            <td><code>ON</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_TAGGED_LAYOUT</code></td>
+            <td>Library names use layout tags</td>
+            <td><code>ON</code> in Visual Studio</td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_CLANG_TIDY</code></td>
+            <td>Use clang-tidy when building</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_INDEXED_COUPON</code></td>
+            <td>Use indexed coupons instead of par coupons</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_STD_CLASSES</code></td>
+            <td>Enable all <code>QL_USE_STD_*</code> options</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_STD_SHARED_PTR</code></td>
+            <td>Use standard smart pointers instead of Boost ones</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_STD_FUNCTION</code></td>
+            <td>Use std::function and std::bind instead of Boost ones</td>
+            <td><code>OFF</code></td>
+        </tr>
+        <tr>
+            <td><code>QL_USE_STD_TUPLE</code></td>
+            <td>Use std::tuple instead of boost::tuple</td>
+            <td><code>OFF</code></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 id="ninja">Using Ninja</h2>
+
+<p>
+    Traditional build tools like make or MS Build are comparably slow
+    when it comes to checking dependencies, determining which parts of the
+    project need to be rebuilt in incremental builds,
+    and which parts can be built in paralel.
+    The <a href="https://ninja-build.org/">Ninja build tool</a>
+    addresses these issues and generally results in faster builds
+    and better use of the available processor cores.
+</p>
+
+<p>
+    Ninja configuration files are typically not written by humans (unlike Makefiles) -
+    CMake can automatically generate them.
+</p>
+
+<p>
+    In order to use Ninja for your builds, you first need to install the package
+    as described in their <a href="https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages">wiki page</a>.
+    Then you can generate Ninja configure CMake to generate Ninja files,
+    for example in Linux or MacOS:
+</p>
+
+<pre>
+cmake -G Ninja ... # (add other options as before)
+</pre>
+
+<p>The project can then be built by running <code>ninja</code> instead of <code>make</code>.
+    Note that ninja automatically deteremines the available cores and builds in parallel.
+</p>
+
+<p>On the Windows platform in Visual Studio, we recommend to use the
+    <a href="https://learn.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170">built-in CMake
+        support</a>
+    in version 2019 or later.
+    This uses Ninja by default for the build.
+</p>
+
+
+<h2 id="extensions">Adding extensions</h2>
+
+<p>
+    QuantLib exposes a CMake extension hook which allows external
+    modules to adjust the QuantLib build directly, for example
+    adding more source files, adjusting compiler flags, etc.
+    An example use case is enabling adjoint algorithmic differentiation (AAD)
+    by replacing QuantLib's <code>Real</code> type
+    with an operator-overloaded alternative from a separate library,
+    though many other types of extensions are possible.
+</p>
+
+<p>
+    <strong>Note:</strong> Currently QuantLib's build extension hook is only available when using CMake.
+</p>
+
+<p>
+    The CMake option <code>QL_EXTERNAL_SUBDIRECTORIES</code> may contain
+    a list of external source directories that should be added to QuantLib's
+    build (by means of <code>add_subdirectory</code>).
+    Multiple directories can be added by separating the paths using a semicolon.
+</p>
+
+<p>
+    Further, the CMake option <code>QL_EXTRA_LINK_LIBRARIES</code> may list
+    CMake library targets that should be linked to QuantLib.
+    QuantLib uses the <code>target_link_libraries(...)</code>
+    CMake command, which is more general than pure linking.
+    It allows to add any compiler flags, linker options, extra sources,
+    or other parameters to the build as well.
+</p>
+
+<p>
+    These two CMake options allow for a highly flexible extension point into
+    the QuantLib build itself.
+</p>
+
+<p>
+    An example on how this extension hook can be used is in the 
+    <a href="https://github.com/xcelerit/qlxad">qlxad repository</a>,
+    which integrates the open source
+    <a href="https://github.com/xcelerit/XAD">XAD AAD tool</a>
+    into the QuantLib build.
+</p>

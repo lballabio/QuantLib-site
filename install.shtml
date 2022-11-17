@@ -5,7 +5,10 @@ title: QuantLib Installation
 
 <h1 class="center">QuantLib Installation</h1>
 
-<p>Installation instructions are available
+<p>You can build QuantLib from source following the
+<a href="/install/cmake.shtml">CMake build instructions</a>.</p>
+
+<p>Installation instructions are also available
 for <a href="/install/vc10.shtml">Microsoft Visual C++</a>,
 <a href="/install/macosx.shtml">Mac OS X</a> and
 <a href="/install/linux.shtml">Linux/Unix</a>.

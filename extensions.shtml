@@ -18,6 +18,16 @@ and OpenOffice/LibreOffice Calc.</p>
 
 <h2 class="center">External projects</h2>
 
+<p>QuantLib is enabled for adjoint algorithmic differentation (AAD) out of the box in the 
+<a href="https://github.com/lballabio/QuantLib">main repository</a> 
+using the open-source <a href="https://github.com/xcelerit/XAD">XAD AAD tool</a> and 
+<a href="https://github.com/xcelerit/qlxad">an XAD/QuantLib integration module</a>,
+which uses <a href="/install/cmake.shtml#extensions">QuantLib's extension hook</a> to integrate. 
+QuantLib's AAD-compatibility is actively maintained 
+via <a href="https://github.com/xcelerit/qlxad/actions/workflows/ci.yaml">automated CI/CD checks</a>,
+running daily against QuantLib's master branch.
+</p>
+
 <p>A modified QuantLib C++ library enabling adjoint automatic
 differentiation (AAD) is available
 as <a href="https://github.com/compatibl/QuantLibAdjoint">an
