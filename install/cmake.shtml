@@ -13,8 +13,8 @@ title: Building QuantLib using CMake
     <li><a href="#test">Running Tests and Examples</a></li>
     <li><a href="#install">Installing</a></li>
     <li><a href="#options">Build Options</a></li>
-    <li><a href="#extensions">Adding Extensions</a></li>
     <li><a href="#ninja">Using Ninja</a></li>
+    <li><a href="#extensions">Adding Extensions</a></li>
     </li>
 </ul>
 
@@ -87,10 +87,10 @@ title: Building QuantLib using CMake
 <h3>QuantLib Sources</h3>
 
 <p>
-    The easiest way to obtain the sources is to clone the
-    <a href="https://github.com/lballabio/QuantLib">GitHub</a> repository.
-    Alternatively you can download the latest release from
+    You can download the latest release from
     <a href="https://github.com/lballabio/QuantLib/releases">the releases page</a>.
+    Alternatively, you can obtain the latest development sources by cloning the
+    <a href="https://github.com/lballabio/QuantLib">GitHub</a> repository.
 </p>
 
 <h2 id="build">Building</h2>
