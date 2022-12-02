@@ -99,7 +99,7 @@ sudo make install
 and then try to compile the examples. For example,
 <pre>
 cd Examples/BermudanSwaption
-g++ -I/usr/local/include/ -I/usr/local/include/boost BermudanSwaption.cpp \
+g++ -std=c++14 -I/usr/local/include/ -I/usr/local/include/boost BermudanSwaption.cpp \
     -o bermudanswaption -L/usr/local/lib/ -lQuantLib
 </pre>
 Note that you might have to add more flags to the command above: some
