@@ -44,7 +44,8 @@ var searchData=
   ['fractionsperunit_41',['fractionsPerUnit',['../class_quant_lib_1_1_currency.html#ad9035002790b3a28edf98578a37947cb',1,'QuantLib::Currency']]],
   ['fractionsymbol_42',['fractionSymbol',['../class_quant_lib_1_1_currency.html#ae7e9666f907a1f934fe8a99a97c30e6c',1,'QuantLib::Currency']]],
   ['freeze_43',['freeze',['../class_quant_lib_1_1_lazy_object.html#abd8698b462ce90fe56b15ce7a0192d3e',1,'QuantLib::LazyObject']]],
-  ['front_44',['front',['../class_quant_lib_1_1_path.html#af78ff4861aaf9bf0524b958dbb4d1b18',1,'QuantLib::Path']]],
-  ['functionevaluation_45',['functionEvaluation',['../class_quant_lib_1_1_problem.html#a82ee0985ecccbdc973ccd4ac78d82497',1,'QuantLib::Problem']]],
-  ['functionvalue_46',['functionValue',['../class_quant_lib_1_1_problem.html#a65346e4673b66b0d3ec79dcffad1734a',1,'QuantLib::Problem']]]
+  ['frhicp_44',['FRHICP',['../class_quant_lib_1_1_f_r_h_i_c_p.html#a02b37b49650e4ffc00f2a685bd2db38f',1,'QuantLib::FRHICP']]],
+  ['front_45',['front',['../class_quant_lib_1_1_path.html#af78ff4861aaf9bf0524b958dbb4d1b18',1,'QuantLib::Path']]],
+  ['functionevaluation_46',['functionEvaluation',['../class_quant_lib_1_1_problem.html#a82ee0985ecccbdc973ccd4ac78d82497',1,'QuantLib::Problem']]],
+  ['functionvalue_47',['functionValue',['../class_quant_lib_1_1_problem.html#a65346e4673b66b0d3ec79dcffad1734a',1,'QuantLib::Problem']]]
 ];
