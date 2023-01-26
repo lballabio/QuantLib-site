@@ -99,7 +99,7 @@ $(function() {
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_USE_INDEXED_COUPON</span></div>
 </div><!-- fragment --><p> If defined, indexed coupons (see the documentation) are used in floating legs. If undefined (the default), par coupons are used.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ENABLE_SESSIONS</span></div>
-</div><!-- fragment --><p> If defined, singletons will return different instances for different sessions. You will have to provide and link with the library a <code>sessionId()</code> function in namespace <a class="el" href="namespace_quant_lib.html">QuantLib</a>, returning a different session id for each session. This also implies thread-safe Singleton initialization. Undefined by default.</p>
+</div><!-- fragment --><p> If defined, singletons will return different instances for different threads; in particular, this means that the global evaluation date and stored index fixings will be per-thread. Undefined by default.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_ENABLE_THREAD_SAFE_OBSERVER_PATTERN</span></div>
 </div><!-- fragment --><p> If defined, a thread-safe (but less performant) version of the observer pattern is used. You should define it if you want to use QuantLib via the SWIG layer within the JVM or .NET eco system or any environment with an async garbage collector. Undefined by default. If defined together with <code>QL_USE_STD_SHARED_PTR</code>, it requires at least C++17.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#define QL_HIGH_RESOLUTION_DATE</span></div>
