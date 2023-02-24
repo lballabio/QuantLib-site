@@ -4,30 +4,32 @@ title: QuantLib Installation on Mac OS X
 ---
 
 <h1 class="center">QuantLib installation on Mac OS X</h1>
-<h4 class="center">Jack Harvard</h4>
+<h5 class="center">Based on an initial version by Jack Harvard</h5>
 
 <h2>Boost Installation</h2>
 
 <p>The preferred way to get Boost is through Homebrew
 (<a href="http://brew.sh/">http://brew.sh/</a>). By default, Homebrew
-will install Boost in /usr/local. From Terminal, run:
+will install Boost in <tt>/usr/local</tt> on older system versions and in
+<tt>/opt/homebrew</tt> on newer ones; you can find out which by
+running <tt>brew --prefix</tt>.  From Terminal, run:
 <pre>
 brew install boost
 </pre>
 
 <p>Alternatively, you can use MacPorts
 (<a href="http://www.macports.org/">http://www.macports.org/</a>)
-which installs in /opt/local instead.</p>
+which installs in <tt>/opt/local</tt> instead.</p>
 
 <h2>QuantLib Installation</h2>
 
 <h3>Installation from Homebrew</h3>
 
-<p>If you don't need to modify the library, you might want to skip the
+<p>If you don't need to modify the library, you might try to skip the
 compilation and install a precompiled binary version.  Unofficial
 binaries are available from Homebrew; run</p>
 <pre>
-  brew install quantlib
+brew install quantlib
 </pre>
 <p>to install it.  If you want to modify the library,
 instead, you'll have to compile it yourself as described in the next
@@ -38,13 +40,13 @@ section.</p>
 <p>Download QuantLib from its download page on GitHub, located
 at <a href="https://github.com/lballabio/QuantLib/releases">https://github.com/lballabio/QuantLib/releases</a>.
 You want to download the tar.gz package (at the time of this writing,
-1.22 is the latest version) and extract it by running
+1.29 is the latest version) and extract it by running
 <pre>
-tar xzvf QuantLib-1.22.tar.gz
+tar xzvf QuantLib-1.29.tar.gz
 </pre>
 in Terminal.  To install QuantLib, enter the folder you just created:
 <pre>
-cd QuantLib-1.22
+cd QuantLib-1.29
 </pre>
 </p>
 
@@ -52,78 +54,85 @@ cd QuantLib-1.22
 need to pass additional environment variables to <tt>./configure</tt>
 (thanks to Albert Azout for pointing it out). Run:
 <pre>
-./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
-            CXXFLAGS='-O2 -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.9' \
+./configure --with-boost-include=/opt/homebrew/include/ \
+            --with-boost-lib=/opt/homebrew/lib/ \
+            --prefix=${HOME}/local/ \
+            CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9' \
             LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
 </pre>
 (mind the backslash on the end of the lines; it tells the terminal to
 continue on the next line.  You might also discard the backslash and
 write the whole command on a single line.) If your Boost installation
-is not in <tt>/usr/local</tt>, change the paths above accordingly.
-For versions of QuantLib before 1.22, the <tt>-std=c++11</tt> is not
-necessary but it will work anyway.</p>
+is not in <tt>/opt/homebrew</tt>, change the paths above accordingly.
+The <tt>--prefix</tt> flag specifies where QuantLib will be installed;
+in this example, a folder <tt>local</tt> in your home folder, but you
+can pass a different one.  For QuantLib 1.22 only, you will also need
+to add <tt>-std=c++11</tt> to <tt>CXXFLAGS</tt>; later versions add
+their required <tt>-std</tt> flag automatically, while previous
+versions don't need it.
+</p>
 <p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
 you'll need to pass different environment variables. Run:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
-            CXXFLAGS='-O2 -std=c++11 -stdlib=libstdc++ -mmacosx-version-min=10.6' \
+            --with-boost-lib=/usr/local/lib/ \
+            --prefix=${HOME}/local/ \
+            CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6' \
             LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
 </pre>
+Again, for QuantLib 1.22 only, add <tt>-std=c++11</tt> to <tt>CXXFLAGS</tt>
+and change your paths as needed.
 </p>
 <p><strong>On earlier systems,</strong> it's not necessary to pass
 most environment variables, so the command can be simplified to:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ --prefix=/usr/local/ \
-            CXXFLAGS='-O2 -std=c++11'
+            --with-boost-lib=/usr/local/lib/ \
+            --prefix=${HOME}/local/ \
+            CXXFLAGS='-O2'
 </pre>
-Again, if your Boost installation is not in <tt>/usr/local</tt>,
-change the paths above accordingly.
+Again, for QuantLib 1.22 only, add <tt>-std=c++11</tt> to <tt>CXXFLAGS</tt>
+and change your paths as needed.
 </p>
 <p><strong>Also, if you only intend to build the QuantLib Python
 module</strong>, you might want to pass the <tt>--disable-shared</tt>
 option to <tt>./configure</tt> to only build a static library and
-avoid problems with dynamic loading.  (A user reported problems
-with this; if you experience them, remove the flag and recompile.)</p>
+avoid problems with dynamic loading.</p>
 
 <p>Finally, run:</p>
 <pre>
 make
 </pre>
-and
+to compile (you can use <tt>make -j4</tt> or <tt>make -j8</tt> to
+speed up compilation if you have multiple cores) and
 <pre>
-sudo make install
+make install
 </pre>
-and then try to compile the examples. For example,
+to install; if you specified a prefix outside your home folder, you
+might need <tt>sudo make install</tt> instead.</p>
+<p>The above also installs a script <tt>quantlib-config</tt> that can
+be used to pass necessary flags to the compiler when using QuantLib.
+If you passed <tt>${HOME}/local/</tt> as the prefix, like in the
+example above, the script will be in <tt>${HOME}/local/bin</tt>;
+you can add it to your executable path by running
+<pre>
+export PATH="${PATH}:${HOME}/local/bin"
+</pre>
+after which you should be able to run, for instance,
+<pre>
+quantlib-config --cflags
+</pre>
+and see a number of compilation flags printed.  (Note that the new
+value of <tt>PATH</tt> will be reset when you close the terminal; see
+the documentation of your shell to see how to make it permanent.)</p>
+
+<p>At this point, you can try to compile and run the examples. For instance,
 <pre>
 cd Examples/BermudanSwaption
-g++ -std=c++14 -I/usr/local/include/ -I/usr/local/include/boost BermudanSwaption.cpp \
-    -o bermudanswaption -L/usr/local/lib/ -lQuantLib
+g++ `quantlib-config --cflags` BermudanSwaption.cpp -o bermudanswaption `quantlib-config --libs`
+./bermudanswaption
 </pre>
 Note that you might have to add more flags to the command above: some
 users report it working as is, while others report having to add the
 same <tt>-stdlib</tt> and <tt>-mmacosx-version-min</tt> used in the
-compilation of QuantLib.  Also, if you installed QuantLib in some
-non-default prefix such as <tt>/opt/local</tt>, you might have to add
-corresponding include and library flags; in this case, they would
-be <tt>-I/opt/local/include</tt> and <tt>-L/opt/local/lib</tt>.
-</p>
-
-<p>The whole process can take quite some time if installing both
-Boost and QuantLib.</p>
-
-<h2>Appendix: Boost Configuration</h2>
-
-<p>If you want to make the Boost headers and libraries available to
-all C++ projects, edit ~/.bash_profile and add the following lines
-into the file:
-<pre>
-export CPLUS_INCLUDE_PATH=/usr/local/include
-export C_INCLUDE_PATH=/usr/local/include
-export DYLD_LIBRARY_PATH=/usr/local/lib
-</pre>
-When this is done, restart the terminal.  After this, no include (-I)
-or link (-L) directory needs to be specified when compiling with g++.</p>
-
+compilation of QuantLib.</p>

@@ -5,7 +5,7 @@ title: QuantLib-Python Installation on Mac OS X
 
 <h1 class="center">QuantLib-Python installation on Mac OS X</h1>
 
-<h2>Installation from PyPI</h2>
+<h2>Installation from PyPI (recommended)</h2>
 
 <p>If you don't need to modify the wrappers, you might want to try
 installing a precompiled binary version.  The availability of binaries
@@ -21,44 +21,50 @@ compile it yourself as described in the next section.</p>
 
 <h2>Installation from a released version</h2>
 
-<p>The following assumes that you already installed QuantLib. Instructions for that are available
+<p>The following assumes that you already installed
+QuantLib. Instructions for that are available
 at <a href="http://quantlib.org/install/macosx.shtml">http://quantlib.org/install/macosx.shtml</a>. In
 particular, check that you have provided the required options and
-environment variables to <tt>./configure</tt>.</p>
+environment variables to <tt>./configure</tt> and that you can execute
+the <tt>quantlib-config</tt> script.</p>
 
 <p>You can download released QuantLib-SWIG versions from GitHub
 at <a href="https://github.com/lballabio/QuantLib-SWIG/releases">https://github.com/lballabio/QuantLib-SWIG/releases</a>.</p>
 
 <p>Once you have the tarball, extract it by executing:</p>
 <pre>
-tar xzf QuantLib-SWIG-1.22.tar.gz
+tar xzf QuantLib-SWIG-1.29.tar.gz
 </pre>
-<p>(1.22 is the most recent version at the time of this writing; you
+<p>(1.29 is the most recent version at the time of this writing; you
 might have downloaded another one, but take care to use one compatible
 with the version of QuantLib you installed.) This creates a
-folder <code>QuantLib-SWIG-1.22</code>; enter it and build QuantLib
-by executing:</p>
+folder <code>QuantLib-SWIG-1.29</code>; enter it and build QuantLib by
+executing the following commands.  For QuantLib 1.22 only, you will
+also need to add <tt>-std=c++11</tt> to <tt>CXXFLAGS</tt>.  Again,
+make sure that you can execute <tt>quantlib-config</tt> from the
+terminal, since the <tt>setup.py</tt> build will call it to retrieve a
+few required compilation flags.</p>
 <p><strong>On Mac OS X 10.11 (El Capitan) and later,</strong>
 <pre>
-  cd QuantLib-SWIG-1.22/Python
-  export CXXFLAGS='-O2 -std=c++11 -stdlib=libc++ -mmacosx-version-min=10.9'
+  cd QuantLib-SWIG-1.29/Python
+  export CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9'
   export LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
-  python setup.py build
+  python3 setup.py build
 </pre>
 </p>
 <p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
 <pre>
-  cd QuantLib-SWIG-1.22/Python
-  export CXXFLAGS='-O2 -std=c++11 -stdlib=libstdc++ -mmacosx-version-min=10.6'
+  cd QuantLib-SWIG-1.29/Python
+  export CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6'
   export LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
-  python setup.py build
+  python3 setup.py build
 </pre>
 </p>
 <p><strong>On earlier systems,</strong>
 <pre>
-  cd QuantLib-SWIG-1.22/Python
-  export CXXFLAGS='-O2 -std=c++11'
-  python setup.py build
+  cd QuantLib-SWIG-1.29/Python
+  export CXXFLAGS='-O2'
+  python3 setup.py build
 </pre>
 </p>
 
@@ -66,37 +72,25 @@ by executing:</p>
 tarball <strong>doesn't require you to have SWIG
 installed</strong>.  After building, you can run
 <pre>
-  python setup.py install
+  python3 setup.py install
 </pre>
 to perform a system installation; however, you might consider either passing an installation path, as in:
 <pre>
-  python setup.py install --prefix=/your/desired/location
+  python3 setup.py install --prefix=/your/desired/location
 </pre>
 or building a wheel with
 <pre>
-  python setup.py bdist_wheel
+  python3 setup.py bdist_wheel
 </pre>
 and use it for installation in the location you want; this will
 require the <tt>wheel</tt> package installed.</p>
   
-<p>There are a couple of caveats to the above. <strong>The first</strong> is
-that the <code>setup.py</code> script will need to
-invoke <code>quantlib-config</code> (which was installed with
-QuantLib) to find out what other flags should be passed to the compiler and
-linker; they will also include the additional include directories you
-might have specified when you built QuantLib, so you'll be covered
-even if you have, say, Boost in a non-standard place. This means
-that <code>quantlib-config</code> must be in your path. If you
-installed QuantLib in <code>/usr/local</code> like Homebrew or
-in <code>/opt/local</code> like MacPorts, you should be already set
-up.</p>
-
-<p><strong>The second</strong> is that simply calling
-<code>python</code> as written above will find the system installation
-of Python.  If you want to use a different one (for instance because
-you installed multiple versions of Python, or you want to use an
-Anaconda installation) you must call your chosen Python interpreter;
-for instance, if you have Python 3.9 installed
+<p>Also, note that simply calling
+<code>python3</code> as written above will find the first version of
+Python in your path.  If you want to use a different one (for instance
+because you installed multiple versions of Python, or you want to use
+an Anaconda installation) you must call your chosen Python
+interpreter; for instance, if you have Python 3.9 installed
 as <code>/Library/Frameworks/Python.framework/Versions/3.9/bin/python3</code>,
 you'll have to run:</p>
 <pre>
@@ -106,7 +100,7 @@ you'll have to run:</p>
 <p>Once you're done, you can try to run a few examples to check your
 installation. To do this, you can execute:</p>
 <pre>
-  python setup.py test
+  python3 setup.py test
 </pre>
 
 
