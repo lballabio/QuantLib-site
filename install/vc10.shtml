@@ -4,48 +4,43 @@ title: QuantLib Installation in Visual C++
 ---
 
 <h1 class="center">QuantLib installation in VC++</h1>
-<h4 class="center">Dominik Holenstein</h4>
-
-<h6 class="center">Based on the VC++ 2008 instructions by Dimitri Reiswich</h4>
+<h5 class="center">Based on the initial instructions by Dominik Holenstein and Dimitri Reiswich</h4>
 
 <p>These are step-by-step instructions to install QuantLib and Boost
-on the Microsoft Visual C++ 2010 IDE.  They work on later versions of
-Visual C++ as well (you can download the latest free Community edition
+on the Microsoft Visual C++ IDE.  These instructions work on recent
+versions (you can download the latest free Community edition
 <a href="https://visualstudio.microsoft.com/downloads/">on the
-Microsoft web site</a>).  Earlier versions of the compiler are no
-longer supported by QuantLib.</p>
+Microsoft web site</a>), but unfortunately the screenshots on this
+page were taken a long time ago on Visual C++ 2010.  If you want to
+contribute updated versions, that would be great.</p>
 
-<p>I tried to include almost every step in the installation
-procedure. Something that is obvious to one person might not be
-obvious to someone else. The only thing that I assume you have on
-your computer is the Visual C++ 2010 IDE (VC10).</p>
-
-<p>Before using QuantLib you need to install the Boost library on your
+<p>Before using QuantLib, you need to install the Boost library on your
 computer. Detailed instructions follow in the next section.</p>
 
 <h2>Boost Installation</h2>
-<p>We use the binary installer provided by the Boost
-project, that can be downloaded
-at <a href="http://sourceforge.net/projects/boost/files/boost-binaries/">http://sourceforge.net/projects/boost/files/boost-binaries/</a>.</p>
+<p>We use the binary installer provided by the Boost project, that can
+be downloaded from their
+<a href="https://boostorg.jfrog.io/artifactory/main/release/">Artifactory</a>.</p>
 
 <p>You'll have to enter the folder corresponding to the release you
-want to download (at the time of this writing, the latest version is
-Boost 1.55.0) and then choose the installer corresponding to your
-compiler and platform; for
-instance, <tt>boost_1_55_0-msvc-10.0-64.exe</tt> for Visual C++ 10 on
-a 64-bit system. Download and run the installer. The rest of this
-tutorial was written a while ago and assumes that you installed Boost
-1.47 into the <tt>C:\Program Files\Boost\boost_1_47</tt> folder;
-replace that with whatever folder the installer creates for your newer
-version (for instance, <tt>C:\Boost\boost_1_55_0</tt>).</p>
+want to download (we suggest to choose the latest version), then
+the <tt>binaries</tt> folder, and then choose the installer
+corresponding to your compiler and platform; for
+instance, <tt>boost_1_81_0-msvc-14.3-64.exe</tt> for Visual C++ 2022
+on a 64-bit system. Download and run the installer. Again, the figures
+in this tutorial were produced a while ago and assumed that you
+installed Boost 1.47 into the <tt>C:\Program
+Files\Boost\boost_1_47</tt> folder; replace that with whatever folder
+the installer creates for your newer version (for
+instance, <tt>C:\local\boost_1_81_0</tt>).</p>
 
 <h2>Boost and QuantLib Installation</h2>
 
 <p>Here are the steps to make the installed Boost libraries available to QuantLib:</p>
 
-<p><b>1.</b> Open VC10 and make sure you have activated the expert
+<p><b>1.</b> Open Visual Studio and make sure you have activated the expert
 settings. Go to <i>Tools/Settings</i> and make sure "Expert Settings"
-is checked.  This might not be necessary in recent Visual C++ versions.</p>
+is checked.  This might not be necessary in recent versions.</p>
 
 <p><b>2.</b> If you haven't downloaded QuantLib yet, go to
 <a href="https://github.com/lballabio/QuantLib/releases">its release page on GitHub</a>.</p>
@@ -83,17 +78,15 @@ property page window.</p>
 <p class="center"><img src="pics/vc10/ql03.png" alt="Property
 Pages"></p>
 
-<p><b>6.</b> In the property page window, click on <i>VC++ Directories</i> on
-the left pane and add the paths for the Boost directories
-in <i>Include Directories</i> and <i>Library Directories</i> in the
-right pane. If you installed Boost in <tt>C:\Program
-Files\boost\boost_1_47</tt>, you'll have to add <tt>C:\Program
-Files\boost\boost_1_47</tt> to the include directories.  In earlier
-Boost version, the folder to add to the library directories was
-called <tt>C:\Program Files\boost\boost_1_47\lib</tt>.  In later
-versions, the folder has a name such
-as <tt>C:\Program Files\boost\boost_1_63_0\lib32-msvc-10.0</tt>
-or <tt>C:\Program Files\boost\boost_1_63_0\lib64-msvc-12.0</tt> which includes
+<p><b>6.</b> In the property page window, click on <i>VC++
+Directories</i> on the left pane and add the paths for the Boost
+directories in <i>Include Directories</i> and <i>Library
+Directories</i> in the right pane. If you installed Boost
+in <tt>C:\local\boost_1_81_0</tt>, you'll have to add that to the
+include directories.  Instead, the folder to add to the library
+directories has a name such
+as <tt>C:\local\boost_1_01_0\lib32-msvc-12.0</tt>
+or <tt>C:\local\boost_1_81_0\lib64-msvc-14.3</tt> which includes
 compiler and build information; if you installed multiple ones, choose
 the one corresponding to your configuration. Click the OK button to
 set your changes.</p>
@@ -111,7 +104,8 @@ with 3 GB RAM and a 2 GHz Intel dual core processor).</p>
 <p class="center"><img src="pics/vc10/ql06.png" alt="Build
 Solution"></p>
 
-<p>After finishing, the output should show no errors:
+<p>After finishing, the output should show no errors (and hopefully, a
+shorter run time):
 <pre>
 14>  Test suite "Master Test Suite" passed with:
 14>    1703 assertions out of 1703 passed
@@ -179,7 +173,7 @@ below.</p>
 <p class="center"><img src="pics/vc10/ql12.png" alt="QuantLib include directory"></p>
 
 <p>Finally, you can add the QuantLib library
-path <tt>C:\QuantLib\QuantLib-0.9.7\lib</tt> to the library
+path <tt>C:\Program Files\QuantLib\lib</tt> to the library
 directories, or you can go to <i>Configuration
 Properties/Linker/General</i> and add it to <i>Additional Library
 Directories</i>. Click <i>OK</i>.</p>
