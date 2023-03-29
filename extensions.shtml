@@ -1,11 +1,13 @@
 ---
 layout: default
-title: QuantLib in other languages
+title: QuantLib Extensions
 ---
 
-<h1 class="center">Other languages and platforms</h1>
+<h1 class="center">QuantLib Extensions</h1>
 
-<h2 class="center">Official wrappers</h2>
+<br>
+
+<h2 class="center">Official wrappers for other languages</h2>
 
 <p>QuantLib is <a href="download.shtml">available</a> as a C#,
 Java, Python and R module by means of <a
@@ -18,7 +20,9 @@ and OpenOffice/LibreOffice Calc.</p>
 
 <h2 class="center">External projects</h2>
 
-<p>Adjoint algorithmic differentation (AAD) can be enabled in QuantLib
+<h3 class="center">Adjoint Algorithmic Differentiation (AAD) support</h3>
+
+<p>Adjoint algorithmic differentiation (AAD) can be enabled in QuantLib
 using the open-source <a href="https://github.com/xcelerit/XAD">XAD
 AAD tool</a> and
 <a href="https://github.com/xcelerit/qlxad">an XAD/QuantLib
@@ -37,6 +41,8 @@ vectorization.</p>
 <p>Yet another modified QuantLib C++ library enabling AAD is available
 as <a href="https://github.com/compatibl/QuantLibAdjoint">an
 open-source project from CompatibL</a>.</p>
+
+<h3 class="center">Ports and wrappers for other languages</h3>
 
 <p>The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
 QuantLib Addin</a> project, based on QuantLibAddin, exports QuantLib
