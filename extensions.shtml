@@ -5,6 +5,8 @@ title: QuantLib Extensions
 
 <h1 class="center">QuantLib Extensions</h1>
 
+<br>
+
 <h2 class="center">Official wrappers for other languages</h2>
 
 <p>QuantLib is <a href="download.shtml">available</a> as a C#,
@@ -16,7 +18,9 @@ procedural interface to a number of platforms including Microsoft
 Excel (see the <a href="http://quantlibxl.org">QuantLibXL</a> site)
 and OpenOffice/LibreOffice Calc.</p>
 
-<h2 class="center">Adjoint Algorithmic Differentiation (AAD) support</h2>
+<h2 class="center">External projects</h2>
+
+<h3 class="center">Adjoint Algorithmic Differentiation (AAD) support</h3>
 
 <p>Adjoint algorithmic differentiation (AAD) can be enabled in QuantLib
 using the open-source <a href="https://github.com/xcelerit/XAD">XAD
@@ -38,7 +42,7 @@ vectorization.</p>
 as <a href="https://github.com/compatibl/QuantLibAdjoint">an
 open-source project from CompatibL</a>.</p>
 
-<h2 class="center">External wrappers for other languages</h2>
+<h3 class="center">Ports and wrappers for other languages</h3>
 
 <p>The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
 QuantLib Addin</a> project, based on QuantLibAddin, exports QuantLib
