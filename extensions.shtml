@@ -59,11 +59,10 @@ Excel.</p>
 <p>An initial web API for QuantLib (also usable from Google Sheets) is
 available from <a href="https://quantra.io/">quantra.io</a>.</p>
 
-<p>A project for porting QuantLib to C# has started
-as <a href="https://github.com/amaggiulli/qlnet">QLNet</a> and is
-looking for developers.</p>
+<p>A port of QuantLib to C# is available
+as <a href="https://github.com/amaggiulli/qlnet">QLNet</a>.</p>
 
-<p>The <a href="http://www.jquantlib.org/">JQuantLib</a> project is a
+<p>The <a href="http://www.jquantlib.com/">JQuantLib</a> project is a
 Java port.</p>
 
 <p>An alternative set of Python wrappers is provided in
@@ -94,8 +93,8 @@ while <a href="http://sourceforge.net/projects/quantifa/">Quantifa</a>
 is written in F#; they are looking for
 developers. <a href="https://github.com/paulrzcz/hquantlib">HQuantLib</a>
 is another Haskell
-port.  <a href="http://ql.codeplex.com/">Cephei.QL</a> wraps the C++
-library so that it can be called from F#.
+port.  <a href="https://www.cepheis.com/Product/Ql">Cephei.QL</a>
+wraps the C++ library so that it can be called from F#.
 </p>
 
 <p>Niels Elken S&oslash;nderby has a page for the tentative
@@ -106,8 +105,10 @@ found at the <a href=
 "http://www.weber-und-partner.com/QuantLib/mma/">Weber und Partner</a>
 site.</p>
 
-<p>Finally,
-the <a href="http://www.dsource.org/projects/quantlibd/">QuantLibD</a>
+<p>The <a href="http://www.dsource.org/projects/quantlibd/">QuantLibD</a>
 project is a port of QuantLib in the D programming language.  The
 project is looking for developers.</p>
 
+<p>The <a href="https://github.com/sthabene/QuantIO">QuantIO</a>
+project (a work in progress at this time) will provide a GUI
+implementation of the QuantLib project.</p>
