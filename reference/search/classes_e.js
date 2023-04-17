@@ -4,7 +4,7 @@ var searchData=
   ['observablesettings_1',['ObservableSettings',['../class_quant_lib_1_1_observable_settings.html',1,'QuantLib']]],
   ['observablevalue_2',['ObservableValue',['../class_quant_lib_1_1_observable_value.html',1,'QuantLib']]],
   ['observablevalue_3c_20date_20_3e_3',['ObservableValue&lt; Date &gt;',['../class_quant_lib_1_1_observable_value.html',1,'QuantLib']]],
-  ['observablevalue_3c_20timeseries_3c_20real_20_3e_20_3e_4',['ObservableValue&lt; TimeSeries&lt; Real &gt; &gt;',['../class_quant_lib_1_1_observable_value.html',1,'QuantLib']]],
+  ['observablevalue_3c_20quantlib_3a_3atimeseries_3c_20real_20_3e_20_3e_4',['ObservableValue&lt; QuantLib::TimeSeries&lt; Real &gt; &gt;',['../class_quant_lib_1_1_observable_value.html',1,'QuantLib']]],
   ['observer_5',['Observer',['../class_quant_lib_1_1_observer.html',1,'QuantLib']]],
   ['oisratehelper_6',['OISRateHelper',['../class_quant_lib_1_1_o_i_s_rate_helper.html',1,'QuantLib']]],
   ['omrcurrency_7',['OMRCurrency',['../class_quant_lib_1_1_o_m_r_currency.html',1,'QuantLib']]],

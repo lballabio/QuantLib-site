@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -124,11 +124,11 @@ const DateProxy &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>eval
 <tr class="memitem:aefaffd0bfa9c38d659c3f689945c773f"><td class="memItemLeft" align="right" valign="top"><a id="aefaffd0bfa9c38d659c3f689945c773f" name="aefaffd0bfa9c38d659c3f689945c773f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>includeReferenceDateEvents</b> () const</td></tr>
 <tr class="separator:aefaffd0bfa9c38d659c3f689945c773f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3bc274d0c10bfa3b2c27380eb000032"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_settings.html#ae3bc274d0c10bfa3b2c27380eb000032">includeTodaysCashFlows</a> ()</td></tr>
-<tr class="separator:ae3bc274d0c10bfa3b2c27380eb000032"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4215247b7f3d286bc1e68f070c53785e"><td class="memItemLeft" align="right" valign="top"><a id="a4215247b7f3d286bc1e68f070c53785e" name="a4215247b7f3d286bc1e68f070c53785e"></a>
-boost::optional&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>includeTodaysCashFlows</b> () const</td></tr>
-<tr class="separator:a4215247b7f3d286bc1e68f070c53785e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9548897e80bff860b3153350fae79378"><td class="memItemLeft" align="right" valign="top">ext::optional&lt; bool &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_settings.html#a9548897e80bff860b3153350fae79378">includeTodaysCashFlows</a> ()</td></tr>
+<tr class="separator:a9548897e80bff860b3153350fae79378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9227fd48d5c213f1f9dd46e7dde25f49"><td class="memItemLeft" align="right" valign="top"><a id="a9227fd48d5c213f1f9dd46e7dde25f49" name="a9227fd48d5c213f1f9dd46e7dde25f49"></a>
+ext::optional&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>includeTodaysCashFlows</b> () const</td></tr>
+<tr class="separator:a9227fd48d5c213f1f9dd46e7dde25f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af595a253588ed5bb7d32db3ea376343a"><td class="memItemLeft" align="right" valign="top"><a id="af595a253588ed5bb7d32db3ea376343a" name="af595a253588ed5bb7d32db3ea376343a"></a>
 bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>enforcesTodaysHistoricFixings</b> ()</td></tr>
 <tr class="separator:af595a253588ed5bb7d32db3ea376343a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,25 +242,25 @@ static <a class="el" href="class_quant_lib_1_1_settings.html">Settings</a> &amp;
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This flag specifies whether or not Events occurring on the reference date should, by default, be taken into account as not happened yet. It can be overridden locally when calling the <a class="el" href="class_quant_lib_1_1_event.html#aaaf1737e3e49815615baf2e6fb0acbc4" title="returns true if an event has already occurred before a date">Event::hasOccurred</a> method. </p>
+<p>This flag specifies whether or not Events occurring on the reference date should, by default, be taken into account as not happened yet. It can be overridden locally when calling the <a class="el" href="class_quant_lib_1_1_event.html#ac85273215ec7374d1cd484f21f13d785" title="returns true if an event has already occurred before a date">Event::hasOccurred</a> method. </p>
 
 </div>
 </div>
-<a id="ae3bc274d0c10bfa3b2c27380eb000032" name="ae3bc274d0c10bfa3b2c27380eb000032"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3bc274d0c10bfa3b2c27380eb000032">&#9670;&#160;</a></span>includeTodaysCashFlows()</h2>
+<a id="a9548897e80bff860b3153350fae79378" name="a9548897e80bff860b3153350fae79378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9548897e80bff860b3153350fae79378">&#9670;&#160;</a></span>includeTodaysCashFlows()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">boost::optional&lt; bool &gt; &amp; includeTodaysCashFlows </td>
+          <td class="memname">ext::optional&lt; bool &gt; &amp; includeTodaysCashFlows </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>If set, this flag specifies whether or not <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions">CashFlows</a> occurring on today's date should enter the NPV. When the NPV date (i.e., the date at which the cash flows are discounted) equals today's date, this flag overrides the behavior chosen for includeReferenceDate. It cannot be overridden locally when calling the <a class="el" href="class_quant_lib_1_1_cash_flow.html#a4b726b27cf6ce2006f3613bd457f156e" title="returns true if an event has already occurred before a date">CashFlow::hasOccurred</a> method. </p>
+<p>If set, this flag specifies whether or not <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions">CashFlows</a> occurring on today's date should enter the NPV. When the NPV date (i.e., the date at which the cash flows are discounted) equals today's date, this flag overrides the behavior chosen for includeReferenceDate. It cannot be overridden locally when calling the <a class="el" href="class_quant_lib_1_1_cash_flow.html#a0eceff36ab228de10ce08f52f90de9a4" title="returns true if an event has already occurred before a date">CashFlow::hasOccurred</a> method. </p>
 
 </div>
 </div>

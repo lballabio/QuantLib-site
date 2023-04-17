@@ -127,5 +127,6 @@ var searchData=
   ['btccurrency_124',['BTCCurrency',['../class_quant_lib_1_1_b_t_c_currency.html',1,'QuantLib']]],
   ['btp_125',['BTP',['../class_quant_lib_1_1_b_t_p.html',1,'QuantLib']]],
   ['business252_126',['Business252',['../class_quant_lib_1_1_business252.html',1,'QuantLib']]],
-  ['byrcurrency_127',['BYRCurrency',['../class_quant_lib_1_1_b_y_r_currency.html',1,'QuantLib']]]
+  ['bwpcurrency_127',['BWPCurrency',['../class_quant_lib_1_1_b_w_p_currency.html',1,'QuantLib']]],
+  ['byrcurrency_128',['BYRCurrency',['../class_quant_lib_1_1_b_y_r_currency.html',1,'QuantLib']]]
 ];

@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -82,7 +82,59 @@ $(function() {
   <div class="headertitle"><div class="title">Version history </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.29 - January 2023</b></p>
+<div class="textblock"><p><b>Release 1.30 - April 2023</b></p>
+<p>PORTABILITY</p><ul>
+<li><b>Future end of support:</b> as announced in the notes for the previous release, after this release and the next, using <code>std::tuple</code>, <code>std::function</code> and <code>std::bind</code> (instead of their <code>boost</code> counterparts) will become the default. If you're using <code>ext::tuple</code> etc. in your code (which is suggested), this should be a transparent change. If not, you'll still be able to choose the <code>boost</code> versions via a configure switch for a while; but we do suggest you start using <code>ext::tuple</code> etc. in the meantime.</li>
+<li>CMake builds now use a stricter warning level by default; thanks to Ralf Konrad.</li>
+<li>Is it now possible to use <code>std::any</code> and <code>std::optional</code> (and the related <code>std::any_cast</code> and <code>std::nullopt</code>) instead of their <code>boost</code> counterparts by setting new compilation switches; thanks to Jonathan Sweemer. Using the <code>std</code> classes requires C++17. We expect the <code>boost</code> classes to remain the default for a while, but in the meantime we encourage to start using <code>ext::any</code> and <code>ext::optional</code> in preparation for a new default.</li>
+</ul>
+<p>DATE/TIME</p><ul>
+<li>Good Friday 2023 is now a business day for the US government bond calendar; thanks to Anastasiia Shumyk.</li>
+<li>Added specialized Australian calendar for ASX; thanks to Trent Maetzold.</li>
+<li>Fixed Turkish holidays between 2019 and 2023; thanks to Fredrik Gerdin Börjesson.</li>
+<li>Added a few missing holidays to Danish calendar; thanks to Fredrik Gerdin Börjesson.</li>
+<li>Added the Matariki holiday to the New Zealand calendar; thanks to Jake Heke.</li>
+</ul>
+<p>CASHFLOWS</p><ul>
+<li>Added a new equity cash flow class to model equity legs in total return swaps; thanks to Marcin Rybacki. Quanto pricing is also supported.</li>
+<li>Added an overloaded constructor for CPI coupons that allows to specify a base date instead of a base CPI value; thanks to Matthias Groncki.</li>
+</ul>
+<p>INSTRUMENTS</p><ul>
+<li>Added a new total-return swap; thanks to Marcin Rybacki. An equity-index class was also added to support this instrument.</li>
+<li>The analytic engine for barrier options would return NaN for low values of volatility; this is now fixed.</li>
+<li>The <code>VanillaOption</code> and <code>BarrierOption</code> classes can now be used to model vanilla and barrier options with discrete dividends; the future dividends (not being part of the terms and conditions of the contract) should be passed to the pricing engine instead.</li>
+<li>Added analytical Greeks to Bjerksund-Stensland engine; thanks to Klaus Spanderen.</li>
+</ul>
+<p>INDEXES</p><ul>
+<li>Added UKHICP inflation index; thanks to Fredrik Gerdin Börjesson.</li>
+</ul>
+<p>TERM STRUCTURES</p><ul>
+<li>Renamed <code>SwaptionVolCube1</code>, <code>SwaptionVolCube1x</code>, <code>SwaptionVolCube1a</code> and <code>SwaptionVolCube2</code> to <code>SabrSwaptionVolatilityCube</code>, <code>XabrSwaptionVolatilityCube</code>, <code>NoArbSabrSwaptionVolatilityCube</code> and <code>InterpolatedSwaptionVolatilityCube</code>, respectively; thanks to Ignacio Anguita. The old names are deprecated but still available for a few releases.</li>
+<li>Ensure that inflation curves are re-bootstrapped correctly when seasonality is added.</li>
+</ul>
+<p>MODELS</p><ul>
+<li>Moved the Heston SLV model from experimental to main; thanks to Klaus Spanderen.</li>
+</ul>
+<p>MATH</p><ul>
+<li>Added a few overloads to Array and Matrix operators taking rvalue references for increased speed; thanks to Jonathan Sweemer.</li>
+</ul>
+<p>DEPRECATED FEATURES</p><ul>
+<li><b>Removed</b> features deprecated in version 1.24:<ul>
+<li>the protected <code>spreadLegValue_</code> data member of <code>BlackIborCouponPricer</code>;</li>
+<li>the <code>WulinYongDoubleBarrierEngine</code> alias for <code>SuoWangDoubleBarrierEngine</code>;</li>
+<li>the <code>settlementDate</code>, <code>incomeDiscountCurve</code>, <code>spotIncome</code>, <code>spotValue</code>, <code>impliedYield</code> and <code>forwardValue</code> methods of <code>ForwardRateAgreement</code>, as well as its protected <code>underlyingIncome_</code>, <code>underlyingSpotValue_</code>, <code>settlementDays_</code>, <code>payoff_</code> and <code>incomeDiscountCurve_</code> data members;</li>
+<li>constructors for <code>InflationTermStructure</code>, <code>ZeroInflationTermStructure</code>, <code>InterpolatedZeroInflationCurve</code>, <code>PiecewiseZeroInflationCurve</code> taking an <code>indexIsInterpolated</code> parameter;</li>
+<li>the <code>indexIsInterpolated</code> method of <code>InflationTermStructure</code> and its protected <code>indexIsInterpolated_</code> data member;</li>
+<li>some overloaded constructors of <code>SofrFutureRateHelper</code>.</li>
+</ul>
+</li>
+<li>Deprecated the <code>DividendVanillaOption</code> and <code>DividendBarrierOption</code> classes; use <code>VanillaOption</code> and <code>BarrierOption</code> instead (see above).</li>
+<li>Deprecated the constructor of <code>AnalyticDividendEuropeanEngine</code> that takes no dividend information; use the other overload instead.</li>
+<li>Deprecated the names <code>SwaptionVolCube1</code>, <code>SwaptionVolCube1x</code>, <code>SwaptionVolCube1a</code> and <code>SwaptionVolCube2</code> (see above).</li>
+<li>Deprecated the protected <code>setCommon</code> method of <code>CappedFlooredYoYInflationCoupon</code>.</li>
+</ul>
+<p>Thanks go also to Jonathan Sweemer, the Xcelerit Dev Team, Fredrik Gerdin Börjesson, Klaus Spanderen and Peter Caspers for a number of smaller fixes and improvements, and to Matthias Groncki and GitHub user lukey8767 for raising issues.</p>
+<p><b>Release 1.29 - January 17th, 2023</b></p>
 <p>PORTABILITY</p><ul>
 <li><b>End of support:</b> as announced in the notes for the previous release, this release no longer manages thread-local singletons via a user-provided <code>sessionId</code> function, and therefore the latter is no longer needed. Instead, the code now uses the built-in language support for thread-local variables. Thanks go to Peter Caspers.</li>
 <li><b>Future end of support:</b> as announced in the notes for the previous release, after the next couple of releases, using <code>std::tuple</code>, <code>std::function</code> and <code>std::bind</code> (instead of their <code>boost</code> counterparts) will become the default. If you're using <code>ext::tuple</code> etc. in your code (which is suggested), this should be a transparent change. If not, you'll still be able to choose the <code>boost</code> versions via a configure switch for a while; but we do suggest you start using <code>ext::tuple</code> etc. in the meantime.</li>
@@ -285,7 +337,7 @@ $(function() {
 <li>Fixed formula for discount bond option in CIR++ model (thanks to Magnus Mencke).</li>
 </ul>
 <p>TERM STRUCTURES</p><ul>
-<li>It is now possible to use normal volatilities in SABR smile sections, and thus in the <code>SwaptionVolCube1</code> class (thanks to Lew Wei Hao).</li>
+<li>It is now possible to use normal volatilities in SABR smile sections, and thus in the <code>SabrSwaptionVolatilityCube</code> class (thanks to Lew Wei Hao).</li>
 </ul>
 <p>DATE/TIME</p><ul>
 <li>Added Chinese holidays for 2022 (thanks to Cheng Li).</li>
@@ -1307,7 +1359,7 @@ $(function() {
 <p>TERM STRUCTURES</p><ul>
 <li>Fixed degenerate case for ABCD volatility (thanks to Peter Caspers).</li>
 <li>Relaxed extrapolation check for default-probability curves. When calculating default probabilities between two dates or times, allow the first to precede the reference date. This effectively assumes that the default probability before the reference is null, and helps in cases where a coupon protection extends a couple of days before the reference due to adjustments (for instance, when the protection starts on a Saturday and the reference is rolled to the following Monday).</li>
-<li>Pass correct ATM forward rate to smile section of SwaptionVolCube2 (thanks to Peter Caspers).</li>
+<li>Pass correct ATM forward rate to smile section of InterpolatedSwaptionVolatilityCube (thanks to Peter Caspers).</li>
 <li>Added exogenous discount to OptionletStripper1 (thanks to Peter Caspers).</li>
 </ul>
 <p>MATH</p><ul>

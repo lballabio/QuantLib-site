@@ -135,9 +135,10 @@ var searchData=
   ['swaptionvolatilitycube_132',['SwaptionVolatilityCube',['../class_quant_lib_1_1_swaption_volatility_cube.html',1,'QuantLib']]],
   ['swaptionvolatilitymatrix_133',['SwaptionVolatilityMatrix',['../class_quant_lib_1_1_swaption_volatility_matrix.html',1,'QuantLib']]],
   ['swaptionvolatilitystructure_134',['SwaptionVolatilityStructure',['../class_quant_lib_1_1_swaption_volatility_structure.html',1,'QuantLib']]],
-  ['sweden_135',['Sweden',['../class_quant_lib_1_1_sweden.html',1,'QuantLib']]],
-  ['swingexercise_136',['SwingExercise',['../class_quant_lib_1_1_swing_exercise.html',1,'QuantLib']]],
-  ['switzerland_137',['Switzerland',['../class_quant_lib_1_1_switzerland.html',1,'QuantLib']]],
-  ['symmetricschurdecomposition_138',['SymmetricSchurDecomposition',['../class_quant_lib_1_1_symmetric_schur_decomposition.html',1,'QuantLib']]],
-  ['syntheticcdo_139',['SyntheticCDO',['../class_quant_lib_1_1_synthetic_c_d_o.html',1,'QuantLib']]]
+  ['swaptionvolcubesabrmodel_135',['SwaptionVolCubeSabrModel',['../struct_quant_lib_1_1_swaption_vol_cube_sabr_model.html',1,'QuantLib']]],
+  ['sweden_136',['Sweden',['../class_quant_lib_1_1_sweden.html',1,'QuantLib']]],
+  ['swingexercise_137',['SwingExercise',['../class_quant_lib_1_1_swing_exercise.html',1,'QuantLib']]],
+  ['switzerland_138',['Switzerland',['../class_quant_lib_1_1_switzerland.html',1,'QuantLib']]],
+  ['symmetricschurdecomposition_139',['SymmetricSchurDecomposition',['../class_quant_lib_1_1_symmetric_schur_decomposition.html',1,'QuantLib']]],
+  ['syntheticcdo_140',['SyntheticCDO',['../class_quant_lib_1_1_synthetic_c_d_o.html',1,'QuantLib']]]
 ];

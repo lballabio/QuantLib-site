@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -119,9 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac659412fae5cc99a0fdf25f7f4b9562e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_event.html#ac659412fae5cc99a0fdf25f7f4b9562e">date</a> () const =0</td></tr>
 <tr class="memdesc:ac659412fae5cc99a0fdf25f7f4b9562e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the date at which the event occurs  <br /></td></tr>
 <tr class="separator:ac659412fae5cc99a0fdf25f7f4b9562e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaf1737e3e49815615baf2e6fb0acbc4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_event.html#aaaf1737e3e49815615baf2e6fb0acbc4">hasOccurred</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), boost::optional&lt; bool &gt; includeRefDate=boost::none) const</td></tr>
-<tr class="memdesc:aaaf1737e3e49815615baf2e6fb0acbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if an event has already occurred before a date  <br /></td></tr>
-<tr class="separator:aaaf1737e3e49815615baf2e6fb0acbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85273215ec7374d1cd484f21f13d785"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_event.html#ac85273215ec7374d1cd484f21f13d785">hasOccurred</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), ext::optional&lt; bool &gt; includeRefDate=ext::nullopt) const</td></tr>
+<tr class="memdesc:ac85273215ec7374d1cd484f21f13d785"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if an event has already occurred before a date  <br /></td></tr>
+<tr class="separator:ac85273215ec7374d1cd484f21f13d785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Visitability</div></td></tr>
 <tr class="memitem:a896099363a2a409d2485c3ce9e4e4265"><td class="memItemLeft" align="right" valign="top"><a id="a896099363a2a409d2485c3ce9e4e4265" name="a896099363a2a409d2485c3ce9e4e4265"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;)</td></tr>
@@ -168,8 +168,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<
 
 </div>
 </div>
-<a id="aaaf1737e3e49815615baf2e6fb0acbc4" name="aaaf1737e3e49815615baf2e6fb0acbc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaf1737e3e49815615baf2e6fb0acbc4">&#9670;&#160;</a></span>hasOccurred()</h2>
+<a id="ac85273215ec7374d1cd484f21f13d785" name="ac85273215ec7374d1cd484f21f13d785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85273215ec7374d1cd484f21f13d785">&#9670;&#160;</a></span>hasOccurred()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,8 +186,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>includeRefDate</em> = <code>boost::none</code>&#160;</td>
+          <td class="paramtype">ext::optional&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>includeRefDate</em> = <code>ext::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -205,7 +205,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<
 <p>returns true if an event has already occurred before a date </p>
 <p>If includeRefDate is true, then an event has not occurred if its date is the same as the refDate, i.e. this method returns false if the event date is the same as the refDate. </p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_cash_flow.html#a4b726b27cf6ce2006f3613bd457f156e">CashFlow</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_cash_flow.html#a0eceff36ab228de10ce08f52f90de9a4">CashFlow</a>.</p>
 
 </div>
 </div>

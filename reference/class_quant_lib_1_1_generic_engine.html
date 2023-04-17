@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -140,12 +140,13 @@ $(function() {
 <area shape="rect" href="class_quant_lib_1_1_exponential_fitting_heston_engine.html" title="analytic Heston&#45;model engine based on" alt="" coords="876,357,1044,397"/>
 <area shape="rect" href="class_quant_lib_1_1_heston_expansion_engine.html" title="Heston&#45;model engine for European options based on analytic expansions." alt="" coords="877,422,1043,447"/>
 <area shape="rect" href="class_quant_lib_1_1_analytic_p_t_d_heston_engine.html" title="analytic piecewise constant time dependent Heston&#45;model engine" alt="" coords="871,471,1049,497"/>
-<area shape="rect" href="class_quant_lib_1_1_fd_bates_vanilla_engine.html" title="Partial Integro FiniteDifferences Bates Vanilla Option engine." alt="" coords="885,521,1035,546"/>
+<area shape="rect" href="class_quant_lib_1_1_fd_bates_vanilla_engine.html" title="Partial integro finite&#45;differences Bates vanilla option engine." alt="" coords="885,521,1035,546"/>
 <area shape="rect" href="class_quant_lib_1_1_g2_swaption_engine.html" title="Swaption priced by means of the Black formula" alt="" coords="893,581,1027,606"/>
-<area shape="rect" href="class_quant_lib_1_1_fd_heston_barrier_engine.html" title="Finite&#45;Differences Heston Barrier Option engine." alt="" coords="881,646,1039,671"/>
-<area shape="rect" href="class_quant_lib_1_1_fd_heston_rebate_engine.html" title="Finite&#45;Differences Heston Barrier Option rebate helper engine." alt="" coords="879,695,1041,721"/>
+<area shape="rect" href="class_quant_lib_1_1_fd_heston_barrier_engine.html" title="Finite&#45;differences Heston barrier&#45;option engine." alt="" coords="881,646,1039,671"/>
+<area shape="rect" href="class_quant_lib_1_1_fd_heston_rebate_engine.html" title="Finite&#45;differences Heston barrier&#45;option rebate helper engine." alt="" coords="879,695,1041,721"/>
 <area shape="rect" href="class_quant_lib_1_1_fd_heston_double_barrier_engine.html" title="Finite&#45;Differences Heston Double Barrier Option engine." alt="" coords="861,761,1059,786"/>
-<area shape="rect" href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html" title="Finite&#45;Differences Heston Hull&#45;White Vanilla Option engine." alt="" coords="873,847,1047,887"/>
+<area shape="rect" href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html" title="Finite&#45;differences Heston Hull&#45;White vanilla option engine." alt="" coords="873,828,1047,868"/>
+<area shape="rect" href="class_quant_lib_1_1_fd_heston_vanilla_engine.html" title="Finite&#45;differences Heston vanilla option engine." alt="" coords="881,893,1039,918"/>
 <area shape="rect" href="class_quant_lib_1_1_gaussian1d_cap_floor_engine.html" title="Gaussian1d cap/floor engine." alt="" coords="868,1034,1052,1059"/>
 <area shape="rect" href="class_quant_lib_1_1_gaussian1d_float_float_swaption_engine.html" title="One factor model float float swaption engine." alt="" coords="859,1111,1061,1151"/>
 <area shape="rect" href="class_quant_lib_1_1_gaussian1d_jamshidian_swaption_engine.html" title="Jamshidian swaption engine." alt="" coords="855,1175,1065,1215"/>
@@ -348,7 +349,7 @@ class QuantLib::GenericEngine&lt; ArgumentsType, ResultsType &gt;</div><p>templa
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_observer.html#a99b02345a8a15d3c5ea2844a2253f510">Observer</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; Arguments, Results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; CallableBond::arguments, CallableBond::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; CapFloor::arguments, CapFloor::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; Swaption::arguments, Swaption::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; VanillaSwap::arguments, VanillaSwap::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_analytic_heston_hull_white_engine.html#a44137bb65de2396875934e48a6ee5099">AnalyticHestonHullWhiteEngine</a>, <a class="el" href="class_quant_lib_1_1_c_o_s_heston_engine.html#a44137bb65de2396875934e48a6ee5099">COSHestonEngine</a>, and <a class="el" href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html#a44137bb65de2396875934e48a6ee5099">FdHestonHullWhiteVanillaEngine</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; Arguments, Results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; CallableBond::arguments, CallableBond::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; CapFloor::arguments, CapFloor::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; Swaption::arguments, Swaption::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_lattice_short_rate_model_engine.html#a44137bb65de2396875934e48a6ee5099">LatticeShortRateModelEngine&lt; VanillaSwap::arguments, VanillaSwap::results &gt;</a>, <a class="el" href="class_quant_lib_1_1_analytic_heston_hull_white_engine.html#a44137bb65de2396875934e48a6ee5099">AnalyticHestonHullWhiteEngine</a>, <a class="el" href="class_quant_lib_1_1_c_o_s_heston_engine.html#a44137bb65de2396875934e48a6ee5099">COSHestonEngine</a>, <a class="el" href="class_quant_lib_1_1_fd_heston_hull_white_vanilla_engine.html#a44137bb65de2396875934e48a6ee5099">FdHestonHullWhiteVanillaEngine</a>, and <a class="el" href="class_quant_lib_1_1_fd_heston_vanilla_engine.html#a44137bb65de2396875934e48a6ee5099">FdHestonVanillaEngine</a>.</p>
 
 </div>
 </div>

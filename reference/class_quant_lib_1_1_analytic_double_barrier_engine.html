@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(function() {
 <p>Pricing engine for double barrier european options using analytical formulae.  
  <a href="class_quant_lib_1_1_analytic_double_barrier_engine.html#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/barrieroption/analyticdoublebarrierengine.hpp&gt;</code></p>
+<p><code>#include &lt;ql/pricingengines/barrier/analyticdoublebarrierengine.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for AnalyticDoubleBarrierEngine:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -191,7 +191,7 @@ DoubleBarrierOption::results&#160;</td><td class="memItemRight" valign="bottom">
 <p>The formulas are taken from "The complete guide to option pricing formulas 2nd Ed", E.G. Haug, McGraw-Hill, p.156 and following. Implements the Ikeda and Kunitomo series (see "Pricing Options with 
  Curved Boundaries" Mathematical Finance 2/1992"). This code handles only flat barriers</p>
 <dl class="section note"><dt>Note</dt><dd>the formula holds only when strike is in the barrier range</dd></dl>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000007">Tests:</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000105">Tests:</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61eb1a24e5329ccc296715a40dc3a19a" name="a61eb1a24e5329ccc296715a40dc3a19a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61eb1a24e5329ccc296715a40dc3a19a">&#9670;&#160;</a></span>calculate()</h2>

@@ -17,9 +17,9 @@ var searchData=
   ['ratchetmaxpayoff_14',['RatchetMaxPayoff',['../class_quant_lib_1_1_ratchet_max_payoff.html',1,'QuantLib']]],
   ['ratchetminpayoff_15',['RatchetMinPayoff',['../class_quant_lib_1_1_ratchet_min_payoff.html',1,'QuantLib']]],
   ['ratchetpayoff_16',['RatchetPayoff',['../class_quant_lib_1_1_ratchet_payoff.html',1,'QuantLib']]],
-  ['rate_17',['rate',['../class_quant_lib_1_1_capped_floored_yo_y_inflation_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::CappedFlooredYoYInflationCoupon::rate()'],['../class_quant_lib_1_1_coupon.html#a120f8a9f50fd915f019580dad4789819',1,'QuantLib::Coupon::rate()'],['../class_quant_lib_1_1_digital_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::DigitalCoupon::rate()'],['../class_quant_lib_1_1_fixed_rate_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::FixedRateCoupon::rate()']]],
+  ['rate_17',['rate',['../class_quant_lib_1_1_capped_floored_yo_y_inflation_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::CappedFlooredYoYInflationCoupon::rate()'],['../class_quant_lib_1_1_coupon.html#a120f8a9f50fd915f019580dad4789819',1,'QuantLib::Coupon::rate()'],['../class_quant_lib_1_1_digital_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::DigitalCoupon::rate()'],['../class_quant_lib_1_1_fixed_rate_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::FixedRateCoupon::rate()'],['../group__manips.html#gac63ea3dad10259db3764c7d15a61cde5',1,'QuantLib::io::rate()']]],
   ['rate_18',['Rate',['../group__types.html#gaede435af51236692b1107d7639581d39',1,'QuantLib']]],
-  ['rate_19',['rate',['../group__manips.html#gac63ea3dad10259db3764c7d15a61cde5',1,'QuantLib::io::rate()'],['../class_quant_lib_1_1_capped_floored_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::CappedFlooredCoupon::rate()'],['../class_quant_lib_1_1_floating_rate_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::FloatingRateCoupon::rate()'],['../class_quant_lib_1_1_inflation_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::InflationCoupon::rate()'],['../class_quant_lib_1_1_exchange_rate.html#a79d0a7fb764005995c6c77aa012a336c',1,'QuantLib::ExchangeRate::rate()']]],
+  ['rate_19',['rate',['../class_quant_lib_1_1_capped_floored_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::CappedFlooredCoupon::rate()'],['../class_quant_lib_1_1_floating_rate_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::FloatingRateCoupon::rate()'],['../class_quant_lib_1_1_inflation_coupon.html#a61de65468200984b0780cac1085cc4b9',1,'QuantLib::InflationCoupon::rate()'],['../class_quant_lib_1_1_exchange_rate.html#a79d0a7fb764005995c6c77aa012a336c',1,'QuantLib::ExchangeRate::rate()']]],
   ['rateaveraging_20',['RateAveraging',['../struct_quant_lib_1_1_rate_averaging.html',1,'QuantLib']]],
   ['ratecurve_5f_21',['rateCurve_',['../class_quant_lib_1_1_inflation_coupon_pricer.html#adbce0a6e66ae103610303e69a7ea68a6',1,'QuantLib::InflationCouponPricer']]],
   ['ratespread_22',['rateSpread',['../class_quant_lib_1_1_sub_periods_coupon.html#a395f9cf875077599a53957c007ce7207',1,'QuantLib::SubPeriodsCoupon']]],
@@ -93,10 +93,11 @@ var searchData=
   ['roncurrency_90',['RONCurrency',['../class_quant_lib_1_1_r_o_n_currency.html',1,'QuantLib']]],
   ['root_91',['Root',['../class_quant_lib_1_1detail_1_1_root.html',1,'QuantLib::detail']]],
   ['rootepsilon_5f_92',['rootEpsilon_',['../class_quant_lib_1_1_end_criteria.html#ab887e3c233e93bf714cc3acb70fdc1fe',1,'QuantLib::EndCriteria']]],
-  ['rounding_93',['Rounding',['../class_quant_lib_1_1_rounding.html',1,'Rounding'],['../class_quant_lib_1_1_rounding.html#a927dcb87bff21da0111272c5e2bf69f2',1,'QuantLib::Rounding::Rounding()']]],
+  ['rounding_93',['Rounding',['../class_quant_lib_1_1_rounding.html',1,'QuantLib']]],
   ['rounding_94',['rounding',['../class_quant_lib_1_1_currency.html#a05ff42e05ba8b766b39679235c8d8215',1,'QuantLib::Currency']]],
-  ['rsdcurrency_95',['RSDCurrency',['../class_quant_lib_1_1_r_s_d_currency.html',1,'QuantLib']]],
-  ['rubcurrency_96',['RUBCurrency',['../class_quant_lib_1_1_r_u_b_currency.html',1,'QuantLib']]],
-  ['rule_97',['Rule',['../struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78',1,'QuantLib::DateGeneration']]],
-  ['russia_98',['Russia',['../class_quant_lib_1_1_russia.html',1,'QuantLib']]]
+  ['rounding_95',['Rounding',['../class_quant_lib_1_1_rounding.html#a927dcb87bff21da0111272c5e2bf69f2',1,'QuantLib::Rounding']]],
+  ['rsdcurrency_96',['RSDCurrency',['../class_quant_lib_1_1_r_s_d_currency.html',1,'QuantLib']]],
+  ['rubcurrency_97',['RUBCurrency',['../class_quant_lib_1_1_r_u_b_currency.html',1,'QuantLib']]],
+  ['rule_98',['Rule',['../struct_quant_lib_1_1_date_generation.html#a11fcd51ef86118f65e603c1474377a78',1,'QuantLib::DateGeneration']]],
+  ['russia_99',['Russia',['../class_quant_lib_1_1_russia.html',1,'QuantLib']]]
 ];

@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Event interface</div></td></tr>
 <tr class="memitem:a897a4de9044aed2e1269b11f42e5d9d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cash_flow.html#a897a4de9044aed2e1269b11f42e5d9d7">date</a> () const override=0</td></tr>
 <tr class="separator:a897a4de9044aed2e1269b11f42e5d9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b726b27cf6ce2006f3613bd457f156e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cash_flow.html#a4b726b27cf6ce2006f3613bd457f156e">hasOccurred</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), boost::optional&lt; bool &gt; includeRefDate=boost::none) const override</td></tr>
-<tr class="memdesc:a4b726b27cf6ce2006f3613bd457f156e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if an event has already occurred before a date  <br /></td></tr>
-<tr class="separator:a4b726b27cf6ce2006f3613bd457f156e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eceff36ab228de10ce08f52f90de9a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cash_flow.html#a0eceff36ab228de10ce08f52f90de9a4">hasOccurred</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;refDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), ext::optional&lt; bool &gt; includeRefDate=ext::nullopt) const override</td></tr>
+<tr class="memdesc:a0eceff36ab228de10ce08f52f90de9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if an event has already occurred before a date  <br /></td></tr>
+<tr class="separator:a0eceff36ab228de10ce08f52f90de9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">CashFlow interface</div></td></tr>
 <tr class="memitem:a9b47a18fd731fee50de8227ea00f85ca"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cash_flow.html#a9b47a18fd731fee50de8227ea00f85ca">amount</a> () const =0</td></tr>
 <tr class="memdesc:a9b47a18fd731fee50de8227ea00f85ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the amount of the cash flow  <br /></td></tr>
@@ -186,8 +186,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tradingExCoupon</b> (
 
 </div>
 </div>
-<a id="a4b726b27cf6ce2006f3613bd457f156e" name="a4b726b27cf6ce2006f3613bd457f156e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b726b27cf6ce2006f3613bd457f156e">&#9670;&#160;</a></span>hasOccurred()</h2>
+<a id="a0eceff36ab228de10ce08f52f90de9a4" name="a0eceff36ab228de10ce08f52f90de9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eceff36ab228de10ce08f52f90de9a4">&#9670;&#160;</a></span>hasOccurred()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,8 +204,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tradingExCoupon</b> (
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::optional&lt; bool &gt;&#160;</td>
-          <td class="paramname"><em>includeRefDate</em> = <code>boost::none</code>&#160;</td>
+          <td class="paramtype">ext::optional&lt; bool &gt;&#160;</td>
+          <td class="paramname"><em>includeRefDate</em> = <code>ext::nullopt</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -221,9 +221,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tradingExCoupon</b> (
 </div><div class="memdoc">
 
 <p>returns true if an event has already occurred before a date </p>
-<p>overloads <a class="el" href="class_quant_lib_1_1_event.html#aaaf1737e3e49815615baf2e6fb0acbc4" title="returns true if an event has already occurred before a date">Event::hasOccurred</a> in order to take Settings::includeTodaysCashflows in account </p>
+<p>overloads <a class="el" href="class_quant_lib_1_1_event.html#ac85273215ec7374d1cd484f21f13d785" title="returns true if an event has already occurred before a date">Event::hasOccurred</a> in order to take Settings::includeTodaysCashflows in account </p>
 
-<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_event.html#aaaf1737e3e49815615baf2e6fb0acbc4">Event</a>.</p>
+<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_event.html#ac85273215ec7374d1cd484f21f13d785">Event</a>.</p>
 
 </div>
 </div>
@@ -253,7 +253,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tradingExCoupon</b> (
 <p>returns the amount of the cash flow </p>
 <dl class="section note"><dt>Note</dt><dd>The amount is not discounted, i.e., it is the actual amount paid at the cash flow date. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_quant_lib_1_1_fixed_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedDividend</a>, <a class="el" href="class_quant_lib_1_1_fractional_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FractionalDividend</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FloatingRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_indexed_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">IndexedCashFlow</a>, <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">InflationCoupon</a>, <a class="el" href="class_quant_lib_1_1_simple_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">SimpleCashFlow</a>, <a class="el" href="class_quant_lib_1_1_zero_inflation_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">ZeroInflationCashFlow</a>, and <a class="el" href="class_quant_lib_1_1_dividend.html#a70c7bd9b42c70c09b03573a88b6c6945">Dividend</a>.</p>
+<p>Implemented in <a class="el" href="class_quant_lib_1_1_c_p_i_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">CPICashFlow</a>, <a class="el" href="class_quant_lib_1_1_fixed_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedDividend</a>, <a class="el" href="class_quant_lib_1_1_fractional_dividend.html#a6ae6aa2462b7305b78f7d58b260d226f">FractionalDividend</a>, <a class="el" href="class_quant_lib_1_1_fixed_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FixedRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">FloatingRateCoupon</a>, <a class="el" href="class_quant_lib_1_1_indexed_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">IndexedCashFlow</a>, <a class="el" href="class_quant_lib_1_1_inflation_coupon.html#a6ae6aa2462b7305b78f7d58b260d226f">InflationCoupon</a>, <a class="el" href="class_quant_lib_1_1_simple_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">SimpleCashFlow</a>, <a class="el" href="class_quant_lib_1_1_zero_inflation_cash_flow.html#a6ae6aa2462b7305b78f7d58b260d226f">ZeroInflationCashFlow</a>, and <a class="el" href="class_quant_lib_1_1_dividend.html#a70c7bd9b42c70c09b03573a88b6c6945">Dividend</a>.</p>
 
 </div>
 </div>

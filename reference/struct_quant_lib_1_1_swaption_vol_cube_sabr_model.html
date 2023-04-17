@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>QuantLib: Member List</title>
+<title>QuantLib: SwaptionVolCubeSabrModel Struct Reference</title>
 <link rel="stylesheet" href="/styles/fonts.css" type="text/css">
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -79,20 +79,35 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_dividend_vanilla_option.html">DividendVanillaOption</a></li><li class="navelem"><a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">arguments</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_quant_lib.html">QuantLib</a></li><li class="navelem"><a class="el" href="struct_quant_lib_1_1_swaption_vol_cube_sabr_model.html">SwaptionVolCubeSabrModel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">DividendVanillaOption::arguments Member List</div></div>
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="struct_quant_lib_1_1_swaption_vol_cube_sabr_model-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">SwaptionVolCubeSabrModel Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>arguments</b>()=default (defined in <a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>cashFlow</b> (defined in <a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>validate</b>() const override (defined in <a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a>)</td><td class="entry"><a class="el" href="class_quant_lib_1_1_dividend_vanilla_option_1_1arguments.html">DividendVanillaOption::arguments</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><a class="el" href="class_quant_lib_1_1_swaption.html" title="Swaption class">Swaption</a> Volatility Cube <a class="el" href="class_quant_lib_1_1_s_a_b_r.html" title="SABR interpolation factory and traits">SABR</a>.  
+ <a href="struct_quant_lib_1_1_swaption_vol_cube_sabr_model.html#details">More...</a></p>
+
+<p><code>#include &lt;ql/termstructures/volatility/swaption/sabrswaptionvolatilitycube.hpp&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0b2f8f8421f3f9c2be0ff9218708e028"><td class="memItemLeft" align="right" valign="top"><a id="a0b2f8f8421f3f9c2be0ff9218708e028" name="a0b2f8f8421f3f9c2be0ff9218708e028"></a>
+typedef <a class="el" href="class_quant_lib_1_1_s_a_b_r_interpolation.html">SABRInterpolation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Interpolation</b></td></tr>
+<tr class="separator:a0b2f8f8421f3f9c2be0ff9218708e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb00fd9329320052894a80e38dcdf63"><td class="memItemLeft" align="right" valign="top"><a id="a5cb00fd9329320052894a80e38dcdf63" name="a5cb00fd9329320052894a80e38dcdf63"></a>
+typedef SabrSmileSection&#160;</td><td class="memItemRight" valign="bottom"><b>SmileSection</b></td></tr>
+<tr class="separator:a5cb00fd9329320052894a80e38dcdf63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_quant_lib_1_1_swaption.html" title="Swaption class">Swaption</a> Volatility Cube <a class="el" href="class_quant_lib_1_1_s_a_b_r.html" title="SABR interpolation factory and traits">SABR</a>. </p>
+<p>This struct defines the types used by <a class="el" href="class_quant_lib_1_1_s_a_b_r.html" title="SABR interpolation factory and traits">SABR</a> Volatility cubes for interpolation (<a class="el" href="class_quant_lib_1_1_s_a_b_r_interpolation.html" title="SABR smile interpolation between discrete volatility points.">SABRInterpolation</a>) and for modeling the smile (SabrSmileSection). </p>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

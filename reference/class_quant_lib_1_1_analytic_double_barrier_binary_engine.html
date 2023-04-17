@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(function() {
 <p>Analytic pricing engine for double barrier binary options.  
  <a href="class_quant_lib_1_1_analytic_double_barrier_binary_engine.html#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/barrieroption/analyticdoublebarrierbinaryengine.hpp&gt;</code></p>
+<p><code>#include &lt;ql/pricingengines/barrier/analyticdoublebarrierbinaryengine.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for AnalyticDoubleBarrierBinaryEngine:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -192,7 +192,7 @@ DoubleBarrierOption::results&#160;</td><td class="memItemRight" valign="bottom">
 Binary Option Values", Applied Financial Economics 6/1996), as described in "The complete guide to option pricing formulas 2nd Ed", E.G. Haug, McGraw-Hill, p.180</p>
 <p>The Knock In part of KI+KO and KO+KI options pays at hit, while the Double Knock In pays at end. This engine thus requires European esercise for Double Knock options, and American exercise for KIKO/KOKI.</p>
 <p>greeks are calculated by simple numeric derivation</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000006">Tests:</a></b></dt><dd><ul>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000104">Tests:</a></b></dt><dd><ul>
 <li>the correctness of the returned value is tested by reproducing results available in literature. </li>
 </ul>
 </dd></dl>

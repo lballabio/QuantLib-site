@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -124,7 +124,7 @@ class QuantLib::PolarStudentTRng&lt; URNG &gt;</div><p>Student t random number g
 <p>Polar transformation based Student T random number generator. See "Polar Generation of Random Variates With the t-Distribution", Ralph W. Bailey, April 1994, in Mathematics of Computation, Vol 62-206 page 779. The one implemented here is a variant of this algorithm from "Random 
 Number Generation and Monte Carlo Methods", Springer, 2003, page 185. Using a uniform RNG on a [-1,1] support, the extra call to the uniform generator (used for the sign of the sample) is avoided.</p>
 <p>Class RNG must implement the following interface: </p><div class="fragment"><div class="line">URNG::sample_type RNG::next() <span class="keyword">const</span>;</div>
-</div><!-- fragment --><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000022">Warning:</a></b></dt><dd>do not use with a low-discrepancy sequence generator. </dd></dl>
+</div><!-- fragment --><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000021">Warning:</a></b></dt><dd>do not use with a low-discrepancy sequence generator. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_basket_losses_8cpp-example.html#_a15">BasketLosses.cpp</a>.</dd>
 </dl>
 </div></div><!-- contents -->

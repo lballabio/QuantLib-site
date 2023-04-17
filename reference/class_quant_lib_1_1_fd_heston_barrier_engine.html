@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.29</div>
+   <div id="projectnumber">Reference manual - version 1.30</div>
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Finite-Differences Heston <a class="el" href="struct_quant_lib_1_1_barrier.html" title="Placeholder for enumerated barrier types.">Barrier</a> <a class="el" href="class_quant_lib_1_1_option.html" title="base option class">Option</a> engine.  
+<p>Finite-differences Heston barrier-option engine.  
  <a href="class_quant_lib_1_1_fd_heston_barrier_engine.html#details">More...</a></p>
 
 <p><code>#include &lt;ql/pricingengines/barrier/fdhestonbarrierengine.hpp&gt;</code></p>
@@ -101,7 +101,7 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_fd_heston_barrier_engine__inherit__graph.png" border="0" usemap="#a_fd_heston_barrier_engine_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_fd_heston_barrier_engine_inherit__map" id="a_fd_heston_barrier_engine_inherit__map">
-<area shape="rect" title="Finite&#45;Differences Heston Barrier Option engine." alt="" coords="509,27,667,53"/>
+<area shape="rect" title="Finite&#45;differences Heston barrier&#45;option engine." alt="" coords="509,27,667,53"/>
 <area shape="rect" href="class_quant_lib_1_1_generic_model_engine.html" title=" " alt="" coords="235,5,461,75"/>
 <area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title="template base class for option pricing engines" alt="" coords="5,20,187,60"/>
 </map>
@@ -109,9 +109,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b13b1bf8646a0ccf43c21f33f7d8b02"><td class="memItemLeft" align="right" valign="top"><a id="a3b13b1bf8646a0ccf43c21f33f7d8b02" name="a3b13b1bf8646a0ccf43c21f33f7d8b02"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FdHestonBarrierEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_model.html">HestonModel</a> &gt; &amp;model, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> tGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> xGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> vGrid=50, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> dampingSteps=0, const FdmSchemeDesc &amp;schemeDesc=FdmSchemeDesc::Hundsdorfer(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_local_vol_term_structure.html">LocalVolTermStructure</a> &gt; leverageFct=ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_local_vol_term_structure.html">LocalVolTermStructure</a> &gt;(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mixingFactor=1.0)</td></tr>
-<tr class="separator:a3b13b1bf8646a0ccf43c21f33f7d8b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbb4eadde64e422b6a3fdb7e7b77918"><td class="memItemLeft" align="right" valign="top"><a id="a8cbb4eadde64e422b6a3fdb7e7b77918" name="a8cbb4eadde64e422b6a3fdb7e7b77918"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FdHestonBarrierEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_model.html">HestonModel</a> &gt; &amp;model, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> tGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> xGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> vGrid=50, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> dampingSteps=0, const FdmSchemeDesc &amp;schemeDesc=FdmSchemeDesc::Hundsdorfer(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_local_vol_term_structure.html">LocalVolTermStructure</a> &gt; leverageFct={}, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mixingFactor=1.0)</td></tr>
+<tr class="separator:a8cbb4eadde64e422b6a3fdb7e7b77918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5e35643a50f0a3e1619a8ab1d1c769e"><td class="memItemLeft" align="right" valign="top"><a id="ae5e35643a50f0a3e1619a8ab1d1c769e" name="ae5e35643a50f0a3e1619a8ab1d1c769e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FdHestonBarrierEngine</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_heston_model.html">HestonModel</a> &gt; &amp;model, DividendSchedule dividends, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> tGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> xGrid=100, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> vGrid=50, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> dampingSteps=0, const FdmSchemeDesc &amp;schemeDesc=FdmSchemeDesc::Hundsdorfer(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_local_vol_term_structure.html">LocalVolTermStructure</a> &gt; leverageFct={}, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> mixingFactor=1.0)</td></tr>
+<tr class="separator:ae5e35643a50f0a3e1619a8ab1d1c769e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_fd_heston_barrier_engine.html#a61eb1a24e5329ccc296715a40dc3a19a">calculate</a> () const override</td></tr>
 <tr class="separator:a61eb1a24e5329ccc296715a40dc3a19a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_generic_model_engine"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_quant_lib_1_1_generic_model_engine')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_generic_model_engine.html">GenericModelEngine&lt; HestonModel, DividendBarrierOption::arguments, DividendBarrierOption::results &gt;</a></td></tr>
@@ -194,7 +197,7 @@ ResultsType&#160;</td><td class="memItemRight" valign="bottom"><b>results_</b></
 <tr class="separator:ac34e18c69939ed8140f8cccc00ace941 inherit pro_attribs_class_quant_lib_1_1_generic_engine"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Finite-Differences Heston <a class="el" href="struct_quant_lib_1_1_barrier.html" title="Placeholder for enumerated barrier types.">Barrier</a> <a class="el" href="class_quant_lib_1_1_option.html" title="base option class">Option</a> engine. </p>
+<div class="textblock"><p>Finite-differences Heston barrier-option engine. </p>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000108">Tests:</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in web/literature and comparison with Black pricing. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61eb1a24e5329ccc296715a40dc3a19a" name="a61eb1a24e5329ccc296715a40dc3a19a"></a>
