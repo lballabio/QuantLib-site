@@ -4,7 +4,7 @@ title: QuantLib Download Page
 ---
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.29 (January 17th, 2023).</p>
+<p>The latest QuantLib release is version 1.30 (April 19th, 2023).</p>
 <p>Source packages for <b>all platforms</b>
 are available from GitHub in both zip and tar.gz format
 for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
