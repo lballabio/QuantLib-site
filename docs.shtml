@@ -131,6 +131,11 @@ the sponsorship of <a href="http://www.statpro.com/">StatPro</a>.</li>
 
 <h2 class="center">Papers</h2>
 <ul>
+<li>A series of <strong>articles on QuantLib on <i>Wilmott
+magazine</i></strong>
+[<a href="https://www.implementingquantlib.com/p/tutorials.html">list/downloads</a>]<br>
+Luigi Ballabio (2023)
+</li>
 <li><strong>Matching the Bloomberg Curve S45 with QuantLib</strong>
 [<a href="https://ssrn.com/abstract=3640517">abstract/download</a>]<br>
 Peter Caspers, Andrea Palermo (2020)</li>
