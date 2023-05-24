@@ -23,12 +23,12 @@ and OpenOffice/LibreOffice Calc.</p>
 <h3 class="center">Adjoint Algorithmic Differentiation (AAD) support</h3>
 
 <p>Adjoint algorithmic differentiation (AAD) can be enabled in QuantLib
-using the open-source <a href="https://github.com/xcelerit/XAD">XAD
+using the open-source <a href="https://auto-differentiation.github.io">XAD
 AAD tool</a> and
-<a href="https://github.com/xcelerit/qlxad">an XAD/QuantLib
+<a href="https://auto-differentiation.github.io/quantlib/">an XAD/QuantLib
 integration module</a>.  QuantLib's AAD-compatibility is actively
 maintained
-via <a href="https://github.com/xcelerit/qlxad/actions/workflows/ci.yaml">automated
+via <a href="https://github.com/auto-differentiation/qlxad/actions/workflows/ci.yaml">automated
 CI/CD checks</a>, running daily against QuantLib's master branch.
 </p>
 

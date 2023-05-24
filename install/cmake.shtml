@@ -407,8 +407,9 @@ cmake -G Ninja ... # (add other options as before)
 
 <p>
     An example on how this extension hook can be used is in the 
-    <a href="https://github.com/xcelerit/qlxad">qlxad repository</a>,
+    <a href="https://github.com/auto-differentiation/qlxad">qlxad repository</a>,
     which integrates the open source
-    <a href="https://github.com/xcelerit/XAD">XAD AAD tool</a>
-    into the QuantLib build.
+    <a href="https://auto-differentiation.github.io">XAD AAD tool</a>
+    into the <a href="https://auto-differentiation.github.io/quantlib/">QuantLib build</a>.
+    
 </p>
