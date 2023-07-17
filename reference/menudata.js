@@ -137,5 +137,5 @@ var menudata={children:[
 {text:"u",url:"functions_eval.html#index_u"},
 {text:"x",url:"functions_eval.html#index_x"},
 {text:"z",url:"functions_eval.html#index_z"}]},
-{text:"Related Functions",url:"functions_rela.html"}]}]},
+{text:"Related Symbols",url:"functions_rela.html"}]}]},
 {text:"Examples",url:"examples.html"}]}

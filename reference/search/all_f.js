@@ -67,5 +67,5 @@ var searchData=
   ['overnightindexfuture_64',['OvernightIndexFuture',['../class_quant_lib_1_1_overnight_index_future.html',1,'QuantLib']]],
   ['overnightindexfutureratehelper_65',['OvernightIndexFutureRateHelper',['../class_quant_lib_1_1_overnight_index_future_rate_helper.html',1,'QuantLib']]],
   ['overnightleg_66',['OvernightLeg',['../class_quant_lib_1_1_overnight_leg.html',1,'QuantLib']]],
-  ['shared_5fptr_3c_20observable_20_3e_67',['shared_ptr&lt; Observable &gt;',['../class_quant_lib_1_1_handle.html#ac7371066685b8461c549fde38026da35',1,'QuantLib::Handle']]]
+  ['shared_5fptr_67',['shared_ptr',['../class_quant_lib_1_1_handle.html#ae577fcdb208b5468b849cb20fde17e7c',1,'QuantLib::Handle']]]
 ];

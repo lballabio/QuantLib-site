@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_5fiterator_0',['x_iterator',['../class_quant_lib_1_1_lexicographical_view.html#a60ae9a6c903bfa254d23a6a144ad05ae',1,'QuantLib::LexicographicalView']]]
+  ['volatility_0',['Volatility',['../group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3',1,'QuantLib']]]
 ];

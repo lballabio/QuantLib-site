@@ -25,5 +25,5 @@ var searchData=
   ['order_22',['order',['../class_quant_lib_1_1_gaussian_quad_multidim_integrator.html#a65b77e7c95dfd0a50188ba3336db37f1',1,'QuantLib::GaussianQuadMultidimIntegrator::order()'],['../class_quant_lib_1_1_polynomial_function.html#a65b77e7c95dfd0a50188ba3336db37f1',1,'QuantLib::PolynomialFunction::order()']]],
   ['ordinal_23',['ordinal',['../group__manips.html#gace46b8e41fd72ee71b9ca53cafd0277f',1,'QuantLib::io']]],
   ['output_5fsize_24',['output_size',['../class_quant_lib_1_1_fast_fourier_transform.html#a6bd598964819008db5f70a646ad21c13',1,'QuantLib::FastFourierTransform']]],
-  ['shared_5fptr_3c_20observable_20_3e_25',['shared_ptr&lt; Observable &gt;',['../class_quant_lib_1_1_handle.html#ac7371066685b8461c549fde38026da35',1,'QuantLib::Handle']]]
+  ['shared_5fptr_25',['shared_ptr',['../class_quant_lib_1_1_handle.html#ae577fcdb208b5468b849cb20fde17e7c',1,'QuantLib::Handle']]]
 ];

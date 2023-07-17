@@ -10,7 +10,6 @@ var searchData=
   ['what_7',['what',['../class_quant_lib_1_1_error.html#abf843cbb29dec939d0731e491bab6f70',1,'QuantLib::Error']]],
   ['where_20to_20get_20quantlib_8',['Where to get QuantLib',['../where.html',1,'']]],
   ['wibor_9',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
-  ['withfixingdays_10',['withFixingDays',['../class_quant_lib_1_1_c_p_i_leg.html#a242c04e40001714a3a58ce3d7558c773',1,'QuantLib::CPILeg::withFixingDays(Natural fixingDays)'],['../class_quant_lib_1_1_c_p_i_leg.html#ad42aaab74ddab13d791a80052249fb84',1,'QuantLib::CPILeg::withFixingDays(const std::vector&lt; Natural &gt; &amp;fixingDays)']]],
-  ['withpolynomorder_11',['withPolynomOrder',['../class_quant_lib_1_1_make_m_c_american_engine.html#a3cd830e4520ca715665f8531edafd524',1,'QuantLib::MakeMCAmericanEngine']]],
-  ['writerextensibleoption_12',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a1333483a7772877890122a3a04b25a59',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]]
+  ['withspreads_10',['withSpreads',['../class_quant_lib_1_1_c_p_i_leg.html#a9e7c1cf6587d2a3259861cd71d5643e1',1,'QuantLib::CPILeg::withSpreads(Spread spread)'],['../class_quant_lib_1_1_c_p_i_leg.html#acd2acd5dfb57ab36aefc61cddf66067c',1,'QuantLib::CPILeg::withSpreads(const std::vector&lt; Spread &gt; &amp;spreads)']]],
+  ['writerextensibleoption_11',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a1333483a7772877890122a3a04b25a59',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]]
 ];
