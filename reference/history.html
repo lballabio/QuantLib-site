@@ -31,7 +31,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.31</div>
+   <div id="projectnumber">Reference manual - version 1.31.1</div>
    </div>
   </td>
  </tr>
@@ -82,7 +82,10 @@ $(function() {
   <div class="headertitle"><div class="title">Version history</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.31 - July 2023</b></p>
+<div class="textblock"><p><b>Release 1.31.1 - July 2023</b></p>
+<p><a class="el" href="namespace_quant_lib.html">QuantLib</a> 1.31.1 is a bug-fix release for <a class="el" href="namespace_quant_lib.html">QuantLib</a> 1.31.</p>
+<p>It fixes a regression that could cause a segmentation fault when bootstrapping an interest-rate curve using OIS rates.</p>
+<p><b>Release 1.31 - July 18th, 2023</b></p>
 <p>PORTABILITY</p><ul>
 <li><b>Future end of support:</b> as announced in the notes for the previous release, after this release using <code>std::tuple</code>, <code>std::function</code> and <code>std::bind</code> (instead of their <code>boost</code> counterparts) will become the default. If you're using <code>ext::tuple</code> etc. in your code (which is suggested), this should be a transparent change. If not, you'll still be able to choose the <code>boost</code> versions via a configure switch for a while; but we do suggest you start using <code>ext::tuple</code> etc. in the meantime.</li>
 <li>The cmake build now creates (but doesn't install) a <code>quantlib-config</code> script that can be used to retrieve flags for compiling QuantLib-dependent projects; thanks to Christian Köhnenkamp.</li>
