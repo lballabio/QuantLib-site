@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['math_20tools_0',['Math tools',['../group__math.html',1,'']]],
-  ['monte_20carlo_20framework_1',['Monte Carlo framework',['../group__mcarlo.html',1,'']]]
+  ['instruments_0',['Financial instruments',['../group__instruments.html',1,'']]],
+  ['interpolations_20and_20corresponding_20traits_1',['1-D Interpolations and corresponding traits',['../group__interpolations.html',1,'']]]
 ];

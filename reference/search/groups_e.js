@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vanilla_20option_20engines_0',['Vanilla option engines',['../group__vanillaengines.html',1,'']]]
+  ['rate_20modelling_20framework_0',['Short-rate modelling framework',['../group__shortrate.html',1,'']]],
+  ['rates_1',['Currencies and FX rates',['../group__currencies.html',1,'']]]
 ];

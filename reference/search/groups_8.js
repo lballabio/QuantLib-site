@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['numeric_20limits_0',['Numeric limits',['../group__limit_macros.html',1,'']]],
-  ['numeric_20types_1',['Numeric types',['../group__types.html',1,'']]]
+  ['lattice_20methods_0',['Lattice methods',['../group__lattices.html',1,'']]],
+  ['limits_1',['Numeric limits',['../group__limit_macros.html',1,'']]]
 ];

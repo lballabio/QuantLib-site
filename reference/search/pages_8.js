@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_20history_0',['Version history',['../history.html',1,'']]]
+  ['known_20bugs_0',['Known Bugs',['../bug.html',1,'']]]
 ];

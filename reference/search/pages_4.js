@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['known_20bugs_0',['Known Bugs',['../bug.html',1,'']]]
+  ['features_0',['Deprecated Features',['../deprecated.html',1,'']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['financial_20instruments_0',['Financial instruments',['../group__instruments.html',1,'']]],
-  ['finite_2ddifferences_20framework_1',['Finite-differences framework',['../group__findiff.html',1,'']]],
-  ['forward_20option_20engines_2',['Forward option engines',['../group__forwardengines.html',1,'']]]
+  ['engines_0',['engines',['../group__asianengines.html',1,'Asian option engines'],['../group__barrierengines.html',1,'Barrier option engines'],['../group__basketengines.html',1,'Basket option engines'],['../group__capfloorengines.html',1,'Cap/floor engines'],['../group__cliquetengines.html',1,'Cliquet option engines'],['../group__forwardengines.html',1,'Forward option engines'],['../group__engines.html',1,'Pricing engines'],['../group__quantoengines.html',1,'Quanto option engines'],['../group__swaptionengines.html',1,'Swaption engines'],['../group__vanillaengines.html',1,'Vanilla option engines']]]
 ];

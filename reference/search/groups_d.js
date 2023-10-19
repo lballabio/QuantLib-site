@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['term_20structures_0',['Term structures',['../group__yieldtermstructures.html',1,'']]]
+  ['quantlib_20macros_0',['QuantLib macros',['../group__macros.html',1,'']]],
+  ['quanto_20option_20engines_1',['Quanto option engines',['../group__quantoengines.html',1,'']]]
 ];

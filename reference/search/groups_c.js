@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['short_2drate_20modelling_20framework_0',['Short-rate modelling framework',['../group__shortrate.html',1,'']]],
-  ['stochastic_20processes_1',['Stochastic processes',['../group__processes.html',1,'']]],
-  ['swaption_20engines_2',['Swaption engines',['../group__swaptionengines.html',1,'']]]
+  ['patterns_0',['Design patterns',['../group__patterns.html',1,'']]],
+  ['pricing_20engines_1',['Pricing engines',['../group__engines.html',1,'']]],
+  ['processes_2',['Stochastic processes',['../group__processes.html',1,'']]]
 ];

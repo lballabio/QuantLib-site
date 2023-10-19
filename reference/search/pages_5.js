@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quantlib_20license_0',['QuantLib License',['../license.html',1,'']]]
+  ['get_20quantlib_0',['Where to get QuantLib',['../where.html',1,'']]]
 ];

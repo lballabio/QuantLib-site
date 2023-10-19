@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['caveats_0',['Caveats',['../caveats.html',1,'']]],
-  ['contributors_1',['Contributors',['../group.html',1,'']]]
+  ['bugs_0',['Known Bugs',['../bug.html',1,'']]]
 ];

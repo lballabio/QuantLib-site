@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['lattice_20methods_0',['Lattice methods',['../group__lattices.html',1,'']]]
+  ['financial_20instruments_0',['Financial instruments',['../group__instruments.html',1,'']]],
+  ['finite_20differences_20framework_1',['Finite-differences framework',['../group__findiff.html',1,'']]],
+  ['floor_20engines_2',['Cap/floor engines',['../group__capfloorengines.html',1,'']]],
+  ['forward_20option_20engines_3',['Forward option engines',['../group__forwardengines.html',1,'']]],
+  ['framework_4',['framework',['../group__findiff.html',1,'Finite-differences framework'],['../group__mcarlo.html',1,'Monte Carlo framework'],['../group__shortrate.html',1,'Short-rate modelling framework']]],
+  ['fx_20rates_5',['Currencies and FX rates',['../group__currencies.html',1,'']]]
 ];

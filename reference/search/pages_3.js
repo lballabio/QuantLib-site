@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['installation_0',['Installation',['../install.html',1,'']]],
-  ['introduction_1',['Introduction',['../index.html',1,'']]]
+  ['deprecated_20features_0',['Deprecated Features',['../deprecated.html',1,'']]]
 ];

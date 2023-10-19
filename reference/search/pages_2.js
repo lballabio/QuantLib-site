@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['deprecated_20features_0',['Deprecated Features',['../deprecated.html',1,'']]]
+  ['caveats_0',['Caveats',['../caveats.html',1,'']]],
+  ['configuration_1',['User configuration',['../config.html',1,'']]],
+  ['contributors_2',['Contributors',['../group.html',1,'']]]
 ];
