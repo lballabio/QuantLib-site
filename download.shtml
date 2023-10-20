@@ -4,7 +4,7 @@ title: QuantLib Download Page
 ---
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.31.1 (July 24th, 2023).</p>
+<p>The latest QuantLib release is version 1.32 (October 20th, 2023).</p>
 <p>Source packages for <b>all platforms</b>
 are available from GitHub in both zip and tar.gz format
 for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
@@ -27,3 +27,30 @@ Eddelbuettel's PPA</a>.  <b>Other Linux distributions</b> might also
 package the library; check your sources.  Users not wanting to wait
 for the library to be packaged may acquire QuantLib from the
 download link above.</p>
+
+<h2 class="center">QuantLib in Python</h2>
+<p>Wheels are available for all common platforms and a few less common ones. To install QuantLib in your (virtual) environment, run:</p>
+<pre>
+  pip install QuantLib==1.32
+</pre>
+<p>and add</p>
+<pre>
+  import QuantLib as ql
+</pre>
+<p>to your Python code.</p>
+
+<h2 class="center">QuantLib in C#</h2>
+<p>Starting from version 1.32, an experimental QuantLib package is
+available from NuGet.  It should work on Windows and OS X, but it's
+not guaranteed to work on all Linux distributions; we'd be grateful
+for any reports, either of successes or failures.  To add QuantLib to
+your projects, run:</p>
+<pre>
+  dotnet add package QuantLib --version 1.32.0
+</pre>
+<p>or use any of the other methods listed <a href="https://www.nuget.org/packages/QuantLib/">on the NuGet page</a>, and add</p>
+<pre>
+  using QuantLib;
+</pre>
+<p>to your C# code.</p>
+
