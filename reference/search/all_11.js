@@ -27,7 +27,7 @@ var searchData=
   ['qrsolve_24',['qrSolve',['../namespace_quant_lib.html#a63bf7f4347aeae88bc5b10504c3c5a38',1,'QuantLib']]],
   ['qt_5f_25',['qt_',['../class_quant_lib_1_1_line_search.html#af784d8fad068c2fcb91696bd7a7346c3',1,'QuantLib::LineSearch']]],
   ['quantity_26',['Quantity',['../class_quant_lib_1_1_quantity.html',1,'QuantLib']]],
-  ['quantlib_27',['quantlib',['../namespace_quant_lib.html',1,'QuantLib'],['../where.html',1,'Where to get QuantLib']]],
+  ['quantlib_27',['QuantLib',['../namespace_quant_lib.html',1,'QuantLib'],['../where.html',1,'Where to get QuantLib']]],
   ['quantlib_20license_28',['QuantLib License',['../license.html',1,'']]],
   ['quantlib_20macros_29',['QuantLib macros',['../group__macros.html',1,'']]],
   ['quantlib_20releases_30',['QuantLib releases',['../where.html#download',1,'']]],

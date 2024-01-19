@@ -7,7 +7,7 @@ var searchData=
   ['temperatureboltzmann_4',['TemperatureBoltzmann',['../class_quant_lib_1_1_temperature_boltzmann.html',1,'QuantLib']]],
   ['temperaturecauchy_5',['TemperatureCauchy',['../class_quant_lib_1_1_temperature_cauchy.html',1,'QuantLib']]],
   ['temperatureveryfastannealing_6',['TemperatureVeryFastAnnealing',['../class_quant_lib_1_1_temperature_very_fast_annealing.html',1,'QuantLib']]],
-  ['templateimpl_7',['templateimpl',['../class_quant_lib_1_1_interpolation_1_1template_impl.html',1,'Interpolation::templateImpl&lt; I1, I2 &gt;'],['../class_quant_lib_1_1_interpolation2_d_1_1template_impl.html',1,'Interpolation2D::templateImpl&lt; I1, I2, M &gt;']]],
+  ['templateimpl_7',['templateImpl',['../class_quant_lib_1_1_interpolation2_d_1_1template_impl.html',1,'Interpolation2D::templateImpl&lt; I1, I2, M &gt;'],['../class_quant_lib_1_1_interpolation_1_1template_impl.html',1,'Interpolation::templateImpl&lt; I1, I2 &gt;']]],
   ['termstructure_8',['TermStructure',['../class_quant_lib_1_1_term_structure.html',1,'QuantLib']]],
   ['termstructureconsistentmodel_9',['TermStructureConsistentModel',['../class_quant_lib_1_1_term_structure_consistent_model.html',1,'QuantLib']]],
   ['termstructurefittingparameter_10',['TermStructureFittingParameter',['../class_quant_lib_1_1_term_structure_fitting_parameter.html',1,'QuantLib']]],

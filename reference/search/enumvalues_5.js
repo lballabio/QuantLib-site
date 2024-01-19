@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['factors_0',['Factors',['../class_quant_lib_1_1_sobol_brownian_generator.html#a0248f65bd948236b9f656ce6c5d65355a80d941f67956dd1f25b0c208987ddd31',1,'QuantLib::SobolBrownianGenerator']]],
+  ['factors_0',['Factors',['../class_quant_lib_1_1_sobol_brownian_generator_base.html#a0248f65bd948236b9f656ce6c5d65355a80d941f67956dd1f25b0c208987ddd31',1,'QuantLib::SobolBrownianGeneratorBase']]],
   ['federalreserve_1',['FederalReserve',['../class_quant_lib_1_1_united_states.html#abe41cfffd960e29a5d8b07be00aeda42a228b23f99e4ee39a78560e7c9ccd2d03',1,'QuantLib::UnitedStates']]],
   ['firstderivative_2',['FirstDerivative',['../class_quant_lib_1_1_cubic_interpolation.html#af3393571fa8a8daa4ee5c06613b26555aaf8392865aea8f24355012391183d9e9',1,'QuantLib::CubicInterpolation']]],
   ['floor_3',['Floor',['../class_quant_lib_1_1_rounding.html#a1d1cfd8ffb84e947f82999c682b666a7a94e95e4b8360855608dfad0b1f43a301',1,'QuantLib::Rounding']]],

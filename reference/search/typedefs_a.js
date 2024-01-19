@@ -10,6 +10,5 @@ var searchData=
   ['statistics_7',['Statistics',['../namespace_quant_lib.html#a235b6c8805adaa743cc845aae9c05946',1,'QuantLib']]],
   ['swaptionvolcube1_8',['SwaptionVolCube1',['../namespace_quant_lib.html#a2b7d16129d92c089f35bed7bbf0987b6',1,'QuantLib']]],
   ['swaptionvolcube1a_9',['SwaptionVolCube1a',['../namespace_quant_lib.html#ab2a348fecda31b2e4d555effa298ec4f',1,'QuantLib']]],
-  ['swaptionvolcube1x_10',['SwaptionVolCube1x',['../namespace_quant_lib.html#aea69a0e8cbb3df1e044b817e50e2734b',1,'QuantLib']]],
-  ['swaptionvolcube2_11',['SwaptionVolCube2',['../namespace_quant_lib.html#a9dbd922992b98e1a83cc0c7d57d4bb8f',1,'QuantLib']]]
+  ['swaptionvolcube2_10',['SwaptionVolCube2',['../namespace_quant_lib.html#a9dbd922992b98e1a83cc0c7d57d4bb8f',1,'QuantLib']]]
 ];
