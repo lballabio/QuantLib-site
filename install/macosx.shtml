@@ -55,7 +55,6 @@ need to pass additional environment variables to <tt>./configure</tt>
 (thanks to Albert Azout for pointing it out). Run:
 <pre>
 ./configure --with-boost-include=/opt/homebrew/include/ \
-            --with-boost-lib=/opt/homebrew/lib/ \
             --prefix=${HOME}/local/ \
             CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9' \
             LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
@@ -75,7 +74,6 @@ versions don't need it.
 you'll need to pass different environment variables. Run:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ \
             --prefix=${HOME}/local/ \
             CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6' \
             LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
@@ -87,7 +85,6 @@ and change your paths as needed.
 most environment variables, so the command can be simplified to:
 <pre>
 ./configure --with-boost-include=/usr/local/include/ \
-            --with-boost-lib=/usr/local/lib/ \
             --prefix=${HOME}/local/ \
             CXXFLAGS='-O2'
 </pre>

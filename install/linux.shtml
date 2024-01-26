@@ -74,10 +74,10 @@ location other than the default (<code>/usr/local</code>).</p>
 <p>This is also the step where you might have to
 tell <code>configure</code> about the location of your Boost
 installation, if that's not a standard one. If, for instance, you
-installed the Boost headers in <code>/home/foo/include</code>
-and the libraries in <code>/home/foo/lib</code>, execute:</p>
+installed the Boost headers in <code>/home/foo/include</code>,
+execute:</p>
 <pre>
-  ./configure --with-boost-include=/home/foo/include --with-boost-lib=/home/foo/lib
+  ./configure --with-boost-include=/home/foo/include
 </pre>
 <p>to setup the build correctly. Finally,</p>
 <pre>
