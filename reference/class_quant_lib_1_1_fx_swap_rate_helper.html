@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -270,7 +270,7 @@ TS *&#160;</td><td class="memItemRight" valign="bottom"><b>termStructure_</b></t
 <p><code>isFxBaseCurrencyCollateralCurrency</code> indicates if the base currency of the FX currency pair is the one used as collateral.</p>
 <p><code>calendar</code> is usually the joint calendar of the two currencies in the pair.</p>
 <p><code>tradingCalendar</code> can be used when the cross pairs don't include the currency of the business center (usually USD; the corresponding calendar is <code><a class="el" href="class_quant_lib_1_1_united_states.html" title="United States calendars.">UnitedStates</a></code>). If given, it will be used for adjusting the earliest settlement date and for setting the latest date. Due to FX spot market conventions, it is not sufficient to pass a <a class="el" href="class_quant_lib_1_1_joint_calendar.html" title="Joint calendar.">JointCalendar</a> with <a class="el" href="class_quant_lib_1_1_united_states.html" title="United States calendars.">UnitedStates</a> included as <code>calendar</code>; with regard the earliest date, this calendar is only used in case the spot date of the two currencies is not a US business day.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000185">Warning</a></b></dt><dd>The ON fx swaps can be achieved by setting <code>fixingDays</code> to 0 and using a tenor of '1d'. The same tenor should be used for TN swaps, with <code>fixingDays</code> set to 1. However, handling ON and TN swaps for cross rates without USD is not trivial and should be treated with caution. If today is a US holiday, ON trade is not possible. If tomorrow is a US Holiday, the ON trade will be at least two business days long in the other countries and the TN trade will not exist. In such cases, if this helper is used for curve construction, probably it is safer not to pass a trading calendar to the ON and TN helpers and provide fwdPoints that will yield proper level of discount factors. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000187">Warning</a></b></dt><dd>The ON fx swaps can be achieved by setting <code>fixingDays</code> to 0 and using a tenor of '1d'. The same tenor should be used for TN swaps, with <code>fixingDays</code> set to 1. However, handling ON and TN swaps for cross rates without USD is not trivial and should be treated with caution. If today is a US holiday, ON trade is not possible. If tomorrow is a US Holiday, the ON trade will be at least two business days long in the other countries and the TN trade will not exist. In such cases, if this helper is used for curve construction, probably it is safer not to pass a trading calendar to the ON and TN helpers and provide fwdPoints that will yield proper level of discount factors. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab5f37fe136acee4d7bfd196bcf8bb315" name="ab5f37fe136acee4d7bfd196bcf8bb315"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5f37fe136acee4d7bfd196bcf8bb315">&#9670;&#160;</a></span>impliedQuote()</h2>

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -142,7 +142,7 @@ $(function() {
 <div class="line">        <span class="comment">// unknown what fincad is using. this may affect accrued calculation</span></div>
 <div class="line">        Integer bondSettlementDays = 0;</div>
 <div class="line">        BusinessDayConvention bondBusinessDayConvention = Unadjusted;</div>
-<div class="line">        Real bondCleanPrice = 89.97693786;</div>
+<div class="line">        <a id="_a6" name="_a6"></a><a class="code hl_class" href="class_quant_lib_1_1_bond_1_1_price.html" title="Bond price information.">Bond::Price</a> bondCleanPrice(89.97693786, Bond::Price::Clean);</div>
 <div class="line">        Real bondRedemption = 100.0;</div>
 <div class="line">        Real faceAmount = 100.0;</div>
 <div class="line"> </div>
@@ -172,8 +172,8 @@ $(function() {
 <div class="line"><span class="comment">                                         bondCurve);</span></div>
 <div class="line"><span class="comment">        */</span></div>
 <div class="line"> </div>
-<div class="line">        <a id="_a6" name="_a6"></a><a class="code hl_class" href="class_quant_lib_1_1_schedule.html" title="Payment schedule.">Schedule</a> bondSchedule(bondDatedDate, bondMaturityDate,</div>
-<div class="line">                              <a id="_a7" name="_a7"></a><a class="code hl_class" href="class_quant_lib_1_1_period.html">Period</a>(bondCouponFrequency),</div>
+<div class="line">        <a id="_a7" name="_a7"></a><a class="code hl_class" href="class_quant_lib_1_1_schedule.html" title="Payment schedule.">Schedule</a> bondSchedule(bondDatedDate, bondMaturityDate,</div>
+<div class="line">                              <a id="_a8" name="_a8"></a><a class="code hl_class" href="class_quant_lib_1_1_period.html">Period</a>(bondCouponFrequency),</div>
 <div class="line">                              bondCalendar,bondBusinessDayConvention,</div>
 <div class="line">                              bondBusinessDayConvention,</div>
 <div class="line">                              DateGeneration::Backward,<span class="keyword">false</span>);</div>
@@ -207,7 +207,7 @@ $(function() {
 <div class="line">                                                       repoCompoundFreq));</div>
 <div class="line"> </div>
 <div class="line"> </div>
-<div class="line">        <a id="_a8" name="_a8"></a><a class="code hl_class" href="class_quant_lib_1_1_bond_forward.html" title="Forward contract on a bond">BondForward</a> bondFwd(repoSettlementDate, repoDeliveryDate, fwdType, dummyStrike,</div>
+<div class="line">        <a id="_a9" name="_a9"></a><a class="code hl_class" href="class_quant_lib_1_1_bond_forward.html" title="Forward contract on a bond">BondForward</a> bondFwd(repoSettlementDate, repoDeliveryDate, fwdType, dummyStrike,</div>
 <div class="line">                            repoSettlementDays, repoDayCountConvention, bondCalendar,</div>
 <div class="line">                            bondBusinessDayConvention, bond, repoCurve, repoCurve);</div>
 <div class="line"> </div>

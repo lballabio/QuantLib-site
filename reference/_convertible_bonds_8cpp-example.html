@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -212,7 +212,7 @@ $(function() {
 <div class="line">        <span class="keyword">auto</span> exercise = ext::make_shared&lt;EuropeanExercise&gt;(exerciseDate);</div>
 <div class="line">        <span class="keyword">auto</span> amExercise = ext::make_shared&lt;AmericanExercise&gt;(settlementDate, exerciseDate);</div>
 <div class="line"> </div>
-<div class="line">        Handle&lt;Quote&gt; underlyingH(ext::make_shared&lt;SimpleQuote&gt;(underlying));</div>
+<div class="line">        <span class="keyword">auto</span> underlyingH = makeQuoteHandle(underlying);</div>
 <div class="line"> </div>
 <div class="line">        Handle&lt;YieldTermStructure&gt; flatTermStructure(</div>
 <div class="line">            ext::make_shared&lt;FlatForward&gt;(settlementDate, riskFreeRate, dayCounter));</div>
@@ -228,7 +228,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        Size timeSteps = 801;</div>
 <div class="line"> </div>
-<div class="line">        Handle&lt;Quote&gt; creditSpread(ext::make_shared&lt;SimpleQuote&gt;(spreadRate));</div>
+<div class="line">        <span class="keyword">auto</span> creditSpread = makeQuoteHandle(spreadRate);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">auto</span> rate = ext::make_shared&lt;SimpleQuote&gt;(riskFreeRate);</div>
 <div class="line"> </div>

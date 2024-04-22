@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -179,8 +179,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="separator:a397546715bfc5aedd1d16dd202a19d4c inherit pub_methods_class_quant_lib_1_1_observable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Observer interface</h2></td></tr>
-<tr class="memitem:adbce0a6e66ae103610303e69a7ea68a6" id="r_adbce0a6e66ae103610303e69a7ea68a6"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbce0a6e66ae103610303e69a7ea68a6">rateCurve_</a></td></tr>
-<tr class="separator:adbce0a6e66ae103610303e69a7ea68a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a292ad9c54719780e61282ddeeac02410" id="r_a292ad9c54719780e61282ddeeac02410"><td class="memItemLeft" align="right" valign="top"><a id="a292ad9c54719780e61282ddeeac02410" name="a292ad9c54719780e61282ddeeac02410"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>paymentDate_</b></td></tr>
 <tr class="separator:a292ad9c54719780e61282ddeeac02410"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,30 +224,6 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>This method must be implemented in derived classes. An instance of Observer does not call this method directly: instead, it will be called by the observables the instance registered with when they need to notify any changes. </p>
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_observer.html#a99b02345a8a15d3c5ea2844a2253f510">Observer</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="adbce0a6e66ae103610303e69a7ea68a6" name="adbce0a6e66ae103610303e69a7ea68a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbce0a6e66ae103610303e69a7ea68a6">&#9670;&#160;</a></span>rateCurve_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt;<a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a>&gt; rateCurve_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated</a></b></dt><dd>Don't use this data member. If you need it, provide it in your derived class. Deprecated in version 1.29. </dd></dl>
 
 </div>
 </div>

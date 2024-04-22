@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -164,76 +164,344 @@ static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78"
 <tr class="memitem:a312584b5561d4195d9d303f36f8ff112" id="r_a312584b5561d4195d9d303f36f8ff112"><td class="memItemLeft" align="right" valign="top"><a id="a312584b5561d4195d9d303f36f8ff112" name="a312584b5561d4195d9d303f36f8ff112"></a>
 static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a312584b5561d4195d9d303f36f8ff112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25d378c648cf1dd7b8260dec02e527b" id="r_aa25d378c648cf1dd7b8260dec02e527b"><td class="memItemLeft" align="right" valign="top"><a id="aa25d378c648cf1dd7b8260dec02e527b" name="aa25d378c648cf1dd7b8260dec02e527b"></a>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+<tr class="separator:aa25d378c648cf1dd7b8260dec02e527b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac68cda2c2458f8b69cfa6fca2b1773ee" id="r_ac68cda2c2458f8b69cfa6fca2b1773ee"><td class="memItemLeft" align="right" valign="top"><a id="ac68cda2c2458f8b69cfa6fca2b1773ee" name="ac68cda2c2458f8b69cfa6fca2b1773ee"></a>
 static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bps</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ac68cda2c2458f8b69cfa6fca2b1773ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c73987074f0b19106b99a15323a242d" id="r_a5c73987074f0b19106b99a15323a242d"><td class="memItemLeft" align="right" valign="top"><a id="a5c73987074f0b19106b99a15323a242d" name="a5c73987074f0b19106b99a15323a242d"></a>
-static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>atmRate</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;())</td></tr>
-<tr class="separator:a5c73987074f0b19106b99a15323a242d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16546dd86afb46b71e3b4985103fc63f" id="r_a16546dd86afb46b71e3b4985103fc63f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a16546dd86afb46b71e3b4985103fc63f">atmRate</a> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice)</td></tr>
+<tr class="separator:a16546dd86afb46b71e3b4985103fc63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0986e19aabcba3c2ebe95fdfce4e676" id="r_aa0986e19aabcba3c2ebe95fdfce4e676"><td class="memItemLeft" align="right" valign="top"><a id="aa0986e19aabcba3c2ebe95fdfce4e676" name="aa0986e19aabcba3c2ebe95fdfce4e676"></a>
+static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>atmRate</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;discountCurve, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html">Bond::Price</a> price={})</td></tr>
+<tr class="separator:aa0986e19aabcba3c2ebe95fdfce4e676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Yield (a.k.a. Internal Rate of Return, i.e. IRR) functions</div></td></tr>
 <tr class="memitem:ae72f08287b616e362263c6e885c7edbb" id="r_ae72f08287b616e362263c6e885c7edbb"><td class="memItemLeft" align="right" valign="top"><a id="ae72f08287b616e362263c6e885c7edbb" name="ae72f08287b616e362263c6e885c7edbb"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ae72f08287b616e362263c6e885c7edbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad541e767c07c9acb712a3fd036046609" id="r_ad541e767c07c9acb712a3fd036046609"><td class="memItemLeft" align="right" valign="top"><a id="ad541e767c07c9acb712a3fd036046609" name="ad541e767c07c9acb712a3fd036046609"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ad541e767c07c9acb712a3fd036046609"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03febbb17ed40217ca8b4aedadce87bb" id="r_a03febbb17ed40217ca8b4aedadce87bb"><td class="memItemLeft" align="right" valign="top"><a id="a03febbb17ed40217ca8b4aedadce87bb" name="a03febbb17ed40217ca8b4aedadce87bb"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a03febbb17ed40217ca8b4aedadce87bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803693eff8d7412cab7e5f9f4a6ced85" id="r_a803693eff8d7412cab7e5f9f4a6ced85"><td class="memItemLeft" align="right" valign="top"><a id="a803693eff8d7412cab7e5f9f4a6ced85" name="a803693eff8d7412cab7e5f9f4a6ced85"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a803693eff8d7412cab7e5f9f4a6ced85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada2e8fc2aa2268cb4d9be49dca113b7" id="r_aada2e8fc2aa2268cb4d9be49dca113b7"><td class="memItemLeft" align="right" valign="top"><a id="aada2e8fc2aa2268cb4d9be49dca113b7" name="aada2e8fc2aa2268cb4d9be49dca113b7"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bps</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bps</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:aada2e8fc2aa2268cb4d9be49dca113b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af75112e58ce3e4d584e98ad08a9cb4fd" id="r_af75112e58ce3e4d584e98ad08a9cb4fd"><td class="memItemLeft" align="right" valign="top"><a id="af75112e58ce3e4d584e98ad08a9cb4fd" name="af75112e58ce3e4d584e98ad08a9cb4fd"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bps</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bps</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:af75112e58ce3e4d584e98ad08a9cb4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6158bad9d9039e0d7906f646d7609814" id="r_a6158bad9d9039e0d7906f646d7609814"><td class="memItemLeft" align="right" valign="top"><a id="a6158bad9d9039e0d7906f646d7609814" name="a6158bad9d9039e0d7906f646d7609814"></a>
-static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yield</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05, Bond::Price::Type priceType=Bond::Price::Clean)</td></tr>
+<tr class="memitem:a6158bad9d9039e0d7906f646d7609814" id="r_a6158bad9d9039e0d7906f646d7609814"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05, Bond::Price::Type priceType=Bond::Price::Clean)</td></tr>
 <tr class="separator:a6158bad9d9039e0d7906f646d7609814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113187dfe07e821b0abd9988e933db6e" id="r_a113187dfe07e821b0abd9988e933db6e"><td class="memTemplParams" colspan="2"><a id="a113187dfe07e821b0abd9988e933db6e" name="a113187dfe07e821b0abd9988e933db6e"></a>
-template&lt;typename Solver &gt; </td></tr>
-<tr class="memitem:a113187dfe07e821b0abd9988e933db6e"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>yield</b> (const Solver &amp;solver, const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05, Bond::Price::Type priceType=Bond::Price::Clean)</td></tr>
+<tr class="memitem:af8adf67a935af197d62cf809376cf363" id="r_af8adf67a935af197d62cf809376cf363"><td class="memItemLeft" align="right" valign="top"><a id="af8adf67a935af197d62cf809376cf363" name="af8adf67a935af197d62cf809376cf363"></a>
+static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yield</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html">Bond::Price</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05)</td></tr>
+<tr class="separator:af8adf67a935af197d62cf809376cf363"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113187dfe07e821b0abd9988e933db6e" id="r_a113187dfe07e821b0abd9988e933db6e"><td class="memTemplParams" colspan="2">template&lt;typename Solver &gt; </td></tr>
+<tr class="memitem:a113187dfe07e821b0abd9988e933db6e"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a113187dfe07e821b0abd9988e933db6e">yield</a> (const Solver &amp;solver, const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05, Bond::Price::Type priceType=Bond::Price::Clean)</td></tr>
 <tr class="separator:a113187dfe07e821b0abd9988e933db6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bb0e74fa0baca3e43a7093f318326c" id="r_a10bb0e74fa0baca3e43a7093f318326c"><td class="memTemplParams" colspan="2"><a id="a10bb0e74fa0baca3e43a7093f318326c" name="a10bb0e74fa0baca3e43a7093f318326c"></a>
+template&lt;typename Solver &gt; </td></tr>
+<tr class="memitem:a10bb0e74fa0baca3e43a7093f318326c"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>yield</b> (const Solver &amp;solver, const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html">Bond::Price</a> price, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.05)</td></tr>
+<tr class="separator:a10bb0e74fa0baca3e43a7093f318326c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa08110bee1ad217cf07d88b5ca525a5d" id="r_aa08110bee1ad217cf07d88b5ca525a5d"><td class="memItemLeft" align="right" valign="top"><a id="aa08110bee1ad217cf07d88b5ca525a5d" name="aa08110bee1ad217cf07d88b5ca525a5d"></a>
-static <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, Duration::Type type=Duration::Modified, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, Duration::Type type=Duration::Modified, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:aa08110bee1ad217cf07d88b5ca525a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759f1d35b136a7edae2bb8e17d84c58f" id="r_a759f1d35b136a7edae2bb8e17d84c58f"><td class="memItemLeft" align="right" valign="top"><a id="a759f1d35b136a7edae2bb8e17d84c58f" name="a759f1d35b136a7edae2bb8e17d84c58f"></a>
-static <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, Duration::Type type=Duration::Modified, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga14fb8fca43a68f4168654e1f9f7e22f7">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>duration</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, Duration::Type type=Duration::Modified, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a759f1d35b136a7edae2bb8e17d84c58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad394820c22d967a3a97a734e1386e989" id="r_ad394820c22d967a3a97a734e1386e989"><td class="memItemLeft" align="right" valign="top"><a id="ad394820c22d967a3a97a734e1386e989" name="ad394820c22d967a3a97a734e1386e989"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convexity</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convexity</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ad394820c22d967a3a97a734e1386e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3cb571a101f89b46d05515fd4990a41" id="r_ab3cb571a101f89b46d05515fd4990a41"><td class="memItemLeft" align="right" valign="top"><a id="ab3cb571a101f89b46d05515fd4990a41" name="ab3cb571a101f89b46d05515fd4990a41"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convexity</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>convexity</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ab3cb571a101f89b46d05515fd4990a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a459861a9569599f4cc27167f0f8c3cef" id="r_a459861a9569599f4cc27167f0f8c3cef"><td class="memItemLeft" align="right" valign="top"><a id="a459861a9569599f4cc27167f0f8c3cef" name="a459861a9569599f4cc27167f0f8c3cef"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>basisPointValue</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>basisPointValue</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a459861a9569599f4cc27167f0f8c3cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f55c70337d4c93a5a6cbe262be0c94" id="r_af2f55c70337d4c93a5a6cbe262be0c94"><td class="memItemLeft" align="right" valign="top"><a id="af2f55c70337d4c93a5a6cbe262be0c94" name="af2f55c70337d4c93a5a6cbe262be0c94"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>basisPointValue</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>basisPointValue</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:af2f55c70337d4c93a5a6cbe262be0c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac89d7a397ebf318e3db1908276af9478" id="r_ac89d7a397ebf318e3db1908276af9478"><td class="memItemLeft" align="right" valign="top"><a id="ac89d7a397ebf318e3db1908276af9478" name="ac89d7a397ebf318e3db1908276af9478"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yieldValueBasisPoint</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;yield, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yieldValueBasisPoint</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const <a class="el" href="class_quant_lib_1_1_interest_rate.html">InterestRate</a> &amp;<a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:ac89d7a397ebf318e3db1908276af9478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e708b10c9cf504733f04135698f485" id="r_a00e708b10c9cf504733f04135698f485"><td class="memItemLeft" align="right" valign="top"><a id="a00e708b10c9cf504733f04135698f485" name="a00e708b10c9cf504733f04135698f485"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yieldValueBasisPoint</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>yieldValueBasisPoint</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> <a class="el" href="#a6158bad9d9039e0d7906f646d7609814">yield</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:a00e708b10c9cf504733f04135698f485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Z-spread functions</div></td></tr>
 <tr class="memitem:aa4abf524ff6366dde6fbd3d8d25d466f" id="r_aa4abf524ff6366dde6fbd3d8d25d466f"><td class="memItemLeft" align="right" valign="top"><a id="aa4abf524ff6366dde6fbd3d8d25d466f" name="aa4abf524ff6366dde6fbd3d8d25d466f"></a>
-static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discount, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> zSpread, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cleanPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discount, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> <a class="el" href="#af8c4cd03c7bdadaff911f3eab6348b4d">zSpread</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
 <tr class="separator:aa4abf524ff6366dde6fbd3d8d25d466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8c4cd03c7bdadaff911f3eab6348b4d" id="r_af8c4cd03c7bdadaff911f3eab6348b4d"><td class="memItemLeft" align="right" valign="top"><a id="af8c4cd03c7bdadaff911f3eab6348b4d" name="af8c4cd03c7bdadaff911f3eab6348b4d"></a>
-static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zSpread</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.0)</td></tr>
+<tr class="memitem:a2c9035d902ef5917586fc67f5d998e24" id="r_a2c9035d902ef5917586fc67f5d998e24"><td class="memItemLeft" align="right" valign="top"><a id="a2c9035d902ef5917586fc67f5d998e24" name="a2c9035d902ef5917586fc67f5d998e24"></a>
+static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyPrice</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discount, <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> <a class="el" href="#af8c4cd03c7bdadaff911f3eab6348b4d">zSpread</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>())</td></tr>
+<tr class="separator:a2c9035d902ef5917586fc67f5d998e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c4cd03c7bdadaff911f3eab6348b4d" id="r_af8c4cd03c7bdadaff911f3eab6348b4d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8c4cd03c7bdadaff911f3eab6348b4d">zSpread</a> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> cleanPrice, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.0)</td></tr>
 <tr class="separator:af8c4cd03c7bdadaff911f3eab6348b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98263a13b6f1a834f7954702f7f0ba2e" id="r_a98263a13b6f1a834f7954702f7f0ba2e"><td class="memItemLeft" align="right" valign="top"><a id="a98263a13b6f1a834f7954702f7f0ba2e" name="a98263a13b6f1a834f7954702f7f0ba2e"></a>
+static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zSpread</b> (const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;bond, <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html">Bond::Price</a> price, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.0)</td></tr>
+<tr class="separator:a98263a13b6f1a834f7954702f7f0ba2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> adapters of <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions">CashFlows</a> functions. </p>
 <p>See <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions">CashFlows</a> for functions' documentation.</p>
 <p>These adapters calls into <a class="el" href="class_quant_lib_1_1_cash_flows.html" title="cashflow-analysis functions">CashFlows</a> functions passing as input the <a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> cashflows, the dirty price (i.e. npv) calculated from clean price, the bond settlement date (unless another date is given), zero ex-dividend days, and excluding any cashflow on the settlement date.</p>
 <p>Prices are always clean, as per market convention. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a16546dd86afb46b71e3b4985103fc63f" name="a16546dd86afb46b71e3b4985103fc63f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16546dd86afb46b71e3b4985103fc63f">&#9670;&#160;</a></span>atmRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> atmRate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bond</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>discountCurve</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>settlementDate</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>cleanPrice</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated</a></b></dt><dd>Use the overload taking a <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html" title="Bond price information.">Bond::Price</a> argument instead. Deprecated in version 1.34. </dd></dl>
+
+</div>
+</div>
+<a id="a6158bad9d9039e0d7906f646d7609814" name="a6158bad9d9039e0d7906f646d7609814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6158bad9d9039e0d7906f646d7609814">&#9670;&#160;</a></span>yield() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bond</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>price</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dayCounter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a></td>          <td class="paramname"><span class="paramname"><em>compounding</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a></td>          <td class="paramname"><span class="paramname"><em>frequency</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>settlementDate</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>()</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>accuracy</em><span class="paramdefsep"> = </span><span class="paramdefval">1.0e-10</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a></td>          <td class="paramname"><span class="paramname"><em>maxIterations</em><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a></td>          <td class="paramname"><span class="paramname"><em>guess</em><span class="paramdefsep"> = </span><span class="paramdefval">0.05</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Bond::Price::Type</td>          <td class="paramname"><span class="paramname"><em>priceType</em><span class="paramdefsep"> = </span><span class="paramdefval">Bond::Price::Clean</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated</a></b></dt><dd>Use the overload taking a <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html" title="Bond price information.">Bond::Price</a> argument instead. Deprecated in version 1.34. </dd></dl>
+
+</div>
+</div>
+<a id="a113187dfe07e821b0abd9988e933db6e" name="a113187dfe07e821b0abd9988e933db6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a113187dfe07e821b0abd9988e933db6e">&#9670;&#160;</a></span>yield() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Solver &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> yield </td>
+          <td>(</td>
+          <td class="paramtype">const Solver &amp;</td>          <td class="paramname"><span class="paramname"><em>solver</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bond</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>price</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dayCounter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a></td>          <td class="paramname"><span class="paramname"><em>compounding</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a></td>          <td class="paramname"><span class="paramname"><em>frequency</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>settlementDate</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>()</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>accuracy</em><span class="paramdefsep"> = </span><span class="paramdefval">1.0e-10</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a></td>          <td class="paramname"><span class="paramname"><em>guess</em><span class="paramdefsep"> = </span><span class="paramdefval">0.05</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Bond::Price::Type</td>          <td class="paramname"><span class="paramname"><em>priceType</em><span class="paramdefsep"> = </span><span class="paramdefval">Bond::Price::Clean</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated</a></b></dt><dd>Use the overload taking a <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html" title="Bond price information.">Bond::Price</a> argument instead. Deprecated in version 1.34. </dd></dl>
+
+</div>
+</div>
+<a id="af8c4cd03c7bdadaff911f3eab6348b4d" name="af8c4cd03c7bdadaff911f3eab6348b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8c4cd03c7bdadaff911f3eab6348b4d">&#9670;&#160;</a></span>zSpread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> zSpread </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_bond.html">Bond</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>bond</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>cleanPrice</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname">, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dayCounter</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a></td>          <td class="paramname"><span class="paramname"><em>compounding</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a></td>          <td class="paramname"><span class="paramname"><em>frequency</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>settlementDate</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>()</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>accuracy</em><span class="paramdefsep"> = </span><span class="paramdefval">1.0e-10</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a></td>          <td class="paramname"><span class="paramname"><em>maxIterations</em><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a></td>          <td class="paramname"><span class="paramname"><em>guess</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated</a></b></dt><dd>Use the overload taking a <a class="el" href="class_quant_lib_1_1_bond_1_1_price.html" title="Bond price information.">Bond::Price</a> argument instead. Deprecated in version 1.34. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

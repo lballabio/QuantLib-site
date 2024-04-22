@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -155,7 +155,7 @@ $(function() {
 <div class="line">        vector&lt;ext::shared_ptr&lt;RateHelper&gt;&gt; swapHelpers;</div>
 <div class="line">        <span class="keywordflow">for</span>(Size i=0; i&lt;<span class="keyword">sizeof</span>(tenorsSwapMkt)/<span class="keyword">sizeof</span>(Size); i++)</div>
 <div class="line">            swapHelpers.push_back(ext::make_shared&lt;SwapRateHelper&gt;(</div>
-<div class="line">                Handle&lt;Quote&gt;(ext::make_shared&lt;SimpleQuote&gt;(ratesSwapmkt[i])),</div>
+<div class="line">                    makeQuoteHandle(ratesSwapmkt[i]),</div>
 <div class="line">                    tenorsSwapMkt[i] * Years,</div>
 <div class="line">                    <a class="code hl_class" href="class_quant_lib_1_1_t_a_r_g_e_t.html" title="TARGET calendar">TARGET</a>(),</div>
 <div class="line">                    Quarterly,</div>

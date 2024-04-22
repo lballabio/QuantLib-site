@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -190,7 +190,7 @@ static <a class="el" href="class_quant_lib_1_1_settings.html">Settings</a> &amp;
 <p>Client code can inspect the evaluation date, as in: </p><div class="fragment"><div class="line"><a class="code hl_class" href="class_quant_lib_1_1_date.html" title="Concrete date class.">Date</a> d = <a class="code hl_function" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance">Settings::instance</a>().evaluationDate();</div>
 </div><!-- fragment --><p> where today's date is returned if the evaluation date is set to the null date (its default value;) can set it to a new value, as in: </p><div class="fragment"><div class="line"><a class="code hl_function" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance">Settings::instance</a>().evaluationDate() = d;</div>
 </div><!-- fragment --><p> and can register with it, as in: </p><div class="fragment"><div class="line">registerWith(<a class="code hl_function" href="class_quant_lib_1_1_singleton.html#ab7455b7e1235d292c444095842349291" title="access to the unique instance">Settings::instance</a>().<a class="code hl_function" href="#a95055e9410ed0465a5f30d3ffc90c1d3" title="the date at which pricing is to be performed.">evaluationDate</a>());</div>
-</div><!-- fragment --><p> to be notified when it is set to a new value. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000157">Warning</a></b></dt><dd>a notification is not sent when the evaluation date changes for natural causes&mdash;i.e., a date was not explicitly set (which results in today's date being used for pricing) and the current date changes as the clock strikes midnight. </dd></dl>
+</div><!-- fragment --><p> to be notified when it is set to a new value. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000159">Warning</a></b></dt><dd>a notification is not sent when the evaluation date changes for natural causes&mdash;i.e., a date was not explicitly set (which results in today's date being used for pricing) and the current date changes as the clock strikes midnight. </dd></dl>
 
 </div>
 </div>

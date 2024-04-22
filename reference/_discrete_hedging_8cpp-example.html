@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -369,8 +369,7 @@ Black-Scholes". It shows the use of the Monte Carlo framework.</p>
 <div class="line">    <a id="_a4" name="_a4"></a><a class="code hl_class" href="class_quant_lib_1_1_calendar.html" title="calendar class">Calendar</a> calendar = <a id="_a5" name="_a5"></a><a class="code hl_class" href="class_quant_lib_1_1_t_a_r_g_e_t.html" title="TARGET calendar">TARGET</a>();</div>
 <div class="line">    <a id="_a6" name="_a6"></a><a class="code hl_class" href="class_quant_lib_1_1_date.html" title="Concrete date class.">Date</a> today = Date::todaysDate();</div>
 <div class="line">    <a id="_a7" name="_a7"></a><a class="code hl_class" href="class_quant_lib_1_1_day_counter.html" title="day counter class">DayCounter</a> dayCount = <a id="_a8" name="_a8"></a><a class="code hl_class" href="class_quant_lib_1_1_actual365_fixed.html" title="Actual/365 (Fixed) day count convention.">Actual365Fixed</a>();</div>
-<div class="line">    Handle&lt;Quote&gt; stateVariable(</div>
-<div class="line">                          ext::make_shared&lt;SimpleQuote&gt;(s0_));</div>
+<div class="line">    <span class="keyword">auto</span> stateVariable = makeQuoteHandle(s0_);</div>
 <div class="line">    Handle&lt;YieldTermStructure&gt; riskFreeRate(</div>
 <div class="line">                          ext::make_shared&lt;FlatForward&gt;(today, r_, dayCount));</div>
 <div class="line">    Handle&lt;YieldTermStructure&gt; dividendYield(</div>

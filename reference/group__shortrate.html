@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -158,7 +158,7 @@ Single-factor models</h1>
 <h1><a class="anchor" id="calibration"></a>
 Calibration</h1>
 <p>The class CalibrationHelper is a base class that facilitates the instantiation of market instruments used for calibration. It has a method marketValue() that gives the market price using a Black formula, and a modelValue() method that gives the price according to a model</p>
-<p>Derived classed are <a class="el" href="class_quant_lib_1_1_cap_helper.html" title="calibration helper for ATM cap">QuantLib::CapHelper</a> and <a class="el" href="class_quant_lib_1_1_swaption_helper.html" title="calibration helper for ATM swaption">QuantLib::SwaptionHelper</a>.</p>
+<p>Derived classed are <a class="el" href="class_quant_lib_1_1_cap_helper.html" title="calibration helper for ATM cap">QuantLib::CapHelper</a> and <a class="el" href="class_quant_lib_1_1_swaption_helper.html" title="calibration helper for interest-rate swaptions">QuantLib::SwaptionHelper</a>.</p>
 <p>For the calibration itself, you must choose an optimization method that will find constant parameters such that the value:  </p><p class="formulaDsp">
 \[
     V = \sqrt{\sum_{i=1}^{n} \frac{(T_i - M_i)^2}{M_i}},

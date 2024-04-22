@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>iborIndex</b> () const</td></tr>
 <tr class="separator:a7ed9a5fd3bb32e6d559f4c596c361161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">FloatingRateCoupon interface</div></td></tr>
+<tr class="memitem:af535c37d29395800f6afe4ed0e525c4d" id="r_af535c37d29395800f6afe4ed0e525c4d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af535c37d29395800f6afe4ed0e525c4d">fixingDate</a> () const override</td></tr>
+<tr class="memdesc:af535c37d29395800f6afe4ed0e525c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixing date  <br /></td></tr>
+<tr class="separator:af535c37d29395800f6afe4ed0e525c4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4400b16849af40c31a143b9dc6b5d153" id="r_a4400b16849af40c31a143b9dc6b5d153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4400b16849af40c31a143b9dc6b5d153">indexFixing</a> () const override</td></tr>
 <tr class="memdesc:a4400b16849af40c31a143b9dc6b5d153"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixing of the underlying index  <br /></td></tr>
 <tr class="separator:a4400b16849af40c31a143b9dc6b5d153"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,9 +167,6 @@ const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_interest_rate_
 <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fixingDays</b> () const</td></tr>
 <tr class="memdesc:a3827f28c6ec62cd6e7ce8d6065c0f09b inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixing days <br /></td></tr>
 <tr class="separator:a3827f28c6ec62cd6e7ce8d6065c0f09b inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142e21d886d3cc708b215912d81a5aa1 inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon" id="r_a142e21d886d3cc708b215912d81a5aa1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a142e21d886d3cc708b215912d81a5aa1">fixingDate</a> () const</td></tr>
-<tr class="memdesc:a142e21d886d3cc708b215912d81a5aa1 inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">fixing date  <br /></td></tr>
-<tr class="separator:a142e21d886d3cc708b215912d81a5aa1 inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78f208a97efd10cf54cdf25431be64cf inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon" id="r_a78f208a97efd10cf54cdf25431be64cf"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gearing</b> () const</td></tr>
 <tr class="memdesc:a78f208a97efd10cf54cdf25431be64cf inherit pub_methods_class_quant_lib_1_1_floating_rate_coupon"><td class="mdescLeft">&#160;</td><td class="mdescRight">index gearing, i.e. multiplicative coefficient for the index <br /></td></tr>
@@ -395,6 +395,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Coupon paying a Libor-type index </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af535c37d29395800f6afe4ed0e525c4d" name="af535c37d29395800f6afe4ed0e525c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af535c37d29395800f6afe4ed0e525c4d">&#9670;&#160;</a></span>fixingDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quant_lib_1_1_date.html">Date</a> fixingDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>fixing date </p>
+
+<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_floating_rate_coupon.html#a142e21d886d3cc708b215912d81a5aa1">FloatingRateCoupon</a>.</p>
+
+</div>
+</div>
 <a id="a4400b16849af40c31a143b9dc6b5d153" name="a4400b16849af40c31a143b9dc6b5d153"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4400b16849af40c31a143b9dc6b5d153">&#9670;&#160;</a></span>indexFixing()</h2>
 

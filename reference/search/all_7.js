@@ -75,7 +75,7 @@ var searchData=
   ['generalizedornsteinuhlenbeckprocess_72',['GeneralizedOrnsteinUhlenbeckProcess',['../class_quant_lib_1_1_generalized_ornstein_uhlenbeck_process.html',1,'QuantLib']]],
   ['generallinearleastsquares_73',['GeneralLinearLeastSquares',['../class_quant_lib_1_1_general_linear_least_squares.html',1,'QuantLib']]],
   ['generalstatistics_74',['GeneralStatistics',['../class_quant_lib_1_1_general_statistics.html',1,'QuantLib']]],
-  ['genericcpi_75',['GenericCPI',['../class_quant_lib_1_1_generic_c_p_i.html',1,'GenericCPI'],['../class_quant_lib_1_1_generic_c_p_i.html#ae8f2ef60aa360893579cf15f1e8d3738',1,'QuantLib::GenericCPI::GenericCPI()']]],
+  ['genericcpi_75',['GenericCPI',['../class_quant_lib_1_1_generic_c_p_i.html',1,'QuantLib']]],
   ['genericearlyexerciseoptimization_76',['genericEarlyExerciseOptimization',['../namespace_quant_lib.html#a026b0798798feb04aba0e7a8e95dc0b9',1,'QuantLib']]],
   ['genericengine_77',['GenericEngine',['../class_quant_lib_1_1_generic_engine.html',1,'QuantLib']]],
   ['genericengine_3c_20arguments_2c_20results_20_3e_78',['GenericEngine&lt; Arguments, Results &gt;',['../class_quant_lib_1_1_generic_engine.html',1,'QuantLib']]],

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -122,9 +122,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad57dbdd919727139a74a6fff5cf8b4fa" id="r_ad57dbdd919727139a74a6fff5cf8b4fa"><td class="memItemLeft" align="right" valign="top"><a id="ad57dbdd919727139a74a6fff5cf8b4fa" name="ad57dbdd919727139a74a6fff5cf8b4fa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Swaption</b> (ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt; swap, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; &amp;exercise, Settlement::Type delivery=Settlement::Physical, Settlement::Method settlementMethod=Settlement::PhysicalOTC)</td></tr>
-<tr class="separator:ad57dbdd919727139a74a6fff5cf8b4fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d724a817e878a0a99d6491868850278" id="r_a4d724a817e878a0a99d6491868850278"><td class="memItemLeft" align="right" valign="top"><a id="a4d724a817e878a0a99d6491868850278" name="a4d724a817e878a0a99d6491868850278"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Swaption</b> (ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_fixed_vs_floating_swap.html">FixedVsFloatingSwap</a> &gt; swap, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; &amp;exercise, Settlement::Type delivery=Settlement::Physical, Settlement::Method settlementMethod=Settlement::PhysicalOTC)</td></tr>
+<tr class="separator:a4d724a817e878a0a99d6491868850278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Observer interface</div></td></tr>
 <tr class="memitem:a492a6d8c60085fa069c57c5229489167" id="r_a492a6d8c60085fa069c57c5229489167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492a6d8c60085fa069c57c5229489167">deepUpdate</a> () override</td></tr>
 <tr class="separator:a492a6d8c60085fa069c57c5229489167"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,8 +229,10 @@ Settlement::Method&#160;</td><td class="memItemRight" valign="bottom"><b>settlem
 <tr class="memitem:a7eba997f6dc7f9634f41ead3e4401d70" id="r_a7eba997f6dc7f9634f41ead3e4401d70"><td class="memItemLeft" align="right" valign="top"><a id="a7eba997f6dc7f9634f41ead3e4401d70" name="a7eba997f6dc7f9634f41ead3e4401d70"></a>
 <a class="el" href="class_quant_lib_1_1_swap.html#a1d1cfd8ffb84e947f82999c682b666a7">Swap::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const</td></tr>
 <tr class="separator:a7eba997f6dc7f9634f41ead3e4401d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aedc45c13c7a794bed72cf06656b5c4" id="r_a5aedc45c13c7a794bed72cf06656b5c4"><td class="memItemLeft" align="right" valign="top"><a id="a5aedc45c13c7a794bed72cf06656b5c4" name="a5aedc45c13c7a794bed72cf06656b5c4"></a>
-const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>underlyingSwap</b> () const</td></tr>
+<tr class="memitem:a8dbde4db4fdf58b4f4a67371a177ba7a" id="r_a8dbde4db4fdf58b4f4a67371a177ba7a"><td class="memItemLeft" align="right" valign="top"><a id="a8dbde4db4fdf58b4f4a67371a177ba7a" name="a8dbde4db4fdf58b4f4a67371a177ba7a"></a>
+const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_fixed_vs_floating_swap.html">FixedVsFloatingSwap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>underlying</b> () const</td></tr>
+<tr class="separator:a8dbde4db4fdf58b4f4a67371a177ba7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5aedc45c13c7a794bed72cf06656b5c4" id="r_a5aedc45c13c7a794bed72cf06656b5c4"><td class="memItemLeft" align="right" valign="top">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5aedc45c13c7a794bed72cf06656b5c4">underlyingSwap</a> () const</td></tr>
 <tr class="separator:a5aedc45c13c7a794bed72cf06656b5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf11d80eec591439f79597e4c34df07" id="r_adcf11d80eec591439f79597e4c34df07"><td class="memItemLeft" align="right" valign="top"><a id="adcf11d80eec591439f79597e4c34df07" name="adcf11d80eec591439f79597e4c34df07"></a>
 <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a>&#160;</td><td class="memItemRight" valign="bottom"><b>impliedVolatility</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> price, const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;discountCurve, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> guess, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-4, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> maxEvaluations=100, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> minVol=1.0e-7, <a class="el" href="group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3">Volatility</a> maxVol=4.0, VolatilityType type=ShiftedLognormal, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> displacement=0.0) const</td></tr>
@@ -296,6 +298,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Swaption class </p>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000076">Warning</a></b></dt><dd>it's possible to pass an overnight-indexed swap to the constructor, but the only engine to fully support it is <a class="el" href="class_quant_lib_1_1_black_swaption_engine.html" title="Shifted Lognormal Black-formula swaption engine.">BlackSwaptionEngine</a>; other engines will treat it as a vanilla swap. This is at best a decent proxy, at worst simply wrong. Use with caution.</dd></dl>
 <dl class="test"><dt><b><a class="el" href="test.html#_test000027">Tests</a></b></dt><dd><ul>
 <li>the correctness of the returned value is tested by checking that the price of a payer (resp. receiver) swaption decreases (resp. increases) with the strike.</li>
 <li>the correctness of the returned value is tested by checking that the price of a payer (resp. receiver) swaption increases (resp. decreases) with the spread.</li>
@@ -389,6 +392,24 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <p>When a derived argument structure is defined for an instrument, this method should be overridden to fill it. This is mandatory in case a pricing engine is used. </p>
 
 <p>Reimplemented from <a class="el" href="class_quant_lib_1_1_option.html#a29d098166c6f2ed9f3810fdc6001add3">Option</a>.</p>
+
+</div>
+</div>
+<a id="a5aedc45c13c7a794bed72cf06656b5c4" name="a5aedc45c13c7a794bed72cf06656b5c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5aedc45c13c7a794bed72cf06656b5c4">&#9670;&#160;</a></span>underlyingSwap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_vanilla_swap.html">VanillaSwap</a> &gt; &amp; underlyingSwap </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>Use the Swaption::underlying method instead. Deprecated in version 1.34. </dd></dl>
 
 </div>
 </div>

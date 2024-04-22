@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000032">Warning</a></b></dt><dd><code>registerAsObserver</code> is left as a backdoor in case the programmer cannot guarantee that the object pointed to will remain alive for the whole lifetime of the handle&mdash;namely, it should be set to <code>false</code> when the passed shared pointer does not own the pointee (this should only happen in a controlled environment, so that the programmer is aware of it). Failure to do so can very likely result in a program crash. If the programmer does want the handle to register as observer of such a shared pointer, it is his responsibility to ensure that the handle gets destroyed before the pointed object does. </dd></dl>
 </div></td></tr>
-<tr class="memitem:a2fa64e182c759f289e79750ebe986f02" id="r_a2fa64e182c759f289e79750ebe986f02"><td class="memItemLeft" align="right" valign="top"><a id="a2fa64e182c759f289e79750ebe986f02" name="a2fa64e182c759f289e79750ebe986f02"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (const ext::shared_ptr&lt; T &gt; &amp;p, bool registerAsObserver=true)</td></tr>
-<tr class="separator:a2fa64e182c759f289e79750ebe986f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4329d2733d100a3128ab0d7945300a85" id="r_a4329d2733d100a3128ab0d7945300a85"><td class="memItemLeft" align="right" valign="top"><a id="a4329d2733d100a3128ab0d7945300a85" name="a4329d2733d100a3128ab0d7945300a85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Handle</b> (ext::shared_ptr&lt; T &gt; p, bool registerAsObserver=true)</td></tr>
+<tr class="separator:a4329d2733d100a3128ab0d7945300a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3a8e3462e3e37b0a3644d1395a2199" id="r_ace3a8e3462e3e37b0a3644d1395a2199"><td class="memItemLeft" align="right" valign="top"><a id="ace3a8e3462e3e37b0a3644d1395a2199" name="ace3a8e3462e3e37b0a3644d1395a2199"></a>
 const ext::shared_ptr&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>currentLink</b> () const</td></tr>
 <tr class="memdesc:ace3a8e3462e3e37b0a3644d1395a2199"><td class="mdescLeft">&#160;</td><td class="mdescRight">dereferencing <br /></td></tr>

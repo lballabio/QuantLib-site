@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -167,10 +167,8 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fcc53893b7eaf9da5947fed9e834d28" id="r_a1fcc53893b7eaf9da5947fed9e834d28"><td class="memItemLeft" align="right" valign="top"><a id="a1fcc53893b7eaf9da5947fed9e834d28" name="a1fcc53893b7eaf9da5947fed9e834d28"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>InflationIndex</b> (std::string familyName, <a class="el" href="class_quant_lib_1_1_region.html">Region</a> region, bool revised, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;availabilitiyLag, <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> currency)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>InflationIndex</b> (std::string familyName, <a class="el" href="class_quant_lib_1_1_region.html">Region</a> region, bool revised, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> <a class="el" href="#adbf0d54ac5dbc652d38513b587cbc100">frequency</a>, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;availabilitiyLag, <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> currency)</td></tr>
 <tr class="separator:a1fcc53893b7eaf9da5947fed9e834d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9097e92305a13033d7a4e3c7e8c6f8" id="r_abd9097e92305a13033d7a4e3c7e8c6f8"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd9097e92305a13033d7a4e3c7e8c6f8">InflationIndex</a> (std::string familyName, <a class="el" href="class_quant_lib_1_1_region.html">Region</a> region, bool revised, bool <a class="el" href="#a68a688985c4a7997d3c19d3842f5eba1">interpolated</a>, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;availabilitiyLag, <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> currency)</td></tr>
-<tr class="separator:abd9097e92305a13033d7a4e3c7e8c6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Index interface</div></td></tr>
 <tr class="memitem:aa4f4ba750a08765e64da2d0bd473944a" id="r_aa4f4ba750a08765e64da2d0bd473944a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4f4ba750a08765e64da2d0bd473944a">name</a> () const override</td></tr>
 <tr class="memdesc:aa4f4ba750a08765e64da2d0bd473944a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the index.  <br /></td></tr>
@@ -267,8 +265,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>revised_</b></td></tr
 <tr class="memitem:a9b8209f252ea1344d7fa6de58bc1102a" id="r_a9b8209f252ea1344d7fa6de58bc1102a"><td class="memItemLeft" align="right" valign="top"><a id="a9b8209f252ea1344d7fa6de58bc1102a" name="a9b8209f252ea1344d7fa6de58bc1102a"></a>
 <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currency_</b></td></tr>
 <tr class="separator:a9b8209f252ea1344d7fa6de58bc1102a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7fbb8c75d259f17eaeadfea54ba307d" id="r_ae7fbb8c75d259f17eaeadfea54ba307d"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7fbb8c75d259f17eaeadfea54ba307d">interpolated_</a> = false</td></tr>
-<tr class="separator:ae7fbb8c75d259f17eaeadfea54ba307d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af999e57407e5d904d620d62b593fd9a1" id="r_af999e57407e5d904d620d62b593fd9a1"><td class="memItemLeft" align="right" valign="top"><a id="af999e57407e5d904d620d62b593fd9a1" name="af999e57407e5d904d620d62b593fd9a1"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>familyName</b> () const</td></tr>
 <tr class="separator:af999e57407e5d904d620d62b593fd9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,10 +274,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>familyName</b>
 <tr class="memitem:a362caeefbc106eb8f1101ad46ae9d20d" id="r_a362caeefbc106eb8f1101ad46ae9d20d"><td class="memItemLeft" align="right" valign="top"><a id="a362caeefbc106eb8f1101ad46ae9d20d" name="a362caeefbc106eb8f1101ad46ae9d20d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>revised</b> () const</td></tr>
 <tr class="separator:a362caeefbc106eb8f1101ad46ae9d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a688985c4a7997d3c19d3842f5eba1" id="r_a68a688985c4a7997d3c19d3842f5eba1"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68a688985c4a7997d3c19d3842f5eba1">interpolated</a> () const</td></tr>
-<tr class="separator:a68a688985c4a7997d3c19d3842f5eba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbf0d54ac5dbc652d38513b587cbc100" id="r_adbf0d54ac5dbc652d38513b587cbc100"><td class="memItemLeft" align="right" valign="top"><a id="adbf0d54ac5dbc652d38513b587cbc100" name="adbf0d54ac5dbc652d38513b587cbc100"></a>
-<a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frequency</b> () const</td></tr>
+<tr class="memitem:adbf0d54ac5dbc652d38513b587cbc100" id="r_adbf0d54ac5dbc652d38513b587cbc100"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbf0d54ac5dbc652d38513b587cbc100">frequency</a> () const</td></tr>
 <tr class="separator:adbf0d54ac5dbc652d38513b587cbc100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee01d8031542a0054a2b5fe5d06bde1c" id="r_aee01d8031542a0054a2b5fe5d06bde1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_period.html">Period</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee01d8031542a0054a2b5fe5d06bde1c">availabilityLag</a> () const</td></tr>
 <tr class="separator:aee01d8031542a0054a2b5fe5d06bde1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,55 +291,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for inflation-rate indexes,. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abd9097e92305a13033d7a4e3c7e8c6f8" name="abd9097e92305a13033d7a4e3c7e8c6f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd9097e92305a13033d7a4e3c7e8c6f8">&#9670;&#160;</a></span>InflationIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED <a class="el" href="class_quant_lib_1_1_inflation_index.html">InflationIndex</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>familyName</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_region.html">Region</a></td>          <td class="paramname"><span class="paramname"><em>region</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>revised</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>interpolated</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a></td>          <td class="paramname"><span class="paramname"><em>frequency</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>availabilitiyLag</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_currency.html">Currency</a></td>          <td class="paramname"><span class="paramname"><em>currency</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated</a></b></dt><dd>Use the constructor without the "interpolated" parameter. Deprecated in version 1.29. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa4f4ba750a08765e64da2d0bd473944a" name="aa4f4ba750a08765e64da2d0bd473944a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4f4ba750a08765e64da2d0bd473944a">&#9670;&#160;</a></span>name()</h2>
 
@@ -533,22 +478,21 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 
 </div>
 </div>
-<a id="a68a688985c4a7997d3c19d3842f5eba1" name="a68a688985c4a7997d3c19d3842f5eba1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68a688985c4a7997d3c19d3842f5eba1">&#9670;&#160;</a></span>interpolated()</h2>
+<a id="adbf0d54ac5dbc652d38513b587cbc100" name="adbf0d54ac5dbc652d38513b587cbc100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf0d54ac5dbc652d38513b587cbc100">&#9670;&#160;</a></span>frequency()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QL_DEPRECATED bool interpolated </td>
+          <td class="memname"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Forecasting index values using an inflation term structure uses the interpolation of the inflation term structure unless interpolation is set to false. In this case the extrapolated values are constant within each period taking the mid-period extrapolated value.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000048">Deprecated</a></b></dt><dd>Don't use this method. Indexes should only be asked monthly fixings (by convention, on the first of the month); interpolation is delegated to coupons. Deprecated in version 1.29. </dd></dl>
+<p>Forecasting index values using an inflation term structure uses the interpolation of the inflation term structure unless interpolation is set to false. In this case the extrapolated values are constant within each period taking the mid-period extrapolated value. </p>
 
 </div>
 </div>
@@ -567,30 +511,6 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
 </div><div class="memdoc">
 <p>The availability lag describes when the index is <em>available</em>, not how it is used. Specifically the fixing for, say, January, may only be available in April but the index will always return the index value applicable for January as its January fixing (independent of the lag in availability). </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae7fbb8c75d259f17eaeadfea54ba307d" name="ae7fbb8c75d259f17eaeadfea54ba307d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae7fbb8c75d259f17eaeadfea54ba307d">&#9670;&#160;</a></span>interpolated_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED bool interpolated_ = false</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated</a></b></dt><dd>Don't use this data member. Indexes should only be asked monthly fixings (by convention, on the first of the month); interpolation is delegated to coupons. Deprecated in version 1.29. </dd></dl>
 
 </div>
 </div>

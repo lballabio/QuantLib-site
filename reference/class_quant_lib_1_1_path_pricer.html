@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -87,7 +87,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_quant_lib_1_1_path_pricer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PathPricer&lt; PathType, ValueType &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__mcarlo.html">Monte Carlo framework</a></div></div></div>
 </div><!--header-->
@@ -121,11 +120,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8d202422e04c42b1c33fe366569a4ef5" id="r_a8d202422e04c42b1c33fe366569a4ef5"><td class="memItemLeft" align="right" valign="top"><a id="a8d202422e04c42b1c33fe366569a4ef5" name="a8d202422e04c42b1c33fe366569a4ef5"></a>
 virtual ValueType&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const PathType &amp;path) const =0</td></tr>
 <tr class="separator:a8d202422e04c42b1c33fe366569a4ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a0f66760579f45c68e699aacc7382a154" id="r_a0f66760579f45c68e699aacc7382a154"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef PathType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f66760579f45c68e699aacc7382a154">argument_type</a></td></tr>
-<tr class="separator:a0f66760579f45c68e699aacc7382a154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class PathType, class ValueType = Real&gt;<br />
@@ -133,25 +127,7 @@ class QuantLib::PathPricer&lt; PathType, ValueType &gt;</div><p>base class for p
 <p>Returns the value of an option on a given path. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_discrete_hedging_8cpp-example.html#_a2">DiscreteHedging.cpp</a>.</dd>
 </dl>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a0f66760579f45c68e699aacc7382a154" name="a0f66760579f45c68e699aacc7382a154"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f66760579f45c68e699aacc7382a154">&#9670;&#160;</a></span>argument_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class PathType , class ValueType  = Real&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED typedef PathType argument_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000165">Deprecated</a></b></dt><dd>Use <code>auto</code> or <code>decltype</code> instead. Deprecated in version 1.29. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

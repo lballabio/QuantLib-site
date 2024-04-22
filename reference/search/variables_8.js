@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['nakedoption_5f_0',['nakedOption_',['../class_quant_lib_1_1_digital_coupon.html#a7d3f84e3b62fe2159597494c7d70138c',1,'QuantLib::DigitalCoupon']]],
-  ['nfactors_5f_1',['nFactors_',['../class_quant_lib_1_1_latent_model.html#ad8639907820775808810c8a525d5bdd8',1,'QuantLib::LatentModel']]],
-  ['nvariables_5f_2',['nVariables_',['../class_quant_lib_1_1_latent_model.html#a44fb9cd28ad962ce4f8e1fa2d91e1147',1,'QuantLib::LatentModel']]]
+  ['obligationcurrency_5f_0',['obligationCurrency_',['../class_quant_lib_1_1_default_prob_key.html#a1ea2266a7b462db8d3a4ce2be61d65ca',1,'QuantLib::DefaultProbKey']]]
 ];

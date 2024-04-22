@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -85,7 +85,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_quant_lib_1_1_payoff-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Payoff Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -145,13 +144,6 @@ virtual <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78
 <tr class="memitem:a1d7eaf2f5dccce1c7781b54d64ba4a07" id="r_a1d7eaf2f5dccce1c7781b54d64ba4a07"><td class="memItemLeft" align="right" valign="top"><a id="a1d7eaf2f5dccce1c7781b54d64ba4a07" name="a1d7eaf2f5dccce1c7781b54d64ba4a07"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;)</td></tr>
 <tr class="separator:a1d7eaf2f5dccce1c7781b54d64ba4a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ab1db04c21d861b147c8ec515fbe6abc3" id="r_ab1db04c21d861b147c8ec515fbe6abc3"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1db04c21d861b147c8ec515fbe6abc3">argument_type</a></td></tr>
-<tr class="separator:ab1db04c21d861b147c8ec515fbe6abc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe38b2e6180117ed68dbd80686618343" id="r_abe38b2e6180117ed68dbd80686618343"><td class="memItemLeft" align="right" valign="top">QL_DEPRECATED typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe38b2e6180117ed68dbd80686618343">result_type</a></td></tr>
-<tr class="separator:abe38b2e6180117ed68dbd80686618343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for option payoffs. </p>
@@ -178,40 +170,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000124">Warning</a></b></dt><dd>This method is used for output and comparison between payoffs. It is <b>not</b> meant to be used for writing switch-on-type code. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000126">Warning</a></b></dt><dd>This method is used for output and comparison between payoffs. It is <b>not</b> meant to be used for writing switch-on-type code. </dd></dl>
 
 <p>Implemented in <a class="el" href="class_quant_lib_1_1_forward_type_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">ForwardTypePayoff</a>, <a class="el" href="class_quant_lib_1_1_null_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">NullPayoff</a>, <a class="el" href="class_quant_lib_1_1_floating_type_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">FloatingTypePayoff</a>, <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">PlainVanillaPayoff</a>, <a class="el" href="class_quant_lib_1_1_percentage_strike_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">PercentageStrikePayoff</a>, <a class="el" href="class_quant_lib_1_1_asset_or_nothing_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">AssetOrNothingPayoff</a>, <a class="el" href="class_quant_lib_1_1_cash_or_nothing_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">CashOrNothingPayoff</a>, <a class="el" href="class_quant_lib_1_1_gap_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">GapPayoff</a>, <a class="el" href="class_quant_lib_1_1_super_fund_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">SuperFundPayoff</a>, <a class="el" href="class_quant_lib_1_1_super_share_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">SuperSharePayoff</a>, <a class="el" href="class_quant_lib_1_1_double_sticky_ratchet_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">DoubleStickyRatchetPayoff</a>, <a class="el" href="class_quant_lib_1_1_ratchet_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">RatchetPayoff</a>, <a class="el" href="class_quant_lib_1_1_sticky_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">StickyPayoff</a>, <a class="el" href="class_quant_lib_1_1_ratchet_max_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">RatchetMaxPayoff</a>, <a class="el" href="class_quant_lib_1_1_ratchet_min_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">RatchetMinPayoff</a>, <a class="el" href="class_quant_lib_1_1_sticky_max_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">StickyMaxPayoff</a>, and <a class="el" href="class_quant_lib_1_1_sticky_min_payoff.html#aa4f4ba750a08765e64da2d0bd473944a">StickyMinPayoff</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab1db04c21d861b147c8ec515fbe6abc3" name="ab1db04c21d861b147c8ec515fbe6abc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1db04c21d861b147c8ec515fbe6abc3">&#9670;&#160;</a></span>argument_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> argument_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000169">Deprecated</a></b></dt><dd>Use <code>auto</code> or <code>decltype</code> instead. Deprecated in version 1.29. </dd></dl>
-
-</div>
-</div>
-<a id="abe38b2e6180117ed68dbd80686618343" name="abe38b2e6180117ed68dbd80686618343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe38b2e6180117ed68dbd80686618343">&#9670;&#160;</a></span>result_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QL_DEPRECATED typedef <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> result_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000170">Deprecated</a></b></dt><dd>Use <code>auto</code> or <code>decltype</code> instead. Deprecated in version 1.29. </dd></dl>
 
 </div>
 </div>

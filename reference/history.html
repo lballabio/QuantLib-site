@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -83,7 +83,57 @@ $(function() {
   <div class="headertitle"><div class="title">Version history</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><b>Release 1.33 - January 2024</b></p>
+<div class="textblock"><p><b>Release 1.34 - April 2024</b></p>
+<p>PORTABILITY</p><ul>
+<li><b>Future end of support:</b> as announced in release 1.32, we're targeting next release (1.35) as the last to support Visual C++ 2015, g++ up to version 6.x, and clang up to version 4; support for those compilers will be dropped in release 1.36, about six months from now. From that point onwards, this will allows us to enable the use of C++17 in the code base. Also, given the testing environments available on GitHub actions, clang 5 is already no longer available to us for testing, and in a while the same will hold for clang 6 and g++ 7. Therefore, it is suggested to upgrade to a newer version if possible.</li>
+<li><b>Future end of support:</b> at the same time as the above, we'll also remove the configure switch that allows to use <code>boost::tuple</code>, <code>boost::function</code> and <code>boost::bind</code> instead of their <code>std</code> counterparts; the <code>std</code> classes are already the default since release 1.32.</li>
+<li>Generate and install pkg-config files in CMake builds; thanks to GitHub user jez6.</li>
+</ul>
+<p>DATES AND CALENDARS</p><ul>
+<li>Prevent <code>Calendar::advance</code> from returning the business end of month (instead of the calendar end) when <code>endOfMonth</code> is <code>true</code> and <code>convention</code> is <code>Unadjusted</code>; thanks to GitHub user DeimosXing.</li>
+<li>Add good Friday holiday for SOFR fixing; thanks to GitHub user PaulXiCao.</li>
+<li>Properly restrict São Paulo city holiday to years before 2022; thanks to Marco Bruno Ferreira Vasconcellos.</li>
+<li>Update holidays for 2023 and 2024 in calendars for India, Thailand, Singapore and South Africa; thanks to Fredrik Gerdin Börjesson.</li>
+</ul>
+<p>CASH FLOWS</p><ul>
+<li>Fixed a couple of cases in which notifications were not forwarded properly; thanks to GitHub user djkrystul for the heads-up.</li>
+<li>Fixed past payment dates and added support for OIS in <code>LinearTsrPricer</code>; thanks to Peter Caspers.</li>
+</ul>
+<p>INSTRUMENTS</p><ul>
+<li>Swaptions can now take an OIS as underlying; thanks to Guillaume Horel and Peter Caspers. So far, only <code>BlackSwaptionEngine</code> manages OIS explicitly; other engines might work and return approximated values.</li>
+<li>More methods in <code>MakeOIS</code> and <code>MakeVanillaSwap</code>; thanks to Eugene Toder.</li>
+<li>More methods in the <code>BondFunctions</code> class now support either clean or dirty prices; thanks to Francois Botha.</li>
+<li>The <code>basisPointValue</code> and <code>yieldValueBasisPoint</code> methods in <code>BondFunctions</code> didn't always manage the settlement date correctly; this is now fixed (thanks to GitHub user jez6).</li>
+<li>Add <code>Custom</code> to <code>Futures::Type</code> enumeration to allow passing custom dates to futures; thanks to Eugene Toder.</li>
+</ul>
+<p>TERM STRUCTURES</p><ul>
+<li>Inflation curves can now be built passing an explicit base date (corresponding to the last published fixing) instead of an observation lag.</li>
+<li>Fixed calculation of year fraction under Actual/365 Canadian convention in <code>FuturesRateHelper</code>; thanks to GitHub user PaulXiCao.</li>
+<li>Fixed settlement date calculation in cross-currency basis-swap rate helpers in some cases; thanks to Marcin Rybacki for the fix and to Aleksis Ali Raza for the heads-up.</li>
+</ul>
+<p>MATH</p><ul>
+<li>Handle non-equidistant grids and arbitrary dimensions in Laplace interpolation; thanks to Peter Caspers.</li>
+</ul>
+<p>DEPRECATED FEATURES</p><ul>
+<li><b>Removed</b> features deprecated in version 1.29:<ul>
+<li>The <code>argument_type</code>, <code>first_argument_type</code>, <code>second_argument_type</code> and <code>result_type</code> typedefs in several classes;</li>
+<li>The overloads of zero-rate inflation index constructors taking an <code>interpolated</code> argument;</li>
+<li>The <code>interpolated</code> method and the protected <code>interpolated_</code> data member in <code>InflationIndex</code>;</li>
+<li>The overload of <code>CashFlows::npvbps</code> taking the result by reference;</li>
+<li>The protected <code>rateCurve_</code> method in <code>InflationCouponPricer</code>;</li>
+<li>The <code>ThreadKey</code> typedef;</li>
+<li>The empty header <code>ql/experimental/credit/riskybond.hpp</code>.</li>
+</ul>
+</li>
+<li>Deprecated the constructors of <code>InflationTermStructure</code>, <code>ZeroInflationTermStructure</code>, <code>YoYInflationTermStructure</code>, <code>InterpolatedZeroInflationCurve</code>, <code>InterpolatedYoYInflationCurve</code>, <code>PiecewiseZeroInflationCurve</code> and <code>PiecewiseYoYInflationCurve</code> taking an observation lag; use the overloads taking an explicit base date instead.</li>
+<li>Deprecated the <code>Bond::yield</code>, <code>BondFunctions::atmRate</code>, <code>BondFunctions::yield</code> and <code>BondFunctions::zSpread</code> overloads taking a clean price as a number; use the overloads taking a <code>Bond::Price</code> instead.</li>
+<li>Deprecated the <code>InflationTermStructure::setSeasonality</code> overload taking no arguments; use the overload taking a pointer and pass an empty one to remove seasonality.</li>
+<li>Deprecated the <code>InflationTermStructure::setBaseRate</code> method; set <code>baseRate_</code> directly if needed.</li>
+<li>Deprecated the <code>Swaption::underlyingSwap</code> and <code>SwaptionHelper::underlyingSwap</code> methods; use <code>underlying</code> instead.</li>
+<li>Deprecated the broken <code>FixedRateBondHelper::fixedRateBond</code> and <code>CPIBondHelper::cpiBond</code> methods and the corresponding <code>fixedRateBond_</code> and <code>cpiBond_</code> data members.</li>
+</ul>
+<p>Thanks go also to Isuru Fernando, Viktor Zhou, Stephen Dacek, Yi Jiang, Jonathan Sweemer, Eugene Toder, the XAD team and GitHub user PaulXiCao and klin333 for miscellaneous fixes, improvements or reports.</p>
+<p><b>Release 1.33 - January 22nd, 2024</b></p>
 <p>PORTABILITY</p><ul>
 <li><b>Future end of support:</b> as announced in release 1.32, we're targeting the future release 1.35 as the last to support Visual C++ 2015, g++ up to version 6.x, and clang up to version 4; support for those compilers will be dropped in release 1.36, about nine months from now. From that point onwards, this will allows us to enable the use of C++17 in the code base.</li>
 <li><b>Future end of support:</b> at the same time as the above, we'll also remove the configure switch that allows to use <code>boost::tuple</code>, <code>boost::function</code> and <code>boost::bind</code> instead of their <code>std</code> counterparts; the <code>std</code> classes are already the default since release 1.32.</li>

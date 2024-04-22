@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.33</div>
+   <div id="projectnumber">Reference manual - version 1.34</div>
    </div>
   </td>
  </tr>
@@ -386,8 +386,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000076">Warning</a></b></dt><dd>currently, this method returns the Black-Scholes implied volatility using analytic formulas for European options and a finite-difference method for American and Bermudan options. It will give unconsistent results if the pricing was performed with any other methods (such as jump-diffusion models.)</dd></dl>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000077">Warning</a></b></dt><dd>options with a gamma that changes sign (e.g., binary options) have values that are <b>not</b> monotonic in the volatility. In these cases, the calculation can fail and the result (if any) is almost meaningless. Another possible source of failure is to have a target value that is not attainable with any volatility, e.g., a target value lower than the intrinsic value in the case of American options. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000077">Warning</a></b></dt><dd>currently, this method returns the Black-Scholes implied volatility using analytic formulas for European options and a finite-difference method for American and Bermudan options. It will give unconsistent results if the pricing was performed with any other methods (such as jump-diffusion models.)</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000078">Warning</a></b></dt><dd>options with a gamma that changes sign (e.g., binary options) have values that are <b>not</b> monotonic in the volatility. In these cases, the calculation can fail and the result (if any) is almost meaningless. Another possible source of failure is to have a target value that is not attainable with any volatility, e.g., a target value lower than the intrinsic value in the case of American options. </dd></dl>
 
 </div>
 </div>
