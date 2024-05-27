@@ -41,9 +41,8 @@ Available from <a href="http://www.yetanotherquant.com/">his web site</a>.
 <ul>
 <li><strong>The QuantLib Notebooks</strong>
 is <a href="https://www.youtube.com/playlist?list=PLu_PrO8j6XAvOAlZND9WUPwTHY_GYhJVr">a
-series of screencasts</a> by Luigi Ballabio using IPython notebooks to
-demonstrate features of the QuantLib library. It is also available
-  on <a href="https://vimeo.com/channels/qlnotebooks">Vimeo</a>.</li>
+series of screencasts</a> by Luigi Ballabio, using Jupyter notebooks to
+demonstrate features of the QuantLib library.</li>
 <li><strong>Introduction to QuantLib</strong> is
 another <a href="https://www.youtube.com/user/eefelix/videos">series
 of screencasts</a> by Felix Lee, covering installation and usage of
@@ -52,6 +51,8 @@ the library.</li>
 different <a href="https://www.youtube.com/playlist?list=PLvXg_ZPrPUfqSFEsI9baI8vP2agnLHCwD">series
 of screencasts</a>, also called <strong>Introduction to
 QuantLib</strong>, is published by Carol Zheng.</li>
+<li>A <a href="https://www.youtube.com/playlist?list=PLldfZfhVsBfnmCOjbUrWghhfCBwTM2NXv">series
+of videos in Vietnamese</a>, <strong>QuantLib cho Python</strong>, is also available.</li>
 </ul>
 
 <h2 class="center">Talks</h2>
