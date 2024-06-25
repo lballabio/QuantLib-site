@@ -62,7 +62,7 @@ available from <a href="https://quantra.io/">quantra.io</a>.</p>
 <p>A port of QuantLib to C# is available
 as <a href="https://github.com/amaggiulli/qlnet">QLNet</a>.</p>
 
-<p>The <a href="http://www.jquantlib.com/">JQuantLib</a> project is a
+<p>The <a href="https://github.com/frgomes/jquantlib">JQuantLib</a> project is a
 Java port.</p>
 
 <p>An alternative set of Python wrappers is provided in
@@ -93,17 +93,13 @@ while <a href="http://sourceforge.net/projects/quantifa/">Quantifa</a>
 is written in F#; they are looking for
 developers. <a href="https://github.com/paulrzcz/hquantlib">HQuantLib</a>
 is another Haskell
-port.  <a href="https://www.cepheis.com/Product/Ql">Cephei.QL</a>
+port.  <a href="https://www.cepheis.com/cephei-ql">Cephei.QL</a>
 wraps the C++ library so that it can be called from F#.
 </p>
 
 <p>Niels Elken S&oslash;nderby has a page for the tentative
 Mathematica project <a href=
-"http://www.nielses.dk/quantlib/mma/">QuantLibMma</a>.  Another
-unrelated Mathematica extension wrapping QuantLib functionality can be
-found at the <a href=
-"http://www.weber-und-partner.com/QuantLib/mma/">Weber und Partner</a>
-site.</p>
+"http://www.nielses.dk/quantlib/mma/">QuantLibMma</a>.</p>
 
 <p>The <a href="http://www.dsource.org/projects/quantlibd/">QuantLibD</a>
 project is a port of QuantLib in the D programming language.  The
