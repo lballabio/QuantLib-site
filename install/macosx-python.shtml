@@ -47,8 +47,8 @@ few required compilation flags.</p>
 <p><strong>On Mac OS X 10.15 (Sonoma) and later,</strong>
 <pre>
   cd QuantLib-SWIG-1.29/Python
-  export CXXFLAGS='-O2 -stdlib=libc++ -stdlib=libc++ -I<boost home>/include/ -mmacosx-version-min=10.9'
-  export LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
+  export CXXFLAGS="`quantlib-config --cflags` -O2 -std=c++14 -stdlib=libc++ -mmacosx-version-min=10.9"
+  export LDFLAGS="`quantlib-config --libs` -stdlib=libc++ -mmacosx-version-min=10.9"
   python3 setup.py build
 </pre>
 </p>
