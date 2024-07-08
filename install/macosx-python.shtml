@@ -44,27 +44,19 @@ also need to add <tt>-std=c++11</tt> to <tt>CXXFLAGS</tt>.  Again,
 make sure that you can execute <tt>quantlib-config</tt> from the
 terminal, since the <tt>setup.py</tt> build will call it to retrieve a
 few required compilation flags.</p>
-<p><strong>On Mac OS X 10.15 (Sonoma) and later,</strong>
-<pre>
-  cd QuantLib-SWIG-1.29/Python
-  export CXXFLAGS="`quantlib-config --cflags` -O2 -std=c++14 -stdlib=libc++ -mmacosx-version-min=10.9"
-  export LDFLAGS="`quantlib-config --libs` -stdlib=libc++ -mmacosx-version-min=10.9"
-  python3 setup.py build
-</pre>
-</p>
 <p><strong>On Mac OS X 10.11 (El Capitan) and later,</strong>
 <pre>
   cd QuantLib-SWIG-1.29/Python
-  export CXXFLAGS='-O2 -stdlib=libc++ -mmacosx-version-min=10.9'
-  export LDFLAGS='-stdlib=libc++ -mmacosx-version-min=10.9'
+  export CXXFLAGS='`quantlib-config --cflags` -O2 -std=c++14 -stdlib=libc++ -mmacosx-version-min=10.9'
+  export LDFLAGS='`quantlib-config --libs` -stdlib=libc++ -mmacosx-version-min=10.9'
   python3 setup.py build
 </pre>
 </p>
 <p><strong>On Mac OS X 10.9 (Mavericks) and 10.10 (Yosemite),</strong>
 <pre>
   cd QuantLib-SWIG-1.29/Python
-  export CXXFLAGS='-O2 -stdlib=libstdc++ -mmacosx-version-min=10.6'
-  export LDFLAGS='-stdlib=libstdc++ -mmacosx-version-min=10.6'
+  export CXXFLAGS="`quantlib-config --cflags` -O2 -std=c++14 -stdlib=libc++ -mmacosx-version-min=10.6"
+  export LDFLAGS="`quantlib-config --libs` -stdlib=libc++ -mmacosx-version-min=10.6"
   python3 setup.py build
 </pre>
 </p>
