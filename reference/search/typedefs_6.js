@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['leg_0',['Leg',['../namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b',1,'QuantLib']]],
-  ['lowdiscrepancy_1',['LowDiscrepancy',['../namespace_quant_lib.html#a7414d4223b100ac8cf4e43091980bdb1',1,'QuantLib']]]
+  ['integer_0',['Integer',['../group__types.html#gab9c87440c314438e51a899a03d2442d0',1,'QuantLib']]]
 ];

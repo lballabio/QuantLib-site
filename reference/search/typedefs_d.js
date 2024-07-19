@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['year_0',['Year',['../group__datetime.html#ga84dee895910074cbc7d936c86c1abf3d',1,'QuantLib']]]
+  ['volatility_0',['Volatility',['../group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3',1,'QuantLib']]]
 ];

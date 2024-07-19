@@ -19,6 +19,7 @@ var searchData=
   ['zeroyield_16',['ZeroYield',['../struct_quant_lib_1_1_zero_yield.html',1,'QuantLib']]],
   ['zeroyieldstructure_17',['ZeroYieldStructure',['../class_quant_lib_1_1_zero_yield_structure.html',1,'QuantLib']]],
   ['zibor_18',['Zibor',['../class_quant_lib_1_1_zibor.html',1,'QuantLib']]],
-  ['zigguratrng_19',['ZigguratRng',['../class_quant_lib_1_1_ziggurat_rng.html',1,'QuantLib']]],
-  ['zmwcurrency_20',['ZMWCurrency',['../class_quant_lib_1_1_z_m_w_currency.html',1,'QuantLib']]]
+  ['zigguratgaussianrng_19',['ZigguratGaussianRng',['../class_quant_lib_1_1_ziggurat_gaussian_rng.html',1,'QuantLib']]],
+  ['zigguratrng_20',['ZigguratRng',['../class_quant_lib_1_1_ziggurat_rng.html',1,'QuantLib']]],
+  ['zmwcurrency_21',['ZMWCurrency',['../class_quant_lib_1_1_z_m_w_currency.html',1,'QuantLib']]]
 ];

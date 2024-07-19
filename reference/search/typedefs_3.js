@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['forwardcurve_0',['ForwardCurve',['../group__yieldtermstructures.html#ga44c13ddc64513ecbc1c0955253af96c5',1,'QuantLib']]]
+  ['euriborsw_0',['EuriborSW',['../namespace_quant_lib.html#a66c98cc1274225b487de051e0caf1de5',1,'QuantLib']]]
 ];
