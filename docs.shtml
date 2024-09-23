@@ -25,7 +25,7 @@ It's a work in progress: contributions are welcome through pull requests.</li>
   Available as a paperback from <a href="https://getbook.at/implementingquantlib">Amazon</a>
   or an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
   (also in a <a href="https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
-  by Ruilong Xu and a <a href="https://leanpub.com/implementingquantlib-jp">Japanese one</a>
+  by Xu Ruilong and a <a href="https://leanpub.com/implementingquantlib-jp">Japanese one</a>
   by Aki Sakashita).<br>
   Drafts were posted on <a href="http://implementingquantlib.com/">the accompanying blog</a>.
 </li>
@@ -89,7 +89,7 @@ the core design of QuantLib through a few live examples of its usage.
 <strong>Suhas Ghorpadkar's</strong> <a href="http://suhasghorp.com/?s=quantlib&submit=Search">blog</a>.<br>
 <strong>The Python Lab</strong> <a href="https://thepythonlab.com/tag/quantlib/">blog</a> (in Spanish).<br>
 <strong>Quant College</strong> <a href="https://quantcollege.net/tag/quantlib">blog</a> (in Japanese).<br>
-<strong>Ruilong Xu's</strong> <a href="https://www.cnblogs.com/xuruilong100/tag/QuantLib%20%E9%87%91%E8%9E%8D%E8%AE%A1%E7%AE%97/">blog</a> (in Chinese) and the associated <a href="https://github.com/xuruilong100/QuantLibPythonExamples">code examples</a>.<br>
+<strong>Xu Ruilong's</strong> <a href="https://xuruilong100.github.io/tags/quantlib/">blog</a> (in Chinese) and the associated <a href="https://github.com/xuruilong100/QuantLibPythonExamples">code examples</a>.<br>
 </li>
 </ul>
 
