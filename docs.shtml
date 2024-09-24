@@ -152,20 +152,24 @@ Mikael Katajam&auml;ki, Daniel J. Duffy<br>
 Daniel J. Duffy, Mikael Katajam&auml;ki<br>
 <i>Wilmott Magazine</i>, July 2018</li>
 <li><strong>Farmer's CMS Spread Option Formula for Negative Rates</strong>
-[<a href="http://ssrn.com/abstract=2686998">abstract/download</a>]<br>
+[<a href="https://ssrn.com/abstract=2686998">abstract/download</a>]<br>
 Peter Caspers (2015)</li>
 <li><strong>Derivatives Pricing using QuantLib: An Introduction</strong><br>
 Jayanth R. Varma, Vineet Virmani (2015)</li>
+<li><strong>Accelerating Financial Applications on the GPU</strong>
+[<a href="https://cavazos-lab.github.io/FinanceBench/resources/AcceleratingFinancialApplicationsOnTheGPU-paper.pdf">download</a>]<br>
+Scott Grauer-Gray, William Killian, Robert Searles, John Cavazos<br>
+In <i>Proceedings of the 6th Workshop on General Purpose Processor Using Graphics Processing Units, GPGPU-6,</i> ACM, 2013.</li>
 <li><strong>Implementation of the ZABR Model</strong>
-[<a href="http://ssrn.com/abstract=2692048">abstract/download</a>]<br>
+[<a href="https://ssrn.com/abstract=2692048">abstract/download</a>]<br>
 Peter Caspers (2013)</li>
 <li><strong>Markov Functional One Factor Interest Rate Model
 Implementation in QuantLib</strong>
-[<a href="http://ssrn.com/abstract=2183721">abstract/download</a>]<br>
+[<a href="https://ssrn.com/abstract=2183721">abstract/download</a>]<br>
 Peter Caspers (2013)</li>
 <li><strong>Everything You Always Wanted to Know About Multiple
 Interest Rate Curve Bootstrapping but Were Afraid to Ask</strong>
-[<a href="http://ssrn.com/abstract=2219548">abstract/download</a>]<br>
+[<a href="https://ssrn.com/abstract=2219548">abstract/download</a>]<br>
 Ferdinando Ametrano, Marco Bianchetti (2013)</li>
 <li><strong>Option Engine: A Grid-Enabled Software Package to Evaluate
 Financial Options</strong> [<a href=
@@ -174,13 +178,11 @@ Francesca Mariani, Maria Cristina Recchioni, Francesco Zirilli<br>
 HPCwire (September 2009)</li>
 <li><strong>Bootstrapping the Illiquidity: Multiple Yield Curves
 Construction for Market Coherent Forward Rates Estimation</strong>
-[<a href= "http://ssrn.com/abstract=1371311">abstract</a>]<br>
+[<a href= "https://ssrn.com/abstract=1371311">abstract</a>]<br>
 Ferdinando Ametrano, Marco Bianchetti<br>
-In <a href="http://riskbooks.com/Quantitative%20Analysis/modelling-interest-rates-.php"><i>Modelling
-Interest Rates</i></a>, Fabio Mercurio, ed., Risk Books, Incisive
-Media, 2009.</li>
+In <i>Modelling Interest Rates</i></a>, Fabio Mercurio, ed., Risk Books, Incisive Media, 2009.</li>
 <li><strong>Smooth Simultaneous Calibration of the LMM to Caplets and Coterminal Swaptions</strong>
-[<a href= "http://ssrn.com/abstract=1092665">abstract/download</a>]<br>
+[<a href= "https://ssrn.com/abstract=1092665">abstract/download</a>]<br>
 Ferdinando Ametrano, Mark S. Joshi<br>
 <i>Quantitative Finance</i>, vol. 11 (4), pp.547-558, 2008</li>
 <li><strong>Why Use QuantLib?</strong><br>
@@ -199,11 +201,5 @@ during a course he taught, along with the corresponding code:<br>
 [<a href="slides/dima-ql-intro-2.pdf">PDF</a>]<br>
 <em>code samples</em>
 [<a href="slides/dima-code.zip">ZIP</a>]<br>
-</li>
-<li><strong>Marco Marchioro</strong> has made available the slides for
-his derivatives class at Milan University, in which he used QuantLibXL
-for teaching.  They can be found from the <em>QuantLib</em> page on his
-site, <a href="http://www.marchioro.org/">http://www.marchioro.org/</a>,
-along with the corresponding spreadsheets and additional material.
 </li>
 </ul>
