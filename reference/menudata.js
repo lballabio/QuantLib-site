@@ -134,6 +134,7 @@ var menudata={children:[
 {text:"s",url:"functions_eval.html#index_s"},
 {text:"t",url:"functions_eval.html#index_t"},
 {text:"u",url:"functions_eval.html#index_u"},
+{text:"w",url:"functions_eval.html#index_w"},
 {text:"x",url:"functions_eval.html#index_x"},
 {text:"z",url:"functions_eval.html#index_z"}]},
 {text:"Related Symbols",url:"functions_rela.html"}]}]},

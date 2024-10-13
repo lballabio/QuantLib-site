@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['year_0',['Year',['../group__datetime.html#ga84dee895910074cbc7d936c86c1abf3d',1,'QuantLib']]]
+  ['zerocurve_0',['ZeroCurve',['../group__yieldtermstructures.html#gab0fc9b631f36e7661b35642d67035aeb',1,'QuantLib']]]
 ];
