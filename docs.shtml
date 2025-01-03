@@ -21,13 +21,20 @@ It's a work in progress: contributions are welcome through pull requests.</li>
 
 <h2 class="center">Books</h2>
 <ul>
+<li>Luigi Ballabio, <strong>A QuantLib Guide</strong><br> Available
+  as <a href="https://www.quantlibguide.com/">a web site</a> or an
+  ebook from <a href="https://leanpub.com/quantlibguide">Leanpub</a>.<br>
+  New content is posted on the book site and
+  on <a href="https://implementingquantlib.substack.com/">the author's
+  Substack</a>.
+</li>
 <li>Luigi Ballabio, <strong>Implementing QuantLib</strong><br>
   Available as a paperback from <a href="https://getbook.at/implementingquantlib">Amazon</a>
   or an ebook from <a href="https://leanpub.com/implementingquantlib/">Leanpub</a>
   (also in a <a href="https://leanpub.com/implementingquantlib-cn">Chinese translation</a>
   by Xu Ruilong and a <a href="https://leanpub.com/implementingquantlib-jp">Japanese one</a>
   by Aki Sakashita).<br>
-  Drafts were posted on <a href="http://implementingquantlib.com/">the accompanying blog</a>.
+  Drafts were posted on <a href="https://www.implementingquantlib.com/">the accompanying blog</a>.
 </li>
 <li>Goutham Balaraman and Luigi Ballabio, <strong>QuantLib Python Cookbook</strong><br>
 Available as an ebook from <a href="https://leanpub.com/quantlibpythoncookbook/">Leanpub</a>.
@@ -82,7 +89,7 @@ the core design of QuantLib through a few live examples of its usage.
 <strong>Cogito Learning's</strong> <a href="http://cogitolearning.co.uk/?tag=quantlib-2">blog</a>;<br>
 <strong>Mick Hittesdorf's</strong> <a href="http://mhittesdorf.wordpress.com/category/quantlib/">blog</a>;<br>
 <strong>John Orford's</strong> <a href="http://johnorford.blogspot.com/">blog</a>;<br>
-<strong>Luigi Ballabio's</strong> <a href="http://implementingquantlib.com/">blog</a>;<br>
+<strong>Luigi Ballabio's</strong> <a href="https://www.implementingquantlib.com/">blog</a>;<br>
 <strong>Matthias Groncki's</strong> <a href="https://ipythonquant.wordpress.com/">blog</a> and the associated <a href="https://github.com/mgroncki/IPythonScripts">notebooks</a>.<br>
 <strong>Goutham Balaraman's</strong> <a href="http://gouthamanbalaraman.com/blog/quantlib-python-tutorials-with-examples.html">blog</a>.<br>
 <strong>Mikael Katajam&auml;ki's</strong> <a href="http://mikejuniperhill.blogspot.com/search/label/Quantlib%20library">blog</a>.<br>
@@ -90,6 +97,7 @@ the core design of QuantLib through a few live examples of its usage.
 <strong>The Python Lab</strong> <a href="https://thepythonlab.com/tag/quantlib/">blog</a> (in Spanish).<br>
 <strong>Quant College</strong> <a href="https://quantcollege.net/tag/quantlib">blog</a> (in Japanese).<br>
 <strong>Xu Ruilong's</strong> <a href="https://xuruilong100.github.io/tags/quantlib/">blog</a> (in Chinese) and the associated <a href="https://github.com/xuruilong100/QuantLibPythonExamples">code examples</a>.<br>
+<strong>Quant-Haun</strong> <a href="https://quant-haunblog.github.io/quantlib/intro">blog</a> (in Korean).<br>
 </li>
 </ul>
 
