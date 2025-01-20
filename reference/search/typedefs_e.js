@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zerocurve_0',['ZeroCurve',['../group__yieldtermstructures.html#gab0fc9b631f36e7661b35642d67035aeb',1,'QuantLib']]]
+  ['volatility_0',['Volatility',['../group__types.html#gaaa95ab7fe66935e3f7535413fad2a7d3',1,'QuantLib']]]
 ];

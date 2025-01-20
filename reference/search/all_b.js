@@ -12,10 +12,11 @@ var searchData=
   ['kneighbors_9',['KNeighbors',['../class_quant_lib_1_1_k_neighbors.html',1,'QuantLib']]],
   ['known_20bugs_10',['Known Bugs',['../bug.html',1,'']]],
   ['knuthuniformrng_11',['KnuthUniformRng',['../class_quant_lib_1_1_knuth_uniform_rng.html',1,'KnuthUniformRng'],['../class_quant_lib_1_1_knuth_uniform_rng.html#ab59db514c5c64ebd20105fd6eba4e0a2',1,'QuantLib::KnuthUniformRng::KnuthUniformRng()']]],
-  ['koki_12',['KOKI',['../struct_quant_lib_1_1_double_barrier.html#a1d1cfd8ffb84e947f82999c682b666a7ac501a0f43102ee2d10a190016b618d1e',1,'QuantLib::DoubleBarrier']]],
-  ['kruger_13',['Kruger',['../class_quant_lib_1_1_cubic_interpolation.html#aeccb633d9226f37b800589483ea2f0f6a065fa14c1b83af108fdae0c713695951',1,'QuantLib::CubicInterpolation']]],
-  ['krwcurrency_14',['KRWCurrency',['../class_quant_lib_1_1_k_r_w_currency.html',1,'QuantLib']]],
-  ['krx_15',['KRX',['../class_quant_lib_1_1_south_korea.html#abe41cfffd960e29a5d8b07be00aeda42a27eb21ee5297bb50ae0947b93b24d449',1,'QuantLib::SouthKorea']]],
-  ['kurtosis_16',['kurtosis',['../class_quant_lib_1_1_general_statistics.html#a6add20918379e7fcb6a8f5ff56aab1a6',1,'QuantLib::GeneralStatistics::kurtosis()'],['../class_quant_lib_1_1_incremental_statistics.html#a6add20918379e7fcb6a8f5ff56aab1a6',1,'QuantLib::IncrementalStatistics::kurtosis()']]],
-  ['kwdcurrency_17',['KWDCurrency',['../class_quant_lib_1_1_k_w_d_currency.html',1,'QuantLib']]]
+  ['kofr_12',['Kofr',['../class_quant_lib_1_1_kofr.html',1,'QuantLib']]],
+  ['koki_13',['KOKI',['../struct_quant_lib_1_1_double_barrier.html#a1d1cfd8ffb84e947f82999c682b666a7ac501a0f43102ee2d10a190016b618d1e',1,'QuantLib::DoubleBarrier']]],
+  ['kruger_14',['Kruger',['../class_quant_lib_1_1_cubic_interpolation.html#aeccb633d9226f37b800589483ea2f0f6a065fa14c1b83af108fdae0c713695951',1,'QuantLib::CubicInterpolation']]],
+  ['krwcurrency_15',['KRWCurrency',['../class_quant_lib_1_1_k_r_w_currency.html',1,'QuantLib']]],
+  ['krx_16',['KRX',['../class_quant_lib_1_1_south_korea.html#abe41cfffd960e29a5d8b07be00aeda42a27eb21ee5297bb50ae0947b93b24d449',1,'QuantLib::SouthKorea']]],
+  ['kurtosis_17',['kurtosis',['../class_quant_lib_1_1_general_statistics.html#a6add20918379e7fcb6a8f5ff56aab1a6',1,'QuantLib::GeneralStatistics::kurtosis()'],['../class_quant_lib_1_1_incremental_statistics.html#a6add20918379e7fcb6a8f5ff56aab1a6',1,'QuantLib::IncrementalStatistics::kurtosis()']]],
+  ['kwdcurrency_18',['KWDCurrency',['../class_quant_lib_1_1_k_w_d_currency.html',1,'QuantLib']]]
 ];

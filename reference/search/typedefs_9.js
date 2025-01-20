@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rate_0',['Rate',['../group__types.html#gaede435af51236692b1107d7639581d39',1,'QuantLib']]],
-  ['real_1',['Real',['../group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78',1,'QuantLib']]],
-  ['riskstatistics_2',['RiskStatistics',['../namespace_quant_lib.html#ac6495e303a40cd0a73ecbb5cd904ca09',1,'QuantLib']]]
+  ['natural_0',['Natural',['../group__types.html#ga7e529c39c477ba1f5a22264d93e8457a',1,'QuantLib']]],
+  ['noarbsabrswaptionvolatilitycube_1',['NoArbSabrSwaptionVolatilityCube',['../namespace_quant_lib.html#a0f493e452b423831a8fb4425ef7e55af',1,'QuantLib']]]
 ];
