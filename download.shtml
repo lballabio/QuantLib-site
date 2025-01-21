@@ -4,7 +4,7 @@ title: QuantLib Download Page
 ---
 
 <h1 class="center">Download QuantLib</h1>
-<p>The latest QuantLib release is version 1.36 (October 14th, 2024).</p>
+<p>The latest QuantLib release is version 1.37 (January 21st, 2025).</p>
 <p>Source packages for <b>all platforms</b>
 are available from GitHub in both zip and tar.gz format
 for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
@@ -31,7 +31,7 @@ download link above.</p>
 <h2 class="center">QuantLib in Python</h2>
 <p>Wheels are available for all common platforms and a few less common ones. To install QuantLib in your (virtual) environment, run:</p>
 <pre>
-  pip install QuantLib==1.36
+  pip install QuantLib==1.37
 </pre>
 <p>and add</p>
 <pre>
@@ -46,7 +46,7 @@ not guaranteed to work on all Linux distributions; we'd be grateful
 for any reports, either of successes or failures.  To add QuantLib to
 your projects, run:</p>
 <pre>
-  dotnet add package QuantLib --version 1.36.0
+  dotnet add package QuantLib --version 1.37.0
 </pre>
 <p>or use any of the other methods listed <a href="https://www.nuget.org/packages/QuantLib/">on the NuGet page</a>, and add</p>
 <pre>
