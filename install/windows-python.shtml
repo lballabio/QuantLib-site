@@ -27,7 +27,7 @@ in the next section.</p>
 
 <p>The following assumes that you already installed QuantLib;
 instructions for that are available
-at <a href="http://quantlib.org/install/vc10.shtml">http://quantlib.org/install/vc10.shtml</a>.
+at <a href="https://www.quantlib.org/install/vc10.shtml">https://www.quantlib.org/install/vc10.shtml</a>.
 Note that QuantLib must be compiled in Release mode, most likely in
 the x64 variant.</p>
 

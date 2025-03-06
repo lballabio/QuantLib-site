@@ -69,7 +69,7 @@ title: QuantLib Frequently Asked Questions
 <dt><b><a name="Contributing to the project0">I'm interested in
       getting involved with the project. What should I do?</a></b></dt>
 <dd>Please read
-  our <a href="http://quantlib.org/newdeveloper.shtml">developer
+  our <a href="https://www.quantlib.org/newdeveloper.shtml">developer
   introduction</a>. It lists a few ways in which you can help the
   project.<br><br></dd>
 
@@ -77,7 +77,7 @@ title: QuantLib Frequently Asked Questions
       QuantLib.</a></b></dt>
 <dd>Step-by-step instructions for building the library on different
   platforms are
-  available <a href="http://quantlib.org/install.shtml">here</a>; make
+  available <a href="https://www.quantlib.org/install.shtml">here</a>; make
   sure you're following them.  If you still can't build the library,
   report the problem on the QuantLib mailing list.<br><br></dd>
 
@@ -98,7 +98,7 @@ title: QuantLib Frequently Asked Questions
 <dt><b><a name="QuantLib extensions1">Does QuantLib support
       &lt;insert favorite language/platform here&gt;?</a></b></dt>
 <dd>Not directly. Bindings for a few languages are available, though;
-   see the <a href="http://quantlib.org/extensions.shtml">extensions
+   see the <a href="https://www.quantlib.org/extensions.shtml">extensions
    page</a>.<br><br></dd>
 
 <dt><b><a name="QuantLib extensions2">Does QuantLib support FpML?
