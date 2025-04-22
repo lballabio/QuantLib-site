@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(function(){ initResizable(false); });
 <p>Analytic engine for writer-extensible options.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/exoticoptions/analyticwriterextensibleoptionengine.hpp&gt;</code></p>
+<p><code>#include &lt;ql/pricingengines/exotic/analyticwriterextensibleoptionengine.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for AnalyticWriterExtensibleOptionEngine:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -116,7 +116,7 @@ $(function(){ initResizable(false); });
 <div class="center"><img src="class_quant_lib_1_1_analytic_writer_extensible_option_engine__inherit__graph.png" border="0" usemap="#a_analytic_writer_extensible_option_engine_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_analytic_writer_extensible_option_engine_inherit__map" id="a_analytic_writer_extensible_option_engine_inherit__map">
 <area shape="rect" title="Analytic engine for writer&#45;extensible options." alt="" coords="392,13,555,54"/>
-<area shape="rect" href="class_quant_lib_1_1_writer_extensible_option_1_1engine.html" title="Base engine." alt="" coords="285,20,344,46"/>
+<area shape="rect" href="class_quant_lib_1_1_writer_extensible_option_1_1engine.html" title="Base engine for writer&#45;extensible options." alt="" coords="285,20,344,46"/>
 <area shape="poly" title=" " alt="" coords="360,30,391,30,391,36,360,36"/>
 <area shape="rect" href="class_quant_lib_1_1_generic_engine.html" title=" " alt="" coords="5,5,237,61"/>
 <area shape="poly" title=" " alt="" coords="252,30,284,30,284,36,252,36"/>
@@ -190,6 +190,7 @@ WriterExtensibleOption::results&#160;</td><td class="memItemRight" valign="botto
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Analytic engine for writer-extensible options. </p>
+<p>Formulas from Haug, "Option Pricing Formulas". </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61eb1a24e5329ccc296715a40dc3a19a" name="a61eb1a24e5329ccc296715a40dc3a19a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61eb1a24e5329ccc296715a40dc3a19a">&#9670;&#160;</a></span>calculate()</h2>

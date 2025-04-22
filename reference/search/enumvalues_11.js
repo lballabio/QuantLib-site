@@ -11,5 +11,6 @@ var searchData=
   ['splineom1_8',['SplineOM1',['../class_quant_lib_1_1_cubic_interpolation.html#aeccb633d9226f37b800589483ea2f0f6aace9569c3a723c414afe7e6332958312',1,'QuantLib::CubicInterpolation']]],
   ['splineom2_9',['SplineOM2',['../class_quant_lib_1_1_cubic_interpolation.html#aeccb633d9226f37b800589483ea2f0f6a5230bf2465bab97aecd7087ee1a8ce1e',1,'QuantLib::CubicInterpolation']]],
   ['sse_10',['SSE',['../class_quant_lib_1_1_chile.html#abe41cfffd960e29a5d8b07be00aeda42a403b03371fd04961f31f99b254cf8e57',1,'QuantLib::Chile::SSE'],['../class_quant_lib_1_1_china.html#abe41cfffd960e29a5d8b07be00aeda42a403b03371fd04961f31f99b254cf8e57',1,'QuantLib::China::SSE']]],
-  ['steps_11',['Steps',['../class_quant_lib_1_1_sobol_brownian_generator_base.html#a0248f65bd948236b9f656ce6c5d65355a56c6baeb3f6de237e26365daff6ca73f',1,'QuantLib::SobolBrownianGeneratorBase']]]
+  ['start_11',['Start',['../struct_quant_lib_1_1_partial_barrier.html#a1b00d070baaf3fae8b605e1b7c578c11abd5f9c956752ce4dc707b4624b3a36f7',1,'QuantLib::PartialBarrier']]],
+  ['steps_12',['Steps',['../class_quant_lib_1_1_sobol_brownian_generator_base.html#a0248f65bd948236b9f656ce6c5d65355a56c6baeb3f6de237e26365daff6ca73f',1,'QuantLib::SobolBrownianGeneratorBase']]]
 ];

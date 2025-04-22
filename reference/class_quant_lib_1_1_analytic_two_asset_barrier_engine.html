@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(function(){ initResizable(false); });
 <p>Analytic engine for barrier option on two assets.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/exoticoptions/analytictwoassetbarrierengine.hpp&gt;</code></p>
+<p><code>#include &lt;ql/pricingengines/barrier/analytictwoassetbarrierengine.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for AnalyticTwoAssetBarrierEngine:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -194,8 +194,9 @@ TwoAssetBarrierOption::results&#160;</td><td class="memItemRight" valign="bottom
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Analytic engine for barrier option on two assets. </p>
-<p>The formulas are taken from "Option pricing formulas", E.G. Haug, McGraw-Hill,</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000011">Tests</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
+<p>The formulas by Heynen and Kat are taken from Haug, "Option
+pricing formulas".</p>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000105">Tests</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61eb1a24e5329ccc296715a40dc3a19a" name="a61eb1a24e5329ccc296715a40dc3a19a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61eb1a24e5329ccc296715a40dc3a19a">&#9670;&#160;</a></span>calculate()</h2>

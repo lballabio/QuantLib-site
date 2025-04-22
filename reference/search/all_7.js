@@ -183,7 +183,7 @@ var searchData=
   ['ghscurrency_180',['GHSCurrency',['../class_quant_lib_1_1_g_h_s_currency.html',1,'QuantLib']]],
   ['gjrgarchmodel_181',['GJRGARCHModel',['../class_quant_lib_1_1_g_j_r_g_a_r_c_h_model.html',1,'QuantLib']]],
   ['gjrgarchprocess_182',['GJRGARCHProcess',['../class_quant_lib_1_1_g_j_r_g_a_r_c_h_process.html',1,'QuantLib']]],
-  ['globalbootstrap_183',['GlobalBootstrap',['../class_quant_lib_1_1_global_bootstrap.html',1,'GlobalBootstrap&lt; Curve &gt;'],['../class_quant_lib_1_1_global_bootstrap.html#a599083037aa0d0b65a620d0a91f34984',1,'QuantLib::GlobalBootstrap::GlobalBootstrap()']]],
+  ['globalbootstrap_183',['GlobalBootstrap',['../class_quant_lib_1_1_global_bootstrap.html',1,'QuantLib']]],
   ['globaltopology_184',['GlobalTopology',['../class_quant_lib_1_1_global_topology.html',1,'QuantLib']]],
   ['gmresresult_185',['GMRESResult',['../struct_quant_lib_1_1_g_m_r_e_s_result.html',1,'QuantLib']]],
   ['governmentbond_186',['GovernmentBond',['../class_quant_lib_1_1_united_states.html#abe41cfffd960e29a5d8b07be00aeda42a561f5c560b2b1a55abd84072867a8016',1,'QuantLib::UnitedStates']]],

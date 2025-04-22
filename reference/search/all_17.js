@@ -10,6 +10,6 @@ var searchData=
   ['what_7',['what',['../class_quant_lib_1_1_error.html#abf843cbb29dec939d0731e491bab6f70',1,'QuantLib::Error']]],
   ['where_20to_20get_20quantlib_8',['Where to get QuantLib',['../where.html',1,'']]],
   ['wibor_9',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
-  ['writerextensibleoption_10',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'WriterExtensibleOption'],['../class_quant_lib_1_1_writer_extensible_option.html#a1333483a7772877890122a3a04b25a59',1,'QuantLib::WriterExtensibleOption::WriterExtensibleOption()']]],
+  ['writerextensibleoption_10',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'QuantLib']]],
   ['wse_11',['WSE',['../class_quant_lib_1_1_poland.html#abe41cfffd960e29a5d8b07be00aeda42a514d5ce931d941f2bd91f16c1828ce9b',1,'QuantLib::Poland']]]
 ];

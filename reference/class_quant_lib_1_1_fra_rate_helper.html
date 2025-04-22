@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -155,6 +155,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9f63adaa01a0f967c977ab1da693ee6c" id="r_a9f63adaa01a0f967c977ab1da693ee6c"><td class="memItemLeft" align="right" valign="top"><a id="a9f63adaa01a0f967c977ab1da693ee6c" name="a9f63adaa01a0f967c977ab1da693ee6c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FraRateHelper</b> (<a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> rate, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> immOffsetStart, <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a> immOffsetEnd, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, Pillar::Choice pillar=Pillar::LastRelevantDate, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> customPillarDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), bool useIndexedCoupon=true)</td></tr>
 <tr class="separator:a9f63adaa01a0f967c977ab1da693ee6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeecd87b9f9e06a742601a19e7cad2281" id="r_aeecd87b9f9e06a742601a19e7cad2281"><td class="memItemLeft" align="right" valign="top"><a id="aeecd87b9f9e06a742601a19e7cad2281" name="aeecd87b9f9e06a742601a19e7cad2281"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FraRateHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;rate, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> startDate, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> endDate, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_ibor_index.html">IborIndex</a> &gt; &amp;iborIndex, Pillar::Choice pillar=Pillar::LastRelevantDate, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> customPillarDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), bool useIndexedCoupon=true)</td></tr>
+<tr class="separator:aeecd87b9f9e06a742601a19e7cad2281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">RateHelper interface</div></td></tr>
 <tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315" id="r_ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f37fe136acee4d7bfd196bcf8bb315">impliedQuote</a> () const override</td></tr>
 <tr class="separator:ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,9 +291,15 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:aab7be0a2ef3486101fe70ac7ba229d17" id="r_aab7be0a2ef3486101fe70ac7ba229d17"><td class="memItemLeft" align="right" valign="top"><a id="aab7be0a2ef3486101fe70ac7ba229d17" name="aab7be0a2ef3486101fe70ac7ba229d17"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>evaluationDate_</b></td></tr>
 <tr class="separator:aab7be0a2ef3486101fe70ac7ba229d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57fc95250d411419f7e624ccc66a8db" id="r_af57fc95250d411419f7e624ccc66a8db"><td class="memItemLeft" align="right" valign="top"><a id="af57fc95250d411419f7e624ccc66a8db" name="af57fc95250d411419f7e624ccc66a8db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateDates_</b></td></tr>
+<tr class="separator:af57fc95250d411419f7e624ccc66a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7be0a2ef3486101fe70ac7ba229d17" id="r_aab7be0a2ef3486101fe70ac7ba229d17"><td class="memItemLeft" align="right" valign="top"><a id="aab7be0a2ef3486101fe70ac7ba229d17" name="aab7be0a2ef3486101fe70ac7ba229d17"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>evaluationDate_</b></td></tr>
 <tr class="separator:aab7be0a2ef3486101fe70ac7ba229d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57fc95250d411419f7e624ccc66a8db" id="r_af57fc95250d411419f7e624ccc66a8db"><td class="memItemLeft" align="right" valign="top"><a id="af57fc95250d411419f7e624ccc66a8db" name="af57fc95250d411419f7e624ccc66a8db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateDates_</b></td></tr>
+<tr class="separator:af57fc95250d411419f7e624ccc66a8db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d87a388f17e28809793d3f796120ffe" id="r_a5d87a388f17e28809793d3f796120ffe"><td class="memItemLeft" align="right" valign="top"><a id="a5d87a388f17e28809793d3f796120ffe" name="a5d87a388f17e28809793d3f796120ffe"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>quote_</b></td></tr>
 <tr class="separator:a5d87a388f17e28809793d3f796120ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>

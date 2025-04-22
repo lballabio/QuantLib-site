@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(function(){ initResizable(false); });
 <p>Writer-extensible option.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/exoticoptions/writerextensibleoption.hpp&gt;</code></p>
+<p><code>#include &lt;ql/instruments/writerextensibleoption.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for WriterExtensibleOption:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,15 +127,16 @@ $(function(){ initResizable(false); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_writer_extensible_option_1_1arguments.html">arguments</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional arguments for writer-extensible option.  <a href="class_quant_lib_1_1_writer_extensible_option_1_1arguments.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional arguments for writer-extensible options.  <a href="class_quant_lib_1_1_writer_extensible_option_1_1arguments.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_writer_extensible_option_1_1engine.html">engine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base engine.  <a href="class_quant_lib_1_1_writer_extensible_option_1_1engine.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base engine for writer-extensible options.  <a href="class_quant_lib_1_1_writer_extensible_option_1_1engine.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1333483a7772877890122a3a04b25a59" id="r_a1333483a7772877890122a3a04b25a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1333483a7772877890122a3a04b25a59">WriterExtensibleOption</a> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;payoff1, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; &amp;exercise1, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;payoff2, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; exercise2)</td></tr>
+<tr class="memitem:a1333483a7772877890122a3a04b25a59" id="r_a1333483a7772877890122a3a04b25a59"><td class="memItemLeft" align="right" valign="top"><a id="a1333483a7772877890122a3a04b25a59" name="a1333483a7772877890122a3a04b25a59"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WriterExtensibleOption</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;payoff1, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; &amp;exercise1, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;payoff2, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; exercise2)</td></tr>
 <tr class="separator:a1333483a7772877890122a3a04b25a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af107fedc8b0d4ebca9ee6a46afb1b61f" id="r_af107fedc8b0d4ebca9ee6a46afb1b61f"><td class="memItemLeft" align="right" valign="top"><a id="af107fedc8b0d4ebca9ee6a46afb1b61f" name="af107fedc8b0d4ebca9ee6a46afb1b61f"></a>
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_payoff.html">Payoff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>payoff2</b> ()</td></tr>
@@ -362,48 +363,8 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Writer-extensible option. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1333483a7772877890122a3a04b25a59" name="a1333483a7772877890122a3a04b25a59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1333483a7772877890122a3a04b25a59">&#9670;&#160;</a></span>WriterExtensibleOption()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_writer_extensible_option.html">WriterExtensibleOption</a> </td>
-          <td>(</td>
-          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>payoff1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>exercise1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_plain_vanilla_payoff.html">PlainVanillaPayoff</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>payoff2</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_exercise.html">Exercise</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>exercise2</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">payoff1</td><td>The first payoff </td></tr>
-    <tr><td class="paramname">exercise1</td><td>The first exercise date </td></tr>
-    <tr><td class="paramname">payoff2</td><td>The payoff of the extended option </td></tr>
-    <tr><td class="paramname">exercise2</td><td>The second exercise date </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<p>If out of the money at the original exercise date, this option is extended until a later exercise date with an amended strike. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a34523db1515ba7190d517dc4c483c293" name="a34523db1515ba7190d517dc4c483c293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34523db1515ba7190d517dc4c483c293">&#9670;&#160;</a></span>isExpired()</h2>
 

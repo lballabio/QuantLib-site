@@ -76,7 +76,8 @@ var searchData=
   ['turnbullwakemanasianengine_73',['TurnbullWakemanAsianEngine',['../class_quant_lib_1_1_turnbull_wakeman_asian_engine.html',1,'QuantLib']]],
   ['twdcurrency_74',['TWDCurrency',['../class_quant_lib_1_1_t_w_d_currency.html',1,'QuantLib']]],
   ['twoassetbarrieroption_75',['TwoAssetBarrierOption',['../class_quant_lib_1_1_two_asset_barrier_option.html',1,'QuantLib']]],
-  ['twodimensionalintegral_76',['TwoDimensionalIntegral',['../class_quant_lib_1_1_two_dimensional_integral.html',1,'QuantLib']]],
-  ['twofactormodel_77',['TwoFactorModel',['../class_quant_lib_1_1_two_factor_model.html',1,'QuantLib']]],
-  ['typepayoff_78',['TypePayoff',['../class_quant_lib_1_1_type_payoff.html',1,'QuantLib']]]
+  ['twoassetcorrelationoption_76',['TwoAssetCorrelationOption',['../class_quant_lib_1_1_two_asset_correlation_option.html',1,'QuantLib']]],
+  ['twodimensionalintegral_77',['TwoDimensionalIntegral',['../class_quant_lib_1_1_two_dimensional_integral.html',1,'QuantLib']]],
+  ['twofactormodel_78',['TwoFactorModel',['../class_quant_lib_1_1_two_factor_model.html',1,'QuantLib']]],
+  ['typepayoff_79',['TypePayoff',['../class_quant_lib_1_1_type_payoff.html',1,'QuantLib']]]
 ];

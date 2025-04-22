@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -203,9 +203,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>familyName</b>
 <tr class="memitem:a3827f28c6ec62cd6e7ce8d6065c0f09b inherit pub_methods_class_quant_lib_1_1_interest_rate_index" id="r_a3827f28c6ec62cd6e7ce8d6065c0f09b"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="group__types.html#ga7e529c39c477ba1f5a22264d93e8457a">Natural</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fixingDays</b> () const</td></tr>
 <tr class="separator:a3827f28c6ec62cd6e7ce8d6065c0f09b inherit pub_methods_class_quant_lib_1_1_interest_rate_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af332d4af13288e8638f60fc7b1c96a93 inherit pub_methods_class_quant_lib_1_1_interest_rate_index" id="r_af332d4af13288e8638f60fc7b1c96a93"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>fixingDate</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;valueDate) const</td></tr>
-<tr class="separator:af332d4af13288e8638f60fc7b1c96a93 inherit pub_methods_class_quant_lib_1_1_interest_rate_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55bc3b2dbe28e58a7a86172ee37404b0 inherit pub_methods_class_quant_lib_1_1_interest_rate_index" id="r_a55bc3b2dbe28e58a7a86172ee37404b0"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="class_quant_lib_1_1_currency.html">Currency</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>currency</b> () const</td></tr>
 <tr class="separator:a55bc3b2dbe28e58a7a86172ee37404b0 inherit pub_methods_class_quant_lib_1_1_interest_rate_index"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,6 +278,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Date calculations</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p>See <a href="https://www.theice.com/marketdata/reports/170">https://www.theice.com/marketdata/reports/170</a>. </p>
 </td></tr>
+<tr class="memitem:ade27a28e0dcbacec0fb30801840b9333" id="r_ade27a28e0dcbacec0fb30801840b9333"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade27a28e0dcbacec0fb30801840b9333">fixingDate</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;valueDate) const override</td></tr>
+<tr class="separator:ade27a28e0dcbacec0fb30801840b9333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae1be788c5cc61c18d408132e11041b" id="r_a3ae1be788c5cc61c18d408132e11041b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae1be788c5cc61c18d408132e11041b">valueDate</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;fixingDate) const override</td></tr>
 <tr class="separator:a3ae1be788c5cc61c18d408132e11041b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73f71dca37b89a3dc182aa864f396481" id="r_a73f71dca37b89a3dc182aa864f396481"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73f71dca37b89a3dc182aa864f396481">maturityDate</a> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;valueDate) const override</td></tr>
@@ -329,6 +328,33 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name_</b></td>
 <p>See <a href="https://www.theice.com/marketdata/reports/170">https://www.theice.com/marketdata/reports/170</a>.</p>
 <dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000039">Warning</a></b></dt><dd>This is the rate fixed in London by BBA. Use <a class="el" href="class_quant_lib_1_1_euribor.html" title="Euribor index">Euribor</a> if you're interested in the fixing by the <a class="el" href="struct_quant_lib_1_1_e_c_b.html" title="European Central Bank reserve maintenance dates.">ECB</a>. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ade27a28e0dcbacec0fb30801840b9333" name="ade27a28e0dcbacec0fb30801840b9333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade27a28e0dcbacec0fb30801840b9333">&#9670;&#160;</a></span>fixingDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quant_lib_1_1_date.html">Date</a> fixingDate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>valueDate</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_interest_rate_index.html">InterestRateIndex</a>.</p>
+
+</div>
+</div>
 <a id="a3ae1be788c5cc61c18d408132e11041b" name="a3ae1be788c5cc61c18d408132e11041b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ae1be788c5cc61c18d408132e11041b">&#9670;&#160;</a></span>valueDate()</h2>
 

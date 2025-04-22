@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -104,9 +104,6 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
-<p>Global boostrapper, with additional restrictions.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;ql/termstructures/globalbootstrap.hpp&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -114,8 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09984053bb8d72d116d75ecf664bae7a" id="r_a09984053bb8d72d116d75ecf664bae7a"><td class="memItemLeft" align="right" valign="top"><a id="a09984053bb8d72d116d75ecf664bae7a" name="a09984053bb8d72d116d75ecf664bae7a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GlobalBootstrap</b> (<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &gt; optimizer=nullptr, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &gt; endCriteria=nullptr)</td></tr>
 <tr class="separator:a09984053bb8d72d116d75ecf664bae7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599083037aa0d0b65a620d0a91f34984" id="r_a599083037aa0d0b65a620d0a91f34984"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a599083037aa0d0b65a620d0a91f34984">GlobalBootstrap</a> (std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; additionalHelpers, std::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; additionalDates, std::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt; additionalErrors, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &gt; optimizer=nullptr, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &gt; endCriteria=nullptr)</td></tr>
-<tr class="separator:a599083037aa0d0b65a620d0a91f34984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae44c37acc08c1e4239b0d5f6787b4f0b" id="r_ae44c37acc08c1e4239b0d5f6787b4f0b"><td class="memItemLeft" align="right" valign="top"><a id="ae44c37acc08c1e4239b0d5f6787b4f0b" name="ae44c37acc08c1e4239b0d5f6787b4f0b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GlobalBootstrap</b> (std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; additionalHelpers, std::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; additionalDates, AdditionalPenalties additionalPenalties, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &gt; optimizer=nullptr, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &gt; endCriteria=nullptr, ext::shared_ptr&lt; AdditionalBootstrapVariables &gt; additionalVariables=nullptr)</td></tr>
+<tr class="separator:ae44c37acc08c1e4239b0d5f6787b4f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0731b5a613f34a47099849a57c274ea8" id="r_a0731b5a613f34a47099849a57c274ea8"><td class="memItemLeft" align="right" valign="top"><a id="a0731b5a613f34a47099849a57c274ea8" name="a0731b5a613f34a47099849a57c274ea8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GlobalBootstrap</b> (std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; additionalHelpers, std::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt; additionalDates, std::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt; additionalPenalties, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=<a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;(), ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &gt; optimizer=nullptr, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &gt; endCriteria=nullptr, ext::shared_ptr&lt; AdditionalBootstrapVariables &gt; additionalVariables=nullptr)</td></tr>
+<tr class="separator:a0731b5a613f34a47099849a57c274ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021df2c056ab8a1b4e018a6b312d585b" id="r_a021df2c056ab8a1b4e018a6b312d585b"><td class="memItemLeft" align="right" valign="top"><a id="a021df2c056ab8a1b4e018a6b312d585b" name="a021df2c056ab8a1b4e018a6b312d585b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setup</b> (Curve *ts)</td></tr>
 <tr class="separator:a021df2c056ab8a1b4e018a6b312d585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,57 +126,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>calculate</b> () cons
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Curve&gt;<br />
-class QuantLib::GlobalBootstrap&lt; Curve &gt;</div><p>Global boostrapper, with additional restrictions. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a599083037aa0d0b65a620d0a91f34984" name="a599083037aa0d0b65a620d0a91f34984"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599083037aa0d0b65a620d0a91f34984">&#9670;&#160;</a></span>GlobalBootstrap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Curve&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_quant_lib_1_1_global_bootstrap.html">GlobalBootstrap</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>additionalHelpers</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; std::vector&lt; <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &gt;()&gt;</td>          <td class="paramname"><span class="paramname"><em>additionalDates</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::function&lt; <a class="el" href="class_quant_lib_1_1_array.html">Array</a>()&gt;</td>          <td class="paramname"><span class="paramname"><em>additionalErrors</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>accuracy</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_null.html">Null</a>&lt;<a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&gt;()</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_optimization_method.html">OptimizationMethod</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>optimizer</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_end_criteria.html">EndCriteria</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>endCriteria</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The set of (alive) additional dates is added to the interpolation grid. The set of additional dates must only depend on the current global evaluation date. The additionalErrors functor must yield at least as many values such that</p>
-<p>number of (usual, alive) rate helpers + number of (alive) additional values &gt;= number of data points - 1</p>
-<p>(note that the data points contain t=0). These values are treated as additional error terms in the optimization, the usual rate helpers return marketQuote - impliedQuote here. All error terms are equally weighted in the optimisation.</p>
-<p>The additional helpers are treated like the usual rate helpers, but no standard pillar dates are added for them.</p>
-<p>WARNING: This class is known to work with Traits <a class="el" href="struct_quant_lib_1_1_discount.html" title="Discount-curve traits.">Discount</a>, <a class="el" href="struct_quant_lib_1_1_zero_yield.html" title="Zero-curve traits.">ZeroYield</a>, <a class="el" href="class_quant_lib_1_1_forward.html" title="Abstract base forward class.">Forward</a>, i.e. the usual traits for IR curves in QL. It requires Traits::transformDirect() and Traits::transformInverse() to be implemented. Also, check the usage of Traits::updateGuess(), Traits::guess() in this class. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+class QuantLib::GlobalBootstrap&lt; Curve &gt;</div><p>Global boostrapper, with additional restrictions</p>
+<p>The additionalDates functor must return a set of additional dates to add to the interpolation grid. These dates must only depend on the global evaluation date.</p>
+<p>The additionalPenalties functor must yield at least as many values such that</p>
+<p>number of (usual, alive) rate helpers + number of additional values &gt;= number of data points - 1</p>
+<p>(note that the data points contain t=0). These values are treated as additional error terms in the optimization. The usual rate helpers return quoteError here. All error terms are equally weighted.</p>
+<p>The additionalHelpers are registered with the curve like the usual rate helpers, but no pillar dates or error terms are added for them. Pillars and error terms have to be added by additionalDates and additionalPenalties.</p>
+<p>The additionalVariables interface manages a set of additional variables to add to the optimization. This is useful to optimize model parameters used by rate helpers, for example, convexity adjustments for futures. See SimpleQuoteVariables for a concrete implementation of this interface.</p>
+<p>WARNING: This class is known to work with Traits <a class="el" href="struct_quant_lib_1_1_discount.html" title="Discount-curve traits.">Discount</a>, <a class="el" href="struct_quant_lib_1_1_zero_yield.html" title="Zero-curve traits.">ZeroYield</a>, <a class="el" href="class_quant_lib_1_1_forward.html" title="Abstract base forward class.">Forward</a>, i.e. the usual IR curves traits in QL. It requires Traits::transformDirect() and Traits::transformInverse() to be implemented. Also, check the usage of Traits::updateGuess(), Traits::guess() in this class. </p>
+</div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

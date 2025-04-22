@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -315,7 +315,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for yoy inflation cap-like instruments. </p>
 <p>Note that the standard YoY inflation cap/floor defined here is different from nominal, because in nominal world standard cap/floors do not have the first optionlet. This is because they set in advance so there is no point. However, yoy inflation generally sets (effectively) in arrears, (actually in arrears vs lag of a few months) thus the first optionlet is relevant. Hence we can do a parity test without a special definition of the YoY cap/floor instrument.</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000026">Tests</a></b></dt><dd><ul>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000024">Tests</a></b></dt><dd><ul>
 <li>the relationship between the values of caps, floors and the resulting collars is checked.</li>
 <li>the put-call parity between the values of caps, floors and swaps is checked.</li>
 <li>the correctness of the returned value is tested by checking it against a known good value. </li>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -193,7 +193,7 @@ BasketOption::results&#160;</td><td class="memItemRight" valign="bottom"><b>resu
 <p>This class implements the pricing formula from "Multi-asset Spread Option Pricing and Hedging", S. Deng, M. Li, J.Zhou, 2008 <a href="https://mpra.ub.uni-muenchen.de/8259/1/MPRA_paper_8259.pdf">https://mpra.ub.uni-muenchen.de/8259/1/MPRA_paper_8259.pdf</a></p>
 <p>The typo in formula (37) for J^2 is corrected</p>
 <p>This pricing formula only works if exactly one asset weight is positive. If more than one weight is positive then a mapping of the sum of correlated log-normal processes onto one log-normal process has to be carried out. This implementation is using: "WKB Approximation for the Sum of Two Correlated Lognormal Random Variables", C.F. Lo 2013 <a href="https://www.m-hikari.com/ams/ams-2013/ams-125-128-2013/loAMS125-128-2013.pdf">https://www.m-hikari.com/ams/ams-2013/ams-125-128-2013/loAMS125-128-2013.pdf</a> for this task.</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000112">Tests</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000111">Tests</a></b></dt><dd>the correctness of the returned value is tested by reproducing results available in literature. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61eb1a24e5329ccc296715a40dc3a19a" name="a61eb1a24e5329ccc296715a40dc3a19a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61eb1a24e5329ccc296715a40dc3a19a">&#9670;&#160;</a></span>calculate()</h2>

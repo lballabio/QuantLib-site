@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -102,14 +102,14 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_quant_lib_1_1_two_asset_barrier_option-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">TwoAssetBarrierOption Class Reference<div class="ingroups"><a class="el" href="group__instruments.html">Financial instruments</a></div></div></div>
+  <div class="headertitle"><div class="title">TwoAssetBarrierOption Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Barrier option on two assets  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;ql/experimental/exoticoptions/twoassetbarrieroption.hpp&gt;</code></p>
+<p><code>#include &lt;ql/instruments/twoassetbarrieroption.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for TwoAssetBarrierOption:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -297,6 +297,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Barrier option on two assets </p>
+<p>The value of the first asset is compared to the strike to determine the payoff, while the value of the second asset is monitored to check if the barrier is hit. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a34523db1515ba7190d517dc4c483c293" name="a34523db1515ba7190d517dc4c483c293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34523db1515ba7190d517dc4c483c293">&#9670;&#160;</a></span>isExpired()</h2>

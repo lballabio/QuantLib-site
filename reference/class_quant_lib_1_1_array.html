@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.37</div>
+   <div id="projectnumber">Reference manual - version 1.38</div>
    </div>
   </td>
  </tr>
@@ -137,6 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b2e34e072b9728c176ef98a510c8fdd" id="r_a1b2e34e072b9728c176ef98a510c8fdd"><td class="memItemLeft" align="right" valign="top"><a id="a1b2e34e072b9728c176ef98a510c8fdd" name="a1b2e34e072b9728c176ef98a510c8fdd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Array</b> (std::initializer_list&lt; <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> &gt;)</td></tr>
 <tr class="separator:a1b2e34e072b9728c176ef98a510c8fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015dafcabc5b46b9f6464e8b01b3a8aa" id="r_a015dafcabc5b46b9f6464e8b01b3a8aa"><td class="memTemplParams" colspan="2"><a id="a015dafcabc5b46b9f6464e8b01b3a8aa" name="a015dafcabc5b46b9f6464e8b01b3a8aa"></a>
+template&lt;typename T, typename = std::enable_if_t&lt;std::is_convertible_v&lt;T, Real&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a015dafcabc5b46b9f6464e8b01b3a8aa"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Array</b> (std::initializer_list&lt; T &gt; init)</td></tr>
+<tr class="separator:a015dafcabc5b46b9f6464e8b01b3a8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e4d0f94f1d4146f35b8d46fb89b2290" id="r_a8e4d0f94f1d4146f35b8d46fb89b2290"><td class="memTemplParams" colspan="2"><a id="a8e4d0f94f1d4146f35b8d46fb89b2290" name="a8e4d0f94f1d4146f35b8d46fb89b2290"></a>
 template&lt;class ForwardIterator&gt; </td></tr>
 <tr class="memitem:a8e4d0f94f1d4146f35b8d46fb89b2290"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Array</b> (ForwardIterator begin, ForwardIterator end)</td></tr>
@@ -430,7 +434,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>1-D array used in linear algebra. </p>
 <p>This class implements the concept of vector as used in linear algebra. As such, it is <b>not</b> meant to be used as a container - <code>std::vector</code> should be used instead.</p>
-<dl class="test"><dt><b><a class="el" href="test.html#_test000033">Tests</a></b></dt><dd>construction of arrays is checked in a number of cases </dd></dl>
+<dl class="test"><dt><b><a class="el" href="test.html#_test000031">Tests</a></b></dt><dd>construction of arrays is checked in a number of cases </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_gaussian1d_models_8cpp-example.html#_a1">Gaussian1dModels.cpp</a>, and <a class="el" href="_global_optimizer_8cpp-example.html#_a0">GlobalOptimizer.cpp</a>.</dd>
 </dl>
 </div></div><!-- contents -->

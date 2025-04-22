@@ -25,8 +25,7 @@ var searchData=
   ['getinfo_22',['getInfo',['../class_quant_lib_1_1_levenberg_marquardt.html#af159c4e477c16928952a4bcbac911bc8',1,'QuantLib::LevenbergMarquardt']]],
   ['getinittraits_23',['getInitTraits',['../struct_quant_lib_1_1_gaussian_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::GaussianCopulaPolicy::getInitTraits()'],['../class_quant_lib_1_1_t_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::TCopulaPolicy::getInitTraits()']]],
   ['getupdateddirection_24',['getUpdatedDirection',['../class_quant_lib_1_1_line_search_based_method.html#a6a41f9c70b205adb74472738383b5405',1,'QuantLib::LineSearchBasedMethod']]],
-  ['globalbootstrap_25',['GlobalBootstrap',['../class_quant_lib_1_1_global_bootstrap.html#a599083037aa0d0b65a620d0a91f34984',1,'QuantLib::GlobalBootstrap']]],
-  ['gradient_26',['gradient',['../class_quant_lib_1_1_cost_function.html#a80752c7cecbf7f90c457b21161727457',1,'QuantLib::CostFunction::gradient()'],['../class_quant_lib_1_1_least_square_function.html#ab26e5cf3836cd94c4a209d0254d4b424',1,'QuantLib::LeastSquareFunction::gradient()'],['../class_quant_lib_1_1_problem.html#ade662b750c56006317b08b8aa6b38ac8',1,'QuantLib::Problem::gradient(Array &amp;grad_f, const Array &amp;x)']]],
-  ['gradientevaluation_27',['gradientEvaluation',['../class_quant_lib_1_1_problem.html#aa1b27e05cc7d496e71335b6cf2bb3ac3',1,'QuantLib::Problem']]],
-  ['gradientnormvalue_28',['gradientNormValue',['../class_quant_lib_1_1_problem.html#a8e1917a03a536fd788612eba7c78ed61',1,'QuantLib::Problem']]]
+  ['gradient_25',['gradient',['../class_quant_lib_1_1_cost_function.html#a80752c7cecbf7f90c457b21161727457',1,'QuantLib::CostFunction::gradient()'],['../class_quant_lib_1_1_least_square_function.html#ab26e5cf3836cd94c4a209d0254d4b424',1,'QuantLib::LeastSquareFunction::gradient()'],['../class_quant_lib_1_1_problem.html#ade662b750c56006317b08b8aa6b38ac8',1,'QuantLib::Problem::gradient(Array &amp;grad_f, const Array &amp;x)']]],
+  ['gradientevaluation_26',['gradientEvaluation',['../class_quant_lib_1_1_problem.html#aa1b27e05cc7d496e71335b6cf2bb3ac3',1,'QuantLib::Problem']]],
+  ['gradientnormvalue_27',['gradientNormValue',['../class_quant_lib_1_1_problem.html#a8e1917a03a536fd788612eba7c78ed61',1,'QuantLib::Problem']]]
 ];
