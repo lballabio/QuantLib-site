@@ -178,8 +178,9 @@ var searchData=
   ['curiouslyrecurringtemplate_3c_20twofactormodel_3a_3ashortratetree_20_3e_175',['CuriouslyRecurringTemplate&lt; TwoFactorModel::ShortRateTree &gt;',['../class_quant_lib_1_1_curiously_recurring_template.html',1,'QuantLib']]],
   ['currency_176',['Currency',['../class_quant_lib_1_1_currency.html',1,'QuantLib']]],
   ['curvestate_177',['CurveState',['../class_quant_lib_1_1_curve_state.html',1,'QuantLib']]],
-  ['customregion_178',['CustomRegion',['../class_quant_lib_1_1_custom_region.html',1,'QuantLib']]],
-  ['cypcurrency_179',['CYPCurrency',['../class_quant_lib_1_1_c_y_p_currency.html',1,'QuantLib']]],
-  ['czechrepublic_180',['CzechRepublic',['../class_quant_lib_1_1_czech_republic.html',1,'QuantLib']]],
-  ['czkcurrency_181',['CZKCurrency',['../class_quant_lib_1_1_c_z_k_currency.html',1,'QuantLib']]]
+  ['customiborindex_178',['CustomIborIndex',['../class_quant_lib_1_1_custom_ibor_index.html',1,'QuantLib']]],
+  ['customregion_179',['CustomRegion',['../class_quant_lib_1_1_custom_region.html',1,'QuantLib']]],
+  ['cypcurrency_180',['CYPCurrency',['../class_quant_lib_1_1_c_y_p_currency.html',1,'QuantLib']]],
+  ['czechrepublic_181',['CzechRepublic',['../class_quant_lib_1_1_czech_republic.html',1,'QuantLib']]],
+  ['czkcurrency_182',['CZKCurrency',['../class_quant_lib_1_1_c_z_k_currency.html',1,'QuantLib']]]
 ];
