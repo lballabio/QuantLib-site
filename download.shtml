@@ -3,31 +3,12 @@ layout: default
 title: QuantLib Download Page
 ---
 
-<h1 class="center">Download QuantLib</h1>
-<p>Source packages for <b>all platforms</b>
-are available from GitHub in both zip and tar.gz format
-for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
-and <a href="https://github.com/lballabio/QuantLib-SWIG/releases/latest">QuantLib-SWIG</a>.
-Compiling QuantLib
-requires a working <a href="http://www.boost.org">Boost</a>
-installation; Boost 1.48 or later is required, but a more recent
-version is suggested. Advanced users may want
-to <a href="reference/config.html">configure the library</a> with
-non-default settings.</p>
-<p>There are no official binary packages, but volunteers provide them
-for a number of platforms.  <b>macOS users</b> can use Homebrew or MacPorts.
-<b>Debian users</b> can find the latest version of the different
-QuantLib packages in the "unstable" (a.k.a. "Sid") distribution; see
-the <a href=
-"http://packages.debian.org/cgi-bin/search_packages.pl?keywords=quantlib&amp;searchon=names&amp;subword=1&amp;version=unstable&amp;release=all">
-Debian site</a> for a list of available packages.  <b>Ubuntu users</b>
-can use <a href="https://launchpad.net/~edd/+archive/ubuntu/misc">Dirk
-Eddelbuettel's PPA</a>.  <b>Other Linux distributions</b> might also
-package the library; check your sources.  Users not wanting to wait
-for the library to be packaged may acquire QuantLib from the
-download link above.</p>
+<h1 class="center">Precompiled distributions</h1>
 
-<h2 class="center">QuantLib in Python</h2>
+<p>Official binary distributions are available for Python and C#;
+these should be preferred, unless you want to modify the library.</p>
+
+<h2 class="center">QuantLib for Python</h2>
 <p>Wheels are available for all common platforms and a few less common ones. To install QuantLib in your (virtual) environment, run:</p>
 <pre>
   pip install QuantLib
@@ -38,7 +19,7 @@ download link above.</p>
 </pre>
 <p>to your Python code.</p>
 
-<h2 class="center">QuantLib in C#</h2>
+<h2 class="center">QuantLib for C#</h2>
 <p>An experimental QuantLib package is
 available from NuGet.  It should work on Windows and OS X, but it's
 not guaranteed to work on all Linux distributions; we'd be grateful
@@ -53,3 +34,48 @@ your projects, run:</p>
 </pre>
 <p>to your C# code.</p>
 
+<h2 class="center">QuantLib in C++</h2>
+<p>There are no official binary packages, but volunteers provide them
+for a number of platforms.  <b>macOS users</b> can use Homebrew or MacPorts.
+<b>Debian users</b> can find the latest version of the different
+QuantLib packages in the "unstable" (a.k.a. "Sid") distribution; see
+the <a href=
+"http://packages.debian.org/cgi-bin/search_packages.pl?keywords=quantlib&amp;searchon=names&amp;subword=1&amp;version=unstable&amp;release=all">
+Debian site</a> for a list of available packages.  <b>Ubuntu users</b>
+can use <a href="https://launchpad.net/~edd/+archive/ubuntu/misc">Dirk
+Eddelbuettel's PPA</a>.  <b>Other Linux distributions</b> might also
+package the library; check your sources.  Note that some of these
+distributions may lag behind the upstream releases.</p>
+
+<h1 class="center">Source distributions</h1>
+
+<p>Official source distributions are available and should be used if a
+binary distribution is not available for your platform.  If you want
+to modify the library, you should fork our repository
+on <a href="https://github.com/lballabio/quantlib">GitHub</a> instead.</p>
+
+<h2 class="center">Download</h2>
+<p>Source packages for <b>all platforms</b>
+are available from GitHub in both zip and tar.gz format
+for <a href="https://github.com/lballabio/QuantLib/releases/latest">QuantLib</a>
+and <a href="https://github.com/lballabio/QuantLib-SWIG/releases/latest">QuantLib-SWIG</a>.
+Compiling QuantLib
+requires a working <a href="http://www.boost.org">Boost</a>
+installation; Boost 1.48 or later is required, but a more recent
+version is suggested. Advanced users may want
+to <a href="reference/config.html">configure the library</a> with
+non-default settings.</p>
+
+<h2 class="center">Compilation from source</h2>
+
+<p>Compilation instructions are available
+for <a href="/install/vc10.shtml">Microsoft Visual C++</a>,
+<a href="/install/macosx.shtml">Mac OS X</a> and
+<a href="/install/linux.shtml">Linux/Unix</a>. Alternatively, you can
+build QuantLib on all platforms following the
+<a href="/install/cmake.shtml">CMake build instructions</a>.</p>
+
+<p>Instructions for creating a Python wheel are available
+for <a href="/install/windows-python.shtml">Windows</a>,
+<a href="/install/macosx-python.shtml">Mac OS X</a> and
+<a href="/install/linux-python.shtml">Linux/Unix</a>.</p>

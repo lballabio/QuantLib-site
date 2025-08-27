@@ -3,21 +3,20 @@ layout: default
 title: QuantLib Installation
 ---
 
-<h1 class="center">QuantLib Installation</h1>
+<h1 class="center">QuantLib Compilation</h1>
 
-<p>Installation instructions are available
+<p>Before compiling QuantLib, please check if you can use one of the
+available binary distributions listed on
+our <a href="/download.shtml">download page</a>,
+
+<p>Compilation instructions are available
 for <a href="/install/vc10.shtml">Microsoft Visual C++</a>,
 <a href="/install/macosx.shtml">Mac OS X</a> and
-<a href="/install/linux.shtml">Linux/Unix</a>.
-</p>
-
-<p>You can also build QuantLib on all platforms following the
+<a href="/install/linux.shtml">Linux/Unix</a>. Alternatively, you can
+build QuantLib on all platforms following the
 <a href="/install/cmake.shtml">CMake build instructions</a>.</p>
 
-<h2 class="center">QuantLib-Python Installation</h2>
-
-<p>Installation instructions are available
+<p>Instructions for creating a Python wheel are available
 for <a href="/install/windows-python.shtml">Windows</a>,
 <a href="/install/macosx-python.shtml">Mac OS X</a> and
 <a href="/install/linux-python.shtml">Linux/Unix</a>.</p>
-
