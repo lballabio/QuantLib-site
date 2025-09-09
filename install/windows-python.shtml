@@ -88,7 +88,7 @@ its <code>Python</code> subfolder and build the QuantLib wrappers by
 executing:
 <pre>
   cd QuantLib-SWIG-1.36\Python
-  python -m build wheel
+  python -m build --wheel
 </pre>
 <p>This will create a binary wheel in the <code>dist</code> directory.
 To check that it works, run</p>
