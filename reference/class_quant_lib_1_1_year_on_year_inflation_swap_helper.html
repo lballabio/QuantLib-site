@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -86,7 +86,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_quant_lib_1_1_year_on_year_inflation_swap_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">YearOnYearInflationSwapHelper Class Reference</div></div>
 </div><!--header-->
@@ -102,24 +101,26 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="class_quant_lib_1_1_year_on_year_inflation_swap_helper__inherit__graph.png" border="0" usemap="#a_year_on_year_inflation_swap_helper_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="a_year_on_year_inflation_swap_helper_inherit__map" id="a_year_on_year_inflation_swap_helper_inherit__map">
-<area shape="rect" title="Year&#45;on&#45;year inflation&#45;swap bootstrap helper." alt="" coords="5,168,213,193"/>
-<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="10,79,208,120"/>
-<area shape="poly" title=" " alt="" coords="112,135,112,167,106,167,106,135"/>
-<area shape="rect" href="class_quant_lib_1_1_observer.html" title="Object that gets notified when a given observable changes." alt="" coords="20,5,94,31"/>
-<area shape="poly" title=" " alt="" coords="76,43,98,77,94,80,71,46"/>
-<area shape="rect" href="class_quant_lib_1_1_observable.html" title="Object that notifies its changes to a set of observers." alt="" coords="119,5,206,31"/>
-<area shape="poly" title=" " alt="" coords="148,45,124,80,120,77,144,42"/>
+<area shape="rect" title="Year&#45;on&#45;year inflation&#45;swap bootstrap helper." alt="" coords="5,183,213,208"/>
+<area shape="rect" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html" title=" " alt="" coords="10,94,208,135"/>
+<area shape="poly" title=" " alt="" coords="112,150,112,182,106,182,106,150"/>
+<area shape="rect" href="class_quant_lib_1_1_bootstrap_helper.html" title=" " alt="" coords="10,5,208,46"/>
+<area shape="poly" title=" " alt="" coords="112,62,112,94,106,94,106,62"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5173aacfdd6709cf5bd59103eac9f7e2" id="r_a5173aacfdd6709cf5bd59103eac9f7e2"><td class="memItemLeft" align="right" valign="top"><a id="a5173aacfdd6709cf5bd59103eac9f7e2" name="a5173aacfdd6709cf5bd59103eac9f7e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>YearOnYearInflationSwapHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapObsLag_, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;maturity, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> calendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> dayCounter, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; yii, CPI::InterpolationType interpolation, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; nominalTermStructure)</td></tr>
-<tr class="memitem:a147fe0b2814721610938ff1911356751" id="r_a147fe0b2814721610938ff1911356751"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147fe0b2814721610938ff1911356751">YearOnYearInflationSwapHelper</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapObsLag_, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;maturity, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> calendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> dayCounter, ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; yii, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; nominalTermStructure)</td></tr>
+<tr class="memitem:a5718255b37ac970376773c53aa77fb62" id="r_a5718255b37ac970376773c53aa77fb62"><td class="memItemLeft" align="right" valign="top"><a id="a5718255b37ac970376773c53aa77fb62" name="a5718255b37ac970376773c53aa77fb62"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>YearOnYearInflationSwapHelper</b> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapObsLag, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;maturity, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> calendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> dayCounter, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; &amp;yii, CPI::InterpolationType interpolation, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; nominalTermStructure)</td></tr>
+<tr class="memitem:aa36498d160cea384f33d2fb31850aa79" id="r_aa36498d160cea384f33d2fb31850aa79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa36498d160cea384f33d2fb31850aa79">YearOnYearInflationSwapHelper</a> (const <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &amp;quote, const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;swapObsLag, const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;maturity, <a class="el" href="class_quant_lib_1_1_calendar.html">Calendar</a> calendar, <a class="el" href="group__datetime.html#gaff46c5ae9385d20709bedade86edd368">BusinessDayConvention</a> paymentConvention, <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> dayCounter, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; &amp;yii, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; nominalTermStructure)</td></tr>
 <tr class="memitem:a2f8e9153669e9cae44818541286e3e51" id="r_a2f8e9153669e9cae44818541286e3e51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f8e9153669e9cae44818541286e3e51">setTermStructure</a> (<a class="el" href="class_quant_lib_1_1_yo_y_inflation_term_structure.html">YoYInflationTermStructure</a> *) override</td></tr>
 <tr class="memdesc:a2f8e9153669e9cae44818541286e3e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the term structure to be used for pricing  <br /></td></tr>
 <tr class="memitem:ab5f37fe136acee4d7bfd196bcf8bb315" id="r_ab5f37fe136acee4d7bfd196bcf8bb315"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f37fe136acee4d7bfd196bcf8bb315">impliedQuote</a> () const override</td></tr>
+<tr class="inherit_header pub_methods_class_quant_lib_1_1_relative_date_bootstrap_helper"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_quant_lib_1_1_relative_date_bootstrap_helper')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html">RelativeDateBootstrapHelper&lt; YoYInflationTermStructure &gt;</a></td></tr>
+<tr class="memitem:a745e6086fb11d54921891d4dc9ac38ea inherit pub_methods_class_quant_lib_1_1_relative_date_bootstrap_helper" id="r_a745e6086fb11d54921891d4dc9ac38ea"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>RelativeDateBootstrapHelper</b> (const std::variant&lt; <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;quote, bool updateDates=true)</td></tr>
+<tr class="memitem:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_relative_date_bootstrap_helper" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_bootstrap_helper"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_quant_lib_1_1_bootstrap_helper')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper&lt; YoYInflationTermStructure &gt;</a></td></tr>
 <tr class="memitem:add2ecc4ea7ffe066b326e81a1e244e33 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper" id="r_add2ecc4ea7ffe066b326e81a1e244e33"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapHelper</b> (const std::variant&lt; <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>, <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt; &gt; &amp;quote)</td></tr>
@@ -139,7 +140,6 @@ virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><t
 <tr class="memdesc:a79b8bd6a804eb9eef0ff63ec22a0128c inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">pillar date <br /></td></tr>
 <tr class="memitem:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper" id="r_a7a0400995f63278e99cf2afec5ccdc6d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#a7a0400995f63278e99cf2afec5ccdc6d">latestDate</a> () const</td></tr>
 <tr class="memdesc:a7a0400995f63278e99cf2afec5ccdc6d inherit pub_methods_class_quant_lib_1_1_bootstrap_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">latest date  <br /></td></tr>
-<tr class="memitem:a44137bb65de2396875934e48a6ee5099 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 <tr class="memitem:a1d7eaf2f5dccce1c7781b54d64ba4a07 inherit pub_methods_class_quant_lib_1_1_bootstrap_helper" id="r_a1d7eaf2f5dccce1c7781b54d64ba4a07"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="class_quant_lib_1_1_acyclic_visitor.html">AcyclicVisitor</a> &amp;)</td></tr>
 <tr class="inherit_header pub_methods_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_quant_lib_1_1_observer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
@@ -165,8 +165,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 <a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="class_quant_lib_1_1_observable.html">Observable</a> &amp;&amp;)=delete</td></tr>
 <tr class="memitem:a397546715bfc5aedd1d16dd202a19d4c inherit pub_methods_class_quant_lib_1_1_observable" id="r_a397546715bfc5aedd1d16dd202a19d4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_observable.html#a397546715bfc5aedd1d16dd202a19d4c">notifyObservers</a> ()</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
+inspectors</h2></td></tr>
 <tr class="memitem:a7a5037e9b29ab7cf7525523ec0c4b819" id="r_a7a5037e9b29ab7cf7525523ec0c4b819"><td class="memItemLeft" align="right" valign="top"><a id="a7a5037e9b29ab7cf7525523ec0c4b819" name="a7a5037e9b29ab7cf7525523ec0c4b819"></a>
 <a class="el" href="class_quant_lib_1_1_period.html">Period</a>&#160;</td><td class="memItemRight" valign="bottom"><b>swapObsLag_</b></td></tr>
 <tr class="memitem:a33de34dc880e36d57a65c417746e007d" id="r_a33de34dc880e36d57a65c417746e007d"><td class="memItemLeft" align="right" valign="top"><a id="a33de34dc880e36d57a65c417746e007d" name="a33de34dc880e36d57a65c417746e007d"></a>
@@ -185,6 +185,21 @@ CPI::InterpolationType&#160;</td><td class="memItemRight" valign="bottom"><b>int
 ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_year_on_year_inflation_swap.html">YearOnYearInflationSwap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>yyiis_</b></td></tr>
 <tr class="memitem:a5ef7cd33f709692f345dd04e49955732" id="r_a5ef7cd33f709692f345dd04e49955732"><td class="memItemLeft" align="right" valign="top"><a id="a5ef7cd33f709692f345dd04e49955732" name="a5ef7cd33f709692f345dd04e49955732"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>nominalTermStructure_</b></td></tr>
+<tr class="memitem:a967add8eab61b083df667e13191a82b0" id="r_a967add8eab61b083df667e13191a82b0"><td class="memItemLeft" align="right" valign="top"><a id="a967add8eab61b083df667e13191a82b0" name="a967add8eab61b083df667e13191a82b0"></a>
+<a class="el" href="class_quant_lib_1_1_relinkable_handle.html">RelinkableHandle</a>&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_term_structure.html">YoYInflationTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>termStructureHandle_</b></td></tr>
+<tr class="memitem:a687254dea61825684b2ce8ad753cdc7c" id="r_a687254dea61825684b2ce8ad753cdc7c"><td class="memItemLeft" align="right" valign="top"><a id="a687254dea61825684b2ce8ad753cdc7c" name="a687254dea61825684b2ce8ad753cdc7c"></a>
+ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_year_on_year_inflation_swap.html">YearOnYearInflationSwap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> () const</td></tr>
+<tr class="memitem:a99d980fe812ceb975a5e391d34d36439" id="r_a99d980fe812ceb975a5e391d34d36439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99d980fe812ceb975a5e391d34d36439">initializeDates</a> () override</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_quant_lib_1_1_observer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
+<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer" id="r_ae98429250f6997df7b87f4b37454609e"><td class="memItemLeft" align="right" valign="top">
+typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
+<tr class="memitem:aab7be0a2ef3486101fe70ac7ba229d17" id="r_aab7be0a2ef3486101fe70ac7ba229d17"><td class="memItemLeft" align="right" valign="top"><a id="aab7be0a2ef3486101fe70ac7ba229d17" name="aab7be0a2ef3486101fe70ac7ba229d17"></a>
+<a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>evaluationDate_</b></td></tr>
+<tr class="memitem:af57fc95250d411419f7e624ccc66a8db" id="r_af57fc95250d411419f7e624ccc66a8db"><td class="memItemLeft" align="right" valign="top"><a id="af57fc95250d411419f7e624ccc66a8db" name="af57fc95250d411419f7e624ccc66a8db"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateDates_</b></td></tr>
 <tr class="memitem:a5d87a388f17e28809793d3f796120ffe" id="r_a5d87a388f17e28809793d3f796120ffe"><td class="memItemLeft" align="right" valign="top"><a id="a5d87a388f17e28809793d3f796120ffe" name="a5d87a388f17e28809793d3f796120ffe"></a>
 <a class="el" href="class_quant_lib_1_1_handle.html">Handle</a>&lt; <a class="el" href="class_quant_lib_1_1_quote.html">Quote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>quote_</b></td></tr>
 <tr class="memitem:ab8dd7251ae853867524318d16decff5d" id="r_ab8dd7251ae853867524318d16decff5d"><td class="memItemLeft" align="right" valign="top"><a id="ab8dd7251ae853867524318d16decff5d" name="ab8dd7251ae853867524318d16decff5d"></a>
@@ -199,18 +214,12 @@ ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_year_on_year_inflati
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>latestRelevantDate_</b></td></tr>
 <tr class="memitem:a4d10e5a30c9bd78f4d75aa1aaf536f80" id="r_a4d10e5a30c9bd78f4d75aa1aaf536f80"><td class="memItemLeft" align="right" valign="top"><a id="a4d10e5a30c9bd78f4d75aa1aaf536f80" name="a4d10e5a30c9bd78f4d75aa1aaf536f80"></a>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pillarDate_</b></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_class_quant_lib_1_1_observer"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_class_quant_lib_1_1_observer')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="class_quant_lib_1_1_observer.html">Observer</a></td></tr>
-<tr class="memitem:ae98429250f6997df7b87f4b37454609e inherit pub_types_class_quant_lib_1_1_observer" id="r_ae98429250f6997df7b87f4b37454609e"><td class="memItemLeft" align="right" valign="top">
-typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Year-on-year inflation-swap bootstrap helper. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a147fe0b2814721610938ff1911356751" name="a147fe0b2814721610938ff1911356751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a147fe0b2814721610938ff1911356751">&#9670;&#160;</a></span>YearOnYearInflationSwapHelper()</h2>
+<a id="aa36498d160cea384f33d2fb31850aa79" name="aa36498d160cea384f33d2fb31850aa79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36498d160cea384f33d2fb31850aa79">&#9670;&#160;</a></span>YearOnYearInflationSwapHelper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +232,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>swapObsLag_</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_period.html">Period</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>swapObsLag</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -248,7 +257,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>yii</em></span>, </td>
+          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yo_y_inflation_index.html">YoYInflationIndex</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>yii</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -257,7 +266,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000116">Deprecated</a></b></dt><dd>Use the overload that passes an interpolation type instead. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000088">Deprecated</a></b></dt><dd>Use the overload that passes an interpolation type instead. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -286,7 +295,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 
 <p>sets the term structure to be used for pricing </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000160">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000161">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#ac8bb5ca2d4e7d7754be9f69e43a054ce">BootstrapHelper&lt; YoYInflationTermStructure &gt;</a>.</p>
 
@@ -316,6 +325,33 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper&lt; YoYInflationTermStructure &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a99d980fe812ceb975a5e391d34d36439" name="a99d980fe812ceb975a5e391d34d36439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d980fe812ceb975a5e391d34d36439">&#9670;&#160;</a></span>initializeDates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void initializeDates </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html">RelativeDateBootstrapHelper&lt; YoYInflationTermStructure &gt;</a>.</p>
 
 </div>
 </div>

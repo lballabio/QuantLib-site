@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -218,7 +218,7 @@ template&lt;class TS&gt; </div>
 </div><div class="memdoc">
 
 <p>sets the term structure to be used for pricing </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000160">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000161">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="class_quant_lib_1_1_arithmetic_o_i_s_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">ArithmeticOISRateHelper</a>, <a class="el" href="class_quant_lib_1_1_b_m_a_swap_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">BMASwapRateHelper</a>, <a class="el" href="class_quant_lib_1_1_bond_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">BondHelper</a>, <a class="el" href="class_quant_lib_1_1_cds_helper.html#a4e9e0e4ab8c8a8b53eb6c4ebbb36f081">CdsHelper</a>, <a class="el" href="class_quant_lib_1_1_cross_currency_basis_swap_rate_helper_base.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">CrossCurrencyBasisSwapRateHelperBase</a>, <a class="el" href="class_quant_lib_1_1_deposit_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">DepositRateHelper</a>, <a class="el" href="class_quant_lib_1_1_fra_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">FraRateHelper</a>, <a class="el" href="class_quant_lib_1_1_fx_swap_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">FxSwapRateHelper</a>, <a class="el" href="class_quant_lib_1_1_o_i_s_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">OISRateHelper</a>, <a class="el" href="class_quant_lib_1_1_overnight_index_future_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">OvernightIndexFutureRateHelper</a>, <a class="el" href="class_quant_lib_1_1_swap_rate_helper.html#a11bcb6e45e2bf87e14a6d6132d2e84bb">SwapRateHelper</a>, <a class="el" href="class_quant_lib_1_1_year_on_year_inflation_swap_helper.html#a2f8e9153669e9cae44818541286e3e51">YearOnYearInflationSwapHelper</a>, <a class="el" href="class_quant_lib_1_1_yo_y_optionlet_helper.html#a34bc9d8da63639e34a11c9a7feffd9bb">YoYOptionletHelper</a>, and <a class="el" href="class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html#aadf7249b52911324536ebe83153aac46">ZeroCouponInflationSwapHelper</a>.</p>
 
@@ -342,7 +342,7 @@ template&lt;class TS&gt; </div>
 
 <p>Implements <a class="el" href="class_quant_lib_1_1_observer.html#a99b02345a8a15d3c5ea2844a2253f510">Observer</a>.</p>
 
-<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_cds_helper.html#a44137bb65de2396875934e48a6ee5099">CdsHelper</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; TS &gt;</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; DefaultProbabilityTermStructure &gt;</a>, and <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; YieldTermStructure &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_cds_helper.html#a44137bb65de2396875934e48a6ee5099">CdsHelper</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; TS &gt;</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; DefaultProbabilityTermStructure &gt;</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; YieldTermStructure &gt;</a>, <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; YoYInflationTermStructure &gt;</a>, and <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html#a44137bb65de2396875934e48a6ee5099">RelativeDateBootstrapHelper&lt; ZeroInflationTermStructure &gt;</a>.</p>
 
 </div>
 </div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_20quantlib_0',['Where to get QuantLib',['../where.html',1,'']]]
+  ['history_0',['Version history',['../history.html',1,'']]]
 ];

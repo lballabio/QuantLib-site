@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['on_20copyright_20and_20license_0',['Comments on Copyright and License',['../license.html#licensecomments',1,'']]]
+  ['pricers_0',['Pricers',['../group__shortrate.html#pricers',1,'']]]
 ];

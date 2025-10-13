@@ -8,8 +8,7 @@ var searchData=
   ['weightsum_5',['weightSum',['../class_quant_lib_1_1_general_statistics.html#a26bcd981de6f01be01d748093952ce9b',1,'QuantLib::GeneralStatistics::weightSum()'],['../class_quant_lib_1_1_incremental_statistics.html#a26bcd981de6f01be01d748093952ce9b',1,'QuantLib::IncrementalStatistics::weightSum()']]],
   ['westernimpl_6',['WesternImpl',['../class_quant_lib_1_1_calendar_1_1_western_impl.html',1,'QuantLib::Calendar']]],
   ['what_7',['what',['../class_quant_lib_1_1_error.html#abf843cbb29dec939d0731e491bab6f70',1,'QuantLib::Error']]],
-  ['where_20to_20get_20quantlib_8',['Where to get QuantLib',['../where.html',1,'']]],
-  ['wibor_9',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
-  ['writerextensibleoption_10',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'QuantLib']]],
-  ['wse_11',['WSE',['../class_quant_lib_1_1_poland.html#abe41cfffd960e29a5d8b07be00aeda42a514d5ce931d941f2bd91f16c1828ce9b',1,'QuantLib::Poland']]]
+  ['wibor_8',['Wibor',['../class_quant_lib_1_1_wibor.html',1,'QuantLib']]],
+  ['writerextensibleoption_9',['WriterExtensibleOption',['../class_quant_lib_1_1_writer_extensible_option.html',1,'QuantLib']]],
+  ['wse_10',['WSE',['../class_quant_lib_1_1_poland.html#abe41cfffd960e29a5d8b07be00aeda42a514d5ce931d941f2bd91f16c1828ce9b',1,'QuantLib::Poland']]]
 ];

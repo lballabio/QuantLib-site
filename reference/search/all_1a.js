@@ -10,7 +10,7 @@ var searchData=
   ['zerocondition_7',['ZeroCondition',['../class_quant_lib_1_1_zero_condition.html',1,'QuantLib']]],
   ['zerocouponbond_8',['ZeroCouponBond',['../class_quant_lib_1_1_zero_coupon_bond.html',1,'QuantLib']]],
   ['zerocouponinflationswap_9',['ZeroCouponInflationSwap',['../class_quant_lib_1_1_zero_coupon_inflation_swap.html',1,'QuantLib']]],
-  ['zerocouponinflationswaphelper_10',['ZeroCouponInflationSwapHelper',['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html',1,'ZeroCouponInflationSwapHelper'],['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html#a634b2e2e35b2967cb0196f58672a3d31',1,'QuantLib::ZeroCouponInflationSwapHelper::ZeroCouponInflationSwapHelper()']]],
+  ['zerocouponinflationswaphelper_10',['ZeroCouponInflationSwapHelper',['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html',1,'ZeroCouponInflationSwapHelper'],['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html#a2696fade2d73d5190299b942e0c19b1d',1,'QuantLib::ZeroCouponInflationSwapHelper::ZeroCouponInflationSwapHelper()']]],
   ['zerocouponswap_11',['ZeroCouponSwap',['../class_quant_lib_1_1_zero_coupon_swap.html',1,'QuantLib']]],
   ['zerocurve_12',['ZeroCurve',['../group__yieldtermstructures.html#gab0fc9b631f36e7661b35642d67035aeb',1,'QuantLib']]],
   ['zeroinflationcashflow_13',['ZeroInflationCashFlow',['../class_quant_lib_1_1_zero_inflation_cash_flow.html',1,'ZeroInflationCashFlow'],['../class_quant_lib_1_1_zero_inflation_cash_flow.html#afb72876a8bfafc624d81c0933eff21be',1,'QuantLib::ZeroInflationCashFlow::ZeroInflationCashFlow()']]],
@@ -27,5 +27,5 @@ var searchData=
   ['zigguratgaussianrng_24',['ZigguratGaussianRng',['../class_quant_lib_1_1_ziggurat_gaussian_rng.html',1,'QuantLib']]],
   ['zigguratrng_25',['ZigguratRng',['../class_quant_lib_1_1_ziggurat_rng.html',1,'QuantLib']]],
   ['zmwcurrency_26',['ZMWCurrency',['../class_quant_lib_1_1_z_m_w_currency.html',1,'QuantLib']]],
-  ['zspread_27',['zSpread',['../class_quant_lib_1_1_cash_flows.html#a17fc818f8f6ea7279270d3af517c519d',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, Real npv, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;, const DayCounter &amp;dayCounter, Compounding compounding, Frequency frequency, bool includeSettlementDateFlows, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)'],['../class_quant_lib_1_1_cash_flows.html#ae41f87c951f3c36355724ca372f82cb5',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;d, Real npv, const DayCounter &amp;dayCounter, Compounding compounding, Frequency frequency, bool includeSettlementDateFlows, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)']]]
+  ['zspread_27',['zSpread',['../class_quant_lib_1_1_cash_flows.html#a17fc818f8f6ea7279270d3af517c519d',1,'QuantLib::CashFlows']]]
 ];

@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -222,6 +222,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">analytic piecewise constant time dependent Heston-model engine  <a href="class_quant_lib_1_1_analytic_p_t_d_heston_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AnalyticSimpleChooserEngine" id="r_AnalyticSimpleChooserEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_analytic_simple_chooser_engine.html">AnalyticSimpleChooserEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pricing engine for European simple chooser option.  <a href="class_quant_lib_1_1_analytic_simple_chooser_engine.html#details">More...</a><br /></td></tr>
+<tr class="memitem:AnalyticSoftBarrierEngine" id="r_AnalyticSoftBarrierEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_analytic_soft_barrier_engine.html">AnalyticSoftBarrierEngine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pricing engine for soft barrier european options using an analytical formula.  <a href="class_quant_lib_1_1_analytic_soft_barrier_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AnalyticTwoAssetBarrierEngine" id="r_AnalyticTwoAssetBarrierEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_analytic_two_asset_barrier_engine.html">AnalyticTwoAssetBarrierEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analytic engine for barrier option on two assets.  <a href="class_quant_lib_1_1_analytic_two_asset_barrier_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AnalyticTwoAssetCorrelationEngine" id="r_AnalyticTwoAssetCorrelationEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_analytic_two_asset_correlation_engine.html">AnalyticTwoAssetCorrelationEngine</a></td></tr>
@@ -272,6 +274,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_quant_lib_1_1_average.html" title="Placeholder for enumerated averaging types.">Average</a> BMA coupon.  <a href="class_quant_lib_1_1_average_b_m_a_coupon.html#details">More...</a><br /></td></tr>
 <tr class="memitem:AverageBMALeg" id="r_AverageBMALeg"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_average_b_m_a_leg.html">AverageBMALeg</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper class building a sequence of average BMA coupons  <a href="class_quant_lib_1_1_average_b_m_a_leg.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BachelierCalculator" id="r_BachelierCalculator"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bachelier_calculator.html">BachelierCalculator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bachelier calculator class.  <a href="class_quant_lib_1_1_bachelier_calculator.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BachelierCapFloorEngine" id="r_BachelierCapFloorEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bachelier_cap_floor_engine.html">BachelierCapFloorEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bachelier-Black-formula cap/floor engine.  <a href="class_quant_lib_1_1_bachelier_cap_floor_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BachelierSwaptionEngine" id="r_BachelierSwaptionEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bachelier_swaption_engine.html">BachelierSwaptionEngine</a></td></tr>
@@ -346,7 +350,6 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3-months Bibor index  <a href="class_quant_lib_1_1_bibor3_m.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Bibor6M" id="r_Bibor6M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bibor6_m.html">Bibor6M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">6-months Bibor index  <a href="class_quant_lib_1_1_bibor6_m.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Bibor9M" id="r_Bibor9M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bibor9_m.html">Bibor9M</a></td></tr>
 <tr class="memitem:BiborSW" id="r_BiborSW"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bibor_s_w.html">BiborSW</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-week Bibor index  <a href="class_quant_lib_1_1_bibor_s_w.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Bicubic" id="r_Bicubic"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bicubic.html">Bicubic</a></td></tr>
@@ -416,6 +419,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant Black volatility, no time-strike dependence.  <a href="class_quant_lib_1_1_black_constant_vol.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BlackDeltaCalculator" id="r_BlackDeltaCalculator"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_delta_calculator.html">BlackDeltaCalculator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Black delta calculator class.  <a href="class_quant_lib_1_1_black_delta_calculator.html#details">More...</a><br /></td></tr>
+<tr class="memitem:BlackDeltaPremiumAdjustedMaxStrikeClass" id="r_BlackDeltaPremiumAdjustedMaxStrikeClass"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_delta_premium_adjusted_max_strike_class.html">BlackDeltaPremiumAdjustedMaxStrikeClass</a></td></tr>
+<tr class="memitem:BlackDeltaPremiumAdjustedSolverClass" id="r_BlackDeltaPremiumAdjustedSolverClass"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_delta_premium_adjusted_solver_class.html">BlackDeltaPremiumAdjustedSolverClass</a></td></tr>
 <tr class="memitem:BlackIborCouponPricer" id="r_BlackIborCouponPricer"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_ibor_coupon_pricer.html">BlackIborCouponPricer</a></td></tr>
 <tr class="memitem:BlackKarasinski" id="r_BlackKarasinski"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_black_karasinski.html">BlackKarasinski</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard Black-Karasinski model class.  <a href="class_quant_lib_1_1_black_karasinski.html#details">More...</a><br /></td></tr>
@@ -460,7 +465,6 @@ Classes</h2></td></tr>
 <tr class="memitem:BondHelper" id="r_BondHelper"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bond_helper.html">BondHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> helper for curve bootstrap.  <a href="class_quant_lib_1_1_bond_helper.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BootstrapError" id="r_BootstrapError"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_error.html">BootstrapError</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">bootstrap error  <a href="class_quant_lib_1_1_bootstrap_error.html#details">More...</a><br /></td></tr>
 <tr class="memitem:BootstrapHelper" id="r_BootstrapHelper"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base helper class for bootstrapping.  <a href="class_quant_lib_1_1_bootstrap_helper.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Botswana" id="r_Botswana"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_botswana.html">Botswana</a></td></tr>
@@ -543,6 +547,8 @@ Classes</h2></td></tr>
 <tr class="memitem:CashOrNothingPayoff" id="r_CashOrNothingPayoff"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cash_or_nothing_payoff.html">CashOrNothingPayoff</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary cash-or-nothing payoff.  <a href="class_quant_lib_1_1_cash_or_nothing_payoff.html#details">More...</a><br /></td></tr>
 <tr class="memitem:CCTEU" id="r_CCTEU"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_c_t_e_u.html">CCTEU</a></td></tr>
+<tr class="memitem:Cdi" id="r_Cdi"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cdi.html">Cdi</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">BRL-CDI <a class="el" href="class_quant_lib_1_1_index.html" title="purely virtual base class for indexes">Index</a>: relevant for <a href="https://en.wikipedia.org/wiki/Brazilian_Swap">https://en.wikipedia.org/wiki/Brazilian_Swap</a>.  <a href="class_quant_lib_1_1_cdi.html#details">More...</a><br /></td></tr>
 <tr class="memitem:CDO" id="r_CDO"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_c_d_o.html">CDO</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">collateralized debt obligation  <a href="class_quant_lib_1_1_c_d_o.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Cdor" id="r_Cdor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_cdor.html">Cdor</a></td></tr>
@@ -851,6 +857,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discount-curve traits.  <a href="struct_quant_lib_1_1_discount.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DiscountingBondEngine" id="r_DiscountingBondEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discounting_bond_engine.html">DiscountingBondEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discounting engine for bonds.  <a href="class_quant_lib_1_1_discounting_bond_engine.html#details">More...</a><br /></td></tr>
+<tr class="memitem:DiscountingPerpetualFuturesEngine" id="r_DiscountingPerpetualFuturesEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discounting_perpetual_futures_engine.html">DiscountingPerpetualFuturesEngine</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discounting engine for perpetual futures.  <a href="class_quant_lib_1_1_discounting_perpetual_futures_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DiscountingSwapEngine" id="r_DiscountingSwapEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discounting_swap_engine.html">DiscountingSwapEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discounting engine for swaps.  <a href="class_quant_lib_1_1_discounting_swap_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:DiscrepancyStatistics" id="r_DiscrepancyStatistics"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_discrepancy_statistics.html">DiscrepancyStatistics</a></td></tr>
@@ -955,43 +963,18 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">European Union as geographical/economic region.  <a href="class_quant_lib_1_1_e_u_region.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Euribor" id="r_Euribor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor.html">Euribor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Euribor index  <a href="class_quant_lib_1_1_euribor.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Euribor10M" id="r_Euribor10M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor10_m.html">Euribor10M</a></td></tr>
-<tr class="memitem:Euribor11M" id="r_Euribor11M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor11_m.html">Euribor11M</a></td></tr>
 <tr class="memitem:Euribor1M" id="r_Euribor1M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor1_m.html">Euribor1M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-month Euribor index  <a href="class_quant_lib_1_1_euribor1_m.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Euribor1W" id="r_Euribor1W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor1_w.html">Euribor1W</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-week Euribor index  <a href="class_quant_lib_1_1_euribor1_w.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Euribor1Y" id="r_Euribor1Y"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor1_y.html">Euribor1Y</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-year Euribor index  <a href="class_quant_lib_1_1_euribor1_y.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Euribor2M" id="r_Euribor2M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor2_m.html">Euribor2M</a></td></tr>
-<tr class="memitem:Euribor2W" id="r_Euribor2W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor2_w.html">Euribor2W</a></td></tr>
 <tr class="memitem:Euribor365" id="r_Euribor365"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365.html">Euribor365</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actual/365 Euribor index.  <a href="class_quant_lib_1_1_euribor365.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Euribor365_5F10M" id="r_Euribor365_5F10M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__10_m.html">Euribor365_10M</a></td></tr>
-<tr class="memitem:Euribor365_5F11M" id="r_Euribor365_5F11M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__11_m.html">Euribor365_11M</a></td></tr>
-<tr class="memitem:Euribor365_5F1M" id="r_Euribor365_5F1M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__1_m.html">Euribor365_1M</a></td></tr>
-<tr class="memitem:Euribor365_5F1Y" id="r_Euribor365_5F1Y"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__1_y.html">Euribor365_1Y</a></td></tr>
-<tr class="memitem:Euribor365_5F2M" id="r_Euribor365_5F2M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__2_m.html">Euribor365_2M</a></td></tr>
-<tr class="memitem:Euribor365_5F2W" id="r_Euribor365_5F2W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__2_w.html">Euribor365_2W</a></td></tr>
-<tr class="memitem:Euribor365_5F3M" id="r_Euribor365_5F3M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__3_m.html">Euribor365_3M</a></td></tr>
-<tr class="memitem:Euribor365_5F3W" id="r_Euribor365_5F3W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__3_w.html">Euribor365_3W</a></td></tr>
-<tr class="memitem:Euribor365_5F4M" id="r_Euribor365_5F4M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__4_m.html">Euribor365_4M</a></td></tr>
-<tr class="memitem:Euribor365_5F5M" id="r_Euribor365_5F5M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__5_m.html">Euribor365_5M</a></td></tr>
-<tr class="memitem:Euribor365_5F6M" id="r_Euribor365_5F6M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__6_m.html">Euribor365_6M</a></td></tr>
-<tr class="memitem:Euribor365_5F7M" id="r_Euribor365_5F7M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__7_m.html">Euribor365_7M</a></td></tr>
-<tr class="memitem:Euribor365_5F8M" id="r_Euribor365_5F8M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__8_m.html">Euribor365_8M</a></td></tr>
-<tr class="memitem:Euribor365_5F9M" id="r_Euribor365_5F9M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365__9_m.html">Euribor365_9M</a></td></tr>
-<tr class="memitem:Euribor365_5FSW" id="r_Euribor365_5FSW"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor365___s_w.html">Euribor365_SW</a></td></tr>
 <tr class="memitem:Euribor3M" id="r_Euribor3M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor3_m.html">Euribor3M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3-months Euribor index  <a href="class_quant_lib_1_1_euribor3_m.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Euribor3W" id="r_Euribor3W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor3_w.html">Euribor3W</a></td></tr>
-<tr class="memitem:Euribor4M" id="r_Euribor4M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor4_m.html">Euribor4M</a></td></tr>
-<tr class="memitem:Euribor5M" id="r_Euribor5M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor5_m.html">Euribor5M</a></td></tr>
 <tr class="memitem:Euribor6M" id="r_Euribor6M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor6_m.html">Euribor6M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">6-months Euribor index  <a href="class_quant_lib_1_1_euribor6_m.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Euribor7M" id="r_Euribor7M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor7_m.html">Euribor7M</a></td></tr>
-<tr class="memitem:Euribor8M" id="r_Euribor8M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor8_m.html">Euribor8M</a></td></tr>
-<tr class="memitem:Euribor9M" id="r_Euribor9M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor9_m.html">Euribor9M</a></td></tr>
 <tr class="memitem:EuriborSwapIfrFix" id="r_EuriborSwapIfrFix"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor_swap_ifr_fix.html">EuriborSwapIfrFix</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EuriborSwapIfrFix index base class  <a href="class_quant_lib_1_1_euribor_swap_ifr_fix.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EuriborSwapIsdaFixA" id="r_EuriborSwapIsdaFixA"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_euribor_swap_isda_fix_a.html">EuriborSwapIsdaFixA</a></td></tr>
@@ -1000,26 +983,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EuriborSwapIsdaFixB index base class  <a href="class_quant_lib_1_1_euribor_swap_isda_fix_b.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EURLibor" id="r_EURLibor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor.html">EURLibor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base class for all ICE EUR LIBOR indexes but the O/N  <a href="class_quant_lib_1_1_e_u_r_libor.html#details">More...</a><br /></td></tr>
-<tr class="memitem:EURLibor10M" id="r_EURLibor10M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor10_m.html">EURLibor10M</a></td></tr>
-<tr class="memitem:EURLibor11M" id="r_EURLibor11M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor11_m.html">EURLibor11M</a></td></tr>
 <tr class="memitem:EURLibor1M" id="r_EURLibor1M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor1_m.html">EURLibor1M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-month EUR Libor index  <a href="class_quant_lib_1_1_e_u_r_libor1_m.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EURLibor1Y" id="r_EURLibor1Y"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor1_y.html">EURLibor1Y</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-year EUR Libor index  <a href="class_quant_lib_1_1_e_u_r_libor1_y.html#details">More...</a><br /></td></tr>
-<tr class="memitem:EURLibor2M" id="r_EURLibor2M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor2_m.html">EURLibor2M</a></td></tr>
-<tr class="memitem:EURLibor2W" id="r_EURLibor2W"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor2_w.html">EURLibor2W</a></td></tr>
 <tr class="memitem:EURLibor3M" id="r_EURLibor3M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor3_m.html">EURLibor3M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">3-months EUR Libor index  <a href="class_quant_lib_1_1_e_u_r_libor3_m.html#details">More...</a><br /></td></tr>
-<tr class="memitem:EURLibor4M" id="r_EURLibor4M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor4_m.html">EURLibor4M</a></td></tr>
-<tr class="memitem:EURLibor5M" id="r_EURLibor5M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor5_m.html">EURLibor5M</a></td></tr>
 <tr class="memitem:EURLibor6M" id="r_EURLibor6M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor6_m.html">EURLibor6M</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">6-months EUR Libor index  <a href="class_quant_lib_1_1_e_u_r_libor6_m.html#details">More...</a><br /></td></tr>
-<tr class="memitem:EURLibor7M" id="r_EURLibor7M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor7_m.html">EURLibor7M</a></td></tr>
-<tr class="memitem:EURLibor8M" id="r_EURLibor8M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor8_m.html">EURLibor8M</a></td></tr>
-<tr class="memitem:EURLibor9M" id="r_EURLibor9M"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor9_m.html">EURLibor9M</a></td></tr>
 <tr class="memitem:EURLiborON" id="r_EURLiborON"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor_o_n.html">EURLiborON</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overnight EUR Libor index.  <a href="class_quant_lib_1_1_e_u_r_libor_o_n.html#details">More...</a><br /></td></tr>
-<tr class="memitem:EURLiborSW" id="r_EURLiborSW"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_e_u_r_libor_s_w.html">EURLiborSW</a></td></tr>
 <tr class="memitem:EurLiborSwapIfrFix" id="r_EurLiborSwapIfrFix"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_eur_libor_swap_ifr_fix.html">EurLiborSwapIfrFix</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EurLiborSwapIfrFix index base class  <a href="class_quant_lib_1_1_eur_libor_swap_ifr_fix.html#details">More...</a><br /></td></tr>
 <tr class="memitem:EurLiborSwapIsdaFixA" id="r_EurLiborSwapIsdaFixA"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_eur_libor_swap_isda_fix_a.html">EurLiborSwapIsdaFixA</a></td></tr>
@@ -1532,6 +1505,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield curve with an added vector of spreads on the zero-yield rate.  <a href="class_quant_lib_1_1_interpolated_piecewise_zero_spreaded_term_structure.html#details">More...</a><br /></td></tr>
 <tr class="memitem:InterpolatedSimpleZeroCurve" id="r_InterpolatedSimpleZeroCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_simple_zero_curve.html">InterpolatedSimpleZeroCurve</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_quant_lib_1_1_yield_term_structure.html" title="Interest-rate term structure.">YieldTermStructure</a> based on interpolation of zero rates.  <a href="class_quant_lib_1_1_interpolated_simple_zero_curve.html#details">More...</a><br /></td></tr>
+<tr class="memitem:InterpolatedSpreadDiscountCurve" id="r_InterpolatedSpreadDiscountCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_spread_discount_curve.html">InterpolatedSpreadDiscountCurve</a></td></tr>
 <tr class="memitem:InterpolatedSurvivalProbabilityCurve" id="r_InterpolatedSurvivalProbabilityCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_survival_probability_curve.html">InterpolatedSurvivalProbabilityCurve</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_quant_lib_1_1_default_probability_term_structure.html" title="Default probability term structure.">DefaultProbabilityTermStructure</a> based on interpolation of survival probabilities.  <a href="class_quant_lib_1_1_interpolated_survival_probability_curve.html#details">More...</a><br /></td></tr>
 <tr class="memitem:InterpolatedSwaptionVolatilityCube" id="r_InterpolatedSwaptionVolatilityCube"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_swaption_volatility_cube.html">InterpolatedSwaptionVolatilityCube</a></td></tr>
@@ -2157,11 +2131,14 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peruvian sol.  <a href="class_quant_lib_1_1_p_e_h_currency.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PEICurrency" id="r_PEICurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_p_e_i_currency.html">PEICurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peruvian inti.  <a href="class_quant_lib_1_1_p_e_i_currency.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PenaltyFunction" id="r_PenaltyFunction"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_penalty_function.html">PenaltyFunction</a></td></tr>
 <tr class="memitem:PENCurrency" id="r_PENCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_p_e_n_currency.html">PENCurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peruvian nuevo sol.  <a href="class_quant_lib_1_1_p_e_n_currency.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PercentageStrikePayoff" id="r_PercentageStrikePayoff"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_percentage_strike_payoff.html">PercentageStrikePayoff</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Payoff with strike expressed as percentage  <a href="class_quant_lib_1_1_percentage_strike_payoff.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Period" id="r_Period"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_period.html">Period</a></td></tr>
+<tr class="memitem:PerpetualFutures" id="r_PerpetualFutures"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_perpetual_futures.html">PerpetualFutures</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perpetual Futures.  <a href="class_quant_lib_1_1_perpetual_futures.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PerturbativeBarrierOptionEngine" id="r_PerturbativeBarrierOptionEngine"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_perturbative_barrier_option_engine.html">PerturbativeBarrierOptionEngine</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">perturbative barrier-option engine  <a href="class_quant_lib_1_1_perturbative_barrier_option_engine.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PHPCurrency" id="r_PHPCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_p_h_p_currency.html">PHPCurrency</a></td></tr>
@@ -2170,6 +2147,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise-constant parameter.  <a href="class_quant_lib_1_1_piecewise_constant_parameter.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PiecewiseDefaultCurve" id="r_PiecewiseDefaultCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_piecewise_default_curve.html">PiecewiseDefaultCurve</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise default-probability term structure.  <a href="class_quant_lib_1_1_piecewise_default_curve.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PiecewiseSpreadYieldCurve" id="r_PiecewiseSpreadYieldCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_piecewise_spread_yield_curve.html">PiecewiseSpreadYieldCurve</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise spread yield term structure.  <a href="class_quant_lib_1_1_piecewise_spread_yield_curve.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PiecewiseTimeDependentHestonModel" id="r_PiecewiseTimeDependentHestonModel"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_piecewise_time_dependent_heston_model.html">PiecewiseTimeDependentHestonModel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise time dependent Heston model.  <a href="class_quant_lib_1_1_piecewise_time_dependent_heston_model.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PiecewiseYieldCurve" id="r_PiecewiseYieldCurve"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_piecewise_yield_curve.html">PiecewiseYieldCurve</a></td></tr>
@@ -2330,7 +2309,6 @@ Classes</h2></td></tr>
 <tr class="memitem:RONCurrency" id="r_RONCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_r_o_n_currency.html">RONCurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Romanian new leu.  <a href="class_quant_lib_1_1_r_o_n_currency.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Rounding" id="r_Rounding"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_rounding.html">Rounding</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">basic rounding class  <a href="class_quant_lib_1_1_rounding.html#details">More...</a><br /></td></tr>
 <tr class="memitem:RSDCurrency" id="r_RSDCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_r_s_d_currency.html">RSDCurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serbian dinar.  <a href="class_quant_lib_1_1_r_s_d_currency.html#details">More...</a><br /></td></tr>
 <tr class="memitem:RUBCurrency" id="r_RUBCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_r_u_b_currency.html">RUBCurrency</a></td></tr>
@@ -2441,6 +2419,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sofr (Secured Overnight Financing <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39" title="interest rates">Rate</a>) index.  <a href="class_quant_lib_1_1_sofr.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SofrFutureRateHelper" id="r_SofrFutureRateHelper"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_sofr_future_rate_helper.html">SofrFutureRateHelper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RateHelper for bootstrapping over CME SOFR futures.  <a href="class_quant_lib_1_1_sofr_future_rate_helper.html#details">More...</a><br /></td></tr>
+<tr class="memitem:SoftBarrierOption" id="r_SoftBarrierOption"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_soft_barrier_option.html">SoftBarrierOption</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soft barrier option on a single asset.  <a href="class_quant_lib_1_1_soft_barrier_option.html#details">More...</a><br /></td></tr>
 <tr class="memitem:SoftCallability" id="r_SoftCallability"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_soft_callability.html">SoftCallability</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">callability leaving to the holder the possibility to convert  <a href="class_quant_lib_1_1_soft_callability.html#details">More...</a><br /></td></tr>
 <tr class="memitem:Solver1D" id="r_Solver1D"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_solver1_d.html">Solver1D</a></td></tr>
@@ -2594,8 +2574,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for historical data.  <a href="class_quant_lib_1_1_time_series.html#details">More...</a><br /></td></tr>
 <tr class="memitem:TNDCurrency" id="r_TNDCurrency"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_t_n_d_currency.html">TNDCurrency</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tunisian dinar.  <a href="class_quant_lib_1_1_t_n_d_currency.html#details">More...</a><br /></td></tr>
-<tr class="memitem:Tona" id="r_Tona"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_tona.html">Tona</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TONA index  <a href="class_quant_lib_1_1_tona.html#details">More...</a><br /></td></tr>
+<tr class="memitem:Tonar" id="r_Tonar"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_tonar.html">Tonar</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TONAR index  <a href="class_quant_lib_1_1_tonar.html#details">More...</a><br /></td></tr>
 <tr class="memitem:TqrEigenDecomposition" id="r_TqrEigenDecomposition"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_tqr_eigen_decomposition.html">TqrEigenDecomposition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">tridiag. QR eigen decomposition with explicite shift aka Wilkinson  <a href="class_quant_lib_1_1_tqr_eigen_decomposition.html#details">More...</a><br /></td></tr>
 <tr class="memitem:TransformedGrid" id="r_TransformedGrid"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_transformed_grid.html">TransformedGrid</a></td></tr>
@@ -2934,7 +2914,7 @@ typedef <a class="el" href="class_quant_lib_1_1_hybrid_simulated_annealing.html"
 <tr class="memitem:a0f493e452b423831a8fb4425ef7e55af" id="r_a0f493e452b423831a8fb4425ef7e55af"><td class="memItemLeft" align="right" valign="top"><a id="a0f493e452b423831a8fb4425ef7e55af" name="a0f493e452b423831a8fb4425ef7e55af"></a>
 typedef <a class="el" href="class_quant_lib_1_1_xabr_swaption_volatility_cube.html">XabrSwaptionVolatilityCube</a>&lt; SwaptionVolCubeNoArbSabrModel &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>NoArbSabrSwaptionVolatilityCube</b></td></tr>
 <tr class="memdesc:a0f493e452b423831a8fb4425ef7e55af"><td class="mdescLeft">&#160;</td><td class="mdescRight">no-arbitrage <a class="el" href="class_quant_lib_1_1_s_a_b_r.html" title="SABR interpolation factory and traits">SABR</a> volatility cube for swaptions <br /></td></tr>
-<tr class="memitem:a66c98cc1274225b487de051e0caf1de5" id="r_a66c98cc1274225b487de051e0caf1de5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_quant_lib_1_1_euribor1_w.html">Euribor1W</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66c98cc1274225b487de051e0caf1de5">EuriborSW</a></td></tr>
+<tr class="memitem:abae7e5371c3636b51dc3611bcc2482f3" id="r_abae7e5371c3636b51dc3611bcc2482f3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_quant_lib_1_1_tonar.html">Tonar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abae7e5371c3636b51dc3611bcc2482f3">Tona</a></td></tr>
 <tr class="memitem:a62292a666c18467ed5e2407154e0b623" id="r_a62292a666c18467ed5e2407154e0b623"><td class="memItemLeft" align="right" valign="top"><a id="a62292a666c18467ed5e2407154e0b623" name="a62292a666c18467ed5e2407154e0b623"></a>
 typedef std::vector&lt; ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_callability.html">Callability</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CallabilitySchedule</b></td></tr>
 <tr class="memitem:a2cbf2c853a5cc3fc7f8bbcedf51c859e" id="r_a2cbf2c853a5cc3fc7f8bbcedf51c859e"><td class="memItemLeft" align="right" valign="top"><a id="a2cbf2c853a5cc3fc7f8bbcedf51c859e" name="a2cbf2c853a5cc3fc7f8bbcedf51c859e"></a>
@@ -3006,6 +2986,8 @@ typedef <a class="el" href="class_quant_lib_1_1_interpolated_piecewise_zero_spre
 typedef <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html">BootstrapHelper</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RateHelper</b></td></tr>
 <tr class="memitem:abcf7a30c4534a94e3433dac11c8444e4" id="r_abcf7a30c4534a94e3433dac11c8444e4"><td class="memItemLeft" align="right" valign="top"><a id="abcf7a30c4534a94e3433dac11c8444e4" name="abcf7a30c4534a94e3433dac11c8444e4"></a>
 typedef <a class="el" href="class_quant_lib_1_1_relative_date_bootstrap_helper.html">RelativeDateBootstrapHelper</a>&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RelativeDateRateHelper</b></td></tr>
+<tr class="memitem:gabfb1079cb158e8db6da85571e21c88a3" id="r_gabfb1079cb158e8db6da85571e21c88a3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_quant_lib_1_1_interpolated_spread_discount_curve.html">InterpolatedSpreadDiscountCurve</a>&lt; <a class="el" href="class_quant_lib_1_1_log_linear.html">LogLinear</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__yieldtermstructures.html#gabfb1079cb158e8db6da85571e21c88a3">SpreadDiscountCurve</a></td></tr>
+<tr class="memdesc:gabfb1079cb158e8db6da85571e21c88a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d" title="spreads on interest rates">Spread</a> yield curve based on log-linear interpolation of discount factors.  <br /></td></tr>
 <tr class="memitem:gab0fc9b631f36e7661b35642d67035aeb" id="r_gab0fc9b631f36e7661b35642d67035aeb"><td class="memItemLeft" align="right" valign="top">
 typedef <a class="el" href="class_quant_lib_1_1_interpolated_zero_curve.html">InterpolatedZeroCurve</a>&lt; <a class="el" href="class_quant_lib_1_1_linear.html">Linear</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ZeroCurve</b></td></tr>
 <tr class="memdesc:gab0fc9b631f36e7661b35642d67035aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Term structure based on linear interpolation of zero yields. <br /></td></tr>
@@ -3343,6 +3325,10 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, <a class="el" href="struct_quant_lib_1_1_double_barrier.html#a1d1cfd8ffb84e947f82999c682b666a7">DoubleBarrier::Type</a> type)</td></tr>
 <tr class="memitem:a5c75fdd478574f4857531bdb93f5ed82" id="r_a5c75fdd478574f4857531bdb93f5ed82"><td class="memItemLeft" align="right" valign="top"><a id="a5c75fdd478574f4857531bdb93f5ed82" name="a5c75fdd478574f4857531bdb93f5ed82"></a>
 std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;, YoYInflationCapFloor::Type)</td></tr>
+<tr class="memitem:aeb77187427e8aaf26ce71ed6892d405f" id="r_aeb77187427e8aaf26ce71ed6892d405f"><td class="memItemLeft" align="right" valign="top"><a id="aeb77187427e8aaf26ce71ed6892d405f" name="aeb77187427e8aaf26ce71ed6892d405f"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, PerpetualFutures::PayoffType type)</td></tr>
+<tr class="memitem:a9dd44617e64a12ff5f2d67fbd0018c17" id="r_a9dd44617e64a12ff5f2d67fbd0018c17"><td class="memItemLeft" align="right" valign="top"><a id="a9dd44617e64a12ff5f2d67fbd0018c17" name="a9dd44617e64a12ff5f2d67fbd0018c17"></a>
+std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;out, PerpetualFutures::FundingType type)</td></tr>
 <tr class="memitem:aea54da5ee0db4df9753b6929d63d0387" id="r_aea54da5ee0db4df9753b6929d63d0387"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea54da5ee0db4df9753b6929d63d0387">simplifyNotificationGraph</a> (<a class="el" href="class_quant_lib_1_1_instrument.html">Instrument</a> &amp;instrument, const <a class="el" href="#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;leg, bool unregisterCoupons=false)</td></tr>
 <tr class="memdesc:aea54da5ee0db4df9753b6929d63d0387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function to optimize the observability graph of an instrument.  <br /></td></tr>
 <tr class="memitem:ae7c57af6f416da6cf5dd0f7808ddb93a" id="r_ae7c57af6f416da6cf5dd0f7808ddb93a"><td class="memItemLeft" align="right" valign="top"><a id="ae7c57af6f416da6cf5dd0f7808ddb93a" name="ae7c57af6f416da6cf5dd0f7808ddb93a"></a>
@@ -4195,7 +4181,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_multiple_resets_coupon.html" title="multiple-reset coupon">MultipleResetsCoupon</a>. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_multiple_resets_coupon.html" title="multiple-reset coupon">MultipleResetsCoupon</a>. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -4210,7 +4196,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>Renamed to MultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated</a></b></dt><dd>Renamed to MultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -4225,7 +4211,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>Renamed to AveragingMultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated</a></b></dt><dd>Renamed to AveragingMultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -4240,22 +4226,22 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated</a></b></dt><dd>Renamed to CompoundingMultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000005">Deprecated</a></b></dt><dd>Renamed to CompoundingMultipleResetsPricer. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
-<a id="a66c98cc1274225b487de051e0caf1de5" name="a66c98cc1274225b487de051e0caf1de5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66c98cc1274225b487de051e0caf1de5">&#9670;&#160;</a></span>EuriborSW</h2>
+<a id="abae7e5371c3636b51dc3611bcc2482f3" name="abae7e5371c3636b51dc3611bcc2482f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae7e5371c3636b51dc3611bcc2482f3">&#9670;&#160;</a></span>Tona</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="class_quant_lib_1_1_euribor1_w.html">Euribor1W</a> <a class="el" href="#a66c98cc1274225b487de051e0caf1de5">EuriborSW</a></td>
+          <td class="memname">typedef <a class="el" href="class_quant_lib_1_1_tonar.html">Tonar</a> <a class="el" href="#abae7e5371c3636b51dc3611bcc2482f3">Tona</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000050">Deprecated</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_euribor1_w.html" title="1-week Euribor index">Euribor1W</a>. Deprecated in version 1.35. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000049">Deprecated</a></b></dt><dd>Renamed to <a class="el" href="class_quant_lib_1_1_tonar.html" title="TONAR index">Tonar</a>. Deprecated in version 1.40. </dd></dl>
 
 </div>
 </div>
@@ -4405,7 +4391,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>Finite differences calculation. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>Out of scope; copy this enumeration in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>Out of scope; copy this enumeration in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4614,7 +4600,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 </div><div class="memdoc">
 
 <p>utility fuction for weighted sum of NPVs </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4661,7 +4647,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>returns a pair of first and second derivative values calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is just one single element equal to one.</p>
 <p>All SimpleQuotes are tweaked together in a parallel fashion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4708,7 +4694,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>returns a pair of first and second derivative values calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
 <p>All SimpleQuotes are tweaked together in a parallel fashion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4754,7 +4740,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>(bucket) PV01 sensitivity analysis for a (single) <a class="el" href="class_quant_lib_1_1_simple_quote.html" title="market element returning a stored value">SimpleQuote</a> </p>
 <p>returns a pair of first and second derivative values calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4805,7 +4791,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>(bucket) parameters' sensitivity analysis for a (single) <a class="el" href="class_quant_lib_1_1_simple_quote.html" title="market element returning a stored value">SimpleQuote</a> </p>
 <p>returns a vector (one element for each paramet) of pair of first and second derivative values calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4847,7 +4833,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>returns a pair of first and second derivative vectors calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
 <p>The (bucket) SimpleQuotes are tweaked one by one separately.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4894,7 +4880,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>returns a vector (one element for each paramet) of pair of first and second derivative vectors calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
 <p>The (bucket) SimpleQuotes are tweaked one by one separately.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4936,7 +4922,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
 <p>returns a pair of first and second derivative metrices calculated as prescribed by <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a>. Second derivative might not be available depending on <a class="el" href="#ad00bead6ac43c0e0e6aec58f844f0395" title="Finite differences calculation.">SensitivityAnalysis</a> value.</p>
 <p>Empty quantities vector is considered as unit vector. The same if the vector is of size one.</p>
 <p>The (bucket) SimpleQuotes are tweaked one by one separately.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">Deprecated</a></b></dt><dd>Out of scope; copy this function in your codebase if needed. Deprecated in version 1.36. </dd></dl>
 
 </div>
 </div>
@@ -4963,7 +4949,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -4990,7 +4976,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -5017,7 +5003,7 @@ template&lt;class URSG, class IC&gt; </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">Deprecated</a></b></dt><dd>Part of the old FD framework; copy this function in your codebase if needed. Deprecated in version 1.37. </dd></dl>
 
 </div>
 </div>
@@ -5906,7 +5892,7 @@ template&lt;class DataIterator&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000128">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 formula </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000129">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -5943,7 +5929,7 @@ template&lt;class DataIterator&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000129">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 formula </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000130">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -5985,7 +5971,7 @@ template&lt;class DataIterator&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 model forward derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000130">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 model forward derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000131">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6022,7 +6008,7 @@ template&lt;class DataIterator&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 model forward derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000131">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 model forward derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000132">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6453,7 +6439,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 probability of being in the money (in the bond martingale measure), i.e. N(d2). It is a risk-neutral probability, not the real world one. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000132">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 probability of being in the money (in the bond martingale measure), i.e. N(d2). It is a risk-neutral probability, not the real world one. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000133">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6485,7 +6471,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 probability of being in the money (in the bond martingale measure), i.e. N(d2). It is a risk-neutral probability, not the real world one. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000133">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
+<p>Black 1976 probability of being in the money (in the bond martingale measure), i.e. N(d2). It is a risk-neutral probability, not the real world one. </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000134">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6591,7 +6577,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000134">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
+<p>Black 1976 formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000135">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
 
 </div>
 </div>
@@ -6670,7 +6656,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000135">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
+<p>Black 1976 formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000136">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
 
 </div>
 </div>
@@ -6707,7 +6693,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula for second derivative by standard deviation </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000136">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. </dd></dl>
+<p>Black 1976 formula for second derivative by standard deviation </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000137">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. </dd></dl>
 
 </div>
 </div>
@@ -6744,7 +6730,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Black 1976 formula for second derivative by standard deviation </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000137">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. </dd></dl>
+<p>Black 1976 formula for second derivative by standard deviation </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000138">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. </dd></dl>
 
 </div>
 </div>
@@ -6782,7 +6768,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
       </table>
 </div><div class="memdoc">
 <p>Black style formula when forward is normal rather than log-normal. This is essentially the model of Bachelier.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000138">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000139">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6815,7 +6801,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
       </table>
 </div><div class="memdoc">
 <p>Black style formula when forward is normal rather than log-normal. This is essentially the model of Bachelier.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000139">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000140">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6853,7 +6839,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
       </table>
 </div><div class="memdoc">
 <p>Bachelier Black model forward derivative.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000140">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000141">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -6886,7 +6872,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
       </table>
 </div><div class="memdoc">
 <p>Bachelier Black model forward derivative.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000141">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000142">Warning</a></b></dt><dd>Bachelier model needs absolute volatility, not percentage volatility. Standard deviation is absoluteVolatility*sqrt(timeToMaturity) </dd></dl>
 
 </div>
 </div>
@@ -7004,7 +6990,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Bachelier formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000142">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
+<p>Bachelier formula for standard deviation derivative </p><dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000143">Warning</a></b></dt><dd>instead of volatility it uses standard deviation, i.e. volatility*sqrt(timeToMaturity), and it returns the derivative with respect to the standard deviation. If T is the time to maturity Black vega would be blackStdDevDerivative(strike, forward, stdDev)*sqrt(T) </dd></dl>
 
 </div>
 </div>
@@ -7172,7 +7158,7 @@ Black-Scholes Implied Volatility" M. Li, <a href="http://mpra.ub.uni-muenchen.de
 <p>See Fabien Le Floc’h and Gary Kennedy, "Explicit SABR Calibration through Simple Expansions", available from <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2467231">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2467231</a>.</p>
 <p>The returned array contains the guesses for alpha, beta, nu and rho. The value for beta is the one passed in input.</p>
 <p>The idea is to estimate atm volatility, skew and curvature using the three volatility points closest around the forward (k_0 and vol_0 would be the closest strike and its volatility, k_m and vol_m the previous point, k_p and vol_p the following one) and solve a system for the <a class="el" href="class_quant_lib_1_1_s_a_b_r.html" title="SABR interpolation factory and traits">SABR</a> parameters that match them.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000175">Warning</a></b></dt><dd>This functionality requires Boost 1.78 or later. When compiled with an earlier version, calling this function will raise a run-time exception. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000176">Warning</a></b></dt><dd>This functionality requires Boost 1.78 or later. When compiled with an earlier version, calling this function will raise a run-time exception. </dd></dl>
 
 </div>
 </div>

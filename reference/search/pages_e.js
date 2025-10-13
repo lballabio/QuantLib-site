@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['releases_0',['QuantLib releases',['../where.html#download',1,'']]],
-  ['resources_1',['Additional resources',['../resources.html',1,'']]]
+  ['single_20factor_20models_0',['Single-factor models',['../group__shortrate.html#singlefactormodels',1,'']]],
+  ['suite_1',['Test Suite',['../test.html',1,'']]]
 ];

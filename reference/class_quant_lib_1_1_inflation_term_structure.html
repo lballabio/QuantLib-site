@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -209,6 +209,8 @@ ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Se
 <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frequency_</b></td></tr>
 <tr class="memitem:a4eb4d174abedf4391dcf778cba6e7dd3" id="r_a4eb4d174abedf4391dcf778cba6e7dd3"><td class="memItemLeft" align="right" valign="top"><a id="a4eb4d174abedf4391dcf778cba6e7dd3" name="a4eb4d174abedf4391dcf778cba6e7dd3"></a>
 <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseRate_</b></td></tr>
+<tr class="memitem:a3da982a1d3d4255d4c6c1a00135cab37" id="r_a3da982a1d3d4255d4c6c1a00135cab37"><td class="memItemLeft" align="right" valign="top"><a id="a3da982a1d3d4255d4c6c1a00135cab37" name="a3da982a1d3d4255d4c6c1a00135cab37"></a>
+<a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseDate_</b></td></tr>
 <tr class="memitem:a5a0af3fc009c1c3fa49ac4e272dfdc8c" id="r_a5a0af3fc009c1c3fa49ac4e272dfdc8c"><td class="memItemLeft" align="right" valign="top"><a id="a5a0af3fc009c1c3fa49ac4e272dfdc8c" name="a5a0af3fc009c1c3fa49ac4e272dfdc8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSeasonality</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Seasonality</a> &gt; &amp;seasonality)</td></tr>
 <tr class="memitem:a6ddbf3d77942aa10b01e2553cdfb6e19" id="r_a6ddbf3d77942aa10b01e2553cdfb6e19"><td class="memItemLeft" align="right" valign="top"><a id="a6ddbf3d77942aa10b01e2553cdfb6e19" name="a6ddbf3d77942aa10b01e2553cdfb6e19"></a>
@@ -263,7 +265,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b> = true</
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000120">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000092">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
 
 </div>
 </div>
@@ -291,8 +293,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b> = true</
 </div><div class="memdoc">
 
 <p>minimum (base) date </p>
-<p>The last date for which we have information.</p>
-<p>When not set directly (the recommended option), it is calculated base on an observation lag relative to today. </p>
+<p>The last date for which we have information. </p>
+
+<p>Reimplemented in <a class="el" href="class_quant_lib_1_1_piecewise_zero_inflation_curve.html#a5043dbd45586c59283d2c6fbb500dcbe">PiecewiseZeroInflationCurve&lt; Interpolator, Bootstrap, Traits &gt;</a>, <a class="el" href="class_quant_lib_1_1_piecewise_zero_inflation_curve.html#a5043dbd45586c59283d2c6fbb500dcbe">PiecewiseZeroInflationCurve&lt; Interpolator, Bootstrap, Traits &gt;</a>, and <a class="el" href="class_quant_lib_1_1_piecewise_zero_inflation_curve.html#a5043dbd45586c59283d2c6fbb500dcbe">PiecewiseZeroInflationCurve&lt; Interpolator, IterativeBootstrap, ZeroInflationTraits &gt;</a>.</p>
 
 </div>
 </div>
@@ -310,7 +313,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b> = true</
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000121">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000093">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
 
 </div>
 </div>
@@ -334,7 +337,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updated_</b> = true</
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000122">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">Deprecated</a></b></dt><dd>Do not use; inflation curves always have an explicit base date now. Deprecated in version 1.39. </dd></dl>
 
 </div>
 </div>

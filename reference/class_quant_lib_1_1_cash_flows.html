@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -201,7 +201,6 @@ static <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78"
 <tr class="memitem:a17fc818f8f6ea7279270d3af517c519d" id="r_a17fc818f8f6ea7279270d3af517c519d"><td class="memItemLeft" align="right" valign="top"><a id="a17fc818f8f6ea7279270d3af517c519d" name="a17fc818f8f6ea7279270d3af517c519d"></a>
 static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>zSpread</b> (const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;leg, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> <a class="el" href="#a935030a697b942fe432e020706a21fc8">npv</a>, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, bool includeSettlementDateFlows, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="class_quant_lib_1_1_date.html">Date</a> npvDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.0)</td></tr>
 <tr class="memdesc:a17fc818f8f6ea7279270d3af517c519d"><td class="mdescLeft">&#160;</td><td class="mdescRight">implied Z-spread. <br /></td></tr>
-<tr class="memitem:ae41f87c951f3c36355724ca372f82cb5" id="r_ae41f87c951f3c36355724ca372f82cb5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae41f87c951f3c36355724ca372f82cb5">zSpread</a> (const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;leg, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;d, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> <a class="el" href="#a935030a697b942fe432e020706a21fc8">npv</a>, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;dayCounter, <a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a> compounding, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, bool includeSettlementDateFlows, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> settlementDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="class_quant_lib_1_1_date.html">Date</a> npvDate=<a class="el" href="class_quant_lib_1_1_date.html">Date</a>(), <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-10, <a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a> maxIterations=100, <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a> guess=0.0)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>cashflow-analysis functions </p>
@@ -848,86 +847,6 @@ static <a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d"
 <p>NPV of the cash flows. </p>
 <p>For details on z-spread refer to: "Credit Spreads Explained", Lehman Brothers European Fixed Income Research - March 2004, D. O'Kane</p>
 <p>The NPV is the sum of the cash flows, each discounted according to the z-spreaded term structure. The result is affected by the choice of the z-spread compounding and the relative frequency and day counter. </p>
-
-</div>
-</div>
-<a id="ae41f87c951f3c36355724ca372f82cb5" name="ae41f87c951f3c36355724ca372f82cb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae41f87c951f3c36355724ca372f82cb5">&#9670;&#160;</a></span>zSpread()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d">Spread</a> zSpread </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_quant_lib.html#afd0d2e08465e4b7e928c75416bd8dc4b">Leg</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>leg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_yield_term_structure.html">YieldTermStructure</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>npv</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dayCounter</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_quant_lib.html#a2779d04b4839fd386b5c85bbb96aaf73">Compounding</a></td>          <td class="paramname"><span class="paramname"><em>compounding</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a></td>          <td class="paramname"><span class="paramname"><em>frequency</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>includeSettlementDateFlows</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>settlementDate</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>()</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_quant_lib_1_1_date.html">Date</a></td>          <td class="paramname"><span class="paramname"><em>npvDate</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>()</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a></td>          <td class="paramname"><span class="paramname"><em>accuracy</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1.0e-10</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__types.html#gaf38bdb4c54463b1f456655efa95b5c77">Size</a></td>          <td class="paramname"><span class="paramname"><em>maxIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">100</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a></td>          <td class="paramname"><span class="paramname"><em>guess</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated</a></b></dt><dd>Use the other overload. Deprecated in version 1.35. </dd></dl>
 
 </div>
 </div>

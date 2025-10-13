@@ -26,7 +26,7 @@ var searchData=
   ['timeseries_3c_20volatility_20_3e_23',['TimeSeries&lt; Volatility &gt;',['../class_quant_lib_1_1_time_series.html',1,'QuantLib']]],
   ['timesetter_24',['TimeSetter',['../class_quant_lib_1_1_tridiagonal_operator_1_1_time_setter.html',1,'QuantLib::TridiagonalOperator']]],
   ['tndcurrency_25',['TNDCurrency',['../class_quant_lib_1_1_t_n_d_currency.html',1,'QuantLib']]],
-  ['tona_26',['Tona',['../class_quant_lib_1_1_tona.html',1,'QuantLib']]],
+  ['tonar_26',['Tonar',['../class_quant_lib_1_1_tonar.html',1,'QuantLib']]],
   ['topology_27',['Topology',['../class_quant_lib_1_1_particle_swarm_optimization_1_1_topology.html',1,'QuantLib::ParticleSwarmOptimization']]],
   ['tqreigendecomposition_28',['TqrEigenDecomposition',['../class_quant_lib_1_1_tqr_eigen_decomposition.html',1,'QuantLib']]],
   ['transformedgrid_29',['TransformedGrid',['../class_quant_lib_1_1_transformed_grid.html',1,'QuantLib']]],

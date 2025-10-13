@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -202,7 +202,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_quant_lib_1_1_bond.html" title="Base bond class.">Bond</a> helper for curve bootstrap. </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000179">Warning</a></b></dt><dd>This class assumes that the reference date does not change between calls of <a class="el" href="#a11bcb6e45e2bf87e14a6d6132d2e84bb" title="sets the term structure to be used for pricing">setTermStructure()</a>. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000180">Warning</a></b></dt><dd>This class assumes that the reference date does not change between calls of <a class="el" href="#a11bcb6e45e2bf87e14a6d6132d2e84bb" title="sets the term structure to be used for pricing">setTermStructure()</a>. </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abdda03578e24734ff6c6cdd452e34a7c" name="abdda03578e24734ff6c6cdd452e34a7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdda03578e24734ff6c6cdd452e34a7c">&#9670;&#160;</a></span>BondHelper()</h2>
@@ -227,7 +227,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000180">Warning</a></b></dt><dd>Setting a pricing engine to the passed bond from external code will cause the bootstrap to fail or to give wrong results. It is advised to discard the bond after creating the helper, so that the helper has sole ownership of it. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000181">Warning</a></b></dt><dd>Setting a pricing engine to the passed bond from external code will cause the bootstrap to fail or to give wrong results. It is advised to discard the bond after creating the helper, so that the helper has sole ownership of it. </dd></dl>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><div class="memdoc">
 
 <p>sets the term structure to be used for pricing </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000160">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000161">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#ac8bb5ca2d4e7d7754be9f69e43a054ce">BootstrapHelper&lt; YieldTermStructure &gt;</a>.</p>
 

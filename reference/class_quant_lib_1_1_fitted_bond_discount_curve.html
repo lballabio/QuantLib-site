@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -264,7 +264,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <div class="textblock"><p><a class="el" href="struct_quant_lib_1_1_discount.html" title="Discount-curve traits.">Discount</a> curve fitted to a set of fixed-coupon bonds. </p>
 <p>This class fits a discount function \( d(t) \) over a set of bonds, using a user defined fitting method. The discount function is fit in such a way so that all cashflows of all input bonds, when discounted using \( d(t) \), will reproduce the set of input bond prices in an optimized sense. Minimized price errors are weighted by the inverse of their respective bond duration.</p>
 <p>The <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve.html" title="Discount curve fitted to a set of fixed-coupon bonds.">FittedBondDiscountCurve</a> class acts as a generic wrapper, while its inner class <a class="el" href="class_quant_lib_1_1_fitted_bond_discount_curve_1_1_fitting_method.html" title="Base fitting method used to construct a fitted bond discount curve.">FittingMethod</a> provides the implementation details. Developers thus need only derive new fitting methods from the latter.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000181">Warning</a></b></dt><dd>The method can be slow if there are many bonds to fit. Speed also depends on the particular choice of fitting method chosen and its convergence properties under optimization. See also todo list for BondDiscountCurveFittingMethod.</dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000182">Warning</a></b></dt><dd>The method can be slow if there are many bonds to fit. Speed also depends on the particular choice of fitting method chosen and its convergence properties under optimization. See also todo list for BondDiscountCurveFittingMethod.</dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aa72216913cb42d4910ebcae64d655934" name="aa72216913cb42d4910ebcae64d655934"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa72216913cb42d4910ebcae64d655934">&#9670;&#160;</a></span>maxDate()</h2>

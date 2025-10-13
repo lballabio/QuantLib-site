@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -188,8 +188,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregisterWithAll</b>
 LazyObject interface</h2></td></tr>
 <tr class="memitem:ae111cb608a73ca819237b5c9f93f1088" id="r_ae111cb608a73ca819237b5c9f93f1088"><td class="memItemLeft" align="right" valign="top"><a id="ae111cb608a73ca819237b5c9f93f1088" name="ae111cb608a73ca819237b5c9f93f1088"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Bootstrap&lt; this_curve &gt;</b></td></tr>
-<tr class="memitem:a57e9e8eaf5be1d62515629611b40421e" id="r_a57e9e8eaf5be1d62515629611b40421e"><td class="memItemLeft" align="right" valign="top"><a id="a57e9e8eaf5be1d62515629611b40421e" name="a57e9e8eaf5be1d62515629611b40421e"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapError&lt; this_curve &gt;</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -206,7 +204,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 class QuantLib::PiecewiseDefaultCurve&lt; Traits, Interpolator, Bootstrap &gt;</div><p>Piecewise default-probability term structure. </p>
 <p>This term structure is bootstrapped on a number of credit instruments which are passed as a vector of handles to <a class="el" href="namespace_quant_lib.html#a3ba2ddef23fb364651c7020b19392d1b" title="alias for default-probability bootstrap helpers">DefaultProbabilityHelper</a> instances. Their maturities mark the boundaries of the interpolated segments.</p>
 <p>Each segment is determined sequentially starting from the earliest period to the latest and is chosen so that the instrument whose maturity marks the end of such segment is correctly repriced on the curve.</p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000163">Warning</a></b></dt><dd>The bootstrapping algorithm will raise an exception if any two instruments have the same maturity date. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000164">Warning</a></b></dt><dd>The bootstrapping algorithm will raise an exception if any two instruments have the same maturity date. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="_c_d_s_8cpp-example.html#_a43">CDS.cpp</a>.</dd>
 </dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>

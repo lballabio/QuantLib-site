@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -131,8 +131,12 @@ typedef set_type::iterator&#160;</td><td class="memItemRight" valign="bottom"><b
 Public Member Functions</h2></td></tr>
 <tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Constructors</div></td></tr>
 <tr class="memitem:ad6c37e5fedae57881e9743003b660adb" id="r_ad6c37e5fedae57881e9743003b660adb"><td class="memItemLeft" align="right" valign="top"><a id="ad6c37e5fedae57881e9743003b660adb" name="ad6c37e5fedae57881e9743003b660adb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseZeroInflationCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ab2ce9309545b6f6886ff159a146ecc99">referenceDate</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> <a class="el" href="class_quant_lib_1_1_inflation_term_structure.html#ac47109414e944dd58438505679246b5f">baseDate</a>, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ad49654ea33055b03f8666910acc13880">dayCounter</a>, std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; instruments, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Seasonality</a> &gt; &amp;seasonality={}, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-14, const Interpolator &amp;i=Interpolator())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseZeroInflationCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ab2ce9309545b6f6886ff159a146ecc99">referenceDate</a>, <a class="el" href="class_quant_lib_1_1_date.html">Date</a> <a class="el" href="#a5043dbd45586c59283d2c6fbb500dcbe">baseDate</a>, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ad49654ea33055b03f8666910acc13880">dayCounter</a>, std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; instruments, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Seasonality</a> &gt; &amp;seasonality={}, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-14, const Interpolator &amp;i=Interpolator())</td></tr>
+<tr class="memitem:a90663ed812feb9391c0bac71da60ec56" id="r_a90663ed812feb9391c0bac71da60ec56"><td class="memItemLeft" align="right" valign="top"><a id="a90663ed812feb9391c0bac71da60ec56" name="a90663ed812feb9391c0bac71da60ec56"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseZeroInflationCurve</b> (const <a class="el" href="class_quant_lib_1_1_date.html">Date</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ab2ce9309545b6f6886ff159a146ecc99">referenceDate</a>, BaseDateFunc baseDateFunc, <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a> frequency, const <a class="el" href="class_quant_lib_1_1_day_counter.html">DayCounter</a> &amp;<a class="el" href="class_quant_lib_1_1_term_structure.html#ad49654ea33055b03f8666910acc13880">dayCounter</a>, std::vector&lt; ext::shared_ptr&lt; typename Traits::helper &gt; &gt; instruments, const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Seasonality</a> &gt; &amp;seasonality={}, <a class="el" href="group__types.html#ga4bdf4bfe76b9ffa6fa64c47d8bfa0c78">Real</a> accuracy=1.0e-14, const Interpolator &amp;i=Interpolator())</td></tr>
 <tr id="pub-methods-1" class="groupHeader"><td colspan="2"><div class="groupHeader">Inflation interface</div></td></tr>
+<tr class="memitem:a5043dbd45586c59283d2c6fbb500dcbe" id="r_a5043dbd45586c59283d2c6fbb500dcbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5043dbd45586c59283d2c6fbb500dcbe">baseDate</a> () const override</td></tr>
+<tr class="memdesc:a5043dbd45586c59283d2c6fbb500dcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum (base) date  <br /></td></tr>
 <tr class="memitem:aa72216913cb42d4910ebcae64d655934" id="r_aa72216913cb42d4910ebcae64d655934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72216913cb42d4910ebcae64d655934">maxDate</a> () const override</td></tr>
 <tr class="memdesc:aa72216913cb42d4910ebcae64d655934"><td class="mdescLeft">&#160;</td><td class="mdescRight">the latest date for which the curve can return values  <br /></td></tr>
 <tr id="pub-methods-2" class="groupHeader"><td colspan="2"><div class="groupHeader">Inspectors</div></td></tr>
@@ -180,8 +184,6 @@ std::vector&lt; std::pair&lt; <a class="el" href="class_quant_lib_1_1_date.html"
 virtual <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frequency</b> () const</td></tr>
 <tr class="memitem:a6b0c6faeec82f67715cb752399b10911 inherit pub_methods_class_quant_lib_1_1_inflation_term_structure" id="r_a6b0c6faeec82f67715cb752399b10911"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseRate</b> () const</td></tr>
-<tr class="memitem:ac47109414e944dd58438505679246b5f inherit pub_methods_class_quant_lib_1_1_inflation_term_structure" id="r_ac47109414e944dd58438505679246b5f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_term_structure.html#ac47109414e944dd58438505679246b5f">baseDate</a> () const</td></tr>
-<tr class="memdesc:ac47109414e944dd58438505679246b5f inherit pub_methods_class_quant_lib_1_1_inflation_term_structure"><td class="mdescLeft">&#160;</td><td class="mdescRight">minimum (base) date  <br /></td></tr>
 <tr class="memitem:a374229b5432de9db0dcc72c305178884 inherit pub_methods_class_quant_lib_1_1_inflation_term_structure" id="r_a374229b5432de9db0dcc72c305178884"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_inflation_term_structure.html#a374229b5432de9db0dcc72c305178884">hasExplicitBaseDate</a> () const</td></tr>
 <tr class="memitem:a5a0af3fc009c1c3fa49ac4e272dfdc8c inherit pub_methods_class_quant_lib_1_1_inflation_term_structure" id="r_a5a0af3fc009c1c3fa49ac4e272dfdc8c"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSeasonality</b> (const ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Seasonality</a> &gt; &amp;seasonality)</td></tr>
@@ -256,8 +258,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>allowsExtrapolation</
 Observer interface</h2></td></tr>
 <tr class="memitem:ae111cb608a73ca819237b5c9f93f1088" id="r_ae111cb608a73ca819237b5c9f93f1088"><td class="memItemLeft" align="right" valign="top"><a id="ae111cb608a73ca819237b5c9f93f1088" name="ae111cb608a73ca819237b5c9f93f1088"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Bootstrap&lt; this_curve &gt;</b></td></tr>
-<tr class="memitem:a57e9e8eaf5be1d62515629611b40421e" id="r_a57e9e8eaf5be1d62515629611b40421e"><td class="memItemLeft" align="right" valign="top"><a id="a57e9e8eaf5be1d62515629611b40421e" name="a57e9e8eaf5be1d62515629611b40421e"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>BootstrapError&lt; this_curve &gt;</b></td></tr>
 <tr class="memitem:a44137bb65de2396875934e48a6ee5099" id="r_a44137bb65de2396875934e48a6ee5099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44137bb65de2396875934e48a6ee5099">update</a> () override</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
@@ -304,6 +304,8 @@ ext::shared_ptr&lt; <a class="el" href="class_quant_lib_1_1_seasonality.html">Se
 <a class="el" href="group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada">Frequency</a>&#160;</td><td class="memItemRight" valign="bottom"><b>frequency_</b></td></tr>
 <tr class="memitem:a4eb4d174abedf4391dcf778cba6e7dd3" id="r_a4eb4d174abedf4391dcf778cba6e7dd3"><td class="memItemLeft" align="right" valign="top"><a id="a4eb4d174abedf4391dcf778cba6e7dd3" name="a4eb4d174abedf4391dcf778cba6e7dd3"></a>
 <a class="el" href="group__types.html#gaede435af51236692b1107d7639581d39">Rate</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseRate_</b></td></tr>
+<tr class="memitem:a3da982a1d3d4255d4c6c1a00135cab37" id="r_a3da982a1d3d4255d4c6c1a00135cab37"><td class="memItemLeft" align="right" valign="top"><a id="a3da982a1d3d4255d4c6c1a00135cab37" name="a3da982a1d3d4255d4c6c1a00135cab37"></a>
+<a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>baseDate_</b></td></tr>
 <tr class="memitem:a3cfce9cb19de6f0604adee64b6d80a35" id="r_a3cfce9cb19de6f0604adee64b6d80a35"><td class="memItemLeft" align="right" valign="top"><a id="a3cfce9cb19de6f0604adee64b6d80a35" name="a3cfce9cb19de6f0604adee64b6d80a35"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving_</b> = false</td></tr>
 <tr class="memitem:a56cd8ee45c3477740e0429f98758c935" id="r_a56cd8ee45c3477740e0429f98758c935"><td class="memItemLeft" align="right" valign="top"><a id="a56cd8ee45c3477740e0429f98758c935" name="a56cd8ee45c3477740e0429f98758c935"></a>
@@ -331,6 +333,38 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>alwaysForward_</b></t
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Interpolator, template&lt; class &gt; class Bootstrap = IterativeBootstrap, class Traits = ZeroInflationTraits&gt;<br />
 class QuantLib::PiecewiseZeroInflationCurve&lt; Interpolator, Bootstrap, Traits &gt;</div><p>Piecewise zero-inflation term structure. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a5043dbd45586c59283d2c6fbb500dcbe" name="a5043dbd45586c59283d2c6fbb500dcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5043dbd45586c59283d2c6fbb500dcbe">&#9670;&#160;</a></span>baseDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I, template&lt; class &gt; class B, class T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_quant_lib_1_1_date.html">Date</a> baseDate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>minimum (base) date </p>
+<p>The last date for which we have information. </p>
+
+<p>Reimplemented from <a class="el" href="class_quant_lib_1_1_inflation_term_structure.html#ac47109414e944dd58438505679246b5f">InflationTermStructure</a>.</p>
+
+</div>
+</div>
 <a id="aa72216913cb42d4910ebcae64d655934" name="aa72216913cb42d4910ebcae64d655934"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa72216913cb42d4910ebcae64d655934">&#9670;&#160;</a></span>maxDate()</h2>
 

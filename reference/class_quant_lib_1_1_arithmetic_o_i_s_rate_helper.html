@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -219,7 +219,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateDates_</b></td>
 <a class="el" href="class_quant_lib_1_1_date.html">Date</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pillarDate_</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000012">Deprecated</a></b></dt><dd>Use <a class="el" href="class_quant_lib_1_1_o_i_s_rate_helper.html" title="Rate helper for bootstrapping over Overnight Indexed Swap rates.">OISRateHelper</a> instead. Deprecated in version 1.36. </dd></dl>
+<div class="textblock"><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000013">Deprecated</a></b></dt><dd>Use <a class="el" href="class_quant_lib_1_1_o_i_s_rate_helper.html" title="Rate helper for bootstrapping over Overnight Indexed Swap rates.">OISRateHelper</a> instead. Deprecated in version 1.36. </dd></dl>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab5f37fe136acee4d7bfd196bcf8bb315" name="ab5f37fe136acee4d7bfd196bcf8bb315"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5f37fe136acee4d7bfd196bcf8bb315">&#9670;&#160;</a></span>impliedQuote()</h2>
@@ -272,7 +272,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>updateDates_</b></td>
 </div><div class="memdoc">
 
 <p>sets the term structure to be used for pricing </p>
-<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000160">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
+<dl class="caveats"><dt><b><a class="el" href="caveats.html#_caveats000161">Warning</a></b></dt><dd>Being a pointer and not a shared_ptr, the term structure is not guaranteed to remain allocated for the whole life of the rate helper. It is responsibility of the programmer to ensure that the pointer remains valid. It is advised that this method is called only inside the term structure being bootstrapped, setting the pointer to <b>this</b>, i.e., the term structure itself. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_quant_lib_1_1_bootstrap_helper.html#ac8bb5ca2d4e7d7754be9f69e43a054ce">BootstrapHelper&lt; YieldTermStructure &gt;</a>.</p>
 

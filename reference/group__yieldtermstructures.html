@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname"><a href="https://www.quantlib.org">QuantLib</a>: a free/open-source library for quantitative finance
-   <div id="projectnumber">Reference manual - version 1.39</div>
+   <div id="projectnumber">Reference manual - version 1.40</div>
    </div>
   </td>
  </tr>
@@ -111,6 +111,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise yield term structure.  <a href="class_quant_lib_1_1_piecewise_yield_curve.html#details">More...</a><br /></td></tr>
 <tr class="memitem:InterpolatedPiecewiseZeroSpreadedTermStructure_3C_20Interpolator_20_3E" id="r_InterpolatedPiecewiseZeroSpreadedTermStructure_3C_20Interpolator_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_piecewise_zero_spreaded_term_structure.html">InterpolatedPiecewiseZeroSpreadedTermStructure&lt; Interpolator &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Yield curve with an added vector of spreads on the zero-yield rate.  <a href="class_quant_lib_1_1_interpolated_piecewise_zero_spreaded_term_structure.html#details">More...</a><br /></td></tr>
+<tr class="memitem:InterpolatedSpreadDiscountCurve_3C_20Interpolator_20_3E" id="r_InterpolatedSpreadDiscountCurve_3C_20Interpolator_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_spread_discount_curve.html">InterpolatedSpreadDiscountCurve&lt; Interpolator &gt;</a></td></tr>
 <tr class="memitem:UltimateForwardTermStructure" id="r_UltimateForwardTermStructure"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_ultimate_forward_term_structure.html">UltimateForwardTermStructure</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ultimate forward term structure.  <a href="class_quant_lib_1_1_ultimate_forward_term_structure.html#details">More...</a><br /></td></tr>
 <tr class="memitem:InterpolatedZeroCurve_3C_20Interpolator_20_3E" id="r_InterpolatedZeroCurve_3C_20Interpolator_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quant_lib_1_1_interpolated_zero_curve.html">InterpolatedZeroCurve&lt; Interpolator &gt;</a></td></tr>
@@ -132,6 +133,8 @@ typedef <a class="el" href="class_quant_lib_1_1_interpolated_forward_curve.html"
 <tr class="memitem:ga6982bc0bd68b9cbea2a12266e8819e12" id="r_ga6982bc0bd68b9cbea2a12266e8819e12"><td class="memItemLeft" align="right" valign="top"><a id="ga6982bc0bd68b9cbea2a12266e8819e12" name="ga6982bc0bd68b9cbea2a12266e8819e12"></a>
 typedef <a class="el" href="class_quant_lib_1_1_interpolated_piecewise_zero_spreaded_term_structure.html">InterpolatedPiecewiseZeroSpreadedTermStructure</a>&lt; <a class="el" href="class_quant_lib_1_1_linear.html">Linear</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PiecewiseZeroSpreadedTermStructure</b></td></tr>
 <tr class="memdesc:ga6982bc0bd68b9cbea2a12266e8819e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Piecewise zero-spreaded yield curve based on linear interpolation of zero rates. <br /></td></tr>
+<tr class="memitem:gabfb1079cb158e8db6da85571e21c88a3" id="r_gabfb1079cb158e8db6da85571e21c88a3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_quant_lib_1_1_interpolated_spread_discount_curve.html">InterpolatedSpreadDiscountCurve</a>&lt; <a class="el" href="class_quant_lib_1_1_log_linear.html">LogLinear</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabfb1079cb158e8db6da85571e21c88a3">SpreadDiscountCurve</a></td></tr>
+<tr class="memdesc:gabfb1079cb158e8db6da85571e21c88a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d" title="spreads on interest rates">Spread</a> yield curve based on log-linear interpolation of discount factors.  <br /></td></tr>
 <tr class="memitem:gab0fc9b631f36e7661b35642d67035aeb" id="r_gab0fc9b631f36e7661b35642d67035aeb"><td class="memItemLeft" align="right" valign="top"><a id="gab0fc9b631f36e7661b35642d67035aeb" name="gab0fc9b631f36e7661b35642d67035aeb"></a>
 typedef <a class="el" href="class_quant_lib_1_1_interpolated_zero_curve.html">InterpolatedZeroCurve</a>&lt; <a class="el" href="class_quant_lib_1_1_linear.html">Linear</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ZeroCurve</b></td></tr>
 <tr class="memdesc:gab0fc9b631f36e7661b35642d67035aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Term structure based on linear interpolation of zero yields. <br /></td></tr>
@@ -153,6 +156,23 @@ typedef <a class="el" href="class_quant_lib_1_1_interpolated_zero_curve.html">In
 
 <p>Term structure based on log-linear interpolation of discount factors. </p>
 <p>Log-linear interpolation guarantees piecewise-constant forward rates. </p>
+
+</div>
+</div>
+<a id="gabfb1079cb158e8db6da85571e21c88a3" name="gabfb1079cb158e8db6da85571e21c88a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfb1079cb158e8db6da85571e21c88a3">&#9670;&#160;</a></span>SpreadDiscountCurve</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_quant_lib_1_1_interpolated_spread_discount_curve.html">InterpolatedSpreadDiscountCurve</a>&lt;<a class="el" href="class_quant_lib_1_1_log_linear.html">LogLinear</a>&gt; <a class="el" href="#gabfb1079cb158e8db6da85571e21c88a3">SpreadDiscountCurve</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="group__types.html#gae7427f4743503002b0c6eeeefae91a3d" title="spreads on interest rates">Spread</a> yield curve based on log-linear interpolation of discount factors. </p>
+<p>Log-linear interpolation guarantees piecewise-constant spreads. </p>
 
 </div>
 </div>
