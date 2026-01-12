@@ -66,9 +66,10 @@ var searchData=
   ['output_5fsize_63',['output_size',['../class_quant_lib_1_1_fast_fourier_transform.html#a6bd598964819008db5f70a646ad21c13',1,'QuantLib::FastFourierTransform']]],
   ['overnightiborbasisswapratehelper_64',['OvernightIborBasisSwapRateHelper',['../class_quant_lib_1_1_overnight_ibor_basis_swap_rate_helper.html',1,'QuantLib']]],
   ['overnightindexedcoupon_65',['OvernightIndexedCoupon',['../class_quant_lib_1_1_overnight_indexed_coupon.html',1,'QuantLib']]],
-  ['overnightindexedswap_66',['OvernightIndexedSwap',['../class_quant_lib_1_1_overnight_indexed_swap.html',1,'QuantLib']]],
-  ['overnightindexedswapindex_67',['OvernightIndexedSwapIndex',['../class_quant_lib_1_1_overnight_indexed_swap_index.html',1,'QuantLib']]],
-  ['overnightindexfuture_68',['OvernightIndexFuture',['../class_quant_lib_1_1_overnight_index_future.html',1,'QuantLib']]],
-  ['overnightindexfutureratehelper_69',['OvernightIndexFutureRateHelper',['../class_quant_lib_1_1_overnight_index_future_rate_helper.html',1,'QuantLib']]],
-  ['overnightleg_70',['OvernightLeg',['../class_quant_lib_1_1_overnight_leg.html',1,'QuantLib']]]
+  ['overnightindexedcouponpricer_66',['OvernightIndexedCouponPricer',['../class_quant_lib_1_1_overnight_indexed_coupon_pricer.html',1,'QuantLib']]],
+  ['overnightindexedswap_67',['OvernightIndexedSwap',['../class_quant_lib_1_1_overnight_indexed_swap.html',1,'QuantLib']]],
+  ['overnightindexedswapindex_68',['OvernightIndexedSwapIndex',['../class_quant_lib_1_1_overnight_indexed_swap_index.html',1,'QuantLib']]],
+  ['overnightindexfuture_69',['OvernightIndexFuture',['../class_quant_lib_1_1_overnight_index_future.html',1,'QuantLib']]],
+  ['overnightindexfutureratehelper_70',['OvernightIndexFutureRateHelper',['../class_quant_lib_1_1_overnight_index_future_rate_helper.html',1,'QuantLib']]],
+  ['overnightleg_71',['OvernightLeg',['../class_quant_lib_1_1_overnight_leg.html',1,'QuantLib']]]
 ];
