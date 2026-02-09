@@ -22,10 +22,9 @@ var searchData=
   ['get_19',['get',['../class_quant_lib_1_1_pascal_triangle.html#afdbe2c1cf44da66dee2a3d6d294c436d',1,'QuantLib::PascalTriangle::get()'],['../class_quant_lib_1_1_prime_numbers.html#a118ca53a54e9ba31771da1f1909aa4b6',1,'QuantLib::PrimeNumbers::get()']]],
   ['getcovariance_20',['getCovariance',['../namespace_quant_lib.html#a82875c0f3d25a7261943fd8f0d6e034f',1,'QuantLib']]],
   ['gethistory_21',['getHistory',['../class_quant_lib_1_1_index_manager.html#a541d72cc581417e4a2319c4c729484fa',1,'QuantLib::IndexManager']]],
-  ['getinfo_22',['getInfo',['../class_quant_lib_1_1_levenberg_marquardt.html#af159c4e477c16928952a4bcbac911bc8',1,'QuantLib::LevenbergMarquardt']]],
-  ['getinittraits_23',['getInitTraits',['../struct_quant_lib_1_1_gaussian_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::GaussianCopulaPolicy::getInitTraits()'],['../class_quant_lib_1_1_t_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::TCopulaPolicy::getInitTraits()']]],
-  ['getupdateddirection_24',['getUpdatedDirection',['../class_quant_lib_1_1_line_search_based_method.html#a6a41f9c70b205adb74472738383b5405',1,'QuantLib::LineSearchBasedMethod']]],
-  ['gradient_25',['gradient',['../class_quant_lib_1_1_cost_function.html#a80752c7cecbf7f90c457b21161727457',1,'QuantLib::CostFunction::gradient()'],['../class_quant_lib_1_1_least_square_function.html#ab26e5cf3836cd94c4a209d0254d4b424',1,'QuantLib::LeastSquareFunction::gradient()'],['../class_quant_lib_1_1_problem.html#ade662b750c56006317b08b8aa6b38ac8',1,'QuantLib::Problem::gradient(Array &amp;grad_f, const Array &amp;x)']]],
-  ['gradientevaluation_26',['gradientEvaluation',['../class_quant_lib_1_1_problem.html#aa1b27e05cc7d496e71335b6cf2bb3ac3',1,'QuantLib::Problem']]],
-  ['gradientnormvalue_27',['gradientNormValue',['../class_quant_lib_1_1_problem.html#a8e1917a03a536fd788612eba7c78ed61',1,'QuantLib::Problem']]]
+  ['getinittraits_22',['getInitTraits',['../struct_quant_lib_1_1_gaussian_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::GaussianCopulaPolicy::getInitTraits()'],['../class_quant_lib_1_1_t_copula_policy.html#a9024944a08271f688abd95cd78d08510',1,'QuantLib::TCopulaPolicy::getInitTraits()']]],
+  ['getupdateddirection_23',['getUpdatedDirection',['../class_quant_lib_1_1_line_search_based_method.html#a6a41f9c70b205adb74472738383b5405',1,'QuantLib::LineSearchBasedMethod']]],
+  ['gradient_24',['gradient',['../class_quant_lib_1_1_cost_function.html#a80752c7cecbf7f90c457b21161727457',1,'QuantLib::CostFunction::gradient()'],['../class_quant_lib_1_1_least_square_function.html#ab26e5cf3836cd94c4a209d0254d4b424',1,'QuantLib::LeastSquareFunction::gradient()'],['../class_quant_lib_1_1_problem.html#ade662b750c56006317b08b8aa6b38ac8',1,'QuantLib::Problem::gradient(Array &amp;grad_f, const Array &amp;x)']]],
+  ['gradientevaluation_25',['gradientEvaluation',['../class_quant_lib_1_1_problem.html#aa1b27e05cc7d496e71335b6cf2bb3ac3',1,'QuantLib::Problem']]],
+  ['gradientnormvalue_26',['gradientNormValue',['../class_quant_lib_1_1_problem.html#a8e1917a03a536fd788612eba7c78ed61',1,'QuantLib::Problem']]]
 ];
