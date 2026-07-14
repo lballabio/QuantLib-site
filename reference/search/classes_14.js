@@ -22,5 +22,7 @@ var searchData=
   ['usdliborswapisdafixam_19',['UsdLiborSwapIsdaFixAm',['../class_quant_lib_1_1_usd_libor_swap_isda_fix_am.html',1,'QuantLib']]],
   ['usdliborswapisdafixpm_20',['UsdLiborSwapIsdaFixPm',['../class_quant_lib_1_1_usd_libor_swap_isda_fix_pm.html',1,'QuantLib']]],
   ['usregion_21',['USRegion',['../class_quant_lib_1_1_u_s_region.html',1,'QuantLib']]],
-  ['uyucurrency_22',['UYUCurrency',['../class_quant_lib_1_1_u_y_u_currency.html',1,'QuantLib']]]
+  ['uyucurrency_22',['UYUCurrency',['../class_quant_lib_1_1_u_y_u_currency.html',1,'QuantLib']]],
+  ['uzbekistan_23',['Uzbekistan',['../class_quant_lib_1_1_uzbekistan.html',1,'QuantLib']]],
+  ['uzscurrency_24',['UZSCurrency',['../class_quant_lib_1_1_u_z_s_currency.html',1,'QuantLib']]]
 ];

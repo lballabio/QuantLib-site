@@ -9,6 +9,7 @@ var searchData=
   ['bimonthly_6',['Bimonthly',['../group__datetime.html#gga6d41db8ba0ea90d22df35889df452adaa91a5f14e7e96afbf6429a2549d6896e8',1,'QuantLib']]],
   ['biweekly_7',['Biweekly',['../group__datetime.html#gga6d41db8ba0ea90d22df35889df452adaa1b3b68c6c6974a8e343ea8d8b66c107f',1,'QuantLib']]],
   ['bmv_8',['BMV',['../class_quant_lib_1_1_mexico.html#abe41cfffd960e29a5d8b07be00aeda42a4a4d729cff7171673eab4864cf8f91b3',1,'QuantLib::Mexico']]],
-  ['bsse_9',['BSSE',['../class_quant_lib_1_1_slovakia.html#abe41cfffd960e29a5d8b07be00aeda42aa7e58d3c9d678c72355b431a45b8a659',1,'QuantLib::Slovakia']]],
-  ['bvb_10',['BVB',['../class_quant_lib_1_1_romania.html#abe41cfffd960e29a5d8b07be00aeda42ae7a7865e5b95cb50192071dd17d8a2ac',1,'QuantLib::Romania']]]
+  ['bse_9',['BSE',['../class_quant_lib_1_1_serbia.html#abe41cfffd960e29a5d8b07be00aeda42ac2a199a4d1bae4a2d2d267928f86bd70',1,'QuantLib::Serbia']]],
+  ['bsse_10',['BSSE',['../class_quant_lib_1_1_slovakia.html#abe41cfffd960e29a5d8b07be00aeda42aa7e58d3c9d678c72355b431a45b8a659',1,'QuantLib::Slovakia']]],
+  ['bvb_11',['BVB',['../class_quant_lib_1_1_romania.html#abe41cfffd960e29a5d8b07be00aeda42ae7a7865e5b95cb50192071dd17d8a2ac',1,'QuantLib::Romania']]]
 ];
