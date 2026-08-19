@@ -45,6 +45,9 @@ open-source project from CompatibL</a>.</p>
 
 <h3 class="center">Ports and wrappers for other languages</h3>
 
+<p><a href="https://github.com/frame-consulting/QuantLibXlOil">QuantLibXlOil</a>
+makes the QuantLib Python wrappers available in Excel.</p>
+
 <p>The <a href="https://github.com/lcallenbach/quantlibaddin">LibreOffice
 QuantLib Addin</a> project, based on QuantLibAddin, exports QuantLib
 to Calc.</p>
