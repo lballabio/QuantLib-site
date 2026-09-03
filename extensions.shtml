@@ -91,14 +91,14 @@ distributed via OpenDDS across multiple computers running different
 operating systems.</p>
 
 <p>Other projects aim at ports in a functional language.
-<a href="http://sourceforge.net/projects/quanthas/">QuantHas</a>
-targets the Haskell language,
+<a href="http://sourceforge.net/projects/quanthas/">QuantHas</a>,
+<a href="https://github.com/paulrzcz/hquantlib">HQuantLib</a> and
+<a href="https://github.com/khorser/hasquant">hasquant</a> target the
+Haskell language,
 while <a href="http://sourceforge.net/projects/quantifa/">Quantifa</a>
-is written in F#; they are looking for
-developers. <a href="https://github.com/paulrzcz/hquantlib">HQuantLib</a>
-is another Haskell
-port.  <a href="https://www.cepheis.com/cephei-ql">Cephei.QL</a>
-wraps the C++ library so that it can be called from F#.
+is written in
+F#.  <a href="https://www.cepheis.com/cephei-ql">Cephei.QL</a> wraps
+the C++ library so that it can be called from F#.
 </p>
 
 <p>Niels Elken S&oslash;nderby has a page for the tentative
