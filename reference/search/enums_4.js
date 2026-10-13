@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jointcalendarrule_0',['JointCalendarRule',['../namespace_quant_lib.html#a51033ff28c58a4dd772d61053b4f3bca',1,'QuantLib']]]
+  ['frequency_0',['Frequency',['../group__datetime.html#ga6d41db8ba0ea90d22df35889df452ada',1,'QuantLib']]]
 ];

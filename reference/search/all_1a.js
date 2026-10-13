@@ -1,7 +1,7 @@
 var searchData=
 [
   ['zabr_0',['Zabr',['../class_quant_lib_1_1_zabr.html',1,'QuantLib']]],
-  ['zabr_20kernels_1',['ZABR Kernels',['../zabrswaptionvolatilitycube_8hpp.html#zabr_kernels',1,'Available ZABR Kernels'],['../caveats.html#_caveats000179',1,'Available ZABR Kernels']]],
+  ['zabr_20kernels_1',['Available ZABR Kernels',['../zabrswaptionvolatilitycube_8hpp.html#zabr_kernels',1,'']]],
   ['zabr_20parameters_2',['ZABR Parameters',['../zabrswaptionvolatilitycube_8hpp.html#zabr_params',1,'']]],
   ['zabrinterpolation_3',['ZabrInterpolation',['../class_quant_lib_1_1_zabr_interpolation.html',1,'QuantLib']]],
   ['zabrinterpolation_3c_20kernel_20_3e_4',['ZabrInterpolation&lt; Kernel &gt;',['../class_quant_lib_1_1_zabr_interpolation.html',1,'QuantLib']]],
@@ -15,7 +15,7 @@ var searchData=
   ['zerocondition_12',['ZeroCondition',['../class_quant_lib_1_1_zero_condition.html',1,'QuantLib']]],
   ['zerocouponbond_13',['ZeroCouponBond',['../class_quant_lib_1_1_zero_coupon_bond.html',1,'QuantLib']]],
   ['zerocouponinflationswap_14',['ZeroCouponInflationSwap',['../class_quant_lib_1_1_zero_coupon_inflation_swap.html',1,'QuantLib']]],
-  ['zerocouponinflationswaphelper_15',['ZeroCouponInflationSwapHelper',['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html',1,'ZeroCouponInflationSwapHelper'],['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html#a2696fade2d73d5190299b942e0c19b1d',1,'QuantLib::ZeroCouponInflationSwapHelper::ZeroCouponInflationSwapHelper()']]],
+  ['zerocouponinflationswaphelper_15',['ZeroCouponInflationSwapHelper',['../class_quant_lib_1_1_zero_coupon_inflation_swap_helper.html',1,'QuantLib']]],
   ['zerocouponswap_16',['ZeroCouponSwap',['../class_quant_lib_1_1_zero_coupon_swap.html',1,'QuantLib']]],
   ['zerocurve_17',['ZeroCurve',['../group__yieldtermstructures.html#gab0fc9b631f36e7661b35642d67035aeb',1,'QuantLib']]],
   ['zeroinflationcashflow_18',['ZeroInflationCashFlow',['../class_quant_lib_1_1_zero_inflation_cash_flow.html',1,'ZeroInflationCashFlow'],['../class_quant_lib_1_1_zero_inflation_cash_flow.html#afb72876a8bfafc624d81c0933eff21be',1,'QuantLib::ZeroInflationCashFlow::ZeroInflationCashFlow()']]],
@@ -33,5 +33,5 @@ var searchData=
   ['zigguratrng_30',['ZigguratRng',['../class_quant_lib_1_1_ziggurat_rng.html',1,'QuantLib']]],
   ['zmwcurrency_31',['ZMWCurrency',['../class_quant_lib_1_1_z_m_w_currency.html',1,'QuantLib']]],
   ['zse_32',['ZSE',['../class_quant_lib_1_1_croatia.html#abe41cfffd960e29a5d8b07be00aeda42a9e833d23e78e757d346827d4a538460e',1,'QuantLib::Croatia']]],
-  ['zspread_33',['zSpread',['../class_quant_lib_1_1_cash_flows.html#aa58fa0ba49bd1ec7cf02dcf116be1e23',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, Real npv, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;, Compounding compounding, Frequency frequency, const ext::optional&lt; bool &gt; &amp;includeSettlementDateFlows=ext::nullopt, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)'],['../class_quant_lib_1_1_cash_flows.html#a76dfff9500e65729547970bdf72fc37f',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, Real npv, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;, const DayCounter &amp;dayCounter, Compounding compounding, Frequency frequency, const ext::optional&lt; bool &gt; &amp;includeSettlementDateFlows=ext::nullopt, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)'],['../struct_quant_lib_1_1_bond_functions.html#a98263a13b6f1a834f7954702f7f0ba2e',1,'QuantLib::BondFunctions::zSpread()']]]
+  ['zspread_33',['zSpread',['../class_quant_lib_1_1_cash_flows.html#acfdcb4388442a6257713e3806e259811',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, Real npv, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;, Compounding compounding, Frequency frequency, const std::optional&lt; bool &gt; &amp;includeSettlementDateFlows=std::nullopt, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)'],['../class_quant_lib_1_1_cash_flows.html#ad6fd9f5ca87f7c7c00af022290228696',1,'QuantLib::CashFlows::zSpread(const Leg &amp;leg, Real npv, const ext::shared_ptr&lt; YieldTermStructure &gt; &amp;, const DayCounter &amp;dayCounter, Compounding compounding, Frequency frequency, const std::optional&lt; bool &gt; &amp;includeSettlementDateFlows=std::nullopt, Date settlementDate=Date(), Date npvDate=Date(), Real accuracy=1.0e-10, Size maxIterations=100, Rate guess=0.0)'],['../struct_quant_lib_1_1_bond_functions.html#a98263a13b6f1a834f7954702f7f0ba2e',1,'QuantLib::BondFunctions::zSpread()']]]
 ];

@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['hasdate_0',['hasDate',['../class_quant_lib_1_1_time_basket.html#a018ae1fe3e2100d1f16b55403a5d4b48',1,'QuantLib::TimeBasket']]],
-  ['hasexplicitbasedate_1',['hasExplicitBaseDate',['../class_quant_lib_1_1_inflation_term_structure.html#a374229b5432de9db0dcc72c305178884',1,'QuantLib::InflationTermStructure']]],
+  ['haltonrsg_0',['HaltonRsg',['../class_quant_lib_1_1_halton_rsg.html#a197b5902a994dc7e037eb5bd22814af1',1,'QuantLib::HaltonRsg']]],
+  ['hasdate_1',['hasDate',['../class_quant_lib_1_1_time_basket.html#a018ae1fe3e2100d1f16b55403a5d4b48',1,'QuantLib::TimeBasket']]],
   ['hash_5fvalue_2',['hash_value',['../class_quant_lib_1_1_date.html#ab332a16e149355c29db8fd10e0cb6103',1,'QuantLib::Date::hash_value()'],['../class_quant_lib_1_1_date.html#ab332a16e149355c29db8fd10e0cb6103',1,'QuantLib::hash_value()']]],
   ['hashistoricalfixing_3',['hasHistoricalFixing',['../class_quant_lib_1_1_index.html#a42dd84831643452f3b3a6ff22ede4cf5',1,'QuantLib::Index']]],
-  ['hasoccurred_4',['hasOccurred',['../class_quant_lib_1_1_cash_flow.html#a0eceff36ab228de10ce08f52f90de9a4',1,'QuantLib::CashFlow::hasOccurred()'],['../class_quant_lib_1_1_event.html#ac85273215ec7374d1cd484f21f13d785',1,'QuantLib::Event::hasOccurred()']]],
+  ['hasoccurred_4',['hasOccurred',['../class_quant_lib_1_1_cash_flow.html#a8ca41433df824d666221cbf56204b28d',1,'QuantLib::CashFlow::hasOccurred()'],['../class_quant_lib_1_1_event.html#a27214ef6ac8007d6b87dde5560e4ec64',1,'QuantLib::Event::hasOccurred()']]],
   ['hazardrateimpl_5',['hazardRateImpl',['../class_quant_lib_1_1_factor_spreaded_hazard_rate_curve.html#a88d8149dcbba1d9a31f74f4b03ddb9ef',1,'QuantLib::FactorSpreadedHazardRateCurve::hazardRateImpl()'],['../class_quant_lib_1_1_interpolated_affine_hazard_rate_curve.html#a3134d8fa77ed4bb0c536817c51ed92bd',1,'QuantLib::InterpolatedAffineHazardRateCurve::hazardRateImpl()'],['../class_quant_lib_1_1_one_factor_affine_survival_structure.html#a3134d8fa77ed4bb0c536817c51ed92bd',1,'QuantLib::OneFactorAffineSurvivalStructure::hazardRateImpl()'],['../class_quant_lib_1_1_spreaded_hazard_rate_curve.html#a88d8149dcbba1d9a31f74f4b03ddb9ef',1,'QuantLib::SpreadedHazardRateCurve::hazardRateImpl()'],['../class_quant_lib_1_1_hazard_rate_structure.html#a3134d8fa77ed4bb0c536817c51ed92bd',1,'QuantLib::HazardRateStructure::hazardRateImpl()'],['../class_quant_lib_1_1_interpolated_hazard_rate_curve.html#a3134d8fa77ed4bb0c536817c51ed92bd',1,'QuantLib::InterpolatedHazardRateCurve::hazardRateImpl()'],['../class_quant_lib_1_1_default_probability_term_structure.html#ae79c7332665ca96200c17a5786d54579',1,'QuantLib::DefaultProbabilityTermStructure::hazardRateImpl()']]],
   ['histories_6',['histories',['../class_quant_lib_1_1_index_manager.html#aecb2eb93676e2cb3070214dc32f2b3b9',1,'QuantLib::IndexManager']]],
-  ['holidaylist_7',['holidayList',['../class_quant_lib_1_1_calendar.html#a96e2fb6e5c173706de6a87d48355129f',1,'QuantLib::Calendar']]]
+  ['holidaylist_7',['holidayList',['../class_quant_lib_1_1_calendar.html#a96e2fb6e5c173706de6a87d48355129f',1,'QuantLib::Calendar']]],
+  ['hurst_8',['hurst',['../class_quant_lib_1_1_rough_heston_model.html#acf79fdd8f080d0b4b278c90876d52cd2',1,'QuantLib::RoughHestonModel']]]
 ];

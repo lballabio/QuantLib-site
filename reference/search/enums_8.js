@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pricetype_0',['PriceType',['../namespace_quant_lib.html#a482277e66af02c7d65679d7485095573',1,'QuantLib']]]
+  ['ordering_0',['Ordering',['../class_quant_lib_1_1_sobol_brownian_generator_base.html#a0248f65bd948236b9f656ce6c5d65355',1,'QuantLib::SobolBrownianGeneratorBase']]]
 ];

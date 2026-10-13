@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['integer_0',['Integer',['../group__types.html#gab9c87440c314438e51a899a03d2442d0',1,'QuantLib']]]
+  ['gaussianstatistics_0',['GaussianStatistics',['../namespace_quant_lib.html#ad9913c35bfddbcbab5dea143847dde69',1,'QuantLib']]]
 ];
