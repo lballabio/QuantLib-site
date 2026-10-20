@@ -42,6 +42,11 @@ Available as an ebook from <a href="https://leanpub.com/quantlibpythoncookbook/"
 <li>Vasily Nekrasov, <strong>Notes on Getting Started with QuantLib</strong> (unfinished)<br>
 Available from <a href="http://www.yetanotherquant.com/">his web site</a>.
 </li>
+<li>Bip, <strong>Rates with Bip</strong><br> A series of booklets
+using QuantLib and available
+from <a href="https://github.com/RatesWithBip/curriculum">GitHub</a>.
+</li>
+
 </ul>
 
 <h2 class="center">Videos</h2>
@@ -60,6 +65,9 @@ of screencasts</a>, also called <strong>Introduction to
 QuantLib</strong>, is published by Carol Zheng.</li>
 <li>A <a href="https://www.youtube.com/playlist?list=PLldfZfhVsBfnmCOjbUrWghhfCBwTM2NXv">series
 of videos in Vietnamese</a>, <strong>QuantLib cho Python</strong>, is also available.</li>
+<li>The <strong>Rates with Bip</strong> books (see above)
+have <a href="https://www.youtube.com/@RatesWithBip">a series of
+accompanying videos</a>.</li>
 </ul>
 
 <h2 class="center">Talks</h2>
