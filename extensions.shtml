@@ -43,6 +43,23 @@ vectorization.</p>
 as <a href="https://github.com/compatibl/QuantLibAdjoint">an
 open-source project from CompatibL</a>.</p>
 
+<h3 class="center">Other modified versions of the library</h3>
+
+<p>TAKT
+provides <a href="https://github.com/abx-takt/quantlib-takt">quantlib-takt</a>,
+a drop-in build of the official QuantLib Python wheel with faster
+Monte Carlo engines; on the same system it returns the same results as
+the official wheel, bit for bit. The free package speeds up European
+options; a commercial version covers the other engines and the C++
+library.</p>
+
+<p>MatLogica
+provides <a href="https://matlogica.com/products/aadc-tracer/">a
+version of QuantLib that includes tracing</a> for model validation
+purposes; the free version is for non-commercial and academic use
+only, with commercial and full-performance academic licences
+available.</p>
+
 <h3 class="center">Ports and wrappers for other languages</h3>
 
 <p><a href="https://github.com/frame-consulting/QuantLibXlOil">QuantLibXlOil</a>
