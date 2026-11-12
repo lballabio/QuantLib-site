@@ -26,7 +26,7 @@ and OpenOffice/LibreOffice Calc.</p>
 Adjoint algorithmic differentiation (AAD) can be enabled in QuantLib 
 using the open-source <a href="https://auto-differentiation.github.io">XAD
 AAD tool</a> and <a href="https://github.com/auto-differentiation/QuantLibAAD">an XAD/QuantLib
-integration module</a>. 
+integration module</a>, also usable <a href="https://github.com/auto-differentiation/QuantLibAAD-Py">from Python</a>. 
 In addition to tape-based AAD, optional JIT-based execution can be used for selected code regions, 
 enabling record-once / replay-many workflows for repetitive calculations such as Monte Carlo inner loops. 
 QuantLib's AAD-compatibility is actively maintained via automated CI/CD checks, 
